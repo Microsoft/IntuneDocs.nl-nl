@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bd9fd38fdc244bc48333496c2f266ff039e55585
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506247"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855560"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Toegang tot uw bedrijfsbronnen instellen voor uw iOS-apparaat  
 
@@ -41,6 +41,7 @@ Als u toegang wilt houden tot uw werk- of schoolgegevens op het apparaat, moet u
 
 > [!NOTE]
 > Als u hebt geprobeerd toegang te krijgen tot zakelijke e-mail in de Mail-app en een prompt ontving om uw apparaat te laten beheren, bent u op de juiste plek. Volg de onderstaande instructies om op uw iOS-apparaat toegang te krijgen tot uw e-mail en andere bedrijfsbronnen.  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Wat u kunt verwachten van de bedrijfsportal-app  
 
@@ -61,69 +62,121 @@ Ga naar de App Store om de [Intune-bedrijfsportal-app](install-and-sign-in-to-th
 
 Als u uw inschrijving langer dan een paar minuten onderbreekt, kan de app worden gesloten of de installatie worden beëindigd. Als dit het geval is, opent u de bedrijfsportal-app en probeert u het opnieuw.  
 
-1. Open Bedrijfsportal en meld u aan met uw werk- of schoolaccount. 
+1. Open Bedrijfsportal en meld u aan met uw werk- of schoolaccount.  
 
-    ![Voorbeeldschermopname van de bedrijfsportal-app, aanmelden.](./media/ios-01-cp-enroll-1904.PNG)  
+2. Wanneer u wordt gevraagd of u Bedrijfsportal-meldingen wilt ontvangen, tikt u op **Toestaan.** De bedrijfsportal-app maakt gebruik van meldingen om u te waarschuwen, bijvoorbeeld als uw apparaatinstellingen moeten worden bijgewerkt.  
 
-2. Wanneer u wordt gevraagd of u Bedrijfsportal-meldingen wilt ontvangen, tikt u op **Toestaan.** De bedrijfsportal-app maakt gebruik van meldingen om u te waarschuwen, bijvoorbeeld als uw apparaatinstellingen moeten worden bijgewerkt. 
+3. Selecteer op het scherm **Toegang instellen** de optie **Beginnen.**   
 
-    ![Voorbeeldschermopname van de startpagina van Bedrijfsportal, de Meldingen-vraag.](./media/ios-02-cp-enroll-1904.PNG)  
+    ![Voorbeeldschermopname van Bedrijfsportal, het scherm Toegang instellen.](./media/ios-enrollment-checklist-1909.PNG)  
 
-3. Selecteer op het scherm **Toegang instellen** de optie **Beginnen.**  
+4. Het scherm **apparaat en inschrijvings type selecteren** wordt weer gegeven en u wordt gevraagd om het apparaattype.  
+    * Tik **(organisatie) is eigenaar van dit apparaat** als u uw apparaat hebt ontvangen van uw organisatie. Ga vervolgens verder met het beveiligen van het [hele apparaat](###secure-entire-device) in dit artikel om de installatie te volt ooien.  
+    * Tik op **Dit apparaat** als u een persoonlijk apparaat gebruikt dat u thuis hebt gezet. Ga vervolgens verder met de volgende stap.  
 
-     ![Voorbeeldschermopname van Bedrijfsportal, het scherm Toegang instellen.](./media/ios-03-cp-enroll-1904.PNG)  
+    Als dit scherm niet wordt weer gegeven, gaat u naar het [volledige apparaat beveiligen](enroll-your-device-in-intune-ios.md#secure-entire-device) om de installatie te volt ooien.  
+    
+    ![Voor beeld van een scherm opname van Bedrijfsportal, de opties apparaat selecteren en type registratie, type apparaat.](./media/ios-device-type-1909.PNG)  
 
-4. Lees welke apparaatgegevens uw organisatie wel en niet kan zien. Tik op **Doorgaan**.  
 
-5. Lees de instructies op het scherm **De volgende stap**. Als u het beheerprofiel wilt downloaden en installeren, tikt u op **Doorgaan**.  
+5. Kies hoe u de gegevens op uw apparaat wilt beveiligen zodra deze zijn Inge schreven.  
+    * Tik op **veilig hele apparaat** om alle apps en gegevens op het apparaat te beveiligen. Ga vervolgens naar het [beveiligde volledige apparaat](enroll-your-device-in-intune-ios.md#secure-entire-device) om de installatie te volt ooien.
+    * Tik op **alleen aan werk gerelateerde apps en gegevens alleen** om alleen de apps en gegevens te beveiligen die u met uw werk account hebt geopend. Ga vervolgens naar [beveiligde werk-apps en-gegevens](enroll-your-device-in-intune-ios.md#secure-work-related-apps-and-data).  
+
+    ![Voor beeld van een scherm opname van Bedrijfsportal, "Selecteer apparaat en registratie type", opties voor het inschrijvings type.](./media/ios-enrollment-type-1909.PNG)  
+
+
+### <a name="secure-entire-device"></a>Volledig apparaat beveiligen  
+
+1. Lees in het scherm **Apparaatbeheer en privacy** de lijst met apparaatgegevens die uw organisatie wel en niet kan zien. Tik op **Doorgaan**.  
+
 
  > [!IMPORTANT]
 > De volgende stappen en schermen variëren afhankelijk van uw iOS-versie. Volg de stappen voor uw iOS-versie. 
 
-6. In Safari wordt de bedrijfsportalwebsite geopend op uw apparaat. Wanneer u wordt gevraagd om het configuratieprofiel te downloaden, tikt u op **Toestaan**. Als u werkt op een apparaat met:  
-    * iOS 12.2 en later: Wanneer het downloaden is voltooid, tikt u op **Gereed.** Ga verder met stap 7 in dit artikel.
-    * iOS 12.1 en eerder: U wordt automatisch omgeleid naar de app Instellingen. Ga verder met stap 8 in dit artikel.  
+2. In Safari wordt de bedrijfsportalwebsite geopend op uw apparaat. Wanneer u wordt gevraagd om het configuratieprofiel te downloaden, tikt u op **Toestaan**. Als u werkt op een apparaat met:  
+    * iOS 12.2 en hoger: Wanneer het downloaden is voltooid, tikt u op **Sluiten**. Ga vervolgens door naar stap 3.  
+    * iOS 12,1 en eerder: wanneer het downloaden is voltooid, wordt u automatisch omgeleid naar de instellingen-app. Ga verder met stap 4.  
+ 
+    Als u per ongeluk op **Negeren** tikt, vernieuwt u de pagina. U wordt vervolgens gevraagd om de bedrijfsportal-app te openen. Als u klaar bent, tikt u **nogmaals op downloaden**.
+
+  > [!NOTE]
+  > U moet het beheerprofiel binnen acht minuten na het downloaden installeren zoals beschreven in de volgende stappen. Als u dit niet doet, wordt het profiel verwijderd en moet u de inschrijving opnieuw starten.  
+
+3. Wanneer u wordt gevraagd Bedrijfsportal te openen, tikt u op **openen**. Lees de informatie in het scherm **beheer profiel installeren** .  
+
+4. Ga naar de instellingen-app en tik op **inschrijven in < organisatie naam >** of het **profiel is gedownload**.  
+
+    ![Voor beeld van een scherm opname van de optie app, inschrijven in organisatie.](./media/enroll-in-organization-ios-1909.PNG)  
+
+   Als geen van beide opties wordt weer gegeven, gaat u naar **algemene** > **Profielen &** beheer **profiel**voor Apparaatbeheer> . Als u het beheerprofiel nog niet ziet, moet u het mogelijk opnieuw downloaden.  
+
+5. Tik op **INSTALLEREN**.  
+    
+6. Voor uw apparaatwachtwoord in. Tik vervolgens op **Installeren**.    
+
+7. Het volgende scherm bevat een standaardsysteemwaarschuwing over apparaatbeheer. Als u wilt doorgaan met de installatie, tikt u op **Installeren**. Als u wordt gevraagd om extern beheer te vertrouwen, tikt u op **Vertrouwen**.  
+
+8. Wanneer de installatie is voltooid, klikt u op **Gereed**. U kunt controleren of het profiel is geïnstalleerd door naar de instellingen **Profielen en apparaatbeheer** te gaan. Het profiel moet worden weergegeven onder **Mobile Device Management**.   
+
+    ![Voorbeeldschermopname van de app Instellingen, de instellingen Profielen en Apparaatbeheer met het beheerprofiel.](./media/ios-12-cp-enroll-1904.PNG)  
+
+9. Ga terug naar de bedrijfsportal-app. In de bedrijfsportal-app gaat de synchronisatie en setup van uw apparaat van start. In Bedrijfsportal kunt u mogelijk worden gevraagd aanvullende apparaatinstellingen bij te werken. Als dit het geval is, tikt u op **Doorgaan**.  
+
+10. U weet dat de installatie is voltooid wanneer alle items in de lijst met een groen vinkje worden weergegeven. Tik op **Gereed**.   
+
+> [!Note]
+> Als uw organisatie bel- en datalimieten hanteert, of u een apparaat geeft dat bedrijfseigendom is, moet u mogelijk nog enkele andere stappen uitvoeren. Zie [Uw app registreren bij Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md) als u wordt gevraagd om de app **Datalert** te installeren. Ontdek [hoe u uw bedrijfsapparaat registreert](enroll-your-device-dep-ios.md) als uw organisatie meedoet aan het Device Enrollment Program van Apple.  
+
+### <a name="secure-work-related-apps-and-data"></a>Aan werk gerelateerde apps en gegevens beveiligen  
+1. Het scherm **Microsoft Authenticator downloaden** wordt weer gegeven (als u al een verificator hebt, ziet u dit scherm niet meer in stap 2).  
+    1. Tik op **downloaden in de App Store**.
+    2. Wanneer de App Store wordt geopend, installeert u de app. 
+    3. Ga terug naar Bedrijfsportal en tik op **door gaan**.    
+    
+   Nadat u Microsoft Authenticator hebt geïnstalleerd, hoeft u verder niets te doen met de app. U hoeft deze alleen op uw apparaat op te geven. 
+
+   ![Voor beeld van een scherm opname van Bedrijfsportal, ' down load Microsoft Authenticator '.](./media/download-ms-authenticator-1909.PNG)  
+
+2. Lees in het scherm **Apparaatbeheer en privacy** de lijst met apparaatgegevens die uw organisatie wel en niet kan zien. Tik op **Doorgaan**.  
+
+
+ > [!IMPORTANT]
+> De volgende stappen en schermen variëren afhankelijk van uw iOS-versie. Volg de stappen voor uw iOS-versie. 
+
+3. In Safari wordt de bedrijfsportalwebsite geopend op uw apparaat. Wanneer u wordt gevraagd om het configuratieprofiel te downloaden, tikt u op **Toestaan**. Als u werkt op een apparaat met:  
+    * iOS 12.2 en hoger: Wanneer het downloaden is voltooid, tikt u op **Sluiten**. Ga vervolgens door naar stap 4.  
+    * iOS 12,1 en eerder: wanneer het downloaden is voltooid, wordt u automatisch omgeleid naar de instellingen-app. Ga verder met stap 5.  
  
     Als u per ongeluk op **Negeren** tikt, vernieuwt u de pagina. U wordt vervolgens gevraagd om de bedrijfsportal-app te openen. Vanuit de app tikt u op **Opnieuw downloaden**.
 
   > [!NOTE]
   > U moet het beheerprofiel binnen acht minuten na het downloaden installeren zoals beschreven in de volgende stappen. Als u dit niet doet, wordt het profiel verwijderd en moet u de inschrijving opnieuw starten.  
 
-7. Uitsluitend iOS 12.2 en later: wanneer u wordt gevraagd om Bedrijfsportal te openen, tikt u op **Openen**. Op het scherm **Beheerprofiel installeren** worden de stappen voor het installeren van het profiel weergegeven.
+4. Wanneer u wordt gevraagd Bedrijfsportal te openen, tikt u op **openen**. Lees de informatie in het scherm **beheer profiel installeren** . 
 
-    ![Voorbeeldschermopname van Bedrijfsportal, het scherm Beheerprofiel installeren.](./media/ios-07-cp-enroll-1904.PNG)  
+5. Ga naar de instellingen-app en tik op **inschrijven in < organisatie naam >** of het **profiel is gedownload**.  
 
-8. Ga naar de app Instellingen en tik op **Profiel gedownload**.  
+    ![Voor beeld van een scherm opname van de optie app, inschrijven in organisatie.](./media/enroll-in-organization-ios-1909.PNG)  
 
-    Als **Profiel gedownload** niet als optie wordt weergegeven, gaat u naar **Algemeen** > **Profielen**. Als u het profiel nog niet ziet, moet u het mogelijk opnieuw downloaden.  
-
-    ![Voorbeeldschermopname van de app Instellingen, de instelling Profiel gedownload.](./media/ios-1904-settings-badge.PNG)  
-
-9. Tik op **INSTALLEREN**.  
-    
-10. Voor uw apparaatwachtwoord in. Tik vervolgens op **Installeren**.    
-
-    ![Voorbeeldschermopname van de app Instellingen, het scherm Profiel installeren met de cursor op de knop ** Installeren **.](./media/ios-10-cp-enroll-1904.PNG)  
+   Als geen van beide opties wordt weer gegeven, gaat u naar **algemene** > **Profielen &** beheer **profiel**voor Apparaatbeheer> . Als u het beheerprofiel nog niet ziet, moet u het mogelijk opnieuw downloaden.   
 
 
-11. Het volgende scherm bevat een standaardsysteemwaarschuwing voor apparaatbeheer. Als u wilt doorgaan met de installatie, tikt u op **Installeren**. Als u wordt gevraagd om extern beheer te vertrouwen, tikt u op **Vertrouwen**.  
+6. Tik in het scherm **gebruikers registratie** op **mijn iPhone registreren**.  
 
-    ![Voorbeeldschermopname van de app Instellingen, het scherm met de standaardsysteemwaarschuwing voor basiscertificaat en Mobile Device Management.](./media/ios-11-cp-enroll-1904.PNG)  
+    ![Voor beeld van een scherm opname van de app instellingen, het scherm gebruikers registratie, waarbij de registratie knop wordt gemarkeerd.](./media/user-enrollment-information-1909.PNG)  
 
-12. Wanneer de installatie is voltooid, klikt u op **Gereed**. U kunt controleren of het profiel is geïnstalleerd door naar de instellingen **Profielen en apparaatbeheer** te gaan. Het profiel moet worden weergegeven onder **Mobile Device Management**.   
+7. Voer het wacht woord voor het apparaat in. Tik vervolgens op **Installeren**.  
+
+8. Voer het wacht woord voor uw beheerde Apple-ID in op het **aanmeldings** scherm. In de meeste gevallen zijn deze referenties die u gebruikt om u aan te melden bij uw werk-of school account, tenzij uw organisatie u een andere set referenties heeft opgegeven. 
+9. Tik op **Aanmelden**.  
+10. Er wordt een bericht weer gegeven op het scherm kort nadat het profiel is geïnstalleerd. Als u wilt controleren of het profiel is geïnstalleerd, gaat u naar de **profielen &**  instellingen voor Apparaatbeheer. Het profiel moet worden weergegeven onder  **Mobile Device Management**.  
 
     ![Voorbeeldschermopname van de app Instellingen, de instellingen Profielen en Apparaatbeheer met het beheerprofiel.](./media/ios-12-cp-enroll-1904.PNG)  
 
-13. Ga terug naar de bedrijfsportal-app. In de bedrijfsportal-app gaat de synchronisatie en setup van uw apparaat van start. In Bedrijfsportal kunt u mogelijk worden gevraagd aanvullende apparaatinstellingen bij te werken. Als dit het geval is, tikt u op **Doorgaan**.  
+11. Ga terug naar de bedrijfsportal-app. In de bedrijfsportal-app gaat de synchronisatie en setup van uw apparaat van start. In Bedrijfsportal kunt u mogelijk worden gevraagd aanvullende apparaatinstellingen bij te werken. Als dit het geval is, tikt u op **Doorgaan**.    
 
-    ![Voorbeeldschermopname van de bedrijfsportal-app, het scherm Toegang instellen met een gele driehoek naast de instellingsvereiste.](./media/ios-13-cp-enroll-1904.PNG)  
-
-14. U weet dat de installatie is voltooid wanneer alle items in de lijst met een groene cirkel worden weergegeven. Tik op **Gereed**.   
-    
-    ![Voorbeeldschermopname van Bedrijfsportal, het scherm U bent klaar, met allemaal groene cirkels.](./media/ios-14-cp-enroll-1904.PNG)  
-
-> [!Note]
-> Als uw organisatie bel- en datalimieten hanteert, of u een apparaat geeft dat bedrijfseigendom is, moet u mogelijk nog enkele andere stappen uitvoeren. Zie [Uw app registreren bij Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md) als u wordt gevraagd om de app **Datalert** te installeren. Ontdek [hoe u uw bedrijfsapparaat registreert](enroll-your-device-dep-ios.md) als uw organisatie meedoet aan het Device Enrollment Program van Apple.  
+12. U weet dat de installatie is voltooid wanneer alle items in de lijst met een groen vinkje worden weergegeven. Tik op **gereed**.  
 
 ## <a name="it-administrator-support"></a>Ondersteuning IT-beheerder  
 Als u een IT-beheerder bent en in de problemen raakt tijdens het inschrijven van apparaten, kunt u [Troubleshooting iOS device enrollment problems in Microsoft Intune (Problemen oplossen met de inschrijving van iOS-apparaten in Microsoft Intune)](https://support.microsoft.com/en-us/help/4039809) raadplegen. Dit artikel bevat algemene fouten, de oorzaken en de stappen om deze op te lossen.  

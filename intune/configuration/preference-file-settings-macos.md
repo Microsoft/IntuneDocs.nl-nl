@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691697"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827782"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Een eigenschappen lijst bestand toevoegen aan macOS-apparaten met behulp van Microsoft Intune
 
@@ -53,6 +53,16 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Naam van voorkeurs domein**: lijst met eigenschappen bestanden worden meestal gebruikt voor webbrowsers (micro soft Edge), [micro soft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)en aangepaste apps. Wanneer u een voorkeurs domein maakt, wordt er ook een bundel-ID gemaakt. Voer de bundel-ID in, zoals `com.company.application`. Voer bijvoorbeeld `com.Contoso.applicationName`, `com.Microsoft.Edge` of `com.microsoft.wdav` in.
 - **Bestand met eigenschappen lijst**: Selecteer het eigenschappen lijst bestand dat aan uw app is gekoppeld. Controleer of het een `.plist`-of `.xml`-bestand is. Upload bijvoorbeeld een `YourApp-Manifest.plist`-of `YourApp-Manifest.xml` bestand.
 - **Bestands inhoud**: de belangrijkste informatie in het eigenschappen lijst bestand wordt weer gegeven. Als u de sleutel informatie wilt wijzigen, opent u het lijst bestand in een andere editor en uploadt u het bestand opnieuw in intune.
+
+Zorg ervoor dat het bestand correct is geformatteerd. Het bestand mag alleen sleutel-waardeparen bevatten en mag niet worden ingepakt in `<dict>`-, `<plist>`-of `<xml>`-Tags. Het bestand met de eigenschappen lijst moet er bijvoorbeeld als volgt uitzien:
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
 
 Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en weergegeven in de lijst met profielen.
 

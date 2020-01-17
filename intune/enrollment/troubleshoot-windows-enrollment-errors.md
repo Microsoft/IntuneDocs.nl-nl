@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991798"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885892"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van Windows-apparaten in Microsoft Intune oplossen
 
@@ -40,7 +40,7 @@ Verzamel de volgende informatie over het probleem:
 - Welk platform (Android, iOS, Windows) heeft het probleem?
 - Hoeveel gebruikers treft het probleem? Zijn alle gebruikers betrokken of slechts een deel ervan?
 - Hoeveel apparaten heeft het probleem? Zijn alle apparaten betrokken of slechts een deel ervan?
-- Wat is de MDM-instantie? Als het System Center Configuration Manager, welke versie van Configuration Manager gebruikt u?
+- Wat is de MDM-instantie?
 - Hoe wordt de inschrijving uitgevoerd? Kunt u uw eigen apparaat (BYOD) of Apple Device Enrollment Program (DEP) met inschrijvings profielen meenemen?
 
 ## <a name="error-messages"></a>Foutberichten
@@ -48,7 +48,7 @@ Verzamel de volgende informatie over het probleem:
 ### <a name="this-user-is-not-authorized-to-enroll"></a>Deze gebruiker is niet gemachtigd om in te schrijven.
 
 Fout 0x801c003: deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode (0x801c0003) "
-Fout 80180003: Er is iets misgegaan. Deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80180003 "
+Fout 80180003: "Er is iets misgegaan. Deze gebruiker is niet gemachtigd om in te schrijven. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80180003 "
 
 **Oorzaak:** Een van de volgende voor waarden: 
 
@@ -84,7 +84,7 @@ Er zijn verschillende mogelijke oplossingen voor dit probleem:
 
 4. Wacht ongeveer 15 minuten en schrijf het betreffende apparaat vervolgens opnieuw in.    
 
-##### <a name="upgrade-windows-10-home"></a>Windows 10-start pagina upgraden
+##### <a name="upgrade-windows-10-home"></a>Upgrade uitvoeren voor Windows 10 Home
 Voer een [upgrade uit van Windows 10 Home naar Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) of een hogere editie. 
 
 
@@ -96,7 +96,7 @@ Fout 0x801c0003: ' deze gebruiker is niet gemachtigd om in te schrijven. U kunt 
 **Oorzaak:** De **gebruikers kunnen lid worden van apparaten met de Azure AD** -instelling is ingesteld op **geen**. Zo voor komt u dat nieuwe gebruikers hun apparaten kunnen toevoegen aan Azure AD. Daarom mislukt de intune-inschrijving.
 
 #### <a name="resolution"></a>Oplossing
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
+1. Meld u als beheerder aan bij [Azure Portal](https://portal.azure.com/).    
 2. Ga naar **Azure Active Directory** > **apparaten** > **Apparaatinstellingen**.    
 3. Stel **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle**.    
 4. Schrijf het apparaat opnieuw in.   
@@ -107,7 +107,6 @@ Fout 8018000a: er is iets verkeerd gegaan. Het apparaat is al ingeschreven.  U k
 
 **Oorzaak:** Een van de volgende voor waarden is waar:
 - Een andere gebruiker heeft het apparaat al Inge schreven bij intune of het apparaat is toegevoegd aan Azure AD. Als u wilt weten of dit het geval is, gaat u naar **instellingen** > **accounts** > **toegang tot het werk**. Zoek naar een bericht dat er ongeveer als volgt uitziet: ' een andere gebruiker op het systeem is al verbonden met een werk-of school account. Verwijder die werk-of school verbinding en probeer het opnieuw. "    
-- De Configuration Manager-client agent wordt op de computer geïnstalleerd.    
 
 #### <a name="resolution"></a>Oplossing
 
@@ -118,9 +117,6 @@ Gebruik een van de volgende methoden om dit probleem op te lossen:
 2. Ga naar **instellingen** > **accounts** > **toegang tot het werk**en verwijder vervolgens het werk-of school account.
 3. Meld u af bij Windows en meld u vervolgens aan met uw account.    
 4. Registreer het apparaat bij intune of Voeg het apparaat toe aan Azure AD. 
-
-##### <a name="remove-the-configuration-manager-client"></a>Configuration Manager-client verwijderen
-Verwijder de Configuration Manager-client en schrijf het apparaat opnieuw in.
 
 
 
@@ -156,11 +152,11 @@ Ga naar het [Microsoft 365-beheer centrum](https://portal.office.com/adminportal
 
 ### <a name="something-went-wrong"></a>Er is iets misgegaan.
 
-Fout 80180026: Er is iets misgegaan. Bevestig dat u de juiste aanmeldings gegevens gebruikt en dat uw organisatie deze functie gebruikt. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80180026 "
+Fout 80180026: "Er is iets misgegaan. Bevestig dat u de juiste aanmeldings gegevens gebruikt en dat uw organisatie deze functie gebruikt. U kunt dit opnieuw proberen of contact opnemen met de systeembeheerder met de foutcode 80180026 "
 
 **Oorzaak:** Deze fout kan optreden wanneer u probeert een Windows 10-computer toe te voegen aan Azure AD en aan beide van de volgende voor waarden wordt voldaan: 
 - Automatische MDM-inschrijving is ingeschakeld in Azure.    
-- De intune-PC-client (intune-PC-agent) of de Configuration Manager-client agent wordt geïnstalleerd op de Windows 10-computer.
+- De intune-PC-client (intune-PC-agent) is geïnstalleerd op de Windows 10-computer.
 
 #### <a name="resolution"></a>Oplossing
 Gebruik een van de volgende methoden om dit probleem op te lossen:
@@ -171,7 +167,7 @@ Gebruik een van de volgende methoden om dit probleem op te lossen:
 3. Stel het **MDM-gebruikers bereik** in op **geen**, en klik vervolgens op **Opslaan**.    
      
 ##### <a name="uninstall"></a>Verwijderen
-Verwijder de intune-PC-client of Configuration Manager client agent van de computer.    
+Verwijder de intune-PC-client agent van de computer.    
 
 ### <a name="the-software-cannot-be-installed"></a>De software kan niet worden geïnstalleerd.
 
@@ -208,20 +204,13 @@ Voer de volgende stappen uit om dit probleem in een zelfstandige intune-omgeving
 1. Kies in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) **apparaten** > **inschrijvings beperkingen** > Kies een beperking voor het apparaattype.    
 2. Kies **eigenschappen** > **bewerken** (naast **platform instellingen**) > **toestaan** voor **Windows (MDM)** .    
 3. Klik op **controleren en opslaan**.    
- 
-Voer de volgende stappen uit om dit probleem op te lossen in hybride MDM met intune en Configuration Manager: 
-1. Open de Configuration Manager-console.    
-2. Selecteer **beheer**en selecteer vervolgens **Cloud Services**.    
-3. Klik met de rechter muisknop op **Microsoft intune abonnement**en selecteer vervolgens **platforms configureren > Windows**.    
-4. Schakel het selectie vakje **Windows-inschrijving inschakelen** >  > **OK** **toe** .  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Er is een fout opgetreden tijdens de bulk registratie.
 
 **Oorzaak:** De Azure AD-gebruikers accounts in het account pakket (Package_GUID) voor het betreffende inrichtings pakket mogen geen apparaten toevoegen aan Azure AD. Deze Azure AD-accounts worden automatisch gemaakt wanneer u een inrichtings pakket instelt met behulp van Windows Configuration Designer (WCD) of de app school Pc's instellen. deze accounts worden vervolgens gebruikt om de apparaten samen te voegen met Azure AD.
 
 #### <a name="resolution"></a>Oplossing
-1. Meld u aan bij de [Azure Portal](https://portal.azure.com/) als beheerder.    
+1. Meld u als beheerder aan bij [Azure Portal](https://portal.azure.com/).    
 2. Ga naar **Azure Active Directory > apparaten > Apparaatinstellingen**.    
 3. Stel **Gebruikers mogen apparaten aan Azure AD toevoegen** in op **Alle** of **Geselecteerd**.
 
@@ -389,4 +378,4 @@ Dit probleem wordt meestal veroorzaakt door onjuiste delegering van machtigingen
 - [Lees de blog van het Microsoft Intune Support Team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Lees de blog Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Ondersteuning voor Microsoft Intune krijgen](../fundamentals/get-support.md)
-- [Inschrijvings fouten van co-beheer zoeken](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [Inschrijvings fouten van co-beheer zoeken](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

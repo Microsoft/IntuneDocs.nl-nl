@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713474"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653662"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -181,7 +181,7 @@ Open macOS Terminal en voer de volgende opdracht uit:
 > [!NOTE]
 > Sommige parameters zijn optioneel, zoals wordt weergegeven in de volgende tabel.
 
-**Voorbeeld:** met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoer-app (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
+**Voorbeeld:** Met de volgende voorbeeldopdracht voert u de App Wrapping Tool uit voor een app met de naam MyApp.ipa. Een inrichtingsprofiel en een SHA-1-hash van het ondertekeningscertificaat worden opgegeven en gebruikt om de ingepakte app te ondertekenen. De uitvoer-app (MyApp_Wrapped.ipa) wordt gemaakt en opgeslagen in uw Bureaublad-map.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -198,7 +198,7 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Hiermee wordt gedetailleerde informatie weergegeven over de beschikbare opdrachtregeleigenschappen voor de App Wrapping Tool. |
-|**-AA**|(Optioneel) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, d.w.z. `login.windows.net/common` |
+|**-aa**|(Optioneel) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, d.w.z. `login.windows.net/common` |
 |**-ac**|(Optioneel) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` dit de GUID in het veld client-ID is van de vermelding van uw app in de Blade app-registratie. |
 |**-ar**|(Optioneel) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` dit is de omleidings-URI die is geconfigureerd in de app-registratie. Normaal gesp roken zou het het URL-Protocol van de toepassing zijn die de Microsoft Authenticator-app zou terugsturen naar na een brokered-verificatie. |
 |**-v**| (Optioneel) Hiermee worden uitgebreide berichten naar de console uitgevoerd. Het wordt aanbevolen deze eigenschap te gebruiken voor opsporing van eventuele fouten. |
@@ -287,7 +287,7 @@ Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de vol
 |De app voor invoer die u hebt opgegeven, is niet ondertekend. Geef een geldige ondertekende app op.|De App Wrapping Tool vereist dat apps zijn ondertekend. Raadpleeg de documentatie voor ontwikkelaars voor meer informatie over hoe u een verpakte app ondertekent.|
 |De app voor invoer die u hebt opgegeven, moet de indeling .ipa of .app hebben.|Alleen de extensies .app en .ipa worden geaccepteerd door de App Wrapping Tool. Zorg dat uw invoerbestand een geldige extensie heeft en is gecompileerd als bestand met de extensie .app of .ipa.|
 |De invoer-app die u hebt opgegeven, is al verpakt en heeft de meest recente beleidssjabloonversie.|De App Wrapping Tool pakt een bestaande verpakte app met de meest recente beleidssjabloonversie niet opnieuw in.|
-|WAARSCHUWING: u hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
+|WAARSCHUWING: U hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
 
 ### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Logboeken verzamelen voor uw ingepakte toepassingen van het apparaat
 Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.

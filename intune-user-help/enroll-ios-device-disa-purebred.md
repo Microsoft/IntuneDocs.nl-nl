@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c484b98466c1418016f4ebc6cc805e412d7891e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 31858828cbbfaa1ca71d94f6e0f568c35bb490c1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415786"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856576"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-disa-purebred"></a>IOS-of iPadOS-apparaten instellen met Bedrijfsportal en DISA Purebred  
 
@@ -36,7 +36,7 @@ U moet waarschijnlijk een afgeleide referentie instellen als u een Smart Card ge
 * Meld u aan bij school-of werk-apps, Wi-Fi en virtuele particuliere netwerken (VPN)
 * E-mail berichten voor school of werk ondertekenen en versleutelen met S/MIME-certificaten  
 
-In dit artikel gaat u als volgt te werkt:  
+In dit artikel gaat u het volgende doen:  
 
    * Registreer een mobiel iOS-of iPadOS-apparaat met Intune-bedrijfsportal.  
    * Haal een afgeleide referentie op uit de afgeleide referentie provider van uw organisatie, [Disa Purebred](https://cyber.mil/pki-pke/purebred/).  

@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980355"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857871"
 ---
 # <a name="install-mobile-threat-defense"></a>Mobile Threat Defense installeren   
 
@@ -38,9 +38,9 @@ Er zijn diverse MTD-apps voor de toepassing beschikbaar voor installatie. uw org
 Uw organisatie kan geen gegevens zien, zoals teksten, e-mails en afbeeldingen, in uw persoonlijke apps. De MTD-app rapporteert informatie over uw apps, zoals naam en versie, aan uw organisatie. De werkelijke informatie die wordt gerapporteerd, is afhankelijk van de MTD-leverancier die uw bedrijf gebruikt. Uw organisatie kan zien:   
 
 * App-naam  
-* App-id: de unieke naam waarmee de app wordt geïdentificeerd in Google Play.  
-* App-versie en verkort versienummer: specifieke releasenummers van een app.  
-* App-bundel en dynamische grootte: de hoeveelheid ruimte die een app op uw apparaat gebruikt. 
+* App-id: De unieke naam waarmee de app wordt geïdentificeerd in Google Play.  
+* Appversie en verkort versienummer: De specifieke releasenummers van een app.  
+* App-bundel en dynamische grootte: De hoeveelheid ruimte die een app op uw apparaat gebruikt. 
 
 
 ## <a name="install-app"></a>App installeren    

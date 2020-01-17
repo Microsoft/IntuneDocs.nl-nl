@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059625"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206819"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Zebra-apparaten gebruiken en beheren met Zebra Mobility Extensions in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune bevat een uitgebreide set functies, waaronder apps beheren en apparaatinstellingen configureren. Deze ingebouwde functies en instellingen worden gebruikt om Android-apparaten te beheren die zijn gemaakt door Zebra Technologies. Deze apparaten worden ook wel Zebra-apparaten genoemd.
 
@@ -53,7 +53,7 @@ Met Intune kunt u Zebra-apparaten registreren om Line-Of-Business-apps te implem
 - Controleer de [Volledige functiematrix van Zebra](http://techdocs.zebra.com/mx/compatibility) (hiermee wordt de Zebra-website geopend) om te bevestigen dat de profielen die u maakt compatibel zijn met de MX-versie, de besturingssysteemversie en het model van het apparaat.
 - Bepaalde apparaten, zoals TC20/25-apparaten, ondersteunen niet alle beschikbare MX-functies in StageNow. Controleer de [Functiematrix van Zebra](http://techdocs.zebra.com/mx/tc2x/) (hiermee wordt de Zebra-website geopend) voor bijgewerkte ondersteuningsinformatie.
 
-## <a name="step-1-install-the-latest-company-portal-app"></a>Stap 1: de nieuwste Bedrijfsportal-app installeren
+## <a name="step-1-install-the-latest-company-portal-app"></a>Stap 1: De nieuwste Bedrijfsportal-app installeren
 
 Open de Google Play Store op het apparaat. Download en installeer de Intune-bedrijfsportal-app van Microsoft. Na te zijn geïnstalleerd vanuit Google Play worden er automatisch updates en fixes in de Bedrijfsportal-app geïnstalleerd.
 
@@ -79,7 +79,7 @@ Ga door met het publiceren van het profiel en verbruik het met de app StageNow o
 > [!TIP]
 > Zie [StageNow Android device staging ](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (Fasering van Android-apparaten via StageNow) (hiermee wordt de Zebra-website geopend) voor meer informatie over StageNow en wat het doet.
 
-## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Stap 2: bevestigen dat de rol Apparaatbeheerder is toegekend aan de Bedrijfsportal-app
+## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Stap 2: Bevestigen dat de rol Apparaatbeheerder is toegekend aan de Bedrijfsportal-app
 
 Voor de bedrijfsportal-app is Apparaatbeheerder vereist om Android-apparaten te beheren. Sommige Zebra-apparaten bieden een gebruikersinterface op het apparaat om de rol Apparaatbeheerder te activeren. Als het apparaat een gebruikersinterface bevat, wordt de eindgebruiker in de Bedrijfsportal-app gevraagd om de rol Apparaatbeheerder toe te kennen tijdens de [registratie](#step-3-enroll-the-device-in-to-intune) (in dit artikel).
 
@@ -96,13 +96,13 @@ De volgende stappen bevatten een overzicht. Zie de Zebra-documentatie voor speci
 
 Ga door met het publiceren van het profiel en verbruik het met de app StageNow op het apparaat. De rol Apparaatbeheerder is toegekend aan de Bedrijfsportal-app.
 
-## <a name="step-3-enroll-the-device-in-to-intune"></a>Stap 3: het apparaat registreren bij Intune
+## <a name="step-3-enroll-the-device-in-to-intune"></a>Stap 3: Het apparaat registreren bij Intune
 
 Na het voltooien van de eerste twee stappen is de Bedrijfsportal-app op het apparaat geïnstalleerd. Het apparaat is gereed om te worden geregistreerd bij Intune.
 
 De stappen worden vermeld bij [Android-apparaten registreren](../enrollment/android-enroll.md). Als u veel Zebra-apparaten hebt, wilt u misschien gebruikmaken van een [beheeraccount voor apparaatregistratie](../enrollment/device-enrollment-manager-enroll.md). Met behulp van dit account wordt ook de optie om de registratie ongedaan te maken uit de Bedrijfsportal-app verwijderd, zodat gebruikers de registratie van het apparaat niet gemakkelijk ongedaan kunnen maken.
 
-## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Stap 4: een apparaatbeheerprofiel maken in StageNow
+## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Stap 4: Een apparaatbeheerprofiel maken in StageNow
 
 Gebruik StageNow om een profiel te maken waarmee u de instellingen die u wilt beheren op het apparaat configureert. Zie de Zebra-documentatie voor specifieke details. [Profiles](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (Profielen) (hiermee wordt de Zebra-website geopend) kan een goede resource zijn.
 
@@ -129,7 +129,7 @@ Nadat u het bestand hebt getest, bestaat de volgende stap uit het implementeren 
   >
   > Als dezelfde eigenschap meerdere keren in één MX-profiel is geconfigureerd, wint de laatste configuratie.
 
-## <a name="step-5-create-a-profile-in-intune"></a>Stap 5: een profiel maken in Intune
+## <a name="step-5-create-a-profile-in-intune"></a>Stap 5: Een profiel maken in Intune
 
 Maak in Intune een apparaatconfiguratieprofiel:
 
@@ -137,10 +137,10 @@ Maak in Intune een apparaatconfiguratieprofiel:
 2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
-    - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-    - **Beschrijving:** voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Platform**: selecteer **Android**.
-    - **Profieltype**: selecteer **MX-profiel (alleen Zebra)** .
+    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Selecteer **Android**.
+    - **Profieltype**: Selecteer **MX-profiel (alleen Zebra)** .
 
 4. Voeg aan **MX-profiel in XML-indeling** het XML-profielbestand toe dat [u hebt geëxporteerd uit StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in dit artikel).
 5. Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het beleid wordt gemaakt en in de lijst weergegeven.

@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune-apparaatbeperkingsinstellingen voor apparaten met Windows 8.1
+title: Apparaatbeperkingsinstellingen voor Windows 8.1 configureren in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
 description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van apparaatinstellingen en functionaliteit op apparaten met Windows 8.1.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489825"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302968"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Apparaatbeperkingsinstellingen voor Windows 8.1-apparaten (en hoger) in Microsoft Intune
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune-apparaatbeperkingsinstellingen voor Windows 8.1
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 8.1 en hoger.
-
+In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsinstellingen die u kunt configureren voor apparaten met Windows 8.1.
 
 ## <a name="general"></a>Algemeen
 
@@ -48,8 +45,6 @@ In dit artikel komt u meer te weten over de Microsoft Intune-apparaatbeperkingsi
 Als u deze instelling voor Windows 8.1-apparaten inschakelt, moeten alle gebruikers van het apparaat een Microsoft-account hebben.
 Versleuteling werkt alleen indien het apparaat voldoet aan de [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97)-certificeringsvereisten voor hardware.
 Wanneer u versleuteling op een apparaat afdwingt, is de herstelsleutel alleen toegankelijk vanuit het Microsoft-account van de gebruiker, waartoe de gebruiker alleen toegang heeft vanuit zijn of haar OneDrive-account. U kunt deze sleutel niet namens een gebruiker herstellen. 
-
-
 
 ## <a name="browser"></a>Browser
 - **Automatisch doorvoeren**: hiermee kunt u gebruikers in staat stellen instellingen voor automatisch aanvullen in de browser te wijzigen.
@@ -75,3 +70,7 @@ Als u deze instelling selecteert, kunt u een **Locatie van het registratierappor
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 - **URL voor Werkmappen**: hiermee stelt u de URL voor Werkmappen in, zodat documenten op verschillende apparaten kunnen worden gesynchroniseerd.
 - **Toegang tot de Windows Mail-app zonder Microsoft-account**: hiermee maakt u het mogelijk om toegang te krijgen tot de toepassing Windows Mail zonder Microsoft-account.
+
+## <a name="next-steps"></a>Volgende stappen
+
+Maak een profiel voor beperkingen voor apparaten in [Windows 10 en nieuwer](device-restrictions-windows-10.md).

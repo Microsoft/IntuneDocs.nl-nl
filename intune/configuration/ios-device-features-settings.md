@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992954"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206360"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>iOS- en iPadOS-apparaatinstellingen voor het gebruik van algemene iOS-functies in Intune
 
@@ -47,8 +47,8 @@ Dit artikel beschrijft deze instellingen en wat elke instelling doet. Ga voor me
 
 - **IP-adres**: voer het IPv4- of IPv6-adres van de printer in. Als u hostnamen gebruikt om printers te identificeren, krijgt u het IP-adres door de printer in de terminal te pingen. In Haal het IP-adres en het pad op (in dit artikel) vindt u meer informatie.
 - **Pad**: het pad is doorgaans `ipp/print` voor printers in uw netwerk. In Haal het IP-adres en het pad op (in dit artikel) vindt u meer informatie.
-- **Poort**: voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort. Beschikbaar in iOS 11.0 en hoger.
-- **TLS**: kies **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS). Beschikbaar in iOS 11.0 en hoger.
+- **Poort**: Voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort. Beschikbaar in iOS 11.0 en hoger.
+- **TLS**: Kies **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS). Beschikbaar in iOS 11.0 en hoger.
 
 Als u printer servers wilt toevoegen, kunt u het volgende doen:
 
@@ -84,24 +84,24 @@ Gebruik de **Dock**-instellingen om maximaal zes items of mappen aan de dock ond
 
 U kunt maximaal **zes** items (combinatie van apps en mappen) voor de apparaatdock toevoegen.
 
-- **Toevoegen**: apps of mappen toevoegen aan de dock op het apparaat.
-- **Type**: een **app** of een **map** toevoegen:
+- **Toevoegen**: Apps of mappen toevoegen aan de dock op het apparaat.
+- **Type**: Een **app** of een **map** toevoegen:
 
   - **App**: kies deze optie om apps aan de dock op het scherm toe te voegen. Voer het volgende in:
 
-    - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-    - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
+    - **App-naam**: voer een naam voor de app in. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het iOS-apparaat.
+    - **App-bundel-id**: voer de bundel-id van de app in. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
 
   - **Map**: kies deze optie om een map aan de dock op het scherm toe te voegen.
 
     Apps die u aan een pagina in een map toevoegt, worden gerangschikt van links naar rechts, en in dezelfde volgorde als de lijst. Als u meer apps toevoegt dan er op een pagina passen, worden de apps naar een andere pagina verplaatst.
 
-    - **Mapnaam**: voer de naam van de map in. Deze naam zien gebruikers op hun apparaat.
-    - **Lijst met pagina's**: u kunt een pagina **toevoegen** en de volgende eigenschappen invoeren:
+    - **Mapnaam**: Voer de naam van de map in. Deze naam zien gebruikers op hun apparaat.
+    - **Lijst met pagina's**: U kunt een pagina **Toevoegen** en de volgende eigenschappen invoeren:
 
-      - **Paginanaam**: Voer een naam voor de pagina in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-      - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-      - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
+      - **Paginanaam**: voer een naam voor de pagina in. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het iOS-apparaat.
+      - **App-naam**: voer een naam voor de app in. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het iOS-apparaat.
+      - **App-bundel-id**: voer de bundel-id van de app in. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
 
       U kunt maximaal **20** pagina's toevoegen voor de apparaatdock.
 
@@ -127,31 +127,31 @@ Voeg de pagina's toe die u wilt weergeven op het startscherm en de apps die moet
 
 U kunt maximaal **40** pagina's toevoegen.
 
-- **Lijst met pagina's**: u kunt een pagina **toevoegen** en de volgende eigenschappen invoeren:
+- **Lijst met pagina's**: U kunt een pagina **Toevoegen** en de volgende eigenschappen invoeren:
 
-  - **Paginanaam**: Voer een naam voor de pagina in. Deze naam wordt ter referentie gebruikt in de Microsoft Azure-portal en wordt *niet* weergegeven op het iOS-apparaat.
+  - **Paginanaam**: voer een naam voor de pagina in. Deze naam wordt gebruikt voor uw referentie in het beheer centrum van micro soft Endpoint Manager en *wordt niet* weer gegeven op het IOS-apparaat.
 
   U kunt maximaal **60** items (combinatie van apps en mappen) toevoegen op een apparaat.
 
-  - **Toevoegen**: apps of mappen toevoegen aan een pagina op het apparaat.
+  - **Toevoegen**: Apps of mappen toevoegen aan een pagina op het apparaat.
 
-    - **Type**: een **app** of een **map** toevoegen:
+    - **Type**: Een **app** of een **map** toevoegen:
 
       - **App**: kies deze optie om apps aan een pagina op het scherm toe te voegen. Voer ook in:
 
-        - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-        - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
+        - **App-naam**: voer een naam voor de app in. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het iOS-apparaat.
+        - **App-bundel-id**: voer de bundel-id van de app in. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
 
       - **Map**: kies deze optie om een map aan de dock op het scherm toe te voegen.
 
         Apps die u aan een pagina in een map toevoegt, worden gerangschikt van links naar rechts, en in dezelfde volgorde als de lijst. Als u meer apps toevoegt dan er op een pagina passen, worden de apps naar een andere pagina verplaatst.
 
-        - **Mapnaam**: voer een naam voor de map in. Deze naam zien gebruikers op het apparaat.
-        - **Toevoegen**: hiermee worden pagina's aan de map toegevoegd. Voer ook de volgende eigenschappen in:
+        - **Mapnaam**: Voer een naam voor de map in. Deze naam zien gebruikers op het apparaat.
+        - **Toevoegen**: Hiermee worden pagina's aan de map toegevoegd. Voer ook de volgende eigenschappen in:
 
-          - **Paginanaam**: Voer een naam voor de pagina in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-          - **App-naam**: Voer een naam voor de app in. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het iOS-apparaat.
-          - **App-bundel-id**: geef de bundel-id van de app op. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
+          - **Paginanaam**: voer een naam voor de pagina in. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het iOS-apparaat.
+          - **App-naam**: voer een naam voor de app in. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het iOS-apparaat.
+          - **App-bundel-id**: voer de bundel-id van de app in. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
 
 #### <a name="example"></a>Voorbeeld
 
@@ -167,21 +167,21 @@ Wanneer u het beleid aan een iPhone toewijst, ziet de pagina er ongeveer hetzelf
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
-- **Toevoegen**: meldingen voor apps toevoegen:
+- **Toevoegen**: Meldingen voor apps toevoegen:
 
     ![App-melding toevoegen in iOS-profiel in Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
-  - **App-bundel-id**: geef de **App-bundel-id** op van de app die u wilt toevoegen. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
-  - **App-naam**: voer de naam in van de app die u wilt toevoegen. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het apparaat.
-  - **Uitgever**: voer de uitgever in van de app die u toevoegt. Deze naam wordt ter referentie in de Microsoft Azure-portal gebruikt. Deze wordt *niet* weergegeven op het apparaat.
-  - **Meldingen**: hiermee kunt u **inschakelen** of **uitschakelen** dat de app meldingen naar het apparaat verzendt.
+  - **App-bundel-id**: voer de **App-bundel-id** in van de app die u wilt toevoegen. Zie [Bundel-id's voor ingebouwde iOS-apps](bundle-ids-built-in-ios-apps.md) voor enkele voorbeelden.
+  - **App-naam**: voer de naam in van de app die u wilt toevoegen. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het apparaat.
+  - **Uitgever**: voer de uitgever in van de app die u toevoegt. Deze naam wordt gebruikt voor uw referentie in het micro soft Endpoint Manager-beheer centrum. Deze wordt *niet* weergegeven op het apparaat.
+  - **Meldingen**: **in**- of **uitschakelen** dat de app meldingen naar het apparaat verzendt.
     - **Weergeven in het meldingencentrum**: als u **Inschakelen** kiest, geeft de app meldingen weer in meldingencentrum van het apparaat. als u **Uitschakelen** kiest, geeft de app geen meldingen weer in meldingencentrum.
-    - **Weergeven in het vergrendelingsscherm**: selecteer **Inschakelen** om meldingen van de app weer te geven op het vergrendelingsscherm van de app. als u **Uitschakelen** kiest, worden meldingen van de app niet weergegeven op het vergrendelingsscherm.
+    - **Weergeven in het vergrendelingsscherm**: als u **Inschakelen** kiest, worden meldingen van de app weergegeven op het vergrendelingsscherm van het apparaat. als u **Uitschakelen** kiest, worden meldingen van de app niet weergegeven op het vergrendelingsscherm.
     - **Waarschuwingstype**: kies hoe de melding moet worden weergegeven wanneer het apparaat wordt ontgrendeld. Uw opties zijn:
       - **Geen**: er wordt geen melding weergegeven.
       - **Banner**: er wordt kort een banner weergegeven met de melding.
       - **Modaal**: de melding wordt weergegeven en de gebruiker moet deze handmatig sluiten voordat de gebruiker kan doorgaan en het apparaat kan gebruiken.
-    - **Badge op app-pictogram**: Selecteer **Inschakelen** om een badge toe te voegen aan het app-pictogram. De badge betekent dat de app een melding heeft verzonden.
+    - **Badge op app-pictogram**: selecteer **Inschakelen** om een badge toe te voegen aan het app-pictogram. De badge betekent dat de app een melding heeft verzonden.
     - **Geluiden**: selecteer **Inschakelen** om een geluid af te spelen wanneer een melding wordt afgeleverd.
 
 ## <a name="lock-screen-message"></a>Bericht voor vergrendelingsscherm
@@ -192,11 +192,11 @@ Deze functie is van toepassing op:
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
-- **Informatie over de assettag**: voer informatie over de assettag van het apparaat in. Voer bijvoorbeeld `Owned by Contoso Corp` of `Serial Number: {{serialnumber}}` in.
+- **Informatie over de assettag**: Voer informatie over de assettag van het apparaat in. Voer bijvoorbeeld `Owned by Contoso Corp` of `Serial Number: {{serialnumber}}` in.
 
   De tekst die u opgeeft, wordt weergegeven in het aanmeldingsvenster en het vergrendelingsscherm van het apparaat.
 
-- **Voetnoot voor het vergrendelingsscherm**: voer een opmerking in waarmee u het apparaat misschien kunt terugkrijgen als het verloren of gestolen is. U kunt elke gewenste tekst invoeren. Voer bijvoorbeeld iets in zoals `If found, call Contoso at ...`.
+- **Voetnoot voor vergrendelingsscherm**: Voer een opmerking in waarmee u het apparaat wellicht kunt terugkrijgen als het verloren of gestolen is. U kunt elke gewenste tekst invoeren. Voer bijvoorbeeld iets in zoals `If found, call Contoso at ...`.
 
   Apparaattokens kunnen ook worden gebruikt om apparaatspecifieke informatie aan deze velden toe te voegen. Als u bijvoorbeeld het serienummer wilt weergeven, voert u `Serial Number: {{serialnumber}}` in. De tekst die in het vergrendelingsscherm wordt weergegeven, is vergelijkbaar met `Serial Number 123456789ABC`. Wanneer u variabelen opgeeft, moet u ervoor zorgen dat u accolades `{{ }}` gebruikt. [App-configuratietokens](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat een lijst met variabelen die kunnen worden gebruikt. U kunt ook `deviceName` of een andere apparaatspecifieke waarde gebruiken.
 
@@ -207,7 +207,7 @@ Deze functie is van toepassing op:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatregistratie, automatische registratie van apparaten (onder Super visie)
 
-- **Het kenmerk Gebruikersnaam in AAD**: Intune zoekt naar dit kenmerk voor elke gebruiker in Azure AD. Het betreffende veld (zoals UPN) wordt vervolgens door Intune ingevuld vóór het genereren van de XML die op het apparaat wordt geïnstalleerd. Uw opties zijn:
+- **Het kenmerk Gebruikersnaam van AAD**: Intune zoekt naar dit kenmerk voor elke gebruiker in Microsoft Azure Active Directory. Het betreffende veld (zoals UPN) wordt vervolgens door Intune ingevuld vóór het genereren van de XML die op het apparaat wordt geïnstalleerd. Uw opties zijn:
 
   - **User Principal Name**: de UPN wordt op de volgende manier geparseerd:
 
@@ -227,7 +227,7 @@ Deze functie is van toepassing op:
   - **Apparaat-id voor Microsoft Azure Active Directory**
 
 - **Realm**: voer het domeingedeelte van de URL in. Voer bijvoorbeeld `contoso.com` in.
-- **URL-voorvoegsels die gebruikmaken van eenmalige aanmelding**: **voeg** URL's in uw organisatie toe waarvoor gebruikersverificatie met eenmalige aanmelding vereist is.
+- **URL-voorvoegsels die gebruikmaken van eenmalige aanmelding**: **voeg** alle URL's in uw organisatie toe die gebruikersverificatie met eenmalige aanmelding vereisen.
 
   Bijvoorbeeld: wanneer een gebruiker verbinding maakt met een van deze sites, gebruikt het iOS-apparaat de referenties voor eenmalige aanmelding. De gebruiker hoeft geen aanvullende referenties in te voeren. Als meervoudige verificatie is ingeschakeld, moeten gebruikers de tweede verificatie invoeren.
 
@@ -250,18 +250,18 @@ Deze functie is van toepassing op:
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
-- **Filtertype**: hiermee kunt u specifieke websites toestaan. Uw opties zijn:
+- **Filtertype**: Hiermee kunt u specifieke websites toestaan. Uw opties zijn:
 
   - **URL's configureren**: gebruik het ingebouwde webfilter van Apple dat zoekt naar ongepaste termen, zoals grof en seksueel getint taalgebruik. Deze functie evalueert elke webpagina terwijl deze wordt geladen, en identificeert en blokkeert ongeschikte inhoud. U kunt ook URL's toevoegen waarvan u niet wilt dat deze worden gecontroleerd door het filter. U kunt ook specifieke URL's blokkeren, ongeacht de filterinstellingen van Apple.
 
-    - **Toegestane URL's**: **Voeg** de URL's toe die u wilt toestaan. Deze URL's omzeilen het webfilter van Apple.
+    - **Toegestane URL's**: **voeg** de URL's toe die u wilt toestaan. Deze URL's omzeilen het webfilter van Apple.
 
         > [!NOTE]
         > De URL's die u invoert, zijn de URL's die u niet wilt laten evalueren door het webfilter van Apple. Deze URL's zijn geen lijst met toegestane websites. Als u een lijst met toegestane websites wilt maken, stelt u het **Filtertype** in op **Alleen specifieke websites**.
 
     - **Geblokkeerde URL's**: **voeg** de URL's toe waarvan u niet wilt dat deze worden geopend, ongeacht het webfilter van Apple.
 
-  - **Alleen specifieke websites** (alleen voor Safari): deze URL's worden toegevoegd aan de bladwijzers van de Safari-browser. De gebruiker mag **alleen** deze sites bezoeken. Andere sites kunnen niet worden geopend. Gebruik deze optie alleen als u de exacte lijst van URL's weet die gebruikers mogen bezoeken.
+  - **Alleen specifieke websites** (alleen voor de Safari-webbrowser): deze URL's worden toegevoegd aan de bladwijzers van de Safari-browser. De gebruiker mag **alleen** deze sites bezoeken. Andere sites kunnen niet worden geopend. Gebruik deze optie alleen als u de exacte lijst van URL's weet die gebruikers mogen bezoeken.
 
     - **URL**: voer de URL in van de website die u wilt toestaan. Voer bijvoorbeeld `https://www.contoso.com` in.
     - **Bladwijzer pad**: Apple heeft deze instelling gewijzigd. Alle blad wijzers gaan naar de map **goedgekeurde sites** . Blad wijzers worden niet doorgezet naar het bladwijzer pad dat u invoert.
@@ -274,7 +274,7 @@ Deze functie is van toepassing op:
 Deze functie is van toepassing op:
 
 - iOS 13.0 en hoger
-- iPadOS 13,0 en hoger
+- iPadOS 13.0 en hoger
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
 
@@ -345,8 +345,8 @@ Mogelijk ervaart u onverwacht gedrag wanneer een profiel zonder afbeelding wordt
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische registratie van apparaten (onder Super visie)
 
-- **Weergavelocatie voor achtergrond**: Kies een locatie op het apparaat om de afbeelding weer te geven. Uw opties zijn:
-  - **Niet geconfigureerd**: Er is geen aangepaste afbeelding toegevoegd aan het apparaat. Het apparaat gebruikt de standaardinstelling van het besturingssysteem.
+- **Weergavelocatie voor achtergrond**: kies een locatie op het apparaat om de afbeelding weer te geven. Uw opties zijn:
+  - **Niet geconfigureerd**: er is geen aangepaste afbeelding toegevoegd aan het apparaat. Het apparaat gebruikt de standaardinstelling van het besturingssysteem.
   - **Vergrendelingsscherm**: hiermee wordt de afbeelding toegevoegd aan het vergrendelingsscherm.
   - **Startscherm**: hiermee wordt de afbeelding toegevoegd aan het startscherm.
   - **Vergrendelingsscherm en startscherm**: dezelfde afbeelding wordt op het vergrendelingsscherm en het startscherm gebruikt.

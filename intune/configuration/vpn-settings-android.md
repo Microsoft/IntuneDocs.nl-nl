@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d9fefc2413e2dafbf5d0ad67ea15f5f8406cc1c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 458c38e4cce7022d7a56e86cc171365f1496741e
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506541"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206292"
 ---
 # <a name="android-device-settings-to-configure-vpn-in-intune"></a>Instellingen voor Android-apparaten voor het configureren van VPN in intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In dit artikel vindt u een overzicht en beschrijving van de verschillende instellingen die u voor VPN-verbindingen kunt beheren op Android-apparaten. Als onderdeel van uw Mobile Device Management-oplossing (MDM) kunt u deze instellingen gebruiken om een VPN-verbinding te maken, kiezen hoe de VPN verifieert, een VPN-server type en meer.
 
@@ -38,15 +38,15 @@ Zie [VPN-profielen](vpn-settings-configure.md)voor meer informatie over VPN-prof
 
 ## <a name="base-vpn"></a>Basis-VPN
 
-- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken. Voer bijvoorbeeld `Contoso VPN` in.
+- **Verbindingsnaam**: Voer een naam in voor deze verbinding. Eindgebruikers zien deze naam wanneer ze op hun apparaat de beschikbare VPN-verbindingen zoeken. Voer bijvoorbeeld `Contoso VPN` in.
 - **IP-adres of FQDN**: geef het IP-adres of de FQDN (Fully Qualified Domain Name) op van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld **192.168.1.1** of **vpn.contoso.com** in.
 
   - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server. Uw opties zijn:
 
     - **Certificaten**: selecteer een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](../protect/certificates-configure.md) bevat de stappen voor het maken van een certificaatprofiel.
-    - **Gebruikersnaam en wachtwoord**: tijdens het aanmelden bij de VPN-server moeten eindgebruikers hun gebruikersnaam en wachtwoord invoeren.
+    - **Gebruikersnaam en wachtwoord**: Tijdens het aanmelden bij de VPN-server wordt de eindgebruikers gevraagd hun gebruikersnaam en wachtwoord in te voeren.
 
-- **Verbindingstype**: selecteer het type VPN-verbinding. Uw opties zijn:
+- **Type verbinding**: selecteer het type van de VPN-verbinding. Uw opties zijn:
 
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

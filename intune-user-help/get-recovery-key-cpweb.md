@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 822d995443ca23eac7f96f8314f9926804e0be24
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 1e7831712b4c07d015aa0f587ff6ba6183940897
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508518"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855233"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>Een herstel sleutel voor een macOS-apparaat ophalen
 
 Gebruik de website van Bedrijfsportal om een herstel sleutel op te halen voor uw vergrendeld macOS-apparaat. Als u het wacht woord van uw apparaat vergeet, kunt u zich aanmelden bij de Bedrijfsportal vanaf een ander apparaat om uw sleutel op te halen.  
 
-Deze optie is alleen beschikbaar voor apparaten die zijn versleuteld door uw organisatie met behulp van FileVault. Het is niet beschikbaar voor apparaten die u persoonlijk hebt versleuteld.
+## <a name="get-recovery-key-from-company-portal-website"></a>Herstel sleutel ophalen van Bedrijfsportal website
+
+Deze optie is beschikbaar voor apparaten die zijn versleuteld door uw organisatie met behulp van FileVault. Het is niet beschikbaar voor apparaten die u persoonlijk hebt versleuteld.
 
 1. Meld u op een apparaat aan bij de [bedrijfsportal website](https://portal.manage.microsoft.com) en selecteer de **menu** knop > **apparaten**.  
 2. Selecteer het versleutelde macOS-apparaat.  
@@ -45,6 +47,19 @@ Deze optie is alleen beschikbaar voor apparaten die zijn versleuteld door uw org
     Uit veiligheids overwegingen wordt de sleutel na vijf minuten verwijderd. Als u de sleutel opnieuw wilt weer geven, selecteert u **herstel sleutel ophalen**.
 
 Als er geen sleutel is gevonden maar uw apparaat is versleuteld, neemt u contact op met de ondersteunings medewerker van uw organisatie. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+## <a name="get-recovery-key-from-company-portal-app-for-ios"></a>Herstel sleutel ophalen uit Bedrijfsportal-app voor iOS
+
+U kunt uw persoonlijke herstel sleutel (FileVault Key) ophalen met behulp van de Bedrijfsportal-app voor iOS. Uw apparaat met de persoonlijke herstel sleutel moet zijn Inge schreven bij intune en moeten worden versleuteld met FileVault via intune. Deze optie is niet beschikbaar voor apparaten die u persoonlijk hebt versleuteld. 
+
+U kunt de Bedrijfsportal-app gebruiken om de Safari-webweergave te openen en uw persoonlijke herstel sleutel op te halen. 
+
+1. Open Bedrijfsportal.
+2. Klik op **herstel sleutel ophalen**.
+
+    ![Scherm afbeelding van Bedrijfsportal app voor iOS, met herstel sleutel](./media/get-recovery-key-cpweb-02.png)  
+
+De Bedrijfsportal-website wordt geopend in de Safari-webweergave en de sleutel wordt weer gegeven. 
 
 ## <a name="it-pro-support"></a>Ondersteuning voor IT-professionals
 

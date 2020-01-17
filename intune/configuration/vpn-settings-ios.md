@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781138"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885660"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen aan iOS-apparaten in Microsoft Intune
 
@@ -38,13 +38,13 @@ Microsoft Intune biedt veel VPN-instellingen die kunnen worden geïmplementeerd 
 Selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 
 - **Check Point Capsule VPN**
-- **Cisco Legacy AnyConnect**: dit is van toepassing op de app [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versie 4.0.5x en eerder.
-- **Cisco AnyConnect**: dit is van toepassing op de app [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versie 4.0.7x en later.
+- **Cisco Legacy AnyConnect**: Dit is van toepassing op de app [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versie 4.0.5x en eerder.
+- **Cisco AnyConnect**: Dit is van toepassing op de app [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versie 4.0.7x en later.
 - **SonicWall Mobile Connect**
-- **F5 Access Legacy**: dit is van toepassing op de app F5 Access versie 2.1 en eerder.
-- **F5 Access**: dit is van toepassing op de app F5 Access versie 3.0 en later.
-- **Palo Alto Networks GlobalProtect (verouderd)** : dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 4.1 en eerder.
-- **Palo Alto Networks GlobalProtect**: dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 5.0 en later.
+- **F5 Access Legacy**: Dit is van toepassing op de app F5 Access versie 2.1 en eerder.
+- **F5 Access**: Dit is van toepassing op de app F5 Access versie 3.0 en later.
+- **Palo Alto Networks GlobalProtect (verouderd)** : Dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 4.1 en eerder.
+- **Palo Alto Networks GlobalProtect**: Dit is van toepassing op de app Palo Alto Networks GlobalProtect versie 5.0 en later.
 - **Pulse Secure**
 - **Cisco (IPSec)**
 - **Citrix VPN**
@@ -60,32 +60,32 @@ Selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 
 Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van het VPN-verbindingstype dat u selecteert.  
 
-- **Verbindingsnaam**: eindgebruikers zien deze naam wanneer ze op hun apparaat in een lijst met beschikbare VPN-verbindingen zoeken.
-- **Aangepaste domeinnaam** (alleen Zscaler): Vul het aanmeldingsveld van de Zscaler-app vooraf met het domein waarvan uw gebruikers deel uitmaken. Als bijvoorbeeld de gebruikersnaam `Joe@contoso.net` is, wordt het domein `contoso.net` statisch in het veld weergegeven wanneer de app wordt geopend. Als u geen domeinnaam invoert, wordt het domeingedeelte van de UPN in Azure Active Directory (AD) gebruikt.
-- **IP-adres of FQDN**: dit is het IP-adres of de FQDN (Fully Qualified Domain Name) van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld `192.168.1.1` of `vpn.contoso.com` in.
-- **Cloudnaam van organisatie** (alleen Zscaler): voer de naam in van de cloud waarin uw organisatie is ingericht. De URL waarmee u zich aanmeldt bij Zscaler bevat de naam.  
+- **Verbindingsnaam**: Eindgebruikers zien deze naam wanneer ze op hun apparaat in een lijst met beschikbare VPN-verbindingen zoeken.
+- **Aangepaste domeinnaam** (alleen Zscaler): Vul het aanmeldingsveld van de Zscaler-app vooraf in met het domein waarvan uw gebruikers deel uitmaken. Als bijvoorbeeld de gebruikersnaam `Joe@contoso.net` is, wordt het domein `contoso.net` statisch in het veld weergegeven wanneer de app wordt geopend. Als u geen domeinnaam invoert, wordt het domeingedeelte van de UPN in Azure Active Directory (AD) gebruikt.
+- **IP-adres of FQDN**: Het IP-adres of de FQDN (Fully Qualified Domain Name) van de VPN-server waarmee apparaten verbinding maken. Voer bijvoorbeeld `192.168.1.1` of `vpn.contoso.com` in.
+- **Cloudnaam van organisatie** (alleen Zscaler): Voer de naam in van de cloud waarin uw organisatie is ingericht. De URL waarmee u zich aanmeldt bij Zscaler bevat de naam.  
 - **Verificatiemethode**: kies hoe apparaten worden geverifieerd bij de VPN-server. 
-  - **Certificaten**: selecteer onder **Verificatiecertificaat** een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](../protect/certificates-configure.md) bevat enkele richtlijnen voor certificaatprofielen.
-  - **Gebruikersnaam en wachtwoord**: eindgebruikers moeten een gebruikersnaam en wachtwoord opgeven om zich aan te melden bij de VPN-server.  
+  - **Certificaten**: Selecteer onder **Verificatiecertificaat** een bestaand SCEP- of PKCS-certificaatprofiel om de verbinding te verifiëren. [Certificaten configureren](../protect/certificates-configure.md) bevat enkele richtlijnen voor certificaatprofielen.
+  - **Gebruikersnaam en wachtwoord**: Eindgebruikers moeten een gebruikersnaam en wachtwoord opgeven om zich aan te melden bij de VPN-server.  
 
     > [!NOTE]
     > Als gebruikersnaam en wachtwoord worden gebruikt als verificatiemethode voor Cisco IPsec VPN, moeten deze het SharedSecret bieden via een aangepast profiel voor de Apple Configurator.
 
   - **Afgeleide referentie**: gebruik een certificaat dat is afgeleid van de Smart Card van een gebruiker. Als er geen afgeleide referentie verlener is geconfigureerd, wordt u door intune gevraagd om er een toe te voegen. Zie [afgeleide referenties gebruiken in Microsoft intune](../protect/derived-credentials.md)voor meer informatie.
 
-- **Uitgesloten URL's** (alleen Zscaler): wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
+- **Uitgesloten URL's** (alleen Zscaler): Wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
 
-- **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
+- **Split tunneling**: U kunt deze optie **Inschakelen**  of **Uitschakelen** om apparaten op basis van het verkeer te laten bepalen welke verbinding moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
-- **VPN-id** (aangepaste VPN, Zscaler en Citrix): dit is een id voor de VPN-app die u gebruikt en wordt geleverd door uw VPN-provider.
-  - **Sleutel-/waardeparen voor de aangepaste VPN-kenmerken van uw organisatie invoeren**: voeg **sleutel-** en **waardeparen** toe of importeer deze om uw VPN-verbinding aan te passen. Deze waarden worden doorgaans aangeleverd door uw VPN-provider.
+- **VPN-id** (aangepaste VPN, Zscaler en Citrix): Dit is een id voor de VPN-app die u gebruikt en wordt verstrekt door uw VPN-provider.
+  - **Sleutel-/waardeparen voor de aangepaste VPN-kenmerken van uw organisatie invoeren**: Voeg **Sleutels** en **Waarden** toe of importeer deze om uw VPN-verbinding aan te passen. Deze waarden worden doorgaans aangeleverd door uw VPN-provider.
 
-- **Netwerktoegangsbeheer (NAC) inschakelen** (Citrix SSO, F5-toegang): Wanneer u **Ik ga akkoord** selecteert, wordt de apparaat-id opgenomen in het VPN-profiel. Deze id kan worden gebruikt voor verificatie bij de VPN om netwerktoegang toe te staan of te voorkomen.
+- **Netwerktoegangsbeheer (NAC) inschakelen** (Citrix SSO, F5 Access): Als u **Ik ga akkoord** kiest, wordt de apparaat-id opgenomen in het VPN-profiel. Deze id kan worden gebruikt voor verificatie bij de VPN om netwerktoegang toe te staan of te voorkomen.
 
   Zorg **bij het gebruik van F5-toegang** voor het volgende:
 
   - Bevestig dat u F5 BIG-IP 13.1.1.5 gebruikt. BIG-IP 14 wordt niet ondersteund.
-  - Integreer BIG-IP met Intune voor NAC. Zie F5-handleiding [Overzicht: APM configureren voor apparaatpostuurcontroles met eindpuntbeheersystemen](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+  - Integreer BIG-IP met Intune voor NAC. Zie de F5-handleiding [Overzicht: APM configureren voor apparaatpostuurcontroles met eindpuntbeheersystemen](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
   - NAC is ingeschakeld in het VPN-profiel.
 
   **Wanneer u Citrix SSO met Gateway gebruikt**, moet u ervoor zorgen dat:
@@ -138,6 +138,10 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
 
 - **Minimum TLS-versie bereik**: Voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1`of `1.2`in. Als dit veld leeg blijft, wordt de standaard waarde van `1.0` gebruikt.
 - **TLS-versie bereik maximum**: Voer de maximale TLS-versie in die u wilt gebruiken. Voer `1.0`, `1.1`of `1.2`in. Als dit veld leeg blijft, wordt de standaard waarde van `1.2` gebruikt.
+
+> [!NOTE]
+> Het minimum en maximum van het TLS-versie bereik moet worden ingesteld wanneer gebruikers verificatie en certificaten worden gebruikt.
+
 - **Perfect Forward Secrecy**: Selecteer **inschakelen** om PFS (Perfect Forward Secrecy) in te scha kelen. PFS is een IP-beveiligings functie die de impact vermindert als een sessie sleutel wordt aangetast. Met **uitschakelen** (standaard) wordt PFS niet gebruikt.
 - **Controle van certificaat intrekking**: Selecteer **inschakelen** om ervoor te zorgen dat de certificaten niet worden ingetrokken voordat de VPN-verbinding kan slagen. Deze controle is de beste inspanning. Als er een time-out optreedt voor de VPN-server voordat wordt vastgesteld of het certificaat is ingetrokken, wordt toegang verleend. **Uitschakelen** (standaard) controleert niet op ingetrokken certificaten.
 
@@ -156,7 +160,7 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard instelling is groeps `2`.
-  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaard waarde is `1440`.
+  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaardinstelling is `1440`.
 
 - **Een afzonderlijke set para meters voor onderliggende beveiligings koppelingen configureren**: met IOS kunt u afzonderlijke para meters voor de IKE-verbinding en eventuele onderliggende verbindingen configureren. 
 
@@ -175,26 +179,26 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard instelling is groeps `2`.
-  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaard waarde is `1440`.
+  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaardinstelling is `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-instellingen
 
-- **VPN per app**: hiermee schakelt u VPN per app in. Er kan dan automatisch een VPN-verbinding worden gemaakt wanneer bepaalde apps worden geopend. U kunt ook apps koppelen aan het VPN-profiel. VPN per app wordt niet ondersteund voor IKEv2. Voor meer informatie ziet u de [instructies voor het instellen van VPN per app voor iOS](vpn-setting-configure-per-app.md). 
-  - **Providertype**: alleen beschikbaar voor Pulse Secure en aangepaste VPN.
+- **VPN per app**: Hiermee schakelt u VPN per app in. Er kan dan automatisch een VPN-verbinding worden gemaakt wanneer bepaalde apps worden geopend. U kunt ook apps koppelen aan het VPN-profiel. VPN per app wordt niet ondersteund voor IKEv2. Voor meer informatie ziet u de [instructies voor het instellen van VPN per app voor iOS](vpn-setting-configure-per-app.md). 
+  - **Providertype**: Alleen beschikbaar voor Pulse Secure en aangepaste VPN.
   - Wanneer u in iOS **VPN-profielen voor individuele apps** gebruikt met Pulse Secure en een aangepaste VPN, kiest u voor tunnels op app-niveau (app-proxy) of op pakketniveau (pakkettunnel). Stel de waarde **ProviderType** in op **app-proxy** voor tunneling op app-niveau of **pakkettunnel** voor tunneling op pakketniveau. Als u niet zeker weet welke waarde u moet gebruiken, bekijkt u de documentatie van uw VPN-provider.
-  - **Safari-URL's die deze VPN activeren**: voeg een of meer website-URL's toe. Wanneer deze URL's worden bezocht via de Safari-browser op het apparaat, wordt er automatisch een VPN-verbinding ingesteld.
+  - **Safari-URL's waarmee dit VPN wordt geactiveerd**: Voeg een of meer website-URL's toe. Wanneer deze URL's worden bezocht via de Safari-browser op het apparaat, wordt er automatisch een VPN-verbinding ingesteld.
 
-- **On-demand VPN**: configureer voorwaardelijke regels om te bepalen wanneer de VPN-verbinding wordt gestart. Stel bijvoorbeeld een voorwaarde in waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een Wi-Fi-netwerk van het bedrijf is verbonden. Of maak een voorwaarde. Voorbeeld: de VPN-verbinding wordt niet gestart als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft.
+- **VPN op aanvraag**: Configureer voorwaardelijke regels om te bepalen wanneer de VPN-verbinding wordt gestart. Stel bijvoorbeeld een voorwaarde in waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een Wi-Fi-netwerk van het bedrijf is verbonden. Of maak een voorwaarde. Voorbeeld: de VPN-verbinding wordt niet gestart als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft.
 
-  - **SSID's of DNS-zoekdomeinen**: selecteer of voor deze voorwaarde het draadloze netwerk,  **SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies **Toevoegen** om een of meerdere SSID's of zoekdomeinen te configureren.
-  - **URL-tekenreekstest**: optioneel. Voer een URL die door de regel als een test wordt gebruikt. Als het apparaat zonder omleiding toegang wil verkrijgen tot deze URL, wordt de VPN-verbinding gestart. Het apparaat maakt dan verbinding met de doel-URL. De gebruiker ziet de tekenreekstestsite voor de URL niet.
+  - **SSID's of DNS-zoekdomeinen**: Selecteer of voor deze voorwaarde het draadloze netwerk,  **SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies **Toevoegen** om een of meerdere SSID's of zoekdomeinen te configureren.
+  - **URL-tekenreekstest**: Optioneel. Voer een URL die door de regel als een test wordt gebruikt. Als het apparaat zonder omleiding toegang wil verkrijgen tot deze URL, wordt de VPN-verbinding gestart. Het apparaat maakt dan verbinding met de doel-URL. De gebruiker ziet de tekenreekstestsite voor de URL niet.
 
     Een voorbeeld van een URL-tekenreekstest is een controlewebserver-URL die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Of de URL test of de VPN-verbinding kan maken met een site voordat u het apparaat verbindt met de doel-URL via de VPN-verbinding.
 .
-  - **Domeinactie**: kies een van de volgende items:
+  - **Domeinactie**: Kies een van de volgende items:
     - Verbinding maken indien nodig
     - Nooit verbinding maken
-  - **Actie**: kies een van de volgende items:
+  - **Actie**: Kies een van de volgende items:
     - Verbinden
     - Verbinding evalueren
     - Negeren
@@ -204,9 +208,9 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
 
 Als u een proxy gebruikt, configureert u de volgende instellingen. Proxyinstellingen zijn niet beschikbaar voor VPN-verbindingen van Zscaler.  
 
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld `http://proxy.contoso.com`) in die het configuratiebestand bevat.
-- **Adres**: voer het IP-adres van de volledig gekwalificeerde hostnaam van de proxyserver in.
-- **Poortnummer**: voer het poortnummer in dat is gekoppeld aan de proxyserver.
+- **Script voor automatische configuratie**: Gebruik een bestand om de proxyserver te configureren. Voer de **URL van de proxyserver** (bijvoorbeeld `http://proxy.contoso.com`) in die het configuratiebestand bevat.
+- **Adres**: Voer het IP-adres van de volledig gekwalificeerde hostnaam van de proxyserver in.
+- **Poortnummer**: Voer het poortnummer in dat is gekoppeld aan de proxyserver.
 
 ## <a name="next-steps"></a>Volgende stappen
 

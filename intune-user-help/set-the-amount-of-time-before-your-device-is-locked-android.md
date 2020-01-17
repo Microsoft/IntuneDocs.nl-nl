@@ -18,19 +18,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce0736845b1aca2f70b5c8802e726995ca18159b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 749bc2e7015bd43a811fae8de55169a3cfcc2999
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508259"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857927"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Instellen hoelang het duurt voordat uw apparaat wordt vergrendeld
 
 Om de gegevens op uw Android-apparaat beter te beveiligen, kan het ondersteuningsteam van het bedrijf beleid instellen waarvoor u de hoeveelheid tijd moeten opgeven die het apparaat inactief mag zijn voordat het automatisch wordt vergrendeld. Volg deze stappen om de hoeveelheid tijd op te geven waarna het apparaat wordt vergrendeld.
 
-1. Klik in de **Instellingen** van het apparaat op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
+1. In **Instellingen** op het apparaat klikt u op **Beveiliging** &gt; **Automatisch vergrendelen** (dit wordt op sommige apparaten weergegeven als **Telefoon vergrendelen na**).
 
 2. Geef de waarde voor de wachtwoordtime-out op.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
+ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810258"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75722603"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -54,17 +54,11 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
   - **Hoog** - Deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
   
 > [!NOTE] 
-> De volgende providers van de Mobile Threat verdediging (MTD) ondersteunen de implementaties van Android Enter prise-apparaten met behulp van app-configuratie:
-> - Better Mobile 
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Neem contact op met uw MTD-provider voor de exacte configuratie die nodig is voor de ondersteuning van Android Enter prise Device owner-platforms in intune. Deze lijst wordt bijgewerkt als MTD Parters ondersteuning bieden voor Android-scenario's voor bedrijfs eigen aars. 
+> Alle MTD-providers (Mobile Threat verdediging) worden ondersteund door de eigenaar van Android Enter prise-apparaten met behulp van app-configuratie. Neem contact op met uw MTD-provider voor de exacte configuratie die nodig is voor de ondersteuning van Android Enter prise Device owner-platforms in intune.
 
 #### <a name="google-play-protect"></a>Google Play Protect
 
-- **SafetyNet-apparaatattestation**: hiermee kunt u instellen aan welk integriteitsniveau voor [SafetyNet-attestation](https://developer.android.com/training/safetynet/attestation.html) het apparaat moet voldoen. Uw opties zijn:
+- **SafetyNet-attestation voor apparaat**: hiermee kunt u instellen aan welk integriteitsniveau voor [SafetyNet-attestation](https://developer.android.com/training/safetynet/attestation.html) het apparaat moet voldoen. Uw opties zijn:
   - **Niet geconfigureerd** (*standaard*) - Instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Basisintegriteit controleren**
   - **Basisintegriteit en gecertificeerde apparaten controleren**
@@ -73,15 +67,15 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 #### <a name="operating-system-version"></a>Versie van besturingssysteem
 
-- **Minimale versie van het besturingssysteem**: als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eind gebruiker kan het apparaat upgraden en vervolgens toegang krijgen tot de bronnen van de organisatie.
+- **Minimale versie van het besturingssysteem**: Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eind gebruiker kan het apparaat upgraden en vervolgens toegang krijgen tot de bronnen van de organisatie.
 
   *Standaard wordt er geen versie geconfigureerd*.
 
-- **Maximale versie van het besturingssysteem**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources totdat de regel wordt aangepast om de versie van het besturingssysteem toe te staan.
+- **Maximale versie van het besturingssysteem**: Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources totdat de regel wordt aangepast om de versie van het besturingssysteem toe te staan.
 
   *Standaard wordt er geen versie geconfigureerd*.
 
-- **Minimaal beveiligingspatchniveau** - Selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling JJJJ-MM-DD.
+- **Minimaal beveiligingspatchniveau**:  selecteer het oudste beveiligingspatchniveau dat een apparaat mag hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling JJJJ-MM-DD.
 
   *Standaard is er geen datum geconfigureerd*.
 
@@ -98,34 +92,34 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
     - **Standaard waarde voor apparaat** : als u wachtwoord compatibiliteit wilt evalueren, moet u een andere wachtwoord sterkte selecteren dan **standaard waarde**voor het apparaat.  
     - **Wachtwoord vereist, geen beperkingen**
     - **Zwakke biometrie** - [Sterke versus zwakke biometrie](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (hiermee wordt een Android-website geopend)
-    - **Numeriek** (*standaard*) - Het wachtwoord mag alleen uit getallen bestaan, zoals `123456789`. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+    - **Numeriek** (*standaard*): Het wachtwoord mag alleen uit getallen bestaan, bijvoorbeeld `123456789`. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
     - **Numeriek complex** - Herhaalde of opeenvolgende cijfers, zoals '1111' of '1234', zijn niet toegestaan. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
     - **Alfabetisch** - Letters uit het alfabet zijn vereist. Er zijn geen cijfers en symbolen vereist. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
     - **Alfanumeriek** - Dit zijn hoofdletters, kleine letters en numerieke tekens. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
     - **Alfanumeriek met symbolen** - Dit zijn hoofdletters, kleine letters, numerieke tekens, leestekens en symbolen. Voer ook in:
     
     Afhankelijk van het *wachtwoord type* dat u selecteert, zijn de volgende instellingen beschikbaar:  
-    - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in, tussen 4 en 16 tekens.  
+    - **Minimale wachtwoordlengte**: Voer de minimale lengte van het wachtwoord in, tussen 4 en 16 tekens.  
 
-    - **Het vereiste aantal tekens**: voer het aantal tekens in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal tekens**: Voer het aantal tekens in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
 
-    - **Het vereiste aantal kleine letters**: voer het aantal kleine letters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal kleine letters**: Voer het aantal kleine letters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
 
-    - **Het vereiste aantal hoofdletters**: voer het aantal hoofdletters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal hoofdletters**: Voer het aantal hoofdletters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
 
-    - **Het vereiste aantal andere tekens dan letters**: voer het aantal andere tekens dan alfabetische letters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal andere tekens dan letters**: Voer het aantal andere tekens dan alfabetische letters in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
 
-    - **Het vereiste aantal numerieke tekens**: voer het numerieke tekens (`1`, `2`, `3` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal numerieke tekens**: Voer het aantal numerieke tekens (`1`, `2`, `3` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
     
-    - **Het vereiste aantal symbolen**: voer het aantal symbolen (`&`, `#`, `%` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
+    - **Het vereiste aantal symbolen**: Voer het aantal symbolen (`&`, `#`, `%` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
  
-- **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren. De opties zijn de standaard waarde *niet geconfigureerd*en van *1 minuut* tot *8 uur*.
+- **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren. De opties zijn de standaard waarde *niet geconfigureerd*en van *1 minuut* tot *8 uur*.
 
 - **Het aantal dagen totdat het wachtwoord verloopt**: Voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd, tussen 1 en 365. Als u bijvoorbeeld wilt dat het wachtwoord na zestig dagen moet worden gewijzigd, voert u `60` in. Wanneer het wachtwoord is verlopen, wordt gebruikers gevraagd een nieuw wachtwoord te maken.
 
    *Standaard is er geen waarde geconfigureerd*.
 
-- **Het vereiste aantal wachtwoorden voordat de gebruiker een wachtwoord opnieuw kan gebruiken**: voer het aantal recente wachtwoorden in dat niet opnieuw mag worden gebruikt, tussen 1 en 24. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.  
+- **Het vereiste aantal wachtwoorden voordat de gebruiker een wachtwoord opnieuw kan gebruiken**: Voer het aantal recente wachtwoorden in dat niet opnieuw mag worden gebruikt, tussen 1 en 24. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.  
 
     *Standaard wordt er geen versie geconfigureerd*.
 
@@ -161,9 +155,9 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
   
 - **Bijgewerkte beveiligingsprovider**: 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
-  - **vereisen** - Vereisen dat het apparaat tegen bekende beveiligingsproblemen wordt beveiligd door een actuele beveiligingsprovider. 
+  - **Vereisen** - Vereisen dat het apparaat tegen bekende beveiligingsproblemen wordt beveiligd door een actuele beveiligingsprovider. 
   
-- **SafetyNet-apparaatattestation**: hiermee kunt u instellen aan welk integriteitsniveau voor [SafetyNet-attestation](https://developer.android.com/training/safetynet/attestation.html) het apparaat moet voldoen. Uw opties zijn:
+- **SafetyNet-attestation voor apparaat**: hiermee kunt u instellen aan welk integriteitsniveau voor [SafetyNet-attestation](https://developer.android.com/training/safetynet/attestation.html) het apparaat moet voldoen. Uw opties zijn:
   - **Niet geconfigureerd** (*standaard*) - Instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Basisintegriteit controleren**
   - **Basisintegriteit en gecertificeerde apparaten controleren**
@@ -175,11 +169,11 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 #### <a name="operating-system-version"></a>Versie van besturingssysteem
 
-- **Minimale versie van het besturingssysteem**: als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt het gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eind gebruiker kan het apparaat upgraden en vervolgens toegang krijgen tot de bronnen van de organisatie.
+- **Minimale versie van het besturingssysteem**: Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eind gebruiker kan het apparaat upgraden en vervolgens toegang krijgen tot de bronnen van de organisatie.
 
   *Standaard wordt er geen versie geconfigureerd*.
 
-- **Maximale versie van het besturingssysteem**: wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources totdat de regel wordt aangepast om de versie van het besturingssysteem toe te staan.
+- **Maximale versie van het besturingssysteem**: Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources totdat de regel wordt aangepast om de versie van het besturingssysteem toe te staan.
 
   *Standaard wordt er geen versie geconfigureerd*.
 
@@ -194,20 +188,20 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 - **Vereist wachtwoordtype**: kies of een wachtwoord alleen numerieke tekens mag bevatten of ook een combinatie van cijfers en andere tekens. Uw opties zijn:
   - **Standaardwaarde apparaat**
   - **Lage beveiligingsbiometrie**
-  - **Minstens numeriek** (*standaard*) - Voer de **minimale wachtwoordlengte** in die een gebruiker moet opgeven (tussen 4 en 16 tekens).
-  - **Complex numeriek** (standaard): voer de **minimale wachtwoordlengte** in die een gebruiker moet opgeven (tussen 4 en 16 tekens).
-  - **Minstens alfabetisch** (standaard): voer de **minimale wachtwoordlengte** in die een gebruiker moet opgeven (tussen 4 en 16 tekens).
-  - **Minstens alfanumeriek** (standaard): voer de **minimale wachtwoordlengte** in die een gebruiker moet opgeven (tussen 4 en 16 tekens).
-  - **Minstens alfanumeriek met symbolen**: voer de **minimale wachtwoordlengte** in die een gebruiker moet opgeven (tussen 4 en 16 tekens).
+  - **Ten minste numeriek** (*standaard*): Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Complex numeriek**: Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Ten minste alfabetisch**: Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Ten minste alfanumeriek**: Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
+  - **Ten minste alfanumeriek met symbolen**: Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
 
   Afhankelijk van het *wachtwoord type* dat u selecteert, zijn de volgende instellingen beschikbaar:  
-  - **Maximum aantal minuten van inactiviteit voordat wachtwoord is vereist**: geef aan na hoeveel niet-actieve tijd de gebruiker het wachtwoord opnieuw moet invoeren. De opties zijn de standaard waarde *niet geconfigureerd*en van *1 minuut* tot *8 uur*.
+  - **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren. De opties zijn de standaard waarde *niet geconfigureerd*en van *1 minuut* tot *8 uur*.
 
   - **Het aantal dagen totdat het wachtwoord verloopt**: Voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd, tussen 1 en 365. Als u bijvoorbeeld wilt dat het wachtwoord na zestig dagen moet worden gewijzigd, voert u `60` in. Wanneer het wachtwoord is verlopen, wordt gebruikers gevraagd een nieuw wachtwoord te maken.
 
-  - **Minimale wachtwoordlengte**: voer de minimale lengte van het wachtwoord in, tussen 4 en 16 tekens. 
+  - **Minimale wachtwoordlengte**: Voer de minimale lengte van het wachtwoord in, tussen 4 en 16 tekens. 
   
-  - **Aantal vorige wachtwoorden om hergebruik te voorkomen**: geef het aantal recente wachtwoorden op dat niet opnieuw mag worden gebruikt. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.
+  - **Aantal eerdere wachtwoorden dat niet opnieuw mag worden gebruikt**: voer het aantal recente wachtwoorden in dat niet opnieuw mag worden gebruikt. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.
 
 #### <a name="encryption"></a>Versleuteling
 
@@ -244,7 +238,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
   U hoeft deze instelling niet te configureren omdat USB-foutopsporing altijd al is uitgeschakeld op apparaten met Android Enterprise.
 
-- **Minimaal beveiligingspatchniveau** - Selecteer het oudste beveiligingspatchniveau dat een apparaat kan hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling JJJJ-MM-DD.
+- **Minimaal beveiligingspatchniveau**:  selecteer het oudste beveiligingspatchniveau dat een apparaat mag hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling JJJJ-MM-DD.
 
   *Standaard is er geen datum geconfigureerd*.
 

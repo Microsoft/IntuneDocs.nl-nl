@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4a9454d11fd1209e715cbcb1e9d2ce7aae4a003c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73635470"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886056"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 
@@ -84,14 +84,14 @@ U kunt op macOS-apparaten een apparaatconfiguratieprofiel maken (**Apparaatconfi
 Zie [Instellingen van macOS-apparaatfuncties](../configuration/macos-device-features-settings.md) voor het bekijken van deze instellingen.
 
 #### <a name="configure-wifi-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode--3041940----"></a>Wi-Fi configureren op aan de apparaateigenaar toegewezen Android Enterprise-apparaten die worden uitgevoerd in de kioskmodus voor meerdere apps<!--3041940  -->
-U kunt de instellingen voor Android Enterprise-apparaateigenaar inschakelen wanneer deze als toegewezen apparaat in kioskmodus voor meerdere apps wordt uitgevoerd. In deze update kunt u gebruikers in staat stellen om Wi-Fi-netwerken te configureren en ermee verbinding te maken (**Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** als platform > **Alleen apparaateigenaar, Apparaatbeperkingen** als profieltype >  **Toegewezen apparaten** > **Kioskmodus**: **Multi-app** > **Wifi-configuratie**).
+U kunt de instellingen voor Android Enterprise-apparaateigenaar inschakelen wanneer deze als toegewezen apparaat in kioskmodus voor meerdere apps wordt uitgevoerd. In deze update kunt u gebruikers in staat stellen om Wi-Fi-netwerken te configureren en ermee verbinding te maken (**Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** als platform > **Alleen apparaateigenaar, Apparaatbeperkingen** als profieltype >  **Toegewezen apparaten** > **Kioskmodus**: **Voor meerdere apps** > **Wi-Fi-configuratie**).
 
 Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken](../configuration/device-restrictions-android-for-work.md) als u alle configureerbare instellingen wilt bekijken.
 
 Van toepassing op: aan Android Enterprise toegewezen apparaten die worden uitgevoerd in de kioskmodus voor meerdere apps
 
 #### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode---3041941----"></a>Bluetooth en koppelen configureren op aan apparaateigenaar toegewezen Android Enterprise-apparaten die worden uitgevoerd in de kioskmodus voor meerdere apps<!-- 3041941  -->
-U kunt de instellingen voor Android Enterprise-apparaateigenaar inschakelen wanneer deze als toegewezen apparaat in kioskmodus voor meerdere apps wordt uitgevoerd. In deze update kunt u gebruikers toestaan om Bluetooth in te schakelen en via Bluetooth apparaten te koppelen (**Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** als platform > **Alleen apparaateigenaar, Apparaatbeperkingen** als profieltype >  **Toegewezen apparaten** > **Kioskmodus**: **Multi-app** > **Bluetooth-configuratie**).
+U kunt de instellingen voor Android Enterprise-apparaateigenaar inschakelen wanneer deze als toegewezen apparaat in kioskmodus voor meerdere apps wordt uitgevoerd. In deze update kunt u gebruikers toestaan om Bluetooth in te schakelen en via Bluetooth apparaten te koppelen (**Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Android Enterprise** als platform > **Alleen apparaateigenaar, Apparaatbeperkingen** als profieltype >  **Toegewezen apparaten** > **Kioskmodus**: **Voor meerdere apps** > **Bluetooth-configuratie**).
 
 Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken](../configuration/device-restrictions-android-for-work.md) als u alle configureerbare instellingen wilt bekijken.
 
@@ -116,7 +116,7 @@ Op Android Enterprise-apparaten kunt u een profiel voor apparaatbeperking maken 
 
 Deze update bevat nieuwe wachtwoordinstellingen, verleent volledige toegang tot apps in de Google Play Store voor volledig beheerde apparaten enzovoort. Ga naar [Met Android Enterprise-apparaatinstellingen functies toestaan of beperken](../configuration/device-restrictions-android-for-work.md) voor de huidige lijst met instellingen. 
 
-Van toepassing op: volledig beheerde Android Enterprise-apparaten
+Van toepassing op: Volledig beheerde Android Enterprise-apparaten
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---"></a>Controleren of er zich een TPM-chipset in een nalevingsbeleid voor Windows 10-apparaten bevindt<!-- 3617671 -->
 
@@ -127,7 +127,7 @@ Wanneer u een apparaatconfiguratieprofiel maakt, kunt u Microsoft Edge-functies 
 
 Als u deze functies wilt bekijken, gaat u naar [Apparaatbeperkingsinstellingen voor de Microsoft Edge-browser](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).
 
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="expanded-support-for-android-enterprise-fully-managed-devices--preview-----3903241-3903244-3903246-----"></a>Uitgebreide ondersteuning voor volledig beheerde Android Enterprise-apparaten (preview)<!--   3903241, 3903244, 3903246   -->
 Wij hebben onze ondersteuning, die nog steeds in openbare preview is, uitgebreid voor volledig beheerde Android Enterprise-apparaten (voor het eerst aangekondigd in januari 2019) en het volgende erin opgenomen:
@@ -235,7 +235,7 @@ U kunt op Windows 10-apparaten en hoger een apparaat in de kioskmodus uitvoeren 
 
 Zie [Instellingen van Windows 10-apparaten en hoger die als kiosk moet worden uitgevoerd in Intune](../configuration/kiosk-settings-windows.md) voor een lijst en een beschrijving van alle kioskinstellingen.
 
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="operational-logs-also-show-details-on-non-compliant-devices---4063755----"></a>Operationele logboeken geven ook details weer over niet-compatibele apparaten<!-- 4063755  -->
 Wanneer u Intune-logboeken naar Azure Monitor-functies stuurt, kunt u tevens de operationele logboeken sturen. In deze update bieden de operationele logboeken ook informatie over niet-compatibele apparaten.
@@ -297,7 +297,7 @@ Alleen-lezentoegang tot Intune-controlegegevens:
 
 Alleen-lezentoegang tot alle Intune-gegevens:
 
-- Beveiligingsbeheerder
+- Beveiligingsbeheer
 - Beveiligingsoperator
 - Beveiligingslezer
 
@@ -354,7 +354,7 @@ Wanneer u een PowerShell-script aan een apparaatconfiguratieprofiel toevoegt, wo
 
 Zie [PowerShell-scripts in Intune](../apps/intune-management-extension.md) voor meer details over het gebruik van PowerShell.
 
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="macos-users-are-prompted-to-update-their-password---1873216---"></a>macOS-gebruikers wordt gevraagd hun wachtwoord bij te werken<!-- 1873216 -->
 In Intune wordt de instelling **ChangeAtNextAuth** afgedwongen op macOS-apparaten. Deze instelling heeft gevolgen voor eindgebruikers en apparaten met wachtwoordbeleid voor naleving of wachtwoordprofielen voor apparaatbeperkingen. Eindgebruikers wordt eenmalig gevraagd hun wachtwoord bij te werken. Dit gebeurt wanneer een gebruiker voor het eerst een taak uitvoert die moet worden geverifieerd, zoals het aanmelden bij het apparaat. Gebruikers kunnen ook worden gevraagd hun wachtwoord bij te werken wanneer zij iets doen waarvoor beheerdersrechten zijn vereist, zoals het aanvragen van sleutelhangertoegang.
@@ -394,7 +394,7 @@ Ga voor een lijst met deze instellingen naar:
 - [Microsoft Edge Browser-apparaatbeperkingen](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
 - [Apparaatbeperkingen voor favorieten en zoeken](../configuration/device-restrictions-windows-10.md##favorites-and-search)
 
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="new-device-restriction-settings-for-ios-and-macos-devices---3448774-----"></a>Nieuwe apparaatbeperkingsinstellingen voor iOS- en macOS-apparaten<!-- 3448774   -->
 U kunt een aantal instellingen en functies beperken op apparaten waarop iOS en macOS worden uitgevoerd (**Apparaatconfiguratie** > **Profielen** > **Nieuw profiel** > **iOS** of **macOS** voor platform > **Apparaatbeperkingen** voor profieltype). Met deze update worden meer functies en instellingen toegevoegd die u kunt beheren, waaronder het instellen van schermtijd, het wijzigen van eSIM-instellingen en mobiele abonnementen en meer op iOS-apparaten. Andere functies zijn het vertragen van de zichtbaarheid voor de gebruiker van software-updates en het blokkeren van cacheopslag van inhoud op macOS-apparaten.
@@ -438,7 +438,7 @@ U kunt **Beperkingen inschakelen bij de apparaatinstellingen** op iOS-apparaten 
 Het gedrag blijft hetzelfde. Specifiek:
 
 - iOS 11.4.1 en eerder: **Blokkeren** voorkomt dat eindgebruikers hun eigen beperkingen kunnen instellen bij de apparaatinstellingen. 
-- iOS 12.0 en later: **Blokkeren** voorkomt dat eindgebruikers hun eigen **Schermtijd** kunnen instellen bij de apparaatinstellingen, waaronder inhouds- en privacybeperkingen. Op apparaten die naar iOS 12.0 zijn geüpgraded is het tabblad Beperkingen niet meer zichtbaar bij de apparaatinstellingen. Deze instellingen vindt u onder **Schermtijd**. 
+- iOS 12.0 en hoger: **Blokkeren** voorkomt dat eindgebruikers hun eigen **Schermtijd** kunnen instellen bij de apparaatinstellingen, waaronder inhouds- en privacybeperkingen. Op apparaten die naar iOS 12.0 zijn geüpgraded is het tabblad Beperkingen niet meer zichtbaar bij de apparaatinstellingen. Deze instellingen vindt u onder **Schermtijd**. 
 
 Zie [Beperkingen voor iOS-apparaten](../configuration/device-restrictions-ios.md#general) voor een lijst met de instellingen.
 
@@ -540,7 +540,7 @@ Beheersjablonen in Intune (**Apparaatconfiguratie** > **Beheersjablonen**) zijn 
 
 Ga naar [Windows 10 templates to configure group policy settings](../configuration/administrative-templates-windows.md) (Windows 10-sjablonen voor het configureren van instellingen voor groepsbeleid) voor meer informatie over deze functie.
 
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user---1333642---"></a>S/MIME gebruiken om meerdere apparaten van een gebruiker te versleutelen en ondertekenen<!-- 1333642 -->
 Deze update bevat een S/MIME-e-mailversleuteling met een nieuw profiel voor een geïmporteerd certificaat (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > selecteer het platform > profieltype **Geïmporteerd PKCS-certificaat**). In Intune kunt u certificaten importeren in PFX-indeling. Intune kan deze certificaten dan leveren aan meerdere apparaten die zijn geregistreerd door één gebruiker. Dit omvat ook:
@@ -550,12 +550,12 @@ Deze update bevat een S/MIME-e-mailversleuteling met een nieuw profiel voor een 
 - Op andere platformen moet u mogelijk de mail-app handmatig configureren om S/MIME in te schakelen.  
 - E-mail-apps die ondersteuning bieden voor S/MIME-versleuteling, kunnen het ophalen van certificaten voor S/MIME-e-mailversleuteling verwerken op een manier die een MDM niet kan ondersteunen, zoals het lezen van het certificaatarchief van de uitgever.
 Zie [S/MIME overview to sign and encrypt email](../protect/certificates-s-mime-encryption-sign.md) (S/MIME voor e-mailondertekening en -versleuteling) voor meer informatie over deze functie.
-Wordt ondersteund op: Windows, Windows Phone 10, macOS, iOS, Android
+Ondersteund in: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices---1333665-2999078---"></a>Nieuwe opties om automatisch verbinding te maken en regels te behouden met DNS-instellingen in Windows 10 en hoger<!-- 1333665, 2999078 -->
 Op apparaten met Windows 10 en hoger kunt u een VPN-configuratieprofiel maken dat een lijst DNS-servers bevat om domeinen om te zetten, zoals contoso.com. Deze update bevat nieuwe instellingen voor naamomzetting: (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > kies **Windows 10 en hoger** als platform > kies **VPN** als profieltype > **DNS-instellingen** >**Toevoegen**): 
-- **Automatisch verbinden**: wanneer dit is **ingeschakeld**, maakt het apparaat automatisch verbinding met VPN wanneer een apparaat een domein oproept dat u invoert, bijvoorbeeld contoso.com.
-- **Permanent**: standaard zijn alle tabelregels voor Naamomzettingsbeleid (NRPT) actief zolang het apparaat is verbonden met behulp van dit VPN-profiel. Wanneer deze instelling is **ingeschakeld** voor een NRPT-regel, blijft de regel actief op het apparaat, zelfs wanneer de VPN-verbinding wordt verbroken. De regel blijft totdat het VPN-profiel is verwijderd of totdat de regel handmatig wordt verwijderd, wat mogelijk is met behulp van PowerShell.
+- **Automatisch verbinding maken**: Als deze optie is **ingeschakeld**, maakt het apparaat automatisch verbinding met VPN wanneer een apparaat een domein oproept dat u invoert, bijvoorbeeld contoso.com.
+- **Permanent**: Standaard zijn alle NRPT-tabelregels voor Naamomzettingsbeleid (NRPT) actief zolang het apparaat is verbonden met behulp van dit VPN-profiel. Wanneer deze instelling is **ingeschakeld** voor een NRPT-regel, blijft de regel actief op het apparaat, zelfs wanneer de VPN-verbinding wordt verbroken. De regel blijft totdat het VPN-profiel is verwijderd of totdat de regel handmatig wordt verwijderd, wat mogelijk is met behulp van PowerShell.
 In [Windows 10 VPN-instellingen](../configuration/vpn-settings-windows-10.md) worden instellingen beschreven.
 
 #### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices---1500165---"></a>Detectie van vertrouwde netwerken gebruiken voor VPN-profielen in Windows 10-apparaten<!-- 1500165 -->
@@ -607,7 +607,7 @@ U vindt altijd ingeschakelde VPN in **Apparaatconfiguratie** > **Profielen** > *
 #### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices---3285177---"></a>Nieuwe instelling om processen in Taakbeheer in Windows 10-apparaten te beëindigen<!-- 3285177 --> 
 Deze update omvat een nieuwe instelling om processen via Taakbeheer in Windows 10-apparaten te beëindigen. Met behulp van een apparaatconfiguratieprofiel (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Windows 10** > in **Profieltype** kiest u **Apparaatbeperkingen** > **Algemene** instellingen) kunt u deze instellingen toestaan of blokkeren.
 Ga naar [Apparaatbeperkingsinstellingen voor Windows 10-apparaten](../configuration/device-restrictions-windows-10.md) als u de instellingen wilt bekijken.
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview---2055484-----"></a>Door Microsoft aanbevolen instellingen gebruiken met beveiligingsbasislijnen (openbare preview)<!-- 2055484   -->
 
@@ -617,7 +617,7 @@ Deze functie is beschikbaar als openbare preview, dus alle profielen die nu word
 
 Zie [Een Windows 10-beveiligingsbasislijn maken in Intune](../protect/security-baselines-monitor.md) voor meer informatie over beveiligingsbasislijnen.
 
-Deze functie is van toepassing op: Windows 10 en later
+Deze functie is van toepassing op: Windows 10 en hoger
 
 #### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>Niet-beheerders kunnen BitLocker gebruiken op Windows 10-apparaten die zijn gekoppeld aan Azure AD<!-- 2147379   -->
 Wanneer u BitLocker-instellingen op Windows 10-apparaten inschakelt (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** als platform en **Endpoint Protection** als profieltype > **Windows-versleuteling**), voegt u BitLocker-instellingen toe.
@@ -627,13 +627,13 @@ Deze update bevat een nieuwe BitLocker-instellingen waarmee standaardgebruikers 
 Ga naar [Instellingen voor de beveiliging van eindpunten voor Windows 10](../protect/endpoint-protection-windows-10.md#windows-encryption) om de instellingen te bekijken.
 
 #### <a name="check-for-configuration-manager-compliance---2192052--eepublished----"></a>Controleren op Configuration Manager-compatibiliteit<!-- 2192052  eepublished  -->
-Deze update bevat een nieuwe instelling voor System Center Configuration Manager-compatibiliteit (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Windows 10 en hoger** > **Configuration Manager-compatibiliteit**). Configuration Manager verzendt signalen naar Intune-naleving. Met deze instelling kunt u vereisen dat alle Configuration Manager-signalen de waarde 'compatibel' retourneren.
+Deze update bevat een nieuwe instelling voor Configuration Manager-compatibiliteit (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Windows 10 en hoger** > **Configuration Manager-compatibiliteit**). Configuration Manager verzendt signalen naar Intune-naleving. Met deze instelling kunt u vereisen dat alle Configuration Manager-signalen de waarde 'compatibel' retourneren.
 
 U kunt bijvoorbeeld vereisen dat alle software-updates worden geïnstalleerd op apparaten. Deze vereiste heeft in Configuration Manager de status 'Geïnstalleerd'. Als programma's op het apparaat een onbekende status hebben, is het apparaat niet-compatibel in Intune.
 
 In [Configuration Manager-compatibiliteit](../protect/compliance-policy-create-windows.md#configuration-manager-compliance) wordt deze instelling beschreven.
 
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile---2809324-----"></a>Achtergronden op iOS-apparaten die onder toezicht staan aanpassen met behulp van een apparaatconfiguratieprofiel<!-- 2809324   -->
 Wanneer u een apparaatconfiguratieprofiel voor iOS-apparaten maakt, kunt u sommige functies aanpassen (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatfuncties** voor profieltype). Deze update bevat nieuwe **achtergrond**instellingen waarmee een beheerder een .png-, .jpg- of .jpeg-afbeelding op het startscherm of het vergrendelingsscherm kan gebruiken. Deze achtergrondinstellingen zijn alleen van toepassing op apparaten die onder supervisie staan. 
@@ -695,7 +695,7 @@ Intune beschikt over ingebouwde logboekregistratie waarmee gebeurtenissen worden
 In [Logboekgegevens verzenden naar Storage, Event Hubs of Log Analytics in Intune](../review-logs-using-azure-monitor.md) vindt u meer informatie over deze functie.
 
 #### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device---2687509----"></a>Meer Setup Assistant-schermen overslaan op een iOS-DEP-apparaat<!-- 2687509  -->
-Naast de schermen die u momenteel kunt overslaan, kunt u iOS-DEP-apparaten zo instellen dat de volgende schermen in Setup Assistant worden overgeslagen wanneer een gebruiker een apparaat registreert: Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
+Naast de schermen die u op dit moment kunt overslaan, kunt u instellen dat iOS DEP-apparaten de volgende schermen in de Setup-assistent overslaan wanneer een gebruiker het apparaat registreert: Weergavetoon, Privacy, Android-migratie, Startknop, iMessage en FaceTime, Onboarding, Migratie weergeven, Weergave, Schermtijd, Software-update, SIM-installatie.
 Als u wilt kiezen welke schermen moeten worden overgeslagen, gaat u naar **Apparaatinschrijving** > **Apple-inschrijving** > **Tokens voor inschrijvingsprogramma** > kies een token > **Profielen** > kies een profiel > **Eigenschappen** > **Setup Assistant aanpassen** > kies **Verbergen** voor schermen die u wilt overslaan > **OK**.
 Als u een nieuw profiel maakt of een profiel bewerkt, moeten de geselecteerde skip-schermen worden gesynchroniseerd met de Apple MDM-server. Gebruikers kunnen de opdracht tot een handmatige synchronisatie van de apparaten geven, zodat er geen vertraging in het ophalen van de profielwijzigingen is.
 
@@ -762,7 +762,7 @@ U kunt nu de volgende apps beheren met [Intune-beveiligingsbeleid voor apps](../
 - PowerApps (Android, iOS)
 - Flow (Android, iOS)
 
-Gebruik beveiligingsbeleid voor apps om zakelijke gegevens te beschermen en gegevensoverdracht voor deze apps te controleren, zoals voor andere door beleid beheerde Intune-apps. Opmerking: als Flow nog niet zichtbaar is in de console, voegt u Flow toe wanneer u app-beveiligingsbeleid maakt of bewerkt. Gebruik hiervoor de optie **+ Meer apps** en geef vervolgens de *App-ID* voor Flow op in het invoerveld. Gebruik voor Android *com.microsoft.flow* en voor iOS *com.microsoft.procsimo*.
+Gebruik beveiligingsbeleid voor apps om zakelijke gegevens te beschermen en gegevensoverdracht voor deze apps te controleren, zoals voor andere door beleid beheerde Intune-apps. Opmerking: Als Flow nog niet zichtbaar is in de console, voegt u Flow toe wanneer u app-beveiligingsbeleid maakt of bewerkt. Gebruik hiervoor de optie **+ Meer apps** en geef vervolgens de *App-ID* voor Flow op in het invoerveld. Gebruik voor Android *com.microsoft.flow* en voor iOS *com.microsoft.procsimo*.
 
 
 ### <a name="device-configuration"></a>Apparaatconfiguratie
@@ -790,16 +790,16 @@ Raadpleeg [Delivery Optimization-instellingen voor Windows 10 (en hoger)](../con
 Deze update bevat nieuwe instellingen voor uw iOS- en macOS-apparaten die zijn uitgebracht met iOS 12:
 
 **iOS-instellingen**: 
-- Algemeen: Verwijdering van apps blokkeren (alleen onder supervisie)
-- Algemeen: Beperkte USB-modus blokkeren (alleen onder supervisie)
-- Algemeen: Automatisch datum en tijd afdwingen (alleen onder supervisie)
-- Wachtwoord: Automatisch doorvoeren van wachtwoorden blokkeren (alleen onder supervisie)
-- Wachtwoord: Aanvragen voor wachtwoordnabijheid blokkeren (alleen onder supervisie)
-- Wachtwoord: Delen van wachtwoorden blokkeren (alleen onder supervisie)
+- Algemeen: verwijdering van apps blokkeren (alleen onder supervisie)
+- Algemeen: beperkte USB-modus blokkeren (alleen onder supervisie)
+- Algemeen: automatisch datum en tijd afdwingen (alleen onder supervisie)
+- Wachtwoord: automatisch wachtwoorden doorvoeren blokkeren (alleen onder supervisie)
+- Wachtwoord: aanvragen voor wachtwoordnabijheid blokkeren (alleen onder supervisie)
+- Wachtwoord: wachtwoorden delen blokkeren (alleen onder supervisie)
 
 **macOS-instellingen**: 
 - Wacht woord: wacht woord automatisch door voeren blok keren
-- Wachtwoord: Aanvragen voor wachtwoordnabijheid blokkeren
+- Wachtwoord: aanvragen voor wachtwoordnabijheid blokkeren
 - Wacht woord: wacht woord delen blok keren
 
 Voor meer informatie over deze instellingen, zie apparaatbeperkingsinstellingen voor [iOS](../configuration/device-restrictions-ios.md) en [macOS](../configuration/device-restrictions-macos.md).
@@ -896,7 +896,7 @@ U kunt de problemen met de installatie van client-apps oplossen door de kolom me
 #### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>DNS-achtervoegsels maken in VPN-configuratieprofielen op apparaten met Windows 10<!-- 1333668 -->
 Wanneer u een VPN-apparaatconfiguratieprofiel maakt (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10 en hoger** platform > **VPN** profieltype), voert u bepaalde DNS-instellingen in. Met deze update kunt u ook meerdere **DNS-achtervoegsels** in Intune invoeren. Wanneer u DNS-achtervoegsels gebruikt, kunt u naar een netwerkbron zoeken met behulp van de korte naam, in plaats van met de Fully Qualified Domain Name (FQDN). Met deze update kunt u ook de volgorde van de DNS-achtervoegsels in Intune wijzigen.
 In [VPN-instellingen voor Windows 10](../configuration/vpn-settings-windows-10.md#dns-settings) worden de huidige DNS-instellingen vermeld.
-Dit is van toepassing op: Windows 10-apparaten
+Van toepassing op: Windows 10-apparaten
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles---1333705---"></a>Ondersteuning voor altijd ingeschakelde VPN voor Android Enterprise-werkprofielen<!-- 1333705 -->
 In deze update kunt u ingeschakelde VPN-verbindingen gebruiken op Android Enterprise-apparaten met beheerde werkprofielen. Altijd ingeschakelde VPN-verbindingen blijven verbonden en maken direct opnieuw verbinding wanneer gebruikers hun apparaat ontgrendelen, het apparaat opnieuw wordt opgestart of het draadloze netwerk wordt gewijzigd. U kunt de verbinding ook in de vergrendelingsmodus zetten. Hiermee wordt al het netwerkverkeer geblokkeerd totdat de VPN-verbinding actief is.
@@ -937,7 +937,7 @@ Nieuwe apparaatcertificaatvariabelen:
 
 In [Een SCEP-certificaatprofiel maken](../protect/certificates-profile-scep.md#create-a-scep-certificate-profile) worden de huidige variabelen bij het maken van een SCEP-configuratieprofiel vermeld. 
 
-Is van toepassing op: Windows 10 en hoger en iOS, wordt ondersteund voor Wi-Fi
+Van toepassing op: Windows 10 en hoger en iOS worden ondersteund voor wifi
 
 #### <a name="remotely-lock-uncompliant-devices---2064495---"></a>Niet-compatibele apparaten op afstand vergrendelen<!-- 2064495 -->
 Wanneer een apparaat niet compatibel is, kunt u een actie maken voor het nalevingsbeleid waarbij het apparaat op afstand wordt vergrendeld. Maak in Intune > **Apparaatcompatibiliteit** een nieuw beleid of selecteer een bestaand beleid > **Eigenschappen**. Selecteer **Acties voor niet-naleving** > **Toevoegen** en kies ervoor om het apparaat op afstand te vergrendelen.
@@ -953,7 +953,7 @@ Deze update bevat de volgende verbeteringen voor het apparaatconfiguratieprofiel
 - Momenteel kunt u meerdere kioskprofielen op hetzelfde apparaat maken. Met deze update biedt Intune ondersteuning voor slechts één kioskprofiel per apparaat. Als u toch meerdere kioskprofielen op één apparaat wilt, kunt u een aangepaste URI gebruiken.
 - In het profiel voor een **kiosk voor meerdere apps** kunt u de tegelgrootte en volgorde voor toepassingen selecteren voor de **opmaak van het menu Start** in het toepassingenraster. Als u meer aanpassingen wilt aanbrengen, kunt u verdergaan met het uploaden van een XML-bestand.
 - De instellingen voor de kioskbrowser worden verplaatst naar de **kiosk**instellingen. Momenteel hebben de instellingen voor de **kioskwebbrowser** hun eigen categorie in Azure Portal.
-Van toepassing op Windows 10 en hoger
+Van toepassing op: Windows 10 en hoger
 
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device----2637704----"></a>Pincode vragen bij het wijzigen van vingerafdrukken of Face ID op een iOS-apparaat <!-- 2637704  -->
 Gebruikers wordt nu gevraagd om een pincode na het doorvoeren van biometrische wijzigingen op hun iOS-apparaat. Dit gebeurt ook bij wijzigingen in de geregistreerde gegevens voor Touch ID of Face ID. De timing van dit verzoek is afhankelijk van de configuratie van de time-out die is ingesteld bij *De toegangsvereisten opnieuw controleren na (minuten)* .  Als er geen pincode is ingesteld, wordt de gebruiker gevraagd om dit te doen. 
@@ -980,7 +980,7 @@ PowerShell-scripts in Intune kunnen worden gericht op AAD-apparaatbeveiligingsgr
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Nieuwe standaardwaarde voor ‘Vereist wachtwoordtype’ voor Android, Android Enterprise<!-- 2649963 -->
 Wanneer u een nieuw nalevingsbeleid maakt (**Intune** > **Apparaatnaleving** > **Beleid** > **Beleid maken** > **Android** of **Android enterprise** voor platform > Systeembeveiliging), verandert de standaardwaarde voor **Vereist wachtwoordtype**:
 
-Van: Standaardwaarde voor apparaat in: Ten minste numeriek
+Van: Standaardwaarde apparaat: Ten minste numeriek
 
 Van toepassing op: Android, Android Enterprise
 
@@ -1130,7 +1130,7 @@ Automatische updates voor apps worden gebruikt voor apps voor zowel gelicentieer
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
 #### <a name="windows-hello-will-target-users-and-devices---1106609---"></a>Windows Hello is gericht op gebruikers en apparaten<!-- 1106609 -->
-Wanneer u een beleid voor [Windows Hello voor Bedrijven](../protect/windows-hello.md) maakt, geldt dit voor alle gebruikers binnen de organisatie (tenant-breed). Met deze update kan het beleid ook worden toegepast op specifieke gebruikers of specifieke apparaten met behulp van een beleid voor apparaatconfiguratie (**Apparaatconfiguratie** > **Profielen**  >  **Profiel maken** > **Identiteitsbescherming** > **Windows Hello voor Bedrijven**).
+Wanneer u een beleid voor [Windows Hello voor Bedrijven](../protect/windows-hello.md) maakt, geldt dit voor alle gebruikers binnen de organisatie (tenant-breed). Met deze update kan het beleid ook worden toegepast op specifieke gebruikers of specifieke apparaten met behulp van een beleid voor apparaatconfiguratie (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Identiteitsbescherming** > **Windows Hello voor Bedrijven**).
 In Intune in Azure Portal zijn nu de Windows Hello-configuratie en -instellingen zowel onder **Apparaatinschrijving** als onder **Apparaatconfiguratie** beschikbaar. **Apparaatinschrijving** is gericht op de hele organisatie (tenant-breed) en biedt ondersteuning voor Windows AutoPilot (OOBE). **Apparaatconfiguratie** is gericht op apparaten en gebruikers met behulp van een beleid dat wordt toegepast tijdens het inchecken.
 Deze functie is van toepassing op:  
 - Windows 10 en hoger
@@ -1293,11 +1293,11 @@ U kunt zich met Microsoft AutoUpdate registreren voor het vroeg ontvangen van bu
 ### <a name="device-configuration"></a>Apparaatconfiguratie
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices---1497640---"></a>Apparaatnalevingsbeleid maken met behulp van firewallinstellingen op macOS-apparaten<!-- 1497640 -->
-Wanneer u een nieuw macOS-nalevingsbeleid maakt (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken**  >  **Platform: macOS** > **Systeembeveiliging**), ziet u enkele nieuwe instellingen bij **Firewall**: 
+Wanneer u een nieuw macOS-nalevingsbeleid maakt (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Platform: macOS** > **Systeembeveiliging**), ziet u enkele nieuwe instellingen bij **Firewall**: 
 
-- **Firewall**: configureer hoe binnenkomende verbindingen in uw omgeving worden verwerkt.
-- **Binnenkomende verbindingen**: **blokkeer** alle binnenkomende verbindingen, behalve de verbindingen die vereist zijn voor basisinternetservices, zoals DHCP, Bonjour en IPSec. Deze instelling blokkeert ook alle services voor delen.
-- **Verborgen modus**: u kunt de verborgen modus **inschakelen** om te voorkomen dat het apparaat reageert op peilverzoeken. Het apparaat reageert nog wel op binnenkomende verzoeken voor toegestane apps.
+- **Firewall**: Configureer hoe binnenkomende verbindingen in uw omgeving worden verwerkt.
+- **Binnenkomende verbindingen**: **Blokkeer** alle binnenkomende verbindingen, behalve de verbindingen die vereist zijn voor basisinternetservices, zoals DHCP, Bonjour en IPSec. Deze instelling blokkeert ook alle services voor delen.
+- **Verborgen modus**: U kunt de verborgen modus **inschakelen** om te voorkomen dat het apparaat reageert op peilverzoeken. Het apparaat reageert nog wel op binnenkomende verzoeken voor toegestane apps.
 
 Van toepassing op: macOS 10.12 en hoger
 
@@ -1354,11 +1354,11 @@ De volgende nieuwe statussen zijn toegevoegd in **Apparaatcompatibiliteit** > **
 - niet van toepassing Er wordt ook een afbeelding weergegeven waarin het aantal apparaten van een ander platform wordt weergegeven. Als u bijvoorbeeld een iOS-profiel kijkt, laat de nieuwe tegel ook het aantal niet-iOS-apparaten zien die ook zijn toegewezen aan dit profiel. Zie [Nalevingsbeleid voor apparaten](../protect/compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions---2325484---"></a>Apparaatcompatibiliteit ondersteunt antivirusoplossingen van derden<!-- 2325484 -->
-Wanneer u een apparaatnalevingsbeleid maakt (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Platform: Windows 10 en hoger** > **Instellingen** > **Systeembeveiliging**), zijn er enkele nieuwe opties voor **[Apparaatbeveiliging](../protect/compliance-policy-create-windows.md)** : 
-- **Antivirussoftware**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij het Windows-beveiligingscentrum, zoals Symantec en Windows Defender. 
-- **Antispyware**: als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antispywareoplossingen die zijn geregistreerd bij het Windows-beveiligingscentrum, zoals Symantec en Windows Defender. 
+Wanneer u een nalevingsbeleid voor apparaten maakt (**Apparaatcompatibiliteit** > **Beleid** > **Beleid maken** > **Platform: Windows 10 en hoger** > **Instellingen** > **Systeembeveiliging**), er zijn nieuwe opties voor **[Apparaatbeveiliging](../protect/compliance-policy-create-windows.md)** : 
+- **Antivirus**: Als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij Microsoft Beveiligingscentrum, zoals Symantec en Windows Defender. 
+- **AntiSpyware**: Als deze optie is ingesteld op **Vereisen**, kunt u de naleving controleren met behulp van antivirusoplossingen die zijn geregistreerd bij het Microsoft Beveiligingscentrum, zoals Symantec en Windows Defender. 
 
-Van toepassing op Windows 10 en hoger 
+Van toepassing op: Windows 10 en hoger 
 
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 
@@ -1435,7 +1435,7 @@ Met deze update kunt u Palo Alto Networks GlobalProtect kiezen als VPN-verbindin
 U kunt nu aanvullende instellingen voor de beveiligingsopties van lokale apparaten voor Windows 10-apparaten configureren. Er zijn extra instellingen beschikbaar voor Microsoft Network Client, Microsoft-netwerkserver, toegang tot het netwerk en beveiliging en interactief aanmelden. U vindt deze instellingen in de Endpoint Protection-categorie wanneer u een configuratiebeleid voor Windows 10-apparaten maakt.
 
 #### <a name="enable-kiosk-mode-on-windows-10-devices---1560072----"></a>Kioskmodus inschakelen op Windows 10-apparaten<!-- 1560072 ! -->
-Op Windows 10-apparaten kunt u een configuratieprofiel maken en de kioskmodus inschakelen (**Apparaatconfiguratie** > **Profielen** > **Profiel maken**  >  **Windows 10** > **Apparaatbeperkingen** > **Kioskmodus**). In deze update is de naam van de instelling **Kiosk (preview)** gewijzigd in **Kiosk (verouderd)** . Het gebruik van **Kiosk (verouderd)** wordt niet meer aanbevolen maar de optie blijft nog werken tot de update van juli. **Kiosk (verouderd)** wordt vervangen door het nieuwe profieltype **Kiosk** (**Profiel maken** > **Windows 10** > **Kiosk (preview)** ). Dit profiel bevat de instellingen voor het configureren van kiosken in Windows 10 RS4 en hoger.
+Op Windows 10-apparaten kunt u een configuratieprofiel maken en de kioskmodus inschakelen (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Windows 10** > **Apparaatbeperkingen** > **Kioskmodus**). In deze update is de naam van de instelling **Kiosk (preview)** gewijzigd in **Kiosk (verouderd)** . Het gebruik van **Kiosk (verouderd)** wordt niet meer aanbevolen maar de optie blijft nog werken tot de update van juli. **Kiosk (verouderd)** wordt vervangen door het nieuwe profieltype **Kiosk** (**Profiel maken** > **Windows 10** > **Kiosk (preview)** ). Dit profiel bevat de instellingen voor het configureren van kiosken in Windows 10 RS4 en hoger.
 
 Van toepassing op Windows 10 en hoger.
 
@@ -1463,7 +1463,7 @@ AutoPilot-implementatieprofielen kunnen worden toegewezen aan Azure AD-groepen d
 #### <a name="set-compliance-by-device-location---851881----"></a>Naleving instellen per apparaatlocatie<!-- 851881 ! -->
 In sommige situaties wilt u mogelijk de toegang beperken tot bedrijfsresources op een specifieke locatie, gedefinieerd door een netwerkverbinding. U kunt nu een nalevingsbeleid maken (**Apparaatnaleving** > **Locaties**) op basis van het IP-adres van het apparaat. Als het apparaat wordt verplaatst naar een locatie buiten het IP-bereik, heeft het apparaat geen toegang meer tot bedrijfsresources.
 
-Is van toepassing op: Android-apparaten 6.0 en hoger, met de bijgewerkte Bedrijfsportal-app
+Van toepassing op: Android-apparaten met versie 6.0 en hoger, met de bijgewerkte bedrijfsportal-app
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>De installatie van consumenten-apps en -ervaringen op Windows 10 Enterprise RS4 Autopilot-apparaten voorkomen<!-- 1621980 -->
 U kunt voorkomen dat consumenten-apps en -ervaringen op uw apparaten met Windows 10 Enterprise RS4 AutoPilot kunnen worden geïnstalleerd. Om deze functie te zien, gaat u naar **Intune** > **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **Platform** = **Windows 10 of hoger** > **Profieltype** = **Apparaatbeperkingen** > **Configureren** > **Windows Spotlight** > **Consumentenfuncties**. 
@@ -1588,23 +1588,23 @@ Er is een nieuwe instelling in **Android Enterprise** > **Apparaatbeperkingen** 
 
 Indien ingeschakeld (niet-geconfigureerd), worden de details van de beller die een zakelijke contactpersoon is, weergegeven in het persoonlijke profiel. Indien geblokkeerd, wordt het nummer van deze zakelijke contactpersoon niet weergegeven in het persoonlijke profiel. 
 
-Van toepassing op: apparaten met Android-werkprofiel voor Android 6.0 en hoger
+Van toepassing op: Apparaten met Android-werkprofiel voor Android 6.0 en hoger
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings--1102252-----from-1802-and-1804--"></a>Er worden nieuwe Windows Defender Credential Guard-instellingen toegevoegd aan de Endpoint Protection-instellingen<!--1102252 --><!--from 1802 and 1804-->
 
 In deze update, [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) (**Apparaatconfiguratie** > **Profielen** > **Eindpuntbeveiliging**) zijn de volgende instellingen opgenomen: 
 
-- **Windows Defender Credential Guard**: schakelt Credential Guard in met beveiliging op basis van virtualisatie. Het inschakelen van deze functie helpt om de referenties te beveiligen bij de volgende keer opstarten, wanneer **Niveau van platformbeveiliging met Beveiligd opstarten** en **Beveiliging op basis van virtualisatie** beide zijn ingeschakeld. Opties zijn onder andere:
-  - **Uitgeschakeld**: Credential Guard wordt extern uitgeschakeld als deze eerder is ingeschakeld met de optie **Ingeschakeld zonder vergrendeling**.
+- **Windows Defender Credential Guard**: met deze optie wordt Credential Guard ingeschakeld met beveiliging op basis van virtualisatie. Het inschakelen van deze functie helpt om de referenties te beveiligen bij de volgende keer opstarten, wanneer **Niveau van platformbeveiliging met Beveiligd opstarten** en **Beveiliging op basis van virtualisatie** beide zijn ingeschakeld. Opties zijn onder andere:
+  - **Uitgeschakeld**: als Credential Guard eerder was ingeschakeld met de optie **Ingeschakeld zonder vergrendeling**, wordt het extern uitgeschakeld.
 
-  - **Ingeschakeld met UEFI-vergrendeling**: met deze optie kan Credential Guard niet worden uitgeschakeld met behulp van een registersleutel of via Groepsbeleid. Als u Credential Guard wilt uitschakelen nadat u deze instelling hebt gebruikt, moet u het Groepsbeleid instellen op Uitgeschakeld. Vervolgens verwijdert u de beveiligingsfunctie van elke computer, met een fysiek aanwezige gebruiker. Met deze stappen wordt de configuratie gewist die is behouden in UEFI. Zolang de UEFI-configuratie behouden blijft, is Credential Guard ingeschakeld.
+  - **Ingeschakeld met UEFI-vergrendeling**: deze optie zorgt ervoor dat Credential Guard niet kan worden uitgeschakeld met behulp van een registersleutel of via Groepsbeleid. Als u Credential Guard wilt uitschakelen nadat u deze instelling hebt gebruikt, moet u het Groepsbeleid instellen op Uitgeschakeld. Vervolgens verwijdert u de beveiligingsfunctie van elke computer, met een fysiek aanwezige gebruiker. Met deze stappen wordt de configuratie gewist die is behouden in UEFI. Zolang de UEFI-configuratie behouden blijft, is Credential Guard ingeschakeld.
 
-  - **Uitgeschakeld zonder vergrendeling**: met deze optie kan Credential Guard extern worden uitgeschakeld via Groepsbeleid. Op de apparaten die gebruikmaken van deze instelling moet ten minste Windows 10 (versie 1511) worden uitgevoerd.
+  - **Ingeschakeld zonder vergrendeling**: Met deze optie kan Credential Guard extern worden uitgeschakeld via Groepsbeleid. Op de apparaten die gebruikmaken van deze instelling moet ten minste Windows 10 (versie 1511) worden uitgevoerd.
 
 De volgende afhankelijke technologieën worden automatisch ingeschakeld bij het configureren van Credential Guard: 
 
-- **Beveiliging op basis van virtualisatie (VBS)** : schakelt Beveiliging op basis van virtualisatie (VBS) in bij de volgende keer opstarten. Beveiliging op basis van virtualisatie maakt gebruik van Windows Hypervisor om ondersteuning te bieden voor beveiligingsservices. Beveiligd opstarten is vereist.
-- **Beveiligd opstarten met directe geheugentoegang (DMA)** : hiermee schakelt u VBS in met Beveiligd opstarten en directe geheugentoegang. Voor DMA-beveiliging is hardwareondersteuning vereist. Deze wordt alleen ingeschakeld op apparaten die juist zijn geconfigureerd. 
+- **Beveiliging op basis van virtualisatie (VBS)** : met deze optie wordt Beveiliging op basis van virtualisatie (VBS) ingeschakeld bij de volgende keer opnieuw opstarten. Beveiliging op basis van virtualisatie maakt gebruik van Windows Hypervisor om ondersteuning te bieden voor beveiligingsservices. Beveiligd opstarten is vereist.
+- **Beveiligd opstarten met DMA (Direct Memory Access)** : met deze optie schakelt u VBS met Beveiligd opstarten en directe geheugentoegang in. Voor DMA-beveiliging is hardwareondersteuning vereist. Deze wordt alleen ingeschakeld op apparaten die juist zijn geconfigureerd. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate---2064190---"></a>Een aangepaste onderwerpnaam gebruiken in een SCEP-certificaat<!-- 2064190 -->
 U kunt de algemene naam **OnPremisesSamAccountName** gebruiken in een aangepast onderwerp voor een SCEP-certificaatprofiel. U kunt bijvoorbeeld `CN={OnPremisesSamAccountName})` gebruiken.
@@ -1612,13 +1612,13 @@ U kunt de algemene naam **OnPremisesSamAccountName** gebruiken in een aangepast 
 #### <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles---1098977---"></a>De camera en schermopnamen blokkeren in werkprofielen in Android Enterprise<!-- 1098977 -->
 Er zijn twee nieuwe eigenschappen beschikbaar die kunnen worden geblokkeerd wanneer u apparaatbeperkingen voor Android-apparaten configureert: 
 - Camera: hiermee blokkeert u de toegang tot alle camera's op het apparaat
-- Schermopname: hiermee blokkeert u de schermopname en voorkomt ook dat de inhoud wordt weergegeven op weergaveapparaten die geen beveiligde video-uitvoer hebben
+- Schermopname: hiermee blokkeert u de schermopname en voorkomt u ook dat de inhoud wordt weergegeven op weergaveapparaten die geen beveiligde video-uitvoer hebben
 
 Van toepassing op apparaten met Android Enterprise-werkprofiel.
 
 #### <a name="use-cisco-anyconnect-client-for-ios---1333708---"></a>Cisco AnyConnect-client voor iOS gebruiken<!-- 1333708 -->
 
-Wanneer u een nieuw VPN-profiel voor iOS maakt, hebt u nu twee opties: **Cisco AnyConnect** en **Cisco Legacy AnyConnect**. Cisco AnyConnect-profielen bieden ondersteuning voor 4.0.7x en nieuwere versies. Bestaande iOS Cisco AnyConnect VPN-profielen krijgen het label **Cisco Legacy AnyConnect** en blijven op dezelfde manier werken met Cisco AnyConnect 4.0.5x en oudere versies.
+Wanneer u een nieuw VPN-profiel voor iOS maakt, zijn er nu twee opties: **Cisco AnyConnect** en **Cisco Legacy AnyConnect**. Cisco AnyConnect-profielen bieden ondersteuning voor 4.0.7x en nieuwere versies. Bestaande iOS Cisco AnyConnect VPN-profielen krijgen het label **Cisco Legacy AnyConnect** en blijven op dezelfde manier werken met Cisco AnyConnect 4.0.5x en oudere versies.
 
 > [!NOTE]
 > Deze wijziging is alleen van toepassing op iOS. Er blijft slechts één Cisco AnyConnect-optie voor platforms van Android, werkprofielen van Android Enterprise en macOS.
@@ -1801,7 +1801,7 @@ De Intune-beheerder kan deze instellingen configureren om delen in te schakelen.
 
 U kunt Gatekeeper configureren om uw apparaten te beveiligen tegen apps door te bepalen waarvan de apps kunnen worden gedownload. U kunt de volgende downloadbronnen configureren: **Mac App Store**, **Mac App Store en geïdentificeerde ontwikkelaars** of **Overal**. U kunt ook configureren of gebruikers een app kunnen installeren door middel van CTRL+klikken om deze Gatekeeper-voorzieningen te overschrijven.
 
-Deze instellingen zijn te vinden onder **Apparaatconfiguratie** -> **Profiel maken** -> **macOS**  ->  **Eindpuntbeveiliging**.
+Deze instellingen zijn te vinden onder **Apparaatconfiguratie** -> **Profiel maken** -> **macOS** -> **Eindpuntbeveiliging**.
 
 #### <a name="configure-the-mac-application-firewall---1690461---"></a>De firewall van Mac-toepassingen configureren<!-- 1690461 -->
 
@@ -1852,7 +1852,7 @@ Zie [Software-updates beheren in Intune](../protect/windows-update-for-business-
 
 ### <a name="new-windows-defender-exploit-guard-settings---1631893---"></a>Nieuwe instellingen voor Windows Defender Exploit Guard<!-- 1631893 -->
 
-Zes nieuwe instellingen voor <strong>Kwetsbaarheid voor aanvallen verminderen</strong> en uitgebreide mogelijkheden voor <strong>Gecontroleerde mappentoegang: mapbeveiliging</strong> zijn nu beschikbaar. Deze instellingen kunt u vinden op: Apparaatconfiguratie\Profielen\
+Zes nieuwe instellingen voor <strong>Kwetsbaarheid voor aanvallen verminderen</strong> en uitgebreide mogelijkheden voor <strong>Gecontroleerde mappentoegang: mapbeveiliging</strong> zijn nu beschikbaar. U kunt deze instellingen vinden op: Apparaatconfiguratie\Profielen\
 Profiel maken\Endpoint Protection\Windows Defender Exploit Guard.
 
 #### <a name="attack-surface-reduction"></a>Kwetsbaarheid voor aanvallen verminderen
@@ -1871,7 +1871,7 @@ Profiel maken\Endpoint Protection\Windows Defender Exploit Guard.
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mapbeveiliging (al geïmplementeerd) | Niet geconfigureerd, Inschakelen, Alleen controleren (al geïmplementeerd)<br><br> <strong>Nieuw</strong><br>Schijfwijziging blokkeren, schijfwijziging controleren |             |
 
-Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.<br><br>**Inschakelen**: voorkom dat bestanden in beveiligde mappen door niet-vertrouwde apps worden gewijzigd of verwijderd en dat gegevens door deze apps naar schijfsectoren worden weggeschreven.<br><br>
+Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.<br><br>**Inschakelen**: Voorkom dat bestanden in beveiligde mappen door niet-vertrouwde apps worden gewijzigd of verwijderd en dat gegevens door deze apps naar schijfsectoren worden weggeschreven.<br><br>
 **Alleen schijfwijziging blokkeren**:<br>Voorkom dat gegevens door niet-vertrouwde apps worden weggeschreven naar schijfsectoren. Bestanden in beveiligde mappen kunnen nog steeds door niet-vertrouwde apps worden gewijzigd of verwijderd.|
 
 ### <a name="intune-apps"></a>Intune-apps
@@ -1904,9 +1904,9 @@ Als uw apparaat Windows 10 RS1 of hoger gebruikt, moet u de nieuwste versie van 
 
 #### <a name="new-windows-defender-application-guard-settings---1631890---"></a>Nieuwe instellingen voor Windows Defender Application Guard<!-- 1631890 -->
 
-- **Grafische versnelling inschakelen**: beheerders kunnen voortaan een virtuele grafische processor inschakelen voor Windows Defender Application Guard. Met deze instelling kan de CPU taken voor de grafische weergave overdragen aan de vGPU. Dit kan de prestaties verbeteren wanneer u met websites werkt die veeleisende grafische weergaven bevatten of een video in de container bekijkt.
+- **Grafische versnelling inschakelen**: Beheerders kunnen voortaan een virtuele grafische processor inschakelen voor Windows Defender Application Guard. Met deze instelling kan de CPU taken voor de grafische weergave overdragen aan de vGPU. Dit kan de prestaties verbeteren wanneer u met websites werkt die veeleisende grafische weergaven bevatten of een video in de container bekijkt.
 
-- **SaveFilestoHost**: beheerders kunnen ervoor zorgen dat bestanden worden doorgegeven van Microsoft Edge, die in de container wordt uitgevoerd, naar het hostbestandsysteem. Wanneer u deze optie inschakelt, kunnen gebruikers bestanden uit Microsoft Edge in de container downloaden naar het hostbestandsysteem.
+- **SaveFilestoHost**: Beheerders kunnen ervoor zorgen dat bestanden vanuit Microsoft Edge, die in de container wordt uitgevoerd, worden doorgegeven aan het systeem van het hostbestand. Wanneer u deze optie inschakelt, kunnen gebruikers bestanden uit Microsoft Edge in de container downloaden naar het hostbestandsysteem.
 
 #### <a name="mam-protection-policies-targeted-based-on-management-state---1665993---"></a>Gericht MAM-beleid op basis van de beheerstatus<!-- 1665993 -->
 U kunt zich richten op MAM-beleid op basis van de beheerstatus van het apparaat:
@@ -1925,7 +1925,7 @@ In de bedrijfsportal voor Windows 10 is de taal gebruiksvriendelijker en meer sp
 Als onderdeel van onze inspanning om eindgebruikers meer controle over hun gegevens en privacy te geven, is de documentatie bijgewerkt waarin wordt uitgelegd hoe u gegevens die lokaal zijn opgeslagen door de bedrijfsportal-apps kunt weergeven en verwijderen. U vindt deze updates op:
 
 - **Android**: [Uw Android-apparaat uit Intune verwijderen](/intune-user-help/unenroll-your-device-from-intune-android)
-- **Android, wanneer de gebruiker de gebruiksvoorwaarden heeft afgewezen**: [Beheer van uw apparaten verwijderen als u de gebruiksvoorwaarden hebt afgewezen](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **Android, als de gebruiker de gebruiksvoorwaarden heeft afgewezen**: [Uw apparaatbeheer verwijderen als u de gebruiksvoorwaarden hebt afgewezen](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
 - **iOS**: [Uw iOS-apparaat uit Intune verwijderen](/intune-user-help/unenroll-your-device-from-intune-ios)
 - **Windows**: [Uw Windows-apparaat uit Intune verwijderen](/intune-user-help/unenroll-your-device-from-intune-windows)
 
@@ -1986,8 +1986,8 @@ In een gedetailleerd rapport voor elke statuscategorie worden de afzonderlijke p
 
 #### <a name="new-privacy-settings-for-device-restrictions--1308926---"></a>Nieuwe privacyinstellingen voor apparaatbeperkingen<!--1308926 -->
 Er zijn [twee nieuwe privacyinstellingen](../configuration/device-restrictions-windows-10.md#privacy) voor apparaten beschikbaar:
-- **Gebruikersactiviteiten publiceren**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
-- **Alleen lokale activiteiten**: stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
+- **Gebruikersactiviteiten publiceren**: Stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar te voorkomen.
+- **Alleen lokale activiteiten**: Stel dit in op **Blokkeren** om gedeelde ervaringen en de detectie van recent gebruikte resources in de taakwisselaar alleen op basis van de lokale activiteit te voorkomen.
 
 #### <a name="new-settings-for-the-microsoft-edge-browser--1469166---"></a>Nieuwe instellingen voor de Microsoft Edge-browser<!--1469166 -->
 Er zijn [twee nieuwe instellingen](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser) beschikbaar voor apparaten met de Microsoft Edge-browser: **Pad naar het bestand met favorieten** en **Wijzigingen in Favorieten**.
@@ -2045,7 +2045,7 @@ Bijvoorbeeld een resourceaccount als **Vergaderruimte B41/6233**.
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mapbeveiliging (al geïmplementeerd) | Niet geconfigureerd, Inschakelen, Alleen controleren (al geïmplementeerd)<br><br> <strong>Nieuw</strong><br>Schijfwijziging blokkeren, schijfwijziging controleren |             |
 
-Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.<br><br>**Inschakelen**: voorkom dat bestanden in beveiligde mappen door niet-vertrouwde apps worden gewijzigd of verwijderd en dat gegevens door deze apps naar schijfsectoren worden weggeschreven.<br><br>
+Beveilig bestanden en mappen tegen niet-geautoriseerde wijzigingen door niet-goedgekeurde apps.<br><br>**Inschakelen**: Voorkom dat bestanden in beveiligde mappen door niet-vertrouwde apps worden gewijzigd of verwijderd en dat gegevens door deze apps naar schijfsectoren worden weggeschreven.<br><br>
 **Alleen schijfwijziging blokkeren**:<br>Voorkom dat gegevens door niet-vertrouwde apps worden weggeschreven naar schijfsectoren. Bestanden in beveiligde mappen kunnen nog steeds door niet-vertrouwde apps worden gewijzigd of verwijderd.|
 
 #### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies--1704133--"></a>Toevoegingen aan systeembeveiligingsinstellingen voor nalevingsbeleid voor Windows 10 en hoger<!--1704133-->
@@ -2333,8 +2333,6 @@ Er zijn nu nieuwe processen en hulpprogramma's beschikbaar om in Azure Portal ge
 - In Azure Portal beleidsregels en profielen van de Configuration Manager-console naar Intune kopiëren
 - In Azure Portal een subset gebruikers naar Intune verplaatsen, terwijl de rest in hybride MDM blijft
 - In Azure Portal apparaten naar Intune migreren zonder dat u ze opnieuw hoeft te registreren
-
-Zie [Hybride MDM-gebruikers en -apparaten migreren naar Intune (zelfstandig)](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa) voor meer informatie.
 
 ### <a name="on-premises-exchange-connector-high-availability-support----676614---"></a>Hoge beschikbaarheid van on-premises Exchange Connector <!-- 676614 -->
 Nadat de Exchange-connector een verbinding met Exchange heeft gemaakt met behulp van de opgegeven Client Access Server (CAS), heeft de connector nu de mogelijkheid om andere CAS-servers te ontdekken. Als de primaire CAS niet beschikbaar is, zoekt de connector naar een andere CAS (indien beschikbaar) totdat de primaire CAS beschikbaar komt. Zie [Hoge beschikbaarheid van on-premises Exchange Connector](../protect/exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support) voor meer informatie.
@@ -2627,11 +2625,11 @@ Intune kan de afzonderlijk verkrijgbare [TeamViewer](https://www.teamviewer.com)
 ### <a name="scan-devices-with-windows-defender---1280988--1280990-----"></a>Apparaten scannen met Windows Defender<!-- 1280988  1280990   -->
 U kunt nu een **Snelle scan** en **Volledige scan** uitvoeren en **Handtekeningen bijwerken** met Windows Defender Antivirus op beheerde Windows 10-apparaten. Kies op de overzichtsblade van het apparaat de actie die u op het apparaat wilt uitvoeren. U wordt gevraagd om de actie te bevestigen voordat de opdracht naar het apparaat wordt verzonden. 
 
-**Snelle scan**: een snelle scan scant locaties waar malware zich registreert, zoals registercodes en bekende opstartmappen in Windows. Een snelle scan duurt gemiddeld vijf minuten. In combinatie met de instelling **Realtimebeveiliging altijd ingeschakeld**, die bestanden scant wanneer ze worden geopend en gesloten en wanneer een gebruiker naar een map gaat, helpt een snelle scan om bescherming te bieden tegen malware die zich mogelijk in het systeem of de kernel bevindt. Gebruikers zien de scanresultaten op hun apparaten wanneer hij is voltooid. 
+**Snelle scan**: Een snelle scan scant locaties waar malware zich registreert om te worden gestart, zoals registercodes en bekende opstartmappen in Windows. Een snelle scan duurt gemiddeld vijf minuten. In combinatie met de instelling **Realtimebeveiliging altijd ingeschakeld**, die bestanden scant wanneer ze worden geopend en gesloten en wanneer een gebruiker naar een map gaat, helpt een snelle scan om bescherming te bieden tegen malware die zich mogelijk in het systeem of de kernel bevindt. Gebruikers zien de scanresultaten op hun apparaat wanneer de scan is voltooid. 
 
-**Volledige scan**: een volledige scan kan handig zijn om vast te stellen of er inactieve componenten zijn die een diepgaandere opschoning vereisen op apparaten die met een malwarebedreiging te maken hebben gekregen. De scan is handig voor het uitvoeren van scans op aanvraag. Het uitvoeren van volledige scans kan een uur duren. Gebruikers zien de scanresultaten op hun apparaat wanneer de scan is voltooid. 
+**Volledige scan**: Een volledige scan kan handig zijn om vast te stellen of er inactieve componenten zijn waarvoor een diepgaandere opschoning is vereist op apparaten die met een malwarebedreiging te maken hebben gekregen. De scan is handig voor het uitvoeren van scans op aanvraag. Het uitvoeren van volledige scans kan een uur duren. Gebruikers zien de scanresultaten op hun apparaat wanneer de scan is voltooid. 
 
-**Handtekeningen bijwerken**: de opdracht Handtekeningen bijwerken werkt de malwaredefinities en-handtekeningen in Windows Defender Antivirus bij. Dit helpt ervoor te zorgen dat Windows Defender Antivirus malware effectief detecteert. Deze functie is alleen voor Windows 10-apparaten en zolang er een internetverbinding is. 
+**Handtekeningen bijwerken**: Met de opdracht Handtekeningen bijwerken worden de malwaredefinities en -handtekeningen in Windows Defender Antivirus bijgewerkt. Dit helpt ervoor te zorgen dat Windows Defender Antivirus malware effectief detecteert. Deze functie is alleen voor Windows 10-apparaten en zolang er een internetverbinding is. 
 
 ### <a name="the-enabledisable-button-is-removed-from-the-intune-certificate-authority-page-of-the-intune-azure-portal----1400455---"></a>De knop Inschakelen/Uitschakelen is verwijderd van de pagina Intune-certificaatinstantie van de Intune Azure-portal <!-- 1400455 -->
  We verwijderen een extra stap voor het instellen van de certificaatconnector in Intune. Op dit moment downloadt u de certificaatconnector en schakelt u die in de Intune-console in. Als u de connector echter uitschakelt in de Intune-console, blijft de connector toch certificaten uitgeven.
@@ -2876,11 +2874,11 @@ Met deze versie kunnen beheerders de Microsoft Store voor Bedrijven nu toewijzen
 ### <a name="ui-updates-to-the-company-portal-website--1313244-part-1--"></a>Updates aan de gebruikersinterface van de bedrijfsportalwebsite<!--1313244 part 1-->
 Er zijn een aantal updates aan de gebruikersinterface van de [bedrijfsportalwebsite](https://portal.manage.microsoft.com) uitgevoerd om de gebruikerservaring te verbeteren.
 
-- __Verbeteringen aan app-tegels__: app-pictogrammen worden nu weergegeven met een achtergrond die automatisch wordt gegenereerd op basis van de overheersende kleur van het pictogram (mits detecteerbaar). Indien van toepassing wordt de grijze rand die voorheen zichtbaar was op app-tegels, vervangen door deze achtergrond.
+- __Verbeteringen aan app-tegels__:  App-pictogrammen worden nu weergegeven met een achtergrond die automatisch wordt gegenereerd op basis van de overheersende kleur van het pictogram (mits detecteerbaar). Indien van toepassing wordt de grijze rand die voorheen zichtbaar was op app-tegels, vervangen door deze achtergrond.
 
     In de volgende versie worden er waar mogelijk grote pictogrammen weergegeven op de bedrijfsportalwebsite. IT-beheerders wordt aangeraden apps te publiceren met pictogrammen met een hoge resolutie en een minimumgrootte van 120 x 120 pixels. 
 
-- __Wijzigingen in de navigatie__: items op de navigatiebalk zijn verplaatst naar het hamburgermenu linksboven. De pagina Categorieën is verwijderd. Gebruikers kunnen nu tijdens het browsen inhoud filteren op categorie.
+- __Wijzigingen in de navigatie__: Items op de navigatiebalk zijn verplaatst naar het Hamburgermenu linksboven. De pagina Categorieën is verwijderd. Gebruikers kunnen nu tijdens het browsen inhoud filteren op categorie.
 
 - __Updates voor aanbevolen apps__: Er is een speciale pagina aan de site toegevoegd waar gebruikers door apps kunnen bladeren die door u zijn aanbevolen. Ook zijn er enkele correcties aan de gebruikersinterface aangebracht in de sectie Aanbevolen op de startpagina.
 
@@ -3003,7 +3001,7 @@ Gebruikers van iOS-apparaten zien mogelijk onze nieuwe accountkiezer wanneer ze 
 ## <a name="may-2017"></a>Mei 2017
 
 ### <a name="change-your-mdm-authority-without-unenrolling-managed-devices--1103950--"></a>Wijzig uw MDM-instantie zonder de registratie van beheerde apparaten ongedaan te maken<!--1103950-->
-U kunt nu uw MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de registratie van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw te registreren. In de Configuration Manager-console kunt u uw [MDM-instantie wijzigen](/sccm/mdm/deploy-use/change-mdm-authority) van Ingesteld op Configuration Manager (hybride) naar Microsoft Intune (zelfstandig) of vice versa.
+U kunt nu uw MDM-instantie wijzigen zonder dat u contact hoeft op te nemen met Microsoft Ondersteuning en zonder dat u de registratie van bestaande beheerde apparaten ongedaan hoeft te maken om ze vervolgens opnieuw te registreren. In de Configuration Manager-console kunt u uw MDM-instantie wijzigen van Ingesteld op Configuration Manager (hybride) naar Microsoft Intune (zelfstandig) of vice versa.
 
 
 ### <a name="improved-notification-for-samsung-knox-startup-pins--1087143--"></a>Verbeterde melding voor Samsung Knox-opstartpincodes<!--1087143-->

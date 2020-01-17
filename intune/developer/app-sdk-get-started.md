@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 3529a21483d0207dbfe55af914badf3ed895af1a
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899386"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691875"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Aan de slag met de Microsoft Intune App SDK
 
@@ -60,7 +60,7 @@ De e-mailadressen die u vermeldt in uw antwoorden, worden gebruikt om contact me
 
 4. Tot slot wordt de dieptekoppeling voor uw app toegevoegd aan de volgende maandelijkse service-update voor Intune. Als u de registratiegegevens bijvoorbeeld in juli hebt ingevuld, wordt de dieptekoppeling vanaf half augustus ondersteund.
 
-Als de dieptekoppeling voor uw app in de Store in de toekomst wordt gewijzigd, moet u de app opnieuw registreren.
+De diepte koppeling is de koppeling naar de vermelding van uw app in de open bare App Store. Als de dieptekoppeling voor uw app in de Store in de toekomst wordt gewijzigd, moet u de app opnieuw registreren.
 
 > [!NOTE]
 > U moet het ons laten weten als u uw app bijwerkt naar een nieuwe versie van de Intune App SDK.
@@ -86,7 +86,7 @@ U hebt een van de volgende handleidingen voor ontwikkelaars nodig om de App Intu
 
 * **[Ontwikkelaarshandleiding voor Intune App SDK voor Android](app-sdk-android.md)** : in dit document wordt u stapsgewijs begeleid bij het geschikt maken van uw systeemeigen Android-app voor de Intune App SDK.
 
-* **[Handleiding Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)** : dit document bevat informatie over het bouwen van iOS- en Android-apps met Xamarin voor het Intune-beleid voor app-beveiliging.
+* **[Handleiding voor Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)** : dit document bevat informatie over het maken van iOS- en Android-apps met Xamarin voor het beveiligingsbeleid voor apps in Intune.
 
 
 
@@ -102,11 +102,11 @@ Als u uw app geschikt hebt gemaakt voor het app-beveiligingsbeleid, is daarnaast
 
 Met Microsoft Intune worden gebruiksstatistieken verzameld voor uw app.
 
-* **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens van gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
+* **Intune App SDK voor iOS**: de SDK registreert standaard SDK-telemetriegegevens voor gebruiksgebeurtenissen. Deze gegevens worden naar Microsoft Intune verzonden.
 
   * Als u ervoor kiest geen SDK-telemetriegegevens vanuit uw app naar Microsoft Intune te verzenden, moet u het vastleggen van telemetriegegevens uitschakelen door 'JA' in te schakelen voor de eigenschap `MAMTelemetryDisabled` in het IntuneMAMSettings-woordenboek .
 
-* **Intune App SDK voor Android**: de Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
+* **Intune App SDK voor Android**: De Intune App SDK voor Android beheert niet de gegevensverzameling vanuit uw app. De bedrijfsportal-app registreert standaard telemetriegegevens. Deze gegevens worden naar Microsoft Intune verzonden. Geheel volgens het Microsoft-beleid worden er geen persoonsgegevens verzameld. 
 
   * Als eindgebruikers ervoor kiezen deze gegevens niet te verzenden, moeten ze telemetrie uitschakelen onder Instellingen op de bedrijfsportal-app. Zie [Gegevensverzameling door Microsoft uitschakelen](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android) voor meer informatie. 
 
@@ -156,7 +156,7 @@ Buildnummer|CFBundleVersion|PackageVersionCode |Met dit nummer wordt een iterati
 ### <a name="test-your-app"></a>Uw app testen
 Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integreren met de Intune App SDK, moet u ervoor zorgen dat alle beleid voor app-beveiliging is ingeschakeld en correct werkt voor de gebruiker en de IT-beheerder. Als u uw geïntegreerde app wilt testen, gaat u als volgt te werk:
 
-* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor Intune-apps, hebt u een Microsoft Intune-account nodig.
+* **Microsoft Intune-testaccount**: als u uw door Intune beheerde app wilt testen aan de hand van beveiligingsfuncties voor apps in Intune, hebt u een Microsoft Intune-account nodig.
 
   * Als u een ISV bent die apps voor de iOS of Android Store wilt inschakelen voor Intune-beleid voor app-beveiliging, ontvangt u een promotiecode nadat u de registratie bij Microsoft Intune hebt voltooid. Dit wordt beschreven in de registratiestap. Met de promotiecode kunt u zich aanmelden voor een Microsoft Intune-proefversie met uitgebreid gebruik van één jaar.
 
@@ -164,7 +164,7 @@ Nadat u de benodigde stappen hebt uitgevoerd om uw iOS- of Android-app te integr
 
   * Zorg ervoor, als u uw app op een mobiel apparaat met een eindgebruikeraccount test, dat u dat account een Intune-licentie hebt gegeven op de website van ht Microsoft 365-beheercentrum nadat u bent aangemeld met een beheerdersaccount. Zie [Microsoft Intune-licentie toewijzen](../fundamentals/licenses-assign.md).
 
-* **Intune-beleid voor app-beveiliging**: als u uw app wilt testen aan de hand van alle Intune-beleid voor app-beveiliging, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](../apps/app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](../apps/app-protection-policy-settings-android.md). Als uw app de intune SDK heeft geïntegreerd, maar niet wordt weer gegeven in de lijst met bedoelbare apps, kunt u de bundel-ID van de app (iOS) of de pakket naam (Android) opgeven in het tekstvak wanneer u aangepaste apps selecteert. 
+* **Beveiligingsbeleid voor apps in Intune**: als u uw app wilt testen aan de hand van al het beveiligingsbeleid voor apps in Intune, moet u voor elke beleidsinstelling het te verwachten gedrag kennen. Zie de beschrijvingen van [iOS-beleid voor app-beveiliging](../apps/app-protection-policy-settings-ios.md) en [Android-beleid voor app-beveiliging](../apps/app-protection-policy-settings-android.md). Als uw app de intune SDK heeft geïntegreerd, maar niet wordt weer gegeven in de lijst met bedoelbare apps, kunt u de bundel-ID van de app (iOS) of de pakket naam (Android) opgeven in het tekstvak wanneer u aangepaste apps selecteert. 
 
 * **Probleemoplossing**: als u problemen ondervindt tijdens het handmatig testen van de gebruikerservaring van uw app-installatie, gaat u naar [Problemen met app-installatie oplossen](../apps/troubleshoot-app-install.md). 
 
@@ -179,11 +179,11 @@ Nadat u uw app hebt geregistreerd in een Azure-tenant en deze wordt weergegeven 
 3. Klik op **+ Een machtiging toevoegen**.
 4. Klik op **API's die in mijn organisatie worden gebruikt**. 
 5. Voer in het zoekvak **Microsoft Mobile Application Management** in.
-6. Schakel onder **Gedelegeerde machtigingen** het selectievakje **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** (DeviceManagementManagedApps.ReadWrite: de app-beheergegevens van de gebruiker lezen en schrijven) in.
+6. Schakel onder **Gedelegeerde machtigingen** het selectievakje **DeviceManagementManagedApps.ReadWrite: de app-beheergegevens van de gebruiker lezen en schrijven*** in.
 7. Klik op **Machtigingen toevoegen**.
 
 > [!NOTE]
-> Als uw app ervoor zorgt dat u zich niet kunt aanmelden vanwege een fout bij het openen van deze resource: https://intunemam.microsoftonline.com, moet u een notitie verzenden naar msintuneappsdk@microsoft.com met de client-ID van uw app. Dit is momenteel een hand matig goedkeurings proces.
+> Als uw app uw aanmelding beperkt vanwege een fout bij het openen van deze resource: https\://intunemam.microsoftonline.com, moet u een opmerking verzenden naar msintuneappsdk@microsoft.com met de client-ID van uw app. Dit is momenteel een hand matig goedkeurings proces.
 
 ### <a name="badge-your-app-optional"></a>Uw app van een logo voorzien (optioneel)
 

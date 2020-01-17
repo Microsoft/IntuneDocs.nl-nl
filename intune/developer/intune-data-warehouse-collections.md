@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899245"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547927"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune-datawarehouse-verzamelingen
 
@@ -230,7 +230,7 @@ Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en 
 | DeviceCategoryKey          | Sleutel van de categorie die is gekoppeld aan dit apparaat.                                                                                                                                     |
 | DeviceEnrollmentType       | Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan).                                                                                             |
 | ComplianceStateKey         | Sleutel van de Nalevingsstatus die is gekoppeld aan dit apparaat.                                                                                                                             |
-| OSVersion                  | Versie van het besturingssysteem van het apparaat.                                                                                                                                                |
+| OSVersion                  | De versie van het besturingssysteem van het apparaat.                                                                                                                                                |
 | EasDeviceId                | De Exchange ActiveSync-id van het apparaat.                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | De unieke id voor de gebruiker die is gekoppeld aan het apparaat.                                                                                                                           |
@@ -359,7 +359,7 @@ De entiteit **EnrollmentFailureCategory** geeft aan waarom een apparaatinschrijv
 | Niet van toepassing                  | De categorie van de mislukte inschrijving is niet van toepassing.                                                            |
 | Niet beschikbaar                   | De categorie van de mislukte inschrijving is niet beschikbaar.                                                             |
 | Onbekend                         | Onbekende fout.                                                                                                |
-| Verificatie                  | Verificatie mislukt.                                                                                        |
+| Verificatie                  | De verificatie is mislukt.                                                                                        |
 | Autorisatie                   | De aanroep is geverifieerd, maar niet geautoriseerd om in te schrijven.                                                         |
 | AccountValidation               | Kan het account niet valideren voor inschrijving. (Account geblokkeerd, inschrijving niet ingeschakeld)                      |
 | UserValidation                  | De gebruiker kan niet worden gevalideerd. (De gebruiker bestaat niet, ontbrekende licentie)                                           |
@@ -525,7 +525,7 @@ De entiteit **ManagementAgentTypes** vertegenwoordigt de agents die worden gebru
 | 3                     | EasMdm                            | Het apparaat wordt beheerd door zowel Exchange Active Sync als een MDM-agent        |
 | 4                     | IntuneClient                      | Het apparaat wordt beheerd door de Intune-PC-agent                               |
 | 5                     | EasIntuneClient                   | Het apparaat wordt beheerd door zowel Exchange Active Sync als de Intune-PC-agent |
-| 8                     | ConfigManagerClient               | Het apparaat wordt beheerd door de System Center Configuration Manager-agent     |
+| 8                     | ConfigManagerClient               | Het apparaat wordt beheerd door Configuration Manager-agent     |
 | 10                    | ConfigurationManagerClientMdm     | Het apparaat wordt beheerd door Configuration Manager en MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | Het apparaat wordt beheerd door Configuration Manager, MDM en Exchange Active Sync.               |
 | 16                    | Onbekend                           | Onbekend type beheeragent                                              |
@@ -586,7 +586,7 @@ Met de entiteit **ownerType** wordt aangegeven of een apparaat bedrijfseigendom 
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Unieke id van het type eigenaar.                                                                                                                                               |                            |
 | ownerTypeKey  | Unieke id van het type eigenaar in het datawarehouse - surrogaatsleutel.                                                                                                       |                            |
-| ownerTypeName | Hiermee wordt het type eigenaar van de apparaten voorgesteld: Corporate - apparaat is eigendom van de onderneming.  Personal - apparaat is persoonlijk eigendom (BYOD).   Unknown - er is geen informatie over dit apparaat. | Corporate Personal Unknown |
+| ownerTypeName | Vertegenwoordigt het eigenaartype van de apparaten:  Corporate - Het apparaat is bedrijfseigendom.  Personal - apparaat is persoonlijk eigendom (BYOD).   Unknown - er is geen informatie over dit apparaat. | Corporate Personal Unknown |
 
 > [!Note]  
 > Bij het maken van dynamische groepen voor apparaten moet u voor het `ownerTypeName`-filter in AzureAD de waarde `deviceOwnership` instellen als `Company`. Zie [Regels voor apparaten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) voor meer informatie. 

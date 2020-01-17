@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64911ea9b1b1d3c619a82eac9dc78e4e78a53e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4540c4d58bebcbec06e73eaf51d91d6685d0243b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508123"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858995"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Windows-apparaat verwijderen uit beheer
 
@@ -93,8 +93,8 @@ Voer de volgende stappen uit om een Windows 8.1-telefoon te verwijderen uit Intu
 
 Er zijn twee soorten gegevens die door de bedrijfsportal op uw Windows-apparaat worden opgeslagen:
 
-- **Diagnostische logboeken**: standaardgegevens over app-activiteit die door Microsoft worden verzameld. Deze wordenautomatisch gewist zodra u de Bedrijfsportal-app verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
-- **Toepassingscache**: ondersteuningsbestanden die de app nodig heeft om te kunnen werken, zoals pictogrammen en instellingen.
+- **Diagnostische logboeken**: Standaardgegevens over appactiviteit die door Microsoft worden verzameld. Deze wordenautomatisch gewist zodra u de Bedrijfsportal-app verwijdert. Activiteitgegevens van een app omvatten bijvoorbeeld gegevens over hoelang de app geopend was en of de app is vastgelopen.
+- **Toepassingscache**: Ondersteuningsbestanden die de app nodig heeft om te kunnen werken, zoals pictogrammen en instellingen.
 
 Als u de opgeslagen logboeken en de cache wilt verwijderen, voert u een van de volgende stappen uit:
 

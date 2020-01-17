@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bfafa4f35d0b8f1255d66a70c3f7cd0acf01a889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b976e9a47a56c7af1e754f5b5b0162410e278025
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415760"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856389"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-entrust-datacard"></a>IOS-of iPadOS-apparaten instellen met Bedrijfsportal en Entrust Datacard
 
@@ -36,7 +36,7 @@ U moet waarschijnlijk een afgeleide referentie instellen als u een Smart Card ge
 * Meld u aan bij school-of werk-apps, Wi-Fi en virtuele particuliere netwerken (VPN)
 * E-mail berichten voor school of werk ondertekenen en versleutelen met S/MIME-certificaten  
 
-In dit artikel gaat u als volgt te werkt:  
+In dit artikel gaat u het volgende doen:  
 
    * Registreer een mobiel iOS-of iPadOS-apparaat met Intune-bedrijfsportal.  
    * Een afgeleide referentie ophalen van de afgeleide referentie provider van uw organisatie, [Entrust datacard](https://www.entrustdatacard.com/).  

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504954"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548121"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT
 
@@ -39,14 +39,15 @@ Laten we bijvoorbeeld zeggen dat een beheerder van het regionale kantoor in Seat
 ## <a name="default-scope-tag"></a>Standaardbereiktag
 De standaard bereik code wordt automatisch toegevoegd aan alle niet-gelabelde objecten die ondersteuning bieden voor bereik Tags.
 
-Deze functie voor standaardbereiktags is vergelijkbaar met de functie voor beveiligingsbereiken in System Center Configuration Manager. 
+Deze functie voor standaardbereiktags is vergelijkbaar met de functie voor beveiligingsbereiken in Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Een bereiktag maken
 
-1. Kies in Intune **Rollen** > **Bereik(tags)**  > **Maken**.
+1. Kies in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) **Tenant beheer** > **rollen** > **bereik (Tags)**  > **maken**.
 
     ![Schermopname van Een bereiktag maken.](./media/scope-tags/create-scope-tag.png)
 
+2. Geef een **Naam** en desgewenst een **Beschrijving** op.
 3. Als u alle apparaten in specifieke groepen wilt, kiest u **Scope-label toewijzen aan alle apparaten in de geselecteerde groepen**.
     1. Kies op de pagina **groepen selecteren** die u wilt toevoegen de groepen met de apparaten waaraan u deze bereik markering wilt toewijzen.
     2. Kies **Selecteren**.
@@ -54,10 +55,7 @@ Deze functie voor standaardbereiktags is vergelijkbaar met de functie voor bevei
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Een bereiktag toewijzen aan een rol
 
-1. Kies in Intune **Rollen** > **Alle rollen** > kies een rol > **Toewijzingen** > **Toewijzen**.
-
-    ![Schermopname van het bereik aan een rol toewijzen.](./media/scope-tags/assign-scope-to-role.png)
-
+1. Kies in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) **Tenant beheer** > **rollen** > **alle rollen** > Kies een rol > **toewijzingen** > **toewijzen**.
 2. Geef een **toewijzingsnaam** en een **beschrijving** op.
 3. Kies **Leden (Groepen)**  > **Toevoegen** > kies de groepen die deel moeten uitmaken van deze toewijzing > **Selecteren** > **OK**. Gebruikers in deze groep hebben machtigingen voor het beheren van gebruikers/apparaten in het bereik (groepen).
 
@@ -81,9 +79,7 @@ Deze functie voor standaardbereiktags is vergelijkbaar met de functie voor bevei
 
 Voor objecten die bereik Tags ondersteunen, worden meestal Scope Tags weer gegeven onder **Eigenschappen**. Als u bijvoorbeeld een bereik label wilt toewijzen aan een configuratie profiel, volgt u deze stappen:
 
-1. Kies in Intune **Apparaatconfiguratie** > **Profielen** > kies een profiel.
-
-    ![Schermopname van Profiel selecteren.](./media/scope-tags/choose-profile.png)
+1. Kies in het [beheer centrum van micro soft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) **apparaten** > **configuratie profielen** > een profiel kiezen.
 
 2. Kies **Eigenschappen** > **Bereik(tags)**  > **Toevoegen**.
 

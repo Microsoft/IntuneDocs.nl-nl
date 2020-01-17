@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122872eff92a37c8724fd4a853091e51a0a54c66
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506530"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207057"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Instellingen voor Windows 10- en Windows Holographic-apparaten om VPN-verbindingen met Intune toe te voegen
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 U kunt met Microsoft Intune VPN-verbindingen toevoegen aan en configureren voor apparaten. Dit artikel bevat een overzicht en beschrijvingen van veelgebruikte instellingen en functies bij het maken van virtuele particuliere netwerken (VPN's). Deze VPN-instellingen en -functies worden gebruikt in apparaatconfiguratieprofielen in Intune die worden gepusht of geïmplementeerd naar gebruikers.
 
@@ -44,17 +44,17 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
-- **Verbindingsnaam**: voer een naam voor deze verbinding in. Eindgebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
-- **Servers**: voeg een of meer VPN-servers toe waarmee de apparaten verbinding maken. Als u een server toevoegt, voert u de volgende gegevens in:
-  - **Beschrijving**: voer een beschrijvende naam in voor de server, zoals **Contoso VPN-server**
-  - **IP-adres of FQDN**: voer het IP-adres of de Fully Qualified Domain Name (FQDN) in van de VPN-server waarmee apparaten verbinding maken, zoals **192.168.1.1** of **vpn.contoso.com**
-  - **Standaardserver**: hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
-  - **Importeren**: blader naar een bestand met een door komma's gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers te importeren in de lijst met **servers**.
-  - **Exporteren**: hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand)
+- **Verbindingsnaam**: Voer een naam in voor deze verbinding. Eindgebruikers zien deze naam wanneer ze op hun apparaat in de lijst met beschikbare VPN-verbindingen zoeken.
+- **Servers**: Voeg een of meer VPN-servers toe waarmee de apparaten verbinding maken. Als u een server toevoegt, voert u de volgende gegevens in:
+  - **Beschrijving**: Voer een beschrijvende naam in voor de server, zoals **Contoso VPN-server**
+  - **IP-adres of FQDN**: Voer het IP-adres of de Fully Qualified Domain Name (FQDN) in van de VPN-server waarmee apparaten verbinding maken, zoals **192.168.1.1** of **vpn.contoso.com**
+  - **Standaardserver**: Hiermee wordt deze server ingeschakeld als de standaardserver die apparaten gebruiken om de verbinding te maken. U kunt slechts één server als standaard instellen.
+  - **Importeren**: Blader naar een bestand met een door komma's gescheiden lijst met servers in de indeling: beschrijving, IP-adres of FQDN, Standaardserver. Kies **OK** om deze servers te importeren in de lijst met **servers**.
+  - **Exporteren**: Hiermee exporteert u de lijst met servers naar een bestand met door komma's gescheiden waarden (CSV-bestand)
 
-- **IP-adressen met interne DNS registreren**: selecteer **Inschakelen** als u het VPN-profiel van Windows 10 zo wilt configureren dat de IP-adressen die zijn toegewezen aan de VPN-interface met de interne DNS dynamisch worden geregistreerd. Selecteer **Uitschakelen** als u de IP-adressen niet dynamisch wilt registreren.
+- **IP-adressen met interne DNS registreren**: Selecteer **Inschakelen** als u het VPN-profiel van Windows 10 zo wilt configureren dat de IP-adressen die zijn toegewezen aan de VPN-interface met de interne DNS, dynamisch worden geregistreerd. Selecteer **Uitschakelen** als u de IP-adressen niet dynamisch wilt registreren.
 
-- **Verbindingstype**: selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
+- **Type verbinding**: Selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 
   - **Pulse Secure**
   - **F5 Edge Client**
@@ -68,15 +68,15 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
   - **PPTP**
 
   Als u een VPN-verbindingstype kiest, wordt u mogelijk ook om de volgende instellingen gevraagd:  
-  - **AlwaysOn**: kies **Inschakelen** om automatisch verbinding te maken met de VPN-verbinding wanneer het volgende gebeurt: 
+  - **AlwaysOn**: Kies **Inschakelen** om automatisch verbinding te maken met de VPN-verbinding wanneer het volgende gebeurt: 
     - Gebruikers zich aanmelden op hun apparaten
     - Het netwerk op het apparaat wijzigt
     - Het scherm op het apparaat wordt ingeschakeld nadat het was uitgeschakeld 
 
-  - **Verificatiemethode**: selecteer hoe gebruikers zich moeten verifiëren bij de VPN-server. Het gebruik van **certificaten** biedt verbeterde functies, zoals zero-touch, VPN op aanvraag en VPN per app.
-  - **Referenties onthouden bij elke aanmelding**: kies ervoor om de verificatiereferenties in cache te plaatsen.
-  - **Aangepaste XML**: voer aangepaste XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd.
-  - **EAP XML**: voer EAP XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd
+  - **Verificatiemethode**: Selecteer hoe gebruikers zich moeten verifiëren bij de VPN-server. Het gebruik van **certificaten** biedt verbeterde functies, zoals zero-touch, VPN op aanvraag en VPN per app.
+  - **Referenties onthouden bij elke aanmelding**: Kies ervoor om de verificatiereferenties op te slaan in het cachegeheugen.
+  - **Aangepaste XML**: Geef aangepaste XML-opdrachten op waarmee de VPN-verbinding wordt geconfigureerd.
+  - **EAP XML**: Voer EAP XML-opdrachten in waarmee de VPN-verbinding wordt geconfigureerd
 
 ### <a name="pulse-secure-example"></a>Voorbeeld van Pulse Secure
 
@@ -91,7 +91,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden worden gec
 ```
 
 ### <a name="sonicwall-mobile-connect-example"></a>Voorbeeld van SonicWALL Mobile Connect
-**Aanmeldingsgroep of -domein**: deze eigenschap kan niet worden ingesteld in het VPN-profiel. In plaats daarvan parseert Mobile Connect deze waarde wanneer de gebruikersnaam en het domein worden ingevoerd in de indelingen `username@domain` of `DOMAIN\username`.
+**Aanmeldingsgroep of -domein**: Deze eigenschap kan niet worden ingesteld in het VPN-profiel. In plaats daarvan parseert Mobile Connect deze waarde wanneer de gebruikersnaam en het domein worden ingevoerd in de indelingen `username@domain` of `DOMAIN\username`.
 
 Voorbeeld:
 
@@ -112,28 +112,28 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 
 ## <a name="apps-and-traffic-rules"></a>Apps en verkeersregels
 
-- **WIP of apps koppelen aan deze VPN**: schakel deze instelling in als u wilt dat alleen bepaalde apps de VPN-verbinding gebruiken. Uw opties zijn:
+- **WIP of apps koppelen aan deze VPN**: Schakel deze instelling in als u wilt dat alleen bepaalde apps de VPN-verbinding gebruiken. Uw opties zijn:
 
-  - **Een WIP koppelen aan deze verbinding**: voer een **WIP-domein in voor deze verbinding**
-  - **Apps koppelen met deze verbinding**: u kunt **een VPN-verbinding beperken tot deze apps** en vervolgens deze **gekoppelde apps** toevoegen. De apps die u invoert, maken automatisch gebruik van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
+  - **Een WIP aan deze verbinding koppelen**: Voer een **WIP-domein voor deze verbinding** in
+  - **Apps aan deze verbinding koppelen**: U kunt **een VPN-verbinding beperken tot deze apps** en vervolgens deze **gekoppelde apps** toevoegen. De apps die u invoert, maken automatisch gebruik van de VPN-verbinding. De app-id is afhankelijk van het type app. Voer voor een universele app de naam van de productfamilie in waartoe het pakket behoort. Voer voor een bureaublad-app het bestandspad van de app in.
   >[!IMPORTANT]
   >Het is raadzaam dat u alle app-lijsten beveiligt die zijn gemaakt voor VPN’s per app. Als een ongeautoriseerde gebruiker deze lijst wijzigt en u deze importeert in de app-lijst VPN per app, verleent u onbevoegde gebruikers mogelijk VPN-toegang tot apps die niet toegankelijk zouden moeten zijn. Een manier om uw lijsten met apps te beveiligen, is het gebruik van een toegangsbeheerlijst (ACL).
 
-- **Regels voor netwerkverkeer voor deze VPN-verbinding**: selecteer welke protocollen en welke lokale en externe poort- en adresbereiken voor de VPN-verbinding worden ingeschakeld. Als u geen netwerkverkeersregel maakt, worden alle protocollen, poorten en adresbereiken ingeschakeld. Nadat u een regel hebt gemaakt, worden door de VPN-verbinding alleen de protocollen, poorten en adresbereiken gebruikt die u in die regel invoert.
+- **Regels voor netwerkverkeer voor deze VPN-verbinding**: Selecteer welke protocollen en bereiken voor lokale en externe poorten voor de VPN-verbinding worden ingeschakeld. Als u geen netwerkverkeersregel maakt, worden alle protocollen, poorten en adresbereiken ingeschakeld. Nadat u een regel hebt gemaakt, worden door de VPN-verbinding alleen de protocollen, poorten en adresbereiken gebruikt die u in die regel invoert.
 
 ## <a name="conditional-access"></a>Voorwaardelijke toegang
 
-- **Voorwaardelijke toegang voor deze VPN-verbinding**: schakelt een nalevingsstroom voor het apparaat in via de client. Als de VPN-client is ingeschakeld, communiceert deze met Azure AD (Active Directory) om een certificaat te ontvangen dat kan worden gebruikt voor verificatie. De VPN moet zijn ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server vertrouwen die met Azure AD wordt geretourneerd.
+- **Voorwaardelijke toegang voor deze VPN-verbinding**: Hiermee wordt de apparaatcompatibiliteitsstroom vanaf de client ingeschakeld. Als de VPN-client is ingeschakeld, communiceert deze met Azure AD (Active Directory) om een certificaat te ontvangen dat kan worden gebruikt voor verificatie. De VPN moet zijn ingesteld voor het gebruik van certificaatverificatie. Ook moet de VPN-server de server vertrouwen die met Azure AD wordt geretourneerd.
 
-- **Eenmalige aanmelding (SSO) met alternatief certificaat**: gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Voer de volgende instellingen in voor het certificaat:
+- **Eenmalige aanmelding (SSO) met alternatief certificaat inschakelen**: Gebruik voor apparaatcompatibiliteit een ander certificaat dan het VPN-verificatiecertificaat voor Kerberos-verificatie. Voer de volgende instellingen in voor het certificaat:
 
-  - **Naam**: naam voor EKU (uitgebreide-sleutelgebruik)
-  - **Object-id**: object-id voor EKU
-  - **Hash voor de verlener**: vingerafdruk van certificaat voor eenmalige aanmelding
+  - **Naam**: Naam voor EKU (uitgebreide-sleutelgebruik)
+  - **Object-id**: Object-id voor EKU
+  - **Hash van verlener**: Vingerafdruk voor het SSO-certificaat
 
 ## <a name="dns-settings"></a>DNS-instellingen
 
-- **Zoeklijst voor DNS-achtervoegsel**: voer bij **DNS-achtervoegsels**, een DNS-achtervoegsel in en selecteer **Toevoegen**. U kunt meerdere achtervoegsels toevoegen.
+- **Zoeklijst voor DNS-achtervoegsels**: Voer bij **DNS-achtervoegsels** een DNS-achtervoegsel in en selecteer **Toevoegen**. U kunt meerdere achtervoegsels toevoegen.
 
   Wanneer u DNS-achtervoegsels gebruikt, kunt u naar een netwerkbron zoeken met behulp van de korte naam, in plaats van met de Fully Qualified Domain Name (FQDN). Bij het zoeken met behulp van de korte naam wordt het achtervoegsel automatisch door de DNS-server bepaald. `utah.contoso.com` staat bijvoorbeeld in de lijst met DNS-achtervoegsels. U pingt `DEV-comp`. In dit scenario wordt deze omgezet in `DEV-comp.utah.contoso.com`.
 
@@ -149,27 +149,27 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 
   Selecteer **Toevoegen** om een nieuwe regel toe te voegen. Voer voor elke server het volgende in:
 
-  - **Domein**: voer de Fully Qualified Domain Name (FQDN) of een DNS-achtervoegsel in om de regel toe te passen. U kunt ook een punt (.) aan het begin invoeren voor een DNS-achtervoegsel. Voer bijvoorbeeld `contoso.com` of `.allcontososubdomains.com` in.
-  - **DNS-servers**: voer het IP-adres of de DNS-server in waarmee het domein wordt omgezet. Voer bijvoorbeeld `10.0.0.3` of `vpn.contoso.com` in.
-  - **Proxy**: voer de webproxyserver in waarmee het domein wordt omgezet. Voer bijvoorbeeld `http://proxy.com` in.
-  - **Automatisch verbinding maken**: als deze optie is **ingeschakeld**, maakt het apparaat automatisch verbinding met het VPN wanneer een apparaat een domein oproept dat u invoert, bijvoorbeeld `contoso.com`. Wanneer deze optie **niet is geconfigureerd** (standaard), maakt het apparaat niet automatisch verbinding met het VPN
-  - **Permanent**: als **Ingeschakeld** is ingesteld, blijft de regel in de tabel voor naamomzettingsbeleid (NRPT) totdat de regel handmatig van het apparaat wordt verwijderd, zelfs nadat de VPN-verbinding is verbroken. Als **Niet geconfigureerd** (standaard) is ingesteld, worden de NRPT-regels in het VPN-profiel verwijderd van het apparaat zodra de VPN-verbinding wordt verbroken.
+  - **Domein**: Voer de Fully Qualified Domain Name (FQDN) of een DNS-achtervoegsel in om de regel toe te passen. U kunt ook een punt (.) aan het begin invoeren voor een DNS-achtervoegsel. Voer bijvoorbeeld `contoso.com` of `.allcontososubdomains.com` in.
+  - **DNS-servers**: Voer het IP-adres of de DNS-server in waarmee het domein wordt omgezet. Voer bijvoorbeeld `10.0.0.3` of `vpn.contoso.com` in.
+  - **Proxy**: Voer de webproxyserver in waarmee het domein wordt omgezet. Voer bijvoorbeeld `http://proxy.com` in.
+  - **Automatisch verbinding maken**: Als deze optie is **ingeschakeld**, maakt het apparaat automatisch verbinding met VPN wanneer een apparaat een domein oproept dat u invoert, bijvoorbeeld `contoso.com`. Wanneer deze optie **niet is geconfigureerd** (standaard), maakt het apparaat niet automatisch verbinding met het VPN
+  - **Permanent**: Als **Ingeschakeld** is ingesteld, blijft de regel in de tabel voor naamomzettingsbeleid (NRPT) totdat de regel handmatig van het apparaat wordt verwijderd, zelfs nadat de verbinding met de VPN is verbroken. Als **Niet geconfigureerd** (standaard) is ingesteld, worden de NRPT-regels in het VPN-profiel verwijderd van het apparaat zodra de VPN-verbinding wordt verbroken.
 
 ## <a name="proxy-settings"></a>Proxyinstellingen
 
-- **Script voor automatische configuratie**: gebruik een bestand om de proxyserver te configureren. Voer de **URL van proxyserver** in, zoals `http://proxy.contoso.com`, die het configuratiebestand bevat.
-- **Adres**: voer het adres van de proxyserver in, zoals een IP-adres of `vpn.contoso.com`
-- **Poortnummer**: voer het TCP-poortnummer in dat wordt gebruikt voor uw proxyserver
-- **Proxy overslaan voor lokale adressen**: als u geen proxyserver wilt gebruiken voor lokale adressen, kiest u Inschakelen. Deze instelling is van toepassing als voor de VPN-server een proxyserver is vereist voor de verbinding.
+- **Script voor automatische configuratie**: Gebruik een bestand om de proxyserver te configureren. Voer de **URL van proxyserver** in, zoals `http://proxy.contoso.com`, die het configuratiebestand bevat.
+- **Adres**: Voer het adres van de proxyserver in, zoals een IP-adres of `vpn.contoso.com`
+- **Poortnummer**: Voer het TCP-poortnummer in dat wordt gebruikt voor uw proxyserver
+- **Proxy niet gebruiken voor lokale adressen**: Als u geen proxyserver wilt gebruiken voor lokale adressen, kiest u Inschakelen. Deze instelling is van toepassing als voor de VPN-server een proxyserver is vereist voor de verbinding.
 
 ## <a name="split-tunneling"></a>Split tunneling
 
-- **Split tunneling**: u kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding afhankelijk van het verkeer moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
-- **Split tunneling-routes voor deze VPN-verbinding**: voeg desgewenst routes voor VPN-providers van derden toe. Voer voor elke verbinding een bestemmingsvoorvoegsel en voorvoegselgrootte in.
+- **Split tunneling**: U kunt deze optie **inschakelen**  of **uitschakelen** om apparaten te laten bepalen welke verbinding moet worden gebruikt, afhankelijk van het verkeer. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar gebruikt het standaardnetwerk van het hotel om gewoon op het web te surfen.
+- **Split tunneling-routes voor deze VPN-verbinding**: U kunt desgewenst routes toevoegen voor externe VPN-providers. Voer voor elke verbinding een bestemmingsvoorvoegsel en voorvoegselgrootte in.
 
 ## <a name="trusted-network-detection"></a>Vertrouwd netwerk detecteren
 
-**DNS-achtervoegsels voor vertrouwde netwerken**: wanneer gebruikers al verbonden zijn met een vertrouwd netwerk, kunt u voorkomen dat apparaten automatisch verbinding maken met andere VPN-verbindingen.
+**DNS-achtervoegsels voor vertrouwde netwerken**: Wanneer gebruiker al verbonden zijn met een vertrouwd netwerk, kunt u voorkomen dat apparaten automatisch verbinding maken met andere VPN-verbindingen.
 
 Geef bij **DNS-achtervoegsels** het DNS-achtervoegsel op dat u wilt vertrouwen, zoals contoso.com, en selecteer **Toevoegen**. U kunt zoveel achtervoegsels toevoegen als u wilt.
 

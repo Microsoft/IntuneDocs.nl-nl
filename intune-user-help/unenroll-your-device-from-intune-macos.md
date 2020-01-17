@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 8dd81a6c850fbb3b3d36d4f7b09cd04682e5b31e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501919"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857687"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>De registratie van uw macOS-apparaat bij Bedrijfsportal ongedaan maken
 
@@ -36,7 +36,7 @@ Volg deze stappen om de registratie van uw macOS-apparaat bij beheer ongedaan te
 2. Ga naar **Apparaten** en selecteer het apparaat waarvan u de registratie ongedaan wilt maken.
 
 3. Selecteer het menu pictogram met het weglatings teken > **verwijderen**.
-4. Er wordt een bevestigings bericht weer gegeven. Selecteer verwijderen om de registratie van uw apparaat **ongedaan** te maken. 
+4. Er wordt een bevestigingsbericht weergegeven. Selecteer verwijderen om de registratie van uw apparaat **ongedaan** te maken. 
 
 Wanneer u uw apparaat bij Intune uitschrijft, gebeurt het volgende:
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0cf9b886733c117df0fca38bc94a601d1e9dd8fb
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502123"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858130"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>De wachtwoordcode van uw apparaat opnieuw instellen op de website van de bedrijfsportal
 
@@ -42,7 +42,7 @@ Wachtwoord code opnieuw instellen is niet beschikbaar voor apparaten met Android
 
     ![Een schermafbeelding van de pagina Apparaten, met twee tegels met niet-geïdentificeerde apparaten met een algemene naam. Direct onder de apparaten wordt een grijze banner weergegeven. Er wordt gevraagd welk apparaat de gebruiker gebruikt of dat de gebruiker een nieuw apparaat wil toevoegen.](./media/rename-reset-device-step2-1808.png) 
 
-3. Selecteer **Wachtwoordcode opnieuw instellen**. Als de optie wachtwoordcode niet worden weergegeven aan de bovenkant van de pagina, selecteert u **Meer (...)**   >  **Wachtwoordcode opnieuw instellen**.   
+3. Selecteer **Wachtwoordcode opnieuw instellen**. Als de optie wachtwoordcode niet worden weergegeven aan de bovenkant van de pagina, selecteert u **Meer (...)**  > **Wachtwoordcode opnieuw instellen**.   
 
    ![De pagina met apparaatgegevens van een geselecteerd apparaat op de bedrijfsportalwebsite, met een lijst met bovenaan koppelingen als Naam wijzigen, Verwijderen, Apparaat opnieuw instellen, Wachtwoordcode opnieuw instellen en Extern vergrendelen. ](./media/rename-reset-device-1808.png)   
 
@@ -74,12 +74,12 @@ Wachtwoord code opnieuw instellen is niet beschikbaar voor apparaten met Android
 
 Deze sectie beschrijft het opnieuw instellen van de wachtwoordcode en het gedrag van het tijdelijke wachtwoord voor elk apparaatplatform.  
 
-**Android**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers.
+**Android**: De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers.
 
-**iOS**: de bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u touch ID gebruikt om uw apparaat te openen of aankopen te doen, moet u het opnieuw instellen.  
+**iOS**: De bestaande wachtwoordcode wordt verwijderd en er wordt geen tijdelijke wachtwoordcode gemaakt. Als u touch ID gebruikt om uw apparaat te openen of aankopen te doen, moet u het opnieuw instellen.  
 
-**Windows 10 Mobile**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Als deze is ingesteld, zal Windows Hello-gezichtsherkenning nog steeds met het apparaat werken.
+**Windows 10 Mobile**: De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit letters en cijfers. Als deze is ingesteld, zal Windows Hello-gezichtsherkenning nog steeds met het apparaat werken.
 
-**Windows Phone 8.1**: de bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.  
+**Windows Phone 8.1**: De bestaande wachtwoordcode wordt verwijderd en er wordt een tijdelijke wachtwoordcode gemaakt die bestaat uit cijfers.  
 
 Nog hulp nodig? Neem contact op met het ondersteuningsteam van uw bedrijf. Controleer of de contactgegevens beschikbaar zijn op de [bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).  

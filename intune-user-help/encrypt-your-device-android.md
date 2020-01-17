@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506361"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856679"
 ---
 # <a name="encrypting-your-android-device"></a>Uw Android-apparaat versleutelen
 
@@ -48,7 +48,7 @@ Als Bedrijfsportal of de Microsoft Intune app u vraagt om uw apparaat te versleu
 3. Kies **pincode vereisen wanneer het apparaat** wordt ingeschakeld > **OK**.
 4. Voer uw pincode in om uw apparaat te bevestigen en te versleutelen.
 5. Open de app Bedrijfsportal of Microsoft Intune.
-    * Gebruikers van de bedrijfsportal: selecteer uw apparaat en tik op **Apparaatinstellingen controleren**. 
+    * Bedrijfsportal-gebruikers: Selecteer uw apparaat en tik op **Apparaatinstellingen controleren**. 
     * Microsoft Intune gebruikers: u moet wachten tot de pagina wordt bijgewerkt, maar als dit wel het geval is, wordt de versleutelings status gewijzigd in compatibel.  
 
 Op apparaten met Android 4,4 en eerder wordt mogelijk niet de optie voor **beveiligd opstarten** gebruikt. In dat geval voert u de volgende stappen uit om uw apparaat te versleutelen.
@@ -59,7 +59,7 @@ Op apparaten met Android 4,4 en eerder wordt mogelijk niet de optie voor **bevei
 
 2. Volg de instructies op het scherm. Tijdens het versleutelen wordt het apparaat mogelijk meerdere keren opnieuw opgestart.
 3. Open de app Bedrijfsportal of Microsoft Intune.
-    * Gebruikers van de bedrijfsportal: selecteer uw apparaat en tik op **Apparaatinstellingen controleren**.  
+    * Bedrijfsportal-gebruikers: Selecteer uw apparaat en tik op **Apparaatinstellingen controleren**.  
     * Microsoft Intune gebruikers: u moet wachten tot de pagina wordt bijgewerkt, maar als dit wel het geval is, wordt de versleutelings status gewijzigd in compatibel.
 
 ## <a name="troubleshoot"></a>Problemen oplossen  

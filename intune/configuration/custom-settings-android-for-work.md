@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1bd6e2d5ceebd23e87f464d15376594d1764c5b8
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74319835"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206802"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor Android Enterprise-apparaten in Microsoft Intune
 
@@ -42,21 +42,21 @@ In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor Android E
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende instellingen in:
 
-    - **Naam**: voer een naam in voor het profiel, zoals `android enterprise custom profile`
-    - **Beschrijving:** voer een beschrijving in voor het profiel
-    - **Platform**: kies **Android Enterprise**
-    - **Profieltype**: kies **Aangepast**
+    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profiel naam is bijvoorbeeld een **aangepast Android-ondernemings profiel**.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Selecteer **Android Enterprise**.
+    - **Profiel type**: Selecteer **aangepast**.
 
 4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
 
-    - **Naam**: voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
-    - **Beschrijving**: voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
-    - **OMA-URI**: voer de OMA-URI in die u als instelling wilt gebruiken.
-    - **Gegevenstype**: kies het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
+    - **Naam**: Voer een unieke naam in voor de OMA-URI-instelling, zodat u deze gemakkelijk kunt vinden.
+    - **Beschrijving**: Voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
+    - **OMA-URI**: Voer de OMA-URI in die u als instelling wilt gebruiken.
+    - **Gegevenstype**: Selecteer het gegevenstype dat u voor deze OMA-URI-instelling gaat gebruiken. Uw opties zijn:
 
       - Tekenreeks
       - Tekenreeks (XML-bestand)
@@ -66,33 +66,33 @@ In dit artikel wordt beschreven hoe u een aangepast profiel maakt voor Android E
       - Boolean-waarde
       - Base64 (bestand)
 
-    - **Waarde**: voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** hebt gekozen, selecteert u de waarde in een datumkiezer.
+    - **Waarde**: Voer de gegevenswaarde in die moet worden gekoppeld aan de OMA-URI die u hebt ingevoerd. De waarde is afhankelijk van het gegevenstype dat u hebt geselecteerd. Als u bijvoorbeeld **Datum en tijd** selecteert, selecteert u de waarde in een datumkiezer.
 
     Nadat u een aantal instellingen hebt toegevoegd, kunt u **Exporteren** selecteren. Met **Exporteren** maakt u een lijst met alle waarden die u hebt toegevoegd in een bestand met door komma's gescheiden waarden (.csv).
 
 5. Selecteer **OK** om uw wijzigingen op te slaan. Blijf, indien nodig, meer instellingen toevoegen.
-6. Wanneer u klaar bent, kiest u **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaatconfiguratie - profielen**.
+6. Wanneer u klaar bent, selecteert u **OK** > **Maken** om het Intune-profiel te maken. Wanneer het profiel is gemaakt, wordt dit weergegeven in de lijst **Apparaten - Configuratieprofielen**.
 
 ## <a name="example"></a>Voorbeeld
 
 In dit voorbeeld maakt u een aangepast profiel waarmee kopieer- en plakbewerkingen tussen werk-apps en persoonlijke apps op Android Enterprise-apparaten worden beperkt.
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatconfiguratie** > **Profielen** > **Profiel maken**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende instellingen in:
 
-    - **Naam**: voer een naam in voor het profiel, zoals `android ent block copy paste custom profile`.
-    - **Beschrijving:** voer een beschrijving in voor het profiel.
-    - **Platform**: kies **Android Enterprise**.
-    - **Profieltype**: kies **Aangepast**.
+    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Voer bijvoorbeeld Android- **exemplaar kopiëren van het aangepaste profiel plakken**in.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Selecteer **Android Enterprise**.
+    - **Profiel type**: Selecteer **aangepast**.
 
 4. Selecteer in **Aangepaste OMA-URI-instellingen** de optie **Toevoegen**. Voer de volgende instellingen in:
 
-    - **Naam**: voer iets in als `Block copy and paste`.
-    - **Beschrijving**: voer iets in als `Blocks copy/paste between work and personal apps`.
-    - **OMA-URI**: voer `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` in.
-    - **Gegevenstype**: kies **Booleaans**, zodat de waarde voor deze OMA-URI **Waar** of **Onwaar** is.
-    - **Waarde**: kies **Waar**.
+    - **Naam**: Voer iets in als `Block copy and paste`.
+    - **Beschrijving**: Voer iets in als `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: Voer `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` in.
+    - **Gegevenstype**: Selecteer **Booleaans**, zodat de waarde voor deze OMA-URI **Waar** of **Onwaar** is.
+    - **Waarde**: Selecteer **Waar**.
 
 5. Nadat u de instellingen hebt ingevoerd, moet uw omgeving ongeveer zijn zoals in de volgende afbeelding:
 
@@ -102,6 +102,6 @@ Als u dit profiel toewijst aan Android Enterprise-apparaten die u beheert, wordt
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens [wijst u het profiel toe](device-profile-assign.md).
+Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens kunt u [het profiel toewijzen](../device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-Bekijk hoe u [het profiel op Android-apparaten maakt](../custom-settings-android.md).
+Een [aangepast profiel maken op Android-apparaten](../custom-settings-android.md).

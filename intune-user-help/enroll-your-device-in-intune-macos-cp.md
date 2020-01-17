@@ -5,7 +5,7 @@ keywords: Mac OS X, Mac OS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098127"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855473"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Uw macOS-apparaat inschrijven met behulp van de app Bedrijfsportal  
 
@@ -67,18 +67,17 @@ Gebruik de volgende stappen om uw macOS-apparaat bij uw organisatie in te schrij
 
 1. Meld u aan bij de bedrijfsportal met het account van uw werk of school.  
 2. Wanneer de app wordt geopend, selecteert u **beginnen**.  
-3. Bekijk [wat uw organisatie wel en niet kan zien](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) op het Inge schreven apparaat. Selecteer vervolgens **Doorgaan**.  
-4. Selecteer **profiel downloaden**in het scherm **beheer profiel installeren** .   
+3. Bekijk wat uw organisatie wel en niet kan zien op het Inge schreven apparaat. Selecteer vervolgens **Doorgaan**.
+4.  Als u hierom wordt gevraagd, voert u het wacht woord voor het apparaat in het scherm **beheer profiel installeren** in.
 
-    ![Voor beeld van een scherm opname van Bedrijfsportal, het scherm beheer profiel installeren en de knop ' profiel downloaden ' selecteren.](./media/install-mgmt-profile-mac-1911.PNG)   
-5. De systeem voorkeuren van uw apparaat worden geopend. Selecteer **installeren** en selecteer vervolgens opnieuw **installeren** . Als u wordt gevraagd, voert u het wacht woord van uw apparaat in.  
+    ![Voor beeld van een scherm opname van Bedrijfsportal, scherm beheer profiel installeren, wacht woord prompt markeren.](./media/install-management-profile-macos-1912.PNG)   
+5. Selecteer op het scherm **Apparaatbeheer bevestigen** de optie **systeem voorkeuren openen**.  
 
-    ![Voor beeld van een scherm opname van macOS-systeem voorkeuren, installatie prompt, markeren van de knop installeren.](./media/system-preference-install-1911.PNG)  
-6. Zodra het profiel is geïnstalleerd, wordt het weer gegeven in de lijst profielen onder **beheer profiel.**  
-
-   ![Voor beeld van een scherm opname van macOS System Preferences, Profiles screen, markeren van het geïnstalleerde beheer profiel.](./media/system-preference-verify-1911.PNG)   
-7. Ga terug naar Bedrijfsportal.   
-8. Uw organisatie vereist mogelijk dat u de apparaatinstellingen bijwerkt. Wanneer u klaar bent met het bijwerken van de instellingen, selecteert u **instellingen controleren**.  
+    ![Voor beeld van een scherm opname van het venster Apparaatbeheer bevestigen, waarbij u de knop ' systeem voorkeuren openen ' markeert.](./media/confirm-device-management-macos-1912.PNG)  
+6. De systeem voorkeuren van uw apparaat worden geopend. Selecteer **beheer profiel** in de lijst apparaatprofielen en selecteer vervolgens **goed** keuren > **goed keuren**.  
+    ![voorbeeld scherm afbeelding van systeem voorkeuren, het scherm beheer profiel, de knop goed keuren markeren.](./media/management-profile-approve-macos-1912.PNG)   
+1. Ga terug naar Bedrijfsportal en selecteer **door gaan**.    
+2. Uw organisatie vereist mogelijk dat u de apparaatinstellingen bijwerkt. Wanneer u klaar bent met het bijwerken van de instellingen, selecteert u **instellingen controleren**.  
 
     ![Voor beeld van een scherm opname van Bedrijfsportal, het scherm Apparaatinstellingen bijwerken, de knop instellingen controleren markeren.](./media/update-settings-mac-1911.PNG)  
 9. Wanneer het installatie programma is voltooid, selecteert u **gereed**.  
@@ -88,7 +87,7 @@ Gebruik de volgende stappen om uw macOS-apparaat bij uw organisatie in te schrij
 
 Als u tijdens de registratie problemen ondervindt, gaat u naar **Help** > **diagnostische rapport verzenden** om het probleem te melden aan micro soft app-ontwikkel aars. Deze informatie wordt gebruikt om de app te verbeteren. Ze gebruiken deze informatie ook om het probleem op te lossen als uw IT-ondersteunings medewerker om hulp te bereiken.  
 
-Nadat u het probleem hebt gerapporteerd aan micro soft, kunt u de details van uw ervaring naar uw IT-ondersteunings medewerker sturen. Selecteer de **e-mail gegevens**. Typ in wat u in de hoofd tekst van het e-mail bericht hebt ondervonden. Als u het e-mail adres van uw ondersteunings medewerker wilt vinden, gaat u naar de Bedrijfsportal-app > **contact persoon**. Of Controleer de [bedrijfsportal-website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Nadat u het probleem hebt gerapporteerd aan micro soft, kunt u de details van uw ervaring naar uw IT-ondersteunings medewerker sturen. Selecteer de **e-mail gegevens**. Typ in wat u in de hoofd tekst van het e-mail bericht hebt ondervonden. Als u het e-mail adres van uw ondersteunings medewerker wilt vinden, gaat u naar de Bedrijfsportal-app > **contact persoon**. U kunt ook de [Bedrijfsportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) raadplegen.  
  
 
 Daarnaast zou de Microsoft Intune Bedrijfsportal team graag uw feedback horen. Ga naar **Help** > **Feedback verzenden** om uw ideeën en ideeën te delen.  

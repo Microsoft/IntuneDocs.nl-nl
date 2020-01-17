@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503414"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654070"
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -118,7 +118,7 @@ De entiteit **EnrollmentFailureCategory** geeft aan waarom een apparaatinschrijv
 | Niet van toepassing                  | De categorie van de mislukte inschrijving is niet van toepassing.                                                            |
 | Niet beschikbaar                   | De categorie van de mislukte inschrijving is niet beschikbaar.                                                             |
 | Onbekend                         | Onbekende fout.                                                                                                |
-| Verificatie                  | Verificatie mislukt.                                                                                        |
+| Verificatie                  | De verificatie is mislukt.                                                                                        |
 | Autorisatie                   | De aanroep is geverifieerd, maar niet geautoriseerd om in te schrijven.                                                         |
 | AccountValidation               | Kan het account niet valideren voor inschrijving. (Account geblokkeerd, inschrijving niet ingeschakeld)                      |
 | UserValidation                  | De gebruiker kan niet worden gevalideerd. (De gebruiker bestaat niet, ontbrekende licentie)                                           |
@@ -218,7 +218,7 @@ De entiteit **managementAgentTypes** vertegenwoordigt de agents die worden gebru
 | 3 |EasMdm | Het apparaat wordt beheerd door zowel Exchange Active Sync als een MDM-agent |
 | 4 |IntuneClient | Het apparaat wordt beheerd door de Intune-PC-agent |
 | 5 |EasIntuneClient | Het apparaat wordt beheerd door zowel Exchange Active Sync als de Intune-PC-agent |
-| 8 |ConfigManagerClient | Het apparaat wordt beheerd door de System Center Configuration Manager-agent |
+| 8 |ConfigManagerClient | Het apparaat wordt beheerd door Configuration Manager-agent |
 | 16 |Onbekend | Onbekend type beheeragent |
 
 ## <a name="devices"></a>devices
@@ -242,7 +242,7 @@ Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en 
 | deviceCategoryKey          | Sleutel van de categorie die is gekoppeld aan dit apparaat.                                                                                                                                     |
 | deviceEnrollmentType       | Sleutel van het registratietype dat is gekoppeld aan dit apparaat (geeft de registratiemethode aan).                                                                                             |
 | complianceStateKey         | Sleutel van de Nalevingsstatus die is gekoppeld aan dit apparaat.                                                                                                                             |
-| osVersion                  | Versie van het besturingssysteem van het apparaat.                                                                                                                                                |
+| osVersion                  | De versie van het besturingssysteem van het apparaat.                                                                                                                                                |
 | easDeviceId                | De Exchange ActiveSync-id van het apparaat.                                                                                                                                                  |
 | serialNumber               | SerialNumber                                                                                                                                                                           |
 | userId                     | De unieke id voor de gebruiker die is gekoppeld aan het apparaat.                                                                                                                           |

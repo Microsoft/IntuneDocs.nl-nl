@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832581"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885919"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Problemen met inschrijving van iOS-apparaten in Microsoft Intune oplossen
 
@@ -40,7 +40,7 @@ Verzamel de volgende informatie over het probleem:
 - Welk platform (Android, iOS, Windows) heeft het probleem?
 - Hoeveel gebruikers treft het probleem? Zijn alle gebruikers betrokken of slechts een deel ervan?
 - Hoeveel apparaten heeft het probleem? Zijn alle apparaten betrokken of slechts een deel ervan?
-- Wat is de MDM-instantie? Als het System Center Configuration Manager, welke versie van Configuration Manager gebruikt u?
+- Wat is de MDM-instantie?
 - Hoe wordt de inschrijving uitgevoerd? Kunt u uw eigen apparaat (BYOD) of Apple Device Enrollment Program (DEP) met inschrijvings profielen meenemen?
 
 ## <a name="error-messages"></a>Foutberichten
@@ -186,7 +186,7 @@ Als uw bedrijf meerdere domeinen heeft voor gebruikersreferenties, maakt u CNAME
 **Oorzaak:** Het certificaat van de Apple Push Notification Service (APNs) ontbreekt, is ongeldig of is verlopen.
 
 #### <a name="resolution"></a>Oplossing
-Controleer of er een geldig APNs-certificaat is toegevoegd aan intune. Zie [IOS-en Mac-Apparaatbeheer instellen](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)voor meer informatie. 
+Controleer of er een geldig APNs-certificaat is toegevoegd aan intune. Zie [IOS-registratie instellen](ios-enroll.md)voor meer informatie.
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ Vernieuw het APNs-certificaat en schrijf het apparaat opnieuw in.
 > Zorg ervoor dat u het APNs-certificaat vernieuwt. Vervang het APNs-certificaat niet. Als u het certificaat vervangt, moet u alle iOS-apparaten opnieuw inschrijven in intune. 
 
 - Zie [Apple MDM-push certificaat vernieuwen](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate)voor informatie over het vernieuwen van het APNs-certificaat in de zelfstandige versie van intune.
-- Als u het APNs-certificaat in intune Hybrid wilt vernieuwen met Configuration Manager, raadpleegt u [IOS Hybrid Device Management instellen met System Center Configuration Manager en Microsoft intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Zie [een apns-certificaat voor IOS-apparaten maken](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)voor informatie over het vernieuwen van het apns-certificaat in Office 365.
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR verbinding ongeldig
@@ -230,7 +229,7 @@ Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrij
 #### <a name="resolution"></a>Oplossing
 
 1. Bewerk het inschrijvings profiel. U kunt een wijziging aanbrengen in het profiel. Het doel is de wijzigings tijd van het profiel bij te werken.
-2. Met DEP beheerde apparaten synchroniseren: kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token > **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
+2. Door DEP beheerde apparaten synchroniseren: Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token **Nu synchroniseren**. Er wordt een synchronisatieaanvraag verzonden naar Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP-inschrijving is vastgelopen bij gebruikers aanmelding
 Wanneer u een DEP-beheerd apparaat inschakelt dat is toegewezen aan een inschrijvings profiel, wordt de eerste Setup-stickes nadat u referenties hebt ingevoerd.

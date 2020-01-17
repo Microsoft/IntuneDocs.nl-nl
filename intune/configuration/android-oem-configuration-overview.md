@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390843"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206870"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Android Enter prise-apparaten gebruiken en beheren met OEMConfig in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In Microsoft Intune kunt u OEMConfig gebruiken om OEM-specifieke instellingen voor Android Enter prise-apparaten toe te voegen, te maken en aan te passen. OEMConfig wordt doorgaans gebruikt voor het configureren van instellingen die niet zijn ingebouwd in intune. Andere OEM'S (Original Equipment Manufacturers) bevatten verschillende instellingen. De beschik bare instellingen zijn afhankelijk van wat de OEM in hun OEMConfig-app opneemt.
 
@@ -84,9 +84,9 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, de juiste OEMConfig-app word
 2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
-    - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-    - **Beschrijving:** voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Platform**: selecteer **Android-onderneming**.
+    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: Selecteer **Android Enterprise**.
     - **Profiel type**: Selecteer **OEMConfig**.
 
 4. Selecteer **gekoppelde app**, selecteer een bestaande OEMConfig-app die u eerder > **OK**hebt toegevoegd. Zorg ervoor dat u de juiste OEMConfig-app kiest voor de apparaten waaraan u het beleid toewijst.

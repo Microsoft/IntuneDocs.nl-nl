@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508841"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885535"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Problemen met Intune Exchange Connector oplossen
 
@@ -40,7 +40,7 @@ Voordat u begint met het oplossen van problemen met Exchange connector in intune
   - Stelt u de connector voor de eerste keer in? 
   - Werkt de connector goed en mislukt deze?
   - Als het werk was, welke wijzigingen zijn aangebracht in de intune-omgeving, de Exchange-omgeving of op de computer waarop de connector-software wordt uitgevoerd?
-- Wat is de MDM-instantie? Als het System Center Configuration Manager, welke versie van Configuration Manager gebruikt u?
+- Wat is de MDM-instantie?
 - Welke versie van Exchange gebruikt u?
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell gebruiken om meer gegevens over problemen met de Exchange Connector te verkrijgen
@@ -68,7 +68,7 @@ Bekijk de [vereisten voor on-premises Exchange connector](exchange-connector-ins
 - **Accountmachtigingen**: Zorg ervoor dat u in het dialoogvenster Microsoft Intune Exchange Connector een gebruikersaccount met de juiste machtigingen hebt opgegeven voor het uitvoeren van de [vereiste Windows PowerShell Exchange-cmdlets](exchange-connector-install.md#exchange-cmdlet-requirements).
 - **E-mail berichten met meldingen**: meldingen inschakelen en een meldings account opgeven.
 - **Synchronisatie van de server voor client toegang**: Geef bij het configureren van Exchange connector een certificerings instantie op die de laagste netwerk latentie heeft die mogelijk is voor de server die als host fungeert voor de Exchange connector. Vertragingen in de communicatie tussen de CAS en de Exchange-connector kunnen leiden tot vertraging bij het detecteren van apparaten, vooral als Exchange Online Dedicated wordt gebruikt.
-- **Synchronisatieschema**: mogelijk krijgt een gebruiker met een nieuw ingeschreven apparaat pas toegang nadat de Exchange-connector synchroniseert met de Exchange CAS. Een volledige synchronisatie vindt elke dag plaats en een (snelle) deltasynchronisatie vindt meerdere keren per dag plaats. U kunt [een snelle synchronisatie of volledige synchronisatie handmatig forceren](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) om vertragingen te minimaliseren.
+- **Synchronisatieplanning**: Mogelijk krijgt een gebruiker met een nieuw ingeschreven apparaat pas toegang nadat de Exchange-connector synchroniseert met de Exchange CAS. Een volledige synchronisatie vindt elke dag plaats en een (snelle) deltasynchronisatie vindt meerdere keren per dag plaats. U kunt [een snelle synchronisatie of volledige synchronisatie handmatig forceren](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) om vertragingen te minimaliseren.
 
 ## <a name="next-steps"></a>Volgende stappen
 De volgende artikelen kunnen helpen bij het oplossen van veelvoorkomende problemen en specifieke fouten:

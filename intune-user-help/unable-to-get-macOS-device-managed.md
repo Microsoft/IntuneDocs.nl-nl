@@ -18,21 +18,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 499eb015f38134a8b1ff1c41dd22d26cdd4f7324
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0ceee371ea4324c31a173344dfe252a6e7f52610
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508148"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857852"
 ---
 # <a name="unable-to-get-macos-device-managed"></a>Kan het macOS-apparaat niet beheerd krijgen
 
 Als u een van de volgende berichten ontvangt bij uw poging om uw macOS-apparaat beheerd te krijgen, moet u contact opnemen met het ondersteuningsteam van uw bedrijf.
 
-**Bericht 1:** *Er zijn momenteel problemen met het beheer van uw apparaat. Dit probleem kan worden veroorzaakt als u een virtuele machine gebruikt, over een beperkt serienummer beschikt of als dit apparaat al aan iemand anders is toegewezen. Ontdek hoe u deze problemen kunt oplossen of neem contact op met het ondersteuningsteam van uw bedrijf.*
+**Bericht 1**: *Er zijn momenteel problemen met het beheer van uw apparaat. Dit probleem kan worden veroorzaakt als u een virtuele machine gebruikt, over een beperkt serienummer beschikt of als dit apparaat al aan iemand anders is toegewezen. Ontdek hoe u deze problemen kunt oplossen of neem contact op met het ondersteuningsteam van uw bedrijf.*
 
-**Bericht 2:** *Het lijkt erop dat u een virtuele machine gebruikt. Zorg ervoor dat u uw virtuele machine volledig hebt geconfigureerd, inclusief het serienummer en hardwaremodel. Neem contact op met ondersteuning als dit geen virtuele machine is.*  
+**Bericht 2**: *Het lijkt erop dat u een virtuele machine gebruikt. Zorg ervoor dat u uw virtuele machine volledig hebt geconfigureerd, inclusief het serienummer en hardwaremodel. Neem contact op met ondersteuning als dit geen virtuele machine is.*  
 
 Uw apparaat kan misschien niet worden beheerd om een van de volgende redenen: 
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992898"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206343"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor macOS in Intune
 
@@ -43,9 +43,9 @@ Dit artikel beschrijft deze instellingen en wat elke instelling doet. Het beschr
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Instellingen zijn van toepassing op: registratie van apparaten en automatische apparaatregistratie 
 
 - **IP-adres**: voer het IPv4- of IPv6-adres van de printer in. Als u hostnamen gebruikt om printers te identificeren, haalt u het IP-adres op door de printer in de Terminal-app te pingen. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
-- **Pad**: voer het pad van de printer in. Het pad is doorgaans `ipp/print` voor printers in uw netwerk. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
+- **Pad**: Voer het pad van de printer in. Het pad is doorgaans `ipp/print` voor printers in uw netwerk. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
 - **Poort** (iOS 11.0 en hoger): Voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort.
-- **TLS** (iOS 11.0 en hoger): selecteer **Inschakelen** om AirPrint-verbindingen te beveiligen met Transport Layer Security (TLS).
+- **TLS** (iOS 11.0 en hoger): Selecteer **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS).
 
 - **Voeg** de AirPrint-server toe. U kunt veel AirPrint-servers toevoegen.
 
@@ -89,9 +89,9 @@ Om AirPrinter-servers toe te voegen, hebt u het IP-adres van de printer, het bro
 
 - **Aanvullende informatie op de menubalk weergeven**: Wanneer het tijdgebied op de menubalk wordt geselecteerd, wordt met **Toestaan** de hostnaam en macOS-versie getoond. **Niet geconfigureerd** (standaard): deze informatie wordt niet weergegeven op de menubalk.
 - **Banner**: Voer een bericht in dat op het aanmeldingsscherm van het apparaat wordt weergegeven. Voer bijvoorbeeld gegevens over uw organisatie, een welkomstbericht, informatie over gevonden voorwerpen, enzovoort in.
-- **Aanmeldingsindeling kiezen**: Kies hoe gebruikers zich aanmelden op het apparaat. Uw opties zijn:
-  - **Vragen om gebruikersnaam en wachtwoord** (standaard): hiermee vereist u dat gebruikers een gebruikersnaam en wachtwoord invoeren.
-  - **Alle gebruikers weergeven, vragen om wachtwoord**: hiermee vereist u dat gebruikers hun gebruikersnaam selecteren in een lijst met gebruikers en vervolgens hun wachtwoord invoeren. Configureer ook het volgende:
+- **Aanmeldingsindeling kiezen**: kies hoe gebruikers zich aanmelden op het apparaat. Uw opties zijn:
+  - **Vragen om gebruikersnaam en wachtwoord** (standaard): Hiermee vereist u dat gebruikers een gebruikersnaam en wachtwoord invoeren.
+  - **Een lijst met alle gebruikers weergeven, vragen om wachtwoord**: Hiermee vereist u dat gebruikers hun gebruikersnaam selecteren in een lijst met gebruikers en vervolgens hun wachtwoord invoeren. Configureer ook het volgende:
 
     - **Lokale gebruikers**: Met **Verbergen** worden de lokale gebruikersaccounts niet weergegeven in de lijst met gebruikers, waaronder mogelijk de standaard- en beheerdersaccounts. Alleen de netwerk- en systeemgebruikersaccounts worden weergegeven. **Niet geconfigureerd** (standaard): de lokale gebruikersaccounts worden wel weergegeven in de lijst met gebruikers.
     - **Mobiele accounts**: Met **Verbergen** worden mobiele accounts niet weergegeven in de lijst met gebruikers. **Niet geconfigureerd** (standaard): de mobiele accounts worden wel weergegeven in de lijst met gebruikers. Sommige mobiele accounts worden mogelijk weergegeven als netwerkgebruikers.
@@ -107,7 +107,7 @@ Om AirPrinter-servers toe te voegen, hebt u het IP-adres van de printer, het bro
 
 #### <a name="other"></a>Overige
 
-- **Gebruikersaanmelding via console uitschakelen**: Met **Uitschakelen** wordt de macOS-opdrachtregel die wordt gebruikt voor aanmelding verborgen. Voor standaardgebruikers kunt u deze instelling het beste **Uitschakelen**. **Niet geconfigureerd** (standaard): geavanceerde gebruikers kunnen zich aanmelden via de macOS-opdrachtregel. Om de consolemodus in te schakelen moeten gebruikers `>console` invoeren in het veld Gebruikersnaam en zich verifiëren in het consolevenster.
+- **Gebruikersaanmelding via console uitschakelen**: Met **Uitschakelen** wordt de macOS-opdrachtregel verborgen die wordt gebruikt voor aanmelding. Voor standaardgebruikers kunt u deze instelling het beste **Uitschakelen**. **Niet geconfigureerd** (standaard): geavanceerde gebruikers kunnen zich aanmelden via de macOS-opdrachtregel. Om de consolemodus in te schakelen moeten gebruikers `>console` invoeren in het veld Gebruikersnaam en zich verifiëren in het consolevenster.
 
 #### <a name="apple-menu"></a>Apple-menu
 
@@ -117,7 +117,7 @@ Nadat gebruikers zich bij de apparaten hebben aangemeld, bepalen de volgende ins
 - **Opnieuw opstarten deactiveren**: Met **Uitschakelen** wordt voorkomen dat gebruikers na aanmelding de optie **Opnieuw opstarten** selecteren. **Niet geconfigureerd** (standaard): gebruikers kunnen de menuopdracht **Opnieuw opstarten** wel selecteren op het apparaat.
 - **Uitschakelen deactiveren**: Met **Uitschakelen** wordt voorkomen dat gebruikers na aanmelding de optie **Uitschakelen** selecteren. **Niet geconfigureerd** (standaard): gebruikers kunnen de menuopdracht **Uitschakelen** wel selecteren op het apparaat.
 - **Afmelden deactiveren** (macOS 10.13 en hoger): Met **Uitschakelen** wordt voorkomen dat gebruikers na aanmelding de optie **Afmelden** selecteren. **Niet geconfigureerd** (standaard): gebruikers kunnen de menuopdracht **Afmelden** wel selecteren op het apparaat.
-- **Vergrendelingsscherm deactiveren** (macOS 10.13 en hoger): Met **Uitschakelen** wordt voorkomen dat gebruikers na aanmelding de optie **Scherm vergrendelen** selecteren. **Niet geconfigureerd** (standaard): gebruikers kunnen de menuopdracht **Scherm vergrendelen** wel selecteren op het apparaat.
+- **Vergrendelingsscherm deactiveren** (macOS 10.13 en hoger): Met **Uitschakelen** wordt voorkomen dat gebruikers na aanmelding de optie **Vergrendelingsscherm** selecteren. **Niet geconfigureerd** (standaard): gebruikers kunnen de menuopdracht **Scherm vergrendelen** wel selecteren op het apparaat.
 
 ## <a name="single-sign-on-app-extension"></a>App-extensie voor eenmalige aanmelding
 
@@ -135,7 +135,7 @@ Deze functie is van toepassing op:
   - **Kerberos**: gebruik de ingebouwde Kerberos-uitbrei ding van Apple, die is opgenomen in macOS Catalina 10,15 en hoger. Deze optie is een Kerberos-specifieke versie van de extensie voor **referentie** -apps.
 
   > [!TIP]
-  > Met de **omleidings** -en **referentie** typen kunt u uw eigen configuratie waarden toevoegen om de extensie door te geven. Als u **referentie**gebruikt, kunt u overwegen ingebouwde configuratie-instellingen te gebruiken die worden meegeleverd met Apple in het **Kerberos** -type.
+  > Met de **omleidings** -en **referentie** typen kunt u uw eigen configuratie waarden toevoegen om de extensie door te geven. Als u **referentie**gebruikt, kunt u overwegen de ingebouwde configuratie-instellingen van Apple in het type **Kerberos** te gebruiken.
 
 - **Extensie-id** (omleiding en referentie): Geef de bundel-id op waarmee uw SSO-app-extensie wordt geïdentificeerd, zoals `com.apple.ssoexample`.
 - **Team-ID** (omleiding en referentie): Voer de team-ID van de extensie van uw SSO-app in. Een team-ID is een alfanumerieke teken reeks van 10 tekens (cijfers en letters) die wordt gegenereerd door Apple, zoals `ABCDE12345`. 
@@ -183,7 +183,7 @@ Deze functie is van toepassing op:
 - **Limiet voor het opnieuw gebruiken van wacht woorden** (alleen Kerberos): Voer het aantal nieuwe wacht woorden in, van 1-24, dat moet worden gebruikt totdat een vorig wacht woord opnieuw kan worden gebruikt in het domein. **Niet geconfigureerd** (standaard) dwingt de limiet voor het opnieuw instellen van wacht woorden niet af.
 - **Minimale wachtwoord duur** (alleen Kerberos): Geef het aantal dagen op dat een wacht woord moet worden gebruikt voor het domein voordat een gebruiker het kan wijzigen. **Niet geconfigureerd** (standaard) dwingt geen minimale leeftijd van wacht woorden af voordat deze kunnen worden gewijzigd.
 - **Melding over verlopen van wacht woord** (alleen Kerberos): Voer het aantal dagen in waarna een wacht woord verloopt dat gebruikers op de hoogte worden gesteld dat hun wacht woord verloopt. **Niet geconfigureerd** (standaard) gebruikt `15` dagen.
-- **Wachtwoord verloopt** (alleen Kerberos): voer het aantal dagen in waarna het wachtwoord voor het apparaat moet worden gewijzigd. **Niet geconfigureerd** (standaard) betekent dat gebruikers wachtwoorden nooit verlopen.
+- **Wachtwoordverlooptijd** (alleen Kerberos): Geef op na hoeveel dagen het wachtwoord voor het apparaat moet worden gewijzigd. **Niet geconfigureerd** (standaard) betekent dat gebruikers wachtwoorden nooit verlopen.
 - **URL voor wachtwoord wijziging** (alleen Kerberos): Voer de URL in die wordt gestart wanneer de gebruiker een Kerberos-wachtwoord wijziging initieert.
 - **Principal-naam** (alleen Kerberos): Voer de gebruikers naam van de Kerberos-principal in. U hoeft de realm-naam niet op te vermelden. In `user@contoso.com`is `user` bijvoorbeeld de principal-naam en `contoso.com` de realm-naam.
 
@@ -225,7 +225,7 @@ Deze functie is van toepassing op:
 
   Het Service type kan zijn:
 
-  - **authsrv** : app-extensie voor eenmalige aanmelding
+  - **authsrv**: App-extensie voor eenmalige aanmelding
   - **applink**: Universele koppeling
   - **Webreferenties**: wacht woord automatisch door voeren
 

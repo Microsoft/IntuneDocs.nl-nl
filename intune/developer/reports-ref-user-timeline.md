@@ -6,7 +6,7 @@ keywords: Intune-datawarehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b94be3e1454c60f16ff40e73ce37f8c4e349126d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7ba64bef1b15ac6382351857d017a5d699aeafa9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813347"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654155"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Levensduur gebruikers weergeven in het Microsoft Intune-datawarehouse
 
@@ -39,14 +39,14 @@ Als we ervan uitgaan dat een gebruiker, bijvoorbeeld **Jan de Vries**, een licen
  
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| Jan de Vries | ONWAAR | 01-06-2017 | 31-12-9999 | WAAR
+| Jan de Vries | FALSE | 01-06-2017 | 31-12-9999 | TRUE
  
 Jan de Vries beëindigt zijn licentie op 25-07-2017. De tabel **Gebruiker** bevat de volgende vermeldingen. Wijzigingen in bestaande records zijn `marked`. 
 
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| Jan de Vries | ONWAAR | 01-06-2017 | `07/26/2017` | `FALSE` 
-| Jan de Vries | WAAR | 26-07-2017 | 31-12-9999 | WAAR 
+| Jan de Vries | FALSE | 01-06-2017 | `07/26/2017` | `FALSE` 
+| Jan de Vries | TRUE | 26-07-2017 | 31-12-9999 | TRUE 
 
 De eerste rij geeft aan dat Jan de Vries in Intune bestond van 01-06-2017 tot 25-07-2017. De tweede record geeft aan dat de gebruiker op 25-07-2017 werd verwijderd en niet meer in Intune aanwezig is.
 
@@ -54,9 +54,9 @@ Laten we er nu van uitgaan dat Jan de Vries een nieuwe licentie krijgt toegeweze
  
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| Jan de Vries | ONWAAR | 01-06-2017 | 26-07-2017 | ONWAAR 
-| Jan de Vries | WAAR | 26-07-2017 | `08/31/2017` | `FALSE` 
-| Jan de Vries | ONWAAR | 08/31/2017 | 31-12-9999 | WAAR 
+| Jan de Vries | FALSE | 01-06-2017 | 26-07-2017 | FALSE 
+| Jan de Vries | TRUE | 26-07-2017 | `08/31/2017` | `FALSE` 
+| Jan de Vries | FALSE | 08/31/2017 | 31-12-9999 | TRUE 
  
 Iemand die de huidige status van alle gebruikers wil zien, kan als filter `IsCurrent = TRUE` gebruiken. 
  

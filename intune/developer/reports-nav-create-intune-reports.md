@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899344"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547903"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Het Intune-datawarehouse gebruiken
 
@@ -43,7 +43,7 @@ Het datawarehouse biedt u toegang tot meer informatie over uw mobiele omgeving d
 - Een gegevensmodel waarbij de OData-standaard wordt gebruikt
 
 > [!Note]
-> Als u gebruikmaakt van gezamenlijk beheerd Mobile Device Management (MDM) met System Center Configuration Manager en Microsoft Intune, moet u uw gegevens ophalen uit Configuration Manager. Het Intune-datawarehouse bevat alleen Intune-gegevens. U kunt een Configuration Manager Power BI-dashboard gebruiken voor uw aangepaste rapporten. Zie [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) (Introductie van de Power BI-oplossingssjabloon voor System Center Configuration Manager) en [Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) (Power BI-inhoud voor Dynamics 365) voor meer informatie.
+> Als u gebruikmaakt van gezamenlijk beheerd Mobile Device Management (MDM) met Microsoft Endpoint Configuration Manager en Microsoft Intune, moet u uw gegevens ophalen uit Configuration Manager. Het Intune-datawarehouse bevat alleen Intune-gegevens. U kunt een Configuration Manager Power BI-dashboard gebruiken voor uw aangepaste rapporten. Zie [Aankondiging van de Power BI-oplossingssjabloon voor Configuration Manager](https://powerbi.microsoft.com/blog/sccm-solution-template) en [Power BI-inhoud voor Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) voor meer informatie.
 
 > [!Important]  
 > U kunt nu versie v1.0 van een Intune-datawarehouse gebruiken door de queryparameter  `api-version=v1.0` in te stellen. Updates voor verzamelingen in het datawarehouse zijn additief van aard en veroorzaken geen problemen voor bestaande scenario's.<br><br>
