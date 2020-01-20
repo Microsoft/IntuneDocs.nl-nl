@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692192"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885798"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
@@ -93,7 +93,7 @@ U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>iOS-configuratie op niet-beheerde apparaten
 
-U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps.
+U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps. Behalve met de onderstaande stappen, kunt u ook toegang krijgen tot de logboeken van beheerde apps met behulp van Microsoft Edge. Zie [Met Microsoft Edge in iOS logboeken voor beheerde apps openen](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs) voor meer informatie.
 
 1. Download en installeer **Intune Managed Browser** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
 2. Start **Intune Managed Browser** en selecteer **about** > **intunehelp** in de navigatiebalk.
@@ -162,7 +162,7 @@ Als u logboeken van een Android-apparaat wilt verzamelen, moet u of de eindgebru
     
 ## <a name="graph-api-support-for-app-configuration"></a>Graph API-ondersteuning voor app-configuratie
 
-U kunt Graph API gebruiken om app-configuratietaken uit te voeren. Zie het Engelstalige [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) voor meer informatie.
+U kunt Graph API gebruiken om app-configuratietaken uit te voeren. Zie het Engelstalige [Graph API Reference MAM Targeted Config](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta) voor meer informatie. Zie [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta) (Werken met intune in Microsoft Graph) voor meer informatie over Intune en Graph.
 
 ## <a name="troubleshooting"></a>Probleemoplossing
 

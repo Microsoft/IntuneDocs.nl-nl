@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303063"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956262"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Groepen toevoegen om gebruikers en apparaten in te delen
 
@@ -54,7 +54,7 @@ Volg de onderstaande stappen om een nieuwe groep te maken.
         >
         > Als uw primaire rol apparaatbeheer is, raden we u aan het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) te gebruiken.
 
-    - **Office 365**: deze groepen zijn ontworpen om de toegang tot Office 365-resources te beheren en te delen. U kunt bijvoorbeeld een Office 365-groep maken om een Postvak IN of agenda in Outlook-te delen. Zie [Over Office 365-groepen](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) voor meer informatie.
+    - **Office 365**: Biedt mogelijkheden voor samenwerking door leden toegang te geven tot gedeelde postvakken, agenda's, bestanden, SharePoint-sites en meer. Met deze optie kunt u ook personen van buiten uw organisatie toegang verlenen tot de groep. Zie [Over Office 365-groepen](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) voor meer informatie.
 
 4. Voer een **naam** en **beschrijving** in voor de nieuwe groep. Wees specifiek en voeg informatie toe, zodat anderen weten waar de groep voor dient.
 

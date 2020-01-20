@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692128"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956336"
 ---
 # <a name="app-protection-policies-overview"></a>Overzicht van App-beveiligingsbeleid
 
@@ -133,11 +133,11 @@ Er zijn echter enkele beperkingen waar u rekening mee moet houden, zoals:
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps die u kunt beheren met beleidsregels voor de beveiliging van apps
 
-Alle apps die zijn geïntegreerd met de [Intune App SDK](../developer/app-sdk.md) of die zijn ingepakt met de [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md), kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [door Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) die zijn gemaakt met deze hulpprogramma's en die beschikbaar zijn voor openbaar gebruik.
+Alle apps die zijn geïntegreerd met de [Intune-SDK](../developer/app-sdk.md) of die zijn ingepakt met de [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md), kunnen worden beheerd met Intune-beleidsregels voor de beveiliging van apps. Zie de officiële lijst met [door Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) die zijn gemaakt met deze hulpprogramma's en die beschikbaar zijn voor openbaar gebruik.
 
 Het Intune SDK-ontwikkelingsteam houdt zich actief bezig met het testen en onderhouden van ondersteuning voor apps die zijn gebouwd met de systeemeigen Android-, iOS- (Objective-C, Swift), Xamarin-, Xamarin.Forms- en Cordova-platforms. Hoewel het sommige klanten is gelukt om de Intune SDK te integreren in andere platforms, zoals React Native en NativeScript, bieden we geen specifieke instructies of plug-ins voor app-ontwikkelaars die andere platforms gebruiken dan de platforms die door ons worden ondersteund.
 
-De [Intune App SDK](../developer/app-sdk.md) maakt gebruik van een aantal geavanceerde moderne verificatiefuncties van [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) voor zowel de eigen als de externe versies van de SDK. Hierdoor werkt [Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) niet goed met de meeste belangrijkste scenario's, zoals verificatie in de Intune-app-beveiligingsservice en voorwaardelijk starten. Gezien het feit dat het Identity-team van Microsoft gebruikers over het algemeen aanraadt om voor alle Microsoft Office-apps over te stappen naar MSAL, zal de [Intune App SDK](../developer/app-sdk.md) daar uiteindelijk ondersteuning voor moeten gaan bieden, maar hier zijn momenteel nog geen plannen voor.
+De [Intune-SDK](../developer/app-sdk.md) maakt gebruik van een aantal geavanceerde moderne verificatiefuncties van [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) voor zowel de eigen als de externe versies van de SDK. Hierdoor werkt [Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) niet goed met de meeste belangrijkste scenario's, zoals verificatie in de Intune-app-beveiligingsservice en voorwaardelijk starten. Gezien het feit dat het Identity-team van Microsoft gebruikers over het algemeen aanraadt om voor alle Microsoft Office-apps over te stappen naar MSAL, zal de [Intune-SDK](../developer/app-sdk.md) daar uiteindelijk ondersteuning voor moeten gaan bieden, maar hier zijn momenteel nog geen plannen voor.
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>Vereisten voor eindgebruikers voor het gebruik van beveiligingsbeleid voor apps
 
@@ -198,7 +198,7 @@ Hoewel het **algemene** beleid van toepassing is op alle gebruikers in uw tenant
 
 ### <a name="multi-identity"></a>Meerdere identiteiten
 
-Met ondersteuning voor meerdere identiteiten kan een app meerdere doelgroepen ondersteunen. Deze doelgroepen zijn zowel zakelijke gebruikers als persoonlijke gebruikers. Werk- en schoolaccounts worden gebruikt door zakelijke doelgroepen, terwijl persoonlijke accounts worden gebruikt voor consumentendoelgroepen, zoals Microsoft Office-gebruikers. Een app met ondersteuning voor meerdere identiteiten kan openbaar worden vrijgegeven, waarbij het app-beveiligingsbeleid alleen van toepassing is als de app wordt gebruikt in de werk- en schoolcontext (zakelijk). Via ondersteuning voor meerdere identiteiten kan de [Intune App SDK](../developer/app-sdk.md) beleidsregels voor de beveiliging van apps toepassen op alleen het werk- of schoolaccount dat is aangemeld bij de app. Als een persoonlijk account is aangemeld bij de app, blijven de gegevens ongewijzigd.
+Met ondersteuning voor meerdere identiteiten kan een app meerdere doelgroepen ondersteunen. Deze doelgroepen zijn zowel zakelijke gebruikers als persoonlijke gebruikers. Werk- en schoolaccounts worden gebruikt door zakelijke doelgroepen, terwijl persoonlijke accounts worden gebruikt voor consumentendoelgroepen, zoals Microsoft Office-gebruikers. Een app met ondersteuning voor meerdere identiteiten kan openbaar worden vrijgegeven, waarbij het app-beveiligingsbeleid alleen van toepassing is als de app wordt gebruikt in de werk- en schoolcontext (zakelijk). Via ondersteuning voor meerdere identiteiten kan de [Intune-SDK](../developer/app-sdk.md) beleidsregels voor de beveiliging van apps toepassen op alleen het werk- of schoolaccount dat is aangemeld bij de app. Als een persoonlijk account is aangemeld bij de app, blijven de gegevens ongewijzigd.
 
 Een voorbeeld van een persoonlijke context is een gebruiker die een nieuw document start in Word. Omdat dit als persoonlijke context wordt beschouwd, wordt er geen beveiligingsbeleid voor apps van Intune toegepast. Zodra het document is opgeslagen in het zakelijke OneDrive-account, wordt het beschouwd als zakelijke context en wordt er Intune-app-beveiligingsbeleid op toegepast.
 
@@ -213,7 +213,7 @@ Zie [MAM en meerdere identiteiten](apps-supported-intune-apps.md) voor meer info
 De pincode is een wachtwoordcode die wordt gebruikt om te verifiëren of de juiste gebruiker de bedrijfsgegevens in een app benadert.
 
 **Pincodeprompt**<br>
-Intune vraagt naar de pincode van de gebruiker wanneer de gebruiker 'zakelijke' gegevens benadert. In apps met functionaliteit voor meerdere identiteiten, zoals Word, Excel of PowerPoint, wordt gebruikers om hun pincode gevraagd wanneer ze een 'zakelijk' document of bestand willen openen. In apps waarvoor maar één identiteit kan worden gebruikt, zoals Line-Of-Business-apps die worden beheerd met de [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md)-functionaliteit, wordt gelijk bij het starten van de app om de pincode gevraagd, omdat de [Intune App SDK](../developer/app-sdk.md) weet dat de gebruiker de app uitsluitend 'zakelijk' gebruikt.
+Intune vraagt naar de pincode van de gebruiker wanneer de gebruiker 'zakelijke' gegevens benadert. In apps met functionaliteit voor meerdere identiteiten, zoals Word, Excel of PowerPoint, wordt gebruikers om hun pincode gevraagd wanneer ze een 'zakelijk' document of bestand willen openen. In apps waarvoor maar één identiteit kan worden gebruikt, zoals Line-Of-Business-apps die worden beheerd met de [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md)-functionaliteit, wordt gelijk bij het starten van de app om de pincode gevraagd, omdat de [Intune-SDK](../developer/app-sdk.md) weet dat de gebruiker de app uitsluitend 'zakelijk' gebruikt.
 
 **Pincodeprompt of zakelijke referentieprompt, frequentie**<br>
 De IT-beheerder kan de beleidsinstelling voor beveiliging van de Intune-app in de Intune-beheerconsole instellen op **Toegangsvereisten opnieuw controleren na (minuten)** . Deze instelling geeft de hoeveelheid tijd aan voordat de toegangsvereisten op het apparaat worden gecontroleerd en het scherm voor de pincode of zakelijke referentieprompt opnieuw wordt weergegeven. Belangrijke informatie over de pincode die van invloed is op hoe vaak de gebruiker om de pincode wordt gevraagd, is:
@@ -231,13 +231,22 @@ Zelfs als de pincode wordt gedeeld met apps van andere uitgevers verschijnt bij 
 De pincode van Intune werkt op basis van een timer van inactiviteit (de waarde voor **Toegangsvereisten opnieuw controleren na (minuten)** ). Er wordt dus gevraagd om de pincode van Intune. Dit is onafhankelijk van de prompts voor de pincode van de app voor Outlook en OneDrive, die vaak standaard verschijnen bij het starten van de app. Als beide prompts tegelijk worden weergegeven, moet de pincode van Intune voorrang krijgen.
 
 **Intune-pincodebeveiliging**<br>
-De pincode zorgt ervoor dat alleen de juiste gebruiker toegang heeft tot de gegevens van de organisatie in de app. Daarom moet een eindgebruiker zich aanmelden met een werk- of schoolaccount voordat de pincode voor de Intune-app kan worden ingesteld of hersteld. Deze verificatie wordt verwerkt door Azure Active Directory via uitwisseling van een beveiligde token en is niet transparant voor de [Intune App SDK](../developer/app-sdk.md). Vanuit het oogpunt van veiligheid kunt u werk- of schoolgerelateerde gegevens het beste versleutelen. Versleuteling is niet gerelateerd aan de pincode van de app, maar is een eigen app-beveiligingsbeleid.
+De pincode zorgt ervoor dat alleen de juiste gebruiker toegang heeft tot de gegevens van de organisatie in de app. Daarom moet een eindgebruiker zich aanmelden met een werk- of schoolaccount voordat de pincode voor de Intune-app kan worden ingesteld of hersteld. Deze verificatie wordt verwerkt door Azure Active Directory via uitwisseling van een beveiligde token en is niet transparant voor de [Intune-SDK](../developer/app-sdk.md). Vanuit het oogpunt van veiligheid kunt u werk- of schoolgerelateerde gegevens het beste versleutelen. Versleuteling is niet gerelateerd aan de pincode van de app, maar is een eigen app-beveiligingsbeleid.
 
-**Intune-pincode: bescherming tegen beveiligingsaanvallen**<br>
-Als onderdeel van het app-pincodebeleid kan de IT-beheerder een maximumaantal verificatiepogingen voor gebruikers instellen voordat de app wordt vergrendeld. Na het toegestane aantal aanmeldingspogingen kan de [Intune App SDK](../developer/app-sdk.md) de 'zakelijke' gegevens in de app wissen.
-  
+**Bescherming tegen beveiligingsaanvallen en de Intune-pincode**<br>
+Als onderdeel van het app-pincodebeleid kan de IT-beheerder een maximumaantal verificatiepogingen voor gebruikers instellen voordat de app wordt vergrendeld. Na het toegestane aantal aanmeldingspogingen kan de [Intune-SDK](../developer/app-sdk.md) de 'zakelijke' gegevens in de app wissen.
+
+**Intune-pincode en selectief wissen**<br>
+Op iOS worden de pincodegegevens op app-niveau opgeslagen in de sleutelhanger die wordt gedeeld tussen apps met dezelfde uitgever, zoals alle apps van Microsoft zelf. Deze pincodegegevens zijn ook gekoppeld aan een eindgebruikersaccount. Selectief wissen van één app hoort geen invloed te hebben op een andere app. 
+
+Zo wordt bijvoorbeeld een voor Outlook ingestelde pincode voor de aangemelde gebruiker opgeslagen in een gedeelde sleutelhanger. Wanneer de gebruiker zich aanmeldt bij OneDrive (ook gepubliceerd door Microsoft), ziet deze dezelfde pincode als Outlook, omdat OneDrive dezelfde gedeelde sleutelhanger gebruikt. Bij het afmelden bij Outlook of het wissen van de gebruikersgegevens in Outlook, maakt de Intune-SDK die sleutelhanger niet leeg, omdat OneDrive die pincode misschien nog gebruikt. Hierdoor wordt die gedeelde sleutelhanger, met inbegrip van de pincode, niet leeggemaakt bij selectief wissen. Dit gedrag blijft hetzelfde, zelfs als er maar één app van een uitgever op het apparaat bestaat. 
+
+Omdat de pincode wordt gedeeld tussen apps met dezelfde uitgever, weet de Intune-SDK wanneer er één app wordt gewist niet of er nog andere apps van dezelfde uitgever op het apparaat staan. Daarom maakt de Intune-SDK de pincode niet leeg, omdat deze mogelijk nog wordt gebruikt voor andere apps. De verwachting is dat de pincode van de app wordt gewist wanneer de laatste app van die uitgever uiteindelijk wordt verwijderd als onderdeel van een of andere opschoning van het besturingssysteem.
+ 
+Als u ziet dat de pincode op sommige apparaten wordt gewist, gebeurt waarschijnlijk het volgende: Aangezien de pincode aan een identiteit is gekoppeld, wordt de gebruiker gevraagd een nieuwe pincode in te voeren als deze zich na het wissen aanmeldt met een ander account. Als de gebruiker zich echter aanmeldt met een al bestaand account, kan een reeds in de sleutelhanger opgeslagen pincode worden gebruikt om aan te melden.
+
 **Twee keer een pincode instellen voor apps van dezelfde uitgever?**<br>
-Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt met alfanumerieke tekens en speciale tekens (wachtwoordcode genoemd) waarvoor de deelname van toepassingen (zoals WXP, Outlook, Managed Browser, Yammer) is vereist om te integreren met de [Intune App SDK voor iOS](../developer/app-sdk-ios.md). Zonder deze deelname, worden de instellingen voor de wachtwoordcode niet goed afgedwongen voor de betreffende toepassingen. Dit is een functie die is uitgebracht in de Intune SDK voor iOS v. 7.1.12.
+Voor MAM (op iOS) kan momenteel een pincode op toepassingsniveau worden gebruikt met alfanumerieke tekens en speciale tekens (wachtwoordcode genoemd) waarvoor de deelname van toepassingen (zoals WXP, Outlook, Managed Browser, Yammer) is vereist om te integreren met de [Intune-SDK voor iOS](../developer/app-sdk-ios.md). Zonder deze deelname, worden de instellingen voor de wachtwoordcode niet goed afgedwongen voor de betreffende toepassingen. Dit is een functie die is uitgebracht in de Intune SDK voor iOS v. 7.1.12.
 
 Om deze functie te ondersteunen en te zorgen voor compatibiliteit met eerdere versies van de Intune SDK voor iOS, worden alle pincodes (numeriek of als wachtwoordcode) in 7.1.12+ los van de pincode in eerdere versies van de SDK verwerkt. Dus als een apparaat toepassingen met Intune SDK voor iOS-versies lager dan 7.1.12 EN hoger dan 7.1.12 van dezelfde uitgever heeft, moeten er twee pincodes worden ingesteld. De twee pincodes (voor elke app) staan echter volledig los van elkaar: ze moeten voldoen aan het app-beveiligingsbeleid dat voor die app geldt. Dus *alleen* als voor app A en app B hetzelfde beleid is toegepast (met betrekking tot pincodes), kan de gebruiker dezelfde pincode tweemaal instellen. 
 
@@ -261,6 +270,8 @@ Alleen gegevens die zijn gemarkeerd als 'zakelijk' worden versleuteld overeenkom
 
 Alle app-gegevens in Line-Of-Business-apps die worden beheerd door de [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md)-functionaliteit, worden beschouwd als 'zakelijk'.
 
+### <a name="selective-wipe"></a>Selectief wissen
+
 **Gegevens op afstand wissen**<br>
 Met Intune kunnen app-gegevens op drie verschillende manieren worden gewist: 
 - Apparaat volledig wissen
@@ -269,10 +280,10 @@ Met Intune kunnen app-gegevens op drie verschillende manieren worden gewist:
 
 Raadpleeg [Apparaten verwijderen door wissen of buiten gebruik stellen](../remote-actions/devices-wipe.md) voor meer informatie over wissen op afstand voor MDM. Raadpleeg [de actie Buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) en [Alleen zakelijke gegevens wissen uit apps](apps-selective-wipe.md) voor meer informatie over selectief wissen met behulp van MAM.
 
-Met [Wissen](../remote-actions/devices-wipe.md) verwijdert u alle gebruikersgegevens en instellingen van **het apparaat** door op het apparaat de fabrieksinstellingen te herstellen. Het apparaat wordt uit Intune verwijderd.
+Met [Volledig wissen](../remote-actions/devices-wipe.md) verwijdert u alle gebruikersgegevens en instellingen van **het apparaat** door het apparaat terug te zetten op de standaardfabrieksinstellingen. Het apparaat wordt uit Intune verwijderd.
 
   >[!NOTE]
-  > Alleen apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM) kunnen worden gewist.
+  > Apparaat volledig wissen en Selectief wissen voor MDM kunnen alleen worden uitgevoerd op apparaten die zijn geregistreerd bij Intune Mobile Device Management (MDM).
 
 **Selectief wissen voor MDM**<br>
 Raadpleeg [Apparaten verwijderen - buiten gebruik stellen](../remote-actions/devices-wipe.md#retire) voor meer informatie over het verwijderen van zakelijke gegevens.
@@ -280,24 +291,20 @@ Raadpleeg [Apparaten verwijderen - buiten gebruik stellen](../remote-actions/dev
 **Selectief wissen voor MAM**<br>
 Bij selectief wissen voor MAM worden gegevens van bedrijfs-apps gewoon gewist uit een app. De aanvraag wordt gestart via de Intune Azure-portal. Raadpleeg [Alleen zakelijke gegevens wissen uit door Intune beheerde apps](apps-selective-wipe.md) voor meer informatie over hoe u een verzoek om te wissen aanvraagt.
 
-Als de gebruiker de app gebruikt wanneer selectief wissen wordt gestart, controleert de [Intune App SDK](../developer/app-sdk.md) om de 30 minuten op aanvragen van de MAM-service voor selectief wissen. Daarnaast wordt er gecontroleerd of er een aanvraag voor selectief wissen is verzonden wanneer de gebruiker de app voor de eerste keer start en zich aanmeldt met een werk- of schoolaccount.
+Als de gebruiker de app gebruikt wanneer selectief wissen wordt gestart, controleert de [Intune-SDK](../developer/app-sdk.md) om de 30 minuten op aanvragen van de MAM-service voor selectief wissen. Daarnaast wordt er gecontroleerd of er een aanvraag voor selectief wissen is verzonden wanneer de gebruiker de app voor de eerste keer start en zich aanmeldt met een werk- of schoolaccount.
 
 **Wanneer er geen on-premises services (on-prem) kunnen worden gebruikt in combinatie met apps die zijn beveiligd met Intune**<br>
-Voor de app-beveiliging van Intune moet de identiteit van de gebruiker voor de toepassing en [Intune App SDK](../developer/app-sdk.md) consistent zijn. Dit kan alleen worden gegarandeerd via moderne verificatie. Er zijn scenario's waarin apps met een on-premisses configuratie werken, maar deze zijn niet consistent en kunnen ook niet worden gegarandeerd.
+Voor de app-beveiliging van Intune moet de identiteit van de gebruiker voor de toepassing en [Intune-SDK](../developer/app-sdk.md) consistent zijn. Dit kan alleen worden gegarandeerd via moderne verificatie. Er zijn scenario's waarin apps met een on-premisses configuratie werken, maar deze zijn niet consistent en kunnen ook niet worden gegarandeerd.
 
 **Veilige manier om webkoppelingen te openen vanuit beheerde apps**<br>
 De IT-beheerder kan een app-beveiligingsbeleid implementeren en instellen voor de [Intune Managed Browser-app](app-configuration-managed-browser.md), een webbrowser die is ontwikkeld door Microsoft Intune en eenvoudig kan worden beheerd met Intune. De IT-beheerder kan ervoor zorgen dat alle webkoppelingen in de door Intune beheerde apps moeten worden geopend met de Managed Browser-app.
-
-## <a name="examples-of-app-protection-policies"></a>Voorbeelden van beleidsregels voor de beveiliging van apps
-
-Zie de [beleidsinstellingen voor de beveiliging van Android-apps](app-protection-policy-settings-android.md) en de [beleidsinstellingen voor de beveiliging van iOS-apps](app-protection-policy-settings-ios.md) voor voorbeelden van beleidsregels voor de beveiliging van apps en gedetailleerde informatie over elke beleidsinstelling voor de beveiliging van apps.
 
 ## <a name="app-protection-experience-for-ios-devices"></a>App-beveiligingservaring voor iOS-apparaten
 
 ### <a name="device-fingerprint-or-face-ids"></a>Vingerafdruk- of gezichts-id van apparaat 
 Het Intune-beleid voor app-beveiliging geeft u de mogelijkheid app-toegang te beperken tot enkel de gebruiker met een Intune-licentie. Een van de manieren om toegang tot de app te beheren, is op ondersteunde apparaten Touch ID of Face ID van Apple te vereisen. Intune implementeert een gedrag waarbij Intune, na iedere wijziging in de biometrische database van het apparaat, de gebruiker vraagt een pincode in te voeren wanneer aan de volgende time-outwaarde voor inactiviteit wordt voldaan. Wijzigingen in biometrische gegevens omvatten het toevoegen of verwijderen van een vingerafdruk of gezicht. Als de Intune-gebruiker geen pincode heeft ingesteld, wordt gevraagd om een Intune-pincode in te stellen.
  
-Dit proces heeft als doel de gegevens van uw organisatie in de app op app-niveau veilig en beschermd te houden. Deze functie is alleen beschikbaar voor iOS en vereist het gebruik van toepassingen die de Intune-APP SDK voor iOS, versie 9.0.1 of hoger, hebben geïntegreerd. Integratie van de SDK is nodig om het gedrag te kunnen afdwingen in de betreffende toepassingen. Deze integratie vindt doorlopend plaats en is afhankelijk van de specifieke toepassingsteams. Apps die hieraan deelnemen, zijn onder meer WXP, Outlook, Managed Browser en Yammer.
+Dit proces heeft als doel de gegevens van uw organisatie in de app op app-niveau veilig en beschermd te houden. Deze functie is alleen beschikbaar voor iOS en vereist het gebruik van toepassingen die de Intune-SDK voor iOS, versie 9.0.1 of hoger, hebben geïntegreerd. Integratie van de SDK is nodig om het gedrag te kunnen afdwingen in de betreffende toepassingen. Deze integratie vindt doorlopend plaats en is afhankelijk van de specifieke toepassingsteams. Apps die hieraan deelnemen, zijn onder meer WXP, Outlook, Managed Browser en Yammer.
   
 ### <a name="ios-share-extension"></a>iOS-extensie voor delen
 U kunt de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen in niet-beheerde apps, zelfs wanneer het beleid voor gegevensoverdracht is ingesteld op **Alleen voor beheerde apps** of **Geen apps**. De iOS-extensie voor delen kan alleen met het app-beveiligingsbeleid worden beheerd als ook het apparaat wordt beheerd. Daarom worden _**'zakelijke' gegevens door Intune versleuteld voordat ze buiten de app worden gedeeld**_ . U kunt dit versleutelingsgedrag controleren door een 'zakelijk' bestand te openen buiten de beheerde app. Het bestand moet zijn versleuteld en kan niet worden geopend bijten de beheerde app.
@@ -305,7 +312,7 @@ U kunt de iOS-extensie voor delen gebruiken om werk- of schoolgegevens te openen
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>Meerdere toegangsinstellingen voor Intune-app-beveiligingsbeleid voor dezelfde set apps en gebruikers
 Het Intune-app-beveiligingsbeleid voor toegang wordt in een bepaalde volgorde toegepast op apparaten van eindgebruikers wanneer ze vanaf hun bedrijfsaccount proberen toegang te krijgen tot een doel-app. In het algemeen krijgt wissen voorrang, dan volgt een waarschuwing die kan worden gesloten. Indien van toepassing op de specifieke gebruiker/app, wordt een instelling van een minimumversie van het iOS-besturingssysteem die een gebruiker waarschuwt om de iOS-versie bij te werken bijvoorbeeld toegepast na de instelling van de minimumversie van het iOS-besturingssysteem die toegang door de gebruiker blokkeert. Dus in het scenario waarin de IT-beheerder de minimumversie van het iOS-besturingssysteem configureert naar 11.0.0.0 en de minimumversie van het iOS-besturingssysteem (alleen Waarschuwing) naar 11.1.0.0, terwijl het apparaat dat de app probeert te openen op iOS 10 zit, wordt de eindgebruiker geblokkeerd op basis van de restrictievere instelling voor de minimumversie van het iOS-besturingssysteem die resulteert in geblokkeerde toegang.
 
-Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een Intune App SDK-versie voorrang, dan een app-versievereiste, gevolgd door de versievereisten van het iOS-besturingssysteem. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd. We raden u aan om de Intune App SDK-versievereisten alleen te configureren op advies van het Intune-productteam voor essentiële blokkerende scenario's.
+Wanneer u te maken hebt met verschillende soorten instellingen, krijgt een Intune-SDK-versie voorrang, dan een app-versievereiste, gevolgd door de versievereisten van het iOS-besturingssysteem. Vervolgens worden eventuele waarschuwingen voor alle typen instellingen in dezelfde volgorde gecontroleerd. We raden u aan om de Intune-SDK-versievereisten alleen te configureren op advies van het Intune-productteam voor essentiële blokkerende scenario's.
 
 ## <a name="app-protection-experience-for-android-devices"></a>App-beveiligingservaring voor Android-apparaten
 
@@ -344,6 +351,10 @@ Google Play Services moet actief zijn voor de instellingen van het app-beveiligi
 ## <a name="next-steps"></a>Volgende stappen
 
 [Beveiligingsbeleid voor apps maken en implementeren met Microsoft Intune](app-protection-policies.md)
+
+[Beschikbare instellingen voor beveiligingsbeleid voor Android-apps met Microsoft Intune](app-protection-policy-settings-android.md)
+
+[Beschikbare instellingen voor beveiligingsbeleid voor iOS-apps met Microsoft Intune](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>Zie tevens
 Apps van derden, zoals de mobiele app van Salesforce, werken gericht met Intune om bedrijfsgegevens te beveiligen. Ga voor meer informatie over hoe de Salesforce-app met Intune werkt (inclusief MDM-configuratie-instellingen voor apps), naar [Salesforce-app en Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207448"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956275"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Windows 10-software-updates beheren in Intune
 
@@ -63,7 +63,7 @@ Aan de volgende vereisten moet worden voldaan om Windows-updates voor Windows 10
   > - Windows 10 Mobile  
   > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) biedt momenteel geen ondersteuning voor *Long Term Service Channel*-releases. Plan het gebruik van alternatieve methoden voor het toepassen van patches, zoals WSUS of Configuration Manager.
 
-- Op Windows-apparaten moet **Feedback en diagnostische gegevens** > **Diagnostische gegevens en gebruiksgegevens** zijn ingesteld op **Basis**, **Uitgebreid** of **Volledig**.  
+- Op Windows-apparaten moet **Feedback en diagnostische gegevens** > **Diagnostische gegevens en gebruiksgegevens** zijn ingesteld op **Basis**, **Uitgebreid** of **Volledig**.
 
   U kunt de instelling *Diagnostische gegevens en gebruiksgegevens* voor Windows 10-apparaten handmatig configureren of een Intune-apparaatbeperkingsprofiel gebruiken voor Windows 10 en hoger. Als u een apparaatbeperkingsprofiel gebruikt, stelt u de [apparaatbeperkingsinstelling](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) van **Gebruiksgegevens delen** in op ten minste **Basis**. U vindt deze instelling in de categorie **Rapportage en telemetrie** wanneer u een apparaatbeperkingsbeleid configureert voor Windows 10 of hoger.
 
@@ -215,6 +215,10 @@ Wanneer een apparaat een beleid voor Windows 10-onderdelenupdates ontvangt:
 
   Momenteel wordt onderzocht of deze beperking in de toekomst kan worden ondersteund.
 
+> [!IMPORTANT]
+> Om het onderdelenupdatebeleid met Intune te kunnen gebruiken, moet de telemetrie van de apparaten zijn ingeschakeld, met een minimaal de instelling [*Basis*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). Telemetrie wordt geconfigureerd onder *Rapportage en telemetrie* als onderdeel van een [Restrictiebeleid voor apparaten](../configuration/device-restrictions-configure.md).
+>
+> Apparaten waarop het beleid voor onderdelenupdates wordt ontvangen en waarvan de telemetrie is ingesteld op *Niet geconfigureerd*, wat betekent dat het uit staat, kunnen een latere versie van Windows installeren dan gedefinieerd in het beleid voor onderdelenupdates. De voorwaarde om telemetrie te vereisen wordt momenteel herzien, nu deze functie zich ontwikkelt in de richting van algemene beschikbaarheid.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10-onderdelenupdates maken en toewijzen
 
@@ -245,4 +249,3 @@ In dit deelvenster kunt u het volgende doen:
 [Intune-nalevingsrapporten voor updates](../windows-update-compliance-reports.md)
 
 [Problemen met Windows 10-update-ringen oplossen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

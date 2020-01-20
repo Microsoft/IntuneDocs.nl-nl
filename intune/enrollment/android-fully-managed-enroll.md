@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562382"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885942"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Intune-inschrijving van volledig beheerde Android Enterprise-apparaten instellen 
 
@@ -36,7 +36,7 @@ Intune helpt bij het implementeren van apps en het opgeven van instellingen voor
 
 ## <a name="technical-requirements"></a>Technische vereisten
 
-U hebt een zelfstandige Intune-tenant nodig om volledig beheerde Android Enterprise-apparaten te beheren. Het beheer van volledig beheerde apparaten is niet beschikbaar in de hybride modus (verbonden met Configuration Manager) of in de verouderde Silverlight-beheerconsole.
+U hebt een zelfstandige Intune-tenant nodig om volledig beheerde Android Enterprise-apparaten te beheren. Het beheer van volledig beheerde apparaten is niet beschikbaar in de verouderde Silverlight-beheerconsole.
 
 Apparaten moeten voldoen aan de volgende vereisten om te worden beheerd als een volledig beheerd Android Enterprise-apparaat:
 

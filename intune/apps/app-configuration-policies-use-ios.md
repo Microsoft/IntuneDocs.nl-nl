@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547985"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885773"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
 
@@ -182,7 +182,7 @@ DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel me
 
 1. Voeg in Intune zo nodig de Intune-bedrijfsportal-app toe. Hiervoor gaat u naar **Intune** > **Apps** > **Alle apps** > **Toevoegen**.
 2. Ga naar **Apps** > **App-configuratiebeleid** om een app-configuratiebeleid voor de bedrijfsportal-app te maken.
-3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een configuratiebeleid voor apps en het invoeren van XML-gegevens vindt u op [Configuratiebeleid voor apps voor beheerde iOS-apparaten ](app-configuration-policies-use-ios.md) of voor hybride MDM, [Instellingen toepassen op iOS-apps met configuratiebeleid voor apps in Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een app-configuratiebeleid en het invoeren van XML-gegevens vindt u in [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md) (App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen).
 
     ``` xml
     <dict>

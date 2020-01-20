@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819788"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756013"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -67,7 +67,7 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |Gedeeld apparaat|Als de waarde hier **Ja** is, wordt het apparaat door meerdere gebruikers gedeeld.|Windows, iOS|
 |Door de gebruiker goedgekeurde inschrijving|Als de waarde hier **Ja** is, is er door de gebruiker goedgekeurde inschrijving beschikbaar. Dit betekent dat beheerders bepaalde beveiligingsinstellingen op het apparaat kunnen beheren.|Windows, iOS|
 |Besturingssysteem|Het besturingssysteem op het apparaat.|Windows, iOS|
-|Versie van besturingssysteem|De versie van het besturingssysteem op het apparaat.|Windows, iOS|
+|Versie van besturingssysteem|De versie van het besturingssysteem van het apparaat.|Windows, iOS|
 |Taal van besturingssysteem|De taal die is ingesteld voor het besturingssysteem op het apparaat.|Windows, iOS|
 |Buildnummer|Het buildnummer van het besturingssysteem.|Android|
 |Beveiligingspatchniveau|Het niveau van de beveiligingspatch voor het apparaat.|Android|
@@ -94,6 +94,9 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|Windows, iOS, Android|
 
 \* Niet beschikbaar in Android met Google Policy Manager, zoals volledig beheerde en toegewezen apparaten
+
+> [!Note]  
+> Op toegewezen of volledig beheerde Android-apparaten wordt het telefoonnummer niet geïnventariseerd.
 
 ## <a name="next-steps"></a>Volgende stappen
 Bekijk wat u nog meer kunt doen om met Intune uw [apparaten te beheren](device-management.md).

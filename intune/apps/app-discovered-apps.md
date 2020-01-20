@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205527"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857040"
 ---
 # <a name="intune-discovered-apps"></a>Door Intune gedetecteerde apps
 
@@ -67,6 +67,7 @@ De volgende lijst bevat de app-platformtypen, de apps die worden bewaakt op pers
 > [!NOTE]
 > - Op apparaten die zijn gekoppeld aan Windows 10 Hybrid Azure AD, zoals weergegeven in de workload App-beheer in Configuration Manager, wordt momenteel geen app-inventarisatie verzameld met IME (Intune Management Extensie), volgens de bovenstaande planning. Als u dit probleem wilt verhelpen, moet u de workload App-beheer in Configuration Manager overschakelen naar Intune voor de IME, om te worden geïnstalleerd op het apparaat (IME is vereist voor Win32-inventarisatie en PowerShell-implementatie). Opmerking: eventuele wijzigingen in of updates van dit gedrag worden aangekondigd in [In ontwikkeling](../fundamentals/in-development.md) en/of [Nieuwe functies](../fundamentals/whats-new.md).
 > - Op macOS-apparaten in persoonlijk eigendom die zijn ingeschreven vóór november 2019 kunnen alle apps die op het apparaat zijn geïnstalleerd in gebruik blijven totdat het apparaat opnieuw wordt inschreven.
+> - Volledig beheerde en toegewezen Android Enterprise-apparaten geven geen gedetecteerde apps weer.
 
 Het aantal gedetecteerde apps komt mogelijk niet overeen met de status van het aantal geïnstalleerde apps. Mogelijkheden voor inconsistenties zijn onder andere:
 

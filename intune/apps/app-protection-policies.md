@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563728"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885744"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -93,9 +93,6 @@ Wanneer u een app-beveiligingsbeleid maakt voor iOS/iPadOS- en Android-apps, vol
 
 9. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.<br>
    Op de pagina **Toewijzingen** kunt u het beveiligingsbeleid voor apps toewijzen aan groepen gebruikers.
-   
-    >[!IMPORTANT]
-    > Als u Intune met Configuration Manager gebruik om uw apparaten te beheren, wordt het beleid alleen direct op gebruikers in de geselecteerde groep toegepast. Leden van de onderliggende groepen binnen de geselecteerde groep worden niet door het beleid beïnvloed.
 
 10. Klik op **Volgende: Beoordelen en maken** om de waarden en instellingen te bekijken die u hebt ingevoerd voor dit app-beveiligingsbeleid.
 
@@ -186,7 +183,7 @@ Voor het maken van deze beleidsregels bladert u naar **Apps** > **App-beveiligin
 Voor iOS zijn extra app-configuratie-instellingen vereist om APP-instellingen (beveiligingsbeleid voor apps) te richten op apps op apparaten die zijn ingeschreven bij Intune:
 
 - **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
-- **IntuneMAMDeviceID** moet zijn geconfigureerd voor alle door derden en met line-of-business MDM beheerde toepassingen. **IntuneMAMDeviceID** moet zijn geconfigureerd voor het apparaat-id-token. Voorbeeld: `key=IntuneMAMDeviceID, value={{deviceID}}`. Zie [App-configuratiebeleidsregels toevoegen voor beheerde iOS-apparaten](app-configuration-policies-use-ios.md) voor meer informatie.
+- **IntuneMAMDeviceID** moet zijn geconfigureerd voor alle door derden en met line-of-business MDM beheerde toepassingen. **IntuneMAMDeviceID** moet zijn geconfigureerd voor het apparaat-id-token. Bijvoorbeeld `key=IntuneMAMDeviceID, value={{deviceID}}`. Zie [App-configuratiebeleidsregels toevoegen voor beheerde iOS-apparaten](app-configuration-policies-use-ios.md) voor meer informatie.
 - Als alleen de **IntuneMAMDeviceID** is geconfigureerd, wordt het apparaat in Intune APP beschouwd als niet-beheerd.
 
 > [!NOTE]

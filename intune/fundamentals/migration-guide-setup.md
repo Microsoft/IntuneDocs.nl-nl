@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510010"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885858"
 ---
 # <a name="basic-setup"></a>Basisconfiguratie
 
@@ -74,9 +74,9 @@ Voordat u naar Intune kunt migreren, moet u eerst beschikken over een Intune-abo
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Taak 3: de MDM-instantie instellen op Intune
 
-Intune kan worden beheerd via Azure Portal of de Configuration Manager Current Branch-console. Tenzij u Intune wilt integreren met een Configuration Manager Current Branch-implementatie, raden we u aan Intune te beheren via de [Azure Portal](https://portal.azure.com).
+U wordt aangeraden Intune te beheren met behulp van het [Beheercentrum voor Microsoft Eindpuntbeheer](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Stel de MDM-instantie in op **Intune** om Intune Azure Portal in te schakelen. Door het gebruik van een andere MDM-instantie kan Intune het MDM-beheer overdragen aan andere Microsoft-beheerconsoles. Deze gevallen zijn niet gebruikelijk.
+Stel uw MDM-instantie in op **Intune**. Door het gebruik van een andere MDM-instantie kan Intune het MDM-beheer overdragen aan andere Microsoft-beheerconsoles. Deze gevallen zijn niet gebruikelijk.
 
 > [!IMPORTANT]
 > Als u het beheer van mobiele apparaten voor het eerst overdraagt aan Intune, moet u de MDM-instantie instellen op Intune.

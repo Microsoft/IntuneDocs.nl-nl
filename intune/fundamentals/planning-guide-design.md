@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547545"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885782"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -101,19 +101,11 @@ Wanneer u de huidige MDM-omgeving vastlegt, moet u rekening houden met alle proj
 | **SharePoint** | SharePoint On-premises | Er zijn geen plannen om over te stappen op SharePoint Online |  
 | **Huidig MDM** | Exchange ActiveSync |  |
 | **Certificaatoplossing** | Microsoft Server 2012 R2, AD Certificate Services | Gebruik alleen PKI voor websiteservers |
-| **Systeembeheer** | Configuration Manager CB 1606 | Wil een hybride oplossing met Intune onderzoeken |
+| **Systeembeheer** | Huidige versie van Configuration Manager | Wil een co-beheeroplossing onderzoeken |
 | **VPN-oplossing** | Cisco AnyConnect |  |
 
 
 U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om als leidraad te gebruiken bij het ontwikkelen van uw Intune-ontwerpplan.
-
-## <a name="choose-an-intune-deployment-option"></a>Kies een optie voor Intune-implementatie
-
-Intune biedt twee opties voor implementatie: zelfstandig en hybride. Zelfstandig verwijst naar de Intune-service die wordt uitgevoerd in de cloud, hybride verwijst naar de integratie van Intune met Configuration Manager. Deze handleiding is voornamelijk bedoeld voor het gebruik van de zelfstandige optie. [Beslis welke optie het beste aansluit op uw bedrijfsbehoeften.](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
-
-> [!Important]
->De onboarding van nieuwe hybride MDM-klanten is afgeschaft. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.
-
 
 ## <a name="intune-tenant-location"></a>Locatie van Intune-tenant
 

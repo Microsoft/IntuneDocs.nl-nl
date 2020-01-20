@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43c5d0731736df193bf615391ad486a60dff6cdd
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547768"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885903"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>De instantie voor het beheer van mobiele apparaten instellen
 
@@ -36,16 +36,13 @@ Mogelijke configuraties zijn:
 
 - **Co-beheer voor Intune**: integratie van de Intune-cloudoplossing met Configuration Manager voor Windows 10-apparaten. U kunt Intune configureren met behulp van de Configuration Manager-console. [Configureer de automatische inschrijving van apparaten in Intune](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
-    > [!Important]
-    >De onboarding van nieuwe hybride MDM-klanten is afgeschaft. Zie de blogpost [Overstappen van hybride Mobile Device Management naar Intune op Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) voor meer informatie.
-
 - **Mobile Device Management voor Office 365**: integratie van Office 365 met de Intune-cloudoplossing. U kunt Intune configureren vanuit het Microsoft 365-beheercentrum. Bevat een subset van de mogelijkheden die beschikbaar zijn met Intune Standalone. Stel de MDM-instantie in het Microsoft 365-beheercentrum in.
 
 - **Combinatie met Office 365 MDM**: u kunt MDM voor Office 365 gelijktijdig met Intune activeren en gebruiken in uw tenant. U kunt per gebruiker de beheerinstantie instellen op Intune of MDM voor Office 365 om te bepalen welke service wordt gebruikt voor het beheren van de mobiele apparaten van die gebruiker. De beheerinstantie van de gebruiker wordt gedefinieerd op basis van de licentie die aan de gebruiker is toegewezen. Zie het blogbericht [Microsoft Intune Co-existence with MDM for Office 365](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365) voor meer informatie
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM-instantie instellen op Intune
 
-Als u de MDM-instantie nog niet hebt ingesteld, volgt u de onderstaande stappen. Zie [Hybride MDM-gebruikers en -apparaten migreren naar Intune (zelfstandig)](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa) als u wilt overstappen van SCCM.
+Als u de MDM-instantie nog niet hebt ingesteld, volgt u de onderstaande stappen.
 
 1. Selecteer in [het beheercentrum Eindpuntbeheer van Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) de oranje banner om de instelling **Instantie voor beheer van mobiele apparaten** te openen. De oranje banner wordt alleen weergegeven als u de MDM-instantie nog niet hebt ingesteld.
 2. Kies onder **Instantie voor beheer van mobiele apparaten** uw MDM-instantie uit de volgende opties:
@@ -69,10 +66,9 @@ Hoe dan ook, blijft de toestemming beperkt tot het uitvoeren van een service voo
 - [Gegevens die Intune naar Apple verzendt](https://aka.ms/data-intune-sends-to-apple)
 
 ## <a name="key-considerations"></a>Belangrijke overwegingen
-Nadat u overschakelt naar de nieuwe MDM-instantie, duurt het waarschijnlijk enige tijd (maximaal acht uur) voordat het apparaat wordt ingecheckt en synchroniseert met de service. U moet instellingen in de nieuwe MDM-instantie (hybride) configureren om ervoor te zorgen dat geregistreerde apparaten na de wijziging nog steeds worden beheerd en beschermd. 
+Nadat u overschakelt naar de nieuwe MDM-instantie, duurt het waarschijnlijk enige tijd (maximaal acht uur) voordat het apparaat wordt ingecheckt en synchroniseert met de service. U moet instellingen in de nieuwe MDM-instantie configureren om ervoor te zorgen dat geregistreerde apparaten na de wijziging nog steeds worden beheerd en beschermd. 
 - Apparaten moeten na de wijziging verbinding maken met de service, zodat de instellingen van de nieuwe MDM-instantie (zelfstandige versie van Intune) de huidige instellingen op het apparaat vervangen.
-- Na het wijzigen van de MDM-instantie blijven sommige basisinstellingen (zoals profielen) van de vorige MDM-instantie (zelfstandige versie van Intune) maximaal zeven dagen aanwezig op het apparaat, of totdat het apparaat de eerste keer verbinding maakt met de service. Het is aan te raden om de apps en instellingen (beleid, profielen, apps enzovoort) zo snel mogelijk te configureren in de nieuwe MDM-instantie (hybride) en de instellingen te implementeren naar de gebruikersgroepen met gebruikers met bestaande geregistreerde apparaten. Zodra een apparaat verbinding maakt met de service na de wijziging van MDM-instantie, ontvangt het de nieuwe instellingen van de nieuwe MDM-instantie om te voorkomen dat het apparaat enige tijd onbeheerd en onbeschermd is.
-- Wanneer dezelfde apparaatcategorieën bestaan in Intune en Configuration Manager, worden apparaatcategorietoewijzingen voor apparaten niet overgedragen nadat u naar de nieuwe MDM-instantie bent overgeschakeld. Als u apparaatcategorieën wilt blijven gebruiken, moet u gemigreerde apparaten handmatig toevoegen aan de juiste verzamelingen nadat de MDM-instantie is gewijzigd en de apparaten worden weergegeven in de Configuration Manager-console.
+- Na het wijzigen van de MDM-instantie blijven sommige basisinstellingen (zoals profielen) van de vorige MDM-instantie maximaal zeven dagen aanwezig op het apparaat, of totdat het apparaat de eerste keer verbinding maakt met de service. Het is aan te raden om de apps en instellingen (beleid, profielen, apps enzovoort) zo snel mogelijk te configureren in de nieuwe MDM-instantie en de instellingen te implementeren naar de gebruikersgroepen met gebruikers met bestaande geregistreerde apparaten. Zodra een apparaat verbinding maakt met de service na de wijziging van MDM-instantie, ontvangt het de nieuwe instellingen van de nieuwe MDM-instantie om te voorkomen dat het apparaat enige tijd onbeheerd en onbeschermd is.
 - Apparaten waaraan geen gebruikers zijn gekoppeld (zoals wanneer u werkt met het iOS Device Enrollment Program of scenario’s voor bulkinschrijving) worden niet gemigreerd naar de nieuwe MDM-instantie. Voor die apparaten moet u contact opnemen met ondersteuning voor hulp bij het overbrengen naar de nieuwe MDM-instantie.
 
 ## <a name="change-mdm-authority-to-office-365"></a>MDM-instantie wijzigen in Office 365
@@ -93,14 +89,14 @@ De MDM-instantie kan niet weer worden gewijzigd in Onbekend. De MDM-instantie wo
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>Wat u kunt verwachten na het wijzigen van de MDM-instantie
 
-- Wanneer via de Intune-service wordt gedetecteerd dat de MDM-instantie van een tenant is gewijzigd, wordt er een verzoek verzonden naar alle geregistreerde apparaten om in te checken bij en te synchroniseren met de service (deze melding staat los van het gebruikelijke geplande inchecken). Dus nadat de MDM-instantie voor de tenant is gewijzigd van de zelfstandige versie van Intune in hybride, maken alle ingeschakelde apparaten die online zijn, verbinding met de service, ontvangen deze de nieuwe MDM-instantie en worden deze voortaan beheerd door hybride. Het beheer en de beveiliging van deze apparaten worden niet onderbroken.
+- Wanneer via de Intune-service wordt gedetecteerd dat de MDM-instantie van een tenant is gewijzigd, wordt er een verzoek verzonden naar alle geregistreerde apparaten om in te checken bij en te synchroniseren met de service (deze melding staat los van het gebruikelijke geplande inchecken). Dus nadat de MDM-instantie voor de tenant is gewijzigd van de zelfstandige versie van Intune, maken alle ingeschakelde apparaten die online zijn, verbinding met de service, ontvangen deze de nieuwe MDM-instantie en worden deze voortaan beheerd door de nieuwe MDM-instantie. Het beheer en de beveiliging van deze apparaten worden niet onderbroken.
 - Zelfs voor ingeschakelde apparaten die online zijn tijdens (of kort na) de wijziging van MDM-instantie is er een vertraging van maximaal acht uur (afhankelijk van de timing van het gebruikelijke geplande inchecken) voordat apparaten zijn geregistreerd bij de service met de nieuwe MDM-instantie.    
 
   > [!IMPORTANT]    
   > Gedurende de periode tussen het wijzigen van de MDM-instantie en het uploaden van het vernieuwde APNs-certificaat naar de nieuwe instantie, mislukt het inschrijven van nieuwe apparaten en inchecken van iOS-apparaten. Daarom is het belangrijk dat u het APNs-certificaat zo snel mogelijk vernieuwt en uploadt naar de nieuwe instantie na het wijzigen van de MDM-instantie.
 
 - Gebruikers kunnen snel overschakelen naar de nieuwe MDM-instantie door handmatig in te checken bij de service met hun apparaat. Gebruikers kunnen deze wijziging gemakkelijk doorvoeren door de bedrijfsportal-app te openen en een compatibiliteitscontrole te starten.
-- Als u wilt controleren of alles goed werkt nadat apparaten zijn ingecheckt en gesynchroniseerd met de service na het wijzigen van de MDM-instantie, zoekt u de apparaten in de Configuration Manager-console. De apparaten die voorheen werden beheerd door Intune, worden nu weergegeven als beheerde apparaten in de Configuration Manager-console.    
+- Als u wilt controleren of alles goed werkt nadat apparaten zijn ingecheckt en gesynchroniseerd met de service na het wijzigen van de MDM-instantie, zoekt u de apparaten in de nieuwe MDM-instantie.
 - Er ontstaat een tijdelijke situatie als een apparaat offline is tijdens de wijziging van MDM-instantie en pas later incheckt bij de service. Om ervoor te zorgen dat het apparaat beveiligd is en blijft functioneren tijdens deze periode, blijven de volgende profielen maximaal zeven dagen beschikbaar op het apparaat (of tot het moment waarop het apparaat verbinding maakt met de nieuwe MDM-instantie en nieuwe instellingen ontvangt die de oude overschrijven):
   - E-mailprofiel
   - VPN-profiel
@@ -115,7 +111,7 @@ De MDM-instantie kan niet weer worden gewijzigd in Onbekend. De MDM-instantie wo
 
 - Nadat u de MDM-instantie wijzigt, voert u de volgende stappen uit om te controleren of nieuwe apparaten correct worden ingeschreven bij de nieuwe instantie:   
   - Een nieuw apparaat inschrijven
-  - Controleer of het nieuw ingeschreven apparaat wordt weergegeven in de Configuration Manager-console.
+  - Controleer of het nieuw ingeschreven apparaat wordt weergegeven in de nieuwe MDM-instantie.
   - Voer een actie uit op het apparaat vanaf de beheerconsole, zoals vergrendelen op afstand. Als dit lukt, wordt het apparaat beheerd door de nieuwe MDM-instantie.
 - Als er problemen optreden met specifieke apparaten, kunt u ze uitschrijven en weer inschrijven om ze verbinding te laten maken met de nieuwe instantie en zo snel mogelijk weer te kunnen beheren.
 

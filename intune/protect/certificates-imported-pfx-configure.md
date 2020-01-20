@@ -2,27 +2,27 @@
 title: Geïmporteerde PFX-certificaten gebruiken in Microsoft Intune - Azure | Microsoft Docs
 description: Geïmporteerde PKCS-certificaten (Public Key Cryptography Standards) gebruiken met Microsoft Intune, inclusief het importeren van certificaten, het configureren van certificaatsjablonen, het installeren van de Intune Imported PFX Certificate Connector en het maken van een geïmporteerd PKCS-certificaatprofiel.
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801519"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886019"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Geïmporteerde PKCS-certificaten configureren en gebruiken met Intune
 
@@ -46,14 +46,17 @@ Als u geïmporteerde PKCS-certificaten wilt gebruiken met Intune, hebt u de volg
 
   Zie, voor meer informatie over alle netwerkeindpunten die de connector benadert, de [Netwerkconfiguratievereisten en bandbreedte voor Intune](../fundamentals/network-bandwidth-use.md).
 
-- **Windows Server**:  
+- **Windows Server**:
+
   U kunt een Windows-server gebruiken als host voor de PFX-certificaatconnector voor Microsoft Intune.  De connector wordt gebruikt om aanvragen te verwerken voor certificaten die in Intune worden geïmporteerd.
 
   Intune staat toe dat de *Microsoft Intune-certificaatconnector* en de *PFX-certificaatconnector voor Microsoft Intune* op dezelfde server worden geïnstalleerd.
 
   Voor de connector moet op de server .NET 4.6 Framework of hoger worden uitgevoerd. Als .NET 4.6 Framework nog niet is geïnstalleerd wanneer u de installatie van de connector start, wordt dit automatisch geïnstalleerd tijdens de installatie van de connector.
 
-- **Visual Studio 2015 of hoger** (optioneel): U kunt Visual Studio gebruiken om de PowerShell-hulpmodule te maken met cmdlets voor het importeren van PFX-certificaten in Microsoft Intune. Ga naar het [PowerShell-project PFXImport op GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell) om de PowerShell-hulpcmdlets te downloaden.
+- **Visual Studio 2015 of hoger** (optioneel):
+
+  U kunt Visual Studio gebruiken om de PowerShell-hulpmodule te maken met cmdlets voor het importeren van PFX-certificaten in Microsoft Intune. Ga naar het [PowerShell-project PFXImport op GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell) om de PowerShell-hulpcmdlets te downloaden.
 
 ## <a name="how-it-works"></a>Hoe het werkt
 
@@ -143,15 +146,14 @@ U kunt een HSM gebruiken om het sleutelpaar met een openbare en persoonlijke sle
 
 Het volgende proces maakt gebruik van de PowerShell-cmdlets als voorbeeld van hoe u PFX-certificaten kunt importeren. U kunt verschillende opties kiezen, afhankelijk van uw vereisten.
 
-Opties zijn onder andere:  
-- Beoogd doel (de certificaten worden gegroepeerd op basis van een tag):  
+Opties zijn onder andere:
+
+- Beoogd doel (de certificaten worden gegroepeerd op basis van een tag):
   - unassigned
   - smimeEncryption
   - smimeSigning
 
-- Opvullingsschema:  
-  - pkcs1
-  - oaepSha1
+- Opvullingsschema:
   - oaepSha256
   - oaepSha384
   - oaepSha512

@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654257"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756003"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune
 
@@ -38,6 +38,8 @@ Intune biedt ook een ingebouwd [versleutelingsrapport](encryption-monitor.md) me
 ## <a name="filevault-encryption-for-macos"></a>FileVault-versleuteling voor macOS
 
 Gebruik Intune om FileVault-schijfversleuteling te configureren op apparaten waarop macOS wordt uitgevoerd. Gebruik vervolgens het Intune-versleutelingsrapport voor het weergeven van de versleutelingsgegevens voor deze apparaten en voor het beheren van herstelsleutels voor met FileVault versleutelde apparaten.
+
+Let op: door gebruiker goedgekeurde apparaatinschrijving is vereist om FileVault op het apparaat te laten werken. De inschrijving geldt alleen als goedgekeurd door de gebruiker als deze het beheerprofiel handmatig goedkeurt vanuit de systeemvoorkeuren. 
 
 FileVault is een programma voor de versleuteling van volledige schijven. Het programma wordt geleverd bij macOS. U kunt Intune gebruiken om FileVault te configureren op apparaten waarop **macOS 10.13 of hoger** wordt uitgevoerd.
 
@@ -72,14 +74,7 @@ Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren,
 
 7. Configureer de overige [FileVault-instellingen](endpoint-protection-macos.md#filevault) zodanig dat er aan de vereisten van uw bedrijf wordt voldaan. Selecteer vervolgens **OK**.
 
-   > [!IMPORTANT]
-   > Er is een bekend probleem wanneer de instelling **Vraag bij afmelden uitschakelen** is ingesteld op *Inschakelen*. Als deze optie is ingesteld op *Ingeschakeld*, moet de instelling voor **Toegestaan aantal keren voor overslaan** worden ingesteld op een waarde en niet worden ingesteld op *Niet geconfigureerd*. Als de optie is ingesteld op *Niet geconfigureerd*, mislukt het profiel op het apparaat. In dit scenario wordt gemeld dat het een **Overzicht profielstatus** betreft met de status **Fout**, zonder nadere informatie.
-   >
-   > Als **Vraag bij afmelden uitschakelen** is ingesteld op *Niet geconfigureerd*, kan **Toegestaan aantal keren voor overslaan** zijn ingesteld op *Niet geconfigureerd* of op een waarde.
-   >
-   > Dit probleem wordt opgelost in een toekomstige update.
-
-8. Voltooi de configuratie van de aanvullende instellingen en sla het profiel op.  
+  8. Voltooi de configuratie van de aanvullende instellingen en sla het profiel op.  
 
 ### <a name="manage-filevault"></a>FileVault beheren
 

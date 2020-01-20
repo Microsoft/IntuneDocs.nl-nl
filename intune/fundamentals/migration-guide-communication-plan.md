@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4637a4f9f137e9db665d72118fd7a97d7a9f75a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510132"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956224"
 ---
 # <a name="plan-communications"></a>De communicatie plannen
 
@@ -62,4 +62,4 @@ Intune beschikt over aanvullende bronnen waarmee u de inschrijving van apparaten
 
 - [Eindgebruikers informeren over het gebruik van Microsoft Intune](end-user-educate.md) voor de stappen die voor de registratie moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen.
 - In [Intune-apparaatinschrijving voor IT-beheerders](../enrollment/device-enrollment.md) wordt uitgelegd hoe Android-, iOS- en Mac-apparaten bij Intune worden ingeschreven.
-- Deel de [URL van de bedrijfsportal-app](http://go.microsoft.com/fwlink/?LinkID=396941) met uw Android-, iOS- en Windows-gebruikers. Met deze URL wordt omgeleid naar de juiste bedrijfsportal-app die op Android-, iOS- en Windows-apparaten wordt vermeld.
+- Deel de URL van de Bedrijfsportal-app met uw Android-, iOS- en Windows-gebruikers.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a6f57783b0878cd25e6c7eacdf4b32e462790916
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810311"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925814"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium integreren met Intune
 
@@ -31,7 +31,7 @@ Voer de volgende stappen uit om de Zimperium Mobile Threat Defense-oplossing te 
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
-De volgende stappen worden uitgevoerd in de [Zimperium MTD-console](https://www.zimperium.com/platform) en maken een verbinding mogelijk met de service van Lookout voor zowel Intune-ingeschreven apparaten (via apparaatcompatibiliteit) als niet-geregistreerde apparaten (via app-beveiligingsbeleid).
+De volgende stappen worden uitgevoerd in de [Zimperium MTD-console](https://www.zimperium.com/platform) en maken een verbinding mogelijk met de service van Zimperium voor zowel Intune-ingeschreven apparaten (via apparaatcompatibiliteit) als niet-geregistreerde apparaten (via app-beveiligingsbeleid).
 
 Zorg ervoor dat u de volgende abonnementen en referenties bij de hand hebt voordat u begint met de integratie van Zimperium met Intune:
 

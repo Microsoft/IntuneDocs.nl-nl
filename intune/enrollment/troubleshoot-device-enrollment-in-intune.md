@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547795"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885947"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -56,7 +56,7 @@ Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens 
 Deze problemen kunnen optreden op alle apparaatplatforms.
 
 ### <a name="device-cap-reached"></a>Apparaatlimiet bereikt
-**Probleem:** Een gebruiker ontvangt tijdens de inschrijving een foutbericht, zoals **De bedrijfsportal is tijdelijk niet beschikbaar** en DMPdownloader.log in Configuration Manager bevat de fout **DeviceCapReached**.
+**Probleem:** Een gebruiker krijgt een foutmelding te zien tijdens de inschrijving (zoals **Bedrijfsportal tijdelijk niet beschikbaar**).
 
 **Oplossing:**
 
@@ -113,23 +113,6 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
     4. Schakel DirSync weer in en controleer of de gebruiker nu juist is gesynchroniseerd.
 
-3. Als u gebruikmaakt van Configuration Manager met Intune, controleert u of de gebruiker over een geldige cloudgebruikers-id beschikt:
-
-    1. Open SQL Management Studio.
-
-    2. Maak verbinding met de betreffende database.
-
-    3. Open de databasemap, ga naar de map **CM_DBName** en open deze. Hierbij staat DBName voor de naam van de klantendatabase.
-
-    4. Kies bovenaan **Nieuwe query** en voer de volgende query's uit:
-
-        - Als u alle gebruikers wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - Als u specifieke gebruikers wilt weergeven, gebruikt u de volgende query waarbij %testuser1% een tijdelijke aanduiding is voor username@domain.com voor de gebruiker die u wilt weergeven: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        Nadat u de query hebt opgesteld, kiest u **!Execute**.
-        Wanneer de resultaten worden weergegeven, zoekt u naar de cloudgebruikers-id.  Als er geen id is gevonden, beschikt de gebruiker niet over een licentie om Intune te gebruiken.
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Kan geen beleid maken of apparaten registreren als de bedrijfsnaam speciale tekens bevat
 **Probleem:** U kunt geen beleid maken of apparaten registreren.
 
@@ -144,7 +127,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 - over meerdere domeinen op het hoogste niveau beschikken voor UPN-achtervoegsels van gebruikers in hun organisatie (bijvoorbeeld @contoso.com of @fabrikam.com).
 
 
-Een [updatepakket voor ADFS 2.0](http://support.microsoft.com/kb/2607496) kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de ADFS-server in te schakelen voor ondersteuning van dit scenario zonder extra ADFS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
+Een [updatepakket voor ADFS 2.0](https://support.microsoft.com/kb/2607496) kan worden gebruikt met de schakeloptie <strong>SupportMultipleDomain</strong> om de ADFS-server in te schakelen voor ondersteuning van dit scenario zonder extra ADFS 2.0-servers. Lees [deze blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) voor meer informatie.
 
 
 ## <a name="android-issues"></a>Problemen met Android
@@ -332,23 +315,6 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 5. Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Het geregistreerde iOS-apparaat wordt niet weergegeven in de console wanneer u Configuration Manager met Intune gebruikt
-**Probleem:** Een gebruiker registreert zijn of haar iOS-apparaat, maar het apparaat wordt niet weergegeven in de beheerconsole van Configuration Manager. Op het apparaat wordt niet aangegeven dat het is ingeschreven. Mogelijke oorzaken:
-
-- Er is geen communicatie tussen de Microsoft Intune-connector in de Configuration Manager-site en de Intune-service.
-- Berichten van de Intune-service worden niet verwerkt met het onderdeel voor gegevensdetectiebeheer (ddm) of het onderdeel voor statusbeheer (statmgr).
-- Misschien hebt u het MDM-certificaat gedownload vanuit het ene account en het vervolgens gebruikt in een ander account.
-
-
-**Oplossing:** Controleer de volgende logboekbestanden op mogelijke fouten:
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-Binnenkort worden voorbeelden toegevoegd met betrekking tot de informatie waarnaar u moet zoeken in deze logboekbestanden.
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Het iOS-apparaat van de gebruiker is meer dan 10 minuten vastgelopen op een scherm voor inschrijving
 
 **Probleem**: Een apparaat dat wordt geregistreerd, kan op een van de volgende twee schermen vastlopen:
@@ -418,36 +384,6 @@ Nadat u de geblokkeerde apparaten hebt gewist, kunt u de gebruikers de inschrijv
     2. Kies **Apparaten** > **Alle apparaten**.  
     3. Zoek het apparaat op met het inschrijvingsprobleem. Zoek op apparaatnaam of MAC/HW-adres om uw resultaten te verfijnen.
     4. Selecteer het apparaat > **Verwijderen**. Verwijder alle andere vermeldingen die aan het apparaat zijn gekoppeld.  
-
-## <a name="issues-when-using-configuration-manager-with-intune"></a>Problemen bij het gebruik van Configuration Manager met Intune
-
-### <a name="mobile-devices-disappear"></a>Mobiele apparaten verdwijnen
-
-**Probleem:** Nadat een mobiel apparaat bij Configuration Manager is geregistreerd, verdwijnt het uit de verzameling van mobiele apparaten. Het apparaat heeft echter nog steeds een beheerprofiel en wordt vermeld in CSS Gateway.
-
-**Oplossing:** Dit probleem kan om de volgende reden optreden:
-
-- U gebruikt een aangepaste procedure voor het verwijderen van apparaten die niet lid zijn van een domein, of
-- De gebruiker heeft het apparaat uit het abonnement verwijderd.
-Als u wilt nagaan door welk gebruikersaccount of proces het apparaat uit de Configuration Manager-console is verwijderd, voert u de volgende stappen uit.
-
-#### <a name="check-how-device-was-removed"></a>Controleer hoe het apparaat is verwijderd
-
-1. Selecteer in de Configuration Manager-beheerconsole **Bewaking** &gt; **Systeemstatus** &gt; **Statusberichtquery's**.
-
-2. Klik met de rechtermuisknop op **Resources van verzamelingsleden die handmatig zijn verwijderd** en selecteer **Berichten weergeven**.
-
-3. Kies een passende tijd/datum of de afgelopen 12 uur.
-
-4. Zoek het betreffende apparaat en bekijk hoe het is verwijderd. In het volgende voorbeeld ziet u dat het apparaat via een onbekende toepassing is verwijderd door het account SCCMInstall.
-
-    ![Schermopname voor diagnose van apparaatverwijdering](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. Controleer of er geen geplande taak, script of ander proces voor Configuration Manager voorkomt waarmee apparaten die niet tot een domein behoren, mobiele apparaten of gerelateerde apparaten, worden gewist.
-
-### <a name="other-ios-enrollment-errors"></a>iOS-registratiefouten
-
-U vindt een lijst met iOS-inschrijvingsfouten in onze documentatie in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Problemen met iOS-apparaatinschrijving in Microsoft Intune oplossen).
 
 ## <a name="pc-issues"></a>Pc-problemen
 
