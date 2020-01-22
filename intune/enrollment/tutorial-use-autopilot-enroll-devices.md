@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547956"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036534"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Zelfstudie: Autopilot gebruiken om Windows-apparaten in Intune in te schrijven
 
@@ -45,7 +45,7 @@ Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deploym
 
 ## <a name="prerequisites"></a>Vereisten
 - [Automatische inschrijving bij Windows instellen](../quickstart-setup-auto-enrollment.md)
-- [Azure Active Directory Premium-abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium-abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](https://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>Apparaten toevoegen
@@ -78,7 +78,7 @@ De eerste stap bij het instellen van Windows Autopilot bestaat uit het toevoegen
 
 Vervolgens gaat u een apparaatgroep maken en de Autopilot-apparaten die u zojuist hebt geladen, erin plaatsen.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Groepen** > **Nieuwe groep**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Groepen** > **Nieuwe groep**.
 2. Op de blade **Groep**:
     1. Als **groepstype** kiest u **Beveiliging**.
     2. Als **groepsnaam** voert u *Autopilot-groep* in. Als **groepsbeschrijving** voert u *testgroep voor Autopilot-apparaten* in.
@@ -90,7 +90,7 @@ Vervolgens gaat u een apparaatgroep maken en de Autopilot-apparaten die u zojuis
 
 Nadat u een groep apparaten hebt gemaakt, moet u een implementatieprofiel maken zodat u de Autopilot-apparaten kunt configureren.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** de waarde *Autopilot-profiel* op voor **Naam**. Als **beschrijving** voert u *Testprofiel voor Autopilot-apparaten* in.
 3. Stel **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Deze instelling zorgt ervoor dat alle apparaten in de lijst worden ingeschreven bij de Autopilot-implementatieservice. Het kan 48 uur duren voordat de registratie is verwerkt.
 4. Selecteer **Volgende**.

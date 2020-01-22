@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886019"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258480"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Geïmporteerde PKCS-certificaten configureren en gebruiken met Intune
 
@@ -134,7 +134,7 @@ De PowerShell-module biedt methoden om een sleutel te maken met behulp van Windo
    > [!TIP]
    > De provider die u gebruikt, moet opnieuw worden geselecteerd wanneer u een PFX-certificaat importeert. U kunt de **Microsoft Software Key Storage Provider** gebruiken, maar het gebruik van een andere provider wordt ook ondersteund. De gebruikte sleutelnaam is een voorbeeld; u kunt een andere sleutelnaam naar keuze gebruiken.
 
-   Als u van plan bent om het certificaat vanaf uw werkstation te importeren, kunt u deze sleutel exporteren naar een bestand met de volgende opdracht:  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
+   Als u van plan bent om het certificaat vanaf uw werkstation te importeren, kunt u deze sleutel exporteren naar een bestand met de volgende opdracht:  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path\Filename.PFX>"`
 
    De persoonlijke sleutel moet worden geïmporteerd op de server die als host fungeert voor de PFX-certificaatconnector voor Microsoft Intune, zodat geïmporteerde PFX-certificaten correct kunnen worden verwerkt.
 

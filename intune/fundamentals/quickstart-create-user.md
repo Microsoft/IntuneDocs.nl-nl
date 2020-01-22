@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509874"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036581"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Quickstart: Een gebruiker maken in Intune en er een licentie aan toewijzen
 
@@ -50,11 +50,11 @@ Gebruikers moeten beschikken over een gebruikersaccount om zich te kunnen inschr
 
 ## <a name="assign-a-license-to-the-user"></a>Een licentie toewijzen aan de gebruiker
 
-Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie aan die gebruiker toe te wijzen. Als u geen licentie aan de gebruiker toewijst, kan de gebruiker het apparaat niet registreren in Intune. 
+Nadat u een gebruiker hebt gemaakt, moet u het [Microsoft 365-beheercentrum](https://go.microsoft.com/fwlink/p/?LinkId=698854) gebruiken om een Intune-licentie aan die gebruiker toe te wijzen. Als u geen licentie aan de gebruiker toewijst, kan de gebruiker het apparaat niet registreren in Intune. 
 
 Ga als volgt te werk om een Intune-licentie aan een gebruiker toe te wijzen:
 
-1. Meld u aan bij het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854) met dezelfde referenties die u hebt gebruikt om u aan te melden bij Intune.
+1. Meld u aan bij het [Microsoft 365-beheercentrum](https://go.microsoft.com/fwlink/p/?LinkId=698854) met dezelfde referenties die u hebt gebruikt om u aan te melden bij Intune.
 2. Kies **Gebruikers** > **Actieve gebruikers** > en selecteer de gebruiker die u zojuist hebt gemaakt.
 3. Selecteer naast **Productlicenties** de optie **Bewerken**.
 4. Bij **Locatie** kiest u een locatie voor de gebruiker.
@@ -68,7 +68,7 @@ Voor de nieuwe actieve Intune-gebruiker wordt nu weergegeven dat deze een **Intu
 
 ## <a name="clean-up-resources"></a>Resources opschonen
 
-Als u deze gebruiker niet meer nodig hebt, kunt u deze verwijderen door te navigeren naar het [Microsoft 365-beheercentrum](http://go.microsoft.com/fwlink/p/?LinkId=698854). Hier kiest u **Gebruikers** > **Actieve gebruikers** > *kies de gebruiker in de lijst* > **Gebruiker verwijderen** > **Gebruiker verwijderen** > **Wijzigingen bevestigen** > **Sluiten**.
+Als u deze gebruiker niet meer nodig hebt, kunt u deze verwijderen door te navigeren naar het [Microsoft 365-beheercentrum](https://go.microsoft.com/fwlink/p/?LinkId=698854). Hier kiest u **Gebruikers** > **Actieve gebruikers** > *kies de gebruiker in de lijst* > **Gebruiker verwijderen** > **Gebruiker verwijderen** > **Wijzigingen bevestigen** > **Sluiten**.
 
 ## <a name="next-steps"></a>Volgende stappen
 
