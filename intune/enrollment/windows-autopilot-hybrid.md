@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558185"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125307"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Apparaten die aan hybride Azure AD zijn gekoppeld implementeren met Intune en Windows Autopilot
 U kunt Intune en Windows Autopilot gebruiken om apparaten in te stellen die zijn gekoppeld aan Hybrid Azure Active Directory (Azure AD). Volg hiervoor de stappen in dit artikel.
@@ -128,7 +128,7 @@ Als u in uw netwerkomgeving over een webproxy beschikt, zorgt u ervoor dat de In
 
 
 ## <a name="create-a-device-group"></a>Een apparaatgroep maken
-1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Groepen** > **Nieuwe groep**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Groepen** > **Nieuwe groep**.
 
 1. In het deelvenster **Groep** doet u het volgende:
 
@@ -183,7 +183,7 @@ Nadat uw Autopilot-apparaten zijn geregistreerd, worden hun namen de hostnaam va
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Een Windows AutoPilot-implementatieprofiel maken en toewijzen
 Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren.
 
-1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Apparaten** > **Windows** > **Windows-inschrijving** > **Implementatieprofielen** > **Profiel maken**.
 2. Geef op de pagina **Basisinformatie** een waarde op voor **Naam** en eventueel ook voor **Beschrijving**.
 3. Als u wilt dat alle apparaten in de toegewezen groepen automatisch converteren naar Autopilot, stelt u **Alle doelapparaten converteren naar Autopilot** in op **Ja**. Alle niet-Autopilot-apparaten in toegewezen groepen die bedrijfseigendom zijn, worden ingeschreven bij de Autopilot-implementatieservice. Apparaten die persoonlijk eigendom zijn, worden niet geconverteerd naar Autopilot. Het kan 48 uur duren voordat de registratie is verwerkt. Wanneer het apparaat wordt uitgeschreven en opnieuw wordt ingesteld, wordt het door Autopilot geregistreerd. Nadat een apparaat op deze manier is geregistreerd, wordt het apparaat niet meer uit de Autopilot-implementatieservice verwijderd door deze optie uit te schakelen of de profieltoewijzing te verwijderen. In plaats daarvan moet u [het apparaat rechtstreeks verwijderen](enrollment-autopilot.md#delete-autopilot-devices).
 4. Selecteer **Volgende**.
@@ -200,7 +200,7 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(Optioneel) De pagina Status van de registratie inschakelen
 
-1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) **Apparaten** > **Windows** > **Windows-inschrijving** > **Inschrijvingsstatuspagina**.
+1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431)**Apparaten** > **Windows** > **Windows-inschrijving** > **Inschrijvingsstatuspagina**.
 1. In het deelvenster **Pagina Registratiestatus** selecteert u **Standaard** > **Instellingen**.
 1. In het vak **Voortgang app- en profielinstallatie weergeven** selecteert u **Ja**.
 1. Configureer de andere opties indien nodig.
@@ -209,17 +209,30 @@ Het duurt ongeveer 15 minuten voordat de status van het apparaatprofiel is gewij
 ## <a name="create-and-assign-a-domain-join-profile"></a>Een profiel voor Domeindeelname maken en toewijzen
 
 1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
-1. Voer de volgende eigenschappen in:
+2. Voer de volgende eigenschappen in:
    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
    - **Beschrijving**: Voer een beschrijving in voor het profiel.
    - **Platform**: Kies **Windows 10 en hoger**.
    - **Profieltype**: Selecteer **Domeindeelname (preview)** .
-1. Selecteer **Instellingen** en geef vervolgens een **computernaamvoorvoegsel**, **domeinnaam** en (optioneel) **organisatie-eenheid** in [DN-indeling](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name) op. 
+3. Selecteer **Instellingen** en geef vervolgens een **Computernaamvoorvoegsel** en **Domeinnaam** op.
+4. (Optioneel) Geef een **Organisatie-eenheid** (OE) op in [DN-indeling](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). Uw opties zijn:
+   - Een OE opgeven waarin u het beheer hebt gedelegeerd aan uw Windows 2016-apparaat dat de Intune-connector uitvoert.
+   - Een OE opgeven waarin u het beheer hebt gedelegeerd aan uw hoofdcomputers in uw on-premises Active Directory.
+   - Als u dit leeg laat, wordt het computerobject gemaakt in de standaard Active Directory-container (CN=Computers als u dat nooit [hebt veranderd](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)).
+   
+   Dit zijn een paar geldige voorbeelden:
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   Hier volgen enkele voorbeelden die niet geldig zijn:
+   - CN=Computers,DC=contoso,DC=com (u kunt geen container opgeven, laat de waarde leeg om de standaard te gebruiken voor het domein)
+   - OU=Mine (u moet het domein opgeven via DC= attributes)
+     
    > [!NOTE]
    > Gebruik geen aanhalingstekens rondom de waarde in **Organisatie-eenheid**.
-1. Selecteer **OK** > **Maken**.  
+5. Selecteer **OK** > **Maken**.  
     Het profiel wordt gemaakt en weergegeven in de lijst.
-1. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](../configuration/device-profile-assign.md#assign-a-device-profile) en wijst u het profiel toe aan dezelfde groep die u bij de stap [Een apparaatgroep maken](windows-autopilot-hybrid.md#create-a-device-group) hebt gebruikt
+6. Als u het profiel wilt toewijzen, volgt u de stappen onder [Een apparaatprofiel toewijzen](../configuration/device-profile-assign.md#assign-a-device-profile) en wijst u het profiel toe aan dezelfde groep die u bij de stap [Een apparaatgroep maken](windows-autopilot-hybrid.md#create-a-device-group) hebt gebruikt
    - Meerdere Domeindeelname-profielen implementeren
    
      a. Maak een dynamische groep waarin al uw Autopilot-apparaten met een specifiek Autopilot-implementatieprofiel staan en voer (device.enrollmentProfileName, bijv. 'Autopilot-profielnaam') in. 

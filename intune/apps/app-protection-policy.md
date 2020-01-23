@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956336"
+ms.locfileid: "76036642"
 ---
 # <a name="app-protection-policies-overview"></a>Overzicht van App-beveiligingsbeleid
 
@@ -184,7 +184,7 @@ Er zijn de aanvullende vereisten voor het gebruik van Skype voor Bedrijven. Zie 
 
 ## <a name="app-protection-global-policy"></a>Algemeen appbeveiligingsbeleid
 
-Als een OneDrive-beheerder naar **admin.office.com** bladert en toegang tot het **Apparaat** selecteert, kan deze beheerder de besturingselementen voor **Mobile Application Management** instellen voor de OneDrive- en SharePoint-client-apps. 
+Als een OneDrive-beheerder naar **admin.onedrive.com** bladert en toegang tot het **Apparaat** selecteert, kan deze beheerder de besturingselementen voor **Mobile Application Management** instellen voor de OneDrive- en SharePoint-client-apps. 
 
 Via de instellingen, die beschikbaar zijn gesteld op de OneDrive-beheerdersconsole, wordt het speciale app-beschermingsbeleid **Algemeen** van Intune geconfigureerd. Dit algemene beleid is van toepassing op alle gebruikers in uw tenant en biedt geen enkele manier om te bepalen waarvoor het beleid wordt gericht. 
 

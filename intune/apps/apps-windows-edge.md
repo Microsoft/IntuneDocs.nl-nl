@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/17/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
+ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563569"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76294792"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune
 
 Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u deze aan Intune toevoegen. Een van de beschikbare [app-typen](~/apps/apps-add.md#app-types-in-microsoft-intune) is Microsoft Edge *versie 77 en later*. Door dit app-type in Intune te selecteren, kunt u Microsoft Edge *versie 77 en later* toewijzen aan en installeren op door u beheerde Windows 10-apparaten.
 
 > [!IMPORTANT]
-> Dit app-type is in **openbare preview** en biedt Dev- en Beta-kanalen voor Windows 10. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Er worden bestaande Microsoft Edge-installaties door Intune gedetecteerd. Als de app in de gebruikerscontext is geïnstalleerd, wordt deze door een systeeminstallatie overschreven. Als de app in de systeemcontext is geïnstalleerd, wordt de installatie gerapporteerd. Automatische updates van Microsoft Edge is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd.
+> Dit app-type is in **openbare preview** en biedt stabiele, beta- en dev-kanalen voor Windows 10. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Er worden bestaande Microsoft Edge-installaties door Intune gedetecteerd. Als de app in de gebruikerscontext is geïnstalleerd, wordt deze door een systeeminstallatie overschreven. Als de app in de systeemcontext is geïnstalleerd, wordt de installatie gerapporteerd. Automatische updates van Microsoft Edge is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd.
 
 > [!NOTE]
 > Microsoft Edge *versie 77 en later* is ook beschikbaar voor macOS.
@@ -38,7 +38,7 @@ Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u d
 
 ## <a name="prerequisites"></a>Vereisten
 - Windows 10 RS2 en hoger is vereist.
-- Alle vooraf geïnstalleerde versies van Microsoft Edge *versie 77 en later* voor de kanalen **Dev** en **Beta** in de gebruikerscontext worden overschreven met Edge, geïnstalleerd in de systeemcontext.
+- Alle vooraf geïnstalleerde versies van Microsoft Edge *versie 77 en later* voor alle kanalen in de gebruikerscontext worden overschreven met Edge, geïnstalleerd in de systeemcontext.
 
 ## <a name="configure-the-app-in-intune"></a>De app configureren in Intune
 U kunt een Microsoft Edge versie 77 en later toevoegen aan Intune met behulp van de volgende stappen:
@@ -68,7 +68,8 @@ In deze stap geeft u informatie op over deze app-implementatie. Aan de hand van 
 In deze stap configureert u de installatieopties voor de app.
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **App-instellingen**.
-2. Selecteer in het deelvenster **App-instellingen** de optie **Beta** of **Dev** in de lijst **Kanaal** om te bepalen vanuit welk Edge-kanaal u de app gaat implementeren.
+2. Selecteer in het deelvenster **App-instellingen** de optie **Stable,** **Beta** of **Dev** in de lijst **Kanaal** om te bepalen vanuit welk Edge-kanaal u de app gaat implementeren.
+    - **Stable** is het aanbevolen kanaal voor een brede implementatie in Enterprise-omgevingen. Het wordt elke zes weken bijgewerkt en elke release bevat verbeteringen uit het Beta-kanaal.
     - Het kanaal **Beta** is de stabielste previewervaring van Microsoft Edge en de beste keuze voor een volledige pilot binnen uw organisatie. Met elke zes weken belangrijke updates bevat elke release de vergaarde kennis en verbeteringen van het Dev-kanaal.
     - Het kanaal **Dev** is gereed voor zakelijke feedback over Windows, Windows Server en macOS. Het wordt elke week bijgewerkt en bevat de nieuwste verbeteringen en oplossingen.
 

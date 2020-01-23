@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ff4f0cbe11c24c03b504968735e0a68d54f12d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692181"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125329"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Met Microsoft Intune beveiligde apps  
 
@@ -45,6 +45,7 @@ In de volgende tabellen staan details van ondersteunde apps van Microsoft en par
 
 | App-titel | App-beschrijving en -informatie | App Store-koppelingen voor ondersteunde platforms |
 |-------------------------------------------------|-------------------------|---------------------------------------------|
+| **Fieldservice voor mobiel**<p><img alt="Microsoft app - Field Service Mobile icon" src="./media/apps-supported-intune-apps/icon-m-field-service-mobile.png" width="100"> | Dynamics 365 voor Field Service biedt de mobiele Field Service-toepassing voor meerdere platforms en apparaten dat speciaal is gemaakt naar de behoeften van de servicemedewerker. Robuuste offline mogelijkheden zorgen ervoor dat servicemedewerkers toegang hebben tot de gegevens die ze nodig hebben wanneer ze naar afgelegen bestemmingen moeten zonder internetverbinding. Servicemedewerkers in het veld kunnen het kantoor op de hoogte houden van hun werk door periodiek gegevens te synchroniseren met de server, zodat de juiste acties kunnen worden ondernomen of begonnen. De mobiele toepassing is volledig aanpasbaar en uitbreidbaar, waardoor elke organisatie de toepassing zich eigen kan maken, kan definiëren welke gegevens servicemedewerkers in het veld kunnen gebruiken en veel meer. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.d365.fs.mobile), [App Store-link (iOS)](https://apps.apple.com/us/app/field-service-mobile/id1414669075) |
 | **Microsoft Azure Information Protection-viewer**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | Werk veilig samen met anderen met AIP-viewer. Bekijk beschermde bestanden (met rechten beschermde e-mailberichten, PDF-bestanden, afbeeldingen, tekstbestanden) die iemand met u heeft gedeeld. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer), [App Store-link (iOS)](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) |
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings is een app waarmee u afspraken inplant en die u helpt uw afspraken, personeel en klanten bij te houden. U mist nooit meer een afspraak.<p>Met de Bookings-app kunt u:<br><ul><li>Uw agenda bekijken en beheren</li><li>Afspraken maken of onderweg bestaande afspraken bewerken</li><li>In realtime de beschikbaarheid van uw personeelsleden bekijken</li><li>Snel en eenvoudig reageren op klanten</li><li>Snel een routebeschrijving krijgen naar uw volgende afspraak</li><li>Uw klantenlijst beheren</li></ul> | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | Houd werk- en privézaken snel, eenvoudig en op een leuke manier in de hand met uw persoonlijke assistent Cortana. Installeer deze slimme digitale assistent op uw telefoon om alle belangrijke dingen bij te houden, overal, altijd en op al uw apparaten. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[App Store-link (iOS)](https://apps.apple.com/us/app/cortana/id1054501703)

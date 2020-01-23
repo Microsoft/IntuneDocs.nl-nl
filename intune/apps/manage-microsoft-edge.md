@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548009"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258504"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -205,7 +205,7 @@ U kunt de Nieuwe tabbladpagina in Microsoft Edge Mobile configureren zodat er ni
 
 |    Sleutel    |    Waarde    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.SohwIndustryNews'    |    Met **True** wordt het nieuws van de branche weergegeven op de Nieuwe tabbladpagina van Microsoft Edge Mobile.<p>Met **False** (standaard) wordt het nieuws van de branche verborgen op de Nieuwe tabbladpagina.    |
+|    com.microsoft.intune.ShowIndustryNews    |    Met **True** wordt het nieuws van de branche weergegeven op de Nieuwe tabbladpagina van Microsoft Edge Mobile.<p>Met **False** (standaard) wordt het nieuws van de branche verborgen op de Nieuwe tabbladpagina.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Beheerde bladwijzers configureren voor Microsoft Edge
 
@@ -217,6 +217,7 @@ Hier volgt enige informatie:
 - Deze bladwijzers kunnen niet door gebruikers worden verwijderd of gewijzigd.
 - Deze bladwijzers worden boven in de lijst weergegeven. Door de gebruiker gemaakte bladwijzers worden onder deze bladwijzers weergegeven.
 - Als u omleiding via een toepassingsproxy hebt ingeschakeld, kunt u web-apps met een toepassingsproxy toevoegen met behulp van hun interne of externe URL.
+- Zorg ervoor dat u alle URL's voorziet van het voorvoegsel **http://** of **https://** wanneer u ze in de lijst invoert.
 
 Gebruik het volgende sleutel-waardepaar om beheerde bladwijzers te configureren:
 
@@ -243,7 +244,7 @@ Gebruik de volgende sleutel-waardeparen om een lijst met toegestane sites of een
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>URL-indelingen voor een lijst met toegestane sites en een lijst met geblokkeerde sites 
 U kunt verschillende URL-indelingen gebruiken om uw lijsten met toegestane/geblokkeerde sites te maken. De toegestane patronen worden in de volgende tabel beschreven. Enkele opmerkingen voordat u aan de slag gaat: 
-- Zorg ervoor dat u alle URL's voorziet van het voorvoegsel **http** of **https** wanneer u ze in de lijst invoert.
+- Zorg ervoor dat u alle URL's voorziet van het voorvoegsel **http://** of **https://** wanneer u ze in de lijst invoert.
 - U kunt het jokerteken (\*) gebruiken volgens de regels in de volgende lijst met toegestane patronen.
 - Een jokerteken kan alleen overeenkomen met een volledig onderdeel van de hostnaam (gescheiden door punten) of met volledige delen van het pad (gescheiden door slashes). `http://*contoso.com` wordt bijvoorbeeld **niet** ondersteund.
 - U kunt poortnummers in het adres opgeven. Als u geen poortnummer opgeeft, worden deze waarden gebruikt:

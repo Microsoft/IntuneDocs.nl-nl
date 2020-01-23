@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907284"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036611"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
@@ -89,13 +89,13 @@ Intune volgt verzonden aangepaste meldingen niet. Apparaten registreren ontvangs
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Een aangepaste melding verzenden naar één apparaat  
 
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een account met machtigingen voor het maken en verzenden van meldingen en ga naar **Apparaten** > **Alle apparaten**.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) met een account met machtigingen voor het maken en verzenden van meldingen en ga naar **Apparaten** > **Alle apparaten**.
 
-2. Selecteer het apparaat waarnaar u een melding wilt verzenden.  
+2. Dubbelklik op de naam van het beheerde apparaat waarnaar u een melding wilt verzenden om de pagina *Overzicht* van die apparaten te openen.
 
-3. Selecteer op de pagina **Overzicht** de optie **...** (beletselteken) in de rechterbovenhoek van de pagina.  
+3. Op de pagina **Overzicht** van de apparaten selecteert u de apparaatactie **Aangepaste melding verzenden** om het venster *Aangepaste melding verzenden* te openen. Als de optie niet beschikbaar is, selecteert u de optie **...** (weglatingsteken) rechtsboven in de pagina en selecteert u **Aangepaste melding verzenden**.
 
-4. Selecteer de apparaatactie **Aangepaste melding verzenden** om het deelvenster *Aangepaste melding verzenden* te openen. Hier geeft u de volgende berichtdetails op:  
+4. Geef in het venster **Aangepaste melding verzenden** de volgende berichtdetails op:  
 
    - **Titel**: geef deze melding een titel. De titel mag maximaal 50 tekens lang zijn.  
    - **Hoofdtekst**: geef het bericht op. Berichten mogen maximaal 500 tekens bevatten.  
