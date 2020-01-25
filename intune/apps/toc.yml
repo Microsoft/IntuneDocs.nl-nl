@@ -5,7 +5,7 @@
   items:
     - name: Overzicht van app-beheer
       href: app-management.md
-- name: Snelstartgidsen
+- name: Quickstarts
   items:
     - name: Een app toevoegen en toewijzen
       href: quickstart-add-assign-app.md
@@ -26,7 +26,7 @@
       displayName: app-we; without; without enrollment
     - name: VEELGESTELDE VRAGEN OVER MAM
       href: mam-faq.md
-- name: Handleidingen
+- name: Instructiegidsen
   items:
     - name: Apps toevoegen
       items:
@@ -45,7 +45,7 @@
               href: store-apps-windows-phone-8-1.md
             - name: Windows-apps
               href: store-apps-windows.md
-            - name: Microsoft Store voor Bedrijven-apps
+            - name: Apps in de Microsoft Store voor Bedrijven
               href: windows-store-for-business.md
             - name: Beheerde Google Play-apps
               href: apps-add-android-for-work.md
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Outlook configureren
               href: app-configuration-policies-outlook.md
-            - name: S/MIME configureren voor Outlook
-              href: app-configuration-policies-outlook-smime.md
             - name: Google Chrome configureren voor Android
               href: apps-configure-chrome-android.md
         - name: Apps en boeken die zijn gekocht via het volume-aankoopprogramma
@@ -190,6 +188,8 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Problemen met app-installatie oplossen
           href: troubleshoot-app-install.md
+        - name: Naslaginformatie voor installatiefouten voor apps
+          href: app-install-error-codes.md
         - name: Problemen met Mobile Application Management oplossen
           href: troubleshoot-mam.md
         - name: App-logboeken voor beveiliging controleren
