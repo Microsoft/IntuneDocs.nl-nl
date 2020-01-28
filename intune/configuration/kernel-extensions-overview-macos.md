@@ -1,12 +1,12 @@
 ---
-title: Een apparaatprofiel voor macOS kernel Extensions maken met Microsoft Intune-Azure | Microsoft Docs
+title: macOS-apparaatprofielen met kernelextensies maken met Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Een macOS-apparaatprofiel toevoegen of maken en vervolgens de kernel-uitbrei dingen configureren om gebruikers onderdrukking toe te staan, team-ID en een bundel en team-ID toe te voegen in Microsoft Intune.
+description: Voeg een macOS-apparaatprofiel toe of maak een macOS-apparaatprofiel en configureer vervolgens kernelextensies om gebruikers toe te staan acties te overschrijven, een team-id toe te voegen en vervolgens een bundel- en team-id toe te voegen in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,54 +16,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
+ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059360"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76146766"
 ---
-# <a name="add-macos-kernel-extensions-in-intune"></a>MacOS-kernel-extensies toevoegen in intune
+# <a name="add-macos-kernel-extensions-in-intune"></a>macOS-kernelextensies toevoegen in Intune
 
-Op macOS-apparaten kunt u functies toevoegen op kernel-niveau. Deze functies hebben toegang tot delen van het besturings systeem waartoe reguliere Program ma's geen toegang hebben. Uw organisatie heeft mogelijk specifieke behoeften of vereisten die niet beschikbaar zijn in een app, een functie van het apparaat, enzovoort. 
+Op macOS-apparaten kunt u functies toevoegen op kernelniveau. Deze functies hebben toegang tot delen van het besturingssysteem waartoe reguliere programma's geen toegang hebben. Uw organisatie heeft mogelijk specifieke behoeften of vereisten die niet beschikbaar zijn in een app, een apparaatfunctie, enzovoort. 
 
-Als u kernel-extensies wilt toevoegen die altijd op uw apparaten mogen worden geladen, voegt u ' kernel-extensies ' (KEXT) toe aan Microsoft Intune en implementeert u deze uitbrei dingen vervolgens op uw apparaten.
+Als u kernelextensies wilt toevoegen die altijd op uw apparaten mogen worden geladen, voegt u kernelextensies (KEXT) toe aan Microsoft Intune en implementeert u deze extensies vervolgens op uw apparaten.
 
-U hebt bijvoorbeeld een antivirus programma waarmee u uw apparaat kunt scannen op schadelijke inhoud. U kunt de kernel-uitbrei ding voor het virus scan programma toevoegen als een toegestane kernel-uitbrei ding in intune. Vervolgens wijst u de extensie toe aan uw macOS-apparaten.
+U hebt bijvoorbeeld een antivirusprogramma waarmee u uw apparaat kunt scannen op schadelijke inhoud. U kunt de kernelextensie van dit virusscanprogramma als een toegestane kernelextensie toevoegen in Intune. Vervolgens wijst u de extensie toe aan uw macOS-apparaten.
 
-Met deze functie kunnen beheerders gebruikers toestaan om kernel-extensies te overschrijven, team-id's toe te voegen en specifieke kernel-uitbrei dingen toe te voegen aan intune.
+Met deze functie kunnen beheerders gebruikers toestemming geven om kernelextensies te overschrijven, team-id's toe te voegen en specifieke kernelextensies toe te voegen aan Intune.
 
 Deze functie is van toepassing op:
 
 - macOS 10.13.2 en hoger
 
-Als u deze functie wilt gebruiken, moeten de apparaten het volgende zijn:
+Als u deze functie wilt gebruiken, moeten de apparaten aan de volgende voorwaarden voldoen:
 
-- Inge schreven bij intune met behulp van Apple Device Enrollment Program (DEP). Het [automatisch inschrijven van macOS-apparaten](../enrollment/device-enrollment-program-enroll-macos.md) heeft meer informatie.
+- Ingeschreven zijn bij Intune met behulp van het Device Enrollment Program (DEP) van Apple. Zie [macOS-apparaten automatisch inschrijven](../enrollment/device-enrollment-program-enroll-macos.md) voor meer informatie.
 
   OF
 
-- Inge schreven bij intune met ' door de gebruiker goedgekeurde inschrijving ' (Apple-term). De [wijzigingen voor de kernel-extensies in MacOS High Sierra worden voor bereid](https://support.apple.com/en-us/HT208019) (opent de website van Apple) bevat meer informatie.
+- Ingeschreven zijn bij Intune met door de gebruiker goedgekeurde inschrijving (term van Apple). Zie [Voorbereiding op wijzigingen in kernelextensies in macOS High Sierra](https://support.apple.com/en-us/HT208019) (hiermee opent u de website van Apple) voor meer informatie.
 
 Intune maakt gebruik van configuratieprofielen om deze instellingen te maken voor en af te stemmen op de behoeften van uw organisatie. Nadat u deze functies aan een profiel hebt toegevoegd, kunt u het profiel pushen naar en implementeren op macOS-apparaten in uw organisatie.
 
-In dit artikel leest u hoe u een configuratie profiel voor een apparaat maakt met behulp van kernel-uitbrei dingen in intune.
+In dit artikel wordt beschreven hoe u een apparaatconfiguratieprofiel maakt met behulp van kernelextensies in Intune.
 
 > [!TIP]
-> Zie overzicht van de [kernel-extensie](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html) (opent de website van Apple) voor meer informatie over kernel-uitbrei dingen.
+> Zie [overzicht van kernelextensies](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html) (hiermee opent u de website van Apple) voor meer informatie over kernelextensies.
 
 ## <a name="what-you-need-to-know"></a>Wat u dient te weten
 
-- Niet-ondertekende verouderde kernel-uitbrei dingen kunnen worden toegevoegd.
-- Zorg ervoor dat u de juiste team-ID en bundel-ID van de kernel-uitbrei ding opgeeft. InTune valideert niet de waarden die u invoert. Als u onjuiste gegevens invoert, werkt de uitbrei ding niet op het apparaat.
+- Niet-ondertekende verouderde kernelextensies kunnen worden toegevoegd.
+- Zorg ervoor dat u de juiste team-id en bundel-id van de kernelextensie invoert. De waarden die u invoert, worden niet door Intune gevalideerd. Als u onjuiste gegevens invoert, werkt de extensie niet op het apparaat. Een team-id is precies tien alfanumerieke tekens lang. 
 
 > [!NOTE]
-> Apple heeft informatie over ondertekening en notarization vrijgegeven voor alle software. Voor macOS 10.14.5 en nieuwer moeten kernel-uitbrei dingen die via intune zijn geïmplementeerd, niet voldoen aan het notarization-beleid van Apple.
+> Apple heeft informatie over ondertekening en notariële erkenning vrijgegeven voor alle software. Voor macOS 10.14.5 en hoger hoeven kernelextensies die via Intune zijn geïmplementeerd niet te voldoen aan het notariële erkenningsbeleid van Apple.
 >
-> Raadpleeg de volgende bronnen voor meer informatie over dit notarization-beleid en eventuele updates of wijzigingen:
+> Raadpleeg de volgende bronnen voor meer informatie over dit notariële erkenningsbeleid en eventuele updates of wijzigingen:
 >
-> - [Notarizing uw app vóór distributie](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (opent de website van Apple) 
-> - De [wijzigingen voor de kernel-extensies in MacOS High Sierra worden voor bereid](https://support.apple.com/en-us/HT208019) (opent de website van Apple)
+> - [Notariële erkenning voor uw app vóór distributie](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (hiermee opent u de website van Apple) 
+> - [Voorbereiding op wijzigingen in kernelextensies in macOS High Sierra](https://support.apple.com/en-us/HT208019) (hiermee opent u de website van Apple)
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
@@ -71,10 +71,10 @@ In dit artikel leest u hoe u een configuratie profiel voor een apparaat maakt me
 2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
-    - **Naam**: voer een beschrijvende naam in voor het nieuwe profiel.
-    - **Beschrijving:** voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Platform**: Selecteer **macOS**
-    - **Profiel type**: Selecteer **uitbrei dingen**.
+    - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
+    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
+    - **Platform**: **macOS** selecteren
+    - **Profieltype**: selecteer **Extensies**.
     - **Instellingen**: Voer de instellingen in die u wilt configureren. Voor een lijst van alle instellingen en wat ze doen raadpleegt u:
 
         - [macOS](kernel-extensions-settings-macos.md)

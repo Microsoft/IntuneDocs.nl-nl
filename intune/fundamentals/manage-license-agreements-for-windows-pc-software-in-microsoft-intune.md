@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502650"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036586"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Licentieovereenkomsten voor Windows-pc-software in Microsoft Intune beheren
 
@@ -51,7 +51,7 @@ U kunt bovendien rapporten genereren waarin statistieken voor software-installat
 > De werkruimte **Licenties** wordt pas weergegeven in de beheerconsole als u ten minste één Windows-computer met de Intune Windows-computerclient beheert.
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft-volumelicentieovereenkomsten toevoegen
-Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die is gekocht via Microsoft-volumelicentieovereenkomsten. U kunt Microsoft-volumelicentieovereenkomsten aan Intune toevoegen door overeenkomende sets overeenkomstnummers op te geven. De overeenkomst- of autorisatienummers moeten overeenkomen met de juiste licentie- of inschrijvingsnummers. Sets overeenkomstnummers worden verkregen bij de aankoop van de licentieovereenkomsten van het [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
+Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die is gekocht via Microsoft-volumelicentieovereenkomsten. U kunt Microsoft-volumelicentieovereenkomsten aan Intune toevoegen door overeenkomende sets overeenkomstnummers op te geven. De overeenkomst- of autorisatienummers moeten overeenkomen met de juiste licentie- of inschrijvingsnummers. Sets overeenkomstnummers worden verkregen bij de aankoop van de licentieovereenkomsten van het [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842).
 
 1. Kies in de [Microsoft Intune-beheerconsole](https://admin.manage.microsoft.com/) de optie **Licenties**.
 
@@ -77,11 +77,11 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
         U kunt dit bestand maken door uw sets van overeenkomsten toe te voegen aan een document met tekst zonder opmaak in een van de volgende notaties, afhankelijk van het type organisatie dat u bij VLSC hebt geregistreerd. Geef per regel één overeenkomstnummerpaar op.
 
-        - **Open Value-klanten:** *overeenkomstnummer*, *overeenkomstnummer herhalen*, *naam van de overeenkomst*
+        - **Open Value-klanten:** *Overeenkomstnummer*, *overeenkomstnummer herhalen*, *naam overeenkomst*
 
-        - **Open klanten:** *autorisatienummer*, *bijbehorend licentienummer*, *naam van de overeenkomst*
+        - **Open klanten:** *Autorisatienummer*, *bijbehorend licentienummer*, *naam overeenkomst*
 
-        - **Select- en Enterprise-klanten:** *overeenkomstnummer*, *bijbehorend registratienummer*, *naam van de overeenkomst*
+        - **Select- en Enterprise-klanten:** *Overeenkomstnummer*, *bijbehorend inschrijvingsnummer*, *naam overeenkomst*
 
         Wanneer u een nieuwe overeenkomst toevoegt, wordt u in het formulier **Overeenkomsten toevoegen** gevraagd naar dit bestand te bladeren.
 
@@ -116,7 +116,7 @@ Intune-volumelicentieovereenkomsten bieden licentie-informatie voor software die
 
 De weergave **Alle overeenkomsten** wordt weergegeven en Intune maakt verbinding met het Microsoft VLSC om de sets overeenkomstnummers die u hebt opgegeven, te valideren.
 
-Als u de volumelicentiegegevens wilt bijwerken nadat u licentieovereenkomsten aan Intune hebt toegevoegd, kiest u op de pagina **Licentieoverzicht** de optie **Nu vernieuwen**. Hierdoor worden de huidige licentiegegevens van de [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)opgehaald.
+Als u de volumelicentiegegevens wilt bijwerken nadat u licentieovereenkomsten aan Intune hebt toegevoegd, kiest u op de pagina **Licentieoverzicht** de optie **Nu vernieuwen**. Hierdoor worden de huidige licentiegegevens van de [Microsoft Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842)opgehaald.
 
 > [!IMPORTANT]
 > Totdat u de volumelicentiegegevens vernieuwt, ziet u op de de pagina **Overeenkomstenoverzicht** mogelijk verschillende gegevens in de lijst met overeenkomsten en rechteninformatie.
@@ -182,8 +182,8 @@ Softwarelicentieovereenkomsten kunnen worden toegevoegd aan licentiegroepen. U k
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            Taak            |                                                                                                                                                                                 Details                                                                                                                                                                                  |
-|   Een licentiegroep maken   |                                                            Kies op de pagina <strong>Overzicht</strong> in de werkruimte <strong>Licenties</strong> de optie <strong>Licentiegroep maken</strong> in het menu <strong>Taken</strong>. <strong>Opmerking</strong>: u kunt maximaal 500 licentiegroepen maken.                                                             |
+|   Een licentiegroep maken   |                                                            Kies op de pagina <strong>Overzicht</strong> in de werkruimte <strong>Licenties</strong> de optie <strong>Licentiegroep maken</strong> in het menu <strong>Taken</strong>. <strong>Opmerking:</strong> U kunt maximaal 500 licentiegroepen maken.                                                             |
 |   De naam van een licentiegroep wijzigen   |                                                                                                      Kies in de werkruimte <strong>Licenties</strong> een licentiegroep en kies dan <strong>Licentiegroep bewerken</strong> in het menu <strong>Taken</strong> .                                                                                                       |
-|   Een licentiegroep verwijderen   |                                 Kies in de werkruimte <strong>Licenties</strong> een licentiegroep en kies dan <strong>Licentiegroep verwijderen</strong> in het menu <strong>Taken</strong> . <strong>Tip:</strong> alle licenties in de verwijderde groep worden verplaatst naar de licentiegroep <strong>Niet-toegewezen overeenkomsten</strong>.                                 |
-| Een licentieovereenkomst verwijderen | Kies in de werkruimte <strong>Licenties</strong> een overeenkomst en kies vervolgens <strong>Verwijderen</strong>. <strong>Tip:</strong> nadat u volumelicentieovereenkomsten hebt verwijderd, kiest u voor het bijwerken van de licentiegegevens de optie <strong>Nu vernieuwen</strong> op de pagina <strong>Licentieoverzicht</strong> of op het tabblad <strong>Algemeen</strong> voor een specifieke licentiegroep. |
+|   Een licentiegroep verwijderen   |                                 Kies in de werkruimte <strong>Licenties</strong> een licentiegroep en kies dan <strong>Licentiegroep verwijderen</strong> in het menu <strong>Taken</strong> . <strong>Tip:</strong> Alle licenties in de verwijderde groep worden verplaatst naar de licentiegroep <strong>Niet-toegewezen overeenkomsten</strong>.                                 |
+| Een licentieovereenkomst verwijderen | Kies in de werkruimte <strong>Licenties</strong> een overeenkomst en kies vervolgens <strong>Verwijderen</strong>. <strong>Tip:</strong> Nadat u volumelicentieovereenkomsten hebt verwijderd, kiest u voor het bijwerken van de licentiegegevens de optie <strong>Nu vernieuwen</strong> op de pagina <strong>Licentieoverzicht</strong> of op het tabblad <strong>Algemeen</strong> voor een specifieke licentiegroep. |
 

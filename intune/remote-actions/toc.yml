@@ -5,7 +5,7 @@
   items:
     - name: Overzicht van apparaatbeheer
       href: device-management.md
-- name: Handleidingen
+- name: Instructiegidsen
   items:
     - name: Vergrendelingen en wachtwoorden
       items:
@@ -33,8 +33,8 @@
           href: device-supervised-mode.md
         - name: Een macOS-apparaat wissen
           href: device-erase.md
-        - name: Activeringsvergrendeling overslaan
-          href: device-activation-lock-bypass.md
+        - name: Activeringsslot uitschakelen
+          href: device-activation-lock-disable.md
     - name: Gebruikersacties
       items:
         - name: Huidige gebruiker afmelden
