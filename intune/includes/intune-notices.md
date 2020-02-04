@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760960"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912626"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
 
@@ -51,7 +51,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 In juli 2017 is de reguliere ondersteuning van Microsoft voor Windows Phone 8.1 beëindigd en in juni 2019 de uitgebreide ondersteuning. De Bedrijfsportal-app voor Windows Phone 8.1 bevindt zich sinds oktober 2017 in de continuïteitsmodus. Microsoft Intune beëindigt nu op 20 februari 2020 de ondersteuning voor Windows Phone 8.1.
 
 #### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Na 20 februari 2020 ontvangen deze apparaten geen beveiligingsupdates meer en kunt u geen nieuwe apparaten meer inschrijven. Bestaande Windows Phone 8.1-apparaten blijven ingeschreven (beleid, apps, rapportage). Na de genoemde datum wordt probleemoplossing voor bestaande inschrijvingen echter niet meer ondersteund, aangezien veel onderdelen, zoals certificaten van derden, de ondersteuning voor het platform al eerder hebben beëindigd. Intune beëindigt het testen van de compatibiliteit met Intune en Windows Phone 8.1.
+Na 20 februari 2020 ontvangen deze apparaten geen beveiligingsupdates meer en kunt u geen nieuwe apparaten meer inschrijven. Bestaande Windows Phone 8.1-apparaten blijven ingeschreven (beleid, apps en rapportage). Na de genoemde datum wordt probleemoplossing voor bestaande inschrijvingen echter niet meer ondersteund, aangezien veel onderdelen, zoals certificaten van derden, de ondersteuning voor het platform al eerder hebben beëindigd. Intune beëindigt het testen van de compatibiliteit met Intune en Windows Phone 8.1.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
 Controleer uw Intune-rapporten om na te gaan voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar Apparaten > Alle apparaten en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met Windows Phone 8.1 gebruikt. Vraag uw eindgebruikers om hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
@@ -75,22 +75,8 @@ Voor een soepele overgang van Intune Managed Browser naar Microsoft Edge wordt u
 Ondersteuning voor webclips in iOS en Android is binnenkort beschikbaar. Wanneer deze ondersteuning wordt uitgebracht, moet u het doel van bestaande webclips opnieuw instellen om ervoor te zorgen dat ze worden geopend in Microsoft Edge in plaats van in Managed Browser. 
 
 #### <a name="additional-information"></a>Aanvullende informatie
-Ga naar onze documenten over het [gebruik van Microsoft Edge met app-beveiligingsbeleid](../apps/manage-microsoft-edge.md) voor meer informatie of bekijk onze [blogpost over ondersteuning](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+Bekijk onze documenten over het [gebruik van Microsoft Edge met app-beveiligingsbeleid](../apps/manage-microsoft-edge.md) voor meer informatie of lees onze [blogpost over ondersteuning](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Geplande wijziging: Nieuwe ervaring bij het inschrijven van toegewezen Android Enterprise-apparaten in Intune<!--5198878-->
-Met de release van Intune in november (1911) voegen we ondersteuning voor de implementatie van SCEP-apparaatcertificaten toe aan toegewezen Android Enterprise-apparaten om op certificaten gebaseerde toegang tot Wi-Fi-profielen mogelijk te maken. Deze verandering brengt ook enkele kleine wijzigingen met zich mee in de stroom bij het inschrijven van toegewezen Android Enterprise-apparaten.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Als u toegewezen Android Enterprise-apparaten in uw omgeving beheert, zult u in november enkele veranderingen gaan zien.
-
-- Nieuwe inschrijvingen van toegewezen Android Enterprise-apparaten: Eindgebruikers zien een andere reeks stappen op apparaten bij het inschrijven. De inschrijving start nog steeds zoals vandaag (met QR, NFC, Zero-touch of apparaat-id), maar na de servicerelease van november volgt er een verplichte stap voor app-installatie.
-- Voor bestaande Android-apparaten die zijn ingeschreven als toegewezen apparaten: Intune start met het automatisch installeren van de Microsoft Intune-app op apparaten vanaf begin november. U hoeft niets te doen. De app wordt automatisch gedownload en geïnstalleerd op apparaten. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wat kan ik doen om me voor te bereiden op deze wijziging?
-Maak plannen voor het bijwerken van uw eindgebruikersbegeleiding en stel uw helpdesk op de hoogte van deze wijziging. Klik op Aanvullende informatie voor meer details en screenshots. De pagina Wat is er nieuw wordt bijgewerkt zodra het uitrollen van deze wijziging begint.
-
-#### <a name="additional-information"></a>Aanvullende informatie
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Einde van ondersteuning voor verouderd pc-beheer
 
@@ -106,7 +92,7 @@ Deze wijzigingen van Google zijn op de volgende manieren van invloed op Intune-g
 - Intune biedt slechts tot het tweede kwartaal van 2020 nog ondersteuning voor Android-apparaten met Android 10 en hoger die door apparaatbeheerder worden beheerd. Apparaten die worden beheerd met apparaatbeheerder en worden uitgevoerd met Android 10 of hoger, kunnen na dit moment niet langer volledig worden beheerd. Betrokken apparaten ontvangen met name geen nieuwe wachtwoordvereisten meer.
     - Samsung Knox-apparaten worden gedurende deze periode niet beïnvloed, omdat uitgebreide ondersteuning wordt geboden via de integratie van Intune met het Knox-platform. Dit geeft u meer tijd om af te stappen van apparaatbeheerder.    
 - Android-apparaten die worden beheerd met apparaatbeheerder en worden uitgevoerd met oudere versies dan Android 10, worden niet getroffen en kunnen volledig beheerd blijven worden met apparaatbeheerder.    
-- Voor alle apparaten met Android 10 of hoger heeft Google de toegang voor apparaatbeheerderagents als de Bedrijfsportal tot apparaat-id's beperkt. Nadat een apparaat is bijgewerkt naar Android 10 of hoger, heeft deze beperking gevolgen voor de volgende Intune-functies:  
+- Voor alle apparaten met Android 10 of hoger heeft Google de toegang voor apparaatbeheerderagents als de Bedrijfsportal tot apparaat-id's beperkt. Nadat een apparaat naar Android 10 of hoger is bijgewerkt, heeft deze beperking gevolgen voor de volgende Intune-functies:  
     - Netwerktoegangsbeheer voor VPN werkt niet meer.   
     - Als u apparaten identificeert als 'In bedrijfseigendom' met een IMEI of serienummer, wordt het apparaat niet automatisch gemarkeerd als 'In bedrijfseigendom'.  
     - Het IMEI en serienummers zijn niet langer zichtbaar voor IT-beheerder in Intune. 
@@ -158,6 +144,6 @@ We raden uw organisatie aan om dit actieplan onmiddellijk te overwegen:
 - Bekijk het aanbod voor [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) via Fast Track voor hulp met de belofte van programmacompatibiliteit van Microsoft.
 - Migreer bestaande apparaten die worden beheerd met de verouderde Intune-softwareclient naar de door Microsoft aanbevolen oplossing om Windows 10 met behulp van MDM te beheren. Registreer alle nieuwe Windows 10-pc's met behulp van MDM-beheer voor Intune in de Azure-portal.
 
-Raadpleeg [dit blogbericht](https://aka.ms/Windows7_Intune) voor meer informatie.
+Lees [deze blogpost](https://aka.ms/Windows7_Intune) voor meer informatie.
 
 

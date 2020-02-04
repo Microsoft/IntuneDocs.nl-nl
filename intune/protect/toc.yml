@@ -6,7 +6,7 @@
     - name: Overzicht van de apparaatbeveiliging
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Snelstartgidsen
+- name: Quickstarts
   items:
     - name: Een nalevingsbeleid voor apparaten maken
       href: quickstart-set-password-length-android.md
@@ -46,7 +46,7 @@
           href: privacy-data-audit-export-delete.md
         - name: Windows Information Protection
           href: windows-information-protection-configure.md
-- name: Handleidingen
+- name: Instructiegidsen
   items:
     - name: Regels op apparaten instellen om toegang tot resources toe te staan
       items:
@@ -56,7 +56,7 @@
           href: create-compliance-policy.md
         - name: Naleving op basis van locatie
           href: use-network-locations.md
-        - name: Acties voor niet-naleving
+        - name: Acties voor niet-nageleefd
           href: actions-for-noncompliance.md
         - name: Apparaatcompatibiliteit bewaken
           href: compliance-policy-monitor.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Problemen met certificaatconnector oplossen
           href: troubleshoot-certificate-connector-events.md
+        - name: Problemen met SCEP-certificaatprofielen oplossen
+          items:
+            - name: Problemen met SCEP-certificaatprofielen oplossen
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Profielimplementatie naar apparaten
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Communicatie van apparaat naar NDES
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES-bewerkingen
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Levering van certificaten aan apparaten
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Rapportage voor certificaatimplementatie
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Problemen met Exchange Connector oplossen
           items:
             - name: Problemen met Exchange Connector oplossen
