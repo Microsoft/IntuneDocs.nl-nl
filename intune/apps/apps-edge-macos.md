@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6ebcb81cd0f186a3fd23e0701d12ea871eab129a
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563592"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912567"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Microsoft Edge toevoegen aan macOS-apparaten met behulp van Microsoft Intune
 
@@ -65,16 +65,20 @@ In deze stap geeft u informatie op over deze app-implementatie. Aan de hand van 
 In deze stap configureert u de installatieopties voor de app.
 
 1. Selecteer in het deelvenster **App toevoegen** de optie **App-instellingen**.
-2. In het deelvenster **App-instellingen** wordt het kanaal **Beta** automatisch geselecteerd en dit kan niet worden gewijzigd.
-    - Het kanaal **Beta** is de stabielste previewervaring van Microsoft Edge en de beste keuze voor een volledige pilot binnen uw organisatie. Met elke zes weken belangrijke updates.
+2. Selecteer in het deelvenster **App-instellingen** de optie **Stable,** **Beta** of **Dev** in de lijst **Kanaal** om te bepalen vanuit welk Edge-kanaal u de app gaat implementeren.
+
+    - **Stable** is het aanbevolen kanaal voor een brede implementatie in Enterprise-omgevingen. Het wordt elke zes weken bijgewerkt en elke release bevat verbeteringen uit het Beta-kanaal.
+    - Het kanaal **Beta** is de stabielste previewervaring van Microsoft Edge en de beste keuze voor een volledige pilot binnen uw organisatie. Met elke zes weken belangrijke updates bevat elke release de vergaarde kennis en verbeteringen van het Dev-kanaal.
+    - Het kanaal **Dev** is gereed voor zakelijke feedback over Windows, Windows Server en macOS. Het wordt elke week bijgewerkt en bevat de nieuwste verbeteringen en oplossingen.
 
     > [!NOTE]
     > Het Microsoft Edge-browserlogo wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+
 3.  Selecteer **OK**.
 
 ## <a name="select-scope-tags-optional"></a>Bereiktags selecteren (optioneel)
 U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag bekijken in Intune. Zie Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT voor uitgebreide informatie over bereiktags.
-1.  Selecteer **Bereik (tags)**  > **Toevoegen**.
+1.  Selecteer **Bereik (tags)** > **Toevoegen**.
 2.  Gebruik het vak onder **Selecteren** om bereiktags te zoeken.
 3.  Schakel het selectievakje in naast de bereiktags die u aan deze app wilt toewijzen.
 4.  Klik op **Selecteren** > **OK**.

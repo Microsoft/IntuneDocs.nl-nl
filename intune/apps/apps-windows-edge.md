@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2020
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
-ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
+ms.openlocfilehash: fa0156d059513a2586eb7d8866d23508be0af10c
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "76294792"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886679"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune
 
@@ -34,7 +34,7 @@ Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u d
 > [!NOTE]
 > Microsoft Edge *versie 77 en later* is ook beschikbaar voor macOS.
 > 
-> U kunt de ingebouwde toepassingsimplementatie van Microsoft Edge niet gebruiken voor aan de werkplek toegevoegde computers. Voor de ingebouwde toepassingsimplementatie is de Intune-beheerextensie vereist, die er alleen is voor aan AAD toegevoegde apparaten. U kunt Microsoft Edge *versie 77 en hoger* wel implementeren met behulp van een *MSI-bestand* dat is geüpload naar **Apps** . Zie [Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune](~/apps/lob-apps-windows.md).
+> U kunt de ingebouwde toepassingsimplementatie van Microsoft Edge niet gebruiken voor aan de werkplek toegevoegde computers. Voor de ingebouwde toepassingsimplementatie is de Intune-beheerextensie vereist, die er alleen is voor aan AAD toegevoegde apparaten. U kunt Microsoft Edge *versie 77 en hoger* wel implementeren met behulp van een *MSI-bestand* dat is geüpload naar **Apps**. Zie [Een Windows Line-Of-Business-app toevoegen aan Microsoft Intune](~/apps/lob-apps-windows.md).
 
 ## <a name="prerequisites"></a>Vereisten
 - Windows 10 RS2 en hoger is vereist.
@@ -80,7 +80,7 @@ In deze stap configureert u de installatieopties voor de app.
 
 ## <a name="select-scope-tags-optional"></a>Bereiktags selecteren (optioneel)
 U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag bekijken in Intune. Zie Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT voor uitgebreide informatie over bereiktags.
-1.  Selecteer **Bereik (tags)**  > **Toevoegen**.
+1.  Selecteer **Bereik (tags)** > **Toevoegen**.
 2.  Gebruik het vak onder **Selecteren** om bereiktags te zoeken.
 3.  Schakel het selectievakje in naast de bereiktags die u aan deze app wilt toewijzen.
 4.  Klik op **Selecteren** > **OK**.

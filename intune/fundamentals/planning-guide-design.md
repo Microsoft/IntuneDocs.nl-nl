@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885782"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886740"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -308,7 +308,10 @@ Wi-Fi-profielen worden gebruikt om een mobiel apparaat automatisch te verbinden 
 
 Hieronder ziet u een voorbeeld van een ontwerp voor een Wi-Fi-profiel:
 
-| **Type** | **Profielnaam** | **Apparaatplatform** | **Use cases** | | Wi-Fi | Wi-Fi-profiel Azië | Android | Zakelijk, BYOD Azië| | Wi-Fi | Wi-Fi-profiel Noord-Amerika | Android, iOS, Windows 10 Mobile | Zakelijk, BYOD Noord-Amerika |
+| **Type** | **Profielnaam** | **Apparaatplatform** | **Use cases** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | Wi-Fi-profiel Azië | Android | Bedrijfseigendom, BYOD regio Azië|
+| Wi-Fi | Wi-Fi-profiel Noord-Amerika | Android, iOS, Windows 10 Mobile | Bedrijfseigendom, BYOD regio Noord-Amerika |
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw Wi-Fi-profiel vast te stellen.
 

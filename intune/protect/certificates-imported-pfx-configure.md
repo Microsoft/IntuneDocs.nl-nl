@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 469ee615cd9a9f1d3a7aee40ce764b8d8100fe69
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258480"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912894"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Geïmporteerde PKCS-certificaten configureren en gebruiken met Intune
 
@@ -175,9 +175,9 @@ Selecteer de sleutelopslagprovider die overeenkomt met de provider die u hebt ge
 
 5. Converteer het wachtwoord voor elk PFX-bestand dat u importeert naar een beveiligde tekenreeks door `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force` uit te voeren.
 
-6. Voer `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"` uit om een **UserPFXCertificate**-object te maken
+6. Voer `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>"` uit om een **UserPFXCertificate**-object te maken
 
-   Bijvoorbeeld: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
+   Bijvoorbeeld: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption"`
 
    > [!NOTE]
    > Wanneer u het certificaat importeert van een ander systeem dan de server waarop de connector is geïnstalleerd, gebruikt u de volgende opdracht, die het pad naar het sleutelbestand bevat: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`
@@ -207,7 +207,7 @@ Na het importeren van de certificaten naar Intune maakt u een **geïmporteerd PK
 
    - **Beoogd doeleinde**: Geef het beoogde doel op van de certificaten die voor dit profiel worden geïmporteerd. Beheerders kunnen certificaten importeren met verschillende beoogde doelen (zoals S/MIME-ondertekening of S/MIME-versleuteling). Het beoogde doel dat is geselecteerd in het certificaatprofiel komt overeen met het certificaatprofiel met de juiste geïmporteerde certificaten. Het beoogde doel is een tag om een groep geïmporteerde certificaten te groeperen. Dit garandeert niet dat certificaten die met die tag worden geïmporteerd, voldoen aan het beoogde doel.  
    - **Geldigheidsduur van certificaat**: Tenzij de geldigheidsperiode in de certificaatsjabloon is gewijzigd, wordt deze optie standaard op één jaar ingesteld.
-   - **Sleutelarchiefprovider (KSP)** : Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
+   - **Sleutelarchiefprovider (KSP)**: Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan.
 
 5. Selecteer **OK** > **Maken** om het profiel op te slaan.
 

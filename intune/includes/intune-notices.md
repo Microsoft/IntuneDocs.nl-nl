@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912626"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966352"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Bijgewerkte functie: Nieuwe RBAC-rol voor Intune<!--4253397-->
-In de service-update van januari voor Intune voegen we een nieuwe beveiligingsrol toe in Intune. Deze rol wordt weergegeven als 'Eindpuntbeveiligingsbeheerder' in Intune en de rol is een uitbreiding van de rol 'Beveiligingsbeheerder' van Azure Active Directory.
- 
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Op dit moment zijn er drie rollen beschikbaar in Azure Active Directory voor uw beveiligingsprofessionals:
-- De rol Beveiligingslezer in Azure Active Directory met alleen-lezentoegang tot Intune.
-- De rol Beveiligingsoperator in Azure Active Directory met alleen-lezentoegang tot Intune.
-- De rol Beveiligingsbeheerder in Azure Active Directory. Wanneer Intune in januari wordt bijgewerkt, krijgt de rol Eindpuntbeveligingsbeheerder niet alleen leesmachtigingen voor Intune, maar ook de volgende nieuwe machtigingen:
-    - Lezen, Maken, Bijwerken, Verwijderen en Nalevingsbeleid voor apparaten toewijzen
-    - Lezen, Verwijderen en Beheerde apparaten bijwerken
-    - Lezen, Maken, Bijwerken, Verwijderen en Basislijnen voor beveiliging toewijzen
-    - Lezen en Beveiligingstaken bijwerken
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Bekijk vandaag nog uw RBAC-rollen voor Intune. Als u momenteel alleen Algemene beheerder als rol gebruik, zijn er geen wijzigingen nodig. Als u rollen gebruikt, en u de granulariteit wilt gebruiken die de rol Eindpuntbeveiligingsbeheerder biedt, wijst u die rol toe wanneer deze beschikbaar is. Bekijk de pagina [Wat is er nieuw](../fundamentals/whats-new.md) van Intune voor actuele informatie over Intune-releases. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Bijgewerkte ondersteuningsmededeling over de mobiele app Adobe Acrobat Reader voor Intune<!--5746776-->
 Eind augustus hebben we via MC188653 meegedeeld dat de mobiele app Adobe Acrobat Reader voor Intune op 1 december 2019 het eind van zijn levenscyclus heeft bereikt en dat Adobe van plan is om ondersteuning te bieden voor de app-beveiliging van Intune vanuit de belangrijkste Acrobat Reader-app. Sindsdien hebben we feedback van klanten ontvangen dat we IT-beheerders meer tijd moesten geven om zich bezig te houden met Adobe Acrobat Reader voor Intune en dat eindgebruikers meer tijd nodig hadden om zich Adobe Acrobat Reader voor Intune eigen te maken. Omdat Adobe Acrobat Reader voor Intune veel wordt gebruikt op apparaten van eindgebruikers en een belangrijke rol speelt in bedrijfsscenario's, willen we kunnen blijven garanderen dat elke ervaring voldoet aan de vereisten die uw organisatie stelt aan de bescherming van haar apps. 
