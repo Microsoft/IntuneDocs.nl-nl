@@ -1,11 +1,11 @@
 ---
 title: Tips voor het oplossen van problemen met BitLocker-beleid in Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Hierin wordt beschreven hoe u BitLocker-versleuteling inschakelt op een apparaat met behulp van intune-beleid en hoe u kunt controleren of uw beleid op een apparaat is geïmplementeerd.
+description: Hierin wordt beschreven hoe u BitLocker-versleuteling inschakelt op een apparaat met behulp van Intune-beleid en hoe u kunt controleren of uw beleid is geïmplementeerd op een apparaat.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/29/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,80 +16,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 744277b0e49a4e3ca8b0fa3bac43c666110bb8a3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74410348"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886779"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Problemen met BitLocker-beleid in Microsoft Intune oplossen
 
-Dit artikel kan intune-beheerders helpen begrijpen hoe Windows 10-apparaten BitLocker configureren op basis van intune-beleid. Dit artikel bevat ook richt lijnen voor het oplossen van problemen met BitLocker-instellingen op apparaten die u beheert met intune.  
+Dit artikel biedt Intune-beheerders inzicht in hoe BitLocker wordt geconfigureerd op Windows 10-apparaten op basis van Intune-beleid. Dit artikel bevat ook richtlijnen voor het oplossen van problemen met BitLocker-instellingen op apparaten die u beheert met Intune.  
 
 ## <a name="understanding-bitlocker"></a>Informatie over BitLocker
 
-BitLocker-stationsversleuteling is een service die wordt aangeboden door micro soft Windows-besturings systemen, waarmee gebruikers gegevens op hun harde schijven kunnen versleutelen. BitLocker ondersteunt versleuteling voor stations van het besturings systeem, verwissel bare media stations en harde schijven. BitLocker biedt ook ondersteuning voor het gebruik van 256-bits versleuteling voor betere beveiliging van gevoelige gegevens.  
+BitLocker-stationsversleuteling is een service die wordt aangeboden in Microsoft Windows-besturingssystemen waarmee gebruikers gegevens op hun harde schijven kunnen versleutelen. BitLocker ondersteunt versleuteling voor besturingssysteemstations, verwisselbare mediastations en vaste gegevensstations. BitLocker biedt ook ondersteuning voor het gebruik van 256 bitsversleuteling voor betere beveiliging van gevoelige gegevens.  
 
-Met Microsoft Intune hebt u de volgende methoden voor het beheren van BitLocker op Windows 10-apparaten:
+Met Microsoft Intune beschikt u over de volgende methoden om BitLocker te beheren op Windows 10-apparaten:
 
-- **Configuratie beleid voor apparaten** : bepaalde ingebouwde beleids opties zijn beschikbaar in intune wanneer u een configuratie profiel voor een apparaat maakt om Endpoint Protection te beheren. Als u deze opties wilt vinden, [maakt u een apparaatprofiel voor Endpoint Protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), selecteert u **Windows 10 en hoger** voor het *platform*en selecteert u vervolgens de **Windows-versleutelings** categorie voor *instellingen*. 
+- **Beleidsregels voor apparaatconfiruatie**: bepaalde ingebouwde beleidsopties zijn beschikbaar in Intune wanneer u een apparaatconfiguratieprofiel maakt om Endpoint Protection te beheren. U kunt deze opties vinden door [een apparaatprofiel voor Endpoint Protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings) te maken, **Windows 10 en later** te selecteren bij *Platform* en vervolgens de categorie **Windows-versleuteling** te selecteren bij *Instellingen*. 
 
-   U vindt hier meer informatie over de beschik bare opties en functies: [Windows-versleuteling](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+   Zie [Windows-versleuteling](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) voor de beschikbare opties en functies.
 
-- **Beveiligings basislijnen** - [beveiligings basislijnen](security-baselines.md) zijn bekende groepen instellingen en standaard waarden die worden aanbevolen door het relevante beveiligings team om Windows-apparaten te beveiligen. Verschillende basislijn bronnen, zoals de *MDM-beveiligings basislijn* of de *micro soft Defender ATP-basis lijn* , kunnen dezelfde instellingen beheren als andere instellingen dan beide. Ze kunnen ook dezelfde instellingen beheren die u beheert met configuratie beleid voor apparaten. 
+- **Beveiligingsbasislijnen** - [Beveiligingsbasislijnen](security-baselines.md) zijn bekende groepen instellingen en standaardwaarden die door het relevante beveiligingsteam worden aanbevolen om Windows-apparaten te beveiligen. Met verschillende basislijnbronnen, zoals de *MDM-beveiligingsbasislijn* of de *Microsoft Defender ATP-basislijn*, kunt u dezelfde of andere instellingen beheren. U kunt er ook dezelfde instellingen mee beheren als met apparaatconfiguratiebeleid. 
 
-Naast intune is het mogelijk dat BitLocker-instellingen worden beheerd op een andere manier, zoals groepsbeleid, of hand matig worden ingesteld door een gebruiker van een apparaat.
+Behalve met Intune kunnen BitLocker-instellingen op andere manieren worden beheerd, zoals met groepsbeleid, of handmatig worden ingesteld door een apparaatgebruiker.
 
-Ongeacht hoe instellingen worden toegepast op een apparaat, BitLocker-beleid maakt gebruik van de [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) voor het configureren van versleuteling op het apparaat. De BitLocker CSP is ingebouwd in Windows en wanneer intune een BitLocker-beleid implementeert op een toegewezen apparaat, is het de BitLocker CSP op het apparaat dat de juiste waarden naar het Windows-REGI ster schrijft, zodat de instellingen van het beleid van kracht kunnen worden.
+Ongeacht hoe instellingen worden toegepast op een apparaat, BitLocker-beleid maakt gebruik van de [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) om versleuteling op het apparaat te configureren. De BitLocker CSP is ingebouwd in Windows. Wanneer via Intune een BitLocker-beleidsregel wordt geïmplementeerd op een toegewezen apparaat, worden de juiste waarden door de BitLocker CSP op het apparaat in het Windows-register geschreven zodat de beleidsinstellingen van kracht kunnen worden.
 
-Raadpleeg de volgende bronnen voor meer informatie over BitLocker:
+Raadpleeg de volgende resources voor meer informatie over BitLocker:
 
 - [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [Veelgestelde vragen over BitLocker-overzicht en-vereisten](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
+- [Overzicht van BitLocker en veelgestelde vragen over vereisten](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
 
-Nu u een algemeen overzicht hebt van wat dit beleid doet en hoe ze werken, kijkt u hoe u kunt controleren of de BitLocker-instellingen zijn toegepast op een Windows-client.
+Nu u basisinzicht hebt in de functie en werking van deze beleidsregels gaan we kijken hoe u kunt controleren of de BitLocker-instellingen zijn toegepast op een Windows-client.
 
 ## <a name="verify-the-source-of-bitlocker-settings"></a>De bron van BitLocker-instellingen controleren
 
-Wanneer u een BitLocker-probleem op een Windows 10-apparaat onderzoekt, is het belang rijk om eerst te bepalen of het probleem betrekking heeft op intune of Windows. Nadat de mogelijke bron van de fout bekend is, kunt u zich op de juiste plek richten op de probleem oplossing en zo nodig ondersteuning verkrijgen van het juiste team.  
+Wanneer u een BitLocker-probleem op een Windows 10-apparaat onderzoekt, is het belangrijk om eerst te bepalen of het probleem betrekking heeft op Intune of Windows. Als de mogelijke bron van de fout bekend is, kunt u uw inspanningen om het probleem op te lossen richten op het juiste gebied en zo nodig ondersteuning verkrijgen van het juiste team.  
 
-Bepaal als eerste stap of het intune-beleid is geïmplementeerd op het doel apparaat. In het volgende voor beeld hebt u een configuratie beleid voor apparaten waarmee de BitLocker-instellingen (Windows Encryption) worden geïmplementeerd, zoals wordt weer gegeven:
+Bepaal als eerste stap of het Intune-beleid is geïmplementeerd op het doelapparaat. In het volgende voorbeeld hebt u apparaatconfiguratiebeleid waarmee de instellingen van Windows-versleuteling (BitLocker) worden geïmplementeerd, zoals hier wordt weergegeven:
 
-![Beleid voor Windows-versleutelings apparaatconfiguratie met de instellingen](./media/troubleshooting-bitlocker-policies/settings.png)
+![Apparaatconfiguratiebeleid voor Windows-versleuteling met de instellingen](./media/troubleshooting-bitlocker-policies/settings.png)
 
-Hoe bevestigt u dat de instellingen zijn toegepast op het doel apparaat? Hier volgen enkele manieren waarop u dit kunt doen.
+Hoe controleert u of de instellingen zijn toegepast op het doelapparaat? Hier volgen enkele manieren waarop u dit kunt doen.
 
-### <a name="device-configuration-policy-device-status"></a>Apparaatstatus van het configuratie beleid voor apparaten  
+### <a name="device-configuration-policy-device-status"></a>Apparaatstatus van het apparaatconfiguratiebeleid  
 
-Wanneer u het configuratie beleid voor apparaten gebruikt om BitLocker te configureren, kunt u de status van het beleid in de intune-Portal controleren.
+Wanneer u het apparaatconfiguratiebeleid gebruikt om BitLocker te configureren, kunt u de status van het beleid controleren in de Intune-portal.
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecteer **apparaten** > **configuratie profielen** en selecteer vervolgens het profiel dat BitLocker-instellingen bevat.
+2. Selecteer **Apparaten** > **Configuratieprofielen** en selecteer vervolgens het profiel dat BitLocker-instellingen bevat.
 
-3. Nadat u het profiel dat u wilt weer geven hebt geselecteerd, selecteert u **Apparaatstatus**. Apparaten die aan het profiel zijn toegewezen, worden weer gegeven en de kolom *Apparaatstatus* geeft aan of het profiel door een apparaat is geïmplementeerd.
+3. Na selectie van het profiel dat u wilt weergeven selecteert u **Apparaatstatus**. Apparaten die aan het profiel zijn toegewezen, worden weergegeven en de kolom *Apparaatstatus* geeft aan of het profiel is geïmplementeerd op een apparaat.
 
-Houd er rekening mee dat er een vertraging kan optreden tussen een apparaat dat een BitLocker-beleid ontvangt en het station is volledig versleuteld.  
+Houd er rekening mee dat er een vertraging kan optreden tussen het moment waarop een apparaat BitLocker-beleid ontvangt en waarop het station volledig is versleuteld.  
 
-### <a name="use-control-panel-on-the-client"></a>Het configuratie scherm gebruiken op de client  
+### <a name="use-control-panel-on-the-client"></a>Het configuratiescherm op de client gebruiken  
 
-Op een apparaat waarop BitLocker is ingeschakeld en een station is versleuteld, kunt u de status van BitLocker bekijken via het configuratie scherm van apparaten. Open **configuratie scherm** op het apparaat > **systeem-en beveiligings** > **BitLocker-stationsversleuteling**. Bevestiging wordt weer gegeven zoals in de volgende afbeelding.  
+Op een apparaat waarop BitLocker is ingeschakeld en een station is versleuteld, kunt u de BitLocker-status bekijken via het Configuratiescherm van apparaten. Open op het apparaat **Configuratiescherm** > **Systeem en beveiliging** > **BitLocker-stationsversleuteling**. Er wordt een bevestiging weergegeven, zoals te zien is in de volgende afbeelding.  
 
-![BitLocker is ingeschakeld in het configuratie scherm](./media/troubleshooting-bitlocker-policies/control-panel.png)
+![BitLocker is ingeschakeld in het Configuratiescherm](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
 ### <a name="use-a-command-prompt"></a>Een opdrachtprompt gebruiken  
 
-Op een apparaat waarop BitLocker is ingeschakeld en een station is versleuteld, start u de opdracht prompt met beheerders referenties en voert u vervolgens `manage-bde -status`uit. De resultaten moeten eruitzien als in het volgende voor beeld:  
-![resultaat van de opdracht status](./media/troubleshooting-bitlocker-policies/command.png)
+Op een apparaat waarop BitLocker is ingeschakeld en een station is versleuteld, start u de opdrachtprompt met beheerdersreferenties en voert u vervolgens `manage-bde -status` uit. De resultaten moeten eruitzien zoals in het volgende voorbeeld:  
+![Een resultaat van de statusopdracht](./media/troubleshooting-bitlocker-policies/command.png)
 
-In het voor beeld:
+In het voorbeeld:
 
-- **BitLocker-beveiliging** is **ingeschakeld**
+- **BitLocker-beveiliging** is **Ingeschakeld**
 - **Percentage versleuteld** is **100%**
-- De **versleutelings methode** is **XTS-AES 256**
+- De **Versleutelingsmethode** is **XTS-AES 256**
 
-U kunt ook **sleutel beveiligingen** controleren door de volgende opdracht uit te voeren:
+U kunt ook **Sleutelbeveiligingen** controleren door de volgende opdracht uit te voeren:
 
 ```cmd
 Manage-bde -protectors -get c:
@@ -101,32 +101,32 @@ Of met PowerShell:
 Confirm-SecureBootUEFI
 ```
 
-### <a name="review-the-devices-registry-key-configuration"></a>De configuratie van de register sleutel voor apparaten controleren
+### <a name="review-the-devices-registry-key-configuration"></a>De configuratie van de registersleutel voor apparaten controleren
 
-Nadat het BitLocker-beleid op een apparaat is geïmplementeerd, bekijkt u de volgende register sleutel op het apparaat, waar u de configuratie van BitLocker-instellingen kunt controleren: *HKEY_LOCAL_MACHINE \software\microsoft\policymanager\current\device\bitlocker*. Hier volgt een voorbeeld:
+Nadat BitLocker-beleid op een apparaat is geïmplementeerd, bekijkt u de volgende registersleutel op het apparaat, waar u de configuratie van BitLocker-instellingen kunt controleren: *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Hier volgt een voorbeeld:
 
-![BitLocker-register sleutel](./media/troubleshooting-bitlocker-policies/registry.png)
+![BitLocker-registersleutel](./media/troubleshooting-bitlocker-policies/registry.png)
 
-Deze waarden worden geconfigureerd door de BitLocker CSP. Controleer of de waarden van de sleutels overeenkomen met de instellingen die zijn opgegeven in de bron van uw intune-versleutelings beleid voor Windows. Zie [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)voor meer informatie over elk van deze instellingen.
+Deze waarden worden geconfigureerd door de BitLocker CSP. Controleer of de waarden van de sleutels overeenkomen met de instellingen die zijn opgegeven in de bron van uw Intune-versleutelingsbeleid voor Windows. Zie [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)voor meer informatie over elk van deze instellingen.
 
 > [!NOTE]
-> De Windows Logboeken bevat ook diverse informatie met betrekking tot BitLocker. Er zijn hier te veel om weer te geven, maar door te zoeken naar de **BitLocker API** krijgt u veel nuttige informatie.
+> De Logboeken van Windows bevatten ook diverse informatie met betrekking tot BitLocker. Er is te veel om hier weer te geven, maar als u zoekt naar **BitLocker API** krijgt u veel nuttige informatie.
 
-### <a name="check-the-mdm-diagnostics-report"></a>Het MDM-diagnose rapport controleren
+### <a name="check-the-mdm-diagnostics-report"></a>Het MDM-diagnoserapport controleren
 
-Op een apparaat waarop BitLocker is ingeschakeld, kunt u een MDM-diagnose rapport genereren en weer geven vanaf het doel apparaat om te bevestigen dat het BitLocker-beleid aanwezig is. Als u de beleids instellingen in het rapport kunt zien, is het een andere indicatie dat het beleid is geïmplementeerd. In de video van *micro soft* wordt uitgelegd hoe u een MDM-diagnose rapport kunt vastleggen vanaf een Windows-apparaat.
+Op een apparaat waarop BitLocker is ingeschakeld, kunt u een MDM-diagnoserapport genereren en bekijken vanaf het doelapparaat om te controleren of het BitLocker-beleid aanwezig is. Als u de beleidsinstellingen in het rapport kunt zien, is dat nog een indicatie dat het beleid is geïmplementeerd. In de video *Microsoft helpt* wordt uitgelegd hoe u een MDM-diagnoserapport kunt vastleggen vanaf een Windows-apparaat.
 
 > [!VIDEO https://www.youtube.com/embed/WKxlcjV4TNE]
 
-Wanneer u het rapport met het MDM-diagnose programma analyseert, kan de inhoud op het eerste gezicht enigszins verwarrend zijn. Hieronder ziet u een voor beeld waarin wordt uitgelegd hoe u met de instellingen in een beleid kunt correleren wat er in het rapport gebeurt:
+Wanneer u het MDM-diagnoserapport analyseert, kan de inhoud aanvankelijk een beetje verwarrend lijken. Hieronder ziet u een voorbeeld waarin wordt uitgelegd hoe de rapportinhoud zich verhoudt tot de beleidsinstellingen:
 
-![Rapport voor het MDM-diagnose programma](./media/troubleshooting-bitlocker-policies/report.png)
+![Voorbeeld van een MDM-diagnoserapport](./media/troubleshooting-bitlocker-policies/report.png)
 
-In het resultaat van de uitvoer ziet u de waarden die overeenkomen met de waarden van uw BitLocker-beleid:
+In de uitvoerresultaten ziet u de waarden die overeenkomen met de waarden van uw BitLocker-beleid:
 
-![Resultaat van uitvoer toont de waarden ](./media/troubleshooting-bitlocker-policies/output.png)
+![De waarden in het uitvoerresultaat ](./media/troubleshooting-bitlocker-policies/output.png)
 
-Uitvoer resultaten van MDM-diagnose:
+Uitvoerresultaten van MDM-diagnose:
 
 ```asciidoc
 EncryptionMethodWithXtsOsDropDown: 7 (The value 7 refers to the 256 bit encryption)
@@ -134,75 +134,75 @@ EncryptionMethodWithXtsFdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encryption)
 ```
 
-U kunt naar de [BitLocker CSP-documentatie](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) verwijzen om te zien wat elke waarde betekent. In dit voor beeld wordt een fragment gedeeld in de volgende afbeelding.
+U kunt de [BitLocker CSP-documentatie](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) raadplegen om te zien wat elke waarde betekent. Voor dit voorbeeld wordt een fragment gedeeld in de volgende afbeelding.
 
-![Doel van waarden](./media/troubleshooting-bitlocker-policies/shared-example.png)
+![Doelen van waarden](./media/troubleshooting-bitlocker-policies/shared-example.png)
 
-Op dezelfde manier kunt u alle waarden bekijken en controleren via de BitLocker CSP-koppeling.
+Op dezelfde manier kunt u alle waarden bekijken en deze controleren via de BitLocker CSP-koppeling.
 
 > [!TIP]
-> Het belangrijkste doel van het MDM-diagnose rapport is om Microsoft Ondersteuning te helpen bij het oplossen van problemen. Als u een ondersteunings aanvraag voor intune opent en het probleem betrekking heeft op Windows-clients, is het altijd een goed idee om dit rapport te verzamelen en op te halen in uw ondersteunings aanvraag.
+> Het belangrijkste doel van het MDM-diagnoserapport is om Microsoft Ondersteuning te helpen bij het oplossen van problemen. Als u een ondersteuningsaanvraag voor Intune opent en het probleem betrekking heeft op Windows-clients, is het altijd verstandig om dit rapport te verzamelen en op te nemen in uw ondersteuningsaanvraag.
 
 ## <a name="troubleshooting-bitlocker-policy"></a>Problemen met BitLocker-beleid oplossen
 
-U hebt nu een goed idee hoe u kunt controleren of het BitLocker-beleid door intune is geïmplementeerd, waardoor de configuratie van BitLocker wordt doorgevoerd in de BitLocker CSP in WIndows.
+Nu weet u hoe u kunt controleren of het BitLocker-beleid via Intune is geïmplementeerd, waarna BitLocker wordt geconfigureerd in de BitLocker CSP in Windows.
 
-**Het beleid is niet bereikbaar voor het apparaat** -wanneer uw intune-beleid niet aanwezig is in een capaciteit:
+**Het beleid bereikt het apparaat niet**: wanneer uw Intune-beleid niet aanwezig is in een capaciteit:
 
-- **Is het apparaat goed ingeschreven bij Microsoft Intune?** Als dat niet het geval is, moet u eerst een adres kiezen voordat u alle specifieke informatie voor het beleid opvraagt. Meer informatie over het oplossen van problemen met Windows-inschrijving vindt u [hier](../enrollment/troubleshoot-windows-enrollment-errors.md).
+- **Is het apparaat goed ingeschreven bij Microsoft Intune?** Als dat niet het geval is, moet u dat probleem eerst oplossen voordat u specifieke fouten met het beleid oplost. Meer informatie over het oplossen van problemen met Windows-inschrijving vindt u [hier](../enrollment/troubleshoot-windows-enrollment-errors.md).
 
-- **Heeft het apparaat een actieve netwerkverbinding?** Als het apparaat zich in de vliegtuig modus bevindt of is uitgeschakeld, of als de gebruiker het apparaat op een locatie zonder service heeft, wordt het beleid niet bezorgd of toegepast totdat de netwerk verbinding is hersteld.
+- **Heeft het apparaat een actieve netwerkverbinding?** Als het apparaat zich in de vliegtuigmodus bevindt of is uitgeschakeld, of als het apparaat zich op een locatie zonder service bevindt, wordt het beleid pas geleverd of toegepast als de netwerkverbinding is hersteld.
 
-- **Is het BitLocker-beleid geïmplementeerd voor de juiste gebruiker of Apparaatgroep?** Controleer of de juiste gebruiker of apparaat lid is van de groepen die u doel.
+- **Is het BitLocker-beleid geïmplementeerd voor de juiste gebruikers- of apparaatgroep?** Controleer of de juiste gebruiker of het juiste apparaat lid is van de groepen waarop u zicht richt.
 
-Het **beleid is aanwezig, maar niet alle instellingen zijn geconfigureerd** . Wanneer uw intune-beleid het apparaat bereikt, maar niet alle configuraties zijn ingesteld:
+**Het beleid is aanwezig, maar niet alle instellingen zijn geconfigureerd**: wanneer uw Intune-beleid het apparaat heeft bereikt, maar niet alle configuraties zijn ingesteld:
 
-- **Mislukt de implementatie van het volledige beleid of zijn er alleen bepaalde instellingen die niet van toepassing zijn?** Als u een scenario hebt gevonden waarin slechts enkele beleids instellingen niet van toepassing zijn, controleert u de volgende overwegingen:
+- **Mislukt de implementatie van het volledige beleid of zijn alleen bepaalde instellingen niet toegepast?** In een scenario waarin slechts enkele beleidsinstellingen niet zijn toegepast, controleert u de volgende mogelijkheden:
 
-  1. **Niet alle BitLocker-instellingen worden ondersteund op alle Windows-versies**.
-     Het beleid wordt als één eenheid naar een apparaat verzonden, dus als sommige instellingen van toepassing zijn en andere niet, kunt u erop vertrouwen dat het beleid zelf wordt ontvangen. In dit scenario is het mogelijk dat de Windows-versie op het apparaat niet de problematische instellingen ondersteunt. Zie [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in de Windows-documentatie voor meer informatie over de versie vereisten voor elke instelling.
+  1. **Niet alle BitLocker-instellingen worden ondersteund in alle Windows-versies**.
+     Het beleid wordt als één eenheid naar een apparaat verzonden. Als sommige instellingen dus wel van toepassing zijn en andere niet, kunt u erop vertrouwen dat het beleid zelf is ontvangen. In dit scenario is het mogelijk dat de Windows-versie op het apparaat de problematische instellingen niet ondersteunt. Zie [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in de Windows-documentatie voor meer informatie over de versievereisten voor elke instelling.
 
   2. **BitLocker wordt niet op alle hardware ondersteund**.
-     Zelfs als u de juiste versie van Windows hebt, is het mogelijk dat de onderliggende hardware niet voldoet aan de vereisten voor BitLocker-versleuteling. De [systeem vereisten voor BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) vindt u in de Windows-documentatie, maar de belangrijkste te controleren taken zijn dat het apparaat een compatibele TPM-chip heeft (1,2 of hoger) en een BIOS-of UEFI-firmware die compatibel is met Trusted Computing Group (TCG).
+     Ook als u de juiste versie van Windows hebt, is het mogelijk dat de onderliggende apparaathardware niet voldoet aan de vereisten voor BitLocker-versleuteling. De [systeemvereisten voor BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) vindt u in de Windows-documentatie, maar het belangrijkste is om te controleren of het apparaat een compatibele TPM-chip heeft (1.2 of later) en TCB-compatibele (Trusted Computing Group) BIOS- of UEFI-firmware.
 
 **Voorbeeldonderzoek**
 
-- U implementeert een BitLocker-beleid op een Windows 10-apparaat en de instelling **apparaten versleutelen** toont de status **fout** in de portal.
+- U implementeert BitLocker-beleid op een Windows 10-apparaat en de instelling **Apparaten versleutelen** heeft de status **Fout** in de portal.
 
-- Zoals de naam suggereert, kan een beheerder vereisen dat versleuteling is ingeschakeld met behulp van *BitLocker > apparaatversleuteling*. Op basis van de tips voor probleem oplossing die eerder werden beschreven, controleert u eerst het MDM-rapport voor controle. In het rapport wordt bevestigd dat het juiste beleid op het apparaat is geïmplementeerd:
+- Zoals de naam al aangeeft, kan een beheerder met deze instelling vereisen dat versleuteling is ingeschakeld met behulp van *BitLocker > Apparaatversleuteling*. Controleer met behulp van de bovengenoemde tips voor probleemoplossing eerst het MDM-diagnoserapport. Het rapport bevestigt dat het juiste beleid op het apparaat is geïmplementeerd:
 
-  ![Rapport bevestigt dat het juiste beleid is geïmplementeerd op het apparaat](./media/troubleshooting-bitlocker-policies/mdm-report.png)
+  ![Het rapport bevestigt dat het juiste beleid op het apparaat is geïmplementeerd](./media/troubleshooting-bitlocker-policies/mdm-report.png)
 
-- U controleert ook de geslaagde pogingen in het REGI ster:
+- Controleer de status ook in het register:
 
-  ![In de register waarde RequiredDeviceEncryption wordt 1 weer gegeven](./media/troubleshooting-bitlocker-policies/registry-confirm.png)
+  ![De registerwaarde RequiredDeviceEncryption geeft 1 aan](./media/troubleshooting-bitlocker-policies/registry-confirm.png)
 
-- Vervolgens controleert u de status van TPM met behulp van Power shell en vindt u dat TPM niet beschikbaar is op het apparaat:
+- Controleer vervolgens de status van TPM met behulp van PowerShell en ontdek dat TPM niet beschikbaar is op het apparaat:
 
-  ![TPM-status gecontroleerd met behulp van Power shell](./media/troubleshooting-bitlocker-policies/tpm-command.png)
+  ![Gecontroleerde TPM-status met behulp van PowerShell](./media/troubleshooting-bitlocker-policies/tpm-command.png)
 
-- Omdat BitLocker afhankelijk is van TPM, kunt u concluderen dat BitLocker niet mislukt vanwege een probleem met intune of het beleid, maar in plaats daarvan omdat het apparaat zelf geen TPM-chip heeft of als TPM niet is ingeschakeld in het BIOS.
+- Omdat BitLocker afhankelijk is van TPM, kunt u concluderen dat BitLocker niet mislukt vanwege een probleem met Intune of het beleid, maar omdat het apparaat zelf geen TPM-chip heeft of omdat TPM is uitgeschakeld in het BIOS.
 
-  Als extra tip kunt u hetzelfde controleren in het Windows-Logboeken onder **toepassingen en services-logboek** > **Windows** > **BitLocker API**. In het gebeurtenis logboek van **BitLocker-API** vindt u een gebeurtenis-ID van 853, wat betekent dat TPM niet beschikbaar is:
+  Als extra tip kunt u hetzelfde controleren in de Logboeken van Windows onder **Logboek van toepassingen en services** > **Microsoft** > **Windows** > **BitLocker API**. In het gebeurtenislogboek van **BitLocker-API** vindt u een gebeurtenis-id 853, wat betekent dat TPM niet beschikbaar is:
 
   ![Gebeurtenis-id 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 
   > [!NOTE]
-  > U kunt ook de TPM-status controleren door **TPM. msc** op het apparaat uit te voeren.
+  > U kunt de TPM-status ook controleren door **tpm.msc** op het apparaat uit te voeren.
 
 ## <a name="summary"></a>Samenvatting
 
-Wanneer u problemen met BitLocker-beleid met intune oplost en kunt bevestigen dat beleid het beoogde apparaat bereikt, is het veilig om aan te nemen dat het probleem niet rechtstreeks verband houdt met intune. Het probleem is waarschijnlijk een probleem met het Windows-besturings systeem of de hardware. In dit geval gaat u naar andere gebieden, zoals de TPM-configuratie of UEFI en beveiligd opstarten.
+Wanneer u problemen met BitLocker-beleid met Intune oplost en kunt bevestigen dat beleid het beoogde apparaat heeft bereikt, kunt u veilig aannemen dat het probleem niet rechtstreeks verband houdt met Intune. De kans is groter dat het gaat om een probleem met het Windows-besturingssysteem of de hardware. In dat geval zoekt u in andere gebieden, zoals de TPM-configuratie of UEFI en beveiligd opstarten.
 
 ## <a name="next-steps"></a>Volgende stappen  
 
-Hieronder vindt u meer bronnen die u kunnen helpen bij het werken met BitLocker:
+Hieronder volgen nog meer resources die u kunnen helpen als u met BitLocker werkt:
 
-- [BitLocker-product documentatie](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [BitLocker-systeem vereisten](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)
+- [BitLocker-productdocumentatie](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [BitLocker-systeemvereisten](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)
 - [BitLocker: veelgestelde vragen](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
 - [BitLocker CSP-documentatie](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
-- [Instellingen voor Windows-versleutelings beleid van intune](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)
-- [Hardwarematig onafhankelijke automatische BitLocker-versleuteling met AAD/MDM](https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/06/07/hardware-independent-automatic-bitlocker-encryption-using-aadmdm/)
-- [CSP-beleid voor BitLocker-versleuteling op automatische pilot-apparaten](https://techcommunity.microsoft.com/t5/Windows-10-security/CSP-policy-for-bitLocker-encryption-on-autopilot-devices/m-p/284537)
-- [Instructies voor het maken en implementeren van BitLocker-beleid met intune](https://blogs.technet.microsoft.com/cbernier/2017/07/11/windows-10-intune-windows-bitlocker-management-yes/)
+- [Instellingen voor Intune-versleutelingsbeleid voor Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)
+- [Hardwareonafhankelijke automatische BitLocker-versleuteling met behulp van AAD/MDM](https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/06/07/hardware-independent-automatic-bitlocker-encryption-using-aadmdm/)
+- [CSP-beleid voor BitLocker-versleuteling op Autopilot-apparaten](https://techcommunity.microsoft.com/t5/Windows-10-security/CSP-policy-for-bitLocker-encryption-on-autopilot-devices/m-p/284537)
+- [Stapsgewijze instructies voor het maken en implementeren van BitLocker-beleid met Intune](https://blogs.technet.microsoft.com/cbernier/2017/07/11/windows-10-intune-windows-bitlocker-management-yes/)

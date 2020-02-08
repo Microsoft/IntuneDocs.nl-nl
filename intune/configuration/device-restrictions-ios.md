@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39978043428f6ad912832007f60628815d6549a6
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
+ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920082"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754572"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -41,19 +41,19 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 ## <a name="general"></a>Algemeen
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Gebruiksgegevens delen**: Kies **Blokkeren** om te voorkomen dat met het apparaat diagnostische gegevens en gebruiksgegevens worden verzonden naar Apple. **Niet geconfigureerd** (standaard): staat toe dat deze gegevens worden verzonden.
 
 - **Schermopname**: Selecteer **Blokkeren** om te voorkomen dat schermopnamen of schermafbeeldingen worden gemaakt met het apparaat. In iOS 9.0 en hoger worden ook schermopnamen geblokkeerd. **Niet geconfigureerd** (standaard): stelt de gebruiker in staat om de inhoud van het scherm vast te leggen als afbeelding of video.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 - **Niet-vertrouwde TLS-certificaten**: Selecteer **Blokkeren** om te voorkomen dat niet-vertrouwde TLS-certificaten (Transport Layer Security) zijn toegestaan op het apparaat. Met **Niet geconfigureerd** (standaard) staat u TLS-certificaten toe.
 - **Draadloze PKI-updates blokkeren**: **Blokkeren** voorkomt dat uw gebruikers software-updates ontvangen tenzij het apparaat is verbonden met een computer. **Niet geconfigureerd** (standaard): hiermee staat u toe dat een apparaat software-updates ontvangt zonder dat het verbonden is met een computer.
 - **Bijhouden van advertenties beperken**: Selecteer **Beperken** om de advertentie-id van het apparaat uit te schakelen. Met **Niet geconfigureerd** (standaard) blijft deze instelling ingeschakeld.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Aanpassing van instellingen voor het verzenden van diagnostische gegevens**: Met **Blokkeren** voorkomt u dat de gebruiker de instelling voor verzending van diagnostische gegevens en app-analyse wijzigt in **Diagnostische gegevens en gebruik** (in Instellingen op het apparaat). **Niet geconfigureerd** (standaard): staat de gebruiker toe om deze apparaatinstellingen te wijzigen.
 
@@ -93,7 +93,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 - **Wijzigingen in configuratieprofielen**: Selecteer **Blokkeren** om te voorkomen dat configuratieprofielen op het apparaat kunnen worden gewijzigd. **Niet geconfigureerd** (standaard): staat de gebruiker toe om configuratieprofielen te installeren.
 - **Activeringsvergrendeling**: Selecteer **Toestaan** om Activeringsslot op iOS-apparaten in de supervisiemodus in te schakelen. Met Activeringsslot kan een verloren of gestolen apparaat moeilijker opnieuw worden geactiveerd.
 - **Verwijderen van app blokkeren**: Selecteer **Blokkeren** om te voorkomen dat gebruikers apps verwijderen. **Niet geconfigureerd** (standaard): staat gebruikers toe om apps te verwijderen van het apparaat.
-- **USB-accessoires toestaan terwijl het apparaat is vergrendeld**: met **Toestaan** kunnen USB-accessoires gegevens uitwisselen met een apparaat dat gedurende langer dan een uur is vergrendeld. **Niet geconfigureerd** (standaard) werkt de beperkte USB-modus niet bij op het apparaat en USB-accessoires kunnen geen gegevens overdragen vanaf het apparaat als het meer dan een uur is vergrendeld.
+- **USB-accessoires toestaan terwijl het apparaat is vergrendeld**: Met **Toestaan** kunnen USB-accessoires gegevens uitwisselen met een apparaat dat al meer dan een uur is vergrendeld. **Niet geconfigureerd** (standaard) werkt de beperkte USB-modus niet bij op het apparaat en USB-accessoires kunnen geen gegevens overdragen vanaf het apparaat als het meer dan een uur is vergrendeld.
 - **Automatisch instellen van datum en tijd afdwingen**: Met **Vereisen** wordt het instellen van de datum en tijd automatisch afgedwongen op apparaten in de supervisiemodus. De tijdzone van het apparaat wordt bijgewerkt wanneer het apparaat mobiele verbindingen heeft of wanneer Wi-Fi met locatieservices is ingeschakeld voor het apparaat.
 - **Studenten moeten toestemming vragen om de Classroom-cursus te verlaten**: Met **Vereisen** wordt afgedwongen dat leerlingen/studenten die zijn ingeschreven bij een niet-beheerde cursus met de app Klaslokaal, toestemming aan de docent vragen om de cursus te verlaten. **Niet geconfigureerd** (standaard): dwingt niet af dat de leerling/student toestemming vraagt.
 
@@ -129,11 +129,11 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 ## <a name="password"></a>Wachtwoord
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Wachtwoord**: **Vereisen** dat de eindgebruiker een wachtwoord invoert voor toegang tot het apparaat. **Niet geconfigureerd** (standaard): geeft gebruikers toegang tot het apparaat zonder dat ze een wachtwoord hoeven in te voeren.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 > [!IMPORTANT]
 > Als u op door de gebruiker ingeschreven apparaten een wachtwoordinstelling configureert, worden de instellingen voor **Eenvoudige wachtwoorden** automatisch ingesteld op **Blokkeren** en wordt een 6-cijferige pincode afgedwongen.
@@ -167,22 +167,22 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
   **iOS-opties**:  
 
-  - **Niet geconfigureerd** (standaard): Intune beïnvloedt deze instelling niet.
-  - **Onmiddellijk**: het scherm wordt vergrendeld na 30 seconden inactiviteit.
-  - **1**: het scherm wordt vergrendeld na 1 minuut inactiviteit.
-  - **2**: het scherm wordt vergrendeld na 2 minuten inactiviteit.
-  - **3**: het scherm wordt vergrendeld na 3 minuten inactiviteit.
-  - **4**: het scherm wordt vergrendeld na 4 minuten inactiviteit.
-  - **5**: het scherm wordt vergrendeld na 5 minuten inactiviteit.
+  - **Niet geconfigureerd** (standaard): Deze instelling wordt niet gewijzigd door Intune.
+  - **Onmiddellijk**: Het scherm wordt vergrendeld na 30 seconden inactiviteit.
+  - **1**: Het scherm wordt vergrendeld na 1 minuut inactiviteit.
+  - **2**: Het scherm wordt vergrendeld na 2 minuten inactiviteit.
+  - **3**: Het scherm wordt vergrendeld na 3 minuten inactiviteit.
+  - **4**: Het scherm wordt vergrendeld na 4 minuten inactiviteit.
+  - **5**: Het scherm wordt vergrendeld na 5 minuten inactiviteit.
     
   **Opties voor iPadOS**:  
 
-  - **Niet geconfigureerd** (standaard): Intune beïnvloedt deze instelling niet.
-  - **Onmiddellijk**: het scherm wordt vergrendeld na 2 minuten inactiviteit.
-  - **2**: het scherm wordt vergrendeld na 2 minuten inactiviteit.
-  - **5**: het scherm wordt vergrendeld na 5 minuten inactiviteit.
-  - **10**: het scherm wordt vergrendeld na 10 minuten inactiviteit.
-  - **15**: het scherm wordt vergrendeld na 15 minuten inactiviteit.
+  - **Niet geconfigureerd** (standaard): Deze instelling wordt niet gewijzigd door Intune.
+  - **Onmiddellijk**: Het scherm wordt vergrendeld na 2 minuten inactiviteit.
+  - **2**: Het scherm wordt vergrendeld na 2 minuten inactiviteit.
+  - **5**: Het scherm wordt vergrendeld na 5 minuten inactiviteit.
+  - **10**: Het scherm wordt vergrendeld na 10 minuten inactiviteit.
+  - **15**: Het scherm wordt vergrendeld na 15 minuten inactiviteit.
 
   Als een waarde niet op iOS of iPadOS van toepassing is, gebruikt Apple de dichtstbijzijnde *laagste* waarde. Als u bijvoorbeeld `4` minuten invoert, zullen iPadOS-apparaten `2` minuten gebruiken. Als u `10` minuten invoert, gebruiken iOS-apparaten `5` minuten. Dit is een beperking van Apple.
   
@@ -191,18 +191,18 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 - **Wachtwoordverlooptijd (dagen)** : Geef op na hoeveel dagen het wachtwoord voor het apparaat moet worden gewijzigd.
 - **Wachtwoorden niet opnieuw gebruiken**: Voer het aantal nieuwe wachtwoorden in dat moet worden gebruikt voordat een oud wachtwoord opnieuw kan worden gebruikt.
-- **Ontgrendelen met Touch ID en Face ID**: kies **Blokkeren** om te voorkomen dat vingerafdrukken of gezichtsherkenning kunnen worden gebruikt om het apparaat te ontgrendelen. **Niet geconfigureerd**: staat de gebruiker toe het apparaat te ontgrendelen met deze methoden.
+- **Ontgrendelen met Touch ID en Face ID**: Selecteer **Blokkeren** om te voorkomen dat een vingerafdruk of gezichtsherkenning kan worden gebruikt om het apparaat te ontgrendelen. **Niet geconfigureerd**: staat de gebruiker toe het apparaat te ontgrendelen met deze methoden.
 
   Door deze instelling te blokkeren, voorkomt u ook dat het apparaat wordt ontgrendeld met behulp van Face ID-verificatie.
 
   Face ID is van toepassing op:  
   - iOS 11.0 en hoger
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Aanpassing van wachtwoordcode**: Selecteer **Blokkeren** om ervoor te zorgen dat de wachtwoordcode niet meer kan worden gewijzigd, toegevoegd of verwijderd. Als deze functie is geblokkeerd worden wijzigingen in de wachtwoordcodebeperkingen genegeerd op apparaten in de supervisiemodus. **Niet geconfigureerd** (standaard): staat toe dat wachtwoordcodes worden toegevoegd, gewijzigd of verwijderd.
 
-  - **Wijziging van Touch ID en Face ID**: met **Blokkeren** voorkomt u dat de gebruiker Touch ID-vingerafdrukken en Face ID kan wijzigen, toevoegen of verwijderen. **Niet geconfigureerd** (standaard): staat de gebruiker toe de TouchID-vingerafdrukken en Face-ID op het apparaat bij te werken.
+  - **Aanpassing van Touch ID en Face ID**: Met **Blokkeren** zorgt u ervoor dat de gebruiker geen Touch ID-vingerafdrukken en Face ID meer kan wijzigen, toevoegen of verwijderen. **Niet geconfigureerd** (standaard): staat de gebruiker toe de TouchID-vingerafdrukken en Face-ID op het apparaat bij te werken.
 
     Als u deze instelling blokkeert, kan de gebruiker ook geen Face ID-verificatie meer wijzigen, toevoegen of verwijderen.
 
@@ -227,19 +227,19 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 ## <a name="locked-screen-experience"></a>Vergrendeld scherm
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Toegang tot Beheercentrum wanneer het apparaat is vergrendeld**: Selecteer **Blokkeren** om de toegang tot de app Beheercentrum te blokkeren terwijl het apparaat is vergrendeld. **Niet geconfigureerd** (standaard): verleent gebruikers toegang tot de app Beheercentrum terwijl het apparaat is vergrendeld.
 - **Meldingen terwijl het apparaat is vergrendeld**: Selecteer **Blokkeren** om de toegang tot meldingen te blokkeren terwijl het apparaat is vergrendeld. **Niet geconfigureerd** (standaard): verleent gebruikers toegang tot meldingen zonder dat ze het apparaat hoeven te ontgrendelen.
 - **De weergave Vandaag wanneer het apparaat vergrendeld**: Selecteer **Blokkeren** om de toegang tot de weergave Vandaag te blokkeren terwijl het apparaat is vergrendeld. **Niet geconfigureerd** (standaard): geeft de gebruiker toegang tot de weergave Vandaag terwijl het apparaat is vergrendeld.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 - **Wallet-meldingen terwijl het apparaat is vergrendeld**: Selecteer **Blokkeren** om de toegang tot de app Wallet te blokkeren terwijl het apparaat is vergrendeld. **Niet geconfigureerd** (standaard): geeft de gebruiker toegang tot de app Wallet terwijl het apparaat is vergrendeld.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, documenten bekijken, gamen
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Zakelijke documenten weergeven in niet-beheerde apps**: Selecteer **Blokkeren** om te voorkomen dat zakelijke documenten in niet-beheerde apps worden weergegeven. **Niet geconfigureerd** (standaard): staat gebruikers toe om zakelijke documenten weer te geven in elke willekeurige app. Voorbeeld: u wilt voorkomen dat gebruikers bestanden uit de OneDrive-app opslaan in Dropbox. Configureer deze instelling als **Blokkeren**. Nadat het apparaat het beleid heeft ontvangen (bijvoorbeeld nadat het opnieuw is opgestart), kunnen er geen bestanden meer worden opgeslagen.
 
@@ -247,31 +247,31 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
   > [!NOTE]
   > Als deze instelling wordt geblokkeerd, worden ook toetsenborden van derden geblokkeerd die vanuit de App Store zijn geïnstalleerd.
 
-  - **Toestaan dat niet-beheerde apps contactpersonen lezen in beheerde accounts voor contactpersonen**: als deze instelling is ingesteld op **Toestaan**, kunnen niet-beheerde apps, zoals de ingebouwde app voor iOS-contactpersonen, de contactgegevens van beheerde apps lezen en openen, met inbegrip van de mobiele Outlook-app. **Niet geconfigureerd** (standaard): het lezen en het verwijderen van dubbele contactpersonen uit de ingebouwde app Contacten op het apparaat wordt voorkomen.  
+  - **Toestaan dat niet-beheerde apps contactpersonen lezen in beheerde accounts voor contactpersonen**: Als deze instelling is ingesteld op **Toestaan**, kunnen niet-beheerde apps, zoals de ingebouwde iOS-app Contacten, de contactgegevens van beheerde apps lezen en openen, met inbegrip van de mobiele Outlook-app. **Niet geconfigureerd** (standaard): het lezen en het verwijderen van dubbele contactpersonen uit de ingebouwde app Contacten op het apparaat wordt voorkomen.  
   
     Met deze instelling wordt het lezen van contactgegevens toegestaan of voorkomen. Met de service wordt de synchronisatie van contactpersonen tussen de apps niet beheerd.
   
     Als u deze instelling wilt gebruiken, stelt u **Zakelijke documenten weergeven in niet-beheerde apps** in op **Blokkeren**.
 
-  Zie [Ondersteuningstip: Aangepaste profielinstellingen in Intune gebruiken voor de systeemeigen contactpersonen-app in iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453) voor meer informatie over deze twee instellingen en de invloed op het synchroniseren van geëxporteerde contactpersonen in Outlook voor iOS.
+  Voor meer informatie over deze twee instellingen en de invloed ervan op het synchroniseren van geëxporteerde contactpersonen in Outlook voor iOS raadpleegt u [Ondersteuningstip: Aangepaste profielinstellingen in Intune gebruiken voor de systeemeigen contactpersonen-app in iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **AirDrop behandelen als een onbeheerd doel**: Wanneer deze optie is ingesteld op **Vereisen**, wordt AirDrop beschouwd als een onbeheerde bestemming. Het zorgt ervoor dat via beheerde apps geen gegevens meer kunnen worden verzonden met behulp van AirDrop. 
 - **Niet-zakelijke documenten weergeven in zakelijke apps**: Met **Blokkeren** voorkomt u dat niet-zakelijke documenten in zakelijke apps worden weergegeven. **Niet geconfigureerd** (standaard): staat gebruikers toe elk willekeurig document weer te geven in zakelijke beheerde apps.
 
-  Als u deze instelling op **Blokkeren** instelt, voorkomt u ook de synchronisatie van geëxporteerde contactpersonen in Outlook voor iOS. Zie [Ondersteuningstip: Synchronisatie van contactpersonen in Outlook voor iOS inschakelen met MDM-besturingselementen in iOS 12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453) voor meer informatie.
+  Als u deze instelling op **Blokkeren** instelt, voorkomt u ook de synchronisatie van geëxporteerde contactpersonen in Outlook voor iOS. Voor meer informatie raadpleegt u [Ondersteuningstip: Synchronisatie van contactpersonen in Outlook voor iOS inschakelen met MDM-besturingselementen in iOS 12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
-- **iTunes Store-wachtwoord voor alle aankopen vereisen**: de gebruiker **moet** het Apple ID-wachtwoord invoeren voor elke in-app- of iTunes-aankoop. **Niet geconfigureerd** (standaard): hiermee zijn aankopen mogelijk zonder dat elke keer om het wachtwoord wordt gevraagd.
+- **iTunes Store-wachtwoord voor alle aankopen vereisen**: Met **Vereisen** moet de gebruiker het Apple ID-wachtwoord invoeren voor elke in-app- of iTunes-aankoop. **Niet geconfigureerd** (standaard): hiermee zijn aankopen mogelijk zonder dat elke keer om het wachtwoord wordt gevraagd.
 - **In-app aankopen**: Selecteer **Blokkeren** om in-app aankopen in de Store te voorkomen. **Niet geconfigureerd** (standaard): staat gebruikers toe aankopen in de Store te doen vanuit een actieve app.
 - **Inhoud uit Book Store met de markering Erotisch downloaden**: Selecteer **Blokkeren** om te voorkomen dat gebruikers media downloaden uit de Book Store die is gelabeld als Erotisch. **Niet geconfigureerd** (standaard): staat de gebruiker toe om boeken te downloaden uit de categorie Erotisch.
-- **Toestaan dat beheerde apps contactpersonen doorgeven aan niet-beheerde accounts voor contactpersonen**: als deze optie is ingesteld op **Toestaan**, kunnen beheerde apps, zoals de mobiele Outlook-app, contactinformatie, inclusief zakelijke contactpersonen, opslaan in of synchroniseren met de ingebouwde iOS-app Contacten op het apparaat. Als de instelling is ingesteld op **Niet geconfigureerd** (standaard), kunnen beheerde apps geen contactgegevens opslaan op of synchroniseren met de ingebouwde app Contacten op het iOS-apparaat.
+- **Toestaan dat beheerde apps contactpersonen doorgeven aan niet-beheerde accounts voor contactpersonen**: Als deze optie is ingesteld op **Toestaan** kunnen beheerde apps, zoals de mobiele Outlook-app, contactinformatie, inclusief zakelijke contactpersonen, opslaan in of synchroniseren met de ingebouwde iOS-app Contacten op het apparaat. Als de instelling is ingesteld op **Niet geconfigureerd** (standaard), kunnen beheerde apps geen contactgegevens opslaan op of synchroniseren met de ingebouwde app Contacten op het iOS-apparaat.
   
   Als u deze instelling wilt gebruiken, stelt u **Zakelijke documenten weergeven in niet-beheerde apps** in op **Blokkeren**.
 
 - **Regio voor restricties**: Selecteer de regio voor restricties die u wilt gebruiken voor toegestane downloads. En kies vervolgens de toegestane beoordelingen voor **Films**, **Tv-programma's** en **Apps**.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **App Store**: Selecteer **Blokkeren** om de toegang tot de App Store te blokkeren op apparaten in de supervisiemodus. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
 
@@ -289,25 +289,25 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
   Vanaf iOS 13.0 is het voor deze instelling vereist dat apparaten onder supervisie staan.
 
 - **Game Center**: Met **Blokkeren** blokkeert u het gebruik van de Game Center-app. **Niet geconfigureerd** (standaard): staat gebruik van de app Game Center toe op het apparaat.
-- **Games voor meerdere spelers**: kies **Blokkeren** om games voor meerdere spelers te blokkeren. **Niet geconfigureerd** (standaard): staat de gebruiker toe om games voor meerdere spelers te spelen op het apparaat.
+- **Games voor meerdere spelers**: Selecteer **Blokkeren** om te voorkomen dat gebruikers kunnen gamen met meerdere spelers. **Niet geconfigureerd** (standaard): staat de gebruiker toe om games voor meerdere spelers te spelen op het apparaat.
 
   Vanaf iOS 13.0 is het voor deze instelling vereist dat apparaten onder supervisie staan.
 
-- **Toegang tot het netwerkstation in de Bestanden-app**: met behulp van het Server Message Block-protocol (SMB) kunnen apparaten toegang krijgen tot bestanden of andere resources op een netwerkserver. Met **Uitschakelen** voorkomt u toegang tot bestanden op een netwerkstation via SMB. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
+- **Toegang tot netwerkstation in de app Bestanden**: Met behulp van het Server Message Block-protocol (SMB) kunnen apparaten toegang krijgen tot bestanden of andere resources op een netwerkserver. Met **Uitschakelen** voorkomt u toegang tot bestanden op een netwerkstation via SMB. Met **Niet geconfigureerd** (standaard) is deze toegang toegestaan.
 
   Deze functie is van toepassing op:  
   - iOS en iPadOS 13.0 en hoger
 
 ## <a name="built-in-apps"></a>Ingebouwde apps
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Siri**: Met **Blokkeren** voorkomt u toegang tot Siri. **Niet geconfigureerd** (standaard): staat toegang tot de spraakassistent Siri toe op het apparaat.
   - **Siri als het apparaat is vergrendeld**: Selecteer **Blokkeren** om te toegang tot Siri te blokkeren wanneer het apparaat is vergrendeld. **Niet geconfigureerd** (standaard): staat toegang tot de spraakassistent Siri toe op het apparaat wanneer het is vergrendeld.
 
 - **Waarschuwingen voor fraude in Safari**: Als u **Vereisen** selecteert, worden fraudewaarschuwingen weergegeven in de webbrowser op het apparaat. Met **Niet geconfigureerd** (standaard) schakelt u deze functie uit.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 - **Spotlight-zoekacties voor de weergave van resultaten op internet**: Met **Blokkeren** zorgt u ervoor dat Spotlight geen resultaten meer retourneert na een zoekopdracht op internet. **Niet geconfigureerd** (standaard): staat Zoeken met Spotlight toe om verbinding te maken met internet voor zoekresultaten.
 
@@ -321,7 +321,7 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 - **Safari-pop-ups**: Als u **Blokkeren** selecteert, wordt het gebruik van de pop-upblokkering in de webbrowser uitgeschakeld. Met **Niet geconfigureerd** (standaard) staat u de pop-upblokkering toe.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Camera**: Met **Blokkeren** voorkomt u toegang tot de camera op het apparaat. **Niet geconfigureerd** (standaard): staat toegang tot de camera van het apparaat toe.
 
@@ -341,21 +341,21 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 - **Apple News**: Selecteer **Blokkeren** om toegang tot de app Apple News op het apparaat te blokkeren. **Niet geconfigureerd** (standaard): staat het gebruik van de app Apple News toe.
 - **iBooks Store**: Selecteer **Blokkeren** om toegang tot de Book Store op het apparaat te blokkeren. **Niet geconfigureerd** (standaard): staat gebruikers toe te zoeken naar boeken en deze te kopen in de iBooks Store.
-- **Berichten-app op het apparaat**: met **Blokkeren** voorkomt u dat gebruikers de Berichten-app gebruiken voor iMessage. Als het apparaat tekstberichten ondersteunt, kan de gebruiker nog steeds tekstberichten verzenden en ontvangen met behulp van sms. Met **Niet geconfigureerd** (standaard) staat u toe dat met de Berichten-app berichten via internet worden verzonden en gelezen.
+- **De app Berichten op het apparaat**: Met **Blokkeren** voorkomt u dat gebruikers de app Berichten gebruiken voor iMessage. Als het apparaat tekstberichten ondersteunt, kan de gebruiker nog steeds tekstberichten verzenden en ontvangen met behulp van sms. Met **Niet geconfigureerd** (standaard) staat u toe dat met de Berichten-app berichten via internet worden verzonden en gelezen.
 - **Podcasts**: Selecteer **Blokkeren** om toegang tot de app Podcasts op het apparaat te blokkeren. **Niet geconfigureerd** (standaard): staat het gebruik van de app Podcasts toe.
 - **De service Music**: Met **Blokkeren** keert u terug naar de klassieke modus van de app Muziek en wordt de Muziek-service uitgeschakeld. **Niet geconfigureerd** (standaard): staat het gebruik van de app Apple Music toe.
 - **iTunes Radio-service**: Selecteer **Blokkeren** om toegang tot de app iTunes Radio op het apparaat te blokkeren. **Niet geconfigureerd** (standaard): staat het gebruik van de app iTunes Radio toe.
-- **iTunes Store**: met **niet geconfigureerd** (standaard) staat u iTunes toe op de apparaten. Met **Blokkeren** voorkomt u dat gebruikers iTunes kunnen gebruiken op het apparaat. 
+- **iTunes Store**: Met **Niet geconfigureerd** (standaard) staat u iTunes toe op de apparaten. Met **Blokkeren** voorkomt u dat gebruikers iTunes kunnen gebruiken op het apparaat. 
 
   Deze functie is van toepassing op:  
   - iOS 4.0 en hoger
 
-- **Zoek mijn iPhone**: met **niet geconfigureerd** (standaard) maakt u het mogelijk om deze functie in de Zoek mijn-app te gebruiken om de geschatte locatie van het apparaat op te halen. Met **Blokkeren** voorkomt u het gebruik van deze functie in de Zoek mijn-app. 
+- **Zoek mijn iPhone**: Met **Niet geconfigureerd** (standaard) maakt u het mogelijk om deze 'Zoek mijn'-appfunctie te gebruiken om de globale locatie van het apparaat op te halen. Met **Blokkeren** voorkomt u het gebruik van deze functie in de Zoek mijn-app. 
 
   Deze functie is van toepassing op:  
   - iOS 13.0 en iPadOS 13.0 en hoger
 
-- **Zoek mijn vrienden**: indien **niet geconfigureerd** (standaard) staat u toe dat deze functie in de Zoek mijn-app wordt gebruikt om familie en vrienden te zoeken via een Apple-apparaat of via iCloud.com. Met **Blokkeren** voorkomt u het gebruik van deze functie in de Zoek mijn-app.
+- **Zoek mijn vrienden**: Met **Niet geconfigureerd** (standaard) staat u toe dat deze 'Zoek mijn'-appfunctie wordt gebruikt om familie en vrienden te zoeken via een Apple-apparaat of via iCloud.com. Met **Blokkeren** voorkomt u het gebruik van deze functie in de Zoek mijn-app.
 
   Deze functie is van toepassing op:  
   - iOS 13.0 en iPadOS 13.0 en hoger
@@ -376,11 +376,11 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 ## <a name="restricted-apps"></a>Beperkte apps
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
-- **Lijst met typen beperkte apps**: hiermee maakt u een lijst met apps die gebruikers niet mogen installeren of gebruiken. Uw opties zijn:
+- **Lijst met typen beperkte apps**: Hiermee maakt u een lijst met apps die gebruikers niet mogen installeren of gebruiken. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): er zijn geen beperkingen vanuit Intune. Gebruikers hebben toegang tot apps die u toewijst en tot ingebouwde apps.
+  - **Niet geconfigureerd** (standaard): Er zijn geen beperkingen vanuit Intune. Gebruikers hebben toegang tot apps die u toewijst en tot ingebouwde apps.
   - **Niet-toegestane apps**: Apps die niet worden beheerd in Intune waarvan u niet wilt dat deze op het apparaat worden geïnstalleerd. Gebruikers kunnen geen verboden apps installeren. Maar als een gebruiker een app uit deze lijst installeert, wordt deze in Intune gerapporteerd.
   - **Goedgekeurde apps**: Apps die gebruikers mogen installeren. Gebruikers mogen geen apps installeren die niet worden vermeld. Apps die worden beheerd door Intune, zijn automatisch toegestaan. Er wordt niet voorkomen dat gebruikers een app installeren die niet in de goedgekeurde lijst wordt vermeld. Maar als dat wel het geval is, wordt dit in Intune gerapporteerd.
 
@@ -401,9 +401,9 @@ Als u apps wilt toevoegen aan deze lijsten, kunt u:
 
 Is van toepassing op apparaten met iOS 9.3 of hoger.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
-- **Lijst met typen apps**: hiermee maakt u een lijst met apps die moeten worden weergegeven of verborgen. U kunt ingebouwde apps en Line-Of-Business-apps weergeven of verbergen. De website van Apple bevat een lijst met [ingebouwde Apple-apps](https://support.apple.com/HT208094). Uw opties zijn:
+- **Lijst met typen apps**: Hiermee maakt u een lijst met apps die moeten worden weergegeven of verborgen. U kunt ingebouwde apps en Line-Of-Business-apps weergeven of verbergen. De website van Apple bevat een lijst met [ingebouwde Apple-apps](https://support.apple.com/HT208094). Uw opties zijn:
 
   - **Verborgen apps**: Voer een lijst met apps in die verborgen zijn voor gebruikers. Gebruikers kunnen deze apps niet weergeven of openen.
   
@@ -411,7 +411,7 @@ Is van toepassing op apparaten met iOS 9.3 of hoger.
   
   - **Zichtbare apps**: Voer een lijst met apps in die gebruikers kunnen weergeven en starten. Andere apps kunnen niet worden weergegeven of gestart.
 
-- **App-URL**: voer de Store-URL in voor de app die u wilt weergeven of verbergen. Bijvoorbeeld:
+- **App-URL**: Voer de Store-URL in voor de app die u wilt weergeven of verbergen. Bijvoorbeeld:
 
   - Voer `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` of `https://apps.apple.com/us/app/work-folders/id950878067?mt=8` in om de app Microsoft Werkmappen toe te voegen. 
 
@@ -434,9 +434,9 @@ Ga op een van de volgende manieren te werk om apps toe te voegen:
 
 ## <a name="wireless"></a>Draadloos
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
-Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarring van klanten te voorkomen): deze instelling wordt niet weergegeven in het beheerprofiel van het doelapparaat. Dat komt doordat deze instelling wordt behandeld als een actie voor een extern apparaat. Elke keer dat de status van gegevensroaming op het apparaat wordt gewijzigd, wordt deze weer geblokkeerd door de Intune-service. Hoewel de optie zich niet in het beheerprofiel bevindt, werkt het als er een succesvolle uitvoering wordt weergegeven in de rapportage in de beheerconsole. 
+Opmerking vereist voor dataroaming (tip of belangrijke opmerking om verwarring bij klanten te voorkomen): Deze instelling wordt niet weergegeven in het beheerprofiel van het doelapparaat. Dat komt doordat deze instelling wordt behandeld als een actie voor een extern apparaat. Elke keer dat de status van gegevensroaming op het apparaat wordt gewijzigd, wordt deze weer geblokkeerd door de Intune-service. Hoewel de optie zich niet in het beheerprofiel bevindt, werkt het als er een succesvolle uitvoering wordt weergegeven in de rapportage in de beheerconsole. 
 - **Gegevensroaming**: Selecteer **Blokkeren** om dataroaming via het mobiele netwerk te voorkomen. **Niet geconfigureerd** (standaard): staat dataroaming toe wanneer het apparaat verbinding heeft met een mobiel netwerk.
 
   > [!IMPORTANT]
@@ -454,7 +454,7 @@ Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarri
   - **Gebruik van mobiel dataverkeer blokkeren**: U kunt het gebruik van mobiel dataverkeer blokkeren voor **Alle beheerde apps** of u kunt **specifieke apps kiezen**.
   - **Gebruik van mobiel dataverkeer tijdens roaming blokkeren**: U kunt het gebruik van mobiel dataverkeer tijdens roaming blokkeren voor **Alle beheerde apps** of u kunt **specifieke apps** kiezen.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Wijzigingen in de instellingen voor het gebruik van mobiel gegevensverkeer voor apps**: Selecteer **Blokkeren** om te voorkomen dat er wijzigingen kunnen worden aangebracht in de instellingen voor het gebruik van mobiel dataverkeer voor apps. **Niet geconfigureerd** (standaard): staat de gebruiker toe om te bepalen welke apps mobiel dataverkeer mogen gebruiken.
 - **Wijzigingen in de instellingen voor mobiel gegevensverkeer**: Met **Blokkeren** voorkomt u dat gebruikers instellingen voor mobiel gegevensverkeer wijzigen. Met **Niet geconfigureerd** (standaard) kunnen gebruikers wijzigingen aanbrengen.
@@ -462,7 +462,7 @@ Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarri
   Deze functie is van toepassing op:  
   - iOS 11.0 en hoger
 
-- **Aanpassing van Persoonlijke hotspot door gebruiker**: als u deze optie instelt op **Blokkeren**, kan de gebruiker de persoonlijke hotspot-instelling niet wijzigen. Met **Niet geconfigureerd** (standaard) stelt u eindgebruikers in staat om hun persoonlijke hotspot in of uit te schakelen.
+- **Aanpassing van Persoonlijke hotspot door gebruiker**: Als u deze optie instelt op **Blokkeren**, kan de gebruiker de instelling voor persoonlijke hotspot niet wijzigen. Met **Niet geconfigureerd** (standaard) stelt u eindgebruikers in staat om hun persoonlijke hotspot in of uit te schakelen.
 
   Als u deze instelling blokkeert en de instelling voor **Persoonlijke hotspot** blokkeert, wordt de persoonlijke hotspot uitgeschakeld.
 
@@ -475,7 +475,7 @@ Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarri
   
   Als er geen verbinding kan worden gemaakt, moet u de registratie van het apparaat ongedaan maken en het apparaat opnieuw inschrijven met een Wi-Fi-profiel. Stel deze instelling vervolgens in op **Vereist** in een profiel voor apparaatbeperkingen en wijs het profiel toe aan het apparaat.
 
-- **Wi-Fi altijd ingeschakeld**: als de instelling is ingesteld op **Vereist**, blijft Wi-Fi ingeschakeld in de Instellingen-app. De optie kan niet worden uitgeschakeld in Instellingen of in het beheercentrum, ook niet als het apparaat zich in de vliegtuigmodus bevindt. Met **Niet geconfigureerd** (standaard) staat u de gebruiker toe om Wi-Fi in of uit te schakelen.
+- **Wi-Fi altijd ingeschakeld**: Als de instelling is ingesteld op **Vereist**, blijft Wi-Fi ingeschakeld in de app Instellingen. De optie kan niet worden uitgeschakeld in Instellingen of in het beheercentrum, ook niet als het apparaat zich in de vliegtuigmodus bevindt. Met **Niet geconfigureerd** (standaard) staat u de gebruiker toe om Wi-Fi in of uit te schakelen.
 
   Als u deze instelling configureert, wordt niet voorkomen dat gebruikers een Wi-Fi-netwerk selecteren.
 
@@ -484,18 +484,18 @@ Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarri
 
 ## <a name="connected-devices"></a>Verbonden apparaten
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Draagdetectie voor een gekoppelde Apple Watch**: Als u **Vereisen** selecteert, moet de gekoppelde Apple Watch de functie Draagdetectie gebruiken. Wanneer dit is vereist, worden op de Apple Watch geen meldingen weergegeven wanneer deze niet wordt gedragen. 
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 - **Wachtwoord voor koppelen voor uitgaande AirPlay-aanvragen vereisen**: Met **Vereisen** stelt u in dat een wachtwoord voor koppelen is vereist wanneer AirPlay wordt gebruikt om inhoud te streamen naar andere Apple-apparaten. **Niet geconfigureerd** (standaard): staat de gebruiker toe inhoud te streamen met AirPlay zonder een wachtwoord in te voeren.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **AirDrop**: Selecteer **Blokkeren** om het gebruik van AirDrop op het apparaat te voorkomen. **Niet geconfigureerd** (standaard): staat het gebruik van de functie AirDrop toe voor het uitwisselen van inhoud met apparaten in de omgeving.
-- **Koppelen met Apple Watch**: met **Blokkeren** voorkomt u koppeling met een Apple Watch. **Niet geconfigureerd** (standaard): staat toe dat het apparaat wordt gekoppeld aan een Apple Watch.
+- **Koppelen met Apple Watch**: Selecteer **Blokkeren** om koppeling met een Apple Watch te voorkomen. **Niet geconfigureerd** (standaard): staat toe dat het apparaat wordt gekoppeld aan een Apple Watch.
 - **Aanpassing van Bluetooth**: Selecteer **Blokkeren** om ervoor te zorgen dat de eindgebruiker geen Bluetooth-instellingen meer kan wijzigen op het apparaat. **Niet geconfigureerd** (standaard): staat de gebruiker toe om deze instellingen te wijzigen.
 - **Koppelen met een host om te bepalen met welke apparaten een iOS-apparaat kan worden gekoppeld**: Met **Niet geconfigureerd** (standaard) staat u het koppelen met een host toe, waarmee de beheerder kan bepalen aan welke apparaten een iOS-apparaat kan worden gekoppeld. **Blokkeren**: voorkomt het koppelen met een host.
 - **AirPrint blokkeren**: Selecteer **Blokkeren** om te voorkomen dat de functie AirPrint wordt gebruikt op het apparaat. **Niet geconfigureerd** (standaard): staat de gebruiker toe AirPrint te gebruiken.
@@ -507,43 +507,43 @@ Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarri
   Deze functie is van toepassing op:  
   - iOS 11.0 en hoger
 
-- **Toegang tot bestanden op een USB-schijf**: apparaten kunnen verbinding maken met een USB-schijf en bestanden die hierop staan openen. Met **Uitschakelen** voorkomt u dat het apparaat toegang heeft tot het USB-schijf in de Bestanden-app als er een USB-verbinding met het apparaat is gemaakt. Als u deze functie uitschakelt, kunnen eindgebruikers ook geen bestanden overdragen naar een USB-schijf die is verbonden met een iPad. Met **Niet geconfigureerd** (standaard) staat u toegang tot een USB-schijf in de app Bestanden toe.
+- **Toegang tot bestanden op een USB-station**: Apparaten kunnen verbinding maken met een USB-schijf en bestanden die hierop staan openen. Met **Uitschakelen** voorkomt u dat het apparaat toegang heeft tot het USB-schijf in de Bestanden-app als er een USB-verbinding met het apparaat is gemaakt. Als u deze functie uitschakelt, kunnen eindgebruikers ook geen bestanden overdragen naar een USB-schijf die is verbonden met een iPad. Met **Niet geconfigureerd** (standaard) staat u toegang tot een USB-schijf in de app Bestanden toe.
 
   Deze functie is van toepassing op:  
   - iOS en iPadOS 13.0 en hoger
 
 ## <a name="keyboard-and-dictionary"></a>Toetsenbord en woordenlijst
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Definities van woorden opzoeken**: Met **Blokkeren** voorkomt u dat de gebruiker een woord markeert en vervolgens de definitie ervan opzoekt op het apparaat. **Niet geconfigureerd** (standaard): geeft toegang tot de functie Opzoeken van definities van woorden.
 - **Tekstvoorspelling**: Met **Niet geconfigureerd** (standaard) staat u het gebruik van tekstvoorspelling toe voor suggesties voor woorden die de gebruiker mogelijk wil invoeren. Met **Blokkeren** wordt deze functie geblokkeerd.
 - **Automatische correctie**: Met **Niet geconfigureerd** (standaard) staat u automatische correctie van verkeerd gespelde woorden toe op het apparaat. **Blokkeren**: blokkeert het gebruik van Autocorrectie.
-- **Spellingcontrole**: met **niet geconfigureerd** (standaard) staat u gebruikers toe om de spellingcontrolefunctie op het apparaat te gebruiken. **Blokkeren**: staat de spellingcontrole toe.
-- **Sneltoetsen**: met **niet geconfigureerd** (standaard) staat u gebruikers toe om sneltoetsen op het apparaat te gebruiken. **Blokkeren**: zorgt ervoor dat de gebruiker geen sneltoetsen meer kan gebruiken.
+- **Spellingcontrole**: Met **Niet geconfigureerd** (standaard) kan de gebruiker spellingcontrole op het apparaat gebruiken. **Blokkeren**: staat de spellingcontrole toe.
+- **Sneltoetsen**: Met **Niet geconfigureerd** (standaard) staat u het gebruik van sneltoetsen toe op het apparaat. **Blokkeren**: zorgt ervoor dat de gebruiker geen sneltoetsen meer kan gebruiken.
 - **Dicteren**: Met **Blokkeren** zorgt u ervoor dat de gebruiker geen spraak meer kan gebruiken om tekst in te voeren. **Niet geconfigureerd** (standaard): staat de gebruiker toe invoer van Dicteren te gebruiken.
-- **QuickPath**: met **niet geconfigureerd** (standaard) staat u gebruikers toe om QuickPath te gebruiken, waarmee doorlopende invoer kan worden gebruikt op het toetsenbord van het apparaat. Gebruikers kunnen typen door over de toetsen te vegen om woorden te maken. Met **Blokkeren** voorkomt u dat gebruikers QuickPath kunnen gebruiken. 
+- **QuickPath**: Met **Niet geconfigureerd** (standaard) staat u gebruikers toe om QuickPath te gebruiken, waarmee doorlopende invoer kan worden gebruikt op het toetsenbord van het apparaat. Gebruikers kunnen typen door over de toetsen te vegen om woorden te maken. Met **Blokkeren** voorkomt u dat gebruikers QuickPath kunnen gebruiken. 
 
   Deze functie is van toepassing op:  
   - iOS 13.0 en iPadOS 13.0 en hoger
 
 ## <a name="cloud-and-storage"></a>Cloud en opslag
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvingstypen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
 - **Versleutelde back-up**: Selecteer **Vereisen** om ervoor te zorgen dat back-ups van het apparaat moeten worden versleuteld.
 - **Beheerde apps synchroniseren met de cloud**: Met **Niet geconfigureerd** (standaard) staat u toe dat in door Intune beheerde apps gegevens kunnen worden gesynchroniseerd naar het iCloud-account van de gebruiker. **Blokkeren**: voorkomt deze gegevenssynchronisatie naar iCloud.
 - **Back-ups van Enterprise Book blokkeren**: Selecteer **Blokkeren** om te voorkomen dat gebruikers back-ups maken van Enterprise Book-boeken. **Niet geconfigureerd** (standaard): staat gebruikers toe om back-ups te maken van deze boeken.
 - **Synchronisatie van metagegevens van Enterprise Book blokkeren (notities en markeringen)** : Met **Blokkeren** voorkomt u dat notities en markeringen in Enterprise Book-boeken worden gesynchroniseerd. Met **Niet geconfigureerd** (standaard) staat u synchronisatie toe.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 - **Photo Stream synchroniseren met iCloud**: Met **Niet geconfigureerd** (standaard) stelt u gebruikers in staat **Mijn fotostream** in te schakelen op hun apparaat om te synchroniseren met iCloud, en foto's weer te geven op alle apparaten van de gebruikers. **Blokkeren**: voorkomt dat met Photo Stream foto’s worden gesynchroniseerd met iCloud. Als u deze functie blokkeert, kan dit leiden tot gegevensverlies. 
 - **iCloud-fotobibliotheek**: Selecteer **Blokkeren** om het gebruik van de iCloud-fotobibliotheek voor het opslaan van foto's en video's in de cloud uit te schakelen. Foto's die niet volledig naar het apparaat zijn gedownload vanaf de iCloud-fotobibliotheek, worden van het apparaat verwijderd. **Niet geconfigureerd** (standaard): staat het gebruik van de iCloud-fotobibliotheek toe.
 - **Gedeelde fotostream**: Selecteer **Blokkeren** om **iCloud-fotodeling** uit te schakelen op het apparaat. **Niet geconfigureerd** (standaard): staat streaming van gedeelde foto’s toe.
-- **Handoff:** met **niet geconfigureerd** (standaard) staat u gebruikers toe om op een iOS-apparaat te werken en vervolgens hun werk voort te zetten op een ander iOS- of macOS-apparaat. **Blokkeren**: voorkomt deze handoff.
+- **Handoff**: Met **Niet geconfigureerd** (standaard) staat u gebruikers toe om op een iOS-apparaat te werken en vervolgens hun werk voort te zetten op een ander iOS- of macOS-apparaat. **Blokkeren**: voorkomt deze handoff.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Back-up naar iCloud**: Met **Niet geconfigureerd** (standaard) staat u de gebruiker toe een back-up van het apparaat op te slaan in iCloud. **Blokkeren**: zorgt ervoor dat de gebruiker geen back-ups van het apparaat meer kan opslaan in iCloud.
 
@@ -561,7 +561,7 @@ Opmerking vereist voor gegevensroaming (tip of belangrijke opmerking om verwarri
 
 Gebruik deze instellingen om iOS-apparaten zodanig te configureren dat hierop specifieke apps in de autonome één-app-modus worden uitgevoerd. Wanneer deze modus is geconfigureerd en de app wordt uitgevoerd, wordt het apparaat vergrendeld. Alleen deze ene app kan worden uitgevoerd. Voeg bijvoorbeeld een app toe waarmee gebruikers een test kunnen uitvoeren op het apparaat. Wanneer de acties van de app zijn voltooid of u het beleid verwijdert, keert het apparaat terug naar de normale staat.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **App-naam**: Voer de naam in van de gewenste app.
 - **App-bundel-id**: Voer de [bundel-id](bundle-ids-built-in-ios-apps.md) in van de gewenste app.
@@ -571,7 +571,7 @@ U kunt ook een CSV-bestand met de lijst met app-namen en de bijbehorende bundel-
 
 ## <a name="kiosk"></a>Kiosk
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **App uitvoeren in kioskmodus**: Selecteer het type apps dat u wilt uitvoeren in de kioskmodus. Uw opties zijn:
   - **Niet geconfigureerd** (standaard): De kioskinstellingen worden niet toegepast. Het apparaat wordt niet uitgevoerd in de kioskmodus.
@@ -582,7 +582,7 @@ U kunt ook een CSV-bestand met de lijst met app-namen en de bijbehorende bundel-
 - **Ondersteunende aanraking**: Selecteer **Vereisen** om de toegankelijkheidsinstelling Ondersteunende aanraking op het apparaat te vereisen. Deze functie helpt gebruikers bij schermbewegingen die mogelijk moeilijk zijn voor hen. **Niet geconfigureerd**: deze functie wordt niet uitgevoerd of ingeschakeld in de kioskmodus.
 - **Keer kleuren om**: Selecteer **Vereisen** om de toegankelijkheidsinstelling Keer kleuren om in te stellen, zodat gebruikers met een beperkt gezichtsvermogen de display kunnen wijzigen. **Niet geconfigureerd**: deze functie wordt niet uitgevoerd of ingeschakeld in de kioskmodus.
 - **Mono-audio**: Selecteer **Vereisen** om de toegankelijkheidsinstelling Mono-audio op het apparaat te vereisen. **Niet geconfigureerd**: deze functie wordt niet uitgevoerd of ingeschakeld in de kioskmodus.
-- **Spraakbesturing**: met **Vereisen** maakt u spraakbesturing op het apparaat mogelijk en stelt u gebruikers in staat om het besturingssysteem volledig te bedienen met behulp van Siri-opdrachten. Met **Niet geconfigureerd** schakelt u de spraakbesturing uit op het apparaat.
+- **Spraakbeheer**: Met **Vereisen** maakt u spraakbesturing op het apparaat mogelijk en stelt u gebruikers in staat om het besturingssysteem volledig te bedienen met behulp van Siri-opdrachten. Met **Niet geconfigureerd** schakelt u de spraakbesturing uit op het apparaat.
 
   Deze instelling is van toepassing op:  
   - iOS 13.0 en hoger
@@ -593,16 +593,16 @@ U kunt ook een CSV-bestand met de lijst met app-namen en de bijbehorende bundel-
 
 - **VoiceOver**: Selecteer **Vereisen** om de toegankelijkheidsinstelling VoiceOver te vereisen op het apparaat om tekst op het scherm hardop voor te lezen. **Niet geconfigureerd**: deze functie wordt niet uitgevoerd of ingeschakeld in de kioskmodus.
 - **Zoomen**: Selecteer **Vereisen**, zodat gebruikers met behulp van aanraken het scherm kunnen inzoomen. **Niet geconfigureerd**: deze functie wordt niet uitgevoerd of ingeschakeld in de kioskmodus.
-- **Automatisch vergrendelen**: met **Blokkeren** voorkomt u dat het apparaat automatisch wordt vergrendeld. Met **Niet geconfigureerd** wordt deze functie toegestaan.
+- **Automatisch vergrendelen**: Met **Blokkeren** voorkomt u dat het apparaat automatisch wordt vergrendeld. Met **Niet geconfigureerd** wordt deze functie toegestaan.
 - **Schakelaar voor belsignaal**: Met **Blokkeren** wordt de schakelaar voor belsignaal (dempen) op het apparaat uitgeschakeld. Met **Niet geconfigureerd** wordt deze functie toegestaan.
 - **Scherm draaien**: Met **Blokkeren** blijft de schermstand ongewijzigd wanneer de gebruiker het apparaat draait. Met **Niet geconfigureerd** wordt deze functie toegestaan.
 - **Schermsluimerknop**: Kies **Blokkeren** om de knop voor slaapstand/ontwaken van het scherm op het apparaat uit te schakelen. Met **Niet geconfigureerd** wordt deze functie toegestaan.
 - **Aanraken**: Met **Blokkeren** wordt het aanraakscherm uitgeschakeld op het apparaat. **Niet geconfigureerd**: staat de gebruiker toe het aanraakscherm te gebruiken.
-- **Volumeknoppen**: met **Blokkeren** voorkomt u dat de volumeknoppen op het apparaat worden gebruikt. Met **Niet geconfigureerd** staat u gebruik van de volumeknoppen toe.
+- **Volumeknoppen**: Met **Blokkeren** voorkomt u dat de volumeknoppen op het apparaat worden gebruikt. Met **Niet geconfigureerd** staat u gebruik van de volumeknoppen toe.
 - **Besturingselement voor ondersteunende aanraking**: Selecteer **Toestaan**, zodat gebruikers de functie Ondersteunende aanraking kunnen gebruiken. **Niet geconfigureerd**: zorgt ervoor dat deze functie is uitgeschakeld.
 - **Besturingselement voor kleuren omkeren**: Met **Toestaan** staat u aanpassingen in de functie Keer kleuren om toe, zodat gebruikers deze functie kunnen aanpassen. **Niet geconfigureerd**: zorgt ervoor dat deze functie is uitgeschakeld.
 - **Geselecteerde tekst uitspreken**: Selecteer **Toestaan** om de toegankelijkheidsinstellingen Selectie uitspreken op het apparaat toe te staan. Met deze functie wordt tekst die de gebruiker selecteert, hardop gelezen. **Niet geconfigureerd**: zorgt ervoor dat deze functie is uitgeschakeld.
-- **Wijziging van spraakbesturing**: met **Toestaan** stelt u gebruikers in staat om spraakbesturing te regelen op hun apparaten. Met **Niet geconfigureerd** voorkomt u dat gebruikers de status van spraakbesturing op hun apparaten kunnen wijzigen.
+- **Wijziging van spraakbesturing**: Met **Toestaan** stelt u gebruikers in staat om spraakbesturing te regelen op hun apparaten. Met **Niet geconfigureerd** voorkomt u dat gebruikers de status van spraakbesturing op hun apparaten kunnen wijzigen.
 
   Deze instelling is van toepassing op:  
   - iOS 13.0 en hoger
@@ -617,13 +617,13 @@ U kunt ook een CSV-bestand met de lijst met app-namen en de bijbehorende bundel-
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving, automatische apparaatinschrijving (onder supervisie)
 
 - **Niet-gemarkeerde e-maildomeinen** > **URL van e-maildomein**: Voeg een of meer URL's toe aan de lijst. Wanneer eindgebruikers een e-mail ontvangen die afkomstig is van een ander domein dan de domeinen die u invoert, wordt de e-mail in de iOS Mail-app gemarkeerd als niet-vertrouwd.
 
 - **Beheerde webdomeinen** > **Webdomein-URL**: Voeg een of meer URL's toe aan de lijst. Wanneer documenten worden gedownload uit de domeinen die u invoert, worden ze beschouwd als beheerd. Deze instelling geldt alleen voor documenten die zijn gedownload met Safari.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Instellingen zijn van toepassing op: automatische apparaatinschrijving (onder supervisie)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 
 - **Domeinen voor automatisch invullen van Safari-wachtwoorden** > **Domein-URL**: Voeg een of meer URL's toe aan de lijst. Gebruikers kunnen in deze lijst alleen webwachtwoorden van URL's opslaan. Deze instelling geldt alleen voor Safari en voor apparaten die onder supervisie staan. Als u geen URL's invoert, kunnen wachtwoorden van alle websites worden opgeslagen.
 
@@ -636,7 +636,7 @@ De supervisiemodus voor iOS kan alleen worden ingeschakeld tijdens de initiële 
 
 - App-vergrendeling (modus voor één app) 
 - Algemene HTTP-proxy 
-- Activeringsslot overslaan 
+- Activeringsslot uitschakelen 
 - Autonome modus voor één app 
 - Webinhoudsfilter 
 - Achtergrond en vergrendelingsscherm instellen 

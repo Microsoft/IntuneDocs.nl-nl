@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: HT
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541858"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812446"
 ---
 # <a name="intune-app-installation-error-reference"></a>Naslaginformatie voor installatiefouten voor Intune-apps
 
@@ -57,7 +57,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over iOS-installat
 
 | Foutcode (Hex) | Foutcode (Dec) | Foutbericht/-code | Beschrijving/probleemoplossingstips |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x87D12906 | -2016335610 | Fout bij de Apple MDM-agent: de opdracht voor app-installatie is mislukt zonder opgegeven foutreden. Probeer de app opnieuw te installeren. | Apple MDM-Agent heeft geretourneerd dat de installatieopdracht is mislukt. |
+| 0x87D12906 | -2016335610 | Fout bij de Apple MDM-agent: De opdracht voor app-installatie is mislukt zonder opgegeven foutreden. Probeer de app opnieuw te installeren. | Apple MDM-Agent heeft geretourneerd dat de installatieopdracht is mislukt. |
 | 0x87D1313C | -2016333508 | De netwerkverbinding op de client is verbroken of onderbroken. Latere pogingen moeten in een betere netwerkomgeving slagen. | De netwerkverbinding is verbroken terwijl de bijgewerkte URL voor de downloadservice naar het apparaat werd verzonden. Een server met de opgegeven hostnaam kan niet worden gevonden. |
 | 0x87D11388 | -2016341112 | Het iOS-apparaat is momenteel bezet.  | Het iOS-apparaat is bezet, wat leidt tot een fout. Het apparaat is vergrendeld. De gebruiker moet het apparaat ontgrendelen om de app te installeren. |
 | 0x87D13B64 | -2016330908 | De installatie van de app is mislukt.  | Er is een fout opgetreden tijdens de installatie van de app. iOS Console-logboeken zijn nodig om deze fout te kunnen oplossen. |
@@ -78,7 +78,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over iOS-installat
 | 0x87D13B9A | -2016330854 | Onbekend probleem. Probeer het opnieuw. | De installatie van de app is mislukt om een onbekende reden. Probeer het later opnieuw. |
 | 0x87D13B9B | -2016330853 | De installatie van de app is mislukt. De volgende keer dat het apparaat wordt gesynchroniseerd, wordt er vanuit Intune een nieuwe poging ondernomen. | Er is een apparaatfout opgetreden bij het installeren van de app. Synchroniseer het apparaat en probeer de app opnieuw te installeren. |
 | 0x87d13b7e | -2016330882 | De licentietoewijzing is mislukt vanwege de Apple-fout Er zijn geen resterende VPP-licenties  | Dit gedrag is inherent aan het ontwerp. U kunt dit oplossen door extra VPP-licenties aan te schaffen of licenties te claimen bij gebruikers waarop niet meer wordt gericht. |
-| 0x87d13b6e | -2016330898 | App-installatiefout 12024: Onbekende oorzaak.  | Apple heeft niet voldoende informatie gegeven om te bepalen waarom de installatie is mislukt.   Er valt niets te rapporteren. |
+| 0x87d13b6e | -2016330898 | Fout 12024 bij de app-installatie: Onbekende oorzaak.  | Apple heeft niet voldoende informatie gegeven om te bepalen waarom de installatie is mislukt.   Er valt niets te rapporteren. |
 | 0x87d13b7f | -2016330881 | Het vereiste beleid voor app-configuratie ontbreekt, controleer of het beleid op dezelfde groepen is gericht.  | Voor de app is app-configuratie vereist, maar er is geen app-configuratie aangewezen. De beheerder moet zorgen dat voor de groepen waarop de app is gericht ook de vereiste app-configuratie op de groepen is gericht. |
 | 0x87d13b69 | -2016330903 | VPP-apparaatlicentie is alleen van toepassing op apparaten met iOS 9.0 of hoger.  | Werk de bewuste iOS-apparaten naar iOS 9.0 of hoger. |
 | 0x87d13b8f | -2016330865 | De toepassing is geïnstalleerd op het apparaat, maar is niet-beheerd.  | Deze fout treedt alleen op bij Line-Of-Business-apps. De app is buiten Intune geïnstalleerd. U kunt deze fout oplossen door de app van het apparaat te verwijderen. De volgende keer dat de synchronisatie van het apparaat plaatsvindt, wordt de app vanuit Intune op het apparaat geïnstalleerd. |
@@ -90,9 +90,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over iOS-installat
 | 0x87D13B72 | -2016330894 | De verbinding met internet is verbroken.  | Fout bij validatie van app-manifest vanwege netwerkverbinding (verbinding verbroken) |
 | 0x87D13B73 | -2016330893 | De verbinding met internet is verbroken.  | Fout bij validatie van app-manifest vanwege netwerkverbinding (niet verbonden met internet) |
 | 0x87D13B77 | -2016330889 | De beveiligde verbinding is mislukt.  | Fout bij validatie van app-manifest vanwege netwerkverbinding (beveiligde verbinding verbroken) |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | Installatie van app is mislukt omdat er geen verbinding kan worden gemaakt met iTunes Store |
-| 0x87D13B6E | -2016330898 |   | Fout bij validatie van app-manifest vanwege netwerkverbinding (onbekend) |
 | 0x87D13B9F  | -2016330849 | Er is een update beschikbaar voor de VPP-app | Deze code wordt geretourneerd wanneer een VPP-app wordt geïnstalleerd, maar er is een nieuwere versie beschikbaar. |
 
 ## <a name="other-installation-errors"></a>Overige installatiefouten

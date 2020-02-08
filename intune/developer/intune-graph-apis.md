@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490501"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754793"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD gebruiken voor toegang tot de Intune-API's in Microsoft Graph
 
@@ -94,11 +94,11 @@ U registreert als volgt apps voor het gebruik van de Microsoft Graph API:
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6. Kies op de blade **Vereiste machtigingen** **Toevoegen** &gt; **API toevoegen toegang** &gt; **Een API selecteren**.
+6. Kies op de blade **Vereiste machtigingen** de optie **Toevoegen** &gt; **API-toegang toevoegen** &gt; **Een API selecteren**.
 
     <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7. Kies op de blade **Een API selecteren** **Microsoft Graph** &gt; **Selecteren**.  De blade **Toegang inschakelen** wordt geopend en er wordt een lijst weergegeven met machtigingsbereiken die beschikbaar zijn voor uw toepassing.
+7. Kies op de blade **Een API selecteren** de optie **Microsoft Graph** &gt; **Selecteren**.  De blade **Toegang inschakelen** wordt geopend en er wordt een lijst weergegeven met machtigingsbereiken die beschikbaar zijn voor uw toepassing.
 
     <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -140,7 +140,7 @@ Zie voor meer informatie:
 - [Azure AD-verificatie](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Machtigingsbereiken voor toepassingen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Wanneer u Microsoft Graph machtigt, kunt u de volgende bereiken opgeven voor het beheren van toegang tot de Intune-functies: de volgende tabel bevat een overzicht van de machtigingsbereiken voor de Intune-API.  In de eerste kolom ziet u de naam van de functie, zoals weergegeven in Azure Portal. De tweede kolom bevat de naam van het machtigingbereik.
+Wanneer u Microsoft Graph machtigt, kunt u de volgende bereiken opgeven om toegang tot de Intune-functies te beheren: De volgende tabel bevat een overzicht van de machtigingsbereiken voor de Intune-API.  In de eerste kolom ziet u de naam van de functie, zoals weergegeven in Azure Portal. De tweede kolom bevat de naam van het machtigingbereik.
 
 De instelling _Toegang inschakelen_ | Scopenaam
 :--|:--
@@ -162,7 +162,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-apps lezen__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-apps lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
   - Client-apps
@@ -172,7 +172,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-apps lezen en schrijven__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-apps lezen en schrijven__
 
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementApps.Read.All__
 
@@ -185,7 +185,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-apparaatconfiguratie en -beleid lezen__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-apparaatconfiguratie en -beleid lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
   - Apparaatconfiguratie
@@ -194,7 +194,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-apparaatconfiguratie en -beleid lezen en schrijven__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-apparaatconfiguratie en -beleid lezen en schrijven__
 
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementConfiguration.Read.All__
 
@@ -205,7 +205,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- Instelling **Toegang inschakelen**: __Externe acties die gebruikers beïnvloeden uitvoeren op apparaten met Microsoft Intune__
+- De instelling **Toegang inschakelen**: __Externe acties die gebruikers beïnvloeden uitvoeren op apparaten met Microsoft Intune__
 
 - De volgende externe acties zijn toegestaan op een beheerd apparaat:
   - Buiten gebruik stellen
@@ -219,7 +219,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-apparaten lezen__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-apparaten lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
   - Beheerd apparaat
@@ -230,7 +230,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-apparaten lezen en schrijven__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-apparaten lezen en schrijven__
 
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementManagedDevices.Read.All__
 
@@ -240,12 +240,12 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 - De volgende externe acties zijn ook toegestaan:
   - Apparaten zoeken
-  - Activeringsvergrendeling overslaan
+  - Activeringsslot uitschakelen
   - Hulp op afstand vragen
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune RBAC-instellingen lezen__
+- De instelling **Toegang inschakelen**: __Microsoft Intune RBAC-instellingen lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
   - Roltoewijzingen
@@ -254,7 +254,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune RBAC-instellingen lezen en schrijven__
+- De instelling **Toegang inschakelen**: __Microsoft Intune RBAC-instellingen lezen en schrijven__
 
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met __DeviceManagementRBAC.Read.All__
 
@@ -264,7 +264,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-configuratie lezen__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-configuratie lezen__
 
 - Staat leestoegang toe aan de volgende entiteitseigenschappen en -status:
   - Apparaatregistratie
@@ -280,7 +280,7 @@ Op dit moment is voor alle Intune-machtigingsbereiken beheerderstoegang vereist.
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
-- Instelling **Toegang inschakelen**: __Microsoft Intune-configuratie lezen en schrijven__
+- De instelling **Toegang inschakelen**: __Microsoft Intune-configuratie lezen en schrijven__
 
 - Hiermee kunt u dezelfde bewerkingen uitvoeren als met DeviceManagementServiceConfig.Read.All_
 

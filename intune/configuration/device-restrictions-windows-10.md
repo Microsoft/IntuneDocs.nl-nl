@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517555"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812318"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Apparaatinstellingen voor Windows 10 en hoger om functies toe te staan of te beperken met behulp van Intune
 
@@ -39,8 +39,11 @@ Deze instellingen worden toegevoegd aan een apparaatconfiguratieprofiel in Intun
 
 Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), waarbij ook de ondersteunde Windows-edities worden vermeld.
 
-- **App Store** (alleen mobiel): Met **Niet geconfigureerd** (standaard) hebben eindgebruikers toegang tot de App Store op mobiele apparaten. Met **Blokkeren** hebben gebruikers geen toegang tot de App Store.
-- **Apps uit de Store automatisch bijwerken**: Met **Niet geconfigureerd** (standaard) kunnen apps die zijn geïnstalleerd vanuit de Microsoft Store, automatisch worden bijgewerkt. Met **Blokkeren** kunnen updates niet automatisch worden geïnstalleerd.
+- **App Store** (alleen mobiel): met **Blokkeren** voorkomt u dat eindgebruikers toegang hebben tot de App Store op mobiele apparaten. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. In het besturingssysteem kan standaard ingesteld zijn dat eindgebruikers toegang hebben tot de App Store.
+- **Apps uit de Store automatisch bijwerken**: met **Blokkeren** voorkomt u dat updates automatisch worden geïnstalleerd vanuit de Microsoft Store. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. In het besturingssysteem kan standaard ingesteld zijn dat apps die zijn geïnstalleerd vanuit de Microsoft Store, automatisch worden bijgewerkt.
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Installatie van vertrouwde app**: Stel in of apps die niet afkomstig zijn uit de Microsoft Store mogen worden geïnstalleerd. Dit wordt ook wel sideloaden genoemd. Sideloading is de installatie en het uitvoeren of testen van een app die niet door de Microsoft Store is gecertificeerd. Dit kan bijvoorbeeld een app zijn die alleen voor gebruik binnen het bedrijf is bedoeld. Uw opties zijn:
   - **Niet geconfigureerd** (standaard): Deze instelling wordt niet gewijzigd of bijgewerkt door Intune.
   - **Blokkeren**: Hiermee voorkomt u sideloaden. Apps die niet afkomstig zijn uit de Microsoft Store, kunnen niet worden geïnstalleerd.
@@ -51,16 +54,36 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
   - **Toestaan**: Hiermee staat u de ontwikkelaarsmodus en sideloaden toe.
 
   In [Uw apparaat inschakelen voor ontwikkeling](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) vindt u meer informatie over deze functie.
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Gedeelde app-gegevens voor gebruikers**: Kies **Toestaan** om toepassingsgegevens te delen tussen verschillende gebruikers van hetzelfde apparaat en met andere exemplaren van de app. Met **Niet geconfigureerd** (standaard) kunnen gegevens niet met andere gebruikers en andere exemplaren van dezelfde app worden gedeeld.
-- **Alleen persoonlijke Store gebruiken**: Met **Toestaan** kunnen apps alleen uit een persoonlijke Store worden gedownload, niet vanuit de openbare Store. Dit geldt ook voor detailhandelcatalogi. Met **Niet geconfigureerd** (standaard) kunnen apps uit zowel een persoonlijke als de openbare Store worden gedownload.
-- **Uit Store afkomstige app starten**: Met **Blokkeren** schakelt u alle apps uit die vooraf zijn geïnstalleerd op het apparaat of die zijn gedownload uit de Microsoft Store. Met **Niet geconfigureerd** (standaard) kunnen deze apps worden geopend.
-- **App-gegevens installeren op systeemvolume**: Met **Blokkeren** kunnen er vanuit apps geen gegevens worden opgeslagen op het systeemvolume van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemvolume van het apparaat opslaan.
-- **Apps installeren op systeemstation**: Met **Blokkeren** kunnen er vanuit apps geen gegevens worden opgeslagen op het systeemstation van het apparaat. Met **Niet geconfigureerd** (standaard) kunnen apps gegevens op het systeemstation installeren.
-- **Game DVR** (alleen desktop): Met **Blokkeren** wordt het opnemen en uitzenden van Windows Game uitgeschakeld. Met **Niet geconfigureerd** (standaard) is het opnemen en uitzenden van games toegestaan.
+- **Gedeelde app-gegevens voor gebruikers**: Kies **Toestaan** om toepassingsgegevens te delen tussen verschillende gebruikers van hetzelfde apparaat en met andere exemplaren van de app. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in het besturingssysteem ingesteld zijn dat gegevens niet met andere gebruikers en andere exemplaren van dezelfde app kunnen worden gedeeld.
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Alleen persoonlijke Store gebruiken**: Met **Toestaan** kunnen apps alleen uit een persoonlijke Store worden gedownload, niet vanuit de openbare Store. Dit geldt ook voor detailhandelcatalogi. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in het besturingssysteem ingesteld zijn dat apps mogen worden gedownload uit zowel een persoonlijke als openbare store.
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Uit Store afkomstige app starten**: Met **Blokkeren** schakelt u alle apps uit die vooraf zijn geïnstalleerd op het apparaat of die zijn gedownload uit de Microsoft Store. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in het besturingssysteem ingesteld zijn dat deze apps mogen worden geopend.
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **App-gegevens installeren op systeemvolume**: Met **Blokkeren** kunnen er vanuit apps geen gegevens worden opgeslagen op het systeemvolume van het apparaat. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in het besturingssysteem ingesteld zijn dat via apps gegevens op het systeemstationvolume mogen worden opgeslagen.
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Apps installeren op systeemstation**: Met **Blokkeren** kunnen er vanuit apps geen gegevens worden opgeslagen op het systeemstation van het apparaat. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in het besturingssysteem ingesteld zijn dat via apps gegevens mogen worden geïnstalleerd op het systeemstation.
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **Game DVR** (alleen desktop): Met **Blokkeren** wordt het opnemen en uitzenden van Windows Game uitgeschakeld. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in het besturingssysteem ingesteld zijn dat het opnemen en uitzenden van games is toegestaan.
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **Alleen apps uit de Store**: Met deze instelling bepaalt u de gebruikerservaring wanneer gebruikers apps van andere locaties dan de Microsoft Store installeren. Uw opties zijn:
 
-  - **Niet geconfigureerd** (standaard): Hiermee kunnen eindgebruikers apps van andere locaties dan de Microsoft Store installeren, met inbegrip van de apps die zijn gedefinieerd in andere beleidsinstellingen.  
+  - **Niet geconfigureerd** (standaard): Deze instelling wordt niet gewijzigd of bijgewerkt door Intune. Standaard kan in het besturingssysteem ingesteld zijn dat eindgebruikers apps van andere locaties dan de Microsoft Store mogen installeren, met inbegrip van apps die zijn gedefinieerd in andere beleidsinstellingen.  
   - **Overal**: Hiermee schakelt u de app-aanbevelingen uit en kunnen gebruikers apps vanaf elke locatie installeren.  
   - **Alleen Store**: Hiermee dwingt u af dat eindgebruikers alleen apps van de Microsoft Store kunnen installeren.
   - **Aanbevelingen**: Wanneer gebruikers via internet een app willen installeren die beschikbaar is in de Microsoft Store, krijgen ze een bericht te zien waarin wordt aanbevolen de app vanuit de Store te downloaden.  
@@ -68,11 +91,11 @@ Deze instellingen gebruiken de [beleid-CSP ApplicationManagement](https://docs.m
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Gebruikerscontrole over installaties**: Bij de instelling **Niet geconfigureerd** (standaard) voorkomt Windows Installer dat gebruikers de installatieopties wijzigen die normaal gesproken zijn gereserveerd voor systeembeheerders, zoals het invoeren van de map voor de installatie van de bestanden. **Blokkeren** stelt gebruikers in staat om deze installatieopties te wijzigen. Tevens worden enkele van de beveiligingsfuncties van Windows Installer omzeild.
+- **Gebruikerscontrole over installaties**: met **Blokkeren** voorkomt u dat gebruikers de installatieopties wijzigen die normaal gesproken zijn gereserveerd voor systeembeheerders, zoals het invoeren van de map voor de installatie van de bestanden. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kan in Windows Installer ingesteld zijn dat gebruikers deze installatieopties niet kunnen wijzigen en dat bepaalde beveiligingsfuncties van Windows Installer worden omzeild.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Apps installeren met verhoogde bevoegdheden**: Bij de instelling **Niet geconfigureerd** (standaard) past het systeem de machtigingen van de huidige gebruiker toe wanneer het programma's installeert die een systeembeheerder niet implementeert of aanbiedt. **Blokkeren** geeft Windows Installer de opdracht om verhoogde bevoegdheden te gebruiken wanneer een programma op een systeem wordt geïnstalleerd. Deze bevoegdheden worden aan alle programma's aangeboden.
+- **Apps installeren met verhoogde bevoegdheden**: met **Blokkeren** krijgt Windows Installer de opdracht om verhoogde bevoegdheden te gebruiken bij het installeren van een programma op het systeem. Deze bevoegdheden worden aan alle programma's aangeboden. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Standaard kunnen door het systeem de machtigingen van de huidige gebruiker worden toegepast bij het installeren van programma's die een systeembeheerder niet implementeert of aanbiedt. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ Deze instellingen gebruiken de [beleid-CSP Experience](https://docs.microsoft.co
 
 - **Afbeeldings-URL vergrendelingsscherm (alleen desktop)** : Voer de URL in van een afbeelding in JPE-, JPEG- of PNG-indeling die wordt gebruikt als achtergrond van het Windows-vergrendelingsscherm. Voer bijvoorbeeld `https://contoso.com/image.png` in. Met deze instelling wordt de afbeelding vergrendeld en kan deze later niet meer worden gewijzigd.
 
-  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **Time-out van het scherm die door de gebruiker kan worden ingesteld (alleen mobiel)** : Met **Toestaan** kunnen gebruikers de time-out van het scherm configureren. Met **Niet geconfigureerd** (standaard) hebben gebruikers deze mogelijkheid niet.
 
@@ -851,7 +874,7 @@ Deze instellingen gebruiken de [beleid-CSP Defender](https://docs.microsoft.com/
 
 - **Toestemming voor voorbeelden verzenden**: Momenteel heeft deze instelling geen invloed. Gebruik deze instelling niet. Mogelijk wordt deze in een toekomstige versie verwijderd.
 
-- **Beveiliging bij toegang**: met **Blokkeren** voorkomt u dat bestanden die zijn geopend of gedownload, worden gescand. Gebruikers kunnen dit niet inschakelen.
+- **Beveiliging bij toegang**: Met **Blokkeren** voorkomt u dat bestanden die zijn geopend of gedownload, worden gescand. Gebruikers kunnen dit niet inschakelen.
 
   Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet door Intune gewijzigd of bijgewerkt. Als u de instelling blokkeert en vervolgens weer wijzigt in **Niet geconfigureerd**, blijft in Intune de eerder via het besturingssysteem geconfigureerde status van de instelling behouden. Deze functie wordt door het besturingssysteem standaard ingeschakeld. Dit kan door gebruikers worden gewijzigd.
 

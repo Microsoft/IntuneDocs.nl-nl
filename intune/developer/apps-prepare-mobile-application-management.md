@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653934"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912672"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -41,7 +41,6 @@ Zie [Line-Of-Business-apps en -gegevens beveiligen op apparaten die niet zijn ge
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Redenen om de App Wrapping Tool te gebruiken
 
 * Uw app heeft geen ingebouwde functies voor gegevensbescherming
-* Uw app is eenvoudig
 * Uw app wordt intern geïmplementeerd
 * U hebt geen toegang tot de broncode van de app
 * U hebt de app niet ontwikkeld
@@ -63,7 +62,6 @@ Zie [Overzicht](app-sdk.md) voor meer informatie over de SDK. Zie [Aan de slag m
 ### <a name="reasons-to-use-the-sdk"></a>Redenen om de SDK te gebruiken
 
 * Uw app heeft geen ingebouwde functies voor gegevensbescherming
-* Uw app is complex en bevat veel ervaringen
 * Uw app is geïmplementeerd op een openbare app-store, zoals Google Play of de App Store van Apple
 * U bent app-ontwikkelaar en beschikt over de technische achtergrond om de SDK te gebruiken
 * Uw app bevat andere SDK-integraties
@@ -76,13 +74,13 @@ Zie [Overzicht](app-sdk.md) voor meer informatie over de SDK. Zie [Aan de slag m
 |**iOS**|Ja, gebruik de [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Nee|
 |**Android**| Ja, gebruik de [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Nee|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Maakt u geen gebruik van een app-ontwikkelings platform dat hierboven wordt vermeld?
+## <a name="not-using-an-app-development-platform-listed-above"></a>Maakt u geen gebruik van een app-ontwikkelingsplatform dat hierboven wordt vermeld?
 
 Het Intune SDK-ontwikkelingsteam houdt zich actief bezig met het testen en onderhouden van ondersteuning voor apps die zijn gebouwd met de systeemeigen Android-, iOS- (Objective-C, Swift), Xamarin-, Xamarin.Forms- en Cordova-platforms. Hoewel het sommige klanten is gelukt om de Intune SDK te integreren in andere platforms, zoals React Native en NativeScript, bieden we geen specifieke instructies of plug-ins voor app-ontwikkelaars die andere platforms gebruiken dan de platforms die door ons worden ondersteund. 
 
 ## <a name="feature-comparison"></a>Vergelijking van functies
 
-In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de App Wrapping Tool.
+Deze tabel bevat de instellingen die zijn ingeschakeld als een app gebruikmaakt van de App SDK of de App Wrapping Tool. Voor sommige functies moeten app-ontwikkelaars enige logica toepassen buiten de basisintegratie met de Intune SDK. Deze functies worden daarom niet ingeschakeld als de app gebruikmaakt van de App Wrapping Tool. 
 
 |Onderdeel|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
@@ -97,7 +95,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Vingerafdruk in plaats van pincode toestaan|X|X|
 |Gezichtsherkenning toestaan in plaats van pincode (alleen iOS)|X|X|
 |Bedrijfsreferenties vereisen voor toegang|X|X|
-|Verlopen van een pincode instellen|X|X|
+|Het verlopen van een pincode instellen|X|X|
 |De uitvoering blokkeren van beheerde apps die op gekraakte of geroote apparaten worden uitgevoerd|X|X|
 |App-gegevens versleutelen|X|X|
 |De toegangsvereisten na een opgegeven aantal minuten opnieuw controleren|X|X|
@@ -107,7 +105,7 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Volledig wissen van app-gegevens|X|X|
 |Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
-|Configuratie van de doel toepassing (of app-configuratie via het ' MAM-kanaal ')|X||
+|Configuratie van de doeltoepassing (of app-configuratie via het MAM-kanaal)|X|X|
 |Ondersteuning voor meerdere identiteiten|X||
 |Aanpasbare stijl |X|||
 |VPN-verbindingen met Citrix mVPN op aanvraag voor toepassingen|X|X| 
@@ -117,8 +115,13 @@ In deze tabel staan de instellingen die u kunt gebruiken voor de App SDK en de A
 |Minimumversie van het iOS-besturingssysteem vereisen|X|X|
 |Minimale versie van Android-beveiligingspatch vereisen (alleen Android)|X|X|
 |Minimale Intune SDK voor iOS vereisen (alleen iOS)|X|X|
-|Attestation van SafetyNet-apparaten (alleen Android)|X|X|
-|Bedreigings scan voor apps (alleen Android)|X|X|
+|SafetyNet-apparaatbevestiging (alleen Android)|X|X|
+|Bedreigingsscan voor apps (alleen Android)|X|X|
+|Maximaal risiconiveau van Mobile Threat Defense-leveranciersapparaat vereisen|X||
+|Inhoud van app-meldingen voor organisatieaccounts configureren|X|X|
+|Het gebruik van goedgekeurde toetsenborden vereisen (alleen Android)|X|X|
+|Beleid voor appbeveiliging vereisen (voorwaardelijke toegang)|X||
+|Goedgekeurde clientapp vereisen (voorwaardelijke toegang)|X||
 
 ## <a name="next-steps"></a>Volgende stappen
 
