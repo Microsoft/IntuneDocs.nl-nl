@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756013"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754198"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -84,7 +84,7 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|Windows, iOS, Android|
 |Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|Windows, iOS, Android|
 |Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|Windows, iOS, Android|
-|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot over te slaan.|iOS|
+|Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot uit te schakelen.|iOS|
 |Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|Windows, iOS, Android|
 |Intune geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Intune|Windows, iOS, Android|
 |Naleving|De nalevingsstatus van het apparaat.|Windows, iOS, Android|
@@ -92,8 +92,6 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|Windows, iOS, Android|
 |Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|Windows, iOS, Android|
 |Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|Windows, iOS, Android|
-
-\* Niet beschikbaar in Android met Google Policy Manager, zoals volledig beheerde en toegewezen apparaten
 
 > [!Note]  
 > Op toegewezen of volledig beheerde Android-apparaten wordt het telefoonnummer niet geïnventariseerd.

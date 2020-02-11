@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7567f0ee8c2bac5c3cf3c4e0fae027bdec35e27e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: cd3736a08f09fcb5ee953626c63e336ca7f9af81
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563555"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755201"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Een Android Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -36,22 +36,25 @@ Een LOB-app is een app die u vanaf een app-installatiebestand aan Intune toevoeg
 > [!Note]
 > Zie [Beheerde Google Play-apps toevoegen aan Android Enterprise-apparaten met Intune](apps-add-android-for-work.md) voor Android for Work-apparaten. 
 
-## <a name="step-1-specify-the-software-setup-file"></a>Stap 1: locatie van het software-installatiebestand opgeven
+## <a name="select-the-app-type"></a>Het app-type selecteren
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. Selecteer in het deelvenster **App toevoegen** de optie **Line-Of-Business-app** als het **app-type**.
+3. Selecteer in het deelvenster **Een app-type selecteren** onder het app-type **Overige** de optie **Line-Of-Business-app**.
+4. Klik op **Selecteren**. De stappen **App toevoegen** worden weergegeven.
 
-## <a name="step-2-configure-the-app-package-file"></a>Stap 2: app-pakketbestand configureren
+## <a name="step-1---app-information"></a>Stap 1: App-gegevens
 
-1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakketbestand**.
+### <a name="select-the-app-package-file"></a>Het app-pakketbestand selecteren
+
+1. Klik in het deelvenster **App toevoegen** op **App-pakketbestand selecteren**. 
 2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een Android-installatiebestand met de extensie **.apk**.
-3. Klik op **OK** wanneer u klaar bent.
+   De details van de app worden weergegeven.
+3. Wanneer u klaar bent, selecteert u **OK** in het deelvenster **App-pakketbestand** om de app toe te voegen.
 
-## <a name="step-3-configure-app-information"></a>Stap 3: App-gegevens configureren
+### <a name="set-app-information"></a>App-gegevens instellen
 
-1. Selecteer **App-gegevens** in het deelvenster **App toevoegen**.
-2. Voeg de details voor uw app toe in het deelvenster **App-gegevens**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld.
+1. Voeg de details voor uw app toe op de pagina **App-gegevens**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld.
     - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving**: voer een beschrijving van de app in. De beschrijving wordt weergegeven in de bedrijfsportal.
     - **Uitgever**: Voer de naam van de uitgever van de app in.
@@ -64,14 +67,25 @@ Een LOB-app is een app die u vanaf een app-installatiebestand aan Intune toevoeg
     - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
     - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-3. Klik op **OK** wanneer u klaar bent.
+2. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
 
-## <a name="step-4-finish-up"></a>Stap 4: Voltooien
+## <a name="step-2---select-scope-tags-optional"></a>Stap 2: Bereiktags selecteren (optioneel)
+U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag bekijken in Intune. Zie [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT) voor uitgebreide informatie over bereiktags.
 
-1. Controleer in het deelvenster **App toevoegen** of de gegevens van uw app juist zijn.
-2. Selecteer **Toevoegen** om de app te uploaden naar Intune.
+1. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. 
+2. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps. In de lijst kunt u de app toewijzen aan groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.
+## <a name="step-3---assignments"></a>Stap 3: Toewijzingen
+
+1. Selecteer de groepstoewijzingen **Vereist**, **Beschikbaar voor ingeschreven apparaten** of **Verwijderen** voor de app. Zie [Groepen toevoegen om gebruikers en apparaten in te delen](~/fundamentals/groups-add.md) en [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md) voor meer informatie.
+2. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. 
+
+## <a name="step-4---review--create"></a>Stap 4: beoordelen en maken
+
+1. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+2. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
+
+    De blade **Overzicht** voor de Line-Of-Business-app wordt weergegeven.
 
 ## <a name="step-5-update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
 

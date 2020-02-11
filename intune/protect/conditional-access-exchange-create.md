@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188469"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755642"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
 
@@ -37,7 +37,7 @@ Controleer of aan de volgende voorwaarden is voldaan voordat u voorwaardelijke t
 
 - Uw versie van Exchange is **Exchange 2010 SP1 of hoger**. De CAS-matrix (Client Access Server) voor Exchange-servers wordt ondersteund.
 
-- De [Exchange On-Premises-connector Exchange Active Sync](exchange-connector-install.md), die Intune verbindt met Exchange On-Premises, is geïnstalleerd en wordt gebruikt.
+- U hebt de [on-premises Exchange-connector Exchange ActiveSync](exchange-connector-install.md), die Intune verbindt met Exchange On-Premises, geïnstalleerd en in gebruik.
 
     >[!IMPORTANT]  
     >Intune ondersteunt meerdere on-premises Exchange-connectors per abonnement.  Elke Exchange On-Premises-connector is uitsluitend bestemd voor één Intune-tenant en mag niet worden gebruikt met een andere tenant.  Als u meer dan één on-premises Exchange-organisatie hebt, kunt u voor elke Exchange-organisatie een afzonderlijke connector instellen.
@@ -84,40 +84,57 @@ Voordat u de volgende procedure kunt gebruiken om Toegangsbeheer van Exchange On
 
 3. Kies **Ja** in het deelvenster **On-premises toegang tot Exchange** om *on-premises toegang tot Exchange in te schakelen*.
 
+   > [!div class="mx-imgBorder"]
+   > ![Voorbeeldschermopname van het scherm voor on-premises toegang tot Exchange](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. Onder **Toewijzing** kiest u **Groepen selecteren om op te nemen**. Vervolgens selecteert u een of meer groepen om de toegang te configureren.
 
    Op leden van de groepen die u selecteert, wordt het beleid voor voorwaardelijke toegang tot Exchange On-premises toegepast. Gebruikers die dit beleid ontvangen, moeten hun apparaten inschrijven bij Intune en voldoen aan de nalevingsprofielen voordat ze toegang tot Exchange On-premises kunnen krijgen.
 
-5. Als u groepen wilt uitsluiten, kiest u **Groepen voor uitsluiten selecteren** en selecteert u vervolgens een of meer groepen die u wilt vrijstellen van apparaatregistratie en de nalevingsprofielen voor toegang tot Exchange On-premises. 
+   > [!div class="mx-imgBorder"]
+   > ![Groepen selecteren die moeten worden opgenomen](./media/conditional-access-exchange-create/select-groups.png)
 
-6. Configureer vervolgens de instellingen voor de Intune on-premises Exchange-connector.  Selecteer onder **Instellingen** in het *toegangsvenster van Exchange On-premises* de optie **On-premises Exchange ActiveSync-connector** en selecteer vervolgens de connector voor de Exchange-organisatie die u wilt configureren.
+5. Als u groepen wilt uitsluiten, kiest u **Groepen voor uitsluiten selecteren** en selecteert u vervolgens een of meer groepen die u wilt vrijstellen van apparaatregistratie en de nalevingsprofielen voor toegang tot Exchange On-premises.
 
-7. Kies onder **Instellingen** **Gebruikersmeldingen**om het standaard-e-mail bericht te wijzigen dat wordt verzonden naar gebruikers als hun apparaat niet compatibel is ze toegang willen krijgen tot Exchange On-Premises. Voor de berichtsjabloon wordt Markup Language gebruikt.  Tijdens het typen ziet u een voorbeeld van het bericht.
+   Selecteer **Opslaan** om uw configuratie op te slaan en terug te keren naar het deelvenster **Exchange-toegang**.
+
+6. Configureer vervolgens de instellingen voor de Intune on-premises Exchange-connector. Selecteer in de console **Tenantbeheer** > **Exchange-toegang**> **On-premises Exchange ActiveSync-connector** en selecteer vervolgens de connector voor de Exchange-organisatie die u wilt configureren.
+
+7. Selecteer voor **Gebruikersmeldingen** de optie **Bewerken** om de werkstroom **Organisatie bewerken** te openen, waar u het bericht *Gebruikersmelding* kunt aanpassen.
+
+   > [!div class="mx-imgBorder"]
+   > ![Voorbeeldschermopname van de werkstroom Organisatie bewerken voor meldingen](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   Wijzig het standaard-e-mailbericht dat wordt verzonden naar gebruikers als hun apparaat niet compatibel is en ze toegang willen krijgen tot on-premises Exchange. Voor de berichtsjabloon wordt Markup Language gebruikt. Tijdens het typen ziet u een voorbeeld van het bericht
+
+   Selecteer **Beoordelen en opslaan** en vervolgens **Opslaan** om uw wijzigingen op te slaan en de configuratie voor toegang tot on-premises Exchange te voltooien.
+
    > [!TIP]
    > Zie dit Wikipedia-[artikel](https://en.wikipedia.org/wiki/Markup_language) voor meer informatie over Markup Language.
- 
-   Selecteer **OK** om uw wijzigingen op te slaan en de configuratie voor toegang tot Exchange On-premises te voltooien.
 
-8. Selecteer vervolgens **Geavanceerde toegangsinstellingen voor Exchange ActiveSync** om het deelvenster *Geavanceerde toegangsinstellingen voor Exchange ActiveSync* te openen. Hierin configureert u regels voor apparaattoegang:  
+8. Selecteer vervolgens **Geavanceerde toegangsinstellingen voor Exchange ActiveSync** om de werkstroom *Geavanceerde toegangsinstellingen voor Exchange ActiveSync* te openen. Hierin configureert u regels voor apparaattoegang.
+
+   > [!div class="mx-imgBorder"]
+   > ![Voorbeeldschermopname van de werkstroom Organisatie bewerken voor geavanceerde instellingen](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - Stel voor **Toegang tot onbeheerde apparaten** de globale standaardregel in voor toegang van apparaten die niet worden beïnvloed door voorwaardelijke toegang of andere regels:
 
      - **Toegang toestaan**: alle apparaten krijgen direct toegang tot Exchange On-Premises. Apparaten van de gebruikers in groepen die u hebt geconfigureerd als opgenomen in de vorige procedure, worden geblokkeerd als later wordt vastgesteld dat ze niet aan het nalevingsbeleid voldoen of niet zijn ingeschreven in Intune.
 
-     - **Toegang blokkeren** en **Quarantaine**: wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd. Apparaten van gebruikers in de groepen die u hebt geconfigureerd als opgenomen in de vorige procedure, krijgen toegang nadat de apparaten zijn ingeschreven in Intune en als compatibel zijn beoordeeld. 
+     - **Toegang blokkeren** en **Quarantaine**: wanneer u de toegang blokkeert, wordt de toegang van alle apparaten tot Exchange On-Premises in eerste instantie geblokkeerd. Apparaten van gebruikers in de groepen die u hebt geconfigureerd als opgenomen in de vorige procedure, krijgen toegang nadat de apparaten zijn ingeschreven in Intune en als compatibel zijn beoordeeld.
 
        Android-apparaten waarop Samsung Knox Standard *niet* wordt uitgevoerd, worden altijd geblokkeerd omdat deze instelling niet wordt ondersteund op deze apparaten.
 
-   -  Voor **Uitzonderingen van apparaatplatform** selecteert u **Toevoegen** en geeft u waar nodig platformdetails voor uw omgeving op. 
-   
+   - Voor **Uitzonderingen van apparaatplatform** selecteert u **Toevoegen** en geeft u waar nodig details voor uw omgeving op.
+
       Als de instelling **Toegang tot onbeheerde apparaten** is ingesteld op **Geblokkeerd**, kunnen apparaten die zijn ingeschreven en compatibel zijn ook toegang krijgen, zelfs als er een platformuitzondering van toepassing is waardoor de apparaten worden geblokkeerd.  
-   
-   Selecteer **OK** om de gewijzigde instellingen op te slaan.
 
-9. Selecteer **Opslaan** om het beleid voor voorwaardelijke toegang tot Exchange op te slaan.
+9. Selecteer **OK** om de gewijzigde instellingen op te slaan.
 
-Vervolgens maakt u een nalevingsbeleid en wijst u dit toe aan de gebruikers zodat Intune hun mobiele apparaten kan evalueren. Zie [Aan de slag met apparaatcompatibiliteit](device-compliance-get-started.md).
+10. Selecteer **Beoordelen en opslaan** en vervolgens **Opslaan** om het beleid voor voorwaardelijke toegang tot Exchange op te slaan.
 
 ## <a name="next-steps"></a>Volgende stappen
+
+Vervolgens maakt u een nalevingsbeleid en wijst u dit toe aan de gebruikers zodat Intune hun mobiele apparaten kan evalueren. Zie [Aan de slag met apparaatcompatibiliteit](device-compliance-get-started.md).
 
 [Problemen met de Intune On-premises Exchange-connector in Microsoft Intune oplossen](https://support.microsoft.com/help/4471887)

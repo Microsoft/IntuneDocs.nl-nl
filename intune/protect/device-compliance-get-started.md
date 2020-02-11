@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860292"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812176"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Regels instellen op apparaten om toegang tot resources in uw organisatie met behulp van Intune toe te staan
 
@@ -92,6 +92,10 @@ Intune bevat ook een set ingebouwde instellingen voor nalevingsbeleid. Het volge
   - **Niet compatibel**: beveiligingsfunctie aan
 
   Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat standaard als incompatibel beschouwd. Als u voorwaardelijke toegang met nalevingsbeleid gebruikt, is het raadzaam de standaardinstelling te wijzigen in **Niet compatibel**. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt `No compliance policies have been assigned` vermeld in de [bedrijfsportal-app](../apps/company-portal-app.md).
+
+
+> [!NOTE]
+> Verbeterde jailbreakdetectie voor iOS-apparaten is tijdelijk uitgeschakeld in Intune.
 
 - **Verbeterde jailbreakdetectie**: Als deze instelling is ingeschakeld, zorgt deze ervoor dat iOS-apparaten vaker bij Intune inchecken. Door het inschakelen van deze eigenschap worden de locatieservices van het apparaat gebruikt. Ook heeft dit invloed op het batterijverbruik. De locatiegegevens van de gebruiker worden niet opgeslagen met Intune.
 

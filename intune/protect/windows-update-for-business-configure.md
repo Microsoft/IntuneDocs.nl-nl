@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956275"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886796"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Windows 10-software-updates beheren in Intune
 
@@ -205,20 +205,22 @@ Wanneer een apparaat een beleid voor Windows 10-onderdelenupdates ontvangt:
 
 - In tegenstelling tot het gebruik van *Pauzeren* met een updatering, dat na 35 dagen verloopt, blijft het beleid voor de onderdelenupdates van Windows 10 van kracht. Apparaten installeren pas een nieuwe Windows-versie als u het beleid voor de onderdelenupdates voor Windows 10 wijzigt of verwijdert. Als u het beleid bewerkt om een nieuwere versie op te geven, kunnen apparaten de functies installeren vanuit die Windows-versie.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Vereisten voor Windows 10-onderdelenupdates
+
+Aan de volgende vereisten moet worden voldaan om Windows 10-onderdelenupdates te kunnen gebruiken in Intune.
+
+- Apparaten moeten worden ingeschreven bij Intune MDM en zijn toegevoegd aan Azure AD of zijn geregistreerd bij Azure AD.
+- Om het onderdelenupdatebeleid met Intune te kunnen gebruiken, moet de telemetrie van de apparaten zijn ingeschakeld, met een minimaal de instelling [*Basis*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). Telemetrie wordt geconfigureerd onder *Rapportage en telemetrie* als onderdeel van een [Restrictiebeleid voor apparaten](../configuration/device-restrictions-configure.md).
+  
+  Apparaten waarop het beleid voor onderdelenupdates wordt ontvangen en waarvan de telemetrie is ingesteld op *Niet geconfigureerd*, wat betekent dat het uit staat, kunnen een latere versie van Windows installeren dan gedefinieerd in het beleid voor onderdelenupdates. De voorwaarde om telemetrie te vereisen wordt momenteel herzien, nu deze functie zich ontwikkelt in de richting van algemene beschikbaarheid.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Beperkingen voor Windows 10-onderdelenupdates
 
 - Wanneer u een beleid voor *Windows 10-onderdelenupdates* voor een *Windows 10-updatering* implementeert, controleert u de updatering op de volgende configuraties:
   - De **Uitstelperiode voor onderdelenupdates (dagen)** moet zijn ingesteld op **0**.
   - Onderdelenupdates voor de updatering moeten *actief* zijn. Ze mogen niet worden gepauzeerd.
 
-- Beleidsregels voor de Windows 10-onderdelenupdate kunnen niet worden toegepast tijdens OOBE (Out of Box Experience) en worden alleen toegepast nadat de eerste scan van Windows Update is uitgevoerd nadat een apparaat is ingericht (doorgaans een dag). Ook worden de beleidsregels niet ontvangen op apparaten die zijn ingericht met Autopilot.
-
-  Momenteel wordt onderzocht of deze beperking in de toekomst kan worden ondersteund.
-
-> [!IMPORTANT]
-> Om het onderdelenupdatebeleid met Intune te kunnen gebruiken, moet de telemetrie van de apparaten zijn ingeschakeld, met een minimaal de instelling [*Basis*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). Telemetrie wordt geconfigureerd onder *Rapportage en telemetrie* als onderdeel van een [Restrictiebeleid voor apparaten](../configuration/device-restrictions-configure.md).
->
-> Apparaten waarop het beleid voor onderdelenupdates wordt ontvangen en waarvan de telemetrie is ingesteld op *Niet geconfigureerd*, wat betekent dat het uit staat, kunnen een latere versie van Windows installeren dan gedefinieerd in het beleid voor onderdelenupdates. De voorwaarde om telemetrie te vereisen wordt momenteel herzien, nu deze functie zich ontwikkelt in de richting van algemene beschikbaarheid.
+- Beleidsregels voor de Windows 10-onderdelenupdates kunnen niet worden toegepast tijdens de OOBE (Out of Box Experience) van Autopilot en worden alleen toegepast nadat de eerste scan van Windows Update is uitgevoerd nadat een apparaat is ingericht (doorgaans een dag).
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10-onderdelenupdates maken en toewijzen
 
@@ -242,10 +244,12 @@ In dit deelvenster kunt u het volgende doen:
 - **Eigenschappen** selecteren om de implementatie te wijzigen.  In het deelvenster *Eigenschappen* de optie **Bewerken** selecteren om de *Implementatie-instellingen of Toewijzingen* te openen, waar u de implementatie vervolgens kunt wijzigen.
 - **Updatestatus van eindgebruiker** selecteren om informatie over het beleid weer te geven.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Validatie en rapportage voor Windows 10-updates
+
+Gebruik voor zowel Windows 10-updateringen als Windows 10-onderdelenupdates [Intune-nalevingsrapporten voor updates](../windows-update-compliance-reports.md) om de status van apparaten te bewaken. Deze oplossing maakt gebruik van [Naleving van updates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) bij uw Azure-abonnement.
+
 ## <a name="next-steps"></a>Volgende stappen
 
 [Update-instellingen van Windows worden ondersteund in Intune](../windows-update-settings.md)
-
-[Intune-nalevingsrapporten voor updates](../windows-update-compliance-reports.md)
 
 [Problemen met Windows 10-update-ringen oplossen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

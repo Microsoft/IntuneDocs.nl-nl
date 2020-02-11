@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
-ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.openlocfilehash: 5c916e5cfb09da50bfcbfbe2ac4b094172357e80
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76125329"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812383"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Met Microsoft Intune beveiligde apps  
 
@@ -53,7 +53,7 @@ In de volgende tabellen staan details van ondersteunde apps van Microsoft en par
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge biedt een continue browse-ervaring voor Windows 10-gebruikers op al hun apparaten. Inhoud en gegevens worden op de achtergrond naadloos gesynchroniseerd, zodat gebruikers in meerdere apparaten probleemloos kunnen browsen. Met vertrouwde Microsoft Edge-functies als de Hub kunnen gebruikers het web organiseren op een manier waar ruis naar de achtergrond verdwijnt, zodat het makkelijker is om onderweg inhoud te zoeken, bekijken en beheren. Microsoft Edge is zo ontworpen dat Windows 10-gebruikers op hun eigen manier kunnen browsen, waar ze ook zijn, zonder processen te verstoren. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | Excel-spreadsheets zien er beter uit dan ooit op uw tablet en telefoon. U kunt er zeker van zijn dat wanneer u werkbladen bewerkt of maakt, ze er op computers, Macs, tablets en telefoons precies zo uitzien zoals u wilt. U bent in een handomdraai aan de slag dankzij een vertrouwd Office-uiterlijk en -gevoel en een intuïtieve aanraakervaring.<p><p>Deze app kan worden gebruikt als een app met meerdere identiteiten voor Android en iOS. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.excel),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Power Automate**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | Neem de volledige kracht van Power Automate mee in uw broekzak. Met Power Automate maakt u geautomatiseerde werkstromen tussen uw favoriete apps en services om uw zaken te stroomlijnen, tijd te besparen en efficiënter te werken.| [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.flow),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
-| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | Biedt een oplossing voor browsen op het web die wordt beheerd door uw zakelijke IT-beheerder met Intune Mobile Application Management-beleid. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
+| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | Biedt een oplossing voor browsen op het web die wordt beheerd door uw zakelijke IT-beheerder met Intune Mobile Application Management-beleid.<p>**OPMERKING:** de Intune Managed Browser wordt buiten gebruik gesteld. Gebruik Microsoft Edge als uw beveiligde Intune-browser. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
 | **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Met Microsoft Invoicing is het voor kleine bedrijven makkelijker om professioneel ogende schattingen en facturen te maken, snel te worden betaald en tijd te besparen. Of u nu op kantoor bent of onderweg, met Invoicing maakt en verzendt u snel facturen, ontvangt u betalingen online en besteedt u minder tijd aan administratie, terwijl u uw geld in de gaten houdt. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira),<br>[App Store-link (iOS)](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala is een mobiele app en service die is ontworpen voor communicatie en werkbeheer in een grote groep. Met Kaizala is het, ongeacht locatie, eenvoudiger om te verbinden en werk te coördineren in en met uw waardeketen, waaronder medewerkers in het veld, verkopers, partners en klanten. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer),<br>[App Store-link (iOS)](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Met Microsoft Launcher (voorheen bekend als Arrow Launcher) past u uw Android-apparaat aan uw stijl aan met achtergronden, themakleuren, pictogrampakketten en meer. Met een Microsoft-account of werk/school-account hebt u toegang tot uw agenda, documenten en recente activiteiten in uw gepersonaliseerde feed. U kunt zelfs foto's, documenten en webpagina's openen op uw Windows PC. Zo bent u productief op al uw apparaten. | [Google Play-link (Android)](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  

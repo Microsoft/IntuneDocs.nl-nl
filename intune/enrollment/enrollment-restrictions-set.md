@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547824"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971859"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -82,12 +82,13 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
    > Windows 10 verstrekt niet het rev-nummer tijdens het inschrijven. Als u bijvoorbeeld 10.0.17134.100 invoert en het apparaat nummer 10.0.17134.174 heeft, wordt het apparaat geblokkeerd.
 
 6. Kies onder **Persoonlijk eigendom** de optie **Toestaan** voor de platforms die u wilt toestaan als apparaten in persoonlijk eigendom.
-7. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
-8. Kies **Groepen selecteren om op te nemen** en gebruik vervolgens het zoekvak om groepen te vinden die u wilt opnemen in deze beperking. De beperking geldt alleen voor de groepen waaraan deze is toegewezen. Als u geen beperking aan ten minste één groep toewijst, heeft deze bewerking dit geen effect. Kies dan de optie **Selecteren**. 
+7. Voer onder **Apparaatfabrikant** een door komma's gescheiden lijst in van de fabrikanten die u wilt blokkeren.
+8. Kies **Volgende** om naar de pagina **Toewijzingen** te gaan.
+9. Kies **Groepen selecteren om op te nemen** en gebruik vervolgens het zoekvak om groepen te vinden die u wilt opnemen in deze beperking. De beperking geldt alleen voor de groepen waaraan deze is toegewezen. Als u geen beperking aan ten minste één groep toewijst, heeft deze bewerking dit geen effect. Kies dan de optie **Selecteren**. 
     ![Schermopname voor het kiezen van platforminstellingen](./media/enrollment-restrictions-set/select-groups.png)
-9. Selecteer **Volgende** om naar de pagina **Controleren en maken** te gaan.
-10. Selecteer **Maken** om de beperking te maken.
-11. De nieuwe beperking wordt gemaakt met een prioriteit boven de standaardwaarde. U kunt [de prioriteit wijzigen](#change-enrollment-restriction-priority).
+10. Selecteer **Volgende** om naar de pagina **Controleren en maken** te gaan.
+11. Selecteer **Maken** om de beperking te maken.
+12. De nieuwe beperking wordt gemaakt met een prioriteit boven de standaardwaarde. U kunt [de prioriteit wijzigen](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Een beperking voor apparaatlimiet maken

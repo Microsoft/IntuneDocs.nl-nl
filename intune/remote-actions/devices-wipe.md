@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991777"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812465"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -88,7 +88,7 @@ In de volgende tabellen wordt beschreven welke gegevens worden verwijderd en wat
 
 |Gegevenstype|iOS|
 |-------------|-------|
-|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|**Apps die zijn geïnstalleerd met de bedrijfsportal-app:** Voor apps die zijn vastgemaakt aan het beheerprofiel, worden alle app-gegevens en de app zelf verwijderd. Hiertoe behoren ook de apps die oorspronkelijk zijn geïnstalleerd vanuit de App Store en later worden beheerd als bedrijfs-apps. <br /><br /> **Microsoft-apps die gebruikmaken van MAM en zijn die geïnstalleerd vanuit de App Store:** Voor apps die niet worden beheerd door de bedrijfsportal, worden de gegevens verwijderd van bedrijfs-apps die in de lokale opslagruimte van de app worden beveiligd met MAM-versleuteling (Mobile Application Management). Gegevens die door MAM-versleuteling buiten de app worden beveiligd, blijven versleuteld en onbruikbaar, maar worden niet verwijderd. Gegevens van persoonlijke apps en de apps worden niet verwijderd.|
+|Bedrijfs-apps en de bijbehorende gegevens die door Intune zijn geïnstalleerd|**Apps die zijn geïnstalleerd met de bedrijfsportal-app:** Voor apps die zijn vastgemaakt aan het beheerprofiel, worden alle app-gegevens en de app zelf verwijderd. Deze apps bevatten apps die oorspronkelijk zijn geïnstalleerd vanuit de App Store en later worden beheerd als bedrijfs-apps, tenzij de app is geconfigureerd om niet te worden verwijderd bij apparaatverwijdering. <br /><br /> **Microsoft-apps die gebruikmaken van MAM en zijn die geïnstalleerd vanuit de App Store:** Voor apps die niet worden beheerd door de bedrijfsportal, worden de gegevens verwijderd van bedrijfs-apps die in de lokale opslagruimte van de app worden beveiligd met MAM-versleuteling (Mobile Application Management). Gegevens die door MAM-versleuteling buiten de app worden beveiligd, blijven versleuteld en onbruikbaar, maar worden niet verwijderd. Gegevens van persoonlijke apps en de apps worden niet verwijderd.|
 |Instellingen|Configuraties die zijn ingesteld door Intune-beleid, worden niet meer afgedwongen. Gebruikers kunnen de instellingen wijzigen.|
 |Instellingen voor Wi-Fi en VPN-profiel|Verwijderd.|
 |Instellingen van certificaatprofiel|Certificaten worden verwijderd en ingetrokken.|

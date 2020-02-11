@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 780a248f16a8a5028875c9c2401921ea23d0af24
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207159"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540925"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Een rol aan een Intune-gebruiker toewijzen
 
@@ -32,7 +32,7 @@ Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volge
 - **Globale beheerder**
 - **Intune-servicebeheerder**
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum ](https://go.microsoft.com/fwlink/?linkid=2109431)**Rollen** > **Alle rollen**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Tenantbeheer** > **Rollen** > **Alle rollen**.
 
 2. Kies op de blade **Intune-rollen - Alle rollen** voor de ingebouwde rol die u wilt toewijzen.
 

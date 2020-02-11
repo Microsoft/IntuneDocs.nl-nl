@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563607"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755371"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Ingebouwde apps toevoegen aan Microsoft Intune
 
@@ -39,18 +39,27 @@ In eerdere versies van de Intune-console heeft Intune verschillende standaard be
 Voer de volgende stappen uit om een ingebouwde app toe te voegen aan uw beschikbare apps in Microsoft Intune:
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. In het app-venster **Toevoegen** in de lijst **App-type** selecteert u **Ingebouwde app**.
-4. Selecteer **App selecteren**.
-5. In het deelvenster **Ingebouwde app** selecteert u de apps die u wilt opnemen.
-6. Selecteer **Toevoegen** in het deelvenster **App toevoegen**.
+3. Selecteer in het deelvenster **Een app-type selecteren** onder de beschikbare typen **Store-app** de optie **Ingebouwde app**.
+4. Klik op **Selecteren**. De stappen **App toevoegen** worden weergegeven.
+5. Klik op de pagina **Ingebouwde apps selecteren** op **App selecteren** om de apps te selecteren die u wilt opnemen.
+6. Selecteer de ingebouwde apps die u wilt opnemen. 
+7. Nadat u de apps hebt geselecteerd, klikt u op **Selecteren** in het deelvenster **Ingebouwde apps selecteren**.
+8. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
+9. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT](~/fundamentals/scope-tags.md) voor meer informatie.
+10. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+11. Selecteer de groepstoewijzingen voor de app. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](~/fundamentals/groups-add.md) voor meer informatie. 
+12. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+13. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
 
+    De blade **Overzicht** van de app die u hebt gemaakt, wordt weergegeven.
 
 ## <a name="configure-app-information"></a>App-gegevens configureren
 
 U kunt informatie over de ingebouwde app aanpassen. Aan de hand van deze informatie kunt u de app vinden in Intune en kunnen gebruikers de app vinden in de bedrijfsportal.
 1. Selecteer **Apps** > **Alle apps** en selecteer de ingebouwde app die u wilt aanpassen.  
    Er wordt een deelvenster voor de ingebouwde app weergegeven.
-2. Selecteer **Eigenschappen** > **Configureren**.
+2. Selecteer **Eigenschappen**.
+3. Selecteer **Bewerken** naast **App-gegevens**.
 4. In het venster **App-gegevens** kunt u de volgende informatie aanpassen:
     - **Naam**: Voer de naam van de ingebouwde app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving**: Voer een beschrijving in voor de app. 
@@ -63,8 +72,10 @@ U kunt informatie over de ingebouwde app aanpassen. Aan de hand van deze informa
     - **Eigenaar**: Voer een naam in voor de eigenaar van deze app (bijvoorbeeld *HR-afdeling*) (optioneel).
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
     - **Het pictogram Uploaden**: Upload een pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-4. Selecteer **OK**.
-5. In het venster **Eigenschappen** selecteert u **Opslaan**.
+5. Klik op **Beoordelen en opslaan** om de pagina **Beoordelen en maken** weer te geven. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+13. Klik wanneer u klaar bent op **Opslaan** om de app in Intune bij te werken.
+
+    De blade **Overzicht** van de app die u hebt gemaakt, wordt weergegeven.
 
 ## <a name="next-steps"></a>Volgende stappen
 

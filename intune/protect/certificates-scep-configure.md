@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886000"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966382"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Infrastructuur configureren om SCEP te ondersteunen in Intune
 
@@ -378,6 +378,32 @@ De Microsoft Intune Certificate Connector wordt geïnstalleerd op server waarop 
 5. Wanneer om het clientcertificaat voor de Certificate Connector wordt gevraagd, kiest u **Selecteren** en selecteert u het **clientverificatiecertificaat** dat u op uw NDES-server hebt geïnstalleerd tijdens stap 3 van de procedure [Certificaten installeren en verbinden op de server waarop NDES wordt gehost](#install-and-bind-certificates-on-the-server-that-hosts-ndes) die eerder in dit artikel is beschreven.
 
    Nadat u het clientverificatiecertificaat hebt geselecteerd, wordt u teruggevoerd naar het gebied **Clientcertificaat voor Microsoft Intune Certificate Connector**. Hoewel het certificaat dat u hebt geselecteerd niet wordt weergegeven, selecteert u **Volgende** om de eigenschappen van dat certificaat weer te geven. Selecteer **Volgende** en vervolgens **Installeren**.
+
+> [!NOTE]
+> De volgende wijzigingen moeten worden aangebracht voor GCC High-tenants voordat de Intune Certificate Connector wordt gestart.
+> 
+> Breng wijzigingen aan in de twee onderstaande configuratiebestanden, waarmee de service-eindpunten voor de GCC High-omgeving worden bijgewerkt. U ziet dat door deze updates de URI van het achtervoegsel **.com** in het achtervoegsel **.us** wordt gewijzigd. Er zijn in totaal drie URI-updates, twee updates in het configuratiebestand NDESConnectorUI.exe. config en één update in het bestand NDESConnector.exe.config.
+> 
+> - Bestandsnaam: <install_Path>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   Voorbeeld: (%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - Bestandsnaam: <install_Path>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   Voorbeeld: (%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> Als deze bewerkingen niet worden voltooid, krijgt GCC High-tenants de volgende fout: "Toegang geweigerd" "U bent niet gemachtigd om deze pagina weer te geven"
 
 6. Nadat de wizard is voltooid, maar voordat de wizard wordt gesloten, klikt u op **Gebruikersinterface van certificaatconnector starten**.
 

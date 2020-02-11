@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564141"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755388"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toevoegen aan Android Enterprise-apparaten met Intune
 
@@ -59,19 +59,41 @@ Er zijn twee manieren om beheerde Google Play Store-apps te zoeken en goed te ke
 1. Rechtstreeks in de Intune-console: zoek apps in de Store en keur ze goed in een weergave die wordt gehost binnen Intune. De weergave is direct beschikbaar in de Intune-console en u hoeft zich dus niet opnieuw te verifiëren met een ander account.
 1. In de console van Beheerd Google Play: u kunt ook de console van Beheerd Google Play rechtstreeks openen en daar apps goedkeuren. Zie [Een beheerde Google Play-app met Intune synchroniseren](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune) voor meer informatie.  Hiervoor is een afzonderlijke aanmelding vereist met het account dat u hebt gebruikt om uw Intune-tenant te verbinden met Beheerd Google Play.
 
-
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Een beheerde Google Play Store-app rechtstreeks toevoegen in de Intune-console
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
-4. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
-5. Selecteer **Search Play Store** in de Google Play catalogus.
-6. Gebruik het zoekvak om te zoeken naar apps die u wilt beheren.
-7. Klik op **Goedkeuren** om de app goed te keuren in Beheerd Google Play en klik op **Goedkeuren** om de app-machtigingen te accepteren.
-8. Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** in het venster Instellingen voor goedkeuring en klik vervolgens op **Opslaan**. Als u deze optie niet kiest, moet u handmatig alle nieuwe machtigingen goedkeuren als de app-ontwikkelaar een update publiceert. Hierdoor worden installaties en updates van de app gestopt totdat de machtigingen zijn goedgekeurd. Daarom wordt het aanbevolen de optie voor het automatisch goedkeuren van nieuwe machtigingen te selecteren. 
-9. Klik op **OK** om de app(s) op te nemen die u hebt goedgekeurd.
-10. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service.
+3. Selecteer in het deelvenster **Een app-type selecteren** onder de beschikbare typen **Store-app** de optie **Beheerde Google Play-app**.
+4. Klik op **Selecteren**. De **Beheerde Google Play** App Store wordt weergegeven.
+
+    > [!NOTE]
+    > Uw Intune-tenantaccount moet zijn verbonden met uw Android Enterprise-account om door beheerde Google Play Store-apps te kunnen bladeren. Zie [Uw Intune-account verbinden met uw Beheerde Google Play-account](../enrollment/connect-intune-android-enterprise.md) voor meer informatie.
+
+5. Selecteer een app om de details van de app weer te geven.
+6. Op de pagina waarop de app wordt weergegeven, klikt u op **Goedkeuren**. Er wordt een venster voor de app geopend, waarin u om toestemming wordt gevraagd voor het uitvoeren van verschillende bewerkingen door de app.
+7. Selecteer **Goedkeuren** om de app-machtigingen te accepteren en door te gaan.
+8. Selecteer **Goedgekeurd houden wanneer de app nieuwe machtigingen aanvraagt** in het venster **Instellingen voor goedkeuring** en klik vervolgens op **Gereed**. 
+
+    > [!IMPORTANT]
+    > Als u deze optie niet kiest, moet u handmatig alle nieuwe machtigingen goedkeuren als de app-ontwikkelaar een update publiceert. Hierdoor worden installaties en updates van de app gestopt totdat de machtigingen zijn goedgekeurd. Daarom wordt het aanbevolen de optie voor het automatisch goedkeuren van nieuwe machtigingen te selecteren. 
+
+9. Klik op **Selecteren** om de app te selecteren.
+10. Klik boven aan de blade op **Synchroniseren** om de app te synchroniseren met de Beheerde Google Play-service.
+11. Klik op **Vernieuwen** om de lijst met apps bij te werken en de zojuist toegevoegde app weer te geven.
+
+### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Aanvullende app-instellingen toevoegen aan een beheerde Google Play Store-app
+1. Als u meer app-gegevens moet toevoegen, selecteert u de app in de lijst met apps.
+2. Klik op **Eigenschappen** > **Bewerken** naast **App-gegevens**. De pagina **App-gegevens** wordt weergegeven.
+3. Voeg in het deelvenster **App-gegevens** de app-gegevens toe:
+    - **Categorie**: Selecteer een of meer ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Selecteer deze optie om het app-pakket prominent weer te geven op de hoofdpagina van de bedrijfsportal wanneer gebruikers naar apps bladeren.
+    - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
+    - **Ontwikkelaar**: Voer de naam in van de app-ontwikkelaar (optioneel).
+    - **Eigenaar**: Voer een naam in voor de eigenaar van deze app, bijvoorbeeld *Hr-afdeling* (optioneel).
+    - **Opmerkingen**: Voer de opmerkingen in die u aan deze app wilt koppelen (optioneel).
+4. Klik op **Beoordelen en opslaan** om de pagina **Beoordelen en opslaan** weer te geven. 
+5. Klik wanneer u klaar bent op **Opslaan** om de app in Intune bij te werken.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Een beheerde Google Play Store-app toevoegen in de beheerde Google Play-console (alternatief)
 Als u liever een beheerde Google Play-app met Intune synchroniseert in plaats deze rechtstreeks met behulp van Intune toe te voegen, gebruikt u de volgende stappen.
@@ -81,7 +103,7 @@ Als u liever een beheerde Google Play-app met Intune synchroniseert in plaats de
 
 1. Ga naar de [beheerde Google Play Store](https://play.google.com/work). Meld u aan met hetzelfde account dat u hebt gebruikt om de verbinding tussen Intune en Android Enterprise te configureren.
 2. Zoek in de store naar de app die u wilt toewijzen met behulp van Intune en selecteer deze.
-3. Op de pagina waarop de app wordt weergegeven, selecteert u **Goedkeuren**.  
+3. Op de pagina waarop de app wordt weergegeven, klikt u op **Goedkeuren**.  
     In het volgende voorbeeld is de app van Microsoft Excel gekozen.
 
     ![De knop Goedkeuren in de beheerde Google Play Store](./media/apps-add-android-for-work/approve.png)
@@ -109,20 +131,22 @@ Er zijn twee manieren om LOB-apps toe te voegen aan Beheerd Google Play:
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
-4. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
-5. Selecteer **Privé-apps** in de Google Play-catalogus.
-6. Klik op de knop **+** om een nieuwe app toe te voegen
-7. Voer een app-titel en APK-pakket in voor de app
-8. Klik op **Maken**
-9. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps
-10. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
+3. Selecteer in het deelvenster **Een app-type selecteren** onder de beschikbare typen **Store-app** de optie **Beheerde Google Play-app**.
+4. Klik op **Selecteren**. De **Beheerde Google Play** App Store wordt weergegeven in Intune.
+5. Selecteer **Privé-apps** (naast het pictogram *Vergrendelen*) in het Google Play-venster. 
+6. Klik op de knop **+** rechts onderaan om een nieuwe app toe te voegen.
+7. Voeg een **Titel** toe voor de app en klik op **APK uploaden** om het app-pakket toe te voegen.
+8. Klik op **Maken**.
+9. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps.
+10. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. 
+
+    > [!NOTE]
+    > Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
 
 Zie het volgende ondersteuningsartikel van Google voor meer informatie over beheerde Google Play-privé-apps, waaronder veelgestelde vragen: https://support.google.com/googleplay/work/answer/9146439
 
->[!NOTE]
+>[!IMPORTANT]
 >Privé-apps die met deze methode worden toegevoegd, kunnen nooit openbaar worden gemaakt. Gebruik deze publicatiemethode daarom alleen als u zeker weet dat deze app altijd privé zal blijven voor uw organisatie.
-  
 
 ### <a name="managed-google-play-private-lob-app-publishing-using-the-google-developer-console"></a>Privé-LOB-apps in de beheerde Google Play Store publiceren met de Google-console voor ontwikkelaars
 
@@ -151,13 +175,17 @@ Webkoppelingen worden geopend met Microsoft Edge of een andere browser-app die u
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. In de vervolgkeuzelijst **App-type** selecteert u **Beheerd Google Play**.
-4. Selecteer **Beheerd Google Play - Openen** om de beheerde Google Play-catalogus te openen.
-5. Selecteer **Web-apps** in de Google Play-catalogus.
-6. Klik op de knop **+** om een nieuwe app toe te voegen
-7. Geef de vereiste gegevens op en klik op **Maken**
-8. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps
-9. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. Het kan enkele minuten duren voordat privé-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
+3. Selecteer in het deelvenster **Een app-type selecteren** onder de beschikbare typen **Store-app** de optie **Beheerde Google Play-app**.
+4. Klik op **Selecteren**. De **Beheerde Google Play** App Store wordt weergegeven in Intune.
+5. Selecteer **Web-apps** (naast het *wereldbolpictogram*) in het Google Play-venster.
+6. Klik op de knop **+** rechts onderaan om een nieuwe app toe te voegen.
+7. Voeg een **titel** voor de app en de **URL** van de web-app toe, selecteer hoe de app moet worden weergegeven en selecteer een app-pictogram.
+8. Klik op **Maken**.
+9. Sluit het deelvenster Beheerde Google Play als u klaar bent met het toevoegen van apps.
+10. Klik op **Synchroniseren** in het deelvenster **App-app** om te synchroniseren met de Beheerd Google Play-service. 
+
+    > [!NOTE]
+    > Het kan enkele minuten duren voordat web-apps beschikbaar zijn voor synchronisatie. Als de app niet wordt weergegeven wanneer u de eerste keer een synchronisatie uitvoert, wacht u enkele minuten en start u een nieuwe synchronisatie.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Een beheerde Google Play Store-app met Intune synchroniseren
 

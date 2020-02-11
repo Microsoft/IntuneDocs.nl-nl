@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558172"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971786"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Zelfstudie: De zakelijke Apple-apparaatinschrijvingsfuncties in Apple Business Manager (ABM) gebruiken om iOS-apparaten bij Intune in te schrijven
 Met behulp van de functies voor apparaatinschrijving in Apple Business Manager kunt u apparaten eenvoudiger inschrijven. Intune biedt ook ondersteuning voor de oudere DEP-portal (Device Enrollment Program) van Apple, maar we raden u aan opnieuw te beginnen met Apple Business Manager. Met Microsoft Intune en Apple Corporate Device Enrollment worden apparaten automatisch veilig ingeschreven wanneer gebruikers het apparaat voor de eerste keer inschakelen. U kunt apparaten daarom naar vele gebruikers verzenden zonder elk apparaat afzonderlijk te hoeven instellen. 
@@ -58,7 +58,7 @@ U maakt een apparaatinschrijvingstoken met behulp van ABM of de DEP-portal. U ge
 
 4. Kies **MDM-server toevoegen** op de pagina **Servers beheren**.
 
-5. Voer voor de **MDM-servernaam** *TestMDMServer* in en kies vervolgens **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
+5. Voer voor de **MDM-servernaam***TestMDMServer* in en kies vervolgens **Volgende**. De servernaam is voor eigen referentie en dient om de MDM-server te identificeren. Het is niet de naam of URL van de Microsoft Intune-server.
 
 6. Het dialoogvenster **Voeg &lt;servernaam&gt;** wordt geopend, met de instructie dat u uw **openbare sleutel moet uploaden**. Selecteer **Bestand kiezen...** om het .pem-bestand te uploaden en kies **Volgende**.
 
@@ -67,7 +67,7 @@ U maakt een apparaatinschrijvingstoken met behulp van ABM of de DEP-portal. U ge
 
 8. Voor **Kies actie** kiest u **Toewijzen aan server**, kiest u de &lt;Servernaam&gt; die is opgegeven voor Microsoft Intune en kiest u vervolgens **OK**. De opgegeven apparaten worden voor beheer toegewezen aan de Intune-server en er verschijnt een melding dat de **toewijzing is voltooid**.
 
-   Ga in de Apple-portal **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Toewijzingsgeschiedenis weergeven** om een lijst van apparaten en hun toewijzing aan de MDM-server te bekijken.
+   Ga in de Apple-portal naar **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Toewijzingsgeschiedenis weergeven** om een lijst van apparaten en hun toewijzing aan de MDM-server te bekijken.
 
 9. Geef in Intune in Azure Portal de Apple ID op die voor het maken van deze token is gebruikt, voor toekomstige referentie.
 
@@ -84,7 +84,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor iOS-apparaten i
 
 2. Selecteer de token die u zojuist hebt geïnstalleerd en kies **Profielen** > **Profiel maken**.
 
-3. Voer onder **Profiel maken** *TestDEPProfile* als **naam** in en geef *DEP testen voor iOS-apparaten* op als **beschrijving**. Gebruikers zien deze gegevens niet.
+3. Voer onder **Profiel maken***TestDEPProfile* als **naam** in en geef *DEP testen voor iOS-apparaten* op als **beschrijving**. Gebruikers zien deze gegevens niet.
 
 4. Kies **iOS** onder **Platform**.
 

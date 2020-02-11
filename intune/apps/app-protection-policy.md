@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036642"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971883"
 ---
 # <a name="app-protection-policies-overview"></a>Overzicht van App-beveiligingsbeleid
 
@@ -82,7 +82,7 @@ Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de 
 De platformondersteuning voor beveiligingsbeleid voor apps in Intune is afgestemd op platformondersteuning voor mobiele Office-toepassingen voor Android- en iOS-apparaten. Zie de sectie **Mobiele apps** van [Systeemvereisten voor Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) voor de details.
 
 > [!IMPORTANT]
-> De Intune-bedrijfsportalapp is vereist op het apparaat om appbeveiligingsbeleid op Android te ontvangen. Raadpleeg de [Appvereisten voor Intune-bedrijfsportaltoegang](../fundamentals/end-user-mam-apps-android.md#access-apps) voor meer informatie.
+> De Intune-bedrijfsportal-app is vereist op het apparaat om appbeveiligingsbeleid op Android te ontvangen. Raadpleeg de [Appvereisten voor Intune-bedrijfsportaltoegang](../fundamentals/end-user-mam-apps-android.md#access-apps) voor meer informatie.
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Hoe het beveiligingsbeleid voor apps app-gegevens beveiligen
 

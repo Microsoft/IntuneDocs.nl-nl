@@ -8,19 +8,19 @@ ms.service: microsoft-intune
 ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 03/26/2019
+ms.date: 01/17/2020
 ms.author: erikje
 ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e5cc7cf3661caa2b2640d9370d26402b7702d36b
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562317"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541017"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Quickstart: Automatische inschrijving voor Windows 10-apparaten instellen
 
@@ -33,7 +33,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 - Microsoft Intune-abonnement - [Registreren voor een gratis proefaccount](../fundamentals/free-trial-sign-up.md).
 - Als u de stappen in deze snelstart wilt uitvoeren, moet u eerst [een gebruiker maken](../fundamentals/quickstart-create-user.md) en [een groep maken](../fundamentals/quickstart-create-group.md).
 
-## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Aanmelden bij Intune in de Microsoft Endpoint Manager
 
 Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) aan als een globale beheerder of een Intune-servicebeheerder. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
@@ -41,16 +41,20 @@ Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.c
 
 Voor dit voorbeeld gebruikt u MDM-inschrijving, zodat zowel bedrijfsapparaten als Bring Your Own-apparaten automatisch kunnen worden ingeschreven. U gaat zich registreren voor een gratis Azure Active Directory Premium-abonnement.
 
-1. Kies in [Azure Portal](https://portal.azure.com) de opties **Azure Active Directory** > **Mobiliteit (MDM en MAM)** .
+1. Kies in het [beheercentrum van Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Alle services** > **M365 Azure Active Directory** > **Azure Active Directory** > **Mobility (MDM en MAM)** .
 2. Selecteer **Een gratis Premium-proefversie krijgen om deze functie te gebruiken**. Wanneer u deze optie selecteert, is automatische inschrijving mogelijk met de gratis proefversie van Azure Active Directory Premium. 
 
     ![De gratis proefversie van Azure Active Directory Premium selecteren](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    Kies de gratis proefversie van **Enterprise Mobility + Security E5**. Bovendien moet u ervoor kiezen om de gratis proefversie te **activeren**.
+3. Kies de gratis proefversie van **Enterprise Mobility + Security E5**. 
+4. Klik op **Gratis proefversie** > **Activeren** om de gratis proefversie te activeren.
 
     ![De gratis proefversie van Enterprise Mobility + Security E5 kiezen](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
-3. Selecteer **Microsoft Intune**. 
+    > [!NOTE]
+    > Het kan even duren voordat deze is geactiveerd. 
+
+3. Selecteer **Microsoft Intune** om Intune te configureren. 
 
     ![Microsoft Intune in de lijst kiezen](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
 
@@ -58,11 +62,14 @@ Voor dit voorbeeld gebruikt u MDM-inschrijving, zodat zowel bedrijfsapparaten al
 
     ![Selecteer Sommige in de lijst Configureren](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. Kies **Groepen selecteren** > **Contoso-testers** > **Selecteren** als toegewezen groep.
+5. Klik op **Groepen selecteren** > **Contoso-testers** > **Selecteren** als toegewezen groep.
 
     ![De in te schrijven groep selecteren](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. Selecteer **Sommige** in het **gebruikersbereik van MAM** om gegevens op apparaten van uw werknemers te beheren.
+
+    ![De in te schrijven groep selecteren](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-06.png)
+
 7. Kies **Groepen selecteren** > **Contoso-testers** > **Selecteren** als toegewezen groep. 
 8. Gebruik voor de rest van de configuratiewaarden de standaardwaarden.
 9. Kies **Opslaan**.

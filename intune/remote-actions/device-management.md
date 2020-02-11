@@ -16,13 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-redirect_url: https://docs.microsoft.com/intune
-ms.openlocfilehash: ff82b1ed70d3021c33a166c694e3efe5d10905e0
-ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
+ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75731361"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754249"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -62,7 +61,7 @@ De beschikbaarheid van de acties is afhankelijk van het apparaatplatform en de c
   - [Wissen](devices-wipe.md#wipe)
   - [Vergrendelen op afstand](device-remote-lock.md)
   - [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
-  - [Activeringsvergrendeling overslaan](device-activation-lock-bypass.md) (alleen iOS)
+  - [Activeringsvergrendeling uitschakelen](device-activation-lock-bypass.md) (alleen iOS)
   - [Nieuwe start](device-fresh-start.md) (alleen Windows)
   - [Modus Apparaat verloren](device-lost-mode.md) (alleen iOS)
   - [Apparaat zoeken](device-locate.md) (alleen iOS)

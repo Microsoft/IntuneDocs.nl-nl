@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206700"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812376"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
 
@@ -31,7 +31,11 @@ U maakt een profiel en dit omvat alle instellingen die u hebt ingevoerd. De volg
 In dit artikel ziet u hoe u een profiel kunt toewijzen, en krijgt u informatie over het gebruik van bereiktags in uw profielen.
 
 > [!NOTE]  
-> Wanneer een profiel wordt verwijderd of niet meer is toegewezen aan een apparaat, behoudt de instelling mogelijk de bestaande waarde. De instelling wordt niet teruggezet naar een standaardwaarde. Als u de instelling wilt wijzigen in een andere waarde, maakt u een nieuw profiel en wijst u dit toe.
+> Wanneer een profiel wordt verwijderd of niet meer aan een apparaat is toegewezen, kunnen er verschillende dingen gebeuren, afhankelijk van de instellingen in het profiel. De instellingen zijn gebaseerd op CSP's en elke CSP kan de verwijdering van het profiel op een andere manier afhandelen. Een instelling kan bijvoorbeeld de bestaande waarde blijven gebruiken en niet terugkeren naar een standaardwaarde. Het gedrag wordt bepaald door elke CSP in het besturingssysteem. Zie [Naslaginformatie Configuration Service providers (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) voor een lijst met Windows-CSP's.
+>
+> Als u een instelling wilt wijzigen in een andere waarde, maakt u een nieuw profiel, configureert u de instelling in **Niet geconfigureerd** en wijst u het profiel toe. Wanneer het profiel op het apparaat is toegepast, moeten gebruikers de instelling kunnen wijzigen in de gewenste waarde.
+>
+> Bij het configureren van deze instellingen raden we aan om eerst naar een testgroep te implementeren. Zie [Een implementatie plan maken](../fundamentals/planning-guide-rollout-plan.md) voor meer advies over Intune-implementaties.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 

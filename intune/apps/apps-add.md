@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956213"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755269"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune 
 
@@ -74,10 +74,10 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 
 <sup>1</sup> Zie [Informatie over apps met licentie](apps-add.md#understanding-licensed-apps) verderop voor meer informatie over Android Enterprise- en Android-werkprofielen.
 
-U kunt in Microsoft Intune een app toevoegen door **Apps** > **Alle apps** > **Toevoegen** te selecteren. Het deelvenster **App toevoegen** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
+U kunt in Microsoft Intune een app toevoegen door **Apps** > **Alle apps** > **Toevoegen** te selecteren. Het deelvenster **Een app-type selecteren** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
 
 >[!TIP]
-> Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS wilt installeren, voegt u de toepassing toe door in het deelvenster **App toevoegen** de optie **LOB-app** als het **app-type** te kiezen. U selecteert vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
+> Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS wilt installeren, voegt u de app toe door in het deelvenster **Een app-type selecteren** de optie **LOB-app** als het **app-type** te kiezen. U selecteert vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
 
 ## <a name="assess-app-requirements"></a>De app-vereisten beoordelen
 Als IT-beheerder moet u niet alleen vaststellen welke apps door de groep moeten worden gebruikt, maar moet u ook bepalen over welke functies elke groep en subgroep moet beschikken. U bepaalt voor elke app welke platformen er moeten worden gebruikt, welke gebruikersgroepen de app nodig hebben, welk configuratiebeleid van toepassing is voor die groepen en welk beveiligingsbeleid moet worden toegepast.  

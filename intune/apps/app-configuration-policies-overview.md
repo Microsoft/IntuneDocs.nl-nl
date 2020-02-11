@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885798"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812483"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
@@ -95,8 +95,8 @@ U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
 
 U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps. Behalve met de onderstaande stappen, kunt u ook toegang krijgen tot de logboeken van beheerde apps met behulp van Microsoft Edge. Zie [Met Microsoft Edge in iOS logboeken voor beheerde apps openen](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs) voor meer informatie.
 
-1. Download en installeer **Intune Managed Browser** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
-2. Start **Intune Managed Browser** en selecteer **about** > **intunehelp** in de navigatiebalk.
+1. Download en installeer **Microsoft Edge** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
+2. Start **Microsoft Edge** en selecteer **Info** > **Help bij Intune** in de navigatiebalk.
 3. Klik op **Aan de slag**.
 4. Klik op **Logboeken delen**.
 5. Gebruik de e-mail-app van uw keuze om de logboeken naar uzelf te verzenden zodat deze op uw pc kunnen worden weergegeven. 
@@ -139,8 +139,8 @@ De configuratiedetails van uw toepassing moeten voldoen aan het toepassingsconfi
 
 U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
 
-1. Download en installeer **Intune Managed Browser** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
-2. Start **Intune Managed Browser** en selecteer **about** > **intunehelp** in de navigatiebalk.
+1. Download en installeer **Microsoft Edge** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
+2. Start **Microsoft Edge** en selecteer **Info** > **Help bij Intune** in de navigatiebalk.
 3. Klik op **Aan de slag**.
 4. Klik op **Logboeken delen**.
 5. Gebruik de e-mail-app van uw keuze om de logboeken naar uzelf te verzenden zodat deze op uw pc kunnen worden weergegeven. 

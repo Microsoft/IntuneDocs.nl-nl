@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205001"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755452"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>App-configuratiebeleidsregels toevoegen voor beheerde Android Enterprise-apparaten
 
@@ -34,21 +34,43 @@ App-configuratiebeleidsregels in Microsoft Intune leveren instellingen voor behe
 > [!NOTE]  
 > Niet elke app ondersteunt app-configuratie. Vraag aan de app-ontwikkelaar of app-configuratiebeleidsregels worden ondersteund in de app.
 
-1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Apps** > **App-configuratiebeleid** >  **Toevoegen** > **Beheerde apparaten**.
-2. Voer de volgende eigenschappen in:
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Kies de opties **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apparaten**. U kunt kiezen tussen **Beheerde apparaten** en **Beheerde apps**. Zie [Apps die app-configuratie ondersteunen](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration) voor meer informatie.
+3. Stel op de pagina **Basisinformatie** de volgende gegevens in:
+    - **Naam**: de naam van het profiel zoals deze in Azure Portal wordt weergegeven.
+    - **Beschrijving**: de beschrijving van het profiel dat wordt weergegeven in Azure Portal.
+    - **Type apparaatinschrijving** - deze instelling is ingesteld op **Beheerde apparaten**.
+4. Selecteer **Android Enterprise** als het **Platform**.
+5. Klik op **App selecteren** naast **Beoogde app**. Het deelvenster **Gekoppelde app** wordt weergegeven. 
+6. Kies in het deelvenster **Gekoppelde app** de beheerde app die u wilt koppelen aan het configuratiebeleid en klik op **OK**.
+7. Klik op **Volgende** om de pagina **Instelling** weer te geven.
+8. Klik op **Toevoegen** om het deelvenster **Machtigingen toevoegen** weer te geven.
+9. Klik op de machtigingen die u wilt overschrijven. De verleende machtigingen overschrijven het beleid Standaardapp-machtigingen voor de geselecteerde apps.
+10. Stel de **Machtigingsstatus** in voor elke machtiging. U kunt kiezen uit **Vragen**, **Automatisch verlenen** of **Automatisch weigeren**. Zie [Android Enterprise-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune](~/protect/compliance-policy-create-android-for-work.md) voor meer informatie over machtigingen.
+11. Selecteer in de vervolgkeuzelijst de **Indeling van de configuratie-instellingen**. Selecteer een van de volgende methoden om configuratiegegevens toe te voegen:
+    - **Configuration Designer gebruiken**
+    - **JSON-gegevens invoeren**<br><br>
+    Zie [Configuration Designer gebruiken](#use-the-configuration-designer) voor meer informatie over het gebruik van Configuration Designer. Zie [JSON-gegevens invoeren](#enter-json-data) voor meer informatie over het invoeren van XML-gegevens. 
+12. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+13. Selecteer in de vervolgkeuzelijst naast **Toewijzen aan** de optie **Geselecteerde groepen**, **Alle gebruikers**, **Alle apparaten** of **Alle gebruikers en alle apparaten** om het app-configuratiebeleid aan toe te wijzen.
 
-    - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **Android Enterprise Nine Work-app-beleid voor het hele bedrijf**.
-    - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **Type apparaatinschrijving**: Deze instelling is ingesteld op **Beheerde apparaten**.
-    - **Platform**: Selecteer **Android**.
+    ![Schermafbeelding van Beleidstoewijzingen op het tabblad Opnemen](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. Selecteer **Gekoppelde app**. Kies de Android-app waaraan dit app-configuratiebeleid moet worden gekoppeld. Selecteer in de lijst met [beheerde Google Play-apps de apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune](~/apps/apps-add-android-for-work.md).
-4. Selecteer **Machtigingen**. U kunt configuraties instellen door gebruik te maken van:
+14. Selecteer **Alle gebruikers** in de vervolgkeuzelijst.
 
-    - [Configuration Designer](#use-the-configuration-designer)
-    - [JSON-editor](#enter-the-json-editor)
+    ![Schermafbeelding van Beleidstoewijzingen met de vervolgkeuzemenu-optie Alle gebruikers](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. Selecteer **OK** > **Toevoegen**.
+15. Klik op **Groepen voor uitsluiten selecteren** om het gerelateerde deelvenster weer te geven.
+
+    ![Schermopname van Beleidstoewijzingen - het deelvenster Groepen selecteren die moeten worden uitgesloten](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
+
+    >[!NOTE]
+    >Wanneer u een groep toevoegt en als er al een andere groep is opgenomen voor een gegeven toewijzingstype, wordt deze groep vooraf geselecteerd. Dit kan niet worden gewijzigd voor andere toewijzingstypen voor opnemen. De groep die is gebruikt, kan daarom niet als een uitgesloten groep worden gebruikt.
+
+17. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven.
+18. Klik op **Maken** om het configuratiebeleid toe te voegen aan Intune.
 
 ## <a name="use-the-configuration-designer"></a>Configuration Designer gebruiken
 
@@ -92,7 +114,7 @@ Gebruik voor Android-apparaten de volgende sleutel-/waardeparen:
    > U moet Outlook voor Android 2.2.222 en hoger, Word, Excel, PowerPoint voor Android 16.0.9327.1000 en hoger, of OneDrive voor Android 5.28 en hoger gebruiken, wanneer alleen organisatieaccounts met meerdere identiteiten zijn toegestaan.<p></p>
    > Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd.<p></p>
 
-## <a name="enter-the-json-editor"></a>De JSON-editor invoeren
+## <a name="enter-json-data"></a>JSON-gegevens invoeren
 
 Bepaalde configuratie-instellingen voor apps (zoals apps met bundeltypen) kunnen niet worden geconfigureerd met Configuration Designer. Gebruik de JSON-editor voor deze waarden. Instellingen worden automatisch aan apps geleverd wanneer de app wordt geïnstalleerd.
 

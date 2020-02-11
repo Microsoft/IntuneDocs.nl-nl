@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 66abce3b3dd2adc645695c9aab5fe6729713bbdc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 40462763aa010ccd788223690ec285eb02d1d11c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71301804"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755120"
 ---
 
-1. Meld u aan bij [Azure Portal](https://portal.azure.com).  
-2. Selecteer **Alle services** > **Intune**. Intune bevindt zich in de sectie **Controle en beheer**.  
-3. Selecteer **Client-apps** > **Apps**.
-4. Zoek en selecteer uw app in de lijst met apps.  
-5. Kies **Eigenschappen** in de blade **Overzicht**.  
-6. Selecteer **App-pakketbestand**.  
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps**.
+3. Zoek en selecteer uw app in de lijst met apps.  
+4. Selecteer **Eigenschappen** onder **Beheren** in het app-deelvenster.
+5. Selecteer **Bewerken** naast **App-gegevens**.  
+6. Klik op het vermelde bestand naast **Een bestand selecteren dat moet worden bijgewerkt**. Het deelvenster **App-pakketbestand** wordt weergegeven.
 7. Klik op het mappictogram en blader naar de locatie van uw bijgewerkte app-bestand. Selecteer **Openen**. De app-gegevens worden bijgewerkt met de pakketgegevens.  
-8. Controleer of de **App-versie** overeenkomt met het bijgewerkte app-pakket.  
+8. Controleer of de **App-versie** overeenkomt met het bijgewerkte app-pakket.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563416"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755065"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Quickstart: Een client-app toevoegen en toewijzen
 
@@ -45,20 +45,18 @@ U kunt een app opnemen zodat u met Intune aspecten van de app kunt beheren.
 
 Gebruik de volgende stappen om een app aan Intune toe te voegen:
 1. Selecteer in [Intune](https://aka.ms/intuneportal) de opties **Apps** > **Alle apps** > **Toevoegen**. 
-2. Selecteer **Windows 10** in de sectie **Office 365-suite** van de vervolgkeuzelijst **App-type**.
-3. Selecteer **App-suite configureren** om de Office-apps te selecteren die u wilt toewijzen aan de Intune-gebruiker.
-4. Klik op **OK** om de standaard geselecteerde apps te accepteren.
-5. Selecteer **Gegevens over app-suite**.
-6. Voer **Microsoft Office 365-app-suite** als **suitenaam** in.
-7. Voer de **Microsoft Office 365-app-suite** als **suitebeschrijving** in.
-8. Klik op **Ja** naast de optie **Deze weergeven als aanbevolen app in de bedrijfsportal**.
-9. Klik op **OK**.
-
-    ![Schermopname van app-gegevens toevoegen](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. Selecteer **Instellingen voor app-suite**.
-11. Selecteer in de vervolgkeuzelijst **Kanaal bijwerken** **Maandelijks**.
-12. Klik op **OK** > **Toevoegen**.
+2. Selecteer **Windows 10** in het gedeelte **Office 365-suite** van het deelvenster **Een app-type selecteren**.
+3. Klik op **Selecteren**. De stappen **App toevoegen** worden weergegeven.
+4. Bevestig de standaardgegevens op de pagina **Gegevens over de app-suite**.
+5. Klik op **Volgende** om de pagina **App-suite configureren** weer te geven.
+6. Selecteer naast **Updatekanaal** de optie **Maandelijks** in de vervolgkeuzelijst.
+7. Bevestig de overige standaardgegevens op de pagina ***App-suite configureren**.
+8. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
+9. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT](~/fundamentals/scope-tags.md) voor meer informatie.
+10. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+11. Selecteer de groepstoewijzingen voor de app. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](~/fundamentals/groups-add.md) voor meer informatie. 
+12. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+13. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
 
 ## <a name="assign-the-app-to-a-group"></a>De app toewijzen aan een groep
 

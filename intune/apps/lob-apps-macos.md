@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c7aa6af751e5ab3e1e3cdff6b1d2e3d6693f65df
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563929"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755167"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>LOB-apps (Line-Of-Business) voor macOS toevoegen in Microsoft Intune
 
@@ -59,7 +59,9 @@ U moet een extern hulpprogramma downloaden, het gedownloade hulpprogramma marker
 3. Gebruik de opdracht `IntuneAppUtil` in de **Intune App Wrapping Tool voor Mac** om het *.pkg*-LOB-app-bestand te verpakken vanuit een *.intunemac*-bestand.<br>
 
     Voorbeeldopdrachten om te gebruiken voor de Microsoft Intune App Wrapping Tool voor macOS:
-    
+    > [!IMPORTANT]
+    > Zorg ervoor dat het argument `<source_file>` geen spaties bevat voordat u de `IntuneAppUtil`-opdrachten uitvoert.
+
     - `IntuneAppUtil -h`<br>
     Met deze opdracht worden de gebruiksgegevens voor het hulpprogramma weergegeven.
     
@@ -69,48 +71,63 @@ U moet een extern hulpprogramma downloaden, het gedownloade hulpprogramma marker
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Met deze opdracht worden de gedetecteerde parameters en versie voor het gemaakte *.itunemac*-bestand uitgepakt.
 
-## <a name="step-1---specify-the-software-setup-file"></a>Stap 1: de locatie van het software-installatiebestand opgeven
+## <a name="select-the-app-type"></a>Het app-type selecteren
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. Selecteer in het deelvenster **App toevoegen** de optie **Line-Of-Business-app** als het **app-type**.
+3. Selecteer in het deelvenster **Een app-type selecteren** onder het app-type **Overige** de optie **Line-Of-Business-app**.
+4. Klik op **Selecteren**. De stappen **App toevoegen** worden weergegeven.
 
-## <a name="step-2---configure-the-app-package-file"></a>Stap 2: het pakketbestand van de app configureren
+## <a name="step-1---app-information"></a>Stap 1: App-gegevens
 
-1. Kies **App-pakketbestand** in het deelvenster **App toevoegen**.
-2. Klik in het deelvenster **App-pakketbestand** op de knop Bladeren en selecteer een macOS-installatiebestand met de extensie *.intunemac*.
-3. Als u klaar bent, kiest u **OK**.
+### <a name="select-the-app-package-file"></a>Het app-pakketbestand selecteren
 
+1. Klik in het deelvenster **App toevoegen** op **App-pakketbestand selecteren**. 
+2. Selecteer in het deelvenster **App-pakketbestand** de bladerknop. Selecteer vervolgens een macOS-installatiebestand met de extensie *.intunemac*.
+   De details van de app worden weergegeven.
+3. Wanneer u klaar bent, selecteert u **OK** in het deelvenster **App-pakketbestand** om de app toe te voegen.
 
-## <a name="step-3---configure-app-information"></a>Stap 3: de app-gegevens configureren
+### <a name="set-app-information"></a>App-gegevens instellen
 
-1. Kies **App-informatie** in het deelvenster **App toevoegen**.
-2. Voeg de details voor uw app toe in het deelvenster **App-gegevens**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:
-    - **Naam**: geef de naam van de app op die u wilt weergeven in de bedrijfsportal. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
-    - **Beschrijving**: typ een beschrijving voor de app die u wilt weergeven voor gebruikers in de bedrijfsportal.
-    - **Uitgever**: voer de naam van de uitgever of de app in.
+1. Voeg de details voor uw app toe op de pagina **App-gegevens**. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld.
+    - **Naam**: voer de naam van de app in zoals deze in de bedrijfsportal wordt weergegeven. Zorg ervoor dat alle app-namen die u gebruikt, uniek zijn. Als dezelfde app-naam twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
+    - **Beschrijving**: voer een beschrijving van de app in. De beschrijving wordt weergegeven in de bedrijfsportal.
+    - **Uitgever**: Voer de naam van de uitgever van de app in.
     - **Minimumversie van het besturingssysteem**: selecteer in de lijst de minimumversie van het besturingssysteem waarin de app kan worden geïnstalleerd. Als u de app toewijst aan een apparaat met een lager besturingssysteem, wordt de app niet geïnstalleerd.
-    - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: hiermee wordt de app duidelijk zichtbaar op de startpagina van de bedrijfsportal wanneer gebruikers naar apps zoeken.
-    - **Informatie-URL**: voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL**: voer de URL in van een website die privacyinformatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Ontwikkelaar**: voer de naam in van de app-ontwikkelaar (optioneel).
-    - **Eigenaar**: voer een naam in voor de eigenaar van deze app, bijvoorbeeld **HR-afdeling** (optioneel).
+    - **Categorie**: selecteer een of meer van de ingebouwde app-categorieën of selecteer een categorie die u hebt gemaakt. Met categorieën kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Geef de app prominent weer op de hoofdpagina van de bedrijfsportal wanneer gebruikers door apps bladeren.
+    - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven in de bedrijfsportal.
+    - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven in de bedrijfsportal.
+    - **Ontwikkelaar**: Voer de naam in van de app-ontwikkelaar (optioneel).
+    - **Eigenaar**: voer een naam in voor de eigenaar van deze app (optioneel). Bijvoorbeeld **HR-afdeling**.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
-    - **Logo**: upload een pictogram dat aan de app is gekoppeld. Dit is het pictogram dat samen met de app wordt weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-3. Als u klaar bent, kiest u **OK**.
+    - **Logo**: upload een pictogram dat u aan de app wilt koppelen. Het pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
+2. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
 
-## <a name="step-4---finish-up"></a>Stap 4: afronden
+## <a name="step-2---select-scope-tags-optional"></a>Stap 2: Bereiktags selecteren (optioneel)
+U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag bekijken in Intune. Zie [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT) voor uitgebreide informatie over bereiktags.
 
-1. Controleer in het deelvenster **App toevoegen** of de gegevens voor uw app juist zijn.
-2. Kies **Toevoegen** om de app te uploaden naar Intune.
+1. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. 
+2. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+
+## <a name="step-3---assignments"></a>Stap 3: Toewijzingen
+
+1. Selecteer de groepstoewijzingen **Vereist**, **Beschikbaar voor ingeschreven apparaten** of **Verwijderen** voor de app. Zie [Groepen toevoegen om gebruikers en apparaten in te delen](~/fundamentals/groups-add.md) en [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md) voor meer informatie.
+2. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. 
+
+## <a name="step-4---review--create"></a>Stap 4: beoordelen en maken
+
+1. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+2. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
+
+    De blade **Overzicht** voor de Line-Of-Business-app wordt weergegeven.
 
 De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u kiest. Zie [Apps aan groepen toewijzen](apps-deploy.md) voor hulp.
 
 > [!NOTE]
 > Als het *.pkg*-bestand meerdere apps of app-installatieprogramma's bevat, wordt met Microsoft Intune alleen gerapporteerd dat de *app* is geïnstalleerd wanneer alle geïnstalleerde apps op het apparaat zijn gedetecteerd.
 
-## <a name="step-5---update-a-line-of-business-app"></a>Stap 5: een Line-Of-Business-app bijwerken
+## <a name="update-a-line-of-business-app"></a>een Line-Of-Business-app bijwerken
 
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 

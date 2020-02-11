@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564278"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755558"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>App-configuratiebeleidsregels toevoegen voor beheerde apps zonder apparaatinschrijving
 
@@ -33,16 +33,29 @@ U kunt app-configuratiebeleidsregels gebruiken voor beheerde apps die de Intune 
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Kies de opties **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apps**.
-3. Stel de volgende details in:
-    - **Naam**  
-      De naam van het profiel die in Azure Portal wordt weergegeven.
-    - **Beschrijving**  
-      De beschrijving van het profiel die in Azure Portal wordt weergegeven.
+3. Stel op de pagina **Basisinformatie** de volgende gegevens in:
+    - **Naam**: De naam van het profiel die in Azure Portal wordt weergegeven.
+    - **Beschrijving**: De beschrijving van het profiel die in Azure Portal wordt weergegeven.
+    - **Type apparaatinschrijving**: Beheerde apps is geselecteerd.
 4. Kies **Openbare apps selecteren** of **Aangepaste apps selecteren** om de app te kiezen die u wilt configureren. Selecteer de app in de lijst met apps die u hebt goedgekeurd en die zijn gesynchroniseerd met Intune.
-5. Voor elk door de app ondersteunde configuratie-instelling typt u de **naam** en **waarde**.  
+5. Klik op **Volgende** om de pagina **Instelling** weer te geven.
+6. Voor elk door de app ondersteunde configuratie-instelling typt u de **naam** en **waarde**. 
+
+   Voor Intune App SDK-functionaliteit geschikte apps ondersteunen configuraties in sleutel-waardeparen. Raadpleeg de documentatie van elke app voor meer informatie over welke sleutel-waardeconfiguraties worden ondersteund. Houd er rekening mee dat u tokens kunt gebruiken die dynamisch worden gevuld met gegevens die zijn gegenereerd door de app. Zie [Configuratiewaarden voor het gebruik van tokens](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens) voor meer informatie. Ga voor meer informatie over app-configuratiebeleidsinstellingen van Outlook voor iOS naar [App-configuratie van Outlook voor iOS beheren met Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
     Als u een configuratie wilt verwijderen, kiest u het weglatingsteken ( **...** ) en selecteert u **Verwijderen**.  
-    
-Voor Intune App SDK-functionaliteit geschikte apps ondersteunen configuraties in sleutel-waardeparen. Raadpleeg de documentatie van elke app voor meer informatie over welke sleutel-waardeconfiguraties worden ondersteund. Houd er rekening mee dat u tokens kunt gebruiken die dynamisch worden gevuld met gegevens die zijn gegenereerd door de app. Ga voor meer informatie over app-configuratiebeleidsinstellingen van Outlook voor iOS naar [App-configuratie van Outlook voor iOS beheren met Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
+7. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+8. Klik op **Groepen selecteren die moeten worden opgenomen**.
+9. Selecteer een groep in het deelvenster **Groepen selecteren die moeten worden opgenomen** en klik op **Selecteren**.
+10. Klik op **Groepen voor uitsluiten selecteren** om het gerelateerde deelvenster weer te geven.
+11. Kies de groepen die u wilt uitsluiten en klik vervolgens op **Selecteren**.
+
+    >[!NOTE]
+    >Wanneer u een groep toevoegt en als er al een andere groep is opgenomen voor een gegeven toewijzingstype, wordt deze groep vooraf geselecteerd. Dit kan niet worden gewijzigd voor andere toewijzingstypen voor opnemen. De groep die is gebruikt, kan daarom niet als een uitgesloten groep worden gebruikt.
+
+12. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven.
+13. Klik op **Maken** om het configuratiebeleid toe te voegen aan Intune.
 
 ## <a name="configuration-values-for-using-tokens"></a>Configuratiewaarden voor het gebruik van tokens
 
@@ -57,7 +70,6 @@ Intune ondersteunt de volgende tokentypen in de configuratie-instellingen. Ander
 - \{\{userid\}\} - bijvoorbeeld 3ec2c00f-b125-4519-acf0-302ac3761822
 - \{\{username\}\} - bijvoorbeeld Jan de Vries
 - \{\{PrimarySMTPAddress\}\}- bijvoorbeeld testuser@ad.domain.com
-
 
 > [!Note]  
 > De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet worden gebruikt voor andere doeleinden.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781223"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754776"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -46,9 +46,9 @@ Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkop
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. Selecteer in het deelvenster **App toevoegen** het type **Weblink** in de vervolgkeuzelijst **App-type**.
-4. Selecteer **Configureren**.
-5. Voeg in het deelvenster **App-gegevens** de volgende gegevens toe:
+3. Selecteer in het deelvenster **Een app-type selecteren** onder de beschikbare typen **Overig** de optie **Webkoppeling**.
+4. Klik op **Selecteren**. De stappen **App toevoegen** worden weergegeven.
+5. Voeg op de pagina **App-gegevens** de volgende gegevens toe:
     - **Naam**:  voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. 
 
         > [!NOTE]
@@ -58,11 +58,17 @@ Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkop
     - **Uitgever**: voer de naam van de uitgever van de app in.
     - **App-URL**: voer de URL in van de website waarop de app wordt gehost die u wilt toewijzen.
     - **Categorie**: Selecteer een of meer ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: selecteer deze optie om het app-pakket prominent weer te geven op de hoofdpagina van de bedrijfsportal wanneer gebruikers naar apps bladeren.
+    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Selecteer deze optie om het app-pakket prominent weer te geven op de hoofdpagina van de bedrijfsportal wanneer gebruikers naar apps bladeren.
     - **Beheerde browser vereisen om deze koppeling te openen**: selecteer deze optie om aan uw gebruikers een koppeling naar een website of web-app toe te wijzen die ze in de door Intune beheerde browser kunnen openen. Deze browser moet op hun apparaat zijn geïnstalleerd.
     - **Logo**: Upload een pictogram dat aan de app wordt gekoppeld. Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-6. Selecteer **OK**.
-7. Selecteer **Toevoegen** in het deelvenster **App toevoegen**.
+6. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
+7. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT](~/fundamentals/scope-tags.md) voor meer informatie.
+8. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+9. Selecteer de groepstoewijzingen voor de app. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](~/fundamentals/groups-add.md) voor meer informatie. 
+10. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+11. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
+
+    De blade **Overzicht** van de app die u hebt gemaakt, wordt weergegeven.
 
 > [!Note]
 > Momenteel wordt de implementatie van Intune-web-apps op iOS-apparaten gekoppeld aan het beheerprofiel; dit kan niet handmatig worden verwijderd. U kunt het implementatietype in de Intune-portal wijzigen in **Verwijderen**. Daarna kunt u de web-app automatisch verwijderen. Als u de implementatie echter verwijdert voordat u de intentie van de app-toewijzing hebt gewijzigd in **Verwijderen**, bevindt de web-app zich permanent op het apparaat de registratie van het apparaat bij Intune ongedaan wordt gemaakt.

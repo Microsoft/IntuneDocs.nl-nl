@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563455"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754997"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>iOS Store-apps toevoegen aan Microsoft Intune
 
@@ -43,13 +43,17 @@ U kunt apps alleen met deze methode toewijzen als ze gratis verkrijgbaar zijn in
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. Selecteer in de lijst **App-type** onder **Store-apps** de optie **iOS**.
-4. Selecteer **Zoeken in de App Store**.
-5. Selecteer in het deelvenster **Zoeken in de App Store** de landinstelling/regio voor de App Store.
-6. Typ de naam van de app (of een deel daarvan) in het **zoekvak**.  
+3. Selecteer in het deelvenster **Een app-type selecteren** onder de beschikbare typen **Store-app** de optie **iOS Store-app**.
+4. Klik op **Selecteren**.<br>
+   De stappen **App toevoegen** worden weergegeven.
+5. Selecteer **Zoeken in de App Store**.
+6. Selecteer in het deelvenster **Zoeken in de App Store** de landinstelling/regio voor de App Store.
+7. Typ de naam van de app (of een deel daarvan) in het **zoekvak**.  
     De Store wordt doorzocht en in Intune wordt een lijst met relevante resultaten weergegeven.
-7. Selecteer de gewenste app in de lijst met resultaten en selecteer **Selecteren**.
-8. Selecteer in het deelvenster **App toevoegen** de optie **App-gegevens** om de app te configureren.
+8. Selecteer de gewenste app in de lijst met resultaten en selecteer **Selecteren**.<br>
+
+   De pagina **App-gegevens** wordt weergegeven in het deelvenster **App toevoegen**. Indien mogelijk worden er app-gegevens toegevoegd op basis van de app die u hebt geselecteerd in de Store.
+
 9. Voeg in het deelvenster **App-gegevens** de app-gegevens toe. Afhankelijk van de app die u hebt gekozen, worden bepaalde waarden in het deelvenster mogelijk automatisch ingevuld:
     - **Naam**: Voer de naam van de app in zoals deze in de bedrijfsportal moet worden weergegeven. Zorg ervoor dat u alleen unieke app-namen gebruikt. Als u twee dezelfde app-namen gebruikt, wordt voor gebruikers slechts één naam in de bedrijfsportal weergegeven.
     - **Beschrijving**: Voer een beschrijving in voor de app. Deze beschrijving wordt voor gebruikers weergegeven in de bedrijfsportal.
@@ -65,10 +69,14 @@ U kunt apps alleen met deze methode toewijzen als ze gratis verkrijgbaar zijn in
     - **Eigenaar**: Voer een naam in voor de eigenaar van deze app, bijvoorbeeld *Hr-afdeling* (optioneel). Dit veld is alleen zichtbaar voor beheerders, niet voor uw gebruikers.
     - **Opmerkingen**: Voer de opmerkingen in die u aan deze app wilt koppelen (optioneel). Dit veld is alleen zichtbaar voor beheerders en niet voor eindgebruikers.
     - **Logo**: Upload een pictogram dat u aan de app wilt koppelen (optioneel). Dit pictogram wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-10. Selecteer **OK**.
-11. Selecteer **Toevoegen**.
+10. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
+11. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT](~/fundamentals/scope-tags.md) voor meer informatie.
+12. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+13. Selecteer de groepstoewijzingen voor de app. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](~/fundamentals/groups-add.md) voor meer informatie. 
+14. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+15. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
 
-De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app kunt toewijzen aan de groepen die u selecteert.
+De blade **Overzicht** van de app die u hebt gemaakt, wordt weergegeven.
 
 ## <a name="next-steps"></a>Volgende stappen
 

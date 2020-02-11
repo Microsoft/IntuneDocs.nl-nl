@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 86d02ae1277ff2fd6dfce9bf206628f5dc1c2a84
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205969"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755313"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-apps toevoegen aan Windows 10-apparaten met Microsoft Intune
 
@@ -47,36 +47,19 @@ Voordat u apps kunt toewijzen, controleren, configureren of beveiligen, moet u z
 - **Office-versie**: kies of u de 32-bits of 64-bits versie van Office wilt toewijzen. U kunt de 32-bits versie op zowel 32-bits als 64-bits apparaten installeren, maar de 64-bits versie kan alleen worden geïnstalleerd op 64-bits apparaten.
 - **MSI verwijderen van de apparaten van eindgebruikers**: kies of u bestaande Office MSI-apps wilt verwijderen van apparaten van eindgebruikers. De installatie mislukt als er zich bestaande MSI-apps op apparaten van eindgebruikers bevinden. De te verwijderen apps zijn niet beperkt tot de apps die zijn geselecteerd voor de installatie in **App-suite configureren**, omdat hierdoor alle Office-apps (MSI) van het apparaat van de eindgebruiker worden verwijderd. Zie [Bestaande MSI-versies van Office verwijderen bij een upgrade naar Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) voor meer informatie. Wanneer u Intune Office opnieuw op de computers van uw eindgebruikers installeert, krijgen eindgebruikers automatisch dezelfde taalpakketten als bij eerdere .MSI Office installaties.
 
-## <a name="get-started"></a>Aan de slag
+## <a name="select-the-office-365-suite-app-type"></a>Het app-type Office 365 Suite selecteren
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. Selecteer **Windows 10** in het deelvenster **Apps toevoegen**, in de lijst **App-type** onder **Office 365 Suite**.
+3. Selecteer **Windows 10** in het gedeelte **Office 365-suite** van het deelvenster **Een app-type selecteren**.
+4. Klik op **Selecteren**. De stappen voor **Office 365 Suite toevoegen** worden weergegeven.
 
-## <a name="select-settings-format"></a>Indeling van instellingen selecteren
 
-Selecteer een **Indeling voor instellingen** om een configuratiemethode voor appinstellingen te kiezen. De volgende indelingsopties voor instellingen zijn beschikbaar:
-- Configuration Designer
-- XML-gegevens invoeren
-
-Wanneer u **Configuration Designer** kiest, worden in het deelvenster **App toevoegen** twee extra instellingsopties weergegeven:
-- De app-suite configureren
-- Instellingen voor app-suite
-
-<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
-
-Als u **XML-gegevens invoeren** kiest, wordt in het deelvenster **App toevoegen** de optie **XML-gegevens invoeren** weergegeven. Selecteer deze optie om het deelvenster **Configuratiebestand** weer te geven. 
-
-![Office 365 Configuration Designer toevoegen](./media/apps-add-office365/apps-add-office365-01.png)
-    
-Zie [XML-gegevens invoeren](apps-add-office365.md#enter-xml-format) hieronder voor meer informatie over de optie **XML-gegevens invoeren**.
-
-## <a name="configure-app-suite-information"></a>Gegevens over app-suite configureren
+## <a name="step-1---app-suite-information"></a>Stap 1: Gegevens over de app-suite
 
 In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze informatie kunt u het app-pakket vinden in Intune en kunnen gebruikers het app-pakket vinden in de bedrijfsportal.
 
-1. Selecteer **App-pakketgegevens** in het deelvenster **App toevoegen**.
-2. Voer in het deelvenster **App-pakketgegevens** het volgende uit:
+1. Op de pagina **Gegevens over de app-suite** kunt u de standaardwaarden bevestigen of wijzigen:
     - **Naam pakket**: voer de naam van het app-pakket in zoals deze wordt weergegeven in de bedrijfsportal. Zorg ervoor dat alle pakketnamen die u gebruikt, uniek zijn. Als dezelfde naam van een app-pakket twee keer voorkomt, wordt slechts één van de apps weergegeven voor gebruikers in de bedrijfsportal.
     - **Beschrijving pakket**: voer een beschrijving in voor het app-pakket. Hier kunt u bijvoorbeeld de apps vermelden die in het pakket zijn opgenomen.
     - **Uitgever**: Microsoft wordt weergegeven als de uitgever.
@@ -88,59 +71,75 @@ In deze stap geeft u informatie op over het app-pakket. Aan de hand van deze inf
     - **Eigenaar**: Microsoft wordt weergegeven als de eigenaar.
     - **Opmerkingen**: voer de opmerkingen in die u aan deze app wilt koppelen.
     - **Logo**: het Office 365-logo wordt samen met de app weergegeven wanneer gebruikers door de bedrijfsportal bladeren.
-3. Selecteer **OK**.
+2. Klik op **Volgende** om de pagina **App-suite configureren** weer te geven.
 
-## <a name="configure-app-suite"></a>De app-suite configureren
+## <a name="step-2---option-1-configure-app-suite-using-the-configuration-designer"></a>Stap 2: (**optie 1**) App-suite configureren met behulp van de Configuration Designer 
 
-Als u de optie **Configuration Designer** in de vervolgkeuzelijst **Instellingsindeling** hebt geselecteerd, ziet u de optie **De app-suite configureren** in het deelvenster **App toevoegen**. Selecteer de Office-apps die u wilt toewijzen aan apparaten.
+U kunt een methode kiezen voor het configureren van appinstellingen door een **Indeling van de configuratie-instellingen** te selecteren. De volgende indelingsopties voor instellingen zijn beschikbaar:
+- Configuration Designer
+- XML-gegevens invoeren
 
-1. Selecteer in het deelvenster **App toevoegen** de optie **App-pakket configureren**.
-2. Kies in het deelvenster **App-pakket configureren** de standaard-apps van Office die u wilt toewijzen aan apparaten.  
-    Daarnaast kunt u apps installeren voor de Microsoft Project Online-bureaubladclient en Microsoft Visio Online Plan 2, mits u daar licenties voor hebt.
-3. Selecteer **OK**.
+Wanneer u **Configuratie-ontwerper** kiest, worden in het deelvenster **App toevoegen** drie extra instellingsgebieden weergegeven:
+- De app-suite configureren
+- Gegevens over de app-suite
+- Eigenschappen
 
-## <a name="configure-app-suite-settings"></a>Instellingen voor app-suite configureren
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-Als u de optie **Configuration Designer** in de vervolgkeuzelijst **Instellingsindeling** hebt geselecteerd, ziet u de optie **Instellingen voor app-suite** in het deelvenster **App toevoegen**. In deze stap configureert u de installatieopties voor het app-pakket. De instellingen gelden voor alle apps die u aan het pakket hebt toegevoegd.
-
-1. Selecteer in het deelvenster **App toevoegen** de optie **Instellingen voor app-pakket**.
-2. Voer in het deelvenster **Instellingen voor app-pakket** het volgende uit:
-    - **Office-versie**: kies of u de 32-bits of 64-bits versie van Office wilt toewijzen. U kunt de 32-bits versie op zowel 32-bits als 64-bits apparaten installeren, maar de 64-bits versie kan alleen worden geïnstalleerd op 64-bits apparaten.
+1. Kies op de pagina **Configuratie van de app-suite** de optie **Configuratie-ontwerper**.
+   - **Selecteer Office-apps**: selecteer de standaard-apps van Office die u wilt toewijzen aan apparaten door de apps in de vervolgkeuzelijst te kiezen.
+   - **Selecteer andere Office-apps (licentie vereist)** : selecteer de aanvullende apps van Office die u wilt toewijzen aan apparaten en waarvoor u een licentie hebt door de apps in de vervolgkeuzelijst te kiezen. Deze apps bevatten gelicentieerde apps, zoals Microsoft Project Online Desktop Client en Microsoft Visio Online Plan 2.
+   - **Architectuur**: kies of u de **32-bits** of **64-bits** versie van Office ProPlus wilt toewijzen. U kunt de 32-bits versie op zowel 32-bits als 64-bits apparaten installeren, maar de 64-bits versie kan alleen worden geïnstalleerd op 64-bits apparaten.
     - **Updatekanaal**: kies hoe Office moet worden bijgewerkt op apparaten. Zie [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) (Overzicht van updatekanalen voor Office 365 ProPlus) voor meer informatie over de verschillende updatekanalen. U kunt kiezen uit:
         - **Maandelijks**
         - **Maandelijks (gericht)**
         - **Halfjaarlijks**
         - **Halfjaarlijks (gericht)**
 
-        Wanneer u een kanaal hebt gekozen, kunt u eventueel **Specifiek** selecteren om voor het geselecteerde kanaal een specifieke versie van Office te installeren op apparaten van eindgebruikers. Selecteer daarna welke **specifieke versie** van Office u wilt gebruiken.
-        
-        Welke versies er beschikbaar zijn, verandert in de loop van de tijd. Daarom is het mogelijk dat er bij het maken van een nieuwe implementatie nieuwere versies beschikbaar zijn en dat bepaalde oudere versies niet meer beschikbaar zijn. Huidige implementaties blijven de oudere versie implementeren, maar de versielijst wordt voortdurend per kanaal bijgewerkt.
-        
-        Voor apparaten waarop de vastgemaakte versie wordt bijgewerkt (of andere eigenschappen worden bijgewerkt) en die worden geïmplementeerd als beschikbaar, wordt de rapportagestatus weergegeven als Geïnstalleerd als ze de vorige versie hebben geïnstalleerd, totdat het apparaat wordt ingecheckt. Als het apparaat wordt ingecheckt, wordt tijdelijk de status gewijzigd in Onbekend, maar dit wordt niet aan de gebruiker weergegeven. Wanneer de gebruiker met de installatie van de later beschikbaar gekomen versie begint, ziet de gebruiker dat de status wordt gewijzigd in Geïnstalleerd.
-        
-        Zie [Overzicht van updatekanalen voor Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) voor meer informatie.
-
-    - **MSI verwijderen van de apparaten van eindgebruikers**: kies of u bestaande Office MSI-apps wilt verwijderen van apparaten van eindgebruikers. De installatie mislukt als er zich bestaande MSI-apps op apparaten van eindgebruikers bevinden. De te verwijderen apps zijn niet beperkt tot de apps die zijn geselecteerd voor de installatie in **App-suite configureren**, omdat hierdoor alle Office-apps (MSI) van het apparaat van de eindgebruiker worden verwijderd. Zie [Bestaande MSI-versies van Office verwijderen bij een upgrade naar Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) voor meer informatie. Wanneer u Intune Office opnieuw op de computers van uw eindgebruikers installeert, krijgen eindgebruikers automatisch dezelfde taalpakketten als bij eerdere .MSI Office installaties. 
-    - **Gebruiksrechtovereenkomst voor eindgebruikers van de app automatisch accepteren**: selecteer deze optie als het voor eindgebruikers niet vereist is om de gebruiksrechtovereenkomst te accepteren. Intune accepteert de overeenkomst automatisch.
+        Nadat u een kanaal hebt gekozen, kunt u het volgende kiezen:
+        - **Andere versies**verwijderen: kies **Ja** om andere versies van Office (MSI) van gebruikersapparaten te verwijderen. Kies deze optie als u bestaande Office MSI-apps wilt verwijderen van apparaten van eindgebruikers. De installatie mislukt als er zich bestaande MSI-apps op apparaten van eindgebruikers bevinden. De te verwijderen apps zijn niet beperkt tot de apps die zijn geselecteerd voor de installatie in **App-suite configureren**, omdat hierdoor alle Office-apps (MSI) van het apparaat van de eindgebruiker worden verwijderd. Zie [Bestaande MSI-versies van Office verwijderen bij een upgrade naar Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) voor meer informatie. Wanneer u Intune Office opnieuw op de computers van uw eindgebruikers installeert, krijgen eindgebruikers automatisch dezelfde taalpakketten als bij eerdere .MSI Office installaties. 
+        - **Versie die moet worden geïnstalleerd**: kies de Office-versie die moet worden geïnstalleerd.
+        - **Specifieke versie**: als u **Specifiek** hebt gekozen als **Versie die moet worden geïnstalleerd** in de bovenstaande instelling, kunt u ervoor kiezen om een specifieke versie van Office te installeren voor het geselecteerde kanaal op apparaten van eindgebruikers. 
+            
+            Welke versies er beschikbaar zijn, verandert in de loop van de tijd. Daarom is het mogelijk dat er bij het maken van een nieuwe implementatie nieuwere versies beschikbaar zijn en dat bepaalde oudere versies niet meer beschikbaar zijn. Huidige implementaties blijven de oudere versie implementeren, maar de versielijst wordt voortdurend per kanaal bijgewerkt.
+            
+            Voor apparaten waarop de vastgemaakte versie wordt bijgewerkt (of andere eigenschappen worden bijgewerkt) en die worden geïmplementeerd als beschikbaar, wordt de rapportagestatus weergegeven als Geïnstalleerd als ze de vorige versie hebben geïnstalleerd, totdat het apparaat wordt ingecheckt. Als het apparaat wordt ingecheckt, wordt tijdelijk de status gewijzigd in Onbekend, maar dit wordt niet aan de gebruiker weergegeven. Wanneer de gebruiker met de installatie van de later beschikbaar gekomen versie begint, ziet de gebruiker dat de status wordt gewijzigd in Geïnstalleerd.
+            
+            Zie [Overzicht van updatekanalen voor Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) voor meer informatie.
     - **Activering van gedeelde computers gebruiken**: selecteer deze optie wanneer meerdere gebruikers een computer delen. Zie [Overzicht van activering van gedeelde computers voor Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus) voor meer informatie.
+    - **Gebruiksrechtovereenkomst voor eindgebruikers van de app automatisch accepteren**: selecteer deze optie als het voor eindgebruikers niet vereist is om de gebruiksrechtovereenkomst te accepteren. Intune accepteert de overeenkomst automatisch.
     - **Talen**: Office wordt automatisch geïnstalleerd in de ondersteunde talen die met Windows zijn geïnstalleerd op het apparaat van de eindgebruiker. Selecteer deze opties als u aanvullende talen wilt installeren met het app-pakket. <p></p>
-    U kunt aanvullende talen implementeren voor Office 365 Pro Plus-apps die via Intune worden beheerd. De lijst met beschikbare talen bevat het taalpakket **Type** (kern, gedeeltelijk en spellingcontrole). Selecteer in Azure Portal **Microsoft Intune** > **Apps** > **Alle apps** > **Toevoegen**. In de lijst **App-type** in et deelvenster **App toevoegen** selecteert u **Windows 10** onder **Office 365-suite**. Selecteer **Talen** in het deelvenster **Instellingen voor app-suite**. Zie voor meer informatie het [overzicht van de implementatie van talen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+        U kunt aanvullende talen implementeren voor Office 365 Pro Plus-apps die via Intune worden beheerd. De lijst met beschikbare talen bevat het taalpakket **Type** (kern, gedeeltelijk en spellingcontrole). Selecteer in Azure Portal **Microsoft Intune** > **Apps** > **Alle apps** > **Toevoegen**. In de lijst **App-type** in et deelvenster **App toevoegen** selecteert u **Windows 10** onder **Office 365-suite**. Selecteer **Talen** in het deelvenster **Instellingen voor app-suite**. Zie voor meer informatie het [overzicht van de implementatie van talen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+2. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
 
-## <a name="select-scope-tags-optional"></a>Bereiktags selecteren (optioneel)
+## <a name="step-2---option-2-configure-app-suite-using-xml-data"></a>Stap 2: (**optie 2**) App-suite configureren met XML-gegevens 
+
+Als u de optie **XML-gegevens invoeren** hebt geselecteerd onder de vervolgkeuzelijst **Instellingsindeling** op de pagina **App-suite configureren**, kunt u de Office-app-suite configureren met behulp van een aangepast configuratiebestand.
+
+![Office 365 Configuration Designer toevoegen](./media/apps-add-office365/apps-add-office365-01.png)
+
+1. De configuratie-XML is toegevoegd.
+2. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
+
+Raadpleeg [Configuratie-opties voor het Office-implementatieprogramma](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool) voor meer informatie over het invoeren van XML-gegevens.
+
+## <a name="step-3---select-scope-tags-optional"></a>Stap 3: Bereiktags selecteren (optioneel)
 U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag bekijken in Intune. Zie [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT) voor uitgebreide informatie over bereiktags.
 
-1. Selecteer **Bereik (tags)**  > **Toevoegen**.
-2. Gebruik het vak onder **Selecteren** om bereiktags te zoeken.
-3. Schakel het selectievakje in naast de bereiktags die u aan deze app wilt toewijzen.
-4. Kies **Selecteren** > **OK**.
+1. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app-suite. 
+2. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
 
-## <a name="enter-xml-format"></a>XML-indeling invoeren
+## <a name="step-4---assignments"></a>Stap 4: toewijzingen
 
-Als u de optie **XML-gegevens invoeren** in de vervolgkeuzelijst **Instellingsindeling** hebt geselecteerd, ziet u de optie **XML-gegevens invoeren** in het deelvenster **App toevoegen**. Raadpleeg [Configuratie-opties voor het Office-implementatieprogramma](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool) voor meer informatie.
+1. Selecteer de groepstoewijzingen **Vereist**, **Beschikbaar voor ingeschreven apparaten** of **Verwijderen** voor de app-suite. Zie [Groepen toevoegen om gebruikers en apparaten in te delen](~/fundamentals/groups-add.md) en [Apps toewijzen aan groepen met Microsoft Intune](apps-deploy.md) voor meer informatie.
+2. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. 
 
-## <a name="finish-up"></a>Voltooien
+## <a name="step-5---review--create"></a>Stap 5: beoordelen en maken
 
-Als u klaar bent, selecteert u **Toevoegen** in het deelvenster **App toevoegen**. De app die u hebt gemaakt, wordt weergegeven in de lijst met apps. De volgende stap is het toewijzen van de apps aan de groepen van uw keuze. Zie [Apps aan groepen toewijzen](~/apps/apps-deploy.md) voor meer informatie.
+1. Controleer de waarden en instellingen die u hebt ingevoerd voor de app-suite.
+2. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
+
+    De blade **Overzicht** van de Office 365 voor Window 10-app-suite die u hebt gemaakt, wordt weergegeven.
 
 ## <a name="deployment-details"></a>Implementatiedetails
 
@@ -231,4 +230,4 @@ In de volgende tabellen worden algemene foutcodes en hun betekenis weergegeven.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-- Zie [Apps toewijzen aan groepen](/intune-azure/manage-apps/deploy-apps) om de apps toe te wijzen aan de groepen van uw keuze.
+- Zie [Apps toewijzen aan groepen](/intune-azure/manage-apps/deploy-apps) als u de app-suite aan extra groepen wilt toewijzen.

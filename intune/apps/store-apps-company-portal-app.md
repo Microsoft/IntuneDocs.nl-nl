@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712955"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755031"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune
 
@@ -56,7 +56,7 @@ Uw gebruikers kunnen de bedrijfsportal-app zelf installeren vanuit Microsoft Sto
     Deze actie moet worden uitgevoerd voor x86-, x64- en ARM-architecturen:<br> 
     *Er zijn 9 Framework-pakketten vereist wanneer u 1507 selecteert als de minimale besturingssysteemversie, 12 pakketten als u 1511 selecteert, en 15 pakketten bij 1607.*
 
-8. In Microsoft Intune in Azure Portal moet u Bedrijfsportal-app als nieuwe app uploaden. U voegt de toepassing toe door in het deelvenster **App toevoegen** de optie Line-of-Business-app te kiezen als het **App-type**. U selecteert vervolgens het app-pakketbestand (met de extensie .AppxBundle).
+8. In Microsoft Intune in Azure Portal moet u Bedrijfsportal-app als nieuwe app uploaden. U voegt de app toe door in het deelvenster **Een app selecteren** de optie Line-of-Business-app te kiezen als het **App-type**. U selecteert vervolgens het app-pakketbestand (met de extensie .AppxBundle).
 
 9. Selecteer onder **Afhankelijkheidsapp-bestanden selecteren** met behulp van Shift+klikken alle afhankelijkheden die u hebt gedownload in stap 7, en controleer of in de kolom **Toegevoegd** bij de gewenste architecturen **Ja** staat.
 

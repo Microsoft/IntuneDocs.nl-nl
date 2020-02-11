@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 613369070d847265f371a7b228a2b6d81bf813fe
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563645"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755252"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Android Enterprise-systeem-apps toevoegen aan Microsoft Intune
 
@@ -35,13 +35,20 @@ Met de volgende stappen kunt u een Android Enterprise-systeem-app toevoegen aan 
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.
-3. In het deelvenster **App toevoegen** selecteert u **Android Enterprise-systeem-app** bij de beschikbare **Overige** typen.
-4. Als u de app-gegevens wilt configureren, selecteert u **Configureren** en geeft u de volgende informatie op:
+3. In het deelvenster **Een app-type selecteren** selecteert u **Android Enterprise-systeem-app** bij de beschikbare **Overige** typen.
+4. Klik op **Selecteren**. De stappen **App toevoegen** worden weergegeven.
+Voeg in het deelvenster **App-gegevens** de app-gegevens toe:
     - **App-naam**: Voer de naam van de app in.
     - **Uitgever**: Voer de naam van de uitgever van de app in.  
     - **Pakketnaam**: Voer een pakketnaam in. Intune controleert of de pakketnaam geldig is.
-5. Selecteer **OK**.
-6. Selecteer **Toevoegen**.
+5. Klik op **Volgende** om de pagina **Bereiktags** weer te geven.
+8. Klik op **Bereiktags selecteren** om desgewenst bereiktags toe te voegen voor de app. Zie [Op rollen gebaseerd toegangsbeheer (RBAC) en bereiktags gebruiken voor gedistribueerde IT](~/fundamentals/scope-tags.md) voor meer informatie.
+9. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.
+10. Selecteer de groepstoewijzingen voor de app. Zie [Groepen toevoegen om gebruikers en apparaten te organiseren](~/fundamentals/groups-add.md) voor meer informatie. 
+11. Klik op **Volgende** om naar de pagina **Controleren en maken** weer te geven. Controleer de waarden en instellingen die u hebt ingevoerd voor de app.
+12. Klik als u klaar bent op **Maken** om de app toe te voegen aan Intune.
+
+De blade **Overzicht** van de app die u hebt gemaakt, wordt weergegeven.
 
 > [!NOTE]
 > U moet samenwerken met de OEM van uw apparaat om de pakketnaam te vinden van de app die u wilt in- of uitschakelen.

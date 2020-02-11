@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509809"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754300"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Op rollen gebaseerd toegangsbeheer (RBAC) met Microsoft Intune
 
@@ -52,6 +52,7 @@ U kunt ingebouwde rollen toewijzen aan groepen zonder verdere configuratie. U ku
 - **Toepassingsbeheerder**: hiermee beheert u mobiele en beheerde toepassingen, kunt u apparaatgegevens lezen en kunt u apparaatconfiguratieprofielen weergeven.
 - **Beheerder Intune-rol**: hiermee beheert u aangepaste Intune-rollen en voegt u toewijzingen toe voor ingebouwde Intune-rollen. Het is de enige rol in Intune die machtigingen aan beheerders kan toewijzen.
 - **School Administrator**: Hiermee worden Windows 10-apparaten beheerd in [Intune for Education](../introduction-intune-education.md).
+- **Endpoint Security Manager**: hiermee beheert u beveiligings- en nalevingsfuncties, zoals beveiligingsbasislijnen, apparaatcompatibiliteit, voorwaardelijke toegang en Microsoft Defender ATP.
 
 ### <a name="custom-roles"></a>Aangepaste rollen
 U kunt uw eigen rollen maken met aangepaste machtigingen. Zie [Een aangepaste rol maken](create-custom-role.md)voor meer informatie over aangepaste rollen.
@@ -62,12 +63,12 @@ U kunt uw eigen rollen maken met aangepaste machtigingen. Zie [Een aangepaste ro
 | Hoofdbeheerder | Lezen/schrijven | Lezen/schrijven |
 | Intune-servicebeheerder | Lezen/schrijven | Lezen/schrijven |
 | Beheerder van voorwaardelijke toegang | Geen | Geen |
-| Beveiligingsbeheerder | Alleen-lezen | Alleen-lezen |
+| Beveiligingsbeheer | Alleen-lezen (volledige beheerdersmachtigingen voor Endpoint Security-knooppunt) | Alleen-lezen |
 | Beveiligingsoperator | Alleen-lezen | Alleen-lezen |
 | Beveiligingslezer | Alleen-lezen | Alleen-lezen |
 | Beheerder voor naleving | Geen | Alleen-lezen |
 | Beheerder voor nalevingsgegevens | Geen | Alleen-lezen |
-| Algemene lezer | Alleen-lezen | Alleen-lezen |
+| Algemene lezer | Alleen lezen | Alleen lezen |
 
 > [!TIP]
 > Intune bevat ook drie Azure AD-uitbreidingen: **Gebruikers**, **Groepen** en **Voorwaardelijke toegang**, die worden beheerd met Azure AD RBAC. Bovendien voert de **Beheerder van gebruikersaccounts** alleen activiteiten van AAD-gebruikers of -groepen uit en beschikt deze niet over volledige machtigingen voor het uitvoeren van alle activiteiten in Intune. Zie [RBAC met Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) voor meer informatie.

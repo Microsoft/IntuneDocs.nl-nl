@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813402"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540946"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Quickstart: Een groep maken om gebruikers te beheren
 
@@ -36,22 +36,23 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 
 ## <a name="prerequisites"></a>Vereisten
 
+- Microsoft Intune-abonnement - [Registreren voor een gratis proefaccount](../fundamentals/free-trial-sign-up.md).
 - Als u de stappen in deze snelstart wilt uitvoeren, moet u eerst [een gebruiker maken](quickstart-create-user.md).
 
-## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Aanmelden bij Intune in de Microsoft Endpoint Manager
 
-Meld u bij de [Intune](https://aka.ms/intuneportal)-portal aan als [globale beheerder of Intune-servicebeheerder](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
+Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) aan als een [globale beheerder of een Intune-serviceondersteuningsbeheerder](users-add.md#types-of-administrators). Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="create-a-group"></a>Een groep maken
 
 U maakt een groep die later in deze snelstartreeks wordt gebruikt. Ga als volgt te werk om een groep te maken:
 
-1. Wanneer u het deelvenster **Microsoft Intune** hebt geopend, selecteert u **Groepen** > **Nieuwe groep**.
+1. Open de **Microsoft Endpoint Manager** en selecteer **Groepen** > **Nieuwe groep**.
 2. Selecteer in de vervolgkeuzelijst **Groepstype** de optie **Beveiliging**.
 3. Geef in het veld **Groepsnaam** de naam van de nieuwe groep (bijvoorbeeld **Contoso Testers**) op.
-4. Voeg een **Beschrijving** aan de groep toe.
+4. Voeg een **Groepsbeschrijving** aan de groep toe.
 5. Stel **Type lidmaatschap** in op **Toegewezen**. 
-6. Klik op **Leden** en selecteer uit de lijst een of meer leden voor de groep.
+6. Selecteer onder **Leden** de koppeling en voeg een of meer leden voor de groep toe vanuit de lijst.
 
     ![Schermopname van het maken van een groep in Microsoft Intune](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691831"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755405"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Line-of-business-apps ondertekenen, zodat ze kunnen worden geïmplementeerd op Windows-apparaten met Intune
 
-Als Intune-beheerder kunt u universele LOB-apps (Line-of-Business) implementeren op Windows 8.1 Desktop of Windows 10 Desktop en Mobile-apparaten, met inbegrip van de bedrijfsportal-app. Als u APPX-apps wilt implementeren op Windows 8.1 Desktop of Windows 10 Desktop en Mobile-apparaten, kunt u een certificaat voor ondertekening bij programmacode van een openbare certificeringsinstantie gebruiken die al wordt vertrouwd op uw Windows-apparaten, of u kunt uw eigen certificeringsinstantie gebruiken.
+Als Intune-beheerder kunt u universele LOB-apps (Line-of-Business) implementeren op Windows 8.1 Desktop of Windows 10 Desktop en Mobile-apparaten, met inbegrip van de bedrijfsportal-app. Als u *APPX*-apps wilt implementeren op Windows 8.1 Desktop- of Windows 10 Desktop- en Mobile-apparaten, kunt u een certificaat voor ondertekening bij programmacode van een openbare certificeringsinstantie gebruiken die al wordt vertrouwd op uw Windows-apparaten, of u kunt uw eigen certificeringsinstantie gebruiken.
 
  > [!NOTE]
  > Voor Windows 8.1 Desktop is bedrijfsbeleid vereist om sideloaden mogelijk te maken, of u moet sideloadsleutels gebruiken (automatisch ingeschakeld voor aan een domein toegevoegde apparaten). Zie [Windows 8 sideloaden](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/)voor meer informatie.
@@ -52,10 +52,11 @@ Als u de app, zoals vereist, implementeert voor gebruikers of apparaten, hebt u 
 
 Als op uw Windows 10-apparaat de certificeringsinstantie nog niet wordt vertrouwd, moet u - nadat u het APPX-pakket hebt ondertekend en geüpload naar de Intune-service - het certificaat voor ondertekening van programmacode uploaden naar de Intune-portal:
 
-1. Klik op Client-apps
-2. Klik op Windows Enterprise-certificaten
-3. Select Een bestand selecteren onder het certificaat voor ondertekening van programmacode
-4. Selecteer uw CER-bestand en klik op Uploaden
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Klik op **Tenantbeheer** > **Connectors en tokens** > **Windows Enterprise-certificaten**.
+3. Selecteer een bestand onder **Certificaatbestand voor handtekening bij programmacode**.
+4. Selecteer uw *CER*-bestand en klik op **Openen**.
+5. Klik op **Uploaden** om uw certificaatbestand aan Intune toe te voegen.
 
 Nu wordt op elk Windows 10 Desktop en Mobile-apparaat met een APPX-implementatie van de Intune-service, automatisch het bijbehorende ondernemingscertificaat gedownload. Na de installatie kan de toepassing worden gestart.
 
@@ -94,7 +95,7 @@ Als u geen toegang wilt bieden tot de Microsoft Store, kunt u de Windows 10-bedr
       ![Afbeelding van de map Afhankelijkheden waarin het APPXBUN-bestand is opgeslagen](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. Plaats de negen afhankelijkheidspakketten in de map Afhankelijkheden.  
       Als de afhankelijkheden niet in deze indeling worden geplaatst, worden ze niet herkend door Intune en kunnen ze niet worden geüpload tijdens de pakket-upload. Het uploaden mislukt met de volgende fout.  
-      ![Foutbericht - de Windows-app-afhankelijkheid moet worden opgegeven.](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Ga terug naar Intune en upload the Bedrijfsportal-app als nieuwe app. Implementeer als vereiste app naar de gewenste set doelgebruikers.  
 
 Zie [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Een appxbundle met afhankelijkheden implementeren via Microsoft Intune MDM) voor meer informatie over hoe Intune afhankelijkheden voor universele apps verwerkt.  

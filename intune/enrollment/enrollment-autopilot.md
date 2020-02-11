@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb98ee2974cefeebb90689207388d5fe9229dad2
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036657"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977798"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -158,6 +158,13 @@ Nadat u een Autopilot-apparaat hebt geüpload, kunt u bepaalde kenmerken van het
 Waarschuwingen geven weer hoeveel Autopilot-programma-apparaten geen Autopilot-implementatieprofielen hebben. Aan de hand van de informatie in de waarschuwing kunt u profielen maken en deze toewijzen aan de niet-toegewezen apparaten. Als u op de waarschuwing klikt, verschijnt een volledige lijst met Windows Autopilot-apparaten en gedetailleerde informatie.
 
 Als u waarschuwingen over niet-toegewezen apparaten wilt zien, kiest u in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **Overzicht** > **Inschrijvingswaarschuwingen** > **Niet-toegewezen apparaten**.  
+
+## <a name="autopilot-deployments-report"></a>Rapport Autopilot-implementaties
+U kunt de details bekijken van elk apparaat dat via Windows Autopilot is geïmplementeerd.
+Als u het rapport wilt weergeven, gaat u naar het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431), kiest u **Apparaten** > **Bewaken** > **Autopilot-implementaties**.
+De gegevens zijn tot 30 dagen na de implementatie beschikbaar.
+
+Dit rapport is beschikbaar als preview-versie. Implementatierecords voor apparaten worden momenteel alleen geactiveerd door nieuwe Intune-inschrijvingsgebeurtenissen. Dit betekent dat implementaties die geen nieuwe Intune-inschrijving activeren, niet door dit rapport worden opgenomen. Dit geldt ook voor alle soorten herstel die de inschrijving en het gebruikersgedeelte van Autopilot-ondersteuning beheren.
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Een gebruiker toewijzen aan een specifiek Autopilot-apparaat
 

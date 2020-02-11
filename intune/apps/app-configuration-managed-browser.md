@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564325"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812502"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Webtoegang beheren via een met Microsoft Intune-beleid beveiligde browser
 
@@ -36,6 +36,9 @@ Met behulp van een browser die wordt beveiligd met Intune-beleid (Microsoft Edge
 - Eenmalige aanmelding
 - Configuratie-instellingen voor toepassingen
 - Proxyintegratie met Azure-toepassingen
+
+> [!IMPORTANT]
+> De Intune Managed Browser wordt buiten gebruik gesteld. Gebruik Microsoft Edge als uw beveiligde Intune-browser. 
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge-ondersteuning
 

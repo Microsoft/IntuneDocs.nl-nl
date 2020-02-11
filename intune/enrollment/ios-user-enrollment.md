@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691759"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754615"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Gebruikersinschrijving voor iOS en iPadOS instellen (preview)
 
@@ -54,23 +54,14 @@ Met een inschrijvingsprofiel worden de instellingen gedefinieerd die worden toeg
 
 3. Selecteer **Volgende**.
 
-4. Op de pagina **Instellingen** kunt u ervoor kiezen om gebruikers de keuze te geven welk inschrijvingstype ze willen gebruiken. U kunt ook een standaardwaarde instellen.
+4. Selecteer op de pagina **Instellingen** een van de volgende opties voor **Inschrijvingstype**:
 
     ![Pagina Instellingen](./media/ios-user-enrollment/settings-page.png)
 
-    - Als u wilt dat alle gebruikers in dit profiel gebruikersinschrijving gebruiken, voert u de volgende stappen uit:
-        1. Selecteer **Niet geconfigureerd** bij **De gebruiker moet het apparaattype selecteren**.
-        2. Selecteer **Gebruikersinschrijving** bij **Standaardinschrijving**.
-    - Als u wilt dat alle gebruikers in dit profiel apparaatinschrijving gebruiken, voert u de volgende stappen uit:
-        1. Selecteer **Niet geconfigureerd** bij **De gebruiker moet het apparaattype selecteren**.
-        2. Selecteer **Apparaatinschrijving** bij **Standaardinschrijving**.
-    - Als u wilt dat alle gebruikers in deze groep kunnen kiezen welk inschrijvingstype ze willen gebruiken, selecteert u **De gebruiker moet het apparaattype kiezen** bij **Vereist**. Wanneer gebruikers hun apparaten inschrijven, krijgen ze de mogelijkheid om te kiezen tussen **Ik ben eigenaar van dit apparaat** en **(Bedrijf) is eigenaar van dit apparaat**. Als ze de eerste optie selecteren, wordt het apparaat ingeschreven via gebruikersinschrijving. Als ze de laatste optie selecteren, wordt het apparaat ingeschreven via apparaatinschrijving. Als gebruikers **Ik ben eigenaar dit apparaat** kiezen, wordt een andere optie weergegeven om te kiezen of ze het hele apparaat of alleen aan werk gerelateerde apps en gegevens willen beveiligen. De keuze van eindgebruikers of ze de eigenaar van het apparaat zijn, bepaalt alleen welk inschrijvingstype op hun apparaat wordt geïmplementeerd. Deze gebruikerskeuze wordt niet weergegeven in het kenmerk Apparaateigendom in Intune. Zie [Toegang tot uw bedrijfsbronnen instellen voor uw iOS-apparaat](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) voor meer informatie over de gebruikerservaring.
+    - **Apparaatinschrijving**: alle gebruikers in dit profiel gebruiken apparaatinschrijving.
+    - **Gebruikersinschrijving**: alle gebruikers in dit profiel gebruiken gebruikersinschrijving.
+    - **Bepalen op basis van gebruikerskeuze**: alle gebruikers in deze groep mogen kiezen welk type inschrijving ze gebruiken. Wanneer gebruikers hun apparaten inschrijven, krijgen ze de mogelijkheid om te kiezen tussen **Ik ben eigenaar van dit apparaat** en **(Bedrijf) is eigenaar van dit apparaat**. Als ze de laatste optie selecteren, wordt het apparaat ingeschreven via apparaatinschrijving. Als gebruikers **Ik ben eigenaar dit apparaat** kiezen, wordt een andere optie weergegeven om te kiezen of ze het hele apparaat of alleen aan werk gerelateerde apps en gegevens willen beveiligen. De keuze van eindgebruikers of ze de eigenaar van het apparaat zijn, bepaalt welk inschrijvingstype op hun apparaat wordt geïmplementeerd. Deze gebruikerskeuze wordt ook weergegeven in het kenmerk Apparaateigendom in Intune. Zie [Toegang tot uw bedrijfsbronnen instellen voor uw iOS-apparaat](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) voor meer informatie over de gebruikerservaring.
     
-    > [!NOTE]
-    > De volgende kennisgeving is onjuist en wordt verwijderd uit de gebruikersinterface.
-    > 'Voor voorwaardelijke toegang om te werken op apparaten die zijn getarget met gebruikersinschrijving, moet u de Azure Authenticator-app pushen als vereiste app voor deze gebruikersgroep om eenmalige aanmelding en Workplace Join in te schakelen.'
-    > Als beheerder hoeft u geen actie te ondernemen om de Authenticator-app naar uw gebruikers te pushen. Uw gebruikers krijgen in de bedrijfsportal opdracht de Authenticator-app te installeren om het gebruikersinschrijvingsproces te voltooien om ervoor te zorgen dat deze scenario's goed functioneren.
-
 5. Selecteer **Volgende**.
 
 6. Kies op de pagina **Toewijzingen** de gebruikersgroepen waaraan u dit profiel wilt toewijzen. U kunt ervoor kiezen het profiel toe te wijzen aan alle gebruikers of aan specifieke groepen. Alle gebruikers in de geselecteerde groepen gebruiken het hierboven gekozen inschrijvingstype. Apparaatgroepen worden niet ondersteund voor inschrijvingsscenario's voor gebruikers, omdat die functie is gebaseerd op gebruikers-id's in plaats van op apparaten. U kunt ervoor kiezen het profiel toe te wijzen aan alle gebruikers of aan specifieke groepen.

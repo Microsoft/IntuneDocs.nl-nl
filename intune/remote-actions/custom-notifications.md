@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036611"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517482"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
 Gebruik Microsoft Intune om aangepaste meldingen te verzenden naar de gebruikers van beheerde iOS- en Android-apparaten. Deze berichten worden op de apparaten van gebruikers weergegeven als reguliere pushmeldingen vanuit de Bedrijfsportal-app en de Microsoft Intune-app, net zoals meldingen van andere toepassingen op het apparaat worden weergegeven. De aangepaste meldingen van Intune worden niet ondersteund voor macOS- Windows-apparaten.   
 
 Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 tekens. De berichten kunnen worden aangepast voor algemene communicatiedoeleinden.
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Hoe ziet de melding eruit op een iOS-apparaat?
+
+Als u de bedrijfsportal-app hebt geopend op een iOS-apparaat, lijkt de melding op de volgende schermopname:
+
+> [!div class="mx-imgBorder"]
+> ![iOS-testmelding bedrijfsportal](./media/custom-notifications/105046-1.png)
+
+Als het apparaat is vergrendeld, lijkt de melding op de volgende schermopname:
+
+> [!div class="mx-imgBorder"]
+> ![iOS-testmelding apparaat is vergrendeld](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Hoe ziet de melding eruit op een Android-apparaat?
+
+Als u de bedrijfsportal-app hebt geopend op een Android-apparaat, lijkt de melding op de volgende schermopname:
+
+> [!div class="mx-imgBorder"]
+> ![Android-testmelding](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Algemene scenario's voor het verzenden van aangepaste meldingen  
 

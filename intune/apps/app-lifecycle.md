@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e70191ed133d9427a3c8565d1dbf03573b628b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692217"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812409"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Overzicht van de app-levenscyclus in Microsoft Intune
 
@@ -43,7 +43,7 @@ Nadat u de app aan Intune hebt toegevoegd, kunt u deze [toewijzen aan gebruikers
 Als onderdeel van de app-levenscyclus worden er regelmatig nieuwe versies van apps uitgebracht. Intune biedt hulpprogramma's waarmee u eenvoudig uw geïmplementeerde [apps kunt bijwerken](apps-add.md) naar een nieuwere versie. Daarnaast kunt u voor sommige apps extra functionaliteit configureren:
 
 - Met [beleidsregels voor de configuratie van iOS-apps](app-configuration-policies-use-ios.md) kunt u instellingen opgeven voor compatibele iOS-apps die worden gebruikt wanneer de app wordt uitgevoerd. Voor een app kunnen bijvoorbeeld bepaalde instellingen vereist zijn voor de huisstijl of de naam van de server waarmee verbinding moet worden gemaakt.
-- Met de [beleidsregels voor Managed Browser](app-configuration-managed-browser.md) kunt u instellingen configureren voor de Intune Managed Browser die de standaardbrowser van het apparaat vervangt, en kunt u beperkingen instellen voor de websites die uw gebruikers mogen bezoeken.
+- Met de [beleidsregels voor Managed Browser](app-configuration-managed-browser.md) kunt u instellingen configureren voor [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps), dat de standaardbrowser van het apparaat vervangt, en kunt u beperkingen instellen voor de websites die uw gebruikers mogen bezoeken.
 
 ## <a name="protect"></a>Beveiligen
 

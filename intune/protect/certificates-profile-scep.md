@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547068"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966297"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>SCEP-certificaatprofielen maken en toewijzen in Intune
 
@@ -285,3 +285,5 @@ Wijs SCEP-certificaatprofielen op dezelfde manier toe als u [apparaatprofielen i
 ## <a name="next-steps"></a>Volgende stappen
 
 [Profielen toewijzen](../configuration/device-profile-assign.md)
+
+[Problemen met de implementatie van SCEP-certificaatprofielen oplossen](../protect/troubleshoot-scep-certificate-profiles.md)

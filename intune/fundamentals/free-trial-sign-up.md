@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/09/2020
+ms.date: 01/16/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: e1baf0b4273a9074ac7172c08240a8e3c3a9d7fa
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839247"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541112"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Quickstart: Microsoft Intune gratis proberen
 
 Met Microsoft Intune kun u de bedrijfsgegevens van uw werknemers beschermen door middel van het beheer van apparaten en apps. In deze snelstartgids maakt u een gratis abonnement om Intune in een testomgeving te proberen.
 
-Intune biedt Mobile Device Management (MDM) en Mobile Application Management (MAM) via een veilige, op de cloud gebaseerde service die wordt beheerd met behulp van Microsoft Azure Portal. Met behulp van Intune kunt u ervoor zorgen dat de bedrijfsresources van uw werknemers (gegevens, apparaten en apps) op de juiste manier worden geconfigureerd, geopend en bijgewerkt, zodat u aan het nalevingsbeleid en de vereisten van uw bedrijf voldoet.
+Intune biedt Mobile Device Management (MDM) en Mobile Application Management (MAM) via een veilige, op de cloud gebaseerde service die wordt beheerd met behulp van het Microsoft Endpoint Manager-beheercentrum. Met behulp van Intune kunt u ervoor zorgen dat de bedrijfsresources van uw werknemers (gegevens, apparaten en apps) op de juiste manier worden geconfigureerd, geopend en bijgewerkt, zodat u aan het nalevingsbeleid en de vereisten van uw bedrijf voldoet.
 
 ## <a name="prerequisites"></a>Vereisten
 Bekijk de volgende vereisten voordat u Microsoft Intune instelt:
@@ -60,27 +60,31 @@ U mag Intune 30 dagen gratis proberen. Als u al een werk- of schoolaccount hebt 
 
     ![Afbeelding van accountgegevens](./media/free-trial-sign-up/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>Aanmelden bij Azure Portal
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Aanmelden bij Intune in de Microsoft Endpoint Manager
 
-1. Open een nieuw browservenster en voer **https://portal.azure.com** in de adresbalk in. 
-2. Gebruik de referenties die in de bovenstaande stappen hebt gekregen om u aan te melden.
+Als u nog niet bent aangemeld bij de portal, voert u de volgende stappen uit:
 
-    ![Afbeelding van de aanmeldingspagina van Azure Portal](./media/free-trial-sign-up/azure-portal-signin.png)
+1. Open een nieuw browservenster en voer **https://devicemanagement.microsoft.com** in de adresbalk in. 
+2. Gebruik de gebruikers-id die u in de bovenstaande stappen hebt opgegeven om u aan te melden ( *yourID@yourdomain* .onmicrosoft.com).
 
-3. Als u Microsoft Intune in de Azure-portal wilt weergeven, selecteert u **Alle services** in de zijbalk links op de pagina.
-4. Zoek in het filtervak naar **Microsoft Intune** en selecteer dit.
-5. Selecteer het **sterretje** om Intune onder aan uw lijst met favoriete services toe te voegen en het Intune-dashboard te openen.
+    ![Afbeelding van de aanmeldingspagina van de portal](./media/free-trial-sign-up/azure-portal-signin.png)
 
 Wanneer u zich aanmeldt voor een proefversie, ontvangt u tevens een e-mailbericht met gegevens over uw account op het e-mailadres dat u hebt opgegeven tijdens het aanmeldingsproces. In deze e-mail wordt bevestigd dat uw proefversie actief is.
 
 > [!TIP]
-> Als u werkt met Azure Portal verkrijgt u mogelijk betere resultaten met een browser in de reguliere modus in plaats van de privémodus.
+> Als u werkt met de Microsoft Endpoint Manager verkrijgt u mogelijk betere resultaten met een browser in de reguliere modus in plaats van de privémodus.
 
-## <a name="set-the-mdm-authority-to-intune"></a>De MDM-instantie instellen op Intune
+## <a name="confirm-the-mdm-authority-in-intune"></a>De MDM-instantie in Intune bevestigen
 
-Wanneer u zich hebt aangemeld bij Azure Portal en u Intune hebt geselecteerd, ziet u mogelijk een oranje banner die aangeeft dat u de MDM-instantie nog niet hebt ingesteld. Met de instantie voor het beheer van mobiele apparaten (MDM) wordt bepaald hoe u uw apparaten beheert. De MDM-instantie moet worden ingesteld voordat gebruikers apparaten voor beheer kunnen inschrijven.
+Standaard wordt de MDM-instantie ingesteld wanneer u de gratis proefversie gaat gebruiken. U kunt met behulp van de volgende stappen controleren of de MDM-instantie is ingesteld:
 
-Volg deze stappen om de MDM-instantie op Intune in te stellen.
+1. Als u nog niet bent aangemeld, meldt u zich aan bij de Microsoft Endpoint Manager.
+2. Klik op **Tenantbeheer**.
+3. Bekijk de tenantgegevens. De **MDM-instantie** moet zijn ingesteld op **Microsoft Intune**.
+
+Als u na het aanmelden bij de Microsoft Endpoint Manager een oranje banner ziet die aangeeft dat u de MDM-instantie nog niet hebt ingesteld, kunt u deze nu activeren. Met de instantie voor het beheer van mobiele apparaten (MDM) wordt bepaald hoe u uw apparaten beheert. De MDM-instantie moet worden ingesteld voordat gebruikers apparaten voor beheer kunnen inschrijven.
+
+### <a name="to-set-the-mdm-authority-to-intune-follow-these-steps"></a>Volg deze stappen om de MDM-instantie op Intune in te stellen:
 
 1. Open een nieuw browservenster en voer **https://portal.azure.com** in de adresbalk in. 
 2. Kies **Alle services** > **Microsoft Intune**.
@@ -121,9 +125,9 @@ Zoals hierboven is gemeld, kunt u de domeinnaam wijzigen in het Microsoft 365-be
 
 ## <a name="admin-experiences"></a>Ervaringen van beheerders
 
-Er zijn twee portals die u kunt gebruiken:
-- Het Intune-dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is de locatie waar u de [mogelijkheden van Intune](what-is-intune.md) kunt bekijken. Doorgaans voert u uw werkzaamheden uit in het Intune-dashboard.
-- Het Microsoft 365-beheercentrum ([admin.microsoft.com](https://admin.microsoft.com)) is de locatie waar u gebruikers kunt toevoegen en beheren als u Azure Active Directory hiervoor niet gebruikt. U kunt ook andere aspecten van uw account beheren, zoals facturering en ondersteuning.
+Er zijn twee portals die u het meest gebruikt:
+- Het beheercentrum van Microsoft Endpoint Manager ([https://devicemanagement.microsoft.com/](https://devicemanagement.microsoft.com/)), waar u de [mogelijkheden van Intune](what-is-intune.md) kunt verkennen. Hier werken beheerders normaal gesproken met Intune.
+- Het beheercentrum van Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)), waar u gebruikers kunt toevoegen en beheren als u Azure Active Directory hiervoor niet gebruikt. U kunt ook andere aspecten van uw account beheren, zoals facturering en ondersteuning.
 
 ## <a name="next-steps"></a>Volgende stappen
 

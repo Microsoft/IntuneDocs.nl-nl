@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206632"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812351"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen in Microsoft Intune
-
-
 
 Antwoorden op algemene vragen wanneer u werkt met apparaatprofielen en -beleid in Intune. In dit artikel worden ook de inchecktijdsintervallen vermeld, worden meer gegevens over problemen gegeven en meer.
 
@@ -83,6 +81,8 @@ Er zijn verschillende acties waarmee een melding wordt geactiveerd, bijvoorbeeld
 Apparaten checken in bij Intune wanneer ze een melding ontvangen waarin staat dat ze dit moeten doen of wanneer het tijd is voor een geplande check-in. Wanneer u een actie op een apparaat of gebruiker richt, zoals vergrendelen, wachtwoord opnieuw instellen of app toewijzen, profiel toewijzen of beleid toewijzen, meldt Intune het onmiddellijk aan het apparaat dat het moet inchecken om deze updates te ontvangen.
 
 Andere wijzigingen, zoals het wijzigen van de contactgegevens in de bedrijfsportal-app, zorgen niet voor een onmiddellijke melding aan apparaten.
+
+De instellingen in het beleid of profiel worden toegepast bij elke keer dat wordt ingecheckt. De [blogpost over het vernieuwen van Windows 10 MDM-beleid](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) is mogelijk een goede bron van informatie.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Als er meerdere beleidsregels worden toegewezen aan dezelfde gebruiker of hetzelfde apparaat, hoe weet ik dan welke instellingen worden toegepast?
 
