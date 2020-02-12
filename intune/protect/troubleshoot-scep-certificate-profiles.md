@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7ffe5a8c20aa7edd67853ff86ef9e28cf2d175
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
+ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915821"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034240"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Overzicht van het oplossen van problemen met SCEP-certificaatprofielen met Microsoft Intune
 
@@ -115,11 +115,11 @@ De volgende lijst bevat logboeken of consoles waarnaar wordt verwezen in volgend
 
 ### <a name="logs-for-android-devices"></a>Logboeken voor Android-apparaten
 
-Voor apparaten met Android gebruikt u het **Android-bedrijfsportal**, app-logboekbestand **OMADM. log**. Voordat u logboeken verzamelt en bekijkt, moet u ervoor zorgen dat [Uitgebreide logboekregistratie](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) is ingeschakeld en reproduceert u vervolgens het probleem.
+Voor apparaten met Android gebruikt u het **Android-bedrijfsportal**, app-logboekbestand **OMADM. log**. Voordat u logboeken verzamelt en bekijkt, moet u ervoor zorgen dat [Uitgebreide logboekregistratie](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) is ingeschakeld en reproduceert u vervolgens het probleem.
 
-Zie [Logboeken uploaden en e-mailen via een USB-kabel](/intune-user-help/send-logs-to-your-it-admin-using-cable-android.md) voor informatie over het verzamelen van de OMADM.-logboeken van een apparaat.
+Zie [Logboeken uploaden en e-mailen via een USB-kabel](/intune-user-help/send-logs-to-your-it-admin-using-cable-android) voor informatie over het verzamelen van de OMADM.-logboeken van een apparaat.
 
-U kunt [logboeken ook uploaden en e-mailen](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md#upload-and-email-logs-from-microsoft-intune-app) naar de ondersteuningsafdeling.
+U kunt [logboeken ook uploaden en e-mailen](/intune-user-help/send-logs-to-your-it-admin-by-email-android#upload-and-email-logs-from-microsoft-intune-app) naar de ondersteuningsafdeling.
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Logboeken voor iOS- en iPadOS-apparaten
 

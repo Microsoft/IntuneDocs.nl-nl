@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563846"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124823"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Uw Intune-account verbinden met uw Beheerde Google Play-account
 
@@ -69,4 +69,4 @@ U kunt Android Enterprise-inschrijving en -beheer uitschakelen. Hiervoor moet u 
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Wanneer u verbinding hebt gemaakt met het Beheerde Google Play-account, kunt u [apparaten met een Android Enterprise-werkprofiel instellen](android-work-profile-enroll.md), [toegewezen Android Enterprise-apparaten instellen](android-kiosk-enroll.md) en [ volledig beheerde Android Enterprise-apparaten instellen](android-kiosk-enroll.md).
+Wanneer u verbinding hebt gemaakt met het Beheerde Google Play-account, kunt u [apparaten met een Android Enterprise-werkprofiel instellen](android-work-profile-enroll.md), [toegewezen Android Enterprise-apparaten instellen](android-kiosk-enroll.md) en [ volledig beheerde Android Enterprise-apparaten instellen](android-fully-managed-enroll.md).
