@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ed2d00541c2d89efd0f8cd6aa60f29c527656fc0
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68354404"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971809"
 ---
 # <a name="metadata-and-markdown-template"></a>Metagegevens en markdown-sjabloon
 
@@ -34,11 +34,11 @@ Het volledige metagegevensblok staat hierboven, onderverdeeld in verplichte en o
 
 - Voor een metagegevenselement **moet** er een spatie staan tussen de dubbele punt (:) en de waarde.
 - Als een optioneel metagegevenselement geen waarde heeft, markeert u het element als commentaar met een # (laat het element niet leeg en gebruik niet 'n.v.t.'). Als u een waarde toevoegt aan een element dat is gemarkeerd als commentaar , moet u # verwijderen.
-- Door dubbele punten in een waarde (bijvoorbeeld een titel) wordt de metagegevensparser verbroken. Gebruik in plaats daarvan de HTML-codering van & #58; (bijvoorbeeld 'titel: Azure Rights Management & #58; de basisbeginselen | Azure RMS').
-- **titel**: deze titel wordt weergegeven in zoekmachineresultaten. De titel moet eindigen met een sluisteken (|), gevolgd door de naam van de service (zoals hierboven). De titel hoeft niet gelijk te zijn (waarschijnlijk is dit ook geen goed idee) aan de titel in de H1-kop. De titel moet ongeveer 65 tekens bevatten (inclusief | SERVICENAAM).
-- **auteur**, **manager**, **revisor**: het veld 'auteur' moet de **Github-gebruikersnaam** van de auteur bevatten, niet zijn alias.  De velden manager en reviewer moeten daarentegen wel een alias bevatten. ms.reviewer geeft de naam aan van de projectmanager die is gekoppeld aan het artikel of de service.
-- **MS.AssetID**: dit is de GUID van het artikel van CAPS. Haal bij het maken van een nieuw markdown-bestand een GUID op van [https://www.guidgenerator.com](https://www.guidgenerator.com). 
-- **MS.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: mogelijke waarden voor deze elementen vindt u [hier](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
+- Door dubbele punten in een waarde (bijvoorbeeld een titel) wordt de metagegevensparser verbroken. Gebruik in plaat hiervan de HTML-codering &#58; (bijvoorbeeld, titel: Azure Rights Management&#58; de basisbeginselen | Azure RMS).
+- **titel**: Deze titel wordt weergegeven in zoekmachineresultaten. De titel moet eindigen met een sluisteken (|), gevolgd door de naam van de service (zoals hierboven). De titel hoeft niet gelijk te zijn (waarschijnlijk is dit ook geen goed idee) aan de titel in de H1-kop. De titel moet ongeveer 65 tekens bevatten (inclusief | SERVICENAAM).
+- **auteur**, **manager**, **reviewer**: Het veld auteur moet de **Github-gebruikersnaam** van de auteur bevatten, niet de alias.  De velden manager en reviewer moeten daarentegen wel een alias bevatten. ms.reviewer geeft de naam aan van de projectmanager die is gekoppeld aan het artikel of de service.
+- **ms.assetid**: Dit is de GUID van het artikel van CAPS. Haal bij het maken van een nieuw markdown-bestand een GUID op van [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Mogelijke waarden voor deze elementen vindt u [hier](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Basis-markdown en markdown met een vleugje GitHub
 
@@ -216,7 +216,7 @@ Dit is een voorbeeld van `in-line code`.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## <a name="docsms-extentions"></a>docs.ms-uitbreidingen
+## <a name="docsms-extensions"></a>docs.ms-extensies
 
 ### <a name="button"></a>Knop
 

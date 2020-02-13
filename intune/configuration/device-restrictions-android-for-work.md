@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 122f0b0194a96b844e274ab39a73224eb23cc6b3
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206598"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051589"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Met Android Enterprise-apparaatinstellingen kunt u functies toestaan of beperken met behulp van Intune
 
@@ -32,7 +32,7 @@ In dit artikel vindt u een overzicht en beschrijving van de verschillende instel
 
 ## <a name="device-owner-only"></a>Alleen eigenaar van het apparaat
 
-Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen waarbij intune het hele apparaat beheert, zoals volledig beheerde Android-of speciale apparaten.
+Deze instellingen zijn van toepassing op Android Enterprise-inschrijvingstypen waarbij het hele apparaat wordt beheerd in Intune, zoals volledig beheerde Android Enterprise-apparaten of toegewezen apparaten.
 
 ### <a name="general-settings"></a>Algemene instellingen
 
@@ -44,7 +44,7 @@ Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen
   - **Automatisch verlenen**: Machtigingen worden automatisch verleend.
   - **Automatisch weigeren**: Machtigingen worden automatisch geweigerd.
 - **Wijzigingen in datum en tijd**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers handmatig de datum en tijd instellen. **Niet geconfigureerd**: staat gebruikers toe om de datum en tijd in te stellen op het apparaat.
-- **Volume wijzigingen**: **blok keren** dat gebruikers het volume van het apparaat niet kunnen wijzigen, en het hoofd volume wordt ook gedempt. **Niet geconfigureerd**: staat gebruik van de volume-instellingen toe op het apparaat.
+- **Volumewijzigingen**: **Blokkeren** voorkomt dat gebruikers het volume van het apparaat wijzigingen, en dempt ook het hoofdvolume. **Niet geconfigureerd**: staat gebruik van de volume-instellingen toe op het apparaat.
 - **Fabrieksinstellingen terugzetten**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers de optie voor het terugzetten van de fabrieksinstellingen van het apparaat gebruiken. **Niet geconfigureerd**: staat gebruikers toe om deze instelling te gebruiken op het apparaat.
 - **Opstarten in veilige modus**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers het apparaat opnieuw opstarten in de veilige modus. **Niet geconfigureerd**: staat gebruikers toe om het apparaat opnieuw op te starten in de veilige modus.
 - **Statusbalk**: Kies **Blokkeren** als u de toegang wilt blokkeren tot de statusbalk, met inbegrip van meldingen en snelle instellingen. **Niet geconfigureerd**: gebruikers hebben toegang tot de statusbalk.
@@ -59,7 +59,7 @@ Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen
 - **Gegevens beamen met NFC**: Kies **Blokkeren** als u wilt voorkomen dat gegevens worden verzonden vanuit apps met behulp van de NFC-technologie. **Niet geconfigureerd**: NFC kan worden gebruikt voor het delen van gegevens tussen apparaten.
 - **Foutopsporingsfuncties**: Kies **Toestaan** als u wilt toestaan dat gebruikers de functies voor foutopsporing gebruiken op het apparaat. **Niet geconfigureerd**: voorkomt dat gebruikers de functies voor foutopsporing kunnen gebruiken op het apparaat.
 - **Microfoon aanpassen**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers de microfoon kunnen inschakelen of het volume van de microfoon kunnen aanpassen. **Niet geconfigureerd**: de gebruiker kan de microfoon van het apparaat gebruiken en het volume ervan aanpassen.
-- **E-mailadressen resetbeveiliging fabrieksinstellingen**: Kies **e-mailadressen van een Google-account**. Voer de e-mailadressen in van apparaatbeheerders die het apparaat kunnen ontgrendelen nadat dit is gewist. Plaats een puntkomma tussen de e-mailadressen, zoals `admin1@gmail.com;admin2@gmail.com`. Als u geen e-mailadres invoert, kan iedereen het apparaat ontgrendelen nadat de fabrieksinstellingen zijn hersteld. Deze e-mail berichten zijn alleen van toepassing wanneer een niet-gebruikers fabrieks instelling is uitgevoerd, zoals het uitvoeren van een fabrieks instelling opnieuw instellen met het menu herstellen.
+- **E-mailadressen resetbeveiliging fabrieksinstellingen**: Kies **e-mailadressen van een Google-account**. Voer de e-mailadressen in van apparaatbeheerders die het apparaat kunnen ontgrendelen nadat dit is gewist. Plaats een puntkomma tussen de e-mailadressen, zoals `admin1@gmail.com;admin2@gmail.com`. Als u geen e-mailadres invoert, kan iedereen het apparaat ontgrendelen nadat de fabrieksinstellingen zijn hersteld. Deze e-mailberichten zijn alleen van toepassing wanneer terugzetten van de fabrieksinstellingen wordt geactiveerd door een niet-gebruiker, zoals bijvoorbeeld een herstelmenu.
 - **Netwerknooduitgang**: Kies **Inschakelen** als gebruikers de functie Netwerknooduitgang mogen inschakelen. Als er geen netwerkverbinding tot stand wordt gebracht bij het opstarten van het apparaat, vraagt de functie of er tijdelijk verbinding moet worden gemaakt met een netwerk en of het apparaatbeleid moet worden vernieuwd. Wanneer het beleid is toegepast, wordt het tijdelijke netwerk vergeten en gaat het apparaat verder met opstarten. Deze functie maakt in de volgende gevallen verbinding tussen een apparaat en netwerk:
   - Er bevindt zich geen geschikt netwerk in het laatste beleid.
   - Het apparaat wordt opgestart naar een app in de modus vergrendelingstaak.
@@ -74,7 +74,7 @@ Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen
   - **Onderhoudsvenster**: Hiermee worden updates automatisch geïnstalleerd tijdens een dagelijkse onderhoudsperiode die u in Intune instelt. Er wordt gedurende 30 dagen geprobeerd om de updates te installeren. Dit kan mislukken als er te weinig ruimte of onvoldoende accuvermogen is. Na 30 dagen vraagt Android de gebruiker om te installeren. Deze periode wordt is ook gebruikt om updates voor Play-apps te installeren. Gebruik deze optie voor specifieke apparaten, zoals kiosken, omdat toegewezen apparaten mt maar één app op de voorgrond kunnen worden bijgewerkt.
 
 - **Meldingsvensters**: Als de optie **Uitschakelen** is ingesteld, worden venstermeldingen, inclusief pop-ups, inkomende oproepen, uitgaande oproepen, systeemwaarschuwingen en systeemfouten niet weergegeven op het apparaat. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat meldingen worden weergegeven.
-- **Voorst Ellen voor eerste gebruik overs Laan**: **Schakel** de opties verbergen of overs laan uit apps die zelf studies of hints door lopen wanneer de app wordt gestart. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat suggesties worden weergegeven wanneer de app wordt gestart.
+- **Hints voor eerste gebruik overslaan**: **Inschakelen** verbergt suggesties (of slaat deze over) van apps die stapsgewijs door zelfstudies gaan, of hints wanneer de app wordt gestart. Als de optie **Niet geconfigureerd** is ingesteld, wordt de standaardinstelling van het besturingssysteem gebruikt, die mogelijk bepaalt dat suggesties worden weergegeven wanneer de app wordt gestart.
 
 ### <a name="system-security-settings"></a>Systeembeveiligingsinstellingen
 
@@ -93,7 +93,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
     Als er geen apps worden vermeld, [voegt u enkele Android-apps toe](../apps/apps-add-android-for-work.md) aan het apparaat. Zorg ervoor dat u [de app toewijst](../apps/apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
   > [!IMPORTANT]
-  > Wanneer u de kiosk modus van één app gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
+  > Wanneer u de kioskmodus voor één app gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
   
 - **Meerdere apps**: Gebruikers hebben toegang tot een beperkte set apps op het apparaat. Wanneer het apparaat wordt gestart, worden alleen de toegevoegde apps gestart. U kunt ook enkele webkoppelingen toevoegen die gebruikers kunnen openen. Wanneer het beleid wordt toegepast, zien gebruikers pictogrammen voor de toegestane apps op het startscherm.
 
@@ -104,27 +104,27 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   >
   > De app **Managed Home Screen** hoeft niet te zijn opgenomen in het configuratieprofiel, maar moet wel worden toegevoegd als een client-app. Wanneer de app **Managed Home Screen** wordt toegevoegd als een client-app, worden andere apps die u aan het configuratieprofiel toevoegt, weergegeven als pictogrammen in de app **Managed Home Screen**.
   >
-  > Wanneer u de kiosk modus van meerdere apps gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
+  > Wanneer u de kiosk modus voor meerdere apps gebruikt, werken de apps voor kiezer/telefoon mogelijk niet goed. 
 
-  - **Toevoegen**: Selecteer uw apps in de lijst.
+  - **Toevoegen**: selecteer uw apps in de lijst.
 
     Als de app **Managed Home Screen** niet wordt vermeld, [voegt u deze toe vanuit Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Zorg ervoor dat u [de app toewijst](../apps/apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
     U kunt ook andere [Android-apps](../apps/apps-add-android-for-work.md) toevoegen aan het apparaat, evenals [web-apps](../apps/web-app.md) die zijn gemaakt door uw organisatie. Zorg ervoor dat u [de app toewijst](../apps/apps-deploy.md) aan de apparaatgroep die is gemaakt voor uw toegewezen apparaten.
 
-  - **Knop voor virtuele introductie**: een knop met zachte sleutel waarmee gebruikers worden geretourneerd naar het beheerde Start scherm, zodat gebruikers tussen apps kunnen scha kelen. Uw opties zijn:
+  - **Virtuele knop Start**: een schermtoets waarmee gebruikers terugkeren naar Managed Home Screen zodat ze kunnen schakelen tussen apps. Uw opties zijn:
 
-    - **Niet geconfigureerd** (standaard): er wordt geen start knop weer gegeven. Gebruikers moeten de knop terug gebruiken om tussen apps te scha kelen.
-    - **Swipe omhoog**: er wordt een start knop weer gegeven wanneer een gebruiker naar het apparaat wordt geveegd.
+    - **Niet geconfigureerd** (standaard): er wordt geen knop Start weergegeven. Gebruikers moeten de knop Terug gebruiken om tussen apps te schakelen.
+    - **Omhoog vegen**: er wordt een knop Start weergegeven wanneer een gebruiker naar boven veegt op het apparaat.
     - **Zwevend**: toont een permanente, zwevende knop Start op het apparaat.
 
   - **Kioskmodus verlaten**: Kies **Inschakelen** om beheerders toestemming te geven de kioskmodus tijdelijk te onderbreken om het apparaat bij te werken. Voor gebruik van deze functie moet de beheerder het volgende doen:
   
     1. Doorgaan met het selecteren van de knop Terug totdat de knop **Kiosk verlaten** wordt weergegeven. 
     2. Hiermee wordt de knop **Kiosk verlaten** geselecteerd en de pincode voor het **verlaten van de kioskmodus ingevoerd**.
-    3. Wanneer u klaar bent, selecteert u de beheerde app voor het **Start scherm** . Met deze stap wordt het apparaat weer vergrendeld in de kioskmodus voor gebruik van meerdere apps.
+    3. Wanneer u klaar bent, selecteert u de app **Managed Home Screen**. Met deze stap wordt het apparaat weer vergrendeld in de kioskmodus voor gebruik van meerdere apps.
 
-      Als de instelling is ingesteld op **niet geconfigureerd**, kunnen beheerders de kiosk modus niet onderbreken. Als de beheerder de knop Terug blijft selecteren en vervolgens de knop **Kiosk verlaten** selecteert, verschijnt er een bericht dat er een wachtwoordcode moet worden ingevoerd.
+      Als de instelling is ingesteld op **Niet geconfigureerd**, kunnen beheerders de kioskmodus niet onderbreken. Als de beheerder de knop Terug blijft selecteren en vervolgens de knop **Kiosk verlaten** selecteert, verschijnt er een bericht dat er een wachtwoordcode moet worden ingevoerd.
 
     - **Code voor verlaten kioskmodus**: Voer een 4-6-cijferige numerieke pincode in. De beheerder gebruikt deze pincode om de kioskmodus tijdelijk te onderbreken.
 
@@ -140,32 +140,32 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
     >
     > Moderne schermen hebben een hogere pixeldichtheid met de mogelijkheid om definitie-installatiekopieën gelijkwaardig aan 2K/4K weer te geven.
 
-  - **Wi-Fi-configuratie** **: Hiermee** wordt het besturings element Wi-Fi weer gegeven op het beheerde Start scherm en kunnen eind gebruikers het apparaat verbinden met verschillende WiFi-netwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) geeft niet het besturings element Wi-Fi weer op het beheerde Start scherm. Hiermee voor komt u dat gebruikers verbinding kunnen maken met Wi-Fi-netwerken terwijl ze het beheerde Start scherm gebruiken.
+  - **Wi-Fi-configuratie**: met **Inschakelen** wordt het Wi-Fi-besturingselement weergegeven in Managed Home Screen, en krijgen eindgebruikers de mogelijkheid om het apparaat te verbinden met verschillende WiFi-netwerken. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard): het Wi-Fi-besturingselement wordt niet weergegeven op Managed Home Screen. Hiermee voorkomt u dat gebruikers verbinding kunnen maken met Wi-Fi-netwerken terwijl ze Managed Home Screen gebruiken.
 
-  - **Bluetooth-configuratie**: **inschakelen** Hiermee wordt het Bluetooth-besturings element weer gegeven op het beheerde Start scherm en kunnen eind gebruikers apparaten koppelen via Bluetooth. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard) het besturings element Bluetooth wordt niet weer gegeven op het beheerde Start scherm. Hiermee wordt voor komen dat gebruikers Bluetooth-en koppelings apparaten configureren tijdens het gebruik van het beheerde Start scherm.
+  - **Bluetooth-configuratie**: met **Inschakelen** wordt het Bluetooth-besturingselement weergegeven in Managed Home Screen, en krijgen eindgebruikers de mogelijkheid om apparaten te koppelen via Bluetooth. Als u deze functie inschakelt, wordt ook de apparaatlocatie ingeschakeld. **Niet geconfigureerd** (standaard): het Bluetooth-besturingselement wordt niet weergegeven in Managed Home Screen. Hiermee voorkomt u dat gebruikers Bluetooth configureren en apparaten koppelen terwijl ze Managed Home Screen gebruiken.
 
-  - **Zaklantaarn toegang**: **inschakelen** Hiermee wordt het besturings element zaklantaarn in het beheerde Start scherm weer gegeven en kunnen eind gebruikers de zaklantaarn in-of uitschakelen. **Niet geconfigureerd** (standaard) geeft niet het zaklantaarn-besturings element weer op het beheerde Start scherm. Hiermee wordt voor komen dat gebruikers de zaklantaarn gebruiken terwijl ze het beheerde Start scherm gebruiken.
+  - **Zaklamp-toegang**: met **Inschakelen** wordt het Zaklamp-besturingselement weergegeven in Managed Home Screen, en krijgen eindgebruikers de mogelijkheid om de zaklamp in of uit te schakelen. **Niet geconfigureerd** (standaard): het Zaklamp-besturingselement wordt niet weergegeven in Managed Home Screen. Hiermee voorkomt u dat gebruikers de zaklamp gebruiken terwijl ze Managed Home Screen gebruiken.
 
-  - **Volume regeling van media**: **inschakelen** geeft de volume regeling voor media weer op het beheerde Start scherm. Hiermee kunnen eind gebruikers het Media volume van het apparaat aanpassen met behulp van een schuif regelaar. **Niet geconfigureerd** (standaard) de volume regeling voor media op het beheerde Start scherm wordt niet weer gegeven. Hiermee wordt voor komen dat gebruikers het Media volume van het apparaat aanpassen tijdens het gebruik van het beheerde Start scherm, tenzij hun hardwareknoppen dit ondersteunen. 
+  - **Volumeregeling voor media**: met **Inschakelen** wordt het Volumeregeling voor media-besturingselement weergegeven in Managed Home Screen, en krijgen eindgebruikers de mogelijkheid om het mediavolume van het apparaat aan te passen met een schuifregelaar. **Niet geconfigureerd** (standaard): het Volumeregeling voor media-besturingselement wordt niet weergegeven in Managed Home Screen. Hiermee voorkomt u dat gebruikers het mediavolume van het apparaat aanpassen terwijl ze Managed Home Screen gebruiken, tenzij de hardwareknoppen hier ondersteuning voor bieden. 
 
-  - **Scherm beveiligings modus**: **inschakelen** geeft een scherm afbeelding weer op het beheerde Start scherm wanneer het apparaat is vergrendeld of een time-out optreedt. **Niet geconfigureerd** (standaard) toont geen scherm beveiliging op het beheerde Start scherm.
+  - **Schermbeveiligingsmodus**: met **Inschakelen** wordt een schermbeveiliging weergegeven in Managed Home Screen wanneer het apparaat is vergrendeld of wanneer er een time-out optreedt. **Niet geconfigureerd** (standaard): er wordt geen schermbeveiliging weergegeven in Managed Home Screen.
 
     Wanneer deze functie is ingeschakeld, moet u ook het volgende configureren:
 
-    - **Aangepaste scherm beveiliging instellen afbeelding**: Voer de URL in naar een aangepaste PNG, JPG, JPEG, GIF, BMP, WebP of ICOimage. Voer bijvoorbeeld het volgende in:
+    - **Aangepaste afbeelding voor schermbeveiliging instellen**: voer de URL in naar een aangepaste PNG-, JPG-, JPEG-, GIF-, BMP-, WebP- of ICO-afbeelding. Voer bijvoorbeeld het volgende in:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
       - `https://www.contoso.com/image.webp`
 
-      Als u geen URL opgeeft, wordt de standaard installatie kopie van het apparaat gebruikt, als er een standaard installatie kopie is.
+      Als u geen URL opgeeft, wordt de standaardafbeelding van het apparaat gebruikt, indien aanwezig.
       
       > [!TIP]
-      > Een bestands bron-URL die in een bitmap kan worden omgezet, wordt ondersteund.
+      > Elke bestandsresource-URL die in een bitmap kan worden omgezet, wordt ondersteund.
 
-    - **Het aantal seconden dat het apparaat scherm beveiliging bevat voordat het scherm wordt uitgeschakeld**: Kies hoe lang het apparaat de scherm beveiliging weergeeft. Voer een waarde tussen 0-9999999 seconden in. De standaard waarde is `0` seconden. Als u niets opgeeft of op nul (`0`) instelt, wordt de scherm beveiliging actief totdat een gebruiker met het apparaat communiceert.
-    - **Aantal seconden dat het apparaat inactief is voordat scherm beveiliging wordt weer gegeven**: Kies hoe lang het apparaat inactief moet zijn voordat de scherm beveiliging wordt weer gegeven. Voer een waarde tussen 1-9999999 seconden in. De standaard waarde is `30` seconden. U moet een getal opgeven dat groter is dan nul (`0`).
-    - **Media detecteren vóór start scherm beveiliging**: **inschakelen** (standaard) de scherm beveiliging wordt niet weer gegeven als audio of video wordt afgespeeld op het apparaat. **Niet geconfigureerd** toont de scherm beveiliging, zelfs als audio of video wordt afgespeeld.
+    - **Het aantal seconden dat een schermbeveiliging wordt weergegeven op het apparaat voordat het scherm wordt uitgeschakeld**: kies hoe lang de schermbeveiliging wordt weergegeven op het apparaat. Voer een waarde in tussen 0-9.999.999 seconden. De standaardwaarde is `0` seconden. Als deze waarde leeg is of is ingesteld op 0 (`0`), blijft de schermbeveiliging actief totdat een gebruiker met het apparaat communiceert.
+    - **Aantal seconden dat het apparaat inactief is voordat de schermbeveiliging wordt weergegeven**: kies hoe lang het apparaat inactief moet zijn voordat de schermbeveiliging wordt weergegeven. Voer een waarde in tussen 0-9.999.999 seconden. De standaardwaarde is `30` seconden. U moet een getal opgeven dat groter is dan nul (`0`).
+    - **Media detecteren voordat de schermbeveiliging wordt gestart**: met **Inschakelen** (standaard) wordt de schermbeveiliging niet weergegeven wanneer er audio of video wordt afgespeeld op het apparaat. **Niet geconfigureerd**: de schermbeveiliging wordt weergegeven, zelfs als er audio of video wordt afgespeeld.
 
 ### <a name="device-password-settings"></a>Instellingen voor apparaatwachtwoord
 
@@ -198,7 +198,7 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 ### <a name="power-settings"></a>Energie-instellingen
 
-- **Tijd tot vergrendelings scherm**: Geef de maximale tijd op die een gebruiker kan instellen totdat het apparaat wordt vergrendeld. Als u deze instelling bijvoorbeeld instelt op **10 minuten**, kunnen gebruikers de tijd instellen van 15 seconden tot 10 minuten. Wanneer ingesteld op **niet geconfigureerd** (standaard), wordt deze instelling niet door intune gewijzigd of beheerd.
+- **Tijd voor schermvergrendeling**: voer de maximale tijd in die een gebruiker kan instellen, totdat het apparaat wordt vergrendeld. Als u deze instelling bijvoorbeeld instelt op **10 minuten**, kunnen gebruikers een tijd instellen tussen 15 seconden en 10 minuten. Wanneer dit is ingesteld op **Niet geconfigureerd** (standaard), wordt deze instelling niet gewijzigd of beheerd in Intune.
 
 - **Scherm aan terwijl het apparaat is aangesloten**: Kies bij welke energiebronnen het scherm aan blijft wanneer het apparaat is aangesloten.
 
@@ -206,13 +206,13 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
 
 - **Nieuwe gebruikers toevoegen**: Kies **Blokkeren** als u wilt voorkomen dat gebruikers nieuwe gebruikers toevoegen. Elke gebruiker heeft een persoonlijke ruimte op het apparaat voor aangepaste beginschermen, accounts, apps en instellingen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
 - **Gebruiker verwijderen**: Selecteer **Blokkeren** om te voorkomen dat gebruikers andere gebruikers verwijderen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om andere gebruikers toe te voegen aan het apparaat.
-- **Account wijzigingen** (alleen specifieke apparaten): Kies **blok** om te voor komen dat gebruikers accounts wijzigen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om gebruikersaccounts op het apparaat bij te werken.
+- **Accountwijzigingen** (alleen toegewezen apparaten): kies **Blokkeren** als u wilt voorkomen dat gebruikers accounts wijzigen. **Niet geconfigureerd** (standaardinstelling) staat gebruikers toe om gebruikersaccounts op het apparaat bij te werken.
 
   > [!NOTE]
-  > Deze instelling wordt niet gehonoreerd op de apparaat-eigenaar (volledig beheerde) apparaten. Als u deze instelling configureert, wordt de instelling genegeerd en heeft dit geen invloed.
+  > Deze instelling geldt niet op apparaten van apparaateigenaar (volledig beheerd). Als u deze instelling configureert, wordt de instelling genegeerd en heeft deze geen invloed.
 
-- **Gebruiker kan referenties configureren**: met **blok keren** wordt voor komen dat gebruikers certificaten configureren die zijn toegewezen aan apparaten, zelfs apparaten die niet aan een gebruikers account zijn gekoppeld. **Niet geconfigureerd** , kan het mogelijk maken dat gebruikers hun referenties kunnen configureren of wijzigen wanneer ze ze openen in de-opslag. 
-- **Persoonlijke Google-accounts**: **blok keren** dat gebruikers geen persoonlijk Google-account aan het apparaat kunnen toevoegen. **Niet geconfigureerd** (standaard) Hiermee kunnen gebruikers hun persoonlijke Google-account toevoegen.
+- **Gebruiker kan referenties configureren**: **Blokkeren** voorkomt dat gebruikers certificaten configureren die zijn toegewezen aan apparaten, zelfs bij apparaten die niet zijn gekoppeld aan een gebruikersaccount. **Niet geconfigureerd**: kan gebruikers de mogelijkheid bieden om hun referenties te configureren of te wijzigen wanneer ze deze openen in de KeyStore-opslag. 
+- **Persoonlijke Google-accounts**: **Blokkeren** voorkomt dat gebruikers hun persoonlijke Google-account toevoegen aan het apparaat. **Niet geconfigureerd** (standaard): gebruikers kunnen hun persoonlijke Google-account toevoegen.
 
 ### <a name="applications"></a>Toepassingen
 
@@ -245,31 +245,31 @@ Gebruik deze instellingen om een kioskstijlervaring op uw toegewezen apparaten t
   > [!IMPORTANT]
   > - De VPN-client die u kiest moet op het apparaat worden geïnstalleerd en moet VPN per app in werkprofielen ondersteunen. Anders treedt er een fout op. 
   > - U dient de VPN-client-app goed te keuren in de **Beheerde Google Play Store**, de app te synchroniseren naar Intune en de app te implementeren op het apparaat. Nadat u dit hebt gedaan, is de app geïnstalleerd in het werkprofiel van de gebruiker.
-  > - U moet de VPN-client nog steeds configureren met een [VPN-profiel](vpn-settings-android-enterprise.md)of via een [app-configuratie profiel](../apps/app-configuration-policies-use-android.md).
+  > - U moet de VPN-client nog steeds configureren met een [VPN-profiel](vpn-settings-android-enterprise.md) of via een [app-configuratieprofiel](../apps/app-configuration-policies-use-android.md).
   > - Er zijn mogelijk bekende problemen bij het gebruik van VPN per app met F5 Access voor Android 3.0.4. Zie [Releaseopmerkingen voor F5 Access voor Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) voor meer informatie.
 
 - **Vergrendelingsmodus**: Kies **Inschakelen** als u wilt afdwingen dat al het verkeer de VPN-tunnel gebruikt. Als er geen VPN-verbinding is ingesteld, heeft het apparaat geen toegang tot het netwerk.
 
   Kies **Niet geconfigureerd** om toe te staan dat verkeer via de VPN-tunnel of via het mobiele netwerk gaat.
 
-- **Aanbevolen globale proxy**: Kies **inschakelen** om een algemene proxy toe te voegen aan de apparaten. Wanneer deze functie is ingeschakeld, wordt het HTTP-en HTTPS-verkeer, inclusief enkele apps op het apparaat, gebruikt voor de proxy die u invoert. Deze proxy is alleen een aanbeveling. Het is mogelijk dat sommige apps de proxy niet gebruiken. **Niet geconfigureerd** (standaard) voegt geen aanbevolen algemene proxy toe.
+- **Aanbevolen algemene proxy**: kies **Inschakelen** om een algemene proxy toe te voegen aan de apparaten. Wanneer deze functie is ingeschakeld, wordt het HTTP- en HTTPS-verkeer, inclusief enkele apps op het apparaat, gebruikt voor de proxy die u invoert. Deze proxy is slechts een aanbeveling. Het kan zijn dat sommige apps de proxy niet gebruiken. **Niet geconfigureerd** (standaard): er wordt geen aanbevolen algemene proxy toegevoegd.
 
-  Zie [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (een Android-site openen) voor meer informatie over deze functie.
+  Zie [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (er wordt een Android-site geopend) voor meer informatie over deze functie.
 
-  Wanneer deze functie is ingeschakeld, voert u ook het **type** proxy in. Uw opties zijn:
+  Wanneer deze functie is ingeschakeld, voert u ook het **Type** proxy in. Uw opties zijn:
 
-  - **Direct**: Selecteer deze optie om de proxyserver gegevens hand matig in te voeren, waaronder:
-    - **Host**: Geef de hostnaam of het IP-adres van de proxy server op. Voer bijvoorbeeld `proxy.contoso.com` of `127.0.0.1` in.
+  - **Direct**: kies deze optie om de proxyserverinstellingen handmatig in te voeren, waaronder:
+    - **Host**: voer de hostnaam of het IP-adres van de proxyserver in. Voer bijvoorbeeld `proxy.contoso.com` of `127.0.0.1` in.
     - **Poortnummer**: Voer het TCP-poortnummer in dat wordt gebruikt voor de proxyserver. Voer bijvoorbeeld `8080` in.
-    - **Uitgesloten hosts**: Voer een lijst in met hostnamen of IP-adressen die de proxy niet gebruiken. Deze lijst kan een asterisk (`*`) Joker teken bevatten en meerdere hosts gescheiden door punt komma's (`;`) zonder spaties. Voer bijvoorbeeld `127.0.0.1;web.contoso.com;*.microsoft.com` in.
+    - **Uitgesloten hosts**: voer een lijst met hostnamen of IP-adressen in die niet gebruikmaken van de proxy. Deze lijst kan een asterisk (`*`) bevatten en meerdere hosts gescheiden door puntkomma’s (`;`) zonder spaties. Voer bijvoorbeeld `127.0.0.1;web.contoso.com;*.microsoft.com` in.
 
-  - **Automatische proxy configuratie**: Voer de **Pac-URL** in voor een automatisch configuratie script van de proxy. Voer bijvoorbeeld `https://proxy.contoso.com/proxy.pac` in.
+  - **Automatische proxyconfiguratie**: voer de **PAC-URL** in voor een automatisch script voor de proxyconfiguratie. Voer bijvoorbeeld `https://proxy.contoso.com/proxy.pac` in.
 
-    Zie voor meer informatie over PAC-bestanden het [bestand voor automatische proxy-configuratie (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opent een niet-micro soft-site).
+    Zie [PAC-bestand (Proxy Auto-Configuration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (hiermee opent u een niet-Microsoft-site) voor meer informatie over PAC-bestanden.
 
 ## <a name="work-profile-only"></a>Alleen werkprofiel
 
-Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen waarbij intune alleen het werk profiel beheert, zoals de inschrijving van een Android Enter prise-werk profiel op een persoonlijk of een privé apparaat (BYOD).
+Deze instellingen zijn van toepassing op Android Enterprise-inschrijvingstypen waarbij alleen het werkprofiel wordt beheerd in Intune, zoals een inschrijving voor een Android Enterprise-werkprofiel op een persoonlijk apparaat of een BYOD-apparaat (Bring-Your-Own-Device).
 
 ### <a name="work-profile-settings"></a>Werkprofielinstellingen
 
@@ -279,8 +279,8 @@ Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen
 - **Gegevens delen tussen werkprofielen en persoonlijke profielen**: Kies of delen mogelijk is tussen apps in het werkprofiel en apps in het persoonlijke profiel. Met deze instelling kunt u bijvoorbeeld deelacties binnen toepassingen bepalen, zoals de optie **Delen…** in de Chrome-browser-app. Deze instelling geldt niet voor kopiëren en plakken op het klembord. Uw opties voor delen:
   - **Standaardwaarde apparaat**: Dit is de standaardinstelling voor het delen van gegevens van het apparaat. Deze instelling is afhankelijk van de Android-versie. Delen van het persoonlijke profiel naar het werkprofiel is standaard toegestaan. Delen van het werkprofiel naar het persoonlijke profiel is standaard geblokkeerd. Met deze instelling wordt voorkomen dat er gegevens worden gedeeld van het werkprofiel met het persoonlijke profiel. Google blokkeert niet delen van het persoonlijke profiel naar het werkprofiel op apparaten met versie 6.0 of hoger.
   - **Met apps in het werkprofiel kunnen aanvragen voor delen van het persoonlijke profiel worden verwerkt**: Hiermee wordt de ingebouwde Android-functie ingeschakeld waarmee het delen van het persoonlijke profiel naar het werkprofiel is toegestaan. Wanneer dit is ingeschakeld, kan een deelverzoek van een app in het persoonlijke profiel worden gedeeld met apps in het werkprofiel. Dit is de standaardinstelling voor Android-apparaten met een oudere versie dan 6.0.
-  - **Delen over grenzen voor komen**: Hiermee wordt voor komen dat het werk en het persoonlijke profiel worden gedeeld.
-  - **Geen beperkingen voor delen**: Hiermee wordt het delen van het werk profiel in beide richtingen verdeeld. Wanneer u deze instelling selecteert, kunnen apps met het werkprofiel gegevens delen met apps in het persoonlijke profiel die geen badge hebben. Met deze instelling kunnen beheerde apps in het werkprofiel gegevens delen met apps aan de onbeheerde zijde van het apparaat. Gebruik deze instelling daarom zorgvuldig.
+  - **Delen buiten grenzen voorkomen**: voorkomt delen tussen een werkprofiel en een persoonlijk profiel.
+  - **Geen beperkingen voor delen**: schakelt delen buiten de grenzen van een werkprofiel in, in beide richtingen. Wanneer u deze instelling selecteert, kunnen apps met het werkprofiel gegevens delen met apps in het persoonlijke profiel die geen badge hebben. Met deze instelling kunnen beheerde apps in het werkprofiel gegevens delen met apps aan de onbeheerde zijde van het apparaat. Gebruik deze instelling daarom zorgvuldig.
 
 - **Werkprofielmeldingen terwijl het apparaat is vergrendeld**: Hiermee kunt u bepalen of de apps in het werkprofiel gegevens in meldingen kunnen weergeven wanneer het apparaat is vergrendeld. **Blokkeren**: de gegevens worden niet weergegeven. **Niet geconfigureerd**: de gegevens worden weergegeven.
 - **Standaardapp-machtigingen**: Hiermee stelt u het standaardmachtigingsbeleid in voor alle apps in het werkprofiel. Vanaf Android 6 wordt de gebruiker gevraagd bepaalde vereiste machtigingen aan apps toe te kennen wanneer de app wordt gestart. Met deze beleidsinstelling kunt u in het werkprofiel bepalen of gebruikers wordt gevraagd om machtigingen toe te kennen voor alle apps in het werkprofiel. U kunt bijvoorbeeld een app aan het werkprofiel toewijzen waarvoor toegang tot de locatie is vereist. Normaal gesproken wordt de gebruiker gevraagd of hij de app toegang tot de locatie wil geven. Gebruik dit beleid om automatisch machtigingen te verlenen zonder om bevestiging te vragen, automatisch machtigingen te weigeren zonder om bevestiging te vragen, of om de eindgebruiker te laten beslissen. U kunt kiezen uit:
@@ -294,7 +294,7 @@ Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen
 - **Accounts toevoegen en verwijderen**: Kies **Blokkeren** om te voorkomen dat eindgebruikers handmatig accounts in het werkprofiel kunnen toevoegen of uit het werkprofiel kunnen verwijderen. Als u de Gmail-app bijvoorbeeld implementeert in een Android-werkprofiel, kunt u verhinderen dat eindgebruikers accounts toevoegen aan of verwijderen uit dit werkprofiel. **Niet geconfigureerd**: hiermee wordt toegestaan dat accounts worden toegevoegd aan het werkprofiel.  
 
   > [!NOTE]
-  > Google-accounts kunnen niet worden toegevoegd aan een werk profiel.
+  > Google-accounts kunnen niet worden toegevoegd aan een werkprofiel.
 
 - **Contactpersoon delen via Bluetooth**: Hiermee krijgt u toegang tot werkcontactpersonen op een ander apparaat, zoals een auto, dat via Bluetooth is gekoppeld. Standaard is deze instelling niet geconfigureerd en worden contactpersonen met een werkprofiel niet weergegeven. Selecteer **Inschakelen** om het delen hiervan toe te staan en contactpersonen met een werkprofiel weer te geven. Deze instelling is van toepassing op Android-apparaten met een werkprofiel met Android OS v6.0 en hoger. Door deze instelling in te schakelen, kunnen bepaalde Bluetooth-apparaten werkcontactpersonen cachen bij de eerste verbinding. Als u dit beleid uitschakelt na een eerste synchronisatie, zijn de werkcontactpersonen van een Bluetooth-apparaat niet meteen verwijderd.
 
@@ -306,9 +306,9 @@ Deze instellingen zijn van toepassing op Android Enter prise-inschrijvings typen
 
 - **Camera**: Kies **Blokkeren** als u de toegang tot de camera op het apparaat in het werkprofiel wilt blokkeren. De camera aan de persoonlijke zijde wordt niet beïnvloed door de instelling. **Niet geconfigureerd** staat de toegang tot de camera in het werkprofiel toe.
 
-- **Widgets toestaan van apps voor werk profielen**: als u **inschakelt** , kunnen eind gebruikers widgets toevoegen aan de slag met apps op het Start scherm. Met **Niet geconfigureerd** (standaard) schakelt u deze functie uit.
+- **Widgets van apps in het werkprofiel toestaan**: met **Inschakelen** krijgen eindgebruikers de mogelijkheid om widgets van apps op het startscherm te plaatsen. Met **Niet geconfigureerd** (standaard) schakelt u deze functie uit.
 
-  Outlook wordt bijvoorbeeld geïnstalleerd op de werk profielen van uw gebruikers. Als u deze **optie inschakelt**, kunnen gebruikers de object agenda op het Start scherm van het apparaat plaatsen.
+  Stel bijvoorbeeld dat Outlook is geïnstalleerd in de werkprofielen van uw gebruikers. Als deze instelling is ingesteld op **Inschakelen**, kunnen gebruikers de agendawidget op het startscherm van het apparaat plaatsen.
 
 #### <a name="work-profile-password"></a>Werkprofielwachtwoord
 
@@ -336,7 +336,7 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
 
 - **Minimale wachtwoordlengte**: Geef het minimale aantal cijfers of tekens op waaruit het wachtwoord van de gebruiker moet bestaan, van **4**-**14**.
 - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**: Selecteer de hoeveelheid tijd voordat een inactief apparaat automatisch wordt vergrendeld
-- **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Geef op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat alle gegevens worden gewist van het apparaat
+- **Aantal mislukte aanmeldingen voordat een apparaat wordt gewist**: Geef op hoe vaak een onjuist wachtwoord kan worden ingevoerd voordat het werkprofiel wordt gewist van het apparaat.
 - **Wachtwoordverlooptijd (dagen)** : Voer het aantal dagen in totdat het wachtwoord van de eindgebruiker moet worden gewijzigd (van **1**-**255**)
 - **Vereist wachtwoordtype**: Selecteer het type wachtwoord dat moet worden ingesteld op het apparaat. U kunt kiezen uit:
   - **Standaardwaarde apparaat**
@@ -358,12 +358,12 @@ Deze wachtwoordinstellingen zijn van toepassing op persoonlijke profielen op app
    > [!Note]
    > Deze instelling werkt alleen voor apparaten met Android 8 (Oreo) en later.
 
-- **Voor komen dat app-installaties van onbekende bronnen in het persoonlijke profiel**worden uitgevoerd: op basis van het ontwerp van Android Enter prise-werk profielen kunnen geen apps worden geïnstalleerd vanuit andere bronnen dan de Play Store. Op basis van de aard van het werk profiel zijn de volgende twee profielen bedoeld:
+- **Voorkomen dat apps uit onbekende bronnen worden geïnstalleerd in het persoonlijk profiel**: op apparaten met een Android Enterprise-werkprofiel kunnen geen apps worden geïnstalleerd uit andere bronnen dan de Play Store. Werkprofielapparaten zijn bedoeld voor twee profielen:
 
-  - Een werk profiel dat wordt beheerd met MDM.
+  - Een werkprofiel dat wordt beheerd met MDM.
   - Een persoonlijk profiel dat is geïsoleerd van MDM-beheer.
 
-  Met deze instelling kunnen beheerders meer app-installaties beheren dan onbekende bronnen. **Niet geconfigureerd** (standaard) Hiermee staat u toe dat app-installaties afkomstig zijn van onbekende bronnen in het persoonlijke profiel. De **blok kering** voor komt dat app-installaties van andere bronnen dan de Play Store in het persoonlijke profiel.
+  Met deze instelling krijgen beheerders meer controle over de installatie van apps vanuit onbekende bronnen. **Niet geconfigureerd** (standaard): staat app-installaties toe die afkomstig zijn van onbekende bronnen in het persoonlijke profiel. **Blokkeren** voorkomt app-installaties in het persoonlijke profiel vanuit andere bronnen dan de Play Store.
 
 ### <a name="connectivity"></a>Connectiviteit
 

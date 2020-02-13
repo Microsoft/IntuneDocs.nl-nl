@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: HT
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754572"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051606"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Met instellingen voor iOS- en iPadOS-apparaten kunt u functies toestaan of beperken met behulp van Intune
 
@@ -420,8 +420,6 @@ Is van toepassing op apparaten met iOS 9.3 of hoger.
   Als u de URL van een app wilt vinden, opent u de iTunes App Store en gaat u naar de app. Zoek bijvoorbeeld naar `Microsoft Remote Desktop` of `Microsoft Word`. Selecteer de app en kopieer de URL.
 
   U kunt ook iTunes gebruiken om de app te zoeken en vervolgens de taak **Koppeling kopiëren** gebruiken om de URL van de app te krijgen.
-  
-  Zie [De bundel-id voor een iOS-app zoeken](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) voor meer informatie over het zoeken naar een bundel-id.
 
 - **App-bundel-id**: Voer de [App-bundel-id](bundle-ids-built-in-ios-apps.md) van de gewenste app in. U kunt ingebouwde apps en Line-Of-Business-apps weergeven of verbergen. De website van Apple bevat een lijst met [ingebouwde Apple-apps](https://support.apple.com/HT208094).
 - **App-naam**: Voer de naam van de gewenste app in. U kunt ingebouwde apps en Line-Of-Business-apps weergeven of verbergen. De website van Apple bevat een lijst met [ingebouwde Apple-apps](https://support.apple.com/HT208094).
@@ -559,7 +557,9 @@ Opmerking vereist voor dataroaming (tip of belangrijke opmerking om verwarring b
 
 ## <a name="autonomous-single-app-mode"></a>Autonome modus voor één app
 
-Gebruik deze instellingen om iOS-apparaten zodanig te configureren dat hierop specifieke apps in de autonome één-app-modus worden uitgevoerd. Wanneer deze modus is geconfigureerd en de app wordt uitgevoerd, wordt het apparaat vergrendeld. Alleen deze ene app kan worden uitgevoerd. Voeg bijvoorbeeld een app toe waarmee gebruikers een test kunnen uitvoeren op het apparaat. Wanneer de acties van de app zijn voltooid of u het beleid verwijdert, keert het apparaat terug naar de normale staat.
+Gebruik deze instellingen om iOS-/iPadOS-apparaten te configureren om specifieke apps in de autonome modus voor één app uit te voeren. Wanneer deze modus is geconfigureerd en de gebruiker een van de geconfigureerde apps start, wordt het apparaat vergrendeld voor deze app. Schakelen tussen apps/taken is uitgeschakeld totdat de gebruiker de toegestane app verlaat.
+
+Voeg bijvoorbeeld in een school- of universiteitsomgeving een app toe waarmee gebruikers een test kunnen uitvoeren op het apparaat. Of vergrendel het apparaat in de Bedrijfsportal-app totdat de eindgebruiker zich verifieert. Wanneer de acties van de app zijn voltooid door de gebruiker, of wanneer u het beleid verwijdert, keert het apparaat terug naar de normale staat.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Deze instellingen zijn van toepassing op: Automatische apparaatinschrijving (onder toezicht)
 

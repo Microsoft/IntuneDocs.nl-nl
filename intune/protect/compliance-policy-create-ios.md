@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810233"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074628"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -57,8 +57,8 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Blokkeren** - Geroote (jailbroken) apparaten als niet-compatibel markeren.  
 
-- **Vereisen dat het apparaat zich op of onder het Mobile Threat Defense-niveau bevindt** *(iOS 8.0 en hoger)* :  
-  Gebruik deze instelling om de risico beoordeling uit te voeren als voor waarde voor naleving. Kies het toegestane bedreigings niveau:  
+- **Vereisen dat het apparaat zich op of onder het apparaatbedreigingsniveau bevindt** *(iOS 8.0 en hoger)* :  
+  Gebruik deze instelling om de risicobeoordeling uit te voeren als voorwaarde voor naleving. Kies het toegestane bedreigingsniveau:  
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Beveiligd** - Deze optie is het veiligst en betekent dat het apparaat geen bedreigingen kan hebben. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-conform.
   - **Laag** - Het apparaat wordt als compatibel beoordeeld als er alleen bedreigingen met een laag niveau op staan. Als een hoger niveau wordt aangetroffen, krijgt het apparaat de status niet-compatibel.
@@ -69,16 +69,16 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
 
 ### <a name="operating-system-version"></a>Versie van besturingssysteem  
 
-- **Mini maal vereist besturings systeem** *(Ios 8,0 en hoger)* :  
+- **Minimale versie van het besturingssysteem** *(iOS 8.0 en hoger)* :  
   Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eindgebruiker kan kiezen om het apparaat bij te werken. Daarna zijn de resources van de organisatie toegankelijk.
 
-- **Maximum versie van het besturings systeem toegestaan** *(Ios 8,0 en hoger)* :  
+- **Maximale versie van het besturingssysteem** *iOS 8.0 en hoger)* :  
   Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De eindgebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources zolang een regel niet zodanig is gewijzigd dat de versie van het besturingssysteem is toegestaan.
 
-- **Minimale build-versie van het besturings systeem** *(Ios 8,0 en hoger)* :  
+- **Minimale build-versie van het besturingssysteem** *(iOS 8.0 en hoger)* :  
   Als Apple beveiligingsupdates publiceert, wordt het buildnummer meestal bijgewerkt, niet de versie van het besturingssysteem. Gebruik deze functie om het buildnummer in te voeren dat minimaal is toegestaan op het apparaat.
 
-- **Maximale build-versie van het besturings systeem** *(Ios 8,0 en hoger)* :  
+- **Maximale build-versie van het besturingssysteem** *(iOS 8.0 en hoger)* :  
   Als Apple beveiligingsupdates publiceert, wordt het buildnummer meestal bijgewerkt, niet de versie van het besturingssysteem. Gebruik deze functie om het buildnummer in te voeren dat maximaal is toegestaan op het apparaat.
 
 ## <a name="system-security"></a>Systeembeveiliging
@@ -86,14 +86,14 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
 ### <a name="password"></a>Wachtwoord
 
 > [!NOTE]
-> Nadat een nalevings- of configuratiebeleid op een iOS-apparaat is toegepast, wordt gebruikers elke vijftien minuten gevraagd een wachtwoordcode in te stellen. Gebruikers wordt continu gevraagd een wachtwoordcode in te stellen totdat de code is ingesteld. Wanneer een wachtwoord code is ingesteld voor het iOS-apparaat, wordt het versleutelings proces automatisch gestart. Het apparaat blijft versleuteld totdat de wachtwoord code is uitgeschakeld.
+> Nadat een nalevings- of configuratiebeleid op een iOS-apparaat is toegepast, wordt gebruikers elke vijftien minuten gevraagd een wachtwoordcode in te stellen. Gebruikers wordt continu gevraagd een wachtwoordcode in te stellen totdat de code is ingesteld. Wanneer een wachtwoordcode is ingesteld voor het iOS-apparaat, wordt het versleutelingsproces automatisch gestart. Het apparaat blijft versleuteld totdat de wachtwoordcode is uitgeschakeld.
 
 - **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**:  
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.  
   - **Vereisen** - Gebruikers moeten een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat. iOS-apparaten die gebruikmaken van een wachtwoord, zijn versleuteld.
 
 - **Eenvoudige wachtwoorden**:  
-  - **Niet geconfigureerd** (*standaard*): gebruikers kunnen eenvoudige wacht woorden maken, zoals **1234** of **1111**.
+  - **Niet geconfigureerd** (*standaard*): gebruikers kunnen eenvoudige wachtwoorden maken, zoals **1234** of **1111**.
   - **Blokkeren** - Gebruikers kunnen geen eenvoudige wachtwoorden maken, zoals **1234** of **1111**. 
 
 - **Minimale wachtwoordlengte**:  
@@ -107,11 +107,11 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
 
   Als u een hogere waarde instelt, moet de gebruiker een wachtwoord maken dat complexer is.
 
-- **Maximum aantal minuten na schermvergrendeling voordat wachtwoord is vereist** *(iOS 8.0 en hoger)* :  
-  Opgeven hoe snel nadat het scherm is vergrendeld, een gebruiker een wacht woord moet invoeren om toegang tot het apparaat te krijgen. De opties zijn de standaard waarde *niet geconfigureerd*, *onmiddellijk*en van *1 minuut* tot *4 uur*.
+- **Maximum aantal minuten na schermvergrendeling voordat een wachtwoord is vereist** *(iOS 8.0 en hoger)* :  
+  Geef op hoe snel nadat het scherm is vergrendeld, een gebruiker een wachtwoord moet invoeren om toegang tot het apparaat te krijgen. De opties zijn de standaardwaarde *Niet geconfigureerd*, *Onmiddellijk* en van *1 minuut* tot *4 uur*.
 
 - **Maximum aantal minuten van inactiviteit voordat het scherm wordt vergrendeld**:  
-  Voer de niet-actieve tijd in waarna het scherm van het apparaat wordt vergrendeld. De opties zijn de standaard waarde *niet geconfigureerd*, *onmiddellijk*en van *1 minuut* tot *15 minuten*.
+  Voer de niet-actieve tijd in waarna het scherm van het apparaat wordt vergrendeld. De opties zijn de standaardwaarde *Niet geconfigureerd*, *Onmiddellijk* en van *1 minuut* tot *15 minuten*.
 
 - **Wachtwoordverlooptijd (dagen)** :  
   selecteer het aantal dagen waarna het wachtwoord verloopt en gebruikers een nieuw wachtwoord moeten maken. 
