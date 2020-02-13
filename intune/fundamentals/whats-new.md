@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f46b8c7f0f57ab7831d6487495946aa9326b2d5
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977781"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125027"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -60,32 +60,20 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Appbeheer
 
+#### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Microsoft Edge versie 77 of hoger op Windows 10-apparaten<!-- 5843584 -->
+Intune biedt nu ondersteuning voor het verwijderen van Microsoft Edge versie 77 en hoger op Windows 10-apparaten. Raadpleeg [Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune](~/apps/apps-windows-edge.md) voor meer informatie.
+
 #### <a name="company-portal-app-improved-performance---6178652---"></a>Verbeterde prestaties van de Bedrijfsportal-app<!-- 6178652 -->
 De Bedrijfsportal-app is bijgewerkt om de verbeterde prestaties te ondersteunen voor apparaten die gebruikmaken van ARM64-processors, zoals de Surface Pro X. Voorheen werkte de Bedrijfsportal in een geëmuleerde ARM32-modus. Nu is de Bedrijfsportal-app systeemeigen gecompileerd voor ARM64. Raadpleeg [De Microsoft Intune-bedrijfsportal-app configureren](~/apps/company-portal-app.md) voor meer informatie over de Bedrijfsportal-app.
+
+#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Scherm verwijderd uit de Bedrijfsportal, inschrijving van het Android-werkprofiel<!--6103987 -->
+Het scherm **Wat is de volgende stap?** is verwijderd uit de inschrijvingsstroom voor het Android-werkprofiel in de Bedrijfsportal om de gebruikerservaring te stroomlijnen. Ga naar [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) om de bijgewerkte inschrijvingsstroom voor het Android-werkprofiel weer te geven.  
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>De week van 27 januari 2020
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Appbeheer
-
-#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>Nieuwe instelling voor het verwijderen van specifieke ingebouwde Windows-apps<!-- 6184390 -->
-Met een nieuwe beleidsinstelling voor de configuratie van Windows 10-apparaten kunt u de volgende ingebouwde Windows-apps verwijderen:
-
-- Mixed Reality-viewer
-- MSN weer
-- App-installatieprogramma
-- Microsoft Tips
-- Mijn Office
-- Microsoft Solitaire Collection 
-- Mobiele abonnementen
-- Feedback-hub 
-- Xbox 
-- Groove Music
-- Mail
-- Kalender
-
-Selecteer in het Microsoft Endpoint Manager-beheercentrum de opties **Apparaten** > **Configuratieprofielen** > **Profiel maken**. Selecteer vervolgens **Windows 10 en hoger** als het **Platform**. Selecteer **Apparaatbeperkingen** als het **Profieltype**. Selecteer **App Store** in het deelvenster **Apparaatbeperkingen**. Selecteer onder aan het deelvenster naast **Ingebouwde apps** de optie **Verwijderen**. Raadpleeg [Ingebouwde apps toevoegen aan Microsoft Intune](~/apps/apps-add-built-in.md) voor meer informatie over het toevoegen van ingebouwde apps.
 
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>Intune-ondersteuning voor het extra implementatiekanaal van Microsoft Edge-versie 77 voor macOS<!-- 5983950  -->
 Microsoft Intune biedt nu ondersteuning voor het extra **stabiele** implementatiekanaal voor de Microsoft Edge-app voor macOS. Het **stabiele** kanaal is het aanbevolen kanaal voor een brede implementatie van Microsoft Edge in Enterprise-omgevingen. Het wordt elke zes weken bijgewerkt en elke release bevat verbeteringen uit het **Beta**-kanaal. Naast het **stabiele** kanaal en het **Beta**-kanaal, biedt Intune ook ondersteuning voor een **Dev**-kanaal. De openbare preview-versie biedt een stabiel kanaal en een Dev-kanaal voor Microsoft Edge-versie 77 en hoger voor macOS. Automatische updates van de browser is standaard ingeschakeld. Raadpleeg [Microsoft Edge toevoegen aan macOS-apparaten met behulp van Microsoft Intune](~/apps/apps-edge-macos.md) voor meer informatie.

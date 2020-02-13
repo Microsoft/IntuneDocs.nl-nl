@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956210"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051623"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
@@ -130,6 +130,11 @@ U kunt de app-namen, metagegevens en licentiegegevens voor uw aangeschafte apps 
 
 >[!NOTE]
 >De Beschikbare implementatie-opzet wordt niet ondersteund voor apparaatgroepen. Alleen gebruikersgroepen worden ondersteund. Er wordt een lijst met apps weergegeven die zijn gekoppeld aan een token. Als u een app hebt die aan meerdere VPP-tokens is gekoppeld, wordt dezelfde app meerdere keren weergegeven; eenmaal voor elk token.
+
+> [!NOTE]  
+> Met Intune (of een andere MDM) worden niet daadwerkelijk VPP-apps geïnstalleerd. In plaats daarvan maakt Intune verbinding met uw VPP-account en vertelt Apple welke app-licenties aan welke apparaten moeten worden toegewezen. Daarna wordt de daadwerkelijke installatie verwerkt door Apple en het apparaat.
+> 
+> [Referentie voor Apple MDM-protocol, pagina 135](https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf)
 
 ## <a name="end-user-prompts-for-vpp"></a>Eindgebruikerprompts voor VPP
 

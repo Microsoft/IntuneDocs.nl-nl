@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755286"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075821"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune (zelfstandig) - Win32-app-beheer
 
@@ -204,7 +204,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
         2. Als u klaar bent met het instellen van de regels voor vereisten, selecteert u **OK**.
 2. Klik op **Volgende** om de pagina **Detectieregels** weer te geven.   
 
-### <a name="step-4-detection-rules"></a>Stap 4: Detectieregels
+## <a name="step-4-detection-rules"></a>Stap 4: Detectieregels
 
 1. Configureer op de pagina **Detectieregels** de regels voor het detecteren van de aanwezigheid van de app:
     
@@ -268,7 +268,7 @@ De volgende stappen bevatten instructies waarmee u een Windows-app kunt toevoege
 
 2. Nadat u uw regel(s) hebt toegevoegd, selecteert u **Volgende** om de pagina **Afhankelijkheden** weer te geven.
 
-### <a name="step-5-dependencies"></a>Stap 5: Afhankelijkheden
+## <a name="step-5-dependencies"></a>Stap 5: Afhankelijkheden
 
 App-afhankelijkheden zijn toepassingen die moeten worden geïnstalleerd voordat u uw Win32-app kunt installeren. U kunt vereisen dat andere apps als afhankelijkheden worden geïnstalleerd. Specifiek moeten de afhankelijke apps op het apparaat worden geïnstalleerd vóór u de Win32-app installeert. Er is een maximum van 100 afhankelijkheden. Dit is inclusief de afhankelijkheden van eventueel opgenomen afhankelijkheden en de app zelf. U kunt alleen Win32-afhankelijkheden toevoegen nadat uw Win32-app is toegevoegd en naar Intune is geüpload. Zodra uw Win32-app is toegevoegd, ziet u de optie **Afhankelijkheden** in het deelvenster voor uw Win32-app. 
 

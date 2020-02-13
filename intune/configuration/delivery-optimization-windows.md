@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059963"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124806"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Delivery Optimization-instellingen in Microsoft Intune
 
-Met Intune kunt u instellingen voor Delivery Optimization voor uw Windows 10-apparaten gebruiken om gebruik van bandbreedte te beperken als op die apparaten toepassingen en updates worden gedownload. Delivery Optimization wordt geconfigureerd als onderdeel van uw apparaatconfiguratieprofielen.  
+Met Intune gebruikt u instellingen voor Delivery Optimization voor uw Windows 10-apparaten om gebruik van bandbreedte te beperken als op die apparaten toepassingen en updates worden gedownload. Configureer Delivery Optimization als onderdeel van uw apparaatconfiguratieprofielen.  
 
 In dit artikel wordt beschreven hoe u instellingen voor Delivery Optimization configureert als onderdeel van een apparaatconfiguratieprofiel. Nadat u een profiel hebt gemaakt, kunt u dat profiel toewijzen aan of implementeren naar uw Windows 10-apparaten. 
 
 Zie [Instellingen voor Delivery Optimization voor Intune](../delivery-optimization-settings.md) voor een lijst met de instellingen voor Delivery Optimization die door Intune worden ondersteund.  
 
 Raadpleeg [Delivery Optimization-updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) in de Windows-documentatie voor meer informatie over Delivery Optimization in Windows 10.  
-
-> [!NOTE]
-> **Software-updates – Windows 10-updateringen** worden vervangen door de **Delivery optimization**-instellingen. Bestaande updateringen kunnen worden gewijzigd voor gebruik van de **Delivery Optimization**-instellingen. [Bestaande update-ringen verplaatsen naar Delivery Optimization](#move-existing-update-rings-to-delivery-optimization) (in dit artikel)
 
 ## <a name="create-the-profile"></a>Het profiel maken
 
@@ -54,11 +51,16 @@ Raadpleeg [Delivery Optimization-updates](https://docs.microsoft.com/windows/dep
 
 Het profiel wordt gemaakt en weergegeven in de lijst. Vervolgens moet u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>Bestaande updateringen verplaatsen naar Delivery Optimization
+<!-- ## Move existing update rings to delivery optimization
 
-Instellingen voor **Delivery Optimization** vervangen de **Software-updates – Windows 10-update-ringen**. Bestaande updateringen kunnen eenvoudig worden gewijzigd voor gebruik van de **Delivery Optimization**-instellingen. Als u dezelfde instellingen wilt behouden wanneer u een Delivery Optimization-profiel maakt, gebruikt u dezelfde *downloadmodus voor Delivery Optimization* en stelt u vervolgens de instellingen in die u al gebruikt. U kunt er echter ook voor kiezen om de instellingen voor Delivery Optimization opnieuw te configureren, zodat u kunt profiteren van de complete reeks aanvullende instellingen die door het Delivery Optimization-profiel kunnen worden beheerd.
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. Een Delivery Optimization-configuratieprofiel maken:
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Delivery Optimization verwijderen uit Windows 10-updateringen
+
+Delivery Optimization is eerder geconfigureerd als onderdeel van software-updateringen. Met ingang van februari 2019 worden de instellingen voor Delivery Optimization geconfigureerd als onderdeel van een configuratieprofiel voor een Delivery Optimization-profiel. Dit omvat extra instellingen die meer invloed hebben dan de levering van software-updates op apparaten. Als dat nog niet is gebeurd, verwijdert u de Delivery Optimization-instelling uit uw update-ringen door deze in te stellen op *Niet geconfigureerd*. Gebruik vervolgens een Delivery Optimization-profiel om het grotere aantal beschikbare opties te beheren.
+
+1. Een configuratieprofiel voor een Delivery Optimization voor een apparaat maken:
 
     1. Selecteer in het Microsoft Endpoint Manager-beheercentrum de opties **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
     2. Voer de volgende eigenschappen in:

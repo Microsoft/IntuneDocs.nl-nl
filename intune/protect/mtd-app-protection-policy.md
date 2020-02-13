@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545953"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075702"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Een beveiligingsbeleid voor Mobile Threat Defense-apps maken met Intune
 
@@ -49,7 +49,7 @@ Vereisten voor beveiligingsbeleid voor apps met MTD:
 
 Gebruik de procedure om [en beleid voor toepassingsbeveiliging te maken voor iOS/iPadOS of Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps) en gebruik de volgende informatie op de pagina's *Apps*, *Voorwaardelijk starten*en *Toewijzingen*:
 
-- **Apps**: selecteer de app voor de Mobile Threat Defense-partner die u gebruikt.
+- **Apps**: Selecteer de apps waarop de app-beveiligingsbeleidsregels moeten worden gericht. Voor deze functieset worden deze apps geblokkeerd of selectief gewist op basis van de risicobeoordeling van het apparaat van de door u gekozen Mobile Threat Defense-leverancier. 
 - **Voorwaardelijk starten**:  gebruik onder *Apparaatvoorwaarden* de vervolgkeuzelijst om **Maximaal toegestaan bedreigingsniveau van apparaat** te selecteren.
 
   Opties voor de **Waarde** van het bedreigingsniveau:

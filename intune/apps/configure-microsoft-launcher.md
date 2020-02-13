@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563954"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155357"
 ---
 # <a name="configure-microsoft-launcher"></a>Microsoft Launcher configureren
 
@@ -31,13 +31,13 @@ Microsoft Launcher is een Android-toepassing waarmee gebruikers hun telefoon kun
 
 In Launcher mogen IT-beheerders van bedrijven startschermen van volledig beheerde Android Enterprise-apparaten aanpassen, door de achtergrond, apps en posities van pictogrammen te selecteren. Hierdoor wordt het uiterlijk van alle beheerde Android-apparaten gestandaardiseerd op verschillende OEM-apparaten en systeemversies. 
 
-## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>De app Microsoft Managed Home Screen configureren 
+## <a name="how-to-configure-the-microsoft-launcher-app"></a>De Microsoft Launcher-app configureren 
 
-Navigeer naar het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en selecteer **Apps** > **Configuratiebeleid voor apps**. Voeg een configuratiebeleid toe voor **Beheerde apparaten** met **Android**, en kies **Microsoft Launcher** als bijbehorende app. Klik op **Configuratie-instellingen** om de verschillende beschikbare instellingen voor Managed Home Screen te configureren. 
+Navigeer naar het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en selecteer **Apps** > **Configuratiebeleid voor apps**. Voeg een configuratiebeleid toe voor **Beheerde apparaten** met **Android**, en kies **Microsoft Launcher** als bijbehorende app. Klik op **Configuratie-instellingen** om de verschillende beschikbare instellingen voor Microsoft Launcher te configureren. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Een indeling voor de configuratie-instellingen kiezen 
 
-Er zijn twee methoden waarmee u configuratie-instellingen kunt definiëren voor Managed Home Screen: 
+Er zijn twee methoden waarmee u configuratie-instellingen kunt definiëren voor Microsoft Launcher: 
 
 - Met **Configuration Designer** kunt u instellingen configureren met een gebruiksvriendelijke gebruikersinterface waarmee u functies in of uit kunt schakelen en waarden kunt instellen. In deze methode zijn er enkele uitgeschakelde configuratiesleutels met waardetype BundleArray. Deze configuratiesleutels kunnen alleen worden geconfigureerd door JSON-gegevens in te voeren. 
 
@@ -59,7 +59,7 @@ De volgende tabel bevat de configuratiesleutels, waardetypen, standaardwaarden e
 |---------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Inschrijvingstype    |    Tekenreeks     |    Standaard    |    Hiermee kunt u het inschrijvingstype instellen waarop u dit beleid wilt toepassen. Momenteel verwijst de waarde **Standaard** naar **CorporateOwnedBuisnessOnly**. Er zijn momenteel geen andere ondersteunde inschrijvingstypen.        JSON-sleutelnaam: management_mode_key        |
 |    Gebruiker toestaan de Home Screen-app-volgorde te wijzigen    |    Boolean-waarde    |    True    |    Hiermee kunt u opgeven of de **Home Screen-app-volgorde** kan worden gewijzigd door de eindgebruiker.<ul><li>Als dit is ingesteld op **True**, wordt de app-volgorde die is gedefinieerd in het beleid, alleen afgedwongen bij de eerste implementatie. Vervolgens wordt het beleid niet afgedwongen om eventuele wijzigingen door te voeren die zijn aangebracht door de gebruiker.</li><li>Als dit is ingesteld op **False**, wordt de app-volgorde afgedwongen bij elke synchronisatie.</li></ul><br>**Opmerking:** De Home Screen-app-volgorde kan alleen worden geconfigureerd met de JSON-editor.<br><br>JSON-sleutelnaam:<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
-|    De rastergrootte instellen    |    Tekenreeks    |    Auto    |    Hiermee kunt u de rastergrootte instellen voor apps die op het startscherm moeten worden geplaatst. U kunt het aantal rijen en kolommen van de app instellen om de rastergrootte te definiëren in de volgende indeling: `columns;rows`. Als u de rastergrootte definieert, is het maximale aantal apps dat wordt weergegeven in een rij op het startscherm, het aantal rijen dat u instelt. Het maximale aantal apps dat wordt weergegeven in een kolom in het startscherm, is het aantal kolommen dat u instelt.<br><br>        JSON-sleutelnaam:<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
+|    De rastergrootte instellen    |    Tekenreeks    |    Automatisch    |    Hiermee kunt u de rastergrootte instellen voor apps die op het startscherm moeten worden geplaatst. U kunt het aantal rijen en kolommen van de app instellen om de rastergrootte te definiëren in de volgende indeling: `columns;rows`. Als u de rastergrootte definieert, is het maximale aantal apps dat wordt weergegeven in een rij op het startscherm, het aantal rijen dat u instelt. Het maximale aantal apps dat wordt weergegeven in een kolom in het startscherm, is het aantal kolommen dat u instelt.<br><br>        JSON-sleutelnaam:<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
 |    Achtergrond van apparaat instellen    |    Tekenreeks    |    Null    |    Hiermee kunt u een achtergrond van uw keuze instellen, door de URL van de afbeelding in te voeren die u wilt instellen als achtergrond.<br><br>JSON-sleutelnaam:<br>`com.microsoft.launcher.Wallpaper.URL`    |
 |    Gebruiker toestaan de achtergrond te wijzigen    |    Booleaanse waarde    |    True    |    Hiermee kunt u opgeven of de instelling Achtergrond van apparaat instellen kan worden gewijzigd door de eindgebruiker.<ul><li>Als dit is ingesteld op **True**, wordt de achtergrond in het beleid alleen afgedwongen bij de eerste implementatie. Vervolgens wordt het beleid niet afgedwongen om eventuele wijzigingen door te voeren die zijn aangebracht door de gebruiker.</li><li>Als dit is ingesteld op **False**, wordt de achtergrond afgedwongen bij elke synchronisatie.</li></ul><br>JSON-sleutelnaam:<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
 |    Feed inschakelen    |    Boolean-waarde    |    True    |    Hiermee kunt u de startfeed inschakelen op het apparaat, wanneer de gebruiker naar rechts swipet op het startscherm.<ul><li>Als dit is ingesteld op **True**, wordt de feed ingeschakeld.</li><li>Als dit is ingesteld op **False**, wordt de feed uitgeschakeld.</li></ul><br>JSON-sleutelnaam:<br>`com.microsoft.launcher.Feed.Enabled`    |

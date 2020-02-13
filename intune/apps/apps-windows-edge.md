@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa0156d059513a2586eb7d8866d23508be0af10c
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 8d5082376c42ff3b92e3979a53b6deac3e59c88e
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886679"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075804"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune
 
 Voordat u apps kunt implementeren, configureren, bewaken of beveiligen, moet u deze aan Intune toevoegen. Een van de beschikbare [app-typen](~/apps/apps-add.md#app-types-in-microsoft-intune) is Microsoft Edge *versie 77 en later*. Door dit app-type in Intune te selecteren, kunt u Microsoft Edge *versie 77 en later* toewijzen aan en installeren op door u beheerde Windows 10-apparaten.
 
 > [!IMPORTANT]
-> Dit app-type is in **openbare preview** en biedt stabiele, beta- en dev-kanalen voor Windows 10. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Er worden bestaande Microsoft Edge-installaties door Intune gedetecteerd. Als de app in de gebruikerscontext is geïnstalleerd, wordt deze door een systeeminstallatie overschreven. Als de app in de systeemcontext is geïnstalleerd, wordt de installatie gerapporteerd. Automatische updates van Microsoft Edge is bovendien standaard **Ingeschakeld** en Microsoft Edge kan niet worden verwijderd.
+> Dit app-type is in **openbare preview** en biedt stabiele, beta- en dev-kanalen voor Windows 10. De implementatie is alleen in het Engels (EN) beschikbaar, maar eindgebruikers kunnen de weergavetaal wijzigen in de browser via **Instellingen** > **Talen**. Microsoft Edge is een Win32-app die wordt geïnstalleerd in systeemcontext en in soortgelijke architecturen (x86-app in een x86-besturingssysteem en x64-app in een x64-besturingssysteem). Er worden bestaande Microsoft Edge-installaties door Intune gedetecteerd. Als de app in de gebruikerscontext is geïnstalleerd, wordt deze door een systeeminstallatie overschreven. Als de app in de systeemcontext is geïnstalleerd, wordt de installatie gerapporteerd. Automatische updates van Microsoft Edge zijn bovendien standaard **Ingeschakeld**.
 
 > [!NOTE]
 > Microsoft Edge *versie 77 en later* is ook beschikbaar voor macOS.
@@ -80,7 +80,7 @@ In deze stap configureert u de installatieopties voor de app.
 
 ## <a name="select-scope-tags-optional"></a>Bereiktags selecteren (optioneel)
 U kunt bereiktags gebruiken om te bepalen wie er informatie over client-apps mag bekijken in Intune. Zie Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT voor uitgebreide informatie over bereiktags.
-1.  Selecteer **Bereik (tags)** > **Toevoegen**.
+1.  Selecteer **Bereik (tags)**  > **Toevoegen**.
 2.  Gebruik het vak onder **Selecteren** om bereiktags te zoeken.
 3.  Schakel het selectievakje in naast de bereiktags die u aan deze app wilt toewijzen.
 4.  Klik op **Selecteren** > **OK**.
@@ -92,6 +92,28 @@ De app die u hebt gemaakt, wordt weergegeven in de lijst met apps waar u de app 
 
 > [!NOTE]
 > Momenteel blijft Microsoft Edge op het apparaat als u de toewijzing van de implementatie ervan ongedaan maakt.
+
+## <a name="uninstall-the-app"></a>De app verwijderen
+
+Als u Microsoft Edge wilt verwijderen van apparaten van de gebruiker, gebruikt u de volgende stappen.
+
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Apps** > **Alle apps** > *Microsoft Edge*-app > **Toewijzingen** > **Groep toevoegen**.
+3. Selecteer **Verwijderen** in het deelvenster **Groep toevoegen**.
+
+    > [!NOTE]
+    > de app wordt verwijderd van apparaten in de geselecteerde groepen als Intune de toepassing eerder op het apparaat heeft geïnstalleerd via de toewijzingen **Beschikbaar voor ingeschreven apparaten** of **Vereist** met behulp van dezelfde implementatie.
+4. Selecteer **Opgenomen groepen** om de gebruikersgroepen te selecteren die worden beïnvloed door deze app-toewijzing.
+5. Selecteer de groepen waarop u de verwijderingstoewijzing wilt toepassen.
+6. Klik op **Selecteren** in het deelvenster **Groepen selecteren**.
+7. Klik op **OK** in het deelvenster **Toewijzen** om de toewijzing in te stellen.
+8. Selecteer **Groepen uitsluiten** als u gebruikersgroepen wilt uitsluiten zodat ze niet worden beïnvloed door deze app-toewijzing.
+9. Kies **Selecteren** in **Groepen selecteren** als u hebt besloten dat u groepen wilt uitsluiten.
+10. Selecteer **OK** in het deelvenster **Groep toevoegen**.
+11. Selecteer **Opslaan** in het deelvenster **Toewijzingen** van de app.
+
+> [!IMPORTANT]
+> Als u de app wilt verwijderen, moet u de leden of groepstoewijzing voor installatie verwijderen voordat u ze toewijst om te worden verwijderd. Als een groep wordt toegewezen voor zowel het installeren als het verwijderen van een app, blijft de app gehandhaafd en wordt deze niet verwijderd.
 
 ## <a name="troubleshooting"></a>Probleemoplossing
 **Microsoft Edge versie 77 en later voor Windows 10:**<br>

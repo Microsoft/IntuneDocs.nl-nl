@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 486ca7eae1b1e8b016f44c735ec04a23145421a8
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74263114"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124976"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>Virtuele Windows 10-machines gebruiken met Intune
 
@@ -33,7 +33,7 @@ Houd bij het beheren van virtuele Windows 10-machines met Intune rekening met de
 
 ## <a name="enrollment"></a>Inschrijving
 - Het is niet raadzaam virtuele machines op aanvraag te beheren en virtuele machinesessies met Intune te hosten. Elke VM moet worden ingeschreven als deze wordt gemaakt. Als u regelmatig virtuele machines verwijdert, blijven er zwevende apparaatrecords in Intune achter totdat deze worden [opgeschoond](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules). 
-- De automatische implementatiemodus van Windows Autopilot wordt niet ondersteund omdat hiervoor een Trusted Platform Module (TPM) is vereist. 
+- Automatische implementatie van Windows Autopilot en nauwkeurige implementatietypen worden niet ondersteund omdat hiervoor een fysieke TPM (Trusted Platform Module) is vereist. 
 - De OOBE-inschrijving (Out-Of-Box Experience) wordt niet ondersteund op VM's die alleen toegankelijk zijn via RDP (zoals VM's die worden gehost op Azure). Deze beperking betekent het volgende:
     - Windows Autopilot en Commercial OOBE worden niet ondersteund.
     - Opties voor de inschrijvingsstatuspagina voor beleid voor apparaatcontext worden niet ondersteund.

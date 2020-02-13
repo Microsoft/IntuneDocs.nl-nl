@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098218"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125044"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 
@@ -36,9 +36,14 @@ Zorg ervoor dat, als u een werknemer of student bent, u de schermafbeeldingen en
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-february-3-2020"></a>Week van 3 februari 2020
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment---6103987---"></a>Scherm verwijderd uit de Bedrijfsportal, inschrijving van het Android-werkprofiel <!--6103987 -->
+Het scherm **Wat is de volgende stap?** is verwijderd uit de inschrijvingsstroom voor het Android-werkprofiel in de Bedrijfsportal om de gebruikerservaring te stroomlijnen. Ga naar [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) om de bijgewerkte inschrijvingsstroom voor het Android-werkprofiel weer te geven.  
+
 ## <a name="week-of-november-11-2019"></a>Week van 11 november 2019  
 
-#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Web-apps starten vanuit de Windows-bedrijfsportal-app<!-- 5030972 -->
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Web-apps starten vanuit de Windows-bedrijfsportal-app <!-- 5030972 -->
 Eindgebruikers kunnen web-apps nu direct vanuit de Windows-bedrijfsportal-app starten. Eindgebruikers kunnen de web-app selecteren en vervolgens de optie **In browser openen** kiezen. De gepubliceerde web-URL wordt rechtstreeks in een webbrowser geopend. Deze functionaliteit wordt de komende week doorgevoerd. Zie [Web-apps toevoegen aan Microsoft Intune](~/apps/web-app.md) voor meer informatie over het toevoegen van web-apps.
 
 ![Voorbeeldafbeelding van een web-app die wordt gestart vanuit de Windows-bedrijfsportal-app](./media/whats-new-app-ui/webapp-open-in-browser.png)  

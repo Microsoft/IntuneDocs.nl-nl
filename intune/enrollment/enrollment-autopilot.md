@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: 4f97c4c56073044e79b5251dc83c54decb5c9c55
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977798"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124840"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows-apparaten in Intune inschrijven met Windows Autopilot  
 Windows Autopilot maakt het makkelijker om apparaten te registreren in Intune. Het kost veel tijd om aangepaste installatiekopieën van besturingssystemen te bouwen en onderhouden. Mogelijk besteedt u ook tijd aan het toepassen van deze aangepaste installatiekopieën op nieuwe apparaten, om ze voor te bereiden voor gebruik voordat u ze aan eindgebruikers verstrekt. Met Microsoft Intune en Autopilot geeft u nieuwe apparaten aan uw eindgebruikers zonder dat u aangepaste installatiekopieën van besturingssystemen voor de apparaten hoeft te bouwen, onderhouden en toe te passen. Als u Intune gebruikt om Autopilot-apparaten te beheren, kunt u beleidsregels, profielen, apps en meer beheren op apparaten nadat ze zijn ingeschreven. Zie [Overzicht van Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) voor een overzicht van voordelen, scenario's en vereisten.
@@ -100,6 +100,9 @@ Autopilot-profielen worden gebruikt om de Autopilot-apparaten te configureren. U
     - **Zelf-implementerend (preview)** : (Windows 10 versie 1809 of hoger vereist) apparaten met dit profiel worden niet gekoppeld aan de gebruiker die het apparaat inschrijft. Er zijn geen gebruikersreferenties vereist om het apparaat te kunnen registreren. Wanneer er geen gebruiker aan een apparaat is gekoppeld, is op het apparaat geen nalevingsbeleid op basis van gebruikers van toepassing. Wanneer u de modus voor zelf-implementatie gebruikt, wordt alleen nalevingsbeleid toegepast dat op het apparaat is gericht.
 
     ![Schermopname van de OOBE-pagina](./media/enrollment-autopilot/create-profile-outofbox.png)
+
+   > [!NOTE]
+   > Opties die lichter gekleurd of grijs worden weergegeven, worden momenteel niet ondersteund door de geselecteerde implementatiemodus.
 
 6. In het vak **Toevoegen aan Azure AD als** kiest u **Toegevoegd aan Azure AD**.
 7. Configureer de volgende opties:

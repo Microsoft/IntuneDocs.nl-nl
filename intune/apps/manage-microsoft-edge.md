@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258504"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125010"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Internettoegang beheren met behulp van Microsoft Edge met Microsoft Intune
 
@@ -285,16 +285,27 @@ Gebruik het volgende sleutel-waardepaar om te configureren of deze zachte overga
 
 |    Sleutel    |    Waarde    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    Met **True** worden beperkte links rechtstreeks in de InPrivate-navigatie geopend.<p>Met **False** (standaard) wordt gebruikers gevraagd een beperkte link te openen met de InPrivate-navigatie of met het persoonlijke account (MSA).    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    Bij **True** (standaard) kan Microsoft Edge gebruikers overzetten naar hun persoonlijke context om geblokkeerde sites te openen.<p>Met **False** voorkomt u het overzetten van gebruikers door Microsoft Edge. Gebruikers krijgen een bericht te zien waarin staat dat de site die ze proberen te openen, is geblokkeerd.    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Beperkte links rechtstreeks in InPrivate-tabbladen openen
 
-U kunt instellen dat beperkte links rechtstreeks worden geopend in de InPrivate-navigatie, waardoor gebruikers een vloeiendere browse-ervaring krijgen. Hierdoor hoeven gebruikers niet over te stappen op hun persoonlijke context om een site te bekijken. InPrivate-navigatie wordt beschouwd als niet-beheerd, waardoor gebruikers geen toegang kunnen krijgen wanneer zij de InPrivate-navigatiemodus gebruiken. 
+U kunt instellen dat beperkte links rechtstreeks worden geopend in de InPrivate-navigatie, waardoor gebruikers een vloeiendere browse-ervaring krijgen. Hierdoor hoeven gebruikers niet over te stappen op hun persoonlijke context om een site te bekijken. InPrivate-navigatie wordt beschouwd als niet-beheerd, waardoor gebruikers geen toegang kunnen krijgen wanneer zij de InPrivate-navigatiemodus gebruiken.
 
 |    Sleutel    |    Waarde    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    Bij **Waar** kan Microsoft Edge gebruikers overzetten naar hun persoonlijke context om geblokkeerde sites te openen.<p>Met **Blokkeren** voorkomt u het overzetten van gebruikers door Microsoft Edge. Gebruikers krijgen een bericht te zien waarin staat dat de site die ze proberen te openen, is geblokkeerd.    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Microsoft Edge-prompt voor het opslaan van wachtwoorden uitschakelen
+
+|    Sleutel    |    Waarde    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    Met **True** worden beperkte links rechtstreeks in de InPrivate-navigatie geopend.<p>Met **False** (standaard) wordt gebruikers gevraagd een beperkte link te openen met de InPrivate-navigatie of met het persoonlijke account (MSA).    |
+
+Microsoft Edge op iOS biedt standaard de mogelijkheid om de wachtwoorden van uw gebruikers op te slaan in de sleutelhanger. Als u deze prompt voor uw organisatie wilt uitschakelen, configureert u de volgende instelling:
+
+|    Sleutel    |    Waarde    |
+|-----------|-------------|
+|     com.microsoft.Intune.mam.managedbrowser.disableFeatures    |    Met **Wachtwoord** wordt de prompt voor het opslaan van wachtwoorden uitgeschakeld.    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Met Microsoft Edge in iOS logboeken voor beheerde apps openen 
 
