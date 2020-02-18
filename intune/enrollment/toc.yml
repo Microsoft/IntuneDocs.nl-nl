@@ -10,7 +10,7 @@
       href: device-management-capabilities.md
     - name: Opties voor inschrijving
       href: enrollment-options.md
-- name: Snelstartgidsen
+- name: Quickstarts
   items:
     - name: Automatische inschrijving instellen
       href: quickstart-setup-auto-enrollment.md
@@ -20,7 +20,7 @@
   items:
     - name: Autopilot gebruiken om Windows-apparaten te registreren
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: De DEP gebruiken om iOS-apparaten in te schrijven
+    - name: De DEP gebruiken om iOS-/iPadOS-apparaten in te schrijven
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Concepten
   items:
@@ -40,7 +40,7 @@
       href: device-enrollment-manager-enroll.md
     - name: Apparaten toewijzen aan groepen
       href: device-group-mapping.md
-- name: Handleidingen
+- name: Instructiegidsen
   items:
     - name: Windows-inschrijving instellen
       items:
@@ -84,12 +84,12 @@
         - name: Samsung Knox Mobile Enrollment
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: iOS-inschrijving instellen
+    - name: iOS-/iPadOS-inschrijving instellen
       href: ios-enroll.md
       items:
         - name: Programma voor apparaatinschrijving
           href: device-enrollment-program-enroll-ios.md
-        - name: Gebruikersregistratie voor iOS en iPadOS instellen
+        - name: Gebruikersinschrijving voor iOS/iPadOS en iPadOS instellen
           href: ios-user-enrollment.md
         - name: Acties en opties die met Gebruikersregistratie worden ondersteund
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: Hoe los ik problemen met de inschrijving van apparaten op?
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: Problemen met iOS-apparaten inschrijven oplossen
+        - name: Problemen met iOS-/iPadOS-apparaten inschrijven oplossen
           href: troubleshoot-ios-enrollment-errors.md
         - name: Problemen met Windows-apparaten inschrijven oplossen
           href: troubleshoot-windows-enrollment-errors.md
