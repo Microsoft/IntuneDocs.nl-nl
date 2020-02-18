@@ -1,7 +1,7 @@
 ---
 title: De intune-documenten gebruiken
 titleSuffix: Microsoft Intune
-description: Meer informatie over het doorzoeken van de intune-documenten, het bieden van document feedback en het bijdragen aan de documenten.
+description: Leer hoe u kunt zoeken in de Intune-documenten, feedback over documenten kunt geven en kunt bijdragen aan de documenten.
 ms.date: 09/15/2019
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -11,106 +11,106 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 607e1136fd3ab5661a2b054410d6fc7fce94994d
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: MTE75
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504813"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155340"
 ---
 # <a name="using-the-intune-docs"></a>De intune-documenten gebruiken
 
-In dit artikel vindt u informatie over het doorzoeken van de Microsoft Intune-documenten voor informatie, het geven van feedback voor de intune-documenten en wordt uitgelegd hoe u snel en eenvoudig aan de documenten kunt bijdragen.
+In dit artikel vindt u informatie over het zoeken naar gegevens in Microsoft Intune-documenten en het geven van feedback over de Intune-documenten, en ziet u hoe u snel en eenvoudig kunt bijdragen aan de documenten.
 
-Zie [ondersteuning voor intune ophalen](../get-support.md)voor algemene hulp en ondersteuning voor intune.
+Zie [Ondersteuning voor Intune krijgen](../get-support.md) voor algemene hulp en ondersteuning voor Intune.
 
-## <a name="search-the-docs"></a>De docs doorzoeken
+## <a name="search-the-docs"></a>Zoeken in de documenten
 
  Gebruik de volgende zoektips om de benodigde informatie te vinden:  
 
-- Wanneer u uw favoriete zoek programma gebruikt om inhoud te zoeken voor Microsoft Intune, neemt u `Intune` samen met uw zoek woorden op.  
+- Wanneer u de zoekmachine van uw voorkeur gebruikt om inhoud in Microsoft Intune te zoeken, neemt u `Intune` op, samen met uw zoektrefwoorden.  
 
-  - Zoek naar resultaten van docs.microsoft.com. De resultaten van technet.microsoft.com of msdn.microsoft.com zijn voor oudere product versies.  
+  - Zoek naar resultaten op docs.microsoft.com. De resultaten van technet.microsoft.com of msdn.microsoft.com zijn voor oudere productversies.  
 
-  - Als u de zoek resultaten verder wilt richten op de huidige inhouds bibliotheek, neemt u `site:docs.microsoft.com` op voor het bereik van de zoek machine.  
+  - Als u de zoekresultaten meer wilt focussen op de huidige inhoudsbibliotheek, neemt u `site:docs.microsoft.com` op als bereik voor de zoekmachine.  
 
-- Gebruik zoek termen die overeenkomen met de terminologie in de gebruikers interface en online documentatie. Vermijd onofficiële voor waarden of afkortingen die u kunt zien in de Community-inhoud.
+- Gebruik de zoektermen die overeenkomen met de terminologie in de gebruikersinterface en onlinedocumentatie. Vermijd onofficiële termen of afkortingen die u mogelijk ziet in de inhoud in de community.
 
-- Als u wilt zoeken in een artikel dat momenteel wordt weer gegeven, gebruikt u de **Zoek** functie van uw browser. Met de meeste moderne webbrowsers drukt u op **Ctrl**+**F** en voert u de zoek termen in.  
+- Als u wilt zoeken in een artikel dat u momenteel leest, gebruikt u de **zoekfunctie** van de browser. In de meeste moderne webbrowsers drukt u op **Ctrl**+**F** en voert u vervolgens de zoektermen in.  
 
-- Elk artikel op docs.microsoft.com bevat de volgende velden om te helpen bij het zoeken naar de inhoud:  
+- Elk artikel op docs.microsoft.com bevat de volgende velden om te helpen bij het zoeken naar inhoud:  
 
-  - **Zoek** in de rechter bovenhoek. Als u alle artikelen wilt doorzoeken, voert u voor waarden in dit veld in. De zoek opdracht bevat automatisch het intune-zoek bereik.
+  - **Zoeken** in de rechterbovenhoek. Als u in alle artikelen wilt zoeken, voert u termen in dit veld in. De zoekopdracht bevat automatisch het Intune-zoekbereik.
 
-  - **Filteren op titel** boven de inhouds opgave links. Als u wilt zoeken in de huidige inhouds opgave, voert u voor waarden in dit veld in. Dit veld komt alleen overeen met de voor waarden die worden weer gegeven in de titel van het artikel voor het huidige knoop punt. Het laatste item in de zoek resultaten biedt u de mogelijkheid om te zoeken naar de voor waarden in alle intune-documentatie.
+  - **Filteren op titel** boven de inhoudsopgave links. Voer in dit veld termen in om te zoeken in de huidige inhoudsopgave. Met dit veld wordt alleen gezocht naar termen die voorkomen in de titels van artikelen voor het huidige knooppunt. Het laatste item in de zoekresultaten biedt u de mogelijkheid om te zoeken naar de termen in alle Intune-documentatie.
 
-- Ondervindt u problemen met het vinden van iets? [Feedback over bestanden.](#provide-doc-feedback) Wanneer u het probleem opslaat, geeft u de zoek machine op die u wilt gebruiken, de tref woorden die u hebt geprobeerd en het doel artikel. Deze feedback helpt micro soft bij het optimaliseren van de inhoud voor betere zoek mogelijkheden.  
+- Kunt u iets niet vinden? [Geef feedback!](#provide-doc-feedback) Wanneer u het probleem meldt, geeft u op welke zoekmachine u gebruikt, welke trefwoorden u hebt geprobeerd, en wat het doelartikel is. Deze feedback helpt Microsoft bij het optimaliseren van de inhoud voor betere zoekmogelijkheden.  
 
-## <a name="provide-doc-feedback"></a>Document feedback geven
+## <a name="provide-doc-feedback"></a>Feedback over documenten geven
 
-De sectie feedback bevindt zich onderaan elk artikel. Klik op de koppeling **feedback** in de rechter bovenhoek van een artikel om naar deze sectie te gaan. Feedback is geïntegreerd met GitHub-problemen. Voor meer informatie over de integratie met GitHub-problemen raadpleegt u dit [docs platform blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+De sectie Feedback bevindt zich onderaan in elk artikel. Klik in de rechterbovenhoek van een artikel op de koppeling **Feedback** om naar deze sectie te gaan. Feedback is geïntegreerd met GitHub-problemen. Raadpleeg de [blogpost in het documentenplatform](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs) voor meer informatie over de integratie met GitHub-problemen.
 
-Klik op **product feedback**om feedback over de intune-service (geen docs) te delen.
+Klik op **Productfeedback** om feedback te delen over de Intune-service (niet over de documenten).
 
-Een [github-account](https://github.com/join) is een vereiste om documentatie feedback te geven. Nadat u zich hebt aangemeld, is er een eenmalige autorisatie voor MicrosoftDocs. Wanneer u vervolgens op **inhouds feedback**klikt, voert u een titel en een opmerking in en **verzendt u feedback**. Met deze actie wordt een nieuw probleem voor het doel artikel in de [intune github-opslag plaats](https://github.com/MicrosoftDocs/intunedocs/issues).
+Een [GitHub-account](https://github.com/join) is vereist om feedback over documentatie te kunnen geven. Nadat u zich hebt aangemeld, vindt er een eenmalige autorisatie voor MicrosoftDocs plaats. Wanneer u op **Feedback op inhoud** hebt geklikt, voert u een titel en opmerking in. Vervolgens klikt u op **Feedback verzenden**. Met deze actie wordt een nieuw probleem voor het doelartikel gemeld in de [Intune GitHub-opslagplaats](https://github.com/MicrosoftDocs/intunedocs/issues).
 
-U ziet ook bestaande openstaande of gesloten problemen voor het doel artikel. Als dat het geval is, raadpleegt u deze voordat u een nieuw probleem verzendt. Als u een verwant probleem vindt, klikt u op het gezichts pictogram om een reactie toe te voegen of kunt u deze uitbreiden om een opmerking toe te voegen.
+U ziet ook eventuele bestaande openstaande of gesloten problemen voor het doelartikel. Als die er zijn, bekijkt u deze eerst voordat u een nieuw probleem meldt. Als u een verwant probleem vindt, klikt u op het gezichtspictogram om een reactie toe te voegen, of u kunt het probleem uitvouwen om een opmerking toe te voegen.
 
 ### <a name="types-of-feedback"></a>Typen feedback
 
 Gebruik GitHub-problemen om de volgende typen feedback in te dienen:
 
-- Doc-fout: de inhoud is verouderd, onduidelijk, verwarrend of beschadigd.
-- Document verbetering: een suggestie voor het verbeteren van het artikel.
-- Doc-vraag: u hebt hulp nodig bij het vinden van bestaande documentatie.
-- Document idee: een suggestie voor een nieuw artikel. Gebruik deze methode in plaats van UserVoice voor documentatie feedback.
-- Kudos: positieve feedback over een nuttig of informatieve artikel!
-- Lokalisatie: feedback over inhouds vertalingen.
-- Optimalisatie van zoek machines (SEO): feedback over problemen met het zoeken naar inhoud. Neem de zoek machine, tref woorden en het doel artikel op in de opmerkingen.
+- Fout in document: de inhoud is verouderd, onduidelijk, verwarrend of beschadigd.
+- Verbetering in document: een suggestie om het artikel te verbeteren.
+- Vraag over document: u hebt hulp nodig bij het vinden van bestaande documentatie.
+- Idee voor document: een suggestie voor een nieuw artikel. Gebruik deze methode in plaats van UserVoice voor feedback over documentatie.
+- Kudo’s: positieve feedback over een nuttig of informatief artikel.
+- Lokalisatie: feedback over de vertaling van inhoud.
+- SEO (zoekmachineoptimalisatie): feedback over problemen bij het zoeken naar inhoud. Neem de zoekmachine, trefwoorden, en het doelartikel op in de opmerkingen.
 
-Als er problemen worden gegenereerd voor niet-document-gerelateerde onderwerpen, zoals [product feedback](https://microsoftintune.uservoice.com/forums/291681-ideas), [product vragen](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)of [ondersteunings aanvragen](../get-support.md), worden deze problemen gesloten en wordt de gebruiker omgeleid naar het juiste feedback kanaal.
+Als er problemen worden gemeld met onderwerpen die niet te maken hebben met documenten, zoals [productfeedback](https://microsoftintune.uservoice.com/forums/291681-ideas), [vragen over een product](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) of [ondersteuningsaanvragen](../get-support.md), worden deze problemen gesloten. De gebruiker wordt vervolgens naar het juiste feedbackkanaal geleid.
 
-Zie [docs feedback](https://aka.ms/sitefeedback)voor informatie over het delen van feedback op het docs.Microsoft.com-platform. Het platform bevat alle wrapper-onderdelen, zoals de koptekst, de inhouds opgave en het rechter menu. Ook hoe de artikelen worden weer gegeven in de browser, zoals het letter type, de waarschuwings vakken en pagina ankers.
+Raadpleeg [Feedback over documenten](https://aka.ms/sitefeedback) om feedback te delen op het microsoft.com-platform. Het platform bevat alle wrapperonderdelen, zoals de koptekst, de inhoudsopgave en het snelmenu. Ook is er informatie over hoe de artikelen worden weergegeven in de browser, zoals het lettertype, de waarschuwingsvakken en pagina-ankers.
 
 ## <a name="contribute-to-docs"></a>Bijdragen aan documenten
 
-De intune-documenten, zoals de meeste inhoud op docs.microsoft.com, is open source op GitHub. In deze bibliotheek worden de bijdragen van de Community geaccepteerd en aangemoedigd. Zie de [gids voor inzenders](https://docs.microsoft.com/contribute)voor meer informatie over hoe u aan de slag kunt gaan. Het maken van een [github-account](https://github.com/join) is de enige vereiste.
+De Intune-documenten, zoals de meeste inhoud op docs.microsoft.com, zijn een open-source op GitHub. In deze bibliotheek worden bijdragen uit de community geaccepteerd en aangemoedigd. Raadpleeg [Handleiding voor bijdragers](https://docs.microsoft.com/contribute) voor meer informatie over hoe u aan de slag kunt gaan. Het maken van een [GitHub-account](https://github.com/join) is de enige vereiste.
 
-### <a name="basic-steps-to-contribute-to-docs"></a>Basis stappen voor het bijdragen aan documenten
+### <a name="basic-steps-to-contribute-to-docs"></a>Basisstappen voor het bijdragen aan documenten
 
-1. Klik in het doel artikel op **bewerken**. Met deze actie wordt het bron bestand geopend in GitHub.  
+1. Klik in het doelartikel op **Bewerken**. Met deze actie wordt het bronbestand geopend in GitHub.  
 
-2. Als u het bron bestand wilt bewerken, klikt u op het potlood pictogram.  
+2. Klik op het potloodpictogram om het bronbestand te bewerken.  
 
-3. Wijzigingen aanbrengen in de bron voor de prijs verlaging. Zie voor meer informatie de [korting gebruiken voor het schrijven van docs](https://docs.microsoft.com/contribute/how-to-write-use-markdown).  
+3. Breng wijzigingen aan in de Markdown-bron. Raadpleeg [Markdown gebruiken voor het schrijven van documenten](https://docs.microsoft.com/contribute/contribute-how-to-write-use-markdown) voor meer informatie.  
 
-4. Voer in de sectie bestands wijziging Voorst Ellen de open bare opmerking in die beschrijft *wat* u hebt gewijzigd. Klik vervolgens op **Bestands wijziging**Voorst Ellen.  
+4. Open in de sectie Bestandswijziging de openbare opmerking bij doorvoering, waarin wordt beschreven *wat* u hebt gewijzigd. Klik vervolgens op **Bestandswijziging voorstellen**.  
 
-5. Schuif omlaag en controleer de wijzigingen die u hebt aangebracht. Klik op **pull-aanvraag maken** om het formulier te openen. Geef aan *Waarom* u deze wijziging hebt aangebracht. Klik op **pull-aanvraag maken**.
+5. Schuif omlaag en controleer de wijzigingen die u hebt aangebracht. Klik op **Pull-aanvraag maken** om het formulier te openen. Geef aan *waarom* u deze wijziging hebt aangebracht. Klik op **Pull-aanvraag maken**.
 
-Het schrijf team ontvangt uw pull-aanvraag, wijst het item toe aan de juiste schrijver, bestudeert de tekst en voert een door gang van de bewerking uit, en u kunt de wijzigingen goed keuren en samen voegen of contact met u opnemen voor meer informatie over de update.  
+Het schrijfteam ontvangt uw pull-aanvraag, wijst het item toe aan de juiste schrijver, beoordeelt de tekst, en voert een snelle goedkeuring van de bewerking uit. Vervolgens worden de wijzigingen goedgekeurd en samengevoegd, of er wordt contact met u opgenomen voor meer informatie over de update.  
 
-### <a name="what-to-contribute"></a>Wat u moet bijdragen
+### <a name="what-to-contribute"></a>Wat u kunt bijdragen
 
-Als u geïnteresseerd bent in bijdragen, maar niet weet waar u moet beginnen, raadpleegt u de volgende suggesties:  
+Als u graag wilt bijdragen, maar niet weet waar u moet beginnen, bekijkt u de volgende suggesties:  
 
-- Bekijk een artikel op nauw keurigheid. Werk vervolgens de **MS. date** -meta gegevens bij met `mm/dd/yyyy`-indeling. Deze bijdrage helpt de inhoud te vernieuwen.  
+- Beoordeel een artikel op nauwkeurigheid. Werk vervolgens de metagegevens **ms.date** bij met de indeling `mm/dd/yyyy`. Deze bijdrage helpt de inhoud actueel te houden.  
 
-- Voeg uitleg, voor beelden of richt lijnen toe op basis van uw ervaring. Deze bijdrage maakt gebruik van de kracht van de community om kennis te delen.
+- Voeg uitleg, voorbeelden of richtlijnen toe, op basis van uw ervaring. Deze bijdrage maakt gebruik van de kracht van de community om kennis te delen.
 
 - Corrigeer vertalingen in een niet-Engelse taal. Deze bijdrage verbetert de bruikbaarheid van gelokaliseerde inhoud.  
 
 > [!Note]  
-> Voor grotere bijdragen is het ondertekenen van een contributie licentieovereenkomst vereist (CLA) als u geen micro soft-werk nemer bent. GitHub vereist automatisch dat u deze overeenkomst moet ondertekenen wanneer een bijdrage voldoet aan de drempel waarde. U hoeft deze overeenkomst maar één keer te ondertekenen.
+> Voor grotere bijdragen is een CLA (gebruiksrechtovereenkomst voor bijdrage) vereist, als u geen Microsoft-werknemer bent. In GitHub is automatisch vereist dat u deze overeenkomst ondertekent wanneer een bijdrage voldoet aan de drempelwaarde. U hoeft deze overeenkomst maar één keer te ondertekenen.
 
 ### <a name="tips"></a>Tips
 
-Volg deze algemene richt lijnen bij het bijdragen aan intune-documenten:
+Volg deze algemene richtlijnen bij het bijdragen aan Intune-documenten:
 
-- Zorg dat u geen grote pull-aanvragen verwacht. In plaats daarvan [een probleem in het bestand op te lossen](#provide-doc-feedback) en een discussie te starten. Vervolgens kunnen we akkoord gaan met de richting voordat u een grote hoeveelheid tijd belegt.  
+- Dien niet ineens heel grote pull-aanvragen in. U kunt in plaats hiervan [het probleem melden](#provide-doc-feedback) en een discussie starten. Vervolgens kunnen we het eens worden over de richting, voordat u heel veel tijd investeert.  
 
-- Lees de [micro soft-stijl gids](https://aka.ms/MicrosoftStyle). De [10 belangrijkste tips voor micro soft-stijl en-stem](https://docs.microsoft.com/style-guide/top-10-tips-style-voice).  
+- Lees de [Microsoft-stijlgids](https://aka.ms/MicrosoftStyle). Ken de [10 belangrijkste tips voor Microsoft-stijl en Microsoft Voice](https://docs.microsoft.com/style-guide/top-10-tips-style-voice).  
 
-- Volg de [werk stroom](https://guides.github.com/introduction/flow/)van de GitHub-stroom.  
+- Volg de [GitHub-werkstroom](https://guides.github.com/introduction/flow/).  
 
-- Blog en Tweet (of wat) over uw bijdragen, regel matig!  
+- Blog en Tweet (of wat uw voorkeur heeft) regelmatig over uw bijdragen.  
