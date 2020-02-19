@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Acties voor Apple-apparaten
       items:
-        - name: Verloren iOS-apparaat zoeken
+        - name: Verloren iOS-/iPadOS-apparaat zoeken
           href: device-locate.md
-        - name: Modus Apparaat verloren voor iOS inschakelen
+        - name: Verloren modus van iOS/iPadOS inschakelen
           href: device-lost-mode.md
-        - name: Supervisiemodus voor iOS inschakelen
+        - name: Supervisiemodus voor iOS/iPadOS inschakelen
           href: device-supervised-mode.md
         - name: Een macOS-apparaat wissen
           href: device-erase.md
