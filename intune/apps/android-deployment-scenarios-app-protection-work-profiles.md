@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059802"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415111"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Toepassingsbeveiligingsbeleid en werkprofielen op Android Enterprise-apparaten in Intune
 
@@ -55,7 +55,7 @@ Afzonderlijke Android-apps kunnen op verschillende manier van APP worden voorzie
 
 Zie [Intune-beheerde apps zijn uitgerust met een omvangrijke set beveiligings-policies](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) voor een lijst van apps met APP-mogelijkheden.
 
-## <a name="deployment-scenarios"></a>Implementatiescenario 's
+## <a name="deployment-scenarios"></a>Implementatiescenario's
 
 In deze sectie worden de belangrijkste kenmerken van implementatiescenario’s met APP-WE en Android Enterprise-werkprofielen beschreven.
 
@@ -106,7 +106,7 @@ Office-toepassingen, zoals Outlook en OneDrive, kunnen werken met 'meerdere iden
 
 Wanneer u werkprofielen gebruikt, kunt u dit gedrag voor meerdere identiteiten uitschakelen. Wanneer u dit uitschakelt, kunnen badge-exemplaren van de app in het werkprofiel alleen worden geconfigureerd met een organisatie-id. Gebruik de app-configuratie-instelling Toegestane accounts voor het ondersteunen van Office Android-apps.
 
-Zie voor meer informatie [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (configuratie-instellingen implementeren voor Outlook voor iOS en Android).
+Zie voor meer informatie [Deploying Outlook for iOS/iPadOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Configuratie-instellingen implementeren voor Outlook voor iOS/iPadOS en Android).
 
 ## <a name="when-to-use-intune-app"></a>Wanneer Intune-APP te gebruiken
 

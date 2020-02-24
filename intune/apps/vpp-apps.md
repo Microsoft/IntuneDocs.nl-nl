@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c4218dc02f11b9ada07126ce24d6dc4080b23ec
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0b16ab43a2b2c3b2a38aeee14614f2c8361c3d83
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692142"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415426"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Apps en boeken met Microsoft Intune beheren die via het Volume Purchase Program zijn gekocht
 
@@ -39,6 +39,6 @@ U kunt Microsoft Intune gebruiken om apps en boeken te beheren die u met een der
 
 Met Intune kunt u apps en boeken beheren die u via een volume-aankoop hebt aangeschaft in de iOS-store. Daarnaast kunt u de apps beheren die u hebt aangeschaft via de Microsoft Store voor Bedrijven. Kies een van de volgende onderwerpen om te lezen hoe u gelicentieerde apps uit elke store kunt beheren:
 
-- [iOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
-- [Apps beheren die via het volume-aankoopprogramma in de Microsoft Store voor Bedrijven zijn gekocht](windows-store-for-business.md)
-- [iOS-eBooks beheren](vpp-ebooks-ios.md)
+- [iOS-/iPadOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
+- [Apps beheren die via het volume-aankoopprogramma in Microsoft Store voor Bedrijven zijn gekocht](windows-store-for-business.md)
+- [iOS-/iPadOS-eBooks beheren](vpp-ebooks-ios.md)

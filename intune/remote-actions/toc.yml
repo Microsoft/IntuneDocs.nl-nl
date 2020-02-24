@@ -27,7 +27,7 @@
       items:
         - name: Verloren iOS-/iPadOS-apparaat zoeken
           href: device-locate.md
-        - name: Verloren modus van iOS/iPadOS inschakelen
+        - name: Verloren modus voor iOS/iPadOS inschakelen
           href: device-lost-mode.md
         - name: Supervisiemodus voor iOS/iPadOS inschakelen
           href: device-supervised-mode.md

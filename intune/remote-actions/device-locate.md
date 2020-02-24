@@ -1,6 +1,6 @@
 ---
-title: Verloren iOS-apparaten zoeken met Microsoft Intune - Azure | Microsoft Docs
-description: Verloren of gestolen iOS-apparaten zoeken met behulp van de functie Apparaat zoeken in Microsoft Intune. Ontvang meer informatie over beveiliging en privacy wanneer u de actie Apparaat zoeken gebruikt.
+title: Verloren iOS-/iPadOS-apparaten zoeken met Microsoft Intune - Azure | Microsoft Docs
+description: Verloren of gestolen iOS-/iPadOS-apparaten zoeken met behulp van de functie Apparaat zoeken in Microsoft Intune. Ontvang meer informatie over beveiliging en privacy wanneer u de actie Apparaat zoeken gebruikt.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc276a6235fb4951c83b62e3c488145062814728
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712413"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415584"
 ---
-# <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Verloren of gestolen iOS-apparaten zoeken met Intune
+# <a name="locate-lost-or-stolen-iosipados-devices-with-intune"></a>Verloren of gestolen iOS-/iPadOS-apparaten zoeken met Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Gebruik de actie **Apparaat zoeken** om de locatie van een verloren of gestolen iOS-apparaat op een kaart weer te geven. Het apparaat moet in de supervisiemodus staan. Voordat u deze actie gebruikt, zorgt u ervoor dat voor het apparaat de [modus Apparaat verloren](device-lost-mode.md) is ingeschakeld.
+Gebruik de actie **Apparaat zoeken** om de locatie van een verloren of gestolen iOS-/iPadOS-apparaat op een kaart weer te geven. Het apparaat moet in de supervisiemodus staan. Voordat u deze actie gebruikt, zorgt u ervoor dat voor het apparaat de [modus Apparaat verloren](device-lost-mode.md) is ingeschakeld.
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
-- iOS 9.3 en hoger
+- iOS/iPadOS 9.3 en hoger
 
 Deze functie wordt niet ondersteund op de volgende systemen: 
 - Windows
@@ -43,16 +43,16 @@ Deze functie wordt niet ondersteund op de volgende systemen:
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
-4. Kies een iOS-apparaat in de lijst met apparaten die u beheert en kies **...Meer**. Kies vervolgens de externe actie **Apparaat zoeken**.
+4. Kies een iOS-/iPadOS-apparaat in de lijst met apparaten die u beheert en kies **...Meer**. Kies vervolgens de externe actie **Apparaat zoeken**.
 5. Wanneer het apparaat is gevonden, wordt de locatie weergegeven in **Apparaat zoeken**.
     ![Schermopname van Apparaat zoeken met behulp van Intune in Azure](./media/device-locate/locate-device.png)
 
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Geluidssignaal voor de modus Apparaat verloren activeren op een iOS-apparaat
 
-Als iemand een iOS 9.3-apparaat of later heeft verloren, kunt u het apparaat extern activeren om een geluidssignaal af te spelen zodat de gebruiker het apparaat kan vinden. Het apparaat moet de [modus Apparaat verloren](device-lost-mode.md) hebben.
+Als iemand een apparaat met iOS/iPadOS 9.3 of hoger is verloren, kunt u het apparaat extern activeren om een geluidssignaal af te spelen zodat de gebruiker het apparaat kan vinden. Het apparaat moet de [modus Apparaat verloren](device-lost-mode.md) hebben.
 
-Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de opties **Apparaten** > **Alle apparaten** > selecteer een iOS-apparaat > **Overzicht** > **Meer** > **Afspelen in de modus Apparaat verloren (alleen onder supervisie)** .
+Kies in [Intune in Azure Portal](https://aka.ms/intuneportal) de opties **Apparaten** > **Alle apparaten** > selecteer een iOS-/iPadOS-apparaat > **Overzicht** > **Meer** > **Afspelen in de modus Apparaat verloren (alleen onder supervisie)** .
 
 Het geluid wordt afgespeeld totdat de gebruiker het geluid uitschakelt op het apparaat of totdat het apparaat niet meer de modus Apparaat verloren heeft.
 

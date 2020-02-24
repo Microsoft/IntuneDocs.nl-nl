@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812176"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413652"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Regels instellen op apparaten om toegang tot resources in uw organisatie met behulp van Intune toe te staan
 
@@ -104,7 +104,9 @@ Intune bevat ook een set ingebouwde instellingen voor nalevingsbeleid. Het volge
   - De bedrijfsportal toestaan om locatieservices te gebruiken.
   - Eens per 72 uur de jailbreak-status evalueren en aan Intune rapporteren. Anders wordt het apparaat gemarkeerd als Niet compatibel. Evaluatie wordt geactiveerd door de bedrijfsportal-app te openen of het apparaat 500 meter of meer te verplaatsen. Als het apparaat in 72 uur minder dan 500 meter beweegt, moet de gebruiker de bedrijfsportal-app openen voor een betere jailbreak-beoordeling.
 
-- **Geldigheidsperiode van nalevingsstatus (dagen)** : Voer de tijdsduur in dat apparaten de status voor alle ontvangen nalevingsbeleidsregels moeten rapporteren. Apparaten die niet binnen deze tijdsduur de status retourneren, worden als Niet compatibel beschouwd. De standaardwaarde is 30 dagen.
+- **Geldigheidsperiode van nalevingsstatus (dagen)** : Voer de tijdsduur in dat apparaten de status voor alle ontvangen nalevingsbeleidsregels moeten rapporteren. Apparaten die niet binnen deze tijdsduur de status retourneren, worden als Niet compatibel beschouwd. De standaardwaarde is 30 dagen. De minimumwaarde is 1 dag.
+
+  Deze instelling wordt weergegeven als het standaardnalevingsbeleid **Is actief** (**Apparaten** > **Controleren** > **Naleving van instelling**). De achtergrondtaak voor dit beleid wordt één keer per dag uitgevoerd.
 
 U kunt dit ingebouwde beleid gebruiken om deze instellingen te bewaken. In Intune worden [controles voor updates ook vernieuwd](create-compliance-policy.md#refresh-cycle-times) met verschillende intervallen, afhankelijk van het apparaatplatform. [Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen in Microsoft Intune](../configuration/device-profile-troubleshoot.md) is een goede resource.
 

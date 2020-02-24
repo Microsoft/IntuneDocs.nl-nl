@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503189"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414227"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Rapport over onvolledige gebruikersinschrijving
 
@@ -44,7 +44,7 @@ Als een gebruiker er meerdere keren voor kiest om de inschrijving te stoppen en 
 
 ## <a name="what-does-the-report-show"></a>Wat wordt in het rapport weergegeven?
 
-De rapporten omvatten gegevens voor iOS- en Android-apparaten.
+De rapporten omvatten gegevens voor iOS-/iPadOS- en Android-apparaten.
 
 In de rapporten worden gegevens weergegeven voor de afgelopen twee weken. U kunt het rapport echter filteren op weergave van elke willekeurige periode in de afgelopen 30 dagen.
 
@@ -86,10 +86,10 @@ De volgende tabellen bevatten de lijst met gebruikersacties die worden beschouwd
 
 | Actienaam | Scherm of stroom | Platform | Actie |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | Vragen om weergave van een configuratieprofiel | iOS | **Negeren** |
-| iOSProfileLaunch | Scherm Profiel installeren | iOS | **Annuleren** |
-| iOSProfileLaunch | Vragen om de bron van het profiel te vertrouwen om het apparaat te registreren | iOS | **Annuleren** |
-| iOSProfileLaunch | Scherm Profiel installeren totdat het profiel is geïnstalleerd | iOS | Duur > 30 minuten |
+| iOSProfileLaunch | Vragen om weergave van een configuratieprofiel | iOS/iPadOS | **Negeren** |
+| iOSProfileLaunch | Scherm Profiel installeren | iOS/iPadOS | **Annuleren** |
+| iOSProfileLaunch | Vragen om de bron van het profiel te vertrouwen om het apparaat te registreren | iOS/iPadOS | **Annuleren** |
+| iOSProfileLaunch | Scherm Profiel installeren totdat het profiel is geïnstalleerd | iOS/iPadOS | Duur > 30 minuten |
 | AndroidPermissions | Het activeringsscherm Apparaatbeheerder | Android | **Annuleren** |
 | AndroidPermissions | Vanaf de vraag om goedkeuring voor het maken en beheren van telefoongesprekken tot **Activeren** door apparaatbeheerder | Android | Duur > 30 minuten |
 | KnoxActivation | Activering van de KLMS-agent (alleen Samsung) | Android| **Annuleren** |

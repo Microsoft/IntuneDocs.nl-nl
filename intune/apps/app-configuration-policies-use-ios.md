@@ -1,7 +1,7 @@
 ---
-title: App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
+title: App-configuratiebeleidsregels voor beheerde iOS-/iPadOS-apparaten toevoegen
 titleSuffix: Microsoft Intune
-description: Informatie over het gebruiken van app-configuratiebeleidsregels om configuratiegegevens te leveren aan een iOS-app wanneer deze wordt uitgevoerd.
+description: Informatie over het gebruiken van app-configuratiebeleidsregels om configuratiegegevens te leveren aan een iOS-/iPadOS-app wanneer dit wordt uitgevoerd.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755762"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438001"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-/iPadOS-apparaten toevoegen
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-App-configuratiebeleidsregels gebruiken in Microsoft Intune om aangepaste configuratie-instellingen te leveren voor een iOS-app. Met deze configuratie-instellingen kan een app worden aangepast op basis van de richting van de leverancier van de app. U krijgt deze configuratie-instellingen (sleutels en waarden) van de leverancier van de app. Als u de app wilt configureren, geeft u de instellingen op als sleutels en waarden, of als XML die de sleutels en waarden bevat.
+Gebruik app-configuratiebeleidsregels in Microsoft Intune om aangepaste configuratie-instellingen te leveren voor een iOS-/iPadOS-app. Met deze configuratie-instellingen kan een app worden aangepast op basis van de richting van de leverancier van de app. U krijgt deze configuratie-instellingen (sleutels en waarden) van de leverancier van de app. Als u de app wilt configureren, geeft u de instellingen op als sleutels en waarden, of als XML die de sleutels en waarden bevat.
 
 Als Microsoft Intune-beheerder kunt u bepalen welke gebruikersaccounts worden toegevoegd aan Microsoft Office-toepassingen op beheerde apparaten. U kunt de toegang beperken tot uitsluitend toegestane gebruikersaccounts van de organisatie, en persoonlijke accounts blokkeren op ingeschreven apparaten. De app-configuratie wordt verwerkt op de ondersteunende toepassingen, en niet-goedgekeurde accounts worden verwijderd en geblokkeerd. De instellingen van het configuratiebeleid worden gebruikt wanneer de app deze controleert, doorgaans bij de eerste keer dat de app wordt uitgevoerd.
 
@@ -41,7 +41,7 @@ Zodra u een appconfiguratiebeleid hebt toegevoegd, kunt u de toewijzingen voor h
 Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van uw toepassing, kunt u de specifieke groepen selecteren die moeten worden uitgesloten. Zie [App-toewijzingen opnemen en uitsluiten in Microsoft Intune](apps-inc-exl-assignments.md) voor meer informatie.
 
 > [!TIP]
-> Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
+> Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS/iPadOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
 >
 > - **Beheerde iOS-app uit de App Store**
 > - **App-pakket voor iOS**
@@ -106,7 +106,7 @@ De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet word
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Alleen geconfigureerde organisatieaccounts toestaan in apps met meerdere identiteiten 
 
-Gebruik voor iOS-apparaten de volgende sleutel-/waardeparen:
+Gebruik voor iOS-/iPadOS-apparaten de volgende sleutel-/waardeparen:
 
 | **Sleutel** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,17 +177,17 @@ Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen
 - \{\{deviceid\}\} - bijvoorbeeld **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\} - bijvoorbeeld **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\} - bijvoorbeeld **Jan de Vries**
-- \{\{serialnumber\}\} -bijvoorbeeld **F4KN99ZUG5V2** (voor iOS-apparaten)
-- \{\{serialnumberlast4digits\}\} - bijvoorbeeld **G5V2** (voor iOS-apparaten)
+- \{\{serialnumber\}\} -bijvoorbeeld **F4KN99ZUG5V2** (voor iOS-/iPadOS-apparaten)
+- \{\{serialnumberlast4digits\}\} - bijvoorbeeld **G5V2** (voor iOS-/iPadOS-apparaten)
 - \{\{aaddeviceid\}\}— bijvoorbeeld **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>De bedrijfsportal-app configureren voor ondersteuning van iOS DEP-apparaten
 
-DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel met de App Store-versie van de bedrijfsportal-app. U kunt de bedrijfsportal-app echter configureren voor ondersteuning van iOS DEP-apparaten met behulp van de volgende stappen.
+DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel met de App Store-versie van de bedrijfsportal-app. U kunt de bedrijfsportal-app echter configureren voor ondersteuning van iOS/iPadOS DEP-apparaten met behulp van de volgende stappen.
 
 1. Voeg in Intune zo nodig de Intune-bedrijfsportal-app toe. Hiervoor gaat u naar **Intune** > **Apps** > **Alle apps** > **Toevoegen**.
 2. Ga naar **Apps** > **App-configuratiebeleid** om een app-configuratiebeleid voor de bedrijfsportal-app te maken.
-3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een app-configuratiebeleid en het invoeren van XML-gegevens vindt u in [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md) (App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen).
+3. Maak een app-configuratiebeleid met de onderstaande XML. Meer informatie over het maken van een app-configuratiebeleid en het invoeren van XML-gegevens vindt u in [Add app configuration policies for managed iOS/iPadOS devices](app-configuration-policies-use-ios.md) (App-configuratiebeleidsregels voor beheerde iOS-/iPadOS-apparaten toevoegen).
 
     ``` xml
     <dict>
@@ -205,11 +205,11 @@ DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel me
 4. Informeer eindgebruikers dat ze zich bij de bedrijfsportal-app moeten aanmelden nadat deze automatisch is geïnstalleerd.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Configuratiestatus van een iOS-app per apparaat controleren 
-Nadat een configuratiebeleid is toegewezen, kunt u de configuratiestatus van een iOS-app voor elk beheerd apparaat controleren. Selecteer vanaf **Microsoft Intune** in Azure Portal de optie **Apparaten** > **Alle apparaten**. Selecteer in de lijst met beheerde apparaten een specifiek apparaat om een deelvenster voor het apparaat weer te geven. Selecteer **App-configuratie** op het deelvenster van het apparaat.  
+Nadat een configuratiebeleid is toegewezen, kunt u de configuratiestatus van een iOS-/iPadOS-app voor elk beheerd apparaat controleren. Selecteer vanaf **Microsoft Intune** in Azure Portal de optie **Apparaten** > **Alle apparaten**. Selecteer in de lijst met beheerde apparaten een specifiek apparaat om een deelvenster voor het apparaat weer te geven. Selecteer **App-configuratie** op het deelvenster van het apparaat.  
 
 ## <a name="additional-information"></a>Aanvullende informatie
 
-- [Configuratie-instellingen voor de Outlook-app voor iOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [Configuratie-instellingen voor de Outlook-app voor iOS/iPadOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Volgende stappen
 

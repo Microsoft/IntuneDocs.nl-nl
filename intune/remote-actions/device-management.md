@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754249"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413774"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -36,7 +36,7 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten**. Deze weergave bevat gedetailleerde informatie over de afzonderlijke apparaten en wat u kunt ermee kunt doen, inclusief:
 
-   - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS en meer.
+   - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS/iPadOS en meer.
    - **Alle apparaten** geeft een lijst weer met de ingeschreven apparaten die u beheert.
 
      Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Microsoft Edge, Chrome).
@@ -70,7 +70,7 @@ De beschikbaarheid van de acties is afhankelijk van het apparaatplatform en de c
   - [Beheer op afstand voor Android](teamviewer-support.md)
   - [Apparaat synchroniseren](device-sync.md)
   - [Naam van apparaat wijzigen](device-rename.md)
-  - [Aangepaste meldingen verzenden](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [Aangepaste meldingen verzenden](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS/iPadOS)
   - [BitLocker-sleutelrotatie](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (alleen Windows)
 
 ## <a name="next-steps"></a>Volgende stappen

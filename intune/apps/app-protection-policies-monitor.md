@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205255"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437967"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ De bewaarperiode voor app-beveiligingsgegevens is 90 dagen. Alle app-exemplaren 
 - **Gemarkeerde gebruikers**: Het aantal gebruikers dat problemen ondervindt met hun apparaat. Gekraakte (iOS) en geroote (Android) apparaten worden onder **Gemarkeerde gebruikers** gerapporteerd. Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle Google SafetyNet-apparaatattestation (indien ingeschakeld door de IT-beheerder). 
 - **Gebruikers met mogelijk schadelijke apps**: Het aantal gebruikers waarvoor mogelijk een schadelijke app op hun Android-apparaat is gedetecteerd door Google Play Protect. 
 - **Gebruikersstatus voor iOS** en **Gebruikersstatus voor Android**: Het aantal gebruikers dat een app heeft gebruikt en waaraan een beleid is toegewezen in een werkcontext voor het betreffende platform. Deze informatie toont het aantal gebruikers dat wordt beheerd door het beleid, evenals het aantal gebruikers dat gebruikmaakt van een app waarop geen beleid in een werkcontext is gericht. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
-- **Meestgebruikte beveiligde iOS-apps** en **Meestgebruikte beveiligde Android-apps**: Op basis van de meestgebruikte iOS- en Android-apps geeft deze informatie het aantal beschermde en onbeschermde apps per platform weer.
-- **Meestgebruikte geconfigureerde iOS-apps zonder registratie** en **Meestgebruikte geconfigureerde Android-apps zonder registratie**: Op basis van de meestgebruikte iOS- en Android-apps voor niet-geregistreerde apparaten geeft deze informatie het aantal geconfigureerde per platform weer (met gebruik van een app-configuratiebeleid).
+- **Meestgebruikte beveiligde iOS-/iPadOS-apps** en **Meestgebruikte beveiligde Android-apps**: Op basis van de meestgebruikte iOS-/iPadOS- en Android-apps geeft deze informatie het aantal beschermde en onbeschermde apps per platform weer.
+- **Meestgebruikte geconfigureerde iOS-/iPadOS-apps zonder registratie** en **Meestgebruikte geconfigureerde Android-apps zonder registratie**: Op basis van de meestgebruikte iOS- en Android-apps voor niet-geregistreerde apparaten geeft deze informatie het aantal geconfigureerde per platform weer (met gebruik van een app-configuratiebeleid).
 
     > [!NOTE]
     > Als u meerdere beleidsregels per platform hebt, wordt een gebruiker beschouwd als te worden beheerd door beleid als er ten minste één beleidsregel aan hem of haar is toegewezen.
@@ -170,9 +170,9 @@ Volg deze stappen om het CSV-bestand App-beveiliging of App-configuratie te gene
     ![Schermopname van het bevestigingsvak Rapport opslaan](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-model. In Intune gaat u naar deze velden door achtereenvolgens **Apps** > **App-beveiligingsstatus** > **App-beveiligingsrapport: iOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de **versie-instellingen van de minimale Android-beveiligingspatch**.   
+> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-/iPadOS-model. In Intune gaat u naar deze velden door achtereenvolgens **Apps** > **App-beveiligingsstatus** > **App-beveiligingsrapport: iOS/iPadOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de **versie-instellingen van de minimale Android-beveiligingspatch**.   
  
 ## <a name="see-also"></a>Zie tevens
-- [Gegevensoverdracht tussen iOS-apps beheren](data-transfer-between-apps-manage-ios.md)
+- [Gegevensoverdracht tussen iOS-/iPadOS-apps beheren](data-transfer-between-apps-manage-ios.md)
 - [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-android.md)
-- [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)
+- [Wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)

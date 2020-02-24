@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125027"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415097"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Wat is er nieuw in Microsoft Intune?
 
@@ -55,7 +55,11 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-february-03-2020"></a>Week van 03 februari 2020
+## <a name="week-of-february-10-2020"></a>Week van 10 februari 2020
+
+### <a name="windows-7-ends-extended-support---3042987--"></a>Uitgebreide ondersteuning voor Windows 7 beëindigd <!--3042987-->
+Uitgebreide ondersteuning voor Windows 7 beëindigd op 14 januari 2020. Ondersteuning van Intune afgeschaft voor apparaten met Windows 7. Technische hulp en automatische updates die helpen bij het beschermen van uw pc zijn niet meer beschikbaar. Voer een upgrade uit naar Windows 10. Zie voor meer informatie de blogpost [Plan for Change](https://aka.ms/Windows7_Intune).
+
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Appbeheer
@@ -63,11 +67,11 @@ Ontdek elke week wat er nieuw is in Microsoft Intune. U vindt hier ook [belangri
 #### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Microsoft Edge versie 77 of hoger op Windows 10-apparaten<!-- 5843584 -->
 Intune biedt nu ondersteuning voor het verwijderen van Microsoft Edge versie 77 en hoger op Windows 10-apparaten. Raadpleeg [Microsoft Edge voor Windows 10 toevoegen aan Microsoft Intune](~/apps/apps-windows-edge.md) voor meer informatie.
 
-#### <a name="company-portal-app-improved-performance---6178652---"></a>Verbeterde prestaties van de Bedrijfsportal-app<!-- 6178652 -->
-De Bedrijfsportal-app is bijgewerkt om de verbeterde prestaties te ondersteunen voor apparaten die gebruikmaken van ARM64-processors, zoals de Surface Pro X. Voorheen werkte de Bedrijfsportal in een geëmuleerde ARM32-modus. Nu is de Bedrijfsportal-app systeemeigen gecompileerd voor ARM64. Raadpleeg [De Microsoft Intune-bedrijfsportal-app configureren](~/apps/company-portal-app.md) voor meer informatie over de Bedrijfsportal-app.
-
-#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Scherm verwijderd uit de Bedrijfsportal, inschrijving van het Android-werkprofiel<!--6103987 -->
+#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Scherm verwijderd uit Bedrijfsportal, inschrijving van Android-werkprofiel<!--6103987 -->
 Het scherm **Wat is de volgende stap?** is verwijderd uit de inschrijvingsstroom voor het Android-werkprofiel in de Bedrijfsportal om de gebruikerservaring te stroomlijnen. Ga naar [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) om de bijgewerkte inschrijvingsstroom voor het Android-werkprofiel weer te geven.  
+
+#### <a name="company-portal-app-improved-performance---6178652---"></a>Verbeterde prestaties van de Bedrijfsportal-app<!-- 6178652 -->
+De Bedrijfsportal-app is bijgewerkt om de verbeterde prestaties te ondersteunen voor apparaten die gebruikmaken van ARM64-processors, zoals de Surface Pro X. Voorheen werkte de Bedrijfsportal in een geëmuleerde ARM32-modus. Nu, in versie 10.4.7080.0 en hoger, is de Bedrijfsportal-app systeemeigen gecompileerd voor ARM64. Raadpleeg [De Microsoft Intune-bedrijfsportal-app configureren](~/apps/company-portal-app.md) voor meer informatie over de Bedrijfsportal-app.
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>De week van 27 januari 2020

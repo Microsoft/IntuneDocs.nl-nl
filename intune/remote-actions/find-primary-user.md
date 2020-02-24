@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712259"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413675"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>De hoofdgebruiker van een Intune-apparaat zoeken
 
@@ -67,8 +67,8 @@ Intune voegt tijdens of kort na de inschrijving automatisch een hoofdgebruiker t
 | Windows | Azure AD-deelname (modus voor automatische zelfimplementatie) | Geen | Niet van toepassing | 
 | Platformoverschrijdend | Door gebruiker gestarte inschrijving met de bedrijfsportal-app | Gebruiker inschrijven | Tijdens inschrijving |
 | Platformoverschrijdend | Apparaatinschrijvingsmanager (DEM) | DEM-gebruiker inschrijven | Tijdens inschrijving |
-| iOS, macOS | Apple Automated Device Enrollment (DEP met gebruikersaffiniteit) | Gebruiker inschrijven | Tijdens inschrijving |
-| iOS, macOS | Apple Automated Device Enrollment (DEP zonder gebruikersaffiniteit) | Geen | Niet van toepassing |
+| iOS/iPadOS, macOS | Apple Automated Device Enrollment (DEP met gebruikersaffiniteit) | Gebruiker inschrijven | Tijdens inschrijving |
+| iOS/iPadOS, macOS | Apple Automated Device Enrollment (DEP zonder gebruikersaffiniteit) | Geen | Niet van toepassing |
 | Android | Android bij bedrijfseigendom, toegewezen apparaten | Geen | Niet van toepassing |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Hoofdgebruiker en de eigenaar van het Azure AD-apparaat

@@ -1,7 +1,7 @@
 ---
-title: iOS-apparaten registreren bij Intune
+title: iOS-/iPadOS-apparaten inschrijven bij Intune
 titleSuffix: Microsoft Intune
-description: Het registreren van iOS-apparaten in Microsoft Intune instellen.
+description: Lees hoe u het inschrijven van iOS-/iPadOS-apparaten in Microsoft Intune kunt instellen.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,53 +18,53 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fb5208cd7df6dc68bcd20455ae9e06a9dbd7ff5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8d5aeb17084ea0bb76429b1fa15c9de5855220ab
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503144"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415296"
 ---
-# <a name="enroll-ios-devices-in-intune"></a>iOS-apparaten registreren bij Intune
+# <a name="enroll-iosipados-devices-in-intune"></a>iOS-/iPadOS-apparaten inschrijven bij Intune
 
 Intune maakt Mobile Device Management (MDM) mogelijk voor iPads en iPhones en geeft gebruikers beveiligde toegang tot zakelijke e-mail, gegevens en apps.
 
-Als Intune-beheerder kunt u de registratie voor iOS- en iPadOS-apparaten instellen voor toegang tot bedrijfsbronnen. U kunt gebruikers toestaan apparaten in persoonlijk eigendom in te schrijven. Dit wordt ook wel BYOD-inschrijving (Bring Your Own Device) genoemd. U kunt ook de inschrijving van apparaten in bedrijfseigendom inschakelen.
+Als Intune-beheerder kunt u de registratie voor iOS-/iPadOS- en iPadOS-apparaten instellen voor toegang tot bedrijfsbronnen. U kunt gebruikers toestaan apparaten in persoonlijk eigendom in te schrijven. Dit wordt ook wel BYOD-inschrijving (Bring Your Own Device) genoemd. U kunt ook de inschrijving van apparaten in bedrijfseigendom inschakelen.
 
-## <a name="prerequisites-for-ios-enrollment"></a>Vereisten voor iOS-registratie
+## <a name="prerequisites-for-iosipados-enrollment"></a>Vereisten voor iOS-/iPadOS-inschrijving
 
-Voordat u de registratie van iOS-apparaten kunt inschakelen, moet u de volgende stappen uitvoeren:
+Voordat u de inschrijving van iOS-/iPadOS-apparaten kunt inschakelen, moet u de volgende stappen uitvoeren:
 
 - [Zorg ervoor dat uw apparaat in aanmerking komt voor apparaatinschrijving bij Apple](https://support.apple.com/en-us/HT204142#eligibility).
 - [Intune instellen](../fundamentals/setup-steps.md): hiermee stelt u de Intune-infrastructuur in. Voor apparaatinschrijving is met name het [instellen van uw MDM-instantie](../fundamentals/mdm-authority-set.md) van belang.
-- [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md): Apple vereist een certificaat voor het inschakelen van het beheer van iOS- en macOS-apparaten.
+- [Een Apple MDM-pushcertificaat ophalen](apple-mdm-push-certificate-get.md): Apple vereist een certificaat voor het inschakelen van het beheer van iOS-/iPadOS- en macOS-apparaten.
 
-## <a name="user-owned-ios-and-ipados-devices-byod"></a>iOS- en iPadOS-apparaten die het eigendom van gebruikers zijn (BYOD)
+## <a name="user-owned-iosipados-and-ipados-devices-byod"></a>iOS-/iPadOS- en iPadOS-apparaten die het eigendom van gebruikers zijn (BYOD)
 
 U kunt gebruikers hun persoonlijke apparaten laten inschrijven voor Intune-beheer, wat 'Bring Your Own Device' of BYOD wordt genoemd. Er zijn drie opties voor het inschrijven van gebruikers:
 - Beveiligingsbeleid voor apps biedt u de lichtste BYOD-ervaring, met alleen beheer op app-niveau. Als u het apparaat echter ook wilt beveiligen met een complexere 6-cijferige pincode, kunt u dit beleid gebruiken in combinatie met gebruikersinschrijving.
 - Apparaatinschrijving is een veelgebruikte vorm van BYOD-inschrijving. Het biedt beheerders een breed scala aan beheeropties.
 - Gebruikersinschrijving is een meer gestroomlijnd inschrijvingsproces en biedt beheerders een subset aan apparaatbeheeropties. Deze functie is momenteel in preview. 
 
-Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen gebruikers in de App Store de Intune-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen. U kunt de privacyverklaring van het bedrijfsportal op iOS-apparaten aanpassen, zoals wordt uitgelegd in het artikel over [het aanpassen van de privacyverklaring](../apps/company-portal-app.md#privacy-statement-customization).
+Zodra u aan de vereisten hebt voldaan en gebruikerslicenties hebt toegewezen, kunnen gebruikers in de App Store de Intune-bedrijfsportal-app downloaden en in de app de inschrijvingsinstructies volgen. U kunt de privacyverklaring van het bedrijfsportal op iOS-/iPadOS-apparaten aanpassen, zoals wordt uitgelegd in het artikel over [het aanpassen van de privacyverklaring](../apps/company-portal-app.md#privacy-statement-customization).
 
-## <a name="company-owned-ios-devices"></a>iOS-apparaten die bedrijfseigendom zijn
+## <a name="company-owned-iosipados-devices"></a>iOS-/iPadOS-apparaten die bedrijfseigendom zijn
 
-Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de volgende inschrijvingsmethoden voor iOS-apparaten die bedrijfseigendom zijn:
+Voor organisaties die apparaten voor hun gebruikers aanschaffen, ondersteunt Intune de volgende inschrijvingsmethoden voor iOS-/iPadOS-apparaten die bedrijfseigendom zijn:
 
 - Device Enrollment Program (DEP) van Apple
 - Apple School Manager
 - Inschrijving via Apple Configurator Setup Assistant
 - Directe inschrijving via Apple Configurator
 
-U kunt iOS-apparaten die bedrijfseigendom zijn ook inschrijven met een [Apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md)-account.
+U kunt iOS-/iPadOS-apparaten die bedrijfseigendom zijn ook inschrijven met een [Device Enrollment Manager](device-enrollment-manager-enroll.md)-account.
 
 ## <a name="device-enrollment-program"></a>Programma voor apparaatinschrijving
 
-Organisaties kunnen nu iOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven. Zie [Device Enrollment Program](device-enrollment-program-enroll-ios.md) voor meer informatie.
+Organisaties kunnen nu iOS-/iPadOS-apparaten aanschaffen via het Device Enrollment Program (DEP) van Apple. Met DEP kunt u een registratieprofiel draadloos implementeren om apparaten voor beheer in te schrijven. Zie [Device Enrollment Program](device-enrollment-program-enroll-ios.md) voor meer informatie.
 
 ## <a name="user-enrollment"></a>Gebruikersinschrijving
-Gebruikersinschrijving biedt beheerders een subset van beheeropties vergeleken met andere inschrijvingsmethoden. Zie de [ondersteunde acties, wachtwoorden en andere opties voor gebruikersinschrijving](ios-user-enrollment-supported-actions.md) en [iOS- en iPadOS-gebruikersinschrijving instellen](ios-user-enrollment.md) voor meer informatie.
+Gebruikersinschrijving biedt beheerders een subset van beheeropties vergeleken met andere inschrijvingsmethoden. Zie [Ondersteunde acties, wachtwoorden en andere opties voor gebruikersinschrijving](ios-user-enrollment-supported-actions.md) en [iOS-/iPadOS- en iPadOS-gebruikersinschrijving instellen](ios-user-enrollment.md) voor meer informatie.
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 
@@ -72,7 +72,7 @@ Apple School Manager is een programma voor het aanschaffen en inschrijven van ap
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
-U kunt iOS-apparaten inschrijven met Apple Configurator op een Mac-computer. Ter voorbereiding daarop sluit u de apparaten aan via USB en installeert u een inschrijvingsprofiel. U kunt apparaten op twee manieren inschrijven met Apple Configurator:
+U kunt iOS-/iPadOS-apparaten inschrijven met Apple Configurator op een Mac-computer. Ter voorbereiding daarop sluit u de apparaten aan via USB en installeert u een inschrijvingsprofiel. U kunt apparaten op twee manieren inschrijven met Apple Configurator:
 
 - Registratie met Configuratieassistent: met dit proces wordt het apparaat gewist, wordt het apparaat voorbereid voor uitvoering van Configuratieassistent en worden de bedrijfsbeleidsregels voor de nieuwe gebruiker van het apparaat geïnstalleerd.
 - Directe registratie: met dit proces wordt het apparaat niet gewist en wordt het apparaat met een vooraf gedefinieerd beleid geregistreerd. Deze methode is geschikt voor apparaten zonder gebruikersaffiniteit.
@@ -89,11 +89,11 @@ Gebruikersaffiniteit is vereist voor de ondersteuning van het volgende:
 - Voorwaardelijke toegang tot e-mail en bedrijfsgegevens
 - Bedrijfsportal-app
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>iOS-apparaten in bedrijfseigendom inschrijven met gebruikersaffiniteit
+### <a name="how-users-enroll-corporate-owned-iosipados-devices-with-user-affinity"></a>iOS-/iPadOS-apparaten in bedrijfseigendom inschrijven met gebruikersaffiniteit
 
 1. Wanneer gebruikers hun apparaat inschakelen, wordt ze gevraagd de Configuratieassistent te voltooien.
 2. Na het voltooien van de installatie wordt er naar de Apple ID van de gebruikers gevraagd. Er moet een Apple ID worden opgegeven zodat de bedrijfsportal op het apparaat kan worden geïnstalleerd.
-3. Op het iOS-apparaat wordt de bedrijfsportal-app automatisch via de App Store geïnstalleerd.
+3. Op het iOS-/iPadOS-apparaat wordt de bedrijfsportal-app automatisch via de App Store geïnstalleerd.
 4. Gebruikers moeten de bedrijfsportal-app openen en zich aanmelden met de referenties (zoals hun unieke gebruikersnaam of UPN) die zijn gekoppeld aan hun abonnement in Intune.
 5. Na het aanmelden is de inschrijving voltooid. Gebruikers kunnen dit apparaat nu gebruiken met de volledige set mogelijkheden.
 
@@ -105,4 +105,4 @@ Als gebruikersaffiniteit vereist is, moet **Gebruikersaffiniteit** in het inschr
 
 ## <a name="see-also"></a>Zie tevens
 
-[Problemen met inschrijving van iOS-apparaten in Microsoft Intune oplossen](https://support.microsoft.com/help/4039809)
+[Problemen met inschrijving van iOS-/iPadOS-apparaten in Microsoft Intune oplossen](https://support.microsoft.com/help/4039809)

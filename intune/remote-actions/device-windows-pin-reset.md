@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907216"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413634"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>De wachtwoordcode opnieuw instellen op Windows-apparaten met Intune
 
@@ -60,7 +60,7 @@ Vervang *tenant-id* door uw Azure AD Directory-id, die wordt vermeld in de **Eig
 Stel de waarde voor deze CSP in op **Waar**.
 
 > [!TIP]
-> Nadat u het beleid hebt gemaakt, wijst u het toe aan een groep (of implementeert u het). Het beleid kan worden toegewezen aan gebruikersgroepen of aan apparaatgroepen. Als u het toewijst aan een gebruikersgroep , kan de groep gebruikers omvatten met andere apparaten, zoals IOS. Technisch gezien is het beleid niet van toepassing, maar deze apparaten worden wel genoemd in de statusdetails.
+> Nadat u het beleid hebt gemaakt, wijst u het toe aan een groep (of implementeert u het). Het beleid kan worden toegewezen aan gebruikersgroepen of aan apparaatgroepen. Als u het toewijst aan een gebruikersgroep , kan de groep gebruikers omvatten met andere apparaten, zoals iOS/iPadOS. Technisch gezien is het beleid niet van toepassing, maar deze apparaten worden wel genoemd in de statusdetails.
 
 ## <a name="reset-the-passcode"></a>De wachtwoordcode opnieuw instellen
 

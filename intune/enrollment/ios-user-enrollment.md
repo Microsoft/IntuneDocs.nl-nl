@@ -1,7 +1,7 @@
 ---
-title: iOS-apparaten inschrijven - Gebruikersinschrijving
+title: iOS-/iPadOS-apparaten inschrijven - Gebruikersinschrijving
 titleSuffix: Microsoft Intune
-description: Hier vindt u meer informatie over het instellen van gebruikersinschrijving voor iOS en iPadOS.
+description: Hier vindt u meer informatie over het instellen van gebruikersinschrijving voor iOS/iPadOS en iPadOS.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754615"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415253"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Gebruikersinschrijving voor iOS en iPadOS instellen (preview)
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>Gebruikersinschrijving voor iOS/iPadOS en iPadOS instellen (preview)
 
-U kunt Intune instellen om iOS- en iPadOS-apparaten in te schrijven met het gebruikersinschrijvingsproces van Apple. Gebruikersinschrijving biedt beheerders een gestroomlijnde subset van beheeropties vergeleken met andere inschrijvingsmethoden.
+U kunt Intune instellen om iOS-/iPadOS- en iPadOS-apparaten in te schrijven met het gebruikersinschrijvingsproces van Apple. Gebruikersinschrijving biedt beheerders een gestroomlijnde subset van beheeropties vergeleken met andere inschrijvingsmethoden.
 
 Zie de [ondersteunde acties, wachtwoorden en andere opties voor gebruikersinschrijving](ios-user-enrollment-supported-actions.md) voor meer informatie over de beschikbare opties bij gebruikersinschrijving.
 
@@ -43,7 +43,7 @@ Zie de [ondersteunde acties, wachtwoorden en andere opties voor gebruikersinschr
 
 Met een inschrijvingsprofiel worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving. 
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Inschrijvingstypen (preview-versie)**  > **Profiel maken** > **iOS/iPadOS**. In dit profiel bepaalt u de inschrijvingservaring voor uw iOS- en iPadOS-eind gebruikers op apparaten die niet zijn ingeschreven via een bedrijfsmethode van Apple. Als u wijzigingen wilt aanbrengen, kunt u dit profiel bewerken nadat u het hebt gemaakt.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Inschrijvingstypen (preview-versie)**  > **Profiel maken** > **iOS/iPadOS**. In dit profiel bepaalt u de inschrijvingservaring voor uw iOS-/iPadOS- en iPadOS-eindgebruikers op apparaten die niet zijn ingeschreven via een bedrijfsmethode van Apple. Als u wijzigingen wilt aanbrengen, kunt u dit profiel bewerken nadat u het hebt gemaakt.
 
     ![Apple-inschrijvingsprofiel maken](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ Met een inschrijvingsprofiel worden de instellingen gedefinieerd die worden toeg
 
     - **Apparaatinschrijving**: alle gebruikers in dit profiel gebruiken apparaatinschrijving.
     - **Gebruikersinschrijving**: alle gebruikers in dit profiel gebruiken gebruikersinschrijving.
-    - **Bepalen op basis van gebruikerskeuze**: alle gebruikers in deze groep mogen kiezen welk type inschrijving ze gebruiken. Wanneer gebruikers hun apparaten inschrijven, krijgen ze de mogelijkheid om te kiezen tussen **Ik ben eigenaar van dit apparaat** en **(Bedrijf) is eigenaar van dit apparaat**. Als ze de laatste optie selecteren, wordt het apparaat ingeschreven via apparaatinschrijving. Als gebruikers **Ik ben eigenaar dit apparaat** kiezen, wordt een andere optie weergegeven om te kiezen of ze het hele apparaat of alleen aan werk gerelateerde apps en gegevens willen beveiligen. De keuze van eindgebruikers of ze de eigenaar van het apparaat zijn, bepaalt welk inschrijvingstype op hun apparaat wordt geïmplementeerd. Deze gebruikerskeuze wordt ook weergegeven in het kenmerk Apparaateigendom in Intune. Zie [Toegang tot uw bedrijfsbronnen instellen voor uw iOS-apparaat](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) voor meer informatie over de gebruikerservaring.
+    - **Bepalen op basis van gebruikerskeuze**: alle gebruikers in deze groep mogen kiezen welk type inschrijving ze gebruiken. Wanneer gebruikers hun apparaten inschrijven, krijgen ze de mogelijkheid om te kiezen tussen **Ik ben eigenaar van dit apparaat** en **(Bedrijf) is eigenaar van dit apparaat**. Als ze de laatste optie selecteren, wordt het apparaat ingeschreven via apparaatinschrijving. Als gebruikers **Ik ben eigenaar dit apparaat** kiezen, wordt een andere optie weergegeven om te kiezen of ze het hele apparaat of alleen aan werk gerelateerde apps en gegevens willen beveiligen. De keuze van eindgebruikers of ze de eigenaar van het apparaat zijn, bepaalt welk inschrijvingstype op hun apparaat wordt geïmplementeerd. Deze gebruikerskeuze wordt ook weergegeven in het kenmerk Apparaateigendom in Intune. Zie [Toegang tot uw bedrijfsbronnen instellen voor uw iOS-/iPadOS-apparaat](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) voor meer informatie over de gebruikerservaring.
     
 5. Selecteer **Volgende**.
 

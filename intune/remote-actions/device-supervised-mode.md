@@ -1,7 +1,7 @@
 ---
-title: Supervisiemodus voor iOS inschakelen met Microsoft Intune
+title: Supervisiemodus voor iOS/iPadOS inschakelen met Microsoft Intune
 titleSuffix: ''
-description: Meer informatie over het inschakelen van de supervisiemodus voor iOS met Intune.
+description: Meer informatie over het inschakelen van de supervisiemodus voor iOS/iPadOS met Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713435"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413665"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>Supervisiemodus voor iOS inschakelen
+# <a name="turn-on-iosipados-supervised-mode"></a>Supervisiemodus voor iOS/iPadOS inschakelen
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Met de supervisiemodus voor Apple iOS beschikken beheerders over meer opties voor het beheer van Apple-apparaten, wat handig is voor apparaten in bedrijfseigendom die op schaal zijn geïmplementeerd. U kunt bijvoorbeeld AirDrop beperken of voorkomen dat gebruikers de naam van het apparaat kunnen wijzigen. Zie [iOS-apparaatbeperkingsinstellingen in Intune](../configuration/device-restrictions-ios.md) voor een lijst met instellingen waarvoor de supervisiemodus is vereist.
+Met de supervisiemodus voor Apple iOS/iPadOS beschikken beheerders over meer opties voor het beheer van Apple-apparaten, wat handig is voor apparaten in bedrijfseigendom die op schaal zijn geïmplementeerd. U kunt bijvoorbeeld AirDrop beperken of voorkomen dat gebruikers de naam van het apparaat kunnen wijzigen. Zie [iOS-apparaatbeperkingsinstellingen in Intune](../configuration/device-restrictions-ios.md) voor een lijst met instellingen waarvoor de supervisiemodus is vereist.
 
 Intune ondersteunt de supervisiemodus als onderdeel van het [Device Enrollment Program (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) van Apple.
 
@@ -41,7 +41,7 @@ In het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlin
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>De supervisiemodus inschakelen na de inschrijving
 
-Na de registratie kan de supervisiemodus alleen worden ingeschakeld door een iOS-apparaat op een Mac aan te sluiten en [Apple Configurator te gebruiken](../enrollment/apple-configurator-enroll-ios.md) (hiermee wordt het apparaat opnieuw ingesteld). U kunt een apparaat niet na de inschrijving voor de supervisiemodus in Intune configureren.
+Na de registratie kan de supervisiemodus alleen worden ingeschakeld door een iOS-/iPadOS-apparaat op een Mac aan te sluiten en [Apple Configurator te gebruiken](../enrollment/apple-configurator-enroll-ios.md) (hiermee wordt het apparaat opnieuw ingesteld). U kunt een apparaat niet na de inschrijving voor de supervisiemodus in Intune configureren.
 
 ## <a name="identify-a-supervised-device"></a>Een apparaat onder supervisie identificeren
 

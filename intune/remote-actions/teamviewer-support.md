@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907199"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413735"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer gebruiken voor het extern beheren van Intune-apparaten
 
@@ -29,7 +29,7 @@ Apparaten die worden beheerd door Intune kunnen extern worden beheerd met [TeamV
 
 ## <a name="prerequisites"></a>Vereisten
 
-- Gebruik een ondersteund apparaat. Door Intune beheerd Android-apparaatbeheer, Android-werkprofiel, en Windows-, iOS- en macOS-apparaten ondersteunen extern beheer. TeamViewer biedt mogelijk geen ondersteuning voor Windows Holographic (HoloLens), Windows Team (Surface Hub) of Windows 10 S. Zie voor ondersteuning [TeamViewer](https://www.teamviewer.com) voor eventuele updates.
+- Gebruik een ondersteund apparaat. Door Intune beheerd Android-apparaatbeheer, Android-werkprofiel, en Windows-, iOS-/iPadOS- en macOS-apparaten ondersteunen extern beheer. TeamViewer biedt mogelijk geen ondersteuning voor Windows Holographic (HoloLens), Windows Team (Surface Hub) of Windows 10 S. Zie voor ondersteuning [TeamViewer](https://www.teamviewer.com) voor eventuele updates.
 
 > [!NOTE]
 > Android Dedicated en Volledig beheerd worden niet ondersteund.

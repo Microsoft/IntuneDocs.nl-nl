@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
-  ms.date: 09/16/2019
-  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.date: 02/18/2020
+  ms.openlocfilehash: d6404a4c77507374b5e8759ba2078e541cde35d8
+  ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
   ms.translationtype: HT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72492535"
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77511048"
 landingContent:
 - title: Onderdelen en instellingen op apparaten toepassen
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
       url: device-profiles.md
   - linkListType: quickstart
     links:
-    - text: Een e-mailprofiel voor een apparaat voor iOS maken
+    - text: Een e-mailprofiel voor een apparaat maken voor iOS/iPadOS
       url: quickstart-email-profile.md
   - linkListType: how-to-guide
     links:
@@ -69,11 +69,11 @@ landingContent:
       url: wi-fi-settings-configure.md
     - text: Toegang, accounts en energiefuncties op gedeelde pc's en apparaten met meerdere gebruikers beheren
       url: shared-user-device-settings.md
-- title: Instellingen voor iOS
+- title: Instellingen voor iOS/iPadOS
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Functie-instellingen voor iOS-apparaten toevoegen
+    - text: Functie-instellingen voor iOS-/iPadOS-apparaten toevoegen
       url: device-features-configure.md
     - text: Apparaatbeperkingsinstellingen configureren
       url: device-restrictions-configure.md
@@ -81,7 +81,7 @@ landingContent:
       url: email-settings-configure.md
     - text: VPN-profielen maken om verbinding te maken met VPN-servers
       url: vpn-settings-configure.md
-    - text: VPN-profielen per app maken voor iOS-apparaten
+    - text: VPN-profielen per app maken voor iOS-/iPadOS-apparaten
       url: vpn-setting-configure-per-app.md
     - text: Wi-Fi-instellingen toevoegen en gebruiken op uw apparaten
       url: wi-fi-settings-configure.md
@@ -89,7 +89,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Functie-instellingen voor iOS-apparaten toevoegen
+    - text: Functie-instellingen voor iOS-/iPadOS-apparaten toevoegen
       url: device-features-configure.md
     - text: Apparaatbeperkingsinstellingen configureren
       url: device-restrictions-configure.md
@@ -137,7 +137,7 @@ landingContent:
       url: device-restrictions-android.md
     - text: Android Enterprise
       url: device-restrictions-android-for-work.md
-    - text: iOS
+    - text: iOS/iPadOS
       url: ios-device-features-settings.md
     - text: macOS
       url: macos-device-features-settings.md

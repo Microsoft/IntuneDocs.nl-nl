@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885947"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415284"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Problemen bij de apparaatinschrijving in Microsoft Intune oplossen
 
@@ -36,7 +36,7 @@ Dit artikel bevat suggesties voor het oplossen van problemen met de [inschrijvin
 Voordat u het probleem probeert op te lossen, controleert u of u Intune op de juiste manier hebt geconfigureerd om registratie mogelijk te maken. U kunt meer over deze configuratievereisten lezen in:
 
 - [Bereid u voor op het registreren van apparaten in Microsoft Intune](../fundamentals/setup-steps.md)
-- [iOS- en Mac-apparaatbeheer instellen](../ios-enroll.md)
+- [iOS-/iPadOS- en Mac-apparaatbeheer instellen](../ios-enroll.md)
 - [Windows apparaatbeheer instellen](windows-enroll.md)
 - [Android-apparaatbeheer instellen](android-enroll.md): geen aanvullende stappen vereist
 
@@ -49,7 +49,7 @@ U kunt er ook voor zorgen dat de datum en tijd op het apparaat van de gebruiker 
 Gebruikers van beheerde apparaten kunnen registratie- en diagnostische gegevens laten vastleggen in logboeken, zodat u deze kunt bekijken. Gebruikersinstructies voor het vastleggen van gegevens in logboeken vindt u in:
 
 - [Android-inschrijvingsfouten verzenden naar de IT-beheerder](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [iOS-fouten naar uw IT-beheerder verzenden](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [iOS-/iPadOS-fouten naar uw IT-beheerder verzenden](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>Problemen bij het registreren van apparaten
@@ -93,7 +93,7 @@ Om te voorkomen dat apparaatlimieten worden bereikt, moet u ervoor zorgen dat ve
 
 4. Als dat mislukt, controleert u of de referenties van de gebruiker juist zijn gesynchroniseerd met Azure Active Directory.
 
-5. Als de gebruiker zich heeft aangemeld, wordt u op een iOS-apparaat gevraagd om de Intune-bedrijfsportal-app te installeren en het apparaat in te schrijven. Op een Android-apparaat moet u de Intune-bedrijfsportal-app handmatig installeren, waarna u het apparaat opnieuw kunt inschrijven.
+5. Als de gebruiker zich heeft aangemeld, wordt u op een iOS-/iPadOS-apparaat gevraagd om de Intune-bedrijfsportal-app te installeren en het apparaat in te schrijven. Op een Android-apparaat moet u de Intune-bedrijfsportal-app handmatig installeren, waarna u het apparaat opnieuw kunt inschrijven.
 
 ### <a name="mdm-authority-not-defined"></a>De MDM-instantie is niet gedefinieerd
 **Probleem:** Een gebruiker ontvangt de fout **De MDM-instantie is niet gedefinieerd**.
@@ -244,23 +244,23 @@ In de volgende stappen wordt slechts een van de vele methoden en hulpprogramma's
 Als het servercertificaat goed is geïnstalleerd, worden er allemaal vinkjes weergegeven in de resultaten. Als het bovenstaande probleem bestaat, ziet u in de rapportsecties 'Certificaatnaam komt overeen met' en 'SSL-certificaat is correct geïnstalleerd' een rode X.
 
 
-## <a name="ios-issues"></a>Problemen met iOS
+## <a name="iosipados-issues"></a>iOS-/iPadOS-problemen
 
-### <a name="ios-enrollment-errors"></a>iOS-inschrijvingsfouten
-De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te zien tijdens het registreren van een iOS-apparaat.
+### <a name="iosipados-enrollment-errors"></a>iOS-/iPadOS-inschrijvingsfouten
+De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune te zien krijgen tijdens het inschrijven van een iOS-/iPadOS-apparaat.
 
 |Foutbericht|Probleem|Oplossing|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|Geen registratiebeleid gevonden|Controleer of alle vereisten voor registratie zijn geconfigureerd, zoals het Apple Push Notification Service-certificaat (APNs) en of iOS als platform is ingeschakeld. Zie [iOS- en Mac-apparaatbeheer instellen](../ios-enroll.md) voor instructies.|
-|DeviceCapReached|Er zijn al te veel mobiele apparaten geregistreerd.|De gebruiker moet een van de momenteel geregistreerde mobiele apparaten verwijderen uit de bedrijfsportal voordat een ander mobiel apparaat kan worden geregistreerd. Zie de instructies voor het type apparaat dat u gebruikt: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) of [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om contact te maken met ingeschreven iOS-apparaten. De inschrijving zal mislukken en dit bericht zal worden weergegeven als:<ul><li>De stappen voor het ophalen van een APNs-certificaat niet zijn uitgevoerd, of</li><li>Het APNs-certificaat is verlopen.</li></ul>Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](../fundamentals/users-add.md) en [Gebruikers en apparaten organiseren](../fundamentals/groups-add.md).|
-|AccountNotOnboarded|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om contact te maken met ingeschreven iOS-apparaten. De inschrijving zal mislukken en dit bericht zal worden weergegeven als:<ul><li>De stappen voor het ophalen van een APNs-certificaat niet zijn uitgevoerd, of</li><li>Het APNs-certificaat is verlopen.</li></ul>Zie [iOS- en Mac-beheer instellen met Microsoft Intune](../ios-enroll.md) voor meer informatie.|
-|DeviceTypeNotSupported|Mogelijk heeft de gebruiker geprobeerd een ander apparaat dan een iOS-apparaat te registreren. Het type mobiele apparaat dat u probeert in te schrijven, wordt niet ondersteund.<br /><br />Controleer of iOS-versie 8.0 of hoger op het apparaat wordt uitgevoerd.<br /><br />|Controleer of iOS-versie 8.0 of hoger op het apparaat van de gebruiker wordt uitgevoerd.|
-|UserLicenseTypeInvalid|Het apparaat kan niet worden ingeschreven, omdat het account van de gebruiker nog geen lid is van een vereiste gebruikersgroep.<br /><br />|Gebruikers die hun apparaten willen registreren, moeten lid zijn van de juiste gebruikersgroep. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan:<ol><li>Intune is ingesteld als de Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie de volgende artikelen voor meer informatie:<br /><br />Zie [iOS- en Mac-beheer instellen met Microsoft Intune](../ios-enroll.md) en informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](../fundamentals/users-add.md) en [Gebruikers en apparaten organiseren](../fundamentals/groups-add.md).|
+|NoEnrollmentPolicy|Geen registratiebeleid gevonden|Controleer of alle vereisten voor inschrijving zijn geconfigureerd, zoals het Apple Push Notification Service-certificaat (APNs) en of iOS/iPadOS als platform is ingeschakeld. Zie [iOS-/iPadOS- en Mac-apparaatbeheer instellen](../ios-enroll.md) voor instructies.|
+|DeviceCapReached|Er zijn al te veel mobiele apparaten geregistreerd.|De gebruiker moet een van de momenteel geregistreerde mobiele apparaten verwijderen uit de bedrijfsportal voordat een ander mobiel apparaat kan worden geregistreerd. Zie de instructies voor het type apparaat dat u gebruikt: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|APNSCertificateNotValid|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om contact te maken met ingeschreven iOS-/iPadOS-apparaten. De inschrijving zal mislukken en dit bericht zal worden weergegeven als:<ul><li>De stappen voor het ophalen van een APNs-certificaat niet zijn uitgevoerd, of</li><li>Het APNs-certificaat is verlopen.</li></ul>Lees de informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](../fundamentals/users-add.md) en [Gebruikers en apparaten organiseren](../fundamentals/groups-add.md).|
+|AccountNotOnboarded|Er is een probleem met het certificaat dat door het mobiele apparaat wordt gebruikt voor communicatie met het netwerk van uw bedrijf.<br /><br />|De Apple Push Notification Service (APNs) biedt een kanaal om contact te maken met ingeschreven iOS-/iPadOS-apparaten. De inschrijving zal mislukken en dit bericht zal worden weergegeven als:<ul><li>De stappen voor het ophalen van een APNs-certificaat niet zijn uitgevoerd, of</li><li>Het APNs-certificaat is verlopen.</li></ul>Zie [iOS-/iPadOS- en Mac-beheer instellen met Microsoft Intune](../ios-enroll.md) voor meer informatie.|
+|DeviceTypeNotSupported|Mogelijk heeft de gebruiker geprobeerd een ander apparaat dan een iOS-apparaat te registreren. Het type mobiele apparaat dat u probeert in te schrijven, wordt niet ondersteund.<br /><br />Controleer of iOS-/iPadOS versie 8.0 of hoger op het apparaat wordt uitgevoerd.<br /><br />|Controleer of iOS-/iPadOS versie 8.0 of hoger op het apparaat van de gebruiker wordt uitgevoerd.|
+|UserLicenseTypeInvalid|Het apparaat kan niet worden ingeschreven, omdat het account van de gebruiker nog geen lid is van een vereiste gebruikersgroep.<br /><br />|Gebruikers die hun apparaten willen registreren, moeten lid zijn van de juiste gebruikersgroep. Dit bericht betekent dat de gebruiker het verkeerde licentietype heeft voor de Mobile Device Management-instantie. Ze krijgen deze fout bijvoorbeeld te zien als aan de twee volgende voorwaarden wordt voldaan:<ol><li>Intune is ingesteld als de Mobile Device Management-instantie</li><li>De gebruiker gebruikt een System Center 2012 R2 Configuration Manager-licentie.</li></ol>Zie de volgende artikelen voor meer informatie:<br /><br />Zie [iOS-/iPadOS- en Mac-beheer instellen met Microsoft Intune](../ios-enroll.md) en informatie over het instellen van gebruikers in [Active Directory synchroniseren en gebruikers toevoegen aan Intune](../fundamentals/users-add.md) en [Gebruikers en apparaten organiseren](../fundamentals/groups-add.md).|
 |MdmAuthorityNotDefined|De Mobile Device Management-instantie is niet gedefinieerd.<br /><br />|De Mobile Device Management-instantie is niet ingesteld in Intune.<br /><br />Lees artikel 1 in de sectie 'Stap 6: Mobiele apparaten registreren en een app installeren' in [Aan de slag met een evaluatieversie van Microsoft Intune van 30 dagen](../fundamentals/free-trial-sign-up.md).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Apparaten zijn inactief of de beheerconsole kan er niet mee communiceren
-**Probleem:** iOS-apparaten checken niet in bij de Intune-service. Apparaten moeten regelmatig worden ingecheckt bij de service om toegang te behouden tot beveiligde bedrijfsresources. Als apparaten niet worden ingecheckt:
+**Probleem:** iOS-/iPadOS-apparaten checken niet in bij de Intune-service. Apparaten moeten regelmatig worden ingecheckt bij de service om toegang te behouden tot beveiligde bedrijfsresources. Als apparaten niet worden ingecheckt:
 
 - Kunnen ze geen beleid, apps en externe opdrachten ontvangen van de Intune-service.
 - Wordt voor deze apparaten in de beheerconsole de Beheerstatus **Niet in orde** weergegeven.
@@ -268,15 +268,15 @@ De volgende tabel bevat fouten die eindgebruikers mogelijk in Intune krijgen te 
 
 **Oplossing:** Deel de volgende oplossingen met uw eindgebruikers om ervoor te zorgen dat ze weer toegang kunnen verkrijgen tot bedrijfsresources.
 
-Wanneer gebruikers aan de slag gaan met de iOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Er wordt geprobeerd om te synchroniseren...** te zien.
+Wanneer gebruikers aan de slag gaan met de iOS-/iPadOS-bedrijfsportal-app, wordt het gemeld als het apparaat geen contact meer heeft met Intune. Als er wordt gedetecteerd dat er geen contact is, wordt automatisch geprobeerd om te synchroniseren met Intune om opnieuw verbinding te maken. Gebruikers krijgen dan de melding **Er wordt geprobeerd om te synchroniseren...** te zien.
 
   ![De melding Poging tot synchronisatie...](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-Als het synchroniseren lukt, ziet u de melding **De synchronisatie is voltooid** in de iOS-bedrijfsportal-app; deze geeft aan dat de status van uw apparaat in orde is.
+Als het synchroniseren lukt, ziet u de melding **De synchronisatie is voltooid** in de iOS-/iPadOS-bedrijfsportal-app; deze geeft aan dat de status van uw apparaat in orde is.
 
   ![De melding De synchronisatie is voltooid](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-bedrijfsportal-app.
+Als het synchroniseren mislukt, krijgen gebruikers de melding **Kan niet synchroniseren** te zien in de iOS-/iPadOS-bedrijfsportal-app.
 
   ![De melding Kan niet synchroniseren](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Als gebruikers het probleem willen oplossen, moeten ze de knop **Instellen** sel
 Na het inschrijven krijgen de apparaten weer een goede status en is er weer toegang mee te verkrijgen tot de bedrijfsresources.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>Controleren of WS-Trust 1.3 is ingeschakeld
-**Probleem:** iOS-apparaten van het Device Enrollment Program (DEP) kunnen niet worden ingeschreven
+**Probleem:** iOS-/iPadOS-apparaten van het Device Enrollment Program (DEP) kunnen niet worden ingeschreven
 
 Voor het inschrijven van DEP-apparaten met gebruikersaffiniteit moet het WS-Trust 1.3 Username/Mixed-eindpunt zijn ingeschakeld om gebruikerstokens aan te vragen. Dit eindpunt wordt standaard door Active Directory ingeschakeld. U kunt een lijst van ingeschakelde eindpunten ophalen met de PowerShell-cmdlet Get-AdfsEndpoint en vervolgens naar het eindpunt trust/13/UsernameMixed zoeken. Bijvoorbeeld:
 
@@ -301,7 +301,7 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 
 ### <a name="profile-installation-failed"></a>De profielinstallatie is mislukt
-**Probleem:** Een gebruiker ontvangt op een iOS-apparaat de fout **Profiel is niet geïnstalleerd**.
+**Probleem:** Een gebruiker ontvangt op een iOS-/iPadOS-apparaat de fout **Profiel is niet geïnstalleerd**.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Stappen voor de probleemoplossing bij een mislukte profielinstallatie
 
@@ -313,9 +313,9 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 4. Ga naar [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en probeer het gevraagde profiel te installeren.
 
-5. Controleer of Safari for iOS de standaardbrowser is en of cookies zijn ingeschakeld.
+5. Controleer of Safari voor iOS/iPadOS de standaardbrowser is en of cookies zijn ingeschakeld.
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Het iOS-apparaat van de gebruiker is meer dan 10 minuten vastgelopen op een scherm voor inschrijving
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Het iOS-/iPadOS-apparaat van de gebruiker is meer dan tien minuten vastgelopen op een scherm voor inschrijving
 
 **Probleem**: Een apparaat dat wordt geregistreerd, kan op een van de volgende twee schermen vastlopen:
 - In afwachting van definitieve configuratie van 'Microsoft'
@@ -323,11 +323,11 @@ Zie [Aanbevolen procedures voor het beveiligen van Active Directory Federation S
 
 Dit probleem kan zich voordoen als:
 - Er zich een tijdelijke storing voordoet voor Apple-services, of
-- De iOS-inschrijving zo is ingesteld dat VPP-tokens worden gebruikt, zoals wordt weergegeven in de tabel, maar er iets mis is met het VPP-token.
+- De iOS-/iPadOS-inschrijving zo is ingesteld dat VPP-tokens worden gebruikt, zoals wordt weergegeven in de tabel, maar er iets mis is met het VPP-token.
 
 | Inschrijvingsinstellingen | Waarde |
 | ---- | ---- |
-| Platform | iOS |
+| Platform | iOS/iPadOS |
 | Gebruikersaffiniteit | Inschrijven met gebruikersaffiniteit |
 |Verifiëren met de bedrijfsportal in plaats van met de Apple-configuratieassistent | Ja |
 | De bedrijfsportal installeren met VPP | Token gebruiken: adres van token |

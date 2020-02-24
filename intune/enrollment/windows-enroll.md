@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207431"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415119"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Inschrijving voor Windows-apparaten instellen
 
@@ -119,7 +119,7 @@ Zie [Uw Windows-apparaat inschrijven bij Intune](https://docs.microsoft.com/intu
 Zie [Bronnen over de eindgebruikerservaring in Microsoft Intune](../fundamentals/end-user-educate.md) voor meer informatie over taken voor eindgebruikers.
 
 ## <a name="registration-and-enrollment-cnames"></a>CNAME's voor registratie en inschrijving
-Azure Active Directory heeft een andere CNAME die wordt gebruikt voor apparaatregistratie voor iOS-, Android- en Windows-apparaten. Voor voorwaardelijke toegang van Intune moeten apparaten worden geregistreerd, ook wel 'aan werkplek toegevoegd' genoemd. Als u voorwaardelijke toegang wilt gebruiken, moet u ook de CNAME voor EnterpriseRegistration configureren voor elke bedrijfsnaam die u hebt.
+Azure Active Directory heeft een andere CNAME die wordt gebruikt voor apparaatregistratie voor iOS-/iPadOS-, Android- en Windows-apparaten. Voor voorwaardelijke toegang van Intune moeten apparaten worden geregistreerd, ook wel 'aan werkplek toegevoegd' genoemd. Als u voorwaardelijke toegang wilt gebruiken, moet u ook de CNAME voor EnterpriseRegistration configureren voor elke bedrijfsnaam die u hebt.
 
 | Type | Hostnaam | Verwijst naar | TTL |
 | --- | --- | --- | --- |

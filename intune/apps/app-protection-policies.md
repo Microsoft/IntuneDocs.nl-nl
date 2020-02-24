@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885744"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437899"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -65,7 +65,7 @@ Wanneer u een app-beveiligingsbeleid maakt voor iOS/iPadOS- en Android-apps, vol
     | Waarde/optie | Beschrijving |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Toepassen op apps op alle apparaattypen | Gebruik deze optie om uw beleid te richten op apps op apparaten met een beheerstatus. Kies **Nee** om toe te passen op specifieke apparaattypen. Zie [Beleidsregels voor app-beveiliging toepassen op basis van de apparaatbeheerstatus](#target-app-protection-policies-based-on-device-management-state) voor informatie |
-    |     Apparaattypen | Gebruik deze optie om op te geven of dit beleid van toepassing is op door MDM beheerde apparaten of op onbeheerde apparaten. Voor iOS-APP-beleid selecteert u **Niet-beheerde** en **Beheerde** apparaten. Voor Android-APP-beleid maakt u een keuze uit **Niet-beheerd**, **Android-apparaatbeheerder** en **Android Enterprise**.  |
+    |     Apparaattypen | Gebruik deze optie om op te geven of dit beleid van toepassing is op door MDM beheerde apparaten of op onbeheerde apparaten. Voor iOS-/iPadOS-APP-beleid selecteert u **Niet-beheerde** en **Beheerde** apparaten. Voor Android-APP-beleid maakt u een keuze uit **Niet-beheerd**, **Android-apparaatbeheerder** en **Android Enterprise**.  |
     | Openbare apps | Klik op **Openbare apps selecteren** om de apps te selecteren waarop u het wilt toepassen. |
     | Aangepaste apps | Klik op **Aangepaste apps selecteren** om aangepaste apps te selecteren op basis van een bundel-id. |
     
@@ -103,7 +103,7 @@ Wanneer u een app-beveiligingsbeleid maakt voor iOS/iPadOS- en Android-apps, vol
 
 Eindgebruikers kunnen de apps downloaden in de App Store of via Google Play. Zie voor meer informatie:
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-android.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)
+* [Wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)
 
 ## <a name="change-existing-policies"></a>Bestaande beleidsregels wijzigen
 U kunt een bestaand beleid bewerken en toepassen op de beoogde gebruikers. Wanneer u echter bestaand beleid wijzigt, worden de wijzigingen pas na 8 uur zichtbaar voor gebruikers die al bij de apps zijn aangemeld.
@@ -123,7 +123,7 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
     | Waarde/optie | Beschrijving |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Toepassen op apps op alle apparaattypen | Gebruik deze optie om uw beleid te richten op apps op apparaten met een beheerstatus. Kies **Nee** om toe te passen op specifieke apparaattypen. Zie [Beleidsregels voor app-beveiliging toepassen op basis van de apparaatbeheerstatus](#target-app-protection-policies-based-on-device-management-state) voor informatie |
-    |     Apparaattypen | Gebruik deze optie om op te geven of dit beleid van toepassing is op door MDM beheerde apparaten of op onbeheerde apparaten. Voor iOS-APP-beleid selecteert u **Niet-beheerde** en **Beheerde** apparaten. Voor Android-APP-beleid maakt u een keuze uit **Niet-beheerd**, **Android-apparaatbeheerder** en **Android Enterprise**.  |
+    |     Apparaattypen | Gebruik deze optie om op te geven of dit beleid van toepassing is op door MDM beheerde apparaten of op onbeheerde apparaten. Voor iOS-/iPadOS-APP-beleid selecteert u **Niet-beheerde** en **Beheerde** apparaten. Voor Android-APP-beleid maakt u een keuze uit **Niet-beheerd**, **Android-apparaatbeheerder** en **Android Enterprise**.  |
     | Openbare apps | Klik op **Openbare apps selecteren** om de apps te selecteren waarop u het wilt toepassen. |
     | Aangepaste apps | Klik op **Aangepaste apps selecteren** om aangepaste apps te selecteren op basis van een bundel-id. |
 
@@ -166,7 +166,7 @@ Om het effect van de wijzigingen onmiddellijk te zien, moet de eindgebruiker zic
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Beleidsregels voor app-beveiliging toepassen op basis van de apparaatbeheerstatus
 In veel organisaties is het gebruikelijk dat eindgebruikers gebruik mogen maken van via Intune MDM (Mobile Device Management) beheerde apparaten zoals apparaten in eigendom van het bedrijf, en van niet-beheerde apparaten die alleen door Intune-app-beveiligingsbeleid worden beschermd. Niet-beheerde apparaten zijn vaak bekend onder de naam BYOD-apparaten (Bring Your Own).
 
-Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gericht, worden de beveiligingsinstellingen voor een gebruiker op zowel ingeschreven (via MDM beheerde) als niet-ingeschreven apparaten (geen MDM) toegepast. Daarom kunt u Intune-app-beveiligingsbeleid richten op ofwel in Intune ingeschreven apparaten of iOS- en Android-apparaten waarvan de registratie ongedaan is gemaakt. U mag één beveiligingsbeleid voor niet-beheerde apparaten hebben waarin strenge DLP-besturingselementen voor preventie van gegevensverlies zijn toegepast, en een afzonderlijk beveiligingsbeleid voor via MDM beheerde apparaten waarbij minder strenge DLP-besturingselementen mogelijk zijn. Zie [App-beveiligingsbeleid en werkprofielen](android-deployment-scenarios-app-protection-work-profiles.md) voor meer informatie over hoe dit werkt op persoonlijke Android Enterprise-apparaten.
+Omdat Intune-app-beveiligingsbeleid op de identiteit van een gebruiker is gericht, worden de beveiligingsinstellingen voor een gebruiker op zowel ingeschreven (via MDM beheerde) als niet-ingeschreven apparaten (geen MDM) toegepast. Daarom kunt u Intune-app-beveiligingsbeleid richten op ofwel in Intune ingeschreven apparaten of iOS-/iPadOS- en Android-apparaten waarvan de registratie ongedaan is gemaakt. U mag één beveiligingsbeleid voor niet-beheerde apparaten hebben waarin strenge DLP-besturingselementen voor preventie van gegevensverlies zijn toegepast, en een afzonderlijk beveiligingsbeleid voor via MDM beheerde apparaten waarbij minder strenge DLP-besturingselementen mogelijk zijn. Zie [App-beveiligingsbeleid en werkprofielen](android-deployment-scenarios-app-protection-work-profiles.md) voor meer informatie over hoe dit werkt op persoonlijke Android Enterprise-apparaten.
 
 Voor het maken van deze beleidsregels bladert u naar **Apps** > **App-beveiliging** in de Intune-console en selecteert u **Beleid maken**. U kunt ook een bestaand app-beveiligingsbeleid bewerken. Als u het app-beveiligingsbeleid op zowel beheerde als niet-beheerde apparaten wilt toepassen, gaat u naar de pagina **Apps** en bevestigt u dat **Toepassen op apps op alle apparaattypen** is ingesteld op **Ja**, de standaardwaarde. Als u granulair wilt toewijzen op basis van de beheerstatus, stelt u **Toepassen op apps op alle apparaattypen** in op **Nee**. 
 
@@ -182,15 +182,15 @@ Voor het maken van deze beleidsregels bladert u naar **Apps** > **App-beveiligin
 
 Voor iOS zijn extra app-configuratie-instellingen vereist om APP-instellingen (beveiligingsbeleid voor apps) te richten op apps op apparaten die zijn ingeschreven bij Intune:
 
-- **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen. Zie [Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
-- **IntuneMAMDeviceID** moet zijn geconfigureerd voor alle door derden en met line-of-business MDM beheerde toepassingen. **IntuneMAMDeviceID** moet zijn geconfigureerd voor het apparaat-id-token. Bijvoorbeeld `key=IntuneMAMDeviceID, value={{deviceID}}`. Zie [App-configuratiebeleidsregels toevoegen voor beheerde iOS-apparaten](app-configuration-policies-use-ios.md) voor meer informatie.
+- **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen. Zie [Gegevensoverdracht beheren tussen iOS-/iPadOS-apps met Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
+- **IntuneMAMDeviceID** moet zijn geconfigureerd voor alle door derden en met line-of-business MDM beheerde toepassingen. **IntuneMAMDeviceID** moet zijn geconfigureerd voor het apparaat-id-token. Bijvoorbeeld `key=IntuneMAMDeviceID, value={{deviceID}}`. Zie [App-configuratiebeleidsregels toevoegen voor beheerde iOS-/iPadOS-apparaten](app-configuration-policies-use-ios.md) voor meer informatie.
 - Als alleen de **IntuneMAMDeviceID** is geconfigureerd, wordt het apparaat in Intune APP beschouwd als niet-beheerd.
 
 > [!NOTE]
-> Zie [MAM-beveiligingsbeleid toepassen op basis van beheerstatus](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state) voor specifieke iOS-ondersteuningsinformatie over app-beveiligingsbeleid op basis van de apparaatbeheerstatus.
+> Zie [MAM-beveiligingsbeleid toepassen op basis van beheerstatus](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state) voor specifieke iOS-/iPadOS-ondersteuningsinformatie over app-beveiligingsbeleid op basis van de apparaatbeheerstatus.
 
 ## <a name="policy-settings"></a>Beleidsinstellingen
-Selecteer een van de volgende links voor een volledig overzicht van de beleidsinstellingen voor iOS en Android:
+Selecteer een van de volgende links voor een volledig overzicht van de beleidsinstellingen voor iOS/iPadOS en Android:
 
 - [iOS-beleid](app-protection-policy-settings-ios.md)
 - [Android-beleid](app-protection-policy-settings-android.md)
@@ -200,4 +200,4 @@ Selecteer een van de volgende links voor een volledig overzicht van de beleidsin
 
 ## <a name="see-also"></a>Zie tevens
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-android.md)
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)
+* [Wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)

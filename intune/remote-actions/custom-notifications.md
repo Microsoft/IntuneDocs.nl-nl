@@ -1,7 +1,7 @@
 ---
 title: Aangepaste meldingen naar gebruikers verzenden met Microsoft Intune
 titleSuffix: Microsoft Intune
-description: U kunt Intune gebruiken om aangepaste pushmeldingen naar gebruikers van iOS- en Android-apparaten te verzenden
+description: U kunt Intune gebruiken om aangepaste pushmeldingen naar gebruikers van iOS-/iPadOS- en Android-apparaten te verzenden
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517482"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413886"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Aangepaste meldingen verzenden in Intune  
 
-Gebruik Microsoft Intune om aangepaste meldingen te verzenden naar de gebruikers van beheerde iOS- en Android-apparaten. Deze berichten worden op de apparaten van gebruikers weergegeven als reguliere pushmeldingen vanuit de Bedrijfsportal-app en de Microsoft Intune-app, net zoals meldingen van andere toepassingen op het apparaat worden weergegeven. De aangepaste meldingen van Intune worden niet ondersteund voor macOS- Windows-apparaten.   
+Gebruik Microsoft Intune om aangepaste meldingen te verzenden naar de gebruikers van beheerde iOS-/iPadOS- en Android-apparaten. Deze berichten worden op de apparaten van gebruikers weergegeven als reguliere pushmeldingen vanuit de Bedrijfsportal-app en de Microsoft Intune-app, net zoals meldingen van andere toepassingen op het apparaat worden weergegeven. De aangepaste meldingen van Intune worden niet ondersteund voor macOS- Windows-apparaten.   
 
 Aangepaste meldingen hebben een korte titel en een hoofdtekst van maximaal 500 tekens. De berichten kunnen worden aangepast voor algemene communicatiedoeleinden.
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Hoe ziet de melding eruit op een iOS-apparaat?
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>Hoe ziet de melding eruit op een iOS-/iPadOS-apparaat
 
-Als u de bedrijfsportal-app hebt geopend op een iOS-apparaat, lijkt de melding op de volgende schermopname:
+Als u de bedrijfsportal-app hebt geopend op een iOS-/iPadOS-apparaat, lijkt de melding op de volgende schermopname:
 
 > [!div class="mx-imgBorder"]
-> ![iOS-testmelding bedrijfsportal](./media/custom-notifications/105046-1.png)
+> ![iOS-/iPadOS-testmelding bedrijfsportal](./media/custom-notifications/105046-1.png)
 
 Als het apparaat is vergrendeld, lijkt de melding op de volgende schermopname:
 
 > [!div class="mx-imgBorder"]
-> ![iOS-testmelding apparaat is vergrendeld](./media/custom-notifications/105046-2.png)
+> ![iOS-/iPadOS-testmelding apparaat is vergrendeld](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Hoe ziet de melding eruit op een Android-apparaat?
 
@@ -75,14 +75,14 @@ Als u de bedrijfsportal-app hebt geopend op een Android-apparaat, lijkt de meldi
 - Wanneer u berichten verzendt naar afzonderlijke apparaten, kunt u maximaal 10 berichten per uur verzenden naar hetzelfde apparaat. 
 - U kunt meldingen naar meerdere gebruikers of apparaten verzenden door de melding toe te wijzen aan groepen. Bij het gebruik van groepen kan elke melding aan maximaal 25 groepen tegelijk worden toegewezen. Geneste groepen tellen niet mee voor dit totaal.  
 
-  Groepen kunnen gebruikers en apparaten omvatten, maar berichten worden alleen verzonden naar gebruikers. Ze worden naar alle iOS- en Android-apparaten verzonden die de gebruiker heeft geregistreerd.  
+  Groepen kunnen gebruikers en apparaten omvatten, maar berichten worden alleen verzonden naar gebruikers. Ze worden naar alle iOS-/iPadOS- en Android-apparaten verzonden die de gebruiker heeft geregistreerd.  
 - U kunt aangepaste meldingen verzenden naar één apparaat. In plaats van groepen te gebruiken, selecteert u een apparaat en gebruikt u vervolgens een externe [apparaatactie](device-management.md#available-device-actions) om de aangepaste melding te verzenden.  
 
 **Levering**:  
 - Intune verzendt berichten naar de Bedrijfsportal-app of de Microsoft Intune-app van de gebruikers. Deze app creëert vervolgens de pushmelding. Gebruikers hoeven niet bij de app aangemeld te zijn om meldingen naar het apparaat te kunnen pushen.  
 - Intune en de Bedrijfsportal-app of de Microsoft Intune-app kunnen niet garanderen dat aangepaste meldingen worden afgeleverd. Aangepaste meldingen kunnen met enkele uren vertraging worden weergegeven (áls ze al worden weergegeven), dus het is geen goed idee om deze voor dringende berichten te gebruiken.  
-- Aangepaste meldingen vanuit Intune worden als reguliere pushmeldingen weergegeven op apparaten. Als de app Bedrijfsportal is geopend op een iOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
-- Aangepaste meldingen kunnen worden weergegeven op het vergrendelingsscherm van zowel iOS- als Android-apparaten, afhankelijk van de apparaatinstellingen.  
+- Aangepaste meldingen vanuit Intune worden als reguliere pushmeldingen weergegeven op apparaten. Als de Bedrijfsportal-app is geopend op een iOS-/iPadOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
+- Aangepaste meldingen kunnen worden weergegeven op het vergrendelingsscherm van zowel iOS-/iPadOS- als Android-apparaten, afhankelijk van de apparaatinstellingen.  
 - Op Android-apparaten hebben andere apps mogelijk toegang tot de gegevens in uw aangepaste meldingen. Gebruik ze niet voor het overdragen van gevoelige informatie.  
 - Gebruikers van apparaten die recent zijn uitgeschreven, of gebruikers die uit een groep zijn verwijderd, ontvangen mogelijk nog wel aangepaste meldingen die later naar zijn verzonden deze groep.  En als u een gebruiker toevoegt aan een groep nadat er een aangepaste melding naar de groep is verzonden, ontvangt de nieuwe gebruiker mogelijk ook de eerder verzonden melding.  
 
@@ -127,7 +127,7 @@ Het bericht wordt onmiddellijk verwerkt in Intune. De enige bevestiging dat het 
 
 Gebruikers zien op hun apparaat aangepaste meldingen die door Intune worden verzonden als reguliere pushmeldingen uit de Bedrijfsportal-app of de Microsoft Intune-app. Deze meldingen zijn vergelijkbaar met de pushmeldingen die gebruikers ontvangen van andere apps op het apparaat.  
 
-Als de app Bedrijfsportal is geopend op een iOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
+Als de Bedrijfsportal-app is geopend op een iOS-/iPadOS-apparaat wanneer de melding wordt ontvangen, wordt de melding in de app weergegeven in plaats van als pushmelding.  
 
 De melding blijft bewaard totdat de gebruiker deze sluit.  
 

@@ -1,6 +1,6 @@
 ---
-title: De modus Apparaat verloren voor iOS-apparaten activeren met Microsoft Intune - Azure | Microsoft Docs
-description: Activeer of open de modus Apparaat verloren om met Microsoft Intune een bericht in te stellen voor weergave op het vergrendelingsscherm van een verloren of gestolen iOS-apparaat. U ontvangt ook meer informatie over beveiliging en privacy wanneer u de modus Apparaat verloren gebruikt.
+title: De modus Apparaat verloren voor iOS-/iPadOS-apparaten activeren met Microsoft Intune - Azure | Microsoft Docs
+description: Activeer of open de modus Apparaat verloren om met Microsoft Intune een bericht in te stellen voor weergave op het vergrendelingsscherm van een verloren of gestolen iOS-/iPadOS-apparaat. U ontvangt ook meer informatie over beveiliging en privacy wanneer u de modus Apparaat verloren gebruikt.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712226"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415605"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-apparaten met Intune
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-/iPadOS-apparaten met Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren apparaten in op verloren of gestolen iOS-apparaten. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven. Als u de modus Apparaat verloren apparaat wilt gebruiken, moet het apparaat in een iOS-apparaat in bedrijfseigendom zijn waarop de supervisiemodus is ingeschakeld.
+Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren apparaten in op verloren of gestolen iOS-/iPadOS-apparaten. Met deze modus kunt u een bericht en een telefoonnummer opgeven die op het vergrendelingsscherm van het apparaat worden weergeven. Als u de modus Apparaat verloren apparaat wilt gebruiken, moet het apparaat een iOS-/iPadOS-apparaat in bedrijfseigendom zijn waarop de supervisiemodus is ingeschakeld.
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
-- iOS 9.3 en hoger
+- iOS/iPadOS 9.3 en hoger
 
 Deze functie wordt niet ondersteund op: 
 - Windows
@@ -43,7 +43,7 @@ Deze functie wordt niet ondersteund op:
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecteer **Apparaten** en selecteer vervolgens **Alle apparaten**.
-4. Kies in de lijst met door u beheerde apparaten een iOS-apparaat en kies vervolgens de externe actie **Modus apparaat verloren (alleen onder toezicht)** .
+4. Kies in de lijst met door u beheerde apparaten een iOS-/iPadOS-apparaat en kies vervolgens de externe actie **Modus apparaat verloren (alleen onder toezicht)** .
 5. Selecteer in de **Modus apparaat verloren** de optie **Inschakelen**.
 6. Typ in het **Weergegeven bericht op het vergrendelingsscherm** een bericht dat moet worden weergegeven op het vergrendelingsscherm van het apparaat.
 7. Geef eventueel een telefoonnummer op in het vak **Weergegeven telefoonnummer**.

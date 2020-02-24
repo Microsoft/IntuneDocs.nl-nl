@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839394"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437848"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Uitzonderingen maken voor het beleid voor gegevensoverdracht van Intune-app-beveiligingsbeleid (APP)
 
@@ -38,7 +38,7 @@ In een Intune Application Protection Policy betekent de instelling **App mag geg
 > Het aanpassen van of toevoegen aan de uitzonderingen voor gegevensoverdracht heeft geen invloed op ander appbeveiligingsbeleid, zoals beperkingen voor knippen, kopiëren en plakken. 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS-uitzonderingen voor gegevensoverdracht
-Bij beleid voor iOS kunt u uitzonderingen voor gegevensoverdracht configureren op basis van URL-protocollen. Als u een uitzondering wilt toevoegen, bekijkt u de documentatie van de ontwikkelaar van de app om te achterhalen of er informatie in staat over ondersteunde URL-protocollen. Zie [Beveiligingsbeleidsinstellingen voor iOS-apps - Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-ios.md#data-transfer-exemptions) voor meer informatie over uitzonderingen voor gegevensoverdracht in iOS.
+Bij beleid voor iOS/iPadOS kunt u uitzonderingen voor gegevensoverdracht configureren op basis van URL-protocollen. Als u een uitzondering wilt toevoegen, bekijkt u de documentatie van de ontwikkelaar van de app om te achterhalen of er informatie in staat over ondersteunde URL-protocollen. Zie [Beveiligingsbeleidsinstellingen voor iOS-/iPadOS-apps - Uitzonderingen voor gegevensoverdracht](app-protection-policy-settings-ios.md#data-transfer-exemptions) voor meer informatie over uitzonderingen voor gegevensoverdracht in iOS.
 
 > [!NOTE]
 > Microsoft heeft geen methode om handmatig te zoeken naar het URL-protocol voor het maken van app-uitzonderingen voor toepassingen van derden. 
@@ -53,9 +53,9 @@ Bij beleid voor Android kunt u uitzonderingen voor gegevensoverdracht configurer
 ### <a name="example"></a>Voorbeeld
 Als u het **Webex**-pakket als uitzondering toevoegt aan het MAM-gegevensoverdrachtbeleid, mogen Webex-links in een beheerd Outlook-e-mailbericht rechtstreeks worden geopend in de Webex-toepassing. De gegevensoverdracht wordt nog steeds beperkt in andere onbeheerde apps.
 
-- iOS-**Webex**-voorbeeld:   Als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>wbx</code>
+- iOS-/iPadOS-**Webex**-voorbeeld:   Als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>wbx</code>
     
-- iOS-**Maps**-voorbeeld:   Als u de systeemeigen **Maps**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>maps</code>
+- iOS-/iPadOS-**Maps**-voorbeeld:   Als u de systeemeigen **Maps**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>maps</code>
 
 - Android-**Webex**-voorbeeld:   Als u de **Webex**-app wilt uitsluiten zodat deze mag worden aangeroepen door in Intune beheerde apps, moet u een uitzondering voor gegevensoverdracht toevoegen voor de volgende tekenreeks: <code>com.cisco.webex.meetings</code>
     
@@ -66,7 +66,7 @@ Als u het **Webex**-pakket als uitzondering toevoegt aan het MAM-gegevensoverdra
     
     <code>com.samsung.android.messaging</code>
 
-- Voorbeeld van een **certificaatinstallatieprogramma** van Android: U moet de uitzondering voor gegevensoverdracht toevoegen aan de tekenreeks <code>com.android.certinstaller</code> om de installatie van de systeemeigen **Certificaat-installatieprogramma**-app uit te sluiten, zodat Outlook voor Android een S/MIME-certificaat (geleverd als een e-mailbijlage) kan installeren in Android KeyStore. Zie [Sensitivity labeling and protection in Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) (Gevoeligheidslabels en -bescherming in Outlook voor iOS en Android) voor meer informatie.
+- Voorbeeld van een **certificaatinstallatieprogramma** van Android: U moet de uitzondering voor gegevensoverdracht toevoegen aan de tekenreeks <code>com.android.certinstaller</code> om de installatie van de systeemeigen **Certificaat-installatieprogramma**-app uit te sluiten, zodat Outlook voor Android een S/MIME-certificaat (geleverd als een e-mailbijlage) kan installeren in Android KeyStore. Zie [Sensitivity labeling and protection in Outlook for iOS/iPadOS and Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) (Gevoeligheidslabels en -bescherming in Outlook voor iOS/iPadOS en Android) voor meer informatie.
 
 ## <a name="next-steps"></a>Volgende stappen
 

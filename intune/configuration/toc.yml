@@ -23,7 +23,7 @@
           href: administrative-templates-windows.md
         - name: Office bijwerken met behulp van beheersjablonen
           href: administrative-templates-update-office.md
-    - name: Apparaatfuncties in iOS en macOS
+    - name: Apparaatfuncties in iOS/iPadOS en macOS
       href: device-features-configure.md
     - name: Apparaatinstellingen en functies beperken
       href: device-restrictions-configure.md
@@ -47,7 +47,7 @@
       items:
         - name: VPN per app voor Android
           href: android-pulse-secure-per-app-vpn.md
-        - name: VPN per app voor iOS
+        - name: VPN per app voor iOS/iPadOS
           href: vpn-setting-configure-per-app.md
     - name: Wi-Fi-netwerk
       href: wi-fi-settings-configure.md
@@ -117,7 +117,7 @@
               href: wi-fi-settings-android-enterprise.md
             - name: Aangepast
               href: custom-settings-android-for-work.md
-        - name: iOS
+        - name: iOS/iPadOS
           items:
             - name: Apparaatfuncties
               href: ios-device-features-settings.md

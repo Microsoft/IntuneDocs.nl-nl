@@ -1,6 +1,6 @@
 ---
 title: Apparaten buiten gebruik stellen of wissen met Microsoft Intune - Azure | Microsoft Docs
-description: Een apparaat met Android, een Android-werkprofiel, iOS, macOS of Windows-apparaat buiten gebruik of wissen met Microsoft Intune. Daarnaast kunt u een apparaat uit Azure Active Directory verwijderen.
+description: Een apparaat met Android, een Android-werkprofiel, iOS/iPadOS, macOS of Windows-apparaat buiten gebruik of wissen met Microsoft Intune. Daarnaast kunt u een apparaat uit Azure Active Directory verwijderen.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812465"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415520"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -43,7 +43,7 @@ Met de actie **Wissen** herstelt u de fabrieksinstellingen van het apparaat. De 
 
 
 > [!NOTE]
-> De actie Wissen is niet beschikbaar voor iOS-apparaten die zijn ingeschreven met Gebruikersinschrijving.
+> De actie Wissen is niet beschikbaar voor iOS-/iPadOS-apparaten die zijn ingeschreven met Gebruikersinschrijving.
 
 De optie **Inschrijvingsstatus en gebruikersaccount behouden** is alleen beschikbaar voor Windows 10 versie 1709 en hoger.
 

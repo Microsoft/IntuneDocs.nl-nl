@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812500"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415547"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune
 
@@ -35,8 +35,8 @@ In dit document bespreken we zowel het opnieuw instellen van wachtwoordcodes op 
 | ---- | ---- |
 | Android-apparaten met versie 6.x of lager | Ja |
 | Android Enterprise-apparaten die zijn ingeschreven als eigenaar van het apparaat | Ja |
-| iOS-apparaten | Ja |
-| iOS-apparaten die zijn ingeschreven bij gebruikersregistratie | Nee |
+| iOS-/iPadOS-apparaten | Ja |
+| iOS-/iPadOS-apparaten die zijn ingeschreven met gebruikersregistratie | Nee |
 | Android-apparaten die zijn ingeschreven met een werkprofiel | Nee |
 | Android-apparaten met versie 7.0 of lager | Nee |
 | macOS | Nee |
@@ -68,9 +68,9 @@ Ondersteunde Android Enterprise-apparaten waarop een werkprofiel is ingeschreven
 Voor zakelijke Android-apparaten waarop versie 8.x of later wordt uitgevoerd en die met een werkprofiel zijn ingeschreven, worden eindgebruikers geïnformeerd om hun wachtwoordcode opnieuw in te stellen zodra de inschrijving is voltooid. De melding wordt weergegeven als een wachtwoord voor een werkprofiel is vereist en is ingesteld. Zodra de wachtwoordcode is ingevoerd, wordt de melding verwijderd.
 
 
-## <a name="remove-ios-passcodes"></a>iOS-wachtwoordcodes verwijderen
+## <a name="remove-iosipados-passcodes"></a>iOS-/iPadOS-wachtwoordcodes verwijderen
 
-In plaats van opnieuw te worden ingesteld, worden wachtwoordcodes verwijderd uit iOS-apparaten. Als er een nalevingsbeleid voor wachtwoordcodes is ingesteld, wordt de gebruiker gevraagd om bij Instellingen een nieuwe wachtwoordcode in te stellen.
+In plaats van opnieuw te worden ingesteld, worden wachtwoordcodes verwijderd van iOS-/iPadOS-apparaten. Als er een nalevingsbeleid voor wachtwoordcodes is ingesteld, wordt de gebruiker gevraagd om bij Instellingen een nieuwe wachtwoordcode in te stellen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

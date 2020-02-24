@@ -1,7 +1,7 @@
 ---
 title: App-configuratiebeleid voor Microsoft Intune
 titleSuffix: ''
-description: Informatie over het gebruik van app-configuratiebeleid op een iOS- of Android-apparaat in Microsoft Intune.
+description: Informatie over het gebruik van app-configuratiebeleid op een iOS-/iPadOS- of Android-apparaat in Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812483"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414845"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
 Door App-configuratiebeleid kunnen problemen met app-instellingen worden voorkomen doordat u configuratie-instellingen kunt toewijzen aan beleid dat aan eindgebruikers wordt toegewezen voordat ze de app uitvoeren. De instellingen worden vervolgens automatisch verstrekt wanneer de app wordt geconfigureerd op het apparaat van eindgebruikers. Eindgebruikers hoeven zelf geen actie te ondernemen. De configuratie-instellingen zijn uniek voor elke app. 
 
-U kunt app-configuratiebeleid maken en gebruiken om configuratie-instellingen te verstrekken voor zowel iOS- als Android-apps. Met deze configuratie-instellingen kan een app worden aangepast met behulp van app-configuratie en -beheer. De configuratiebeleidsinstellingen worden gebruikt wanneer deze instellingen in de app worden gecontroleerd, doorgaans als de app voor het eerst wordt uitgevoerd. 
+U kunt app-configuratiebeleid maken en gebruiken om configuratie-instellingen te verstrekken voor zowel iOS-/iPadOS- als Android-apps. Met deze configuratie-instellingen kan een app worden aangepast met behulp van app-configuratie en -beheer. De configuratiebeleidsinstellingen worden gebruikt wanneer deze instellingen in de app worden gecontroleerd, doorgaans als de app voor het eerst wordt uitgevoerd. 
 
 Het is bijvoorbeeld mogelijk dat u een van de volgende details moet opgeven voor een app-configuratie-instelling:
 
@@ -71,7 +71,7 @@ Als u **Beheerde apps** selecteert als het **Type apparaatregistratie**, verwijs
 ![Type apparaatregistratie](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Voor apps met meerdere identiteiten, zoals Microsoft Outlook, kunnen gebruikersvoorkeuren worden overwogen. Zo worden voor het Postvak IN met prioriteit de gebruikersinstellingen gerespecteerd en wordt de configuratie ervan niet gewijzigd. Met andere parameters kunt u bepalen of een gebruiker de instelling wel of niet kan wijzigen. Zie [Configuratie-instellingen voor de Outlook-app voor iOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) voor meer informatie.
+> Voor apps met meerdere identiteiten, zoals Microsoft Outlook, kunnen gebruikersvoorkeuren worden overwogen. Zo worden voor het Postvak IN met prioriteit de gebruikersinstellingen gerespecteerd en wordt de configuratie ervan niet gewijzigd. Met andere parameters kunt u bepalen of een gebruiker de instelling wel of niet kan wijzigen. Zie [Configuratie-instellingen voor de Outlook-app voor iOS/iPadOS en Android implementeren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) voor meer informatie.
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Het toegepaste app-configuratiebeleid valideren
 
@@ -93,7 +93,7 @@ U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>iOS-configuratie op niet-beheerde apparaten
 
-U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps. Behalve met de onderstaande stappen, kunt u ook toegang krijgen tot de logboeken van beheerde apps met behulp van Microsoft Edge. Zie [Met Microsoft Edge in iOS logboeken voor beheerde apps openen](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs) voor meer informatie.
+U kunt de iOS-/iPadOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps. Behalve met de onderstaande stappen, kunt u ook toegang krijgen tot de logboeken van beheerde apps met behulp van Microsoft Edge. Zie [Met Microsoft Edge in iOS/iPadOS logboeken voor beheerde apps openen](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs) voor meer informatie.
 
 1. Download en installeer **Microsoft Edge** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
 2. Start **Microsoft Edge** en selecteer **Info** > **Help bij Intune** in de navigatiebalk.
@@ -137,7 +137,7 @@ De configuratiedetails van uw toepassing moeten voldoen aan het toepassingsconfi
 
 ### <a name="ios-configuration-on-managed-devices"></a>iOS-configuratie op beheerde apparaten
 
-U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
+U kunt de iOS-/iPadOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
 
 1. Download en installeer **Microsoft Edge** vanuit de App Store als het nog niet is geïnstalleerd op het apparaat. Zie [Met Microsoft Intune beveiligde apps](apps-supported-intune-apps.md) voor meer informatie.
 2. Start **Microsoft Edge** en selecteer **Info** > **Help bij Intune** in de navigatiebalk.
@@ -149,7 +149,7 @@ U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune*
 
 ### <a name="android-configuration-on-managed-devices"></a>Android-configuratie op beheerde apparaten
 
-U kunt de iOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
+U kunt de iOS-/iPadOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
 
 Als u logboeken van een Android-apparaat wilt verzamelen, moet u of de eindgebruiker de logboeken van het apparaat downloaden via een USB-verbinding (of het equivalent van **File Explorer** op het apparaat). Dit zijn de stappen:
 
@@ -173,7 +173,7 @@ Wanneer in de logboeken een configuratieparameter wordt weergegeven die van toep
 
 ### <a name="managed-devices"></a>Beheerde apparaten
 
-- Informatie over het gebruik van app-configuratie met uw iOS-apparaten.  Raadpleeg [App-configuratiebeleidsregels voor beheerde iOS-apparaten toevoegen](app-configuration-policies-use-ios.md).
+- Informatie over het gebruik van app-configuratie met uw iOS-/iPadOS-apparaten.  Zie [App-configuratiebeleidsregels voor beheerde iOS-/iPadOS-apparaten toevoegen](app-configuration-policies-use-ios.md).
 - Informatie over het gebruik van app-configuratie met uw Android-apparaten.  Zie [ App-configuratiebeleidsregels voor beheerde Android-apparaten](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Managed apps

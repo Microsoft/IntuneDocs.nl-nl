@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812502"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414909"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Webtoegang beheren via een met Microsoft Intune-beleid beveiligde browser
 
@@ -42,7 +42,7 @@ Met behulp van een browser die wordt beveiligd met Intune-beleid (Microsoft Edge
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge-ondersteuning
 
-U kunt Microsoft Edge gebruiken voor zakelijke scenario’s op iOS- en Android-apparaten. Microsoft Edge biedt ondersteuning voor dezelfde beheerscenario's als de Intune Managed Browser met de toevoeging van verbeteringen in de eindgebruikerservaring. Op basis van Intune-beleid zijn onder andere de volgende zakelijke functies van Microsoft Edge beschikbaar:
+U kunt Microsoft Edge gebruiken voor zakelijke scenario’s op iOS-/iPadOS- en Android-apparaten. Microsoft Edge biedt ondersteuning voor dezelfde beheerscenario's als de Intune Managed Browser met de toevoeging van verbeteringen in de eindgebruikerservaring. Op basis van Intune-beleid zijn onder andere de volgende zakelijke functies van Microsoft Edge beschikbaar:
 
 - **Dual-Identity**. Gebruikers kunnen zowel een werkaccount als een persoonlijk account maken om mee te browsen. Er is sprake van een volledige scheiding tussen de twee identiteiten. Dit is vergelijkbaar met de architectuur en ervaring in Office 365 en Outlook. Intune-beheerders kunnen het gewenste beleid instellen voor beveiligde browsersessies binnen het werkaccount. 
 - **Integratie van beveiligingsbeleid voor Intune-apps**. Beheerders kunnen nu app-beveiligingsbeleid instellen voor Microsoft Edge, inclusief beheer over knippen, kopiëren en plakken, waardoor er geen schermopnamen kunnen worden vastgelegd. Ook kunnen ze ervoor zorgen dat door de gebruiker geselecteerde koppelingen alleen kunnen worden geopend in andere beheerde apps.
@@ -57,9 +57,9 @@ Microsoft Edge en de Intune Managed Browser zijn webbrowser-apps die u en uw ein
 
 Besturingssysteemvereisten voor browserbeleid:
 - Android 4 en hoger of
-- iOS 8.0 en hoger.
+- iOS/iPadOS 8.0 en hoger.
 
-Oudere versies van Android en iOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
+Oudere versies van Android en iOS/iPadOS kunnen Managed Browser nog steeds gebruiken, maar er kunnen geen nieuwe versies van de app op worden geïnstalleerd en kan er dus geen gebruik worden gemaakt van alle mogelijkheden van de app. U wordt aangeraden deze apparaten bij te werken tot een ondersteunde versie van het besturingssysteem.
 
 >[!NOTE]
 >Managed Browser biedt geen ondersteuning voor versie 3 van het cryptografische protocol Secure Sockets Layer (SSLv3).
@@ -123,9 +123,9 @@ De Managed Browser ondersteunt geen klassiek beleid voor voorwaardelijke toegang
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Eenmalige aanmelding voor met Azure AD verbonden web-apps in met beleid beveiligde browsers
 
-In Microsoft Edge en Intune Managed Browser op iOS en Android kan eenmalige aanmelding worden gebruikt voor alle web-apps (SaaS en on-premises) die met Azure AD zijn verbonden. Wanneer de Microsoft Authenticator-app aanwezig is op iOS of de Intune-bedrijfsportal-app op Android, kunnen gebruikers van een met beleid beveiligde browser toegang krijgen tot met Azure AD verbonden web-apps zonder dat ze hun referenties opnieuw hoeven in te voeren.
+In Microsoft Edge en Intune Managed Browser op iOS/iPadOS en Android kan eenmalige aanmelding worden gebruikt voor alle web-apps (SaaS en on-premises) die met Azure AD zijn verbonden. Wanneer de Microsoft Authenticator-app aanwezig is in iOS/iPadOS of de Intune-bedrijfsportal-app op Android, kunnen gebruikers van een met beleid beveiligde browser toegang krijgen tot met Azure AD verbonden web-apps zonder dat ze hun referenties opnieuw hoeven in te voeren.
 
-Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft Authenticator-app voor iOS of de Intune-bedrijfsportal voor Android. Gebruikers met de Authenticator-app of Intune-bedrijfsportal wordt gevraagd hun apparaat te registreren wanneer ze naar een met Azure AD verbonden web-app in een met beleid beveiligde browser navigeren, als hun apparaat nog niet is geregistreerd door een andere toepassing. Nadat het apparaat is geregistreerd met het account dat wordt beheerd door Intune, wordt dat account voor eenmalige aanmelding ingeschakeld voor met Azure AD verbonden web-apps. 
+Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft Authenticator-app voor iOS/iPadOS of de Intune-bedrijfsportal voor Android. Gebruikers met de Authenticator-app of Intune-bedrijfsportal wordt gevraagd hun apparaat te registreren wanneer ze naar een met Azure AD verbonden web-app in een met beleid beveiligde browser navigeren, als hun apparaat nog niet is geregistreerd door een andere toepassing. Nadat het apparaat is geregistreerd met het account dat wordt beheerd door Intune, wordt dat account voor eenmalige aanmelding ingeschakeld voor met Azure AD verbonden web-apps. 
 
 > [!NOTE]
 > Apparaatregistratie is eenvoudig inchecken met de Azure AD-service. Dit vereist geen volledige apparaatinschrijving en geeft IT geen extra bevoegdheden op het apparaat.
@@ -138,7 +138,7 @@ Voor eenmalige aanmelding moet uw apparaat zijn geregistreerd door de Microsoft 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apps**.
 3. Geef op de pagina **Basisinformatie** in het deelvenster **Configuratiebeleid toevoegen** een **naam** en een optionele **beschrijving** op voor de app-configuratie-instellingen.
-4. Kies **De openbare app selecteren** en kies **Managed Browser** en/of **Edge** voor iOS, voor Android of voor beide besturingssystemen.
+4. Kies **De openbare app selecteren** en kies **Managed Browser** en/of **Edge** voor iOS/iPadOS, voor Android of voor beide besturingssystemen.
 5. Klik op **Selecteren** om terug te gaan naar het deelvenster **App-configuratiebeleid maken**.
 6. Klik op **Volgende** om de pagina **Instelling** weer te geven.
 7. Op de pagina **Instelling** definieert u sleutel- en waardeparen voor configuraties voor de app. Gebruik de secties verderop in dit artikel voor meer informatie over de verschillende sleutel- en waardeparen die u kunt definiëren.
@@ -186,7 +186,7 @@ Gebruik de bovenstaande procedure om een app-configuratie voor Microsoft Edge te
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Application Proxy-instellingen configureren voor beveiligde browsers
 
-Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) kunnen samen worden gebruikt om de volgende scenario's te ondersteunen voor gebruikers van iOS- en Android-apparaten:
+Microsoft Edge en Intune Managed Browser en de [Azure AD-toepassingsproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) kunnen samen worden gebruikt om de volgende scenario's te ondersteunen voor gebruikers van iOS-/iPadOS- en Android-apparaten:
 
 - Een gebruiker downloadt de Microsoft Outlook-app en meldt zich hierbij aan. Het beleid voor app-beveiliging van Intune wordt automatisch toegepast. Dit houdt in dat opgeslagen gegevens worden versleuteld en dat wordt voorkomen dat de gebruiker bestanden van het bedrijf overbrengt naar niet-beheerde apps of locaties op het apparaat. Wanneer de gebruiker vervolgens in Outlook klikt op een koppeling naar een intranetsite, kunt u instellen dat de koppeling alleen kan worden geopend in een beveiligde browser. De beveiligde browser herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy om zich bij de betreffende meervoudige verificatie en voorwaardelijke toegang te verifiëren voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk en de koppeling in Outlook werkt zoals verwacht.
 - Een externe gebruiker opent de beveiligde browser en gaat naar een intranetsite via de interne URL. De beveiligde browser herkent dat deze intranetsite via de toepassingsproxy beschikbaar is gesteld aan de gebruiker. De gebruiker wordt automatisch omgeleid via de toepassingsproxy om zich bij de betreffende meervoudige verificatie en voorwaardelijke toegang te verifiëren voordat de intranetsite wordt bereikt. Deze site, die eerder niet bereikbaar was omdat de gebruiker extern was, is nu toegankelijk.
@@ -316,9 +316,9 @@ Geef met de procedure voor het maken van een app-configuratie voor Microsoft Edg
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Toegang tot logboeken van beheerde apps met Managed Browser in iOS
 
-Eindgebruikers bij wie Managed Browser is geïnstalleerd op hun iOS-apparaat, kunnen de beheerstatus van alle gepubliceerde Microsoft-apps bekijken. Ze kunnen logboeken versturen om problemen met hun beheerde iOS-apps op te lossen.
+Eindgebruikers bij wie Managed Browser is geïnstalleerd op hun iOS-/iPadOS-apparaat, kunnen de beheerstatus van alle gepubliceerde Microsoft-apps bekijken. Ze kunnen logboeken versturen om problemen met hun beheerde iOS-/iPadOS-apps op te lossen.
 
-1. Open **iOS-instellingen**.
+1. Open **Instellingen** voor iOS/iPadOS.
 2. Selecteer de toepassingsinstellingen voor Managed **Browser**.
 3. Verschuif de knop **Intune diagnostische gegevens inschakelen** om de browser in te stellen op de probleemoplossingsmodus.
 4. Open Managed **Browser**. Klik op **Intune App-status weergeven** om beleidsinstellingen voor toepassingen afzonderlijk te bekijken.
@@ -345,7 +345,7 @@ Zie [Logboeken voor app-beveiliging in Managed Browser controleren](app-protecti
 ### <a name="turn-off-usage-data"></a>Gebruiksgegevens uitschakelen
 Microsoft verzamelt automatisch anonieme gegevens over de prestaties en het gebruik van Managed Browser om Microsoft-producten en -services te verbeteren. Gebruikers kunnen het verzamelen van deze gegevens uitschakelen met de instelling **Gebruiksgegevens** op hun apparaten. U hebt geen controle over het verzamelen van deze gegevens.
 
-- Op iOS-apparaten kunnen gebruikers geen websites openen met een verlopen of niet-vertrouwd certificaat.
+- Op iOS-/iPadOS-apparaten kunnen gebruikers geen websites openen met een verlopen of niet-vertrouwd certificaat.
 
 ## <a name="next-steps"></a>Volgende stappen
 

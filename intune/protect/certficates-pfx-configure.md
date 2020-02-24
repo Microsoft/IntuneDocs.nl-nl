@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207244"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258093"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -76,7 +76,7 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
   - De connector voor PFX-certificaten voor Microsoft Intune installeren op uw server.  
   - Voor het automatisch ontvangen van belangrijke updates moet u ervoor zorgen dat firewalls geopend zijn, waarmee de connector contact kan opnemen met **autoupdate.msappproxy.net** op poort **443**.   
 
-  Raadpleeg [Netwerkeindpunten voor Microsoft Intune](../fundamentals/intune-endpoints.md) voor meer informatie over alle netwerkeindpunten waartoe Intune en de connector toegang hebben.
+  Zie [Netwerkeindpunten voor Microsoft Intune](../fundamentals/intune-endpoints.md) en [Netwerkconfiguratievereisten en bandbreedte voor Intune](../fundamentals/network-bandwidth-use.md) voor meer informatie.
 
 - **Windows Server**:  
   U gebruikt een Windows Server als host voor:
@@ -300,7 +300,7 @@ De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor au
 
 ### <a name="may-6-2019"></a>6 mei 2019
 
-- **PFX-certificaatconnector voor Microsoft Intune - versie 6.1905.0.402**  
+- **Connector voor PFX-certificaten voor Microsoft Intune - versie 6.1905.0.402**  
   Wijzigingen in deze release:  
   - De polling-interval voor de connector wordt verlaagd van 5 minuten naar 30 seconden.
  
@@ -312,7 +312,7 @@ De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor au
   - Deze bevat betrouwbaarheidsoplossingen voor het intrekken van certificaten.  
   - Deze bevat prestatieoplossingen om de snelheid te verhogen waarmee PKCS-certificaataanvragen worden verwerkt.  
 
-- **PFX-certificaatconnector voor Microsoft Intune - versie 6.1904.0.401**
+- **Connector voor PFX-certificaten voor Microsoft Intune - versie 6.1904.0.401**
   > [!NOTE]  
   > Er is tot en met 11 april 2019 geen automatische update voor deze versie van het PFX-connector beschikbaar.  
 

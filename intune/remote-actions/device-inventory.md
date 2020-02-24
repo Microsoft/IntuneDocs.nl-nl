@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754198"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413748"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -73,25 +73,25 @@ Afhankelijk van de provider die door de apparaten wordt gebruikt, worden mogelij
 |Beveiligingspatchniveau|Het niveau van de beveiligingspatch voor het apparaat.|Android|
 |Totale opslagruimte|De totale opslagruimte op het apparaat (in gigabytes).|Windows, iOS|
 |Beschikbare opslagruimte|De niet-gebruikte opslagruimte op het apparaat (in gigabytes).|Windows, iOS|
-|IMEI|Het IMEI-nummer (International Mobile Equipment Identity) van het apparaat.|Windows, iOS, Android|
-|MEID|Het MEID-nummer (Mobile Equipment Identifier) van het apparaat.|Windows, iOS, Android|
-|Fabrikant|De fabrikant van het apparaat.|Windows, iOS, Android|
-|Model|Het model van het apparaat.|Windows, iOS, Android|
-|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|Windows, iOS, Android*|
-|Provider van abonnee|De mobiele provider die op het apparaat wordt gebruikt.|Windows, iOS, Android|
-|Mobiele-telefoontechnologie|Het radiosysteem dat wordt gebruikt door het apparaat.|Windows, iOS, Android|
-|MAC-adres Wi-Fi|Het Media Access Control-adres van het apparaat.|Windows, iOS, Android|
-|ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|Windows, iOS, Android|
-|Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|Windows, iOS, Android|
-|Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|Windows, iOS, Android|
+|IMEI|Het IMEI-nummer (International Mobile Equipment Identity) van het apparaat.|Windows, iOS/iPadOS, Android|
+|MEID|Het MEID-nummer (Mobile Equipment Identifier) van het apparaat.|Windows, iOS/iPadOS, Android|
+|Fabrikant|De fabrikant van het apparaat.|Windows, iOS/iPadOS, Android|
+|Model|Het model van het apparaat.|Windows, iOS/iPadOS, Android|
+|Telefoonnummer|Het telefoonnummer dat is toegewezen aan het apparaat.|Windows, iOS/iPadOS, Android*|
+|Provider van abonnee|De mobiele provider die op het apparaat wordt gebruikt.|Windows, iOS/iPadOS, Android|
+|Mobiele-telefoontechnologie|Het radiosysteem dat wordt gebruikt door het apparaat.|Windows, iOS/iPadOS, Android|
+|MAC-adres Wi-Fi|Het Media Access Control-adres van het apparaat.|Windows, iOS/iPadOS, Android|
+|ICCID|De Integrated Circuit Card Identifier, het unieke identificatienummer van een SIM-kaart.|Windows, iOS/iPadOS, Android|
+|Inschrijvingsdatum|De datum en tijd waarop het apparaat is ingeschreven bij Intune.|Windows, iOS/iPadOS, Android|
+|Laatste contact|De datum en tijd waarop het apparaat het laatst verbinding heeft gemaakt met Intune.|Windows, iOS/iPadOS, Android|
 |Code voor het overslaan van het activeringsslot|De code die kan worden gebruikt om het activeringsslot uit te schakelen.|iOS|
-|Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|Windows, iOS, Android|
-|Intune geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Intune|Windows, iOS, Android|
-|Naleving|De nalevingsstatus van het apparaat.|Windows, iOS, Android|
-|EAS geactiveerd|Als de waarde **Ja** is, wordt het apparaat gesynchroniseerd met een Exchange-postvak.|Windows, iOS, Android|
-|Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|Windows, iOS, Android|
-|Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|Windows, iOS, Android|
-|Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|Windows, iOS, Android|
+|Azure AD-geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Azure Active Directory.|Windows, iOS/iPadOS, Android|
+|Intune geregistreerd|Als de waarde **Ja** is, is het apparaat geregistreerd bij Intune|Windows, iOS/iPadOS, Android|
+|Naleving|De nalevingsstatus van het apparaat.|Windows, iOS/iPadOS, Android|
+|EAS geactiveerd|Als de waarde **Ja** is, wordt het apparaat gesynchroniseerd met een Exchange-postvak.|Windows, iOS/iPadOS, Android|
+|Activerings-id voor EAS|De Exchange ActiveSync-id van het apparaat.|Windows, iOS/iPadOS, Android|
+|Onder supervisie|Als de waarde **Ja** is, hebben de beheerders uitgebreide controle over het apparaat.|Windows, iOS/iPadOS, Android|
+|Versleuteld|Als de waarde **Ja** is, worden de gegevens die zijn opgeslagen op het apparaat versleuteld.|Windows, iOS/iPadOS, Android|
 
 > [!Note]  
 > Op toegewezen of volledig beheerde Android-apparaten wordt het telefoonnummer niet geïnventariseerd.

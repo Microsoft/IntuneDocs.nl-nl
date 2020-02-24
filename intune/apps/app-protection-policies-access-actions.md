@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564126"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437882"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selectief gegevens wissen met acties voor voorwaardelijke toegang in app-beveiligingsbeleid in Intune
 
@@ -49,7 +49,7 @@ U kunt er expliciet voor kiezen om de zakelijke gegevens van uw bedrijf te wisse
 De tabel met instellingen voor het app-beveiligingsbeleid bevat kolommen voor **Instelling**, **Waarde** en **Actie**.
 
 ### <a name="ios-policy-settings"></a>Beleidsinstellingen voor iOS
-Voor iOS kunt u acties configureren voor de volgende instellingen met behulp van de vervolgkeuzelijst **Instelling**:
+Voor iOS/iPadOS kunt u acties configureren voor de volgende instellingen met behulp van de vervolgkeuzelijst **Instelling**:
 - Maximum aantal pincodepogingen
 - Offline respijtperiode
 - Apparaten die zijn opengebroken of geroot
@@ -59,7 +59,7 @@ Voor iOS kunt u acties configureren voor de volgende instellingen met behulp van
 - Apparaatmodel(len)
 - Maximaal toegestaan bedreigingsniveau van apparaat
 
-Als u de instelling voor **apparaatmodellen** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met iOS-modelaanduidingen. Deze waarden zijn niet hoofdlettergevoelig. Behalve in Intune Reporting voor de invoer van de 'Apparaatmodellen', kunt u een iOS-model-id vinden in de kolom Apparaattype in de [ondersteuningsdocumentatie van HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) of in deze [externe GitHub-opslagplaats](https://gist.github.com/adamawolf/3048717).<br>
+Als u de instelling **Apparaatmodel(len)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in met iOS-/iPadOS-modelaanduidingen. Deze waarden zijn niet hoofdlettergevoelig. Behalve in Intune Reporting voor de invoer van de 'Apparaatmodellen', kunt u een iOS-/iPadOS-model-id vinden in de kolom Apparaattype in de [ondersteuningsdocumentatie van HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) of in deze [externe GitHub-opslagplaats](https://gist.github.com/adamawolf/3048717).<br>
 Voorbeeldinvoer: *iPhone5,2;iPhone5,3*
 
 Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine groep gebruikers te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
@@ -67,8 +67,8 @@ Stel een van de volgende acties in:
 - Opgegeven toestaan (blokkeren indien niet opgegeven)
 - Opgegeven toestaan (wissen indien niet opgegeven)
 
-**Wat gebeurt er als de IT-beheerder een andere lijst met iOS-modelaanduidingen opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
-Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde iOS-modelaanduidingen in *Beleid A* en *Beleid B* voor dezelfde app-/gebruikercombinatie. *Beleid A* specificeert bijvoorbeeld 'iPhone5,2;iPhone5,3', terwijl *Beleid B* 'iPhone5,3' specificeert. Het resulterende beleid voor een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* is gericht, is dan 'iPhone5,3'. 
+**Wat gebeurt er als de IT-beheerder een andere lijst met iOS-/iPadOS-modelaanduidingen opgeeft terwijl er al beleid van kracht is voor dezelfde apps en dezelfde Intune-gebruiker?**<br>
+Als er zich conflicten voordoen tussen het ene app-beschermingsbeleid voor geconfigureerde waarden en het andere, gaat Intune doorgaans uit van de meest beperkende aanpak. Het resulterende beleid voor de betreffende app die door de betreffende Intune-gebruiker wordt geopend, bestaat dan uit de overlap van de vermelde iOS-/iPadOS-modelaanduidingen in *Beleid A* en *Beleid B* voor dezelfde combinatie van app/gebruiker. *Beleid A* specificeert bijvoorbeeld 'iPhone5,2;iPhone5,3', terwijl *Beleid B* 'iPhone5,3' specificeert. Het resulterende beleid voor een Intune-gebruiker op wie zowel *Beleid A* als *Beleid B* is gericht, is dan 'iPhone5,3'. 
 
 ### <a name="android-policy-settings"></a>Beleidsinstellingen voor Android
 
@@ -85,7 +85,7 @@ Voor Android kunt u acties configureren voor de volgende instellingen met behulp
 - Minimale versie bedrijfsportal
 - Maximaal toegestaan bedreigingsniveau van apparaat
 
-Met behulp van **Minimale versie bedrijfsportal** kunt u een minimale versie van de bedrijfsportal opgeven die wordt afgedwongen op het apparaat van de eindgebruiker. Met deze instelling voor voorwaardelijk starten kunt u waarden instellen voor **Toegang blokkeren**, **Gegevens wissen** en **Waarschuwen** als mogelijke acties wanneer niet aan alle waarden wordt voldaan. De mogelijke notaties voor deze waarde volgen het patroon *[major].[minor]* , *[major].[minor].[build]* , of *[major].[minor].[build].[revision]* . Omdat sommige eindgebruikers mogelijk niet de voorkeur geven aan een geforceerde update van apps, kan de optie 'Waarschuwen' ideaal zijn bij het configureren van deze instelling. De Google Play Store is zo slim om alleen de verschilgegevens voor app-updates te verzenden. Dit kan echter nog steeds een grote hoeveelheid gegevens zijn die gebruikers mogelijk niet willen aannemen, bijvoorbeeld als ze op het moment van de update via mobiele gegevens werken. Het afdwingen van een update en het downloaden van een bijgewerkte app kan leiden tot onverwachte gegevenskosten op het moment van de update. Indien de instelling **Minimale versie bedrijfsportal** is geconfigureerd, beïnvloedt deze elke eindgebruiker die versie 5.0.4560.0 en toekomstige versies van de bedrijfsportal ontvangt. Deze instelling heeft geen invloed op gebruikers die gebruikmaken van een versie van bedrijfsportal die ouder is dan de versie waarop deze functie wordt uitgebracht. Eindgebruikers die automatische app-updates op hun apparaat gebruiken, krijgen waarschijnlijk geen dialoogvensters van deze functie te zien, aangezien ze waarschijnlijk de nieuwste versie van de bedrijfsportal hebben. Deze instelling is alleen voor Android met app-beveiliging voor ingeschreven en niet-ingeschreven apparaten.
+Met behulp van **Minimale versie bedrijfsportal** kunt u een minimale versie van de bedrijfsportal opgeven die wordt afgedwongen op het apparaat van de eindgebruiker. Met deze instelling voor voorwaardelijk starten kunt u waarden instellen voor **Toegang blokkeren**, **Gegevens wissen** en **Waarschuwen** als mogelijke acties wanneer niet aan alle waarden wordt voldaan. De mogelijke notaties voor deze waarde volgen het patroon *[Major].[Minor]* , *[Major].[Minor].[Build]* of *[Major].[Minor].[Build].[Revision]* . Omdat sommige eindgebruikers mogelijk niet de voorkeur geven aan een geforceerde update van apps, kan de optie 'Waarschuwen' ideaal zijn bij het configureren van deze instelling. De Google Play Store is zo slim om alleen de verschilgegevens voor app-updates te verzenden. Dit kan echter nog steeds een grote hoeveelheid gegevens zijn die gebruikers mogelijk niet willen aannemen, bijvoorbeeld als ze op het moment van de update via mobiele gegevens werken. Het afdwingen van een update en het downloaden van een bijgewerkte app kan leiden tot onverwachte gegevenskosten op het moment van de update. Indien de instelling **Minimale versie bedrijfsportal** is geconfigureerd, beïnvloedt deze elke eindgebruiker die versie 5.0.4560.0 en toekomstige versies van de bedrijfsportal ontvangt. Deze instelling heeft geen invloed op gebruikers die gebruikmaken van een versie van bedrijfsportal die ouder is dan de versie waarop deze functie wordt uitgebracht. Eindgebruikers die automatische app-updates op hun apparaat gebruiken, krijgen waarschijnlijk geen dialoogvensters van deze functie te zien, aangezien ze waarschijnlijk de nieuwste versie van de bedrijfsportal hebben. Deze instelling is alleen voor Android met app-beveiliging voor ingeschreven en niet-ingeschreven apparaten.
 
 Als u de instelling **Apparaatfabrikant(en)** wilt gebruiken, voert u een lijst met door puntkomma's gescheiden waarden in van Android-producenten. Deze waarden zijn niet hoofdlettergevoelig. Behalve in Intune Reporting kunt u de Android-fabrikant van een apparaat vinden in de apparaatinstellingen. <br>
 Voorbeeldinvoer: *Fabrikant A;Fabrikant B* 
@@ -93,7 +93,7 @@ Voorbeeldinvoer: *Fabrikant A;Fabrikant B*
 >[!NOTE]
 > Dit is een lijst met algemene fabrikanten die apparaten met Intune hebben die als invoer kunnen worden gebruikt: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
-Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine gebruikersgroep te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
+Op apparaten van eindgebruikers moet de Intune-client actie ondernemen op basis van tekenreeksen van het apparaatmodel die zijn opgegeven in Intune-beleid voor toepassingsbeveiliging. Het afstemmen is volledig afhankelijk van wat het apparaat rapporteert. U (de IT-beheerder) wordt aangeraden om ervoor te zorgen dat het beoogde gedrag optreedt door deze instelling in een kleine groep gebruikers te testen op basis van verschillende apparaatfabrikanten en -modellen. De standaardwaarde is **Niet geconfigureerd**.<br>
 Stel een van de volgende acties in: 
 - Opgegeven toestaan (blokkeren indien niet opgegeven)
 - Opgegeven toestaan (wissen indien niet opgegeven)

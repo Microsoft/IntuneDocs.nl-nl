@@ -1,7 +1,7 @@
 ---
 title: Wat is Microsoft Intune-apparaatinschrijving?
 titleSuffix: Microsoft Intune
-description: Meer informatie over registratie voor iOS, Android en Windows-apparaten.
+description: Meer informatie over registratie voor iOS-/iPadOS-, Android- en Windows-apparaten.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547829"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415350"
 ---
 # <a name="what-is-device-enrollment"></a>Wat is apparaatinschrijving?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Zoals u in de volgende tabellen ziet, zijn er verschillende methoden om de appar
 
 Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U kunt echter [apparaatbeperkingen opleggen per platform](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
-## <a name="ios-enrollment-methods"></a>iOS-registratiemethoden
+## <a name="iosipados-enrollment-methods"></a>iOS-/iPadOS-inschrijvingsmethoden
 
 | **Methode** | **Opnieuw instellen vereist** | [**Gebruikersaffiniteit**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Vergrendeld** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -84,36 +84,36 @@ Standaard kunnen apparaten voor alle platforms worden ingeschreven in Intune. U 
 BYOD-apparaten (Bring Your Own Devices) zijn persoonlijke telefoons, tablets en pc's. BYOD-gebruikers gebruiken de bedrijfsportal-app om hun apparaten te registreren. Met dit programma hebben gebruikers toegang tot de bedrijfsresources als e-mail.
 
 ## <a name="corporate-owned-device"></a>Apparaat in bedrijfseigendom
-[Apparaten in bedrijfseigendom (COD)](corporate-identifiers-add.md) zijn telefoons, tablets en pc's die eigendom zijn van de organisatie en worden verdeeld onder de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook geïdentificeerd en getagd worden als bedrijfseigendom.
+[Apparaten in bedrijfseigendom (COD)](corporate-identifiers-add.md) zijn telefoons, tablets en pc's die eigendom zijn van de organisatie en worden verdeeld onder de werknemers. Met registratie van COD's zijn scenario's mogelijk zoals automatische registratie, gedeelde apparaten en vooraf geautoriseerde registratievereisten. Een veelgebruikte manier voor de registratie van COD's is dat een beheerder of manager DEM (apparaatinschrijvingsmanager) gebruikt. iOS-/iPadOS-apparaten kunnen rechtstreeks met de DEP-hulpprogramma's (Device Enrollment Program) van Apple worden ingeschreven. Apparaten met een IMEI-nummer kunnen ook geïdentificeerd en getagd worden als bedrijfseigendom.
 
 ### <a name="device-enrollment-manager"></a>Apparaatinschrijvingsmanager
 De apparaatinschrijvingsmanager (DEM) is een speciaal gebruikersaccount voor registratie en beheer van meerdere apparaten in bedrijfseigendom. Beheerders kunnen de bedrijfsportal installeren en veel apparaten zonder gebruiker registreren. Dergelijke apparaten zijn bijvoorbeeld geschikt voor gebruik bij een verkooppunt of met hulpprogramma-apps, maar niet voor gebruikers die toegang nodig hebben tot e-mail of bedrijfsresources. Meer informatie over [DEM](device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
-Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS- en macOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.
+Met DEP-beheer (Device Enrollment Program) van Apple kunt u beleid maken en 'draadloos' implementeren op iOS-/iPadOS- en macOS-apparaten die met DEP worden gekocht en beheerd. Het apparaat wordt geregistreerd wanneer de gebruiker het apparaat de eerste keer inschakelt en de configuratieassistent uitvoert. Deze methode ondersteunt de supervisiemodus voor iOS/iPadOS, waarmee een apparaat kan worden geconfigureerd met een specifieke functionaliteit.
 
-Meer informatie over de iOS DEP-registratie:
+Meer informatie over de iOS/iPadOS DEP-registratie:
 
-- [Kiezen hoe u iOS-apparaten registreert](ios-enroll.md)
-- [iOS-apparaten inschrijven met het Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+- [Kiezen hoe u iOS-/iPadOS-apparaten inschrijft](ios-enroll.md)
+- [iOS-/iPadOS-apparaten inschrijven met het Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 IT-beheerders gebruiken Apple Configurator, via USB, om elk apparaat van het bedrijf handmatig voor te bereiden voor registratie met behulp van de Configuratieassistent. De IT-beheerder maakt een registratiebeleid en exporteert het beleid naar Apple Configurator. Wanneer gebruikers hun apparaat ontvangen, wordt hun gevraagd om Configuratieassistent uit te voeren om het apparaat in te schrijven. Deze methode ondersteunt de modus **iOS onder supervisie**, waarmee de volgende functies worden ingeschakeld:
 - Vergrendelde registratie
 - Kioskmodus en andere geavanceerde configuraties en beperkingen
 
-Meer informatie over de registratie van de iOS Apple Configurator met Configuratieassistent:
+Meer informatie over inschrijving van iOS-/iPadOS-apparaten met Apple Configurator en Configuratieassistent:
 
-- [Kiezen hoe u iOS-apparaten registreert](ios-enroll.md)
-- [iOS-apparaten inschrijven met Configurator en Configuratieassistent](apple-configurator-enroll-ios.md)
+- [Bepalen hoe u iOS-/iPadOS-apparaten registreert](ios-enroll.md)
+- [iOS-/iPadOS-apparaten inschrijven met Configurator en Configuratieassistent](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 Voor directe registratie moet de beheerder elk apparaat handmatig registreren door een registratiebeleid te maken en dit te exporteren naar Apple Configurator. Via USB aangesloten apparaten van het bedrijf worden direct geregistreerd zonder dat deze hoeven te worden gewist. De apparaten worden beheerd als apparaten zonder gebruiker. Ze zijn niet vergrendeld of onder supervisie en kunnen geen voorwaardelijke toegang, jailbreakdetectie en beheer van mobiele toepassingen ondersteunen.
 
-Zie voor meer informatie over de iOS-inschrijving:
+Zie voor meer informatie over de iOS-/iPadOS-inschrijving:
 
-- [Kiezen hoe u iOS-apparaten registreert](ios-enroll.md)
-- [iOS-apparaten inschrijven met Configurator en directe inschrijving](apple-configurator-enroll-ios.md)
+- [Bepalen hoe u iOS-/iPadOS-apparaten registreert](ios-enroll.md)
+- [iOS-/iPadOS-apparaten inschrijven met Configurator en directe inschrijving](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobiele apparaten opschonen na de verloopdatum van het MDM-certificaat
 

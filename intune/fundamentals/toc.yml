@@ -18,7 +18,7 @@
           href: in-development.md
         - name: Belangrijke kennisgevingen
           href: 'whats-new.md#notices'
-- name: Snelstartgidsen
+- name: Quickstarts
   items:
     - name: Intune gratis proberen
       href: free-trial-sign-up.md
@@ -63,11 +63,11 @@
       href: manage-os-versions.md
     - name: Windows Holographic beheren
       href: windows-holographic-for-business.md
-- name: Handleidingen
+- name: Instructiegidsen
   items:
     - name: Implementatie van abonnementen
       items:
-        - name: Planning a DPM Deployment`(Een DPM-implementatie plannen)
+        - name: Planningshandleiding
           href: planning-guide.md
           items:
             - name: Doelstellingen bepalen
@@ -82,7 +82,7 @@
               href: planning-guide-communication-plan.md
             - name: Een ondersteuningsplan ontwikkelen
               href: planning-guide-support-plan.md
-            - name: Ontwerp
+            - name: Ontwerpen
               href: planning-guide-design.md
             - name: Implementeren
               href: planning-guide-onboarding.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Android-apps downloaden
               href: end-user-apps-android.md
-            - name: iOS-apps downloaden
+            - name: iOS-/iPadOS-apps downloaden
               href: end-user-apps-ios.md
             - name: Windows-apps downloaden
               href: end-user-apps-windows.md
@@ -201,18 +201,18 @@
           href: tenant-status.md
         - name: Gebruikers helpen problemen op te lossen
           href: help-desk-operators.md
-        - name: Auditlogboeken voor Intune-activiteiten
-          href: monitor-audit-logs.md
-        - name: Logboeken controleren met Azure Monitor
-          href: review-logs-using-azure-monitor.md
         - name: De intune-documenten gebruiken
           href: use-docs.md
         - name: Ondersteuning krijgen
           href: get-support.md
-    - name: Reports
+    - name: Rapporten
       items:
         - name: Intune-rapporten
           href: reports.md
+        - name: Auditlogboeken voor Intune-activiteiten
+          href: monitor-audit-logs.md
+        - name: Logboeken controleren met Azure Monitor
+          href: review-logs-using-azure-monitor.md
 - name: Verwijzing
   items:
     - name: Foutcodes en beschrijvingen
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Klassieke Intune-groepen
           href: groups-get-started.md
-        - name: iOS-onderwijsinstellingen
+        - name: Onderwijsinstellingen voor iOS/iPadOS
           items:
             - name: iPad
               href: education-settings-configure-ios.md

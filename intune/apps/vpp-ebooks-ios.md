@@ -1,5 +1,5 @@
 ---
-title: iOS-apps beheren die zijn gekocht via het Volume Purchase Program
+title: iOS-/iPadOS-apps beheren die zijn gekocht via het Volume Purchase Program
 titleSuffix: Microsoft Intune
 description: Meer informatie over hoe u boeken kunt synchroniseren die u via het volumeaankoopprogramma in de iOS Store hebt gekocht, hoe u deze boeken kunt beheren en hoe u het gebruik ervan kunt bijhouden.
 keywords: ''
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: f7c2bd0603961b9d618b3f743ecb323fb7fc9823
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563748"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437865"
 ---
-# <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-apps beheren die u via een volume-aankoopprogramma hebt aangeschaft met Microsoft Intune
+# <a name="how-to-manage-iosipados-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>iOS-/iPadOS-apps beheren die u via een volume-aankoopprogramma hebt aangeschaft met Microsoft Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -37,7 +37,7 @@ U kunt Microsoft Intune gebruiken om de boeken die u via dit programma hebt geko
 De procedures voor het beheren van boeken zijn vergelijkbaar met die voor het [beheren van VPP-apps](../vpp-apps-ios.md).
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>Boeken voor iOS-apparaten beheren die zijn gekocht via het Volum Purchase Program
-U koopt meerdere licenties voor iOS-boeken via het [Apple Volume Purchase Program voor bedrijven](https://www.apple.com/business/vpp/) of het [Apple Volume Purchase Program voor onderwijs](https://volume.itunes.apple.com/us/store). Hiervoor moet u een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune.  U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van de boeken die u via het Volume Purchase Program hebt gekocht.
+U koopt meerdere licenties voor iOS-/iPadOS-boeken via het [Apple Volume Purchase Program voor bedrijven](https://www.apple.com/business/vpp/) of het [Apple Volume Purchase Program voor onderwijs](https://volume.itunes.apple.com/us/store). Hiervoor moet u een Apple VPP-account via de website van Apple instellen en het Apple VPP-token uploaden naar Intune.  U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van de boeken die u via het Volume Purchase Program hebt gekocht.
 
 ## <a name="before-you-start"></a>Voordat u begint
 Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar uw Intune-account. Aanvullend:
@@ -46,7 +46,7 @@ Voordat u begint, moet u een VPP-token van Apple verkrijgen en dit uploaden naar
 * Elke token is één jaar geldig.
 * Standaard wordt Intune twee keer per dag gesynchroniseerd met de Apple VPP-service. U kunt op elk gewenst moment een handmatige synchronisatie starten.
 * Nadat u het VPP-token hebt geïmporteerd in Intune, kunt u hetzelfde token niet in een andere oplossing voor apparaatbeheer importeren. Dit kan leiden tot verlies van licentietoewijzngen en gebruikersrecords.
-* Voordat u begint met het gebruik van iOS-boeken met Intune, verwijdert u eventuele bestaande VPP-gebruikersaccounts die zijn gemaakt met andere MDM-leveranciers (Mobile Device Management). Uit veiligheidsoverwegingen worden deze gebruikersaccounts niet met Intune gesynchroniseerd. Er worden alleen gegevens uit de Apple VPP-service gesynchroniseerd die zijn gemaakt met Intune.
+* Voordat u begint met het gebruik van iOS-/iPadOS-boeken met Intune, verwijdert u eventuele bestaande VPP-gebruikersaccounts die zijn gemaakt met andere MDM-leveranciers (Mobile Device Management). Uit veiligheidsoverwegingen worden deze gebruikersaccounts niet met Intune gesynchroniseerd. Er worden alleen gegevens uit de Apple VPP-service gesynchroniseerd die zijn gemaakt met Intune.
 * Wanneer u een boek aan een apparaat toewijst, moet op dat apparaat de ingebouwde app iBooks geïnstalleerd zijn. Als dat niet het geval is, moet de gebruiker de app opnieuw installeren om het boek te kunnen lezen. U kunt Intune momenteel niet gebruiken voor het herstellen van verwijderde ingebouwde apps.
 * U kunt alleen boeken op de site van het Apple Volume Purchase Program toewijzen. U kunt niet uploaden en vervolgens de boeken toewijzen die u intern hebt gemaakt.
 * U kunt boeken momenteel niet op dezelfde manier toewijzen aan eindgebruikerscategorieën als apps.

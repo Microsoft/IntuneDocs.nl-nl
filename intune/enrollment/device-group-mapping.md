@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955368"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414264"
 ---
 # <a name="categorize-devices-into-groups"></a>Apparaten categoriseren in groepen
 
@@ -32,7 +32,7 @@ Met apparaatcategorieën van Microsoft Intune kunnen apparaten automatisch worde
 
 Voor apparaatcategorieën wordt de volgende werkstroom gebruikt:
 1. Maak categorieën die gebruikers kunnen kiezen bij het registreren van hun apparaat.
-2. Wanneer gebruikers van iOS- en Android-apparaten een apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Als u een categorie wilt toewijzen aan een Windows-apparaat, moeten gebruikers de bedrijfsportal-website gebruiken.
+2. Wanneer gebruikers van iOS-/iPadOS- en Android-apparaten een apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Als u een categorie wilt toewijzen aan een Windows-apparaat, moeten gebruikers de bedrijfsportal-website gebruiken.
 3. Vervolgens kunt u beleidsregels en apps implementeren naar deze groepen.
 
 U kunt alle apparaatcategorieën maken die u maar wilt. Bijvoorbeeld:
@@ -57,7 +57,7 @@ In deze stap maakt u dynamische groepen in Azure Portal op basis van de apparaat
 
 Zie [Geavanceerde regels maken met kenmerken](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in de documentatie van Azure AD om door te gaan.
 
-Gebruik de informatie in deze sectie om een apparaatgroep met een geavanceerde regel te maken op basis van het kenmerk **deviceCategory**. Bijvoorbeeld: (**device.deviceCategory -eq** *de naam van de apparaatcategorie in Azure Portal*.
+Gebruik de informatie in deze sectie om een apparaatgroep met een geavanceerde regel te maken op basis van het kenmerk **deviceCategory**. Bijvoorbeeld: (**device.deviceCategory -eq***de naam van de apparaatcategorie in Azure Portal*.
 
 Wanneer u apparaatgroepen hebt geconfigureerd en gebruikers hun apparaat registreren, krijgen ze een lijst te zien met de categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de inschrijving voltooien, wordt hun apparaat toegevoegd aan de Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
 
@@ -76,13 +76,13 @@ Als de kolom **Apparaatcategorie** niet wordt weergegeven, selecteert u **Kolomm
 
 ## <a name="after-you-configure-device-groups"></a>Na het configureren van apparaatgroepen
 
-Wanneer gebruikers van iOS- en Android-apparaten hun apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de registratie voltooien, wordt hun apparaat toegevoegd aan de Intune-apparaatgroep of Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
+Wanneer gebruikers van iOS-/iPadOS- en Android-apparaten hun apparaat registreren, moeten ze een categorie kiezen uit de lijst met categorieën die u hebt geconfigureerd. Wanneer ze een categorie hebben gekozen en de registratie voltooien, wordt hun apparaat toegevoegd aan de Intune-apparaatgroep of Active Directory-beveiligingsgroep die overeenkomt met de gekozen categorie.
 
 Windows-gebruikers moeten de website van de bedrijfsportal gebruiken om een categorie te selecteren.
 
 Uw gebruikers kunnen bij elk platform altijd naar portal.manage.microsoft.com gaan nadat het apparaat is geregistreerd. Laat de gebruiker naar de bedrijfsportalwebsite en vervolgens **Mijn apparaten** gaan. De gebruiker kan een geregistreerd apparaat op de pagina kiezen en vervolgens een categorie kiezen.
 
-Nadat de categorie is gekozen, wordt het apparaat automatisch toegevoegd aan de bijbehorende groep die u hebt gemaakt. Als een apparaat al is geregistreerd voordat u categorieën configureert, ziet de gebruiker een melding over het apparaat op de bedrijfsportal-website. Hierdoor weten gebruikers dat ze de volgende keer dat ze de bedrijfsportal-app in iOS of Android openen, een categorie moeten selecteren.
+Nadat de categorie is gekozen, wordt het apparaat automatisch toegevoegd aan de bijbehorende groep die u hebt gemaakt. Als een apparaat al is geregistreerd voordat u categorieën configureert, ziet de gebruiker een melding over het apparaat op de bedrijfsportal-website. Hierdoor weten gebruikers dat ze de volgende keer dat ze de bedrijfsportal-app in iOS/iPadOS of Android openen, een categorie moeten selecteren.
 
 ## <a name="further-information"></a>Meer informatie
 - U kunt een apparaatcategorie bewerken in Azure Portal. U moet de Azure AD-beveiligingsgroepen die naar deze categorie verwijzen dan echter handmatig bijwerken.

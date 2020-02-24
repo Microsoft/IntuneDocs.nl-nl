@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e018fb9888db19995556a6671d93a1db5fa78c2a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754776"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415452"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web-apps aan Microsoft Intune toevoegen
 
@@ -33,7 +33,7 @@ Intune biedt ondersteuning voor diverse typen apps, waaronder web-apps. Een web-
 
 Voordat u een app kunt beheren en aan uw gebruikers kunt toewijzen, voegt u de app toe aan Intune. 
 
-Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het apparaat van de gebruiker. Voor iOS-apparaten wordt een snelkoppeling naar de web-app toegevoegd aan het startscherm. Voor Android-apparaatbeheerapparaten wordt een snelkoppeling naar de web-app toegevoegd aan de widget Intune-bedrijfsportal, en moet de widget handmatig worden vastgemaakt door de gebruiker. Voor Windows-apparaten wordt een snelkoppeling naar de web-app geplaatst op het Startscherm.
+Er wordt door Intune een snelkoppeling gemaakt naar de web-app op het apparaat van de gebruiker. Voor iOS-/iPadOS-apparaten wordt een snelkoppeling naar de web-app toegevoegd aan het startscherm. Voor Android-apparaatbeheerapparaten wordt een snelkoppeling naar de web-app toegevoegd aan de widget Intune-bedrijfsportal, en moet de widget handmatig worden vastgemaakt door de gebruiker. Voor Windows-apparaten wordt een snelkoppeling naar de web-app geplaatst op het Startscherm.
 
 > [!Note]
 > Op het apparaat van de gebruiker moet een browser zijn geïnstalleerd om web-apps te kunnen starten. 
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om een app toe te voegen aan Intune als een snelkop
     De blade **Overzicht** van de app die u hebt gemaakt, wordt weergegeven.
 
 > [!Note]
-> Momenteel wordt de implementatie van Intune-web-apps op iOS-apparaten gekoppeld aan het beheerprofiel; dit kan niet handmatig worden verwijderd. U kunt het implementatietype in de Intune-portal wijzigen in **Verwijderen**. Daarna kunt u de web-app automatisch verwijderen. Als u de implementatie echter verwijdert voordat u de intentie van de app-toewijzing hebt gewijzigd in **Verwijderen**, bevindt de web-app zich permanent op het apparaat de registratie van het apparaat bij Intune ongedaan wordt gemaakt.
+> Momenteel wordt de implementatie van Intune-web-apps op iOS-/iPadOS-apparaten gekoppeld aan het beheerprofiel; dit kan niet handmatig worden verwijderd. U kunt het implementatietype in de Intune-portal wijzigen in **Verwijderen**. Daarna kunt u de web-app automatisch verwijderen. Als u de implementatie echter verwijdert voordat u de intentie van de app-toewijzing hebt gewijzigd in **Verwijderen**, bevindt de web-app zich permanent op het apparaat de registratie van het apparaat bij Intune ongedaan wordt gemaakt.
 
 Eindgebruikers kunnen web-apps rechtstreeks vanuit de Windows-bedrijfsportal-app starten door de web-app te selecteren en vervolgens de optie **In browser openen**te kiezen. De gepubliceerde web-URL wordt rechtstreeks in de webbrowser geopend. 
 

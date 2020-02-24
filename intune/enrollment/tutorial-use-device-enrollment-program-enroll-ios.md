@@ -1,7 +1,7 @@
 ---
-title: 'Zelfstudie: Apple Business Manager of het Device Enrollment Program gebruiken om iOS-apparaten in Intune in te schrijven'
+title: 'Zelfstudie: Apple Business Manager of het Device Enrollment Program gebruiken om iOS-/iPadOS-apparaten in Intune in te schrijven'
 titleSuffix: Microsoft Intune
-description: In deze zelfstudie gaat u de zakelijke Apple-apparaatinschrijvingsfuncties van ABM instellen om iOS-apparaten bij Intune in te schrijven.
+description: In deze zelfstudie gaat u de inschrijvingsfuncties voor zakelijke Apple-apparaten van ABM instellen om iOS-/iPadOS-apparaten bij Intune in te schrijven.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,14 +15,14 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 9aab0233c05416fc50413a7889435cb221179730
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971786"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415146"
 ---
-# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Zelfstudie: De zakelijke Apple-apparaatinschrijvingsfuncties in Apple Business Manager (ABM) gebruiken om iOS-apparaten bij Intune in te schrijven
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-iosipados-devices-in-intune"></a>Zelfstudie: De inschrijvingsfuncties voor zakelijke Apple-apparaten in Apple Business Manager (ABM) gebruiken om iOS-/iPadOS-apparaten bij Intune in te schrijven
 Met behulp van de functies voor apparaatinschrijving in Apple Business Manager kunt u apparaten eenvoudiger inschrijven. Intune biedt ook ondersteuning voor de oudere DEP-portal (Device Enrollment Program) van Apple, maar we raden u aan opnieuw te beginnen met Apple Business Manager. Met Microsoft Intune en Apple Corporate Device Enrollment worden apparaten automatisch veilig ingeschreven wanneer gebruikers het apparaat voor de eerste keer inschakelen. U kunt apparaten daarom naar vele gebruikers verzenden zonder elk apparaat afzonderlijk te hoeven instellen. 
 
 In deze zelfstudie leert u het volgende:
@@ -40,7 +40,7 @@ Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor ee
 - Een [Apple MDM-pushcertificaat](apple-mdm-push-certificate-get.md) ophalen
 
 ## <a name="get-an-apple-device-enrollment-token"></a>Een Apple-token voor apparaatinschrijving ophalen
-Voordat u iOS-apparaten inschrijft met behulp van de zakelijke inschrijvingsfuncties van Apple, hebt u een bestand met een apparaatinschrijvingstoken van Apple (.pem-bestand) nodig. Intune kan met deze token informatie synchroniseren over Apple-apparaten die het eigendom zijn van uw bedrijf. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
+Voordat u iOS-/iPadOS-apparaten inschrijft met behulp van de zakelijke inschrijvingsfuncties van Apple, hebt u een bestand met een apparaatinschrijvingstoken van Apple (.pem-bestand) nodig. Intune kan met deze token informatie synchroniseren over Apple-apparaten die het eigendom zijn van uw bedrijf. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
 U maakt een apparaatinschrijvingstoken met behulp van ABM of de DEP-portal. U gebruikt de portals ook om apparaten aan Intune toe te wijzen voor beheer.
 
@@ -78,13 +78,13 @@ U maakt een apparaatinschrijvingstoken met behulp van ABM of de DEP-portal. U ge
 11. Als u bereiktags wilt toepassen om te beperken welke beheerders toegang tot dit token hebben, selecteert u bereiken.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
-Na installatie van de token kunt u een inschrijvingsprofiel voor iOS-apparaten in het eigendom van uw bedrijf maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
+Na installatie van de token kunt u een inschrijvingsprofiel voor iOS-/iPadOS-apparaten in het eigendom van uw bedrijf maken. Met een inschrijvingsprofiel voor apparaten worden de instellingen gedefinieerd die worden toegepast op een groep apparaten tijdens de inschrijving.
 
 1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor het inschrijvingsprogramma**.
 
 2. Selecteer de token die u zojuist hebt geïnstalleerd en kies **Profielen** > **Profiel maken**.
 
-3. Voer onder **Profiel maken***TestDEPProfile* als **naam** in en geef *DEP testen voor iOS-apparaten* op als **beschrijving**. Gebruikers zien deze gegevens niet.
+3. Voer onder **Profiel maken***TestDEPProfile* als **naam** in en geef *DEP testen voor iOS-/iPadOS-apparaten* op als **beschrijving**. Gebruikers zien deze gegevens niet.
 
 4. Kies **iOS** onder **Platform**.
 
@@ -96,11 +96,11 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor iOS-apparaten i
 
 8. Als u de inschrijving uitvoert met Gebruikersaffiniteit, Verificatie met bedrijfsportal en Bedrijfsportal installeren met VPP, moet u bepalen of u de bedrijfsportal wilt uitvoeren in de Eén-app-modus totdat de verificatie wordt uitgevoerd. Met behulp van deze instelling kunt ervoor zorgen dat gebruikers geen toegang hebben tot andere apps, totdat ze de bedrijfsinschrijving hebben voltooid. Als u de gebruiker tot deze stroom wilt beperken totdat de inschrijving is voltooid, kiest u **Ja** onder **Bedrijfsportal tot verificatie uitvoeren in één-app-modus**. 
 
-9. Kies **Instellingen apparaatbeheer** en kies **Ja** onder **Onder toezicht**. U krijgt de meeste beheeropties voor uw zakelijke iOS-apparaten door apparaten onder toezicht te stellen.
+9. Kies **Instellingen apparaatbeheer** en kies **Ja** onder **Onder toezicht**. U krijgt de meeste beheeropties voor uw zakelijke iOS-/iPadOS-apparaten door apparaten onder toezicht te stellen.
 
 10. Kies **Ja** onder **Vergrendelde inschrijving** om ervoor te zorgen dat gebruikers het beheer van de bedrijfsapparaten niet kunnen verwijderen. 
 
-11. Kies een optie onder **Synchroniseren met computers** om te bepalen of de iOS-apparaten met computers kunnen worden gesynchroniseerd.
+11. Kies een optie onder **Synchroniseren met computers** om te bepalen of de iOS-/iPadOS-apparaten met computers kunnen worden gesynchroniseerd.
 
 12. Standaard krijgen apparaten bij Apple de naam van het apparaattype (bijv. iPad). Als u een andere naamsjabloon wilt opgeven, kiest u **Ja** onder **Sjabloon voor apparaatnamen toepassen**. Voer de naam in die u op de apparaten wilt toepassen, waarbij u de tekenreeksen *{{SERIAL}}* en *{{DEVICETYPE}}* vervangt door het serienummer en het apparaattype van elk apparaat. Anders kiest u **Nee** onder **Sjabloon voor apparaatnamen toepassen**.
 
@@ -120,7 +120,7 @@ Zodra u een inschrijvingsprogrammatoken hebt ingesteld via de ABM-, ASM- of DEP-
 
 1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **iOS** > **iOS-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst > **Apparaten** > **Synchroniseren**.
 
-## <a name="assign-an-enrollment-profile-to-ios-devices"></a>Een inschrijvingsprofiel toewijzen aan iOS-apparaten
+## <a name="assign-an-enrollment-profile-to-iosipados-devices"></a>Een inschrijvingsprofiel toewijzen aan iOS-/iPadOS-apparaten
 
 U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voordat deze kunnen worden ingeschreven. Deze apparaten worden via Apple met Intune gesynchroniseerd en moeten aan de juiste MDM-servertoken in de ABM-, ASM- of DEP-portal worden toegewezen.
 
@@ -134,12 +134,12 @@ U hebt beheer en synchronisatie tussen Apple en Intune ingesteld en een profiel 
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Er bestaat aanvullende informatie over andere opties die voor het registreren van iOS-apparaten beschikbaar zijn.
+Er bestaat aanvullende informatie over andere opties die voor het registreren van iOS-/iPadOS-apparaten beschikbaar zijn.
 
 > [!div class="nextstepaction"]
-> [Diepgaand artikel over iOS DEP-registratie](device-enrollment-program-enroll-ios.md)
+> [Diepgaand artikel over iOS/iPadOS DEP-registratie](device-enrollment-program-enroll-ios.md)
 
 <!--commenting out because inaccurate>
 ## Clean up resources
-<!--If you don't want to use iOS corporate enrolled devices anymore, you can delete them.>
+<!--If you don't want to use iOS/iPadOS corporate enrolled devices anymore, you can delete them.>
 <!--- If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).>

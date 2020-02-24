@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206904"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415484"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Zelfstudie: Slack configureren om Intune te gebruiken voor de configuratie van EMM en de app
 
@@ -69,7 +69,7 @@ Voeg Slack voor EMM toe als een beheerde iOS-app in Intune en wijs uw Slack-gebr
 10. Klik op **Opslaan**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Een app-configuratiebeleid toevoegen voor Slack voor EMM
-Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met Android-apparaten.
+Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS/iPadOS. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met Android-apparaten.
 1. Selecteer **Apps** > **App-configuratiebeleid** > **Toevoegen** > **Beheerde apparaten** in het beheercentrum.
 2. Voer bij Naam het volgende in: Testbeleid Slack-app-configuratie.
 3. Controleer of bij Type apparaatregistratie **Beheerde apparaten** is ingesteld.

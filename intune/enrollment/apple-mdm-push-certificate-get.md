@@ -1,7 +1,7 @@
 ---
 title: Een Apple MDM-pushcertificaat voor Intune ophalen
 titleSuffix: ''
-description: Lees hoe u een Apple MDM-pushcertificaat kunt ophalen voor het beheren van iOS-apparaten met Intune.
+description: Lees hoe u een Apple MDM-pushcertificaat kunt ophalen voor het beheren van iOS-/iPadOS-apparaten met Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,24 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 673f63194b46ca7e4dbf1206d363cbe70c6e6098
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955453"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414431"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Een Apple MDM-pushcertificaat ophalen
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Een Apple MDM-pushcertificaat is vereist zodat Intune iOS- en macOS-apparaten kan beheren. Nadat u het certificaat aan Intune hebt toegevoegd, kunnen uw gebruikers hun apparaten inschrijven met:
+Een Apple MDM-pushcertificaat is vereist zodat Intune iOS-/iPadOS- en macOS-apparaten kan beheren. Nadat u het certificaat aan Intune hebt toegevoegd, kunnen uw gebruikers hun apparaten inschrijven met:
 
 - De bedrijfsportal-app.
 
 - De massaregistratiemethoden van Apple zoals het Apple-apparaatinschrijvingsprogramma, Apple School Manager of Apple Configurator.
 
-Raadpleeg [Kiezen hoe u iOS-apparaten registreert](ios-enroll.md) voor meer informatie over inschrijvingsopties.
+Raadpleeg [Kiezen hoe u iOS-/iPadOS-apparaten inschrijft](ios-enroll.md) voor meer informatie over inschrijvingsopties.
 
 Wanneer een pushcertificaat is verlopen, moet u dit vernieuwen. Zorg er tijdens de vernieuwing voor dat u dezelfde Apple ID gebruikt als toen u het pushcertificaat hebt gemaakt.
 
@@ -64,7 +64,7 @@ Bewaar deze id voor wanneer u dit certificaat moet verlengen.
 Ga naar het certificaatbestand (.pem), kies **Openen** en kies vervolgens **Uploaden**. Met het pushcertificaat kan Intune Apple-apparaten inschrijven en beheren.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Een Apple MDM-pushcertificaat verlengen
-Het Apple MDM-pushcertificaat is één jaar geldig en moet elk jaar worden verlengd om het iOS- en macOS-apparaatbeheer te kunnen handhaven. Als het certificaat verloopt, kan er geen contact worden opgenomen met ingeschreven Apple-apparaten.
+Het Apple MDM-pushcertificaat is één jaar geldig en moet elk jaar worden verlengd om het iOS-/iPadOS- en macOS-apparaatbeheer te kunnen handhaven. Als het certificaat verloopt, kan er geen contact worden opgenomen met ingeschreven Apple-apparaten.
 
 Het certificaat wordt gekoppeld aan de Apple-id waarmee het wordt gemaakt. Verlengt het MDM-pushcertificaat met dezelfde Apple-id waarmee u het hebt gemaakt.
 
@@ -73,7 +73,7 @@ Het certificaat wordt gekoppeld aan de Apple-id waarmee het wordt gemaakt. Verle
 3. Selecteer **Uw MDM-pushcertificaat maken** om naar de portal voor Apple-pushcertificaten te gaan. Zoek het certificaat dat u wilt verlengen en selecteer **Verlengen**.
 4. Via het scherm **Push-certificaat vernieuwen** voegt u notities toe om het certificaat later te kunnen identificeren. Selecteer **Bestand kiezen** om naar het gedownloade aanvraagbestand te bladeren en kiest u **Uploaden**.
    > [!TIP]
-   > Een certificaat kan worden geïdentificeerd aan de hand van de bijbehorende UID. Bekijk de **onderwerp-id** in de certificaatgegevens om het GUID-gedeelte van de UID te vinden. U kunt ook op een ingeschreven iOS-apparaat naar **Instellingen** > **Algemeen** > **Apparaat** **Beheer** > **Beheerprofiel** > **Meer details** > **Beheerprofiel** gaan. Het tweede regelitem **Onderwerp** bevat de unieke GUID die u met het certificaat in het portal voor Apple-pushcertificaten kunt vergelijken.
+   > Een certificaat kan worden geïdentificeerd aan de hand van de bijbehorende UID. Bekijk de **onderwerp-id** in de certificaatgegevens om het GUID-gedeelte van de UID te vinden. U kunt ook op een ingeschreven iOS-/iPadOS-apparaat naar **Instellingen** > **Algemeen** > **Apparaat** **Beheer** > **Beheerprofiel** > **Meer details** > **Beheerprofiel** gaan. Het tweede regelitem **Onderwerp** bevat de unieke GUID die u met het certificaat in het portal voor Apple-pushcertificaten kunt vergelijken.
  
 6. Selecteer in het scherm **Bevestiging** de optie **Downloaden** en sla het PEM-bestand lokaal op.
 7. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecteer het bladerpictogram **Apple MDM-pushcertificaat**, selecteer het in Apple gedownloade PEM-bestand en kies **Uploaden**.

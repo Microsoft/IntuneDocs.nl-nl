@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692108"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414595"
 ---
 # <a name="protecting-application-extensions"></a>Toepassingsextensies beveiligen
 
@@ -31,7 +31,7 @@ In dit artikel wordt het app-beveiligingsbeleid voor extensies in Microsoft Intu
 
 ## <a name="add-ins-for-outlook-app"></a>Invoegtoepassingen voor Outlook-app
 
-Met Outlook-invoegtoepassingen kunt u populaire apps integreren met de e-mailclient. Invoegtoepassingen voor Outlook zijn beschikbaar op het web en in Windows, Mac, en Outlook voor Android en iOS. De Intune SDK voor app-beveiligingsbeleid en het Intune-app-beveiligingsbeleid omvatten geen ondersteuning voor het beheren van invoegtoepassingen voor Outlook, maar er zijn andere manieren om het gebruik ervan te beperken. Aangezien invoegtoepassingen worden beheerd via Microsoft Exchange, kunnen gebruikers gegevens en berichten delen tussen Outlook en niet-beheerde invoegtoepassingen, tenzij invoegtoepassingen in Exchange zijn uitgeschakeld voor de gebruiker.
+Met Outlook-invoegtoepassingen kunt u populaire apps integreren met de e-mailclient. Invoegtoepassingen voor Outlook zijn beschikbaar op het web en in Windows, Mac, en Outlook voor Android en iOS/iPadOS. De Intune SDK voor app-beveiligingsbeleid en het Intune-app-beveiligingsbeleid omvatten geen ondersteuning voor het beheren van invoegtoepassingen voor Outlook, maar er zijn andere manieren om het gebruik ervan te beperken. Aangezien invoegtoepassingen worden beheerd via Microsoft Exchange, kunnen gebruikers gegevens en berichten delen tussen Outlook en niet-beheerde invoegtoepassingen, tenzij invoegtoepassingen in Exchange zijn uitgeschakeld voor de gebruiker.
 
 Als u wilt dat uw eindgebruikers geen Outlook-invoegtoepassingen meer kunnen benaderen en installeren (dit geldt dan voor alle Outlook-clients), moet u de volgende wijzigingen aanbrengen in rollen in het Exchange-beheercentrum:
 

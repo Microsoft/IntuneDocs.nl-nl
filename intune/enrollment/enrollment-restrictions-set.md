@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971859"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415312"
 ---
 # <a name="set-enrollment-restrictions"></a>Registratiebeperkingen instellen
 
@@ -44,11 +44,11 @@ U kunt onder ander de volgende registratiebeperkingen maken:
 - De ondersteunde apparaatplatformen:
   - Android-apparaatbeheerder
   - Android Enterprise - Werkprofiel
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- Platformbesturingssysteemversie voor iOS, Android-apparaatbeheerder, Android-werkprofiel, Windows en Windows Mobile. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
+- Platformbesturingssysteemversie voor iOS/iPadOS, Android-apparaatbeheerder, Android-werkprofiel, Windows en Windows Mobile. (Alleen Windows 10-versies kunnen worden gebruikt. Laat dit veld leeg als Windows 8.1 is toegestaan.)
   - Minimale versie.
   - Maximale versie.
 - Beperk [apparaten in persoonlijk eigendom](device-enrollment.md#bring-your-own-device) (alleen iOS, Android-apparaatbeheerder, Android-werkprofiel, macOS, Windows en Windows Mobile).
@@ -67,7 +67,7 @@ Standaardbeperkingen worden automatisch opgegeven voor registratiebeperkingen vo
 5. Kies onder **Versies** de minimale en maximale versies die u wilt ondersteunen op de toegestane platforms. Versiebeperkingen zijn alleen van toepassing op apparaten die zijn ingeschreven via de bedrijfsportal.
      Ondersteunde versie-indelingen omvatten:
     - Android-apparaatbeheerder en Android Enterprise-werkprofiel bieden ondersteuning voor major.minor.rev.build.
-    - iOS ondersteunt major.minor.rev. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
+    - iOS/iPadOS ondersteunt major.minor.rev. Versies van besturingssystemen zijn niet van toepassing op Apple-apparaten die worden ingeschreven met Device Enrollment Program, Apple School Manager of de app Apple Configurator.
     - Windows biedt alleen ondersteuning voor major.minor.build.rev voor Windows 10.
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ Ook de volgende persoonlijke registratiemethoden worden geblokkeerd:
 \* Deze worden niet geblokkeerd als ze zijn geregistreerd met Autopilot.
 
 
-## <a name="blocking-personal-ios-devices"></a>Persoonlijke iOS-apparaten blokkeren
-iOS-apparaten worden in Intune standaard geclassificeerd als persoonlijk eigendom. Een iOS-apparaat moet voldoen aan een van de volgende voorwaarden om te worden geclassificeerd als bedrijfseigendom:
+## <a name="blocking-personal-iosipados-devices"></a>Persoonlijke iOS-/iPadOS-apparaten blokkeren
+iOS-/iPadOS-apparaten worden in Intune standaard geclassificeerd als persoonlijk eigendom. Een iOS-/iPadOS-apparaat moet voldoen aan een van de volgende voorwaarden om te worden geclassificeerd als bedrijfseigendom:
 - Het apparaat moet zijn geregistreerd met een serienummer of IMEI.
 - Het apparaat moet zijn ingeschreven met behulp van Automatische apparaatinschrijving (voorheen Device Enrollment Program)
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564367"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414706"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -51,7 +51,7 @@ Intune MAM ondersteunt twee configuraties:
 
 Intune biedt een scala aan mogelijkheden om u te helpen de benodigde apps op de apparaten te krijgen waarop u deze wilt uitvoeren. De volgende tabel bevat een samenvatting van de mogelijkheden voor app-beheer.
 
-|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Apps toevoegen en aan apparaten en gebruikers toewijzen | Ja | Ja | Ja | Ja | Ja |
 | Apps toewijzen aan apparaten die niet zijn geregistreerd met Intune | Ja | Ja | Nee | Nee | Nee |
@@ -85,7 +85,7 @@ U vindt de meeste app-gerelateerde informatie in de workload **Apps** die als vo
 
 In de volgende vier secties worden de beschikbare opties in het deelvenster **Apps** beschreven.
 
-### <a name="manage"></a>Manage
+### <a name="manage"></a>Beheren
 - **Apps**: selecteer deze optie als u de apps die uw werknemers gebruiken, wilt toevoegen, weergeven, toewijzen en bewaken. Zie voor meer informatie:
   - [Apps toevoegen](apps-add.md).
   - [Apps toewijzen](apps-deploy.md).
@@ -98,7 +98,7 @@ In de volgende vier secties worden de beschikbare opties in het deelvenster **Ap
   - [Beleid voor app-beveiliging](app-protection-policies.md).
 - **App selectief wissen**: selecteer deze optie om alleen bedrijfsgegevens van een geselecteerd gebruikersapparaat te verwijderen. Zie voor meer informatie:
   - [App selectief wissen](apps-selective-wipe.md).
-- **Inrichtingsprofielen voor iOS-app**: iOS-apps hebben een inrichtingsprofiel en code die zijn ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen. Zie voor meer informatie:
+- **Inrichtingsprofielen voor iOS-app**: iOS-/iPadOS-apps hebben een inrichtingsprofiel en code die zijn ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen. Zie voor meer informatie:
   - [Inrichtingsprofielen voor iOS-apps](app-provisioning-profile-ios.md).
 
 Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
@@ -114,8 +114,8 @@ Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 
 Zie [Apps bewaken](apps-monitor.md) voor meer informatie over deze sectie.
 
-### <a name="set-up"></a>instellen
-- **VPP-tokens voor iOS**: voor het toepassen en weergeven van uw VPP-licenties (Volume Purchase Program) voor iOS. Zie voor meer informatie:
+### <a name="set-up"></a>Instellen
+- **VPP-tokens voor iOS**: voor het toepassen en weergeven van uw VPP-licenties (Volume Purchase Program) voor iOS/iPadOS. Zie voor meer informatie:
   - [iOS-apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
 - **Windows Enterprise-certificaat**: voor het toepassen of weergeven van de status van een certificaat voor ondertekening van programmacode die wordt gebruikt voor het distribueren van LOB-apps naar uw beheerde Windows-apparaten.
 - **Windows Symantec-certificaat**: voor het toepassen of weergeven van een Symantec-certificaat voor ondertekening van programmacode die nodig is voor het distribueren van XAP- en WP8.x-appx-bestanden naar Windows 10 Mobile-apparaten.

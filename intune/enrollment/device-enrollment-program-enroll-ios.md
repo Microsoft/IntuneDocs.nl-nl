@@ -1,7 +1,7 @@
 ---
-title: iOS-apparaten inschrijven - Device Enrollment Program
+title: iOS-/iPadOS-apparaten inschrijven - Device Enrollment Program
 titleSuffix: Microsoft Intune
-description: Meer informatie over het registreren van iOS-apparaten in bedrijfseigendom met het Device Enrollment Program (DEP).
+description: Meer informatie over het registreren van iOS-/iPadOS-apparaten in bedrijfseigendom met het Device Enrollment Program (DEP).
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074662"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415362"
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
+# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>iOS-/iPadOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
-U kunt Intune zo instellen dat iOS-apparaten die zijn gekocht via het [Device Enrollment Program (DEP)](https://deploy.apple.com) worden ingeschreven. Met DEP kunt u grote aantallen apparaten inschrijven zonder op de apparaten zelf aan de slag te gaan. Apparaten als iPhones, iPads en MacBooks kunnen rechtstreeks naar gebruikers worden verzonden. Als de gebruiker het apparaat inschakelt, wordt Configuratieassistent, met de herkenbare kant-en-klare ervaring voor Apple-producten, uitgevoerd met vooraf gedefinieerde instellingen en het apparaat ingeschreven bij beheer.
+U kunt Intune zo instellen dat iOS-/iPadOS-apparaten die zijn gekocht via het [Device Enrollment Program (DEP)](https://deploy.apple.com) worden ingeschreven. Met DEP kunt u grote aantallen apparaten inschrijven zonder op de apparaten zelf aan de slag te gaan. Apparaten als iPhones, iPads en MacBooks kunnen rechtstreeks naar gebruikers worden verzonden. Als de gebruiker het apparaat inschakelt, wordt Configuratieassistent, met de herkenbare kant-en-klare ervaring voor Apple-producten, uitgevoerd met vooraf gedefinieerde instellingen en het apparaat ingeschreven bij beheer.
 
 Als u registratie via DEP wilt inschakelen, gebruikt u zowel de Intune- als Apple School Manager-portal (ABM) of de Apple School Manager-portal (ASM). U hebt een lijst met serienummers of een aankoopordernummer nodig om apparaten voor beheer aan Intune toe te wijzen in ABM/ASM. U maakt DEP-inschrijvingsprofielen in Intune met instellingen die tijdens de inschrijving op de apparaten zijn toegepast. Zoals u ziet kan de Inschrijving via DEP niet worden gebruikt met een account van een [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
 
@@ -38,15 +38,15 @@ Als u registratie via DEP wilt inschakelen, gebruikt u zowel de Intune- als Appl
 
 DEP-inschrijvingen zijn niet compatibel met de App Store-versie van de bedrijfsportal-app. U kunt gebruikers toegang geven tot de bedrijfsportal-app op een DEP-apparaat. U kunt deze toegang geven om gebruikers te laten kiezen welke zakelijke apps ze willen gebruiken op hun apparaat of om moderne verificatie te gebruiken om het inschrijvingsproces te voltooien. 
 
-Push de app naar het apparaat met **Bedrijfsportal installeren met VPP** (Volume Purchase Program) in het DEP-profiel om moderne verificatie tijdens de inschrijving in te schakelen. Zie [iOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) voor meer informatie.
+Push de app naar het apparaat met **Bedrijfsportal installeren met VPP** (Volume Purchase Program) in het DEP-profiel om moderne verificatie tijdens de inschrijving in te schakelen. Zie [iOS-/iPadOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) voor meer informatie.
 
 Als u wilt inschakelen dat de Bedrijfsportal automatisch wordt bijgewerkt en de Bedrijfsportal-app weergeeft op apparaten die al bij DEP zijn geregistreerd, implementeert u de Bedrijfsportal-app via Intune als een vereiste VPP-app (Volume Purchase Program) waarop een [Toepassingsconfiguratiebeleid](../apps/app-configuration-policies-use-ios.md) is toegepast.
 
 ## <a name="what-is-supervised-mode"></a>Wat is de supervisiemodus?
 
-Apple heeft de supervisiemodus geïntroduceerd in iOS 5. Een iOS-apparaat in de supervisiemodus kan worden beheerd met meer besturingselementen, zoals het blokkeren van schermopnamen en blokkeren dat apps vanuit de App Store kunnen worden geïnstalleerd. Hierdoor is het vooral handig voor apparaten van het bedrijf. Intune ondersteunt het configureren van apparaten voor de supervisiemodus als onderdeel van het Apple Device Enrollment Program (DEP).
+Apple heeft de supervisiemodus geïntroduceerd in iOS/iPadOS 5. Een iOS-/iPadOS-apparaat in de supervisiemodus kan worden beheerd met meer besturingselementen, zoals het blokkeren van schermopnamen en blokkeren dat apps vanuit de App Store kunnen worden geïnstalleerd. Hierdoor is het vooral handig voor apparaten van het bedrijf. Intune ondersteunt het configureren van apparaten voor de supervisiemodus als onderdeel van het Apple Device Enrollment Program (DEP).
 
-Ondersteuning voor DEP-apparaten zonder supervisie is afgeschaft in iOS 11. In iOS 11 en later moeten met DEP geconfigureerde apparaten altijd onder supervisie staan. De DEP-vlag is_supervised wordt in een toekomstige iOS-release genegeerd.
+Ondersteuning voor DEP-apparaten zonder supervisie is afgeschaft in iOS/iPadOS 11. In iOS/iPadOS 11 en later moeten met DEP geconfigureerde apparaten altijd onder supervisie staan. De DEP-vlag is_supervised wordt in een toekomstige iOS-/iPadOS-release genegeerd.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -63,7 +63,7 @@ Ondersteuning voor DEP-apparaten zonder supervisie is afgeschaft in iOS 11. In i
 
 ## <a name="get-an-apple-dep-token"></a>Een Apple DEP-token ophalen
 
-Voordat u iOS-apparaten met DEP kunt inschrijven, moet u een DEP-tokenbestand (.p7m) van Apple ontvangen. Intune kan met deze token informatie synchroniseren over DEP-apparaten die in eigendom zijn van uw bedrijf. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
+Voordat u iOS-/iPadOS-apparaten met DEP kunt inschrijven, moet u een DEP-tokenbestand (.p7m) van Apple ontvangen. Intune kan met deze token informatie synchroniseren over DEP-apparaten die in eigendom zijn van uw bedrijf. Ook kan Intune hiermee inschrijvingsprofielen naar Apple uploaden en apparaten toewijzen aan die profielen.
 
 U gebruikt de Apple Business Manager- of Apple School Manager-portal om een token te maken. U gebruikt de ABM/ASM-portal ook om apparaten aan Intune toe te wijzen voor beheer.
 
@@ -117,7 +117,7 @@ Geef in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/
 2. Als u [bereiktags](../fundamentals/scope-tags.md) wilt toevoegen aan dit DEP-token, kiest u **Bereik (tags)** en selecteert u de bereiktags die u wilt toevoegen. Bereiktags die zijn toegepast op een token, worden overgenomen door profielen en apparaten die aan dit token zijn toegevoegd.
 3. Kies **Maken**.
 
-Met het pushcertificaat kan Intune iOS-apparaten inschrijven en beheren door beleid naar geregistreerde mobiele apparaten te pushen. Intune wordt automatisch gesynchroniseerd met Apple om het account voor het inschrijvingsprogramma weer te geven.
+Met het pushcertificaat kan Intune iOS-/iPadOS-apparaten inschrijven en beheren door beleid naar ingeschreven mobiele apparaten te pushen. Intune wordt automatisch gesynchroniseerd met Apple om het account voor het inschrijvingsprogramma weer te geven.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Een Apple-inschrijvingsprofiel maken
 
@@ -155,7 +155,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
     >
     > Deze worden niet ondersteund bij het verifiëren met Apple-configuratieassistent.
 
-6. Als u **Bedrijfsportal** kiest voor **Selecteren waar gebruikers de verificatie moeten uitvoeren**, kunt u een VPP-token gebruiken om de bedrijfsportal automatisch op het apparaat te installeren. In dit geval hoeft de gebruiker geen Apple-id op te geven. Als u de Bedrijfsportal wilt installeren met een VPP-token, kiest u een token onder **Install Company Portal with VPP** (Bedrijfsportal installeren met VPP). Daarvoor moet de bedrijfsportal al zijn toegevoegd aan het VPP-token. Om ervoor te zorgen dat de bedrijfsportal-app na de registratie nog steeds wordt bijgewerkt, moet u ervoor zorgen dat u een app-implementatie in Intune hebt geconfigureerd (Intune > Client-apps). Om interactie van de gebruiker te vermijden, wilt u de bedrijfsportal waarschijnlijk als een iOS VPP-app hebben, zodat het een vereiste app is, en de apparaattlicenties voor de toewijzing gebruiken. Controleer of het token niet verloopt en of u voldoende apparaatlicenties hebt voor de bedrijfsportal-app. Als het token verloopt of onvoldoende licenties heeft, installeert Intune in plaats daarvan de App Store-bedrijfsportal en vraagt het om een Apple-id. 
+6. Als u **Bedrijfsportal** kiest voor **Selecteren waar gebruikers de verificatie moeten uitvoeren**, kunt u een VPP-token gebruiken om de bedrijfsportal automatisch op het apparaat te installeren. In dit geval hoeft de gebruiker geen Apple-id op te geven. Als u de Bedrijfsportal wilt installeren met een VPP-token, kiest u een token onder **Install Company Portal with VPP** (Bedrijfsportal installeren met VPP). Daarvoor moet de bedrijfsportal al zijn toegevoegd aan het VPP-token. Om ervoor te zorgen dat de bedrijfsportal-app na de registratie nog steeds wordt bijgewerkt, moet u ervoor zorgen dat u een app-implementatie in Intune hebt geconfigureerd (Intune > Client-apps). Om interactie van de gebruiker te vermijden, wilt u de bedrijfsportal waarschijnlijk als een iOS/iPadOS VPP-app hebben, zodat het een vereiste app is, en apparaatlicenties voor de toewijzing gebruiken. Controleer of het token niet verloopt en of u voldoende apparaatlicenties hebt voor de bedrijfsportal-app. Als het token verloopt of onvoldoende licenties heeft, installeert Intune in plaats daarvan de App Store-bedrijfsportal en vraagt het om een Apple-id. 
 
     > [!NOTE]
     > Wanneer **Selecteren waar gebruikers de verificatie moeten uitvoeren** is ingesteld op **Bedrijfsportal**, moet u ervoor zorgen dat het apparaatinschrijvingsproces wordt uitgevoerd binnen de eerste 24 uur dat de bedrijfsportal is gedownload op het DEP-apparaat. Anders mislukt de inschrijving en is er een herstel naar fabrieksinstellingen nodig om het apparaat in te schrijven.
@@ -168,7 +168,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 
     Meervoudige verificatie wordt niet ondersteund op een apparaat dat is vergrendeld in de Modus voor enkele toepassing. Deze beperking bestaat omdat het apparaat niet kan overschakelen naar een andere app om de tweede verificatie te voltooien. Als u daarom meervoudige verificatie wilt op een apparaat met de Modus voor enkele toepassing, moet de tweede verificatie plaatsvinden op een ander apparaat.
 
-    Deze functie wordt alleen ondersteund voor iOS 11.3.1 en hoger.
+    Deze functie wordt alleen ondersteund voor iOS/iPadOS 11.3.1 en hoger.
 
    ![Schermopname van de modus enkele app.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -176,7 +176,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 
     ![Schermopname Instellingen voor apparaatbeheer.](./media/device-enrollment-program-enroll-ios/supervisedmode.png)
 
-    Met apparaten **onder supervisie** krijgt u meer beheeropties en de activeringsvergrendeling is standaard uitgeschakeld. Microsoft raadt het gebruik van DEP aan als mechanisme voor het inschakelen van de supervisiemodus, met name als u veel iOS-apparaten implementeert.
+    Met apparaten **onder supervisie** krijgt u meer beheeropties en de activeringsvergrendeling is standaard uitgeschakeld. Microsoft raadt het gebruik van DEP aan als mechanisme voor het inschakelen van de supervisiemodus, met name als u veel iOS-/iPadOS-apparaten implementeert.
 
     Gebruikers worden op twee manieren gewaarschuwd dat hun apparaten onder supervisie staan:
 
@@ -184,9 +184,9 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
    - Het scherm **Instellingen** > **Algemeen** > **Info** meldt: 'Deze iPhone is onder supervisie. Contoso kan uw internetverkeer bijhouden en de locatie van dit apparaat bepalen'.
 
      > [!NOTE]
-     > Een apparaat dat is ingeschreven zonder supervisie, kan alleen opnieuw worden ingesteld met behulp van de Apple Configurator. Als u het apparaat op deze manier opnieuw wilt instellen, moet u een iOS-apparaat verbinden met een Mac via een USB-kabel. Meer informatie hierover vindt u in de [Apple Configurator-documentatie](http://help.apple.com/configurator/mac/2.3).
+     > Een apparaat dat is ingeschreven zonder supervisie, kan alleen opnieuw worden ingesteld met behulp van de Apple Configurator. Als u het apparaat op deze manier opnieuw wilt instellen, moet u een iOS-/iPadOS-apparaat verbinden met een Mac via een USB-kabel. Meer informatie hierover vindt u in de [Apple Configurator-documentatie](http://help.apple.com/configurator/mac/2.3).
 
-10. Kies of u vergrendelde inschrijving wilt voor apparaten die dit profiel gebruiken. **Vergrendelde inschrijving** schakelt de iOS-instellingen uit, waardoor het beheerprofiel kan worden verwijderd uit het menu **Instellingen**. Als het apparaat is ingeschreven, kunt u deze instelling niet wijzigen zonder het apparaat te wissen. Bij dergelijke apparaten is het vereist dat de beheermodus **Onder supervisie** is ingesteld op *Ja*. 
+10. Kies of u vergrendelde inschrijving wilt voor apparaten die dit profiel gebruiken. **Vergrendelde inschrijving** schakelt de iOS-/iPadOS-instellingen uit, waardoor het beheerprofiel kan worden verwijderd uit het menu **Instellingen**. Als het apparaat is ingeschreven, kunt u deze instelling niet wijzigen zonder het apparaat te wissen. Bij dergelijke apparaten is het vereist dat de beheermodus **Onder supervisie** is ingesteld op *Ja*. 
 
 11. Kies of u wilt dat apparaten die dit profiel gebruiken, kunnen **synchroniseren met computers**. Als u **Apple Configurator per certificaat toestaan** kiest, moet u een certificaat kiezen onder **Apple Configurator-certificaten**.
 
@@ -270,7 +270,7 @@ U kunt een standaardprofiel kiezen dat wordt toegepast op apparaten die zich ins
 ## <a name="distribute-devices"></a>Apparaten distribueren
 U hebt beheer en synchronisatie tussen Apple en Intune ingeschakeld, en een profiel toegewezen om uw DEP-apparaten te kunnen inschrijven. De apparaten kunnen nu worden uitgedeeld aan de gebruikers. Voor apparaten met gebruikersaffiniteit moet aan elke gebruiker een Intune-licentie worden toegewezen. Voor apparaten zonder gebruikersaffiniteit is een apparaatlicentie vereist. Een geactiveerd apparaat kan geen inschrijvingsprofiel toepassen, tenzij het apparaat is gewist.
 
-Zie [Schrijf uw iOS-apparaat in Intune in met het Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
+Zie [Uw iOS-/iPadOS-apparaat inschrijven in Intune in met het Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
 
 ## <a name="renew-a-dep-token"></a>Een DEP-token vernieuwen  
 1. Ga naar deploy.apple.com.  

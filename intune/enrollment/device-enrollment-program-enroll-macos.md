@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832680"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414490"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>macOS-apparaten automatisch inschrijven met het Device Enrollment Program of Apple School Manager
 
@@ -80,7 +80,7 @@ U gebruikt de Apple-portal om een token te maken. U gebruikt de Apple-portal ook
 
 5. Het dialoogvenster **Voeg &lt;servernaam&gt;** wordt geopend, met de instructie dat u uw **openbare sleutel moet uploaden**. Kies **Bestand selecteren...** om het .pem-bestand te uploaden en kies **Volgende**.
 
-6. Ga naar **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Apparaten beheren**.
+6. Ga naar **Implementatieprogramma** &gt; **Programma apparaatinschrijving** &gt; **Apparaten beheren**.
 7. Geef onder **Kies apparaten op** aan hoe apparaten worden geïdentificeerd:
     - **Serienummer**
     - **Ordernummer**
@@ -181,7 +181,7 @@ U moet een profiel voor een inschrijvingsprogramma aan apparaten toewijzen voord
 
 ### <a name="assign-a-default-profile"></a>Een standaardprofiel toewijzen
 
-U kunt een standaardprofiel in macOS en iOS kiezen om toe te passen op alle apparaten die worden ingeschreven met een specifiek token. 
+U kunt een standaardprofiel in macOS en iOS/iPadOS kiezen om toe te passen op alle apparaten die worden ingeschreven met een specifiek token. 
 
 1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apparaten** > **macOS** > **macOS-inschrijving** > **Tokens voor het inschrijvingsprogramma** > kies een token in de lijst.
 2. Kies **Standaardprofiel instellen**, kies een profiel in de vervolgkeuzelijst en kies vervolgens **Opslaan**. Dit profiel wordt toegepast op alle apparaten die zich met het token inschrijven.
