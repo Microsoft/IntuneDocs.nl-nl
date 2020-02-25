@@ -7,14 +7,25 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415075"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529329"
 ---
 Deze mededelingen bevatten belangrijke informatie die u kan helpen om voorbereid te zijn op toekomstige wijzigingen en functies in Intune.
+
+### <a name="microsoft-intune-support-for-windows-10-mobile-ending--3544938--"></a>Microsoft Intune-ondersteuning voor Windows 10 Mobile wordt afgeschaft<!--3544938-->
+Microsoft-ondersteuning voor Windows 10 Mobile is in december 2019 afgeshaft. Zoals is vermeld in deze verklaring, komen gebruikers van Windows 10 Mobile niet meer in aanmerking voor nieuwe beveiligingspatches, hotfixes anders dan beveiligings, gratis ondersteuningsopties of online technische contentupdates van Microsoft. Op basis van de ondersteuning voor het mobiele besturingssysteem beëindigt Microsoft Intune op 11 mei 2020 de ondersteuning voor zowel de Bedrijfsportal voor de mobiele Windows 10-app als het besturingssysteem van Windows Mobile.
+
+#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
+Als u Windows 10 Mobile-apparaten gebruikt in uw organisatie, kunt u tussen nu en 11 mei 2020 nieuwe apparaten inschrijven, beleid en apps toevoegen of verwijderen of beheerinstellingen bijwerken. Na 11 mei stoppen we nieuwe inschrijvingen en verwijderen we uiteindelijk Windows 10 Mobile-beheer uit de Intune-gebruikersinterface. Apparaten checken niet langer in bij de Intune-service en we verwijderen apparaat- en beleidsgegevens.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
+Controleer uw Intune-rapporten om na te gaan voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar **Apparaten** > **Alle apparaten** en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met Windows 10 Mobile gebruikt. Vraag uw eindgebruikers hun apparaten te vernieuwen of stop het gebruik van deze apparaten voor zakelijke toegang.
+
+
 
 ### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>Geplande wijziging: Gewijzigde ervaring bij het inschrijven van toegewezen Android Enterprise-apparaten in Intune<!--6114580-->
 Bij de release van november kondigde we aan dat we ondersteuning toe gingen voegen voor de implementatie van SCEP-apparaatcertificaten aan toegewezen Android Enterprise-apparaten, om op certificaten gebaseerde toegang tot Wi-Fi-profielen mogelijk te maken. Voor deze wijziging waren enkele kleine wijzigingen nodig in de inschrijvingsstroom voor toegewezen Android Enterprise-apparaten. In de aanstaande service-update van maart (oftewel build 2003) zitten enkele aanvullende wijzigingen waar we u op willen wijzen.
@@ -44,16 +55,6 @@ Breng uw eindgebruikers en helpdesk op de hoogte van deze wijziging. U kunt de [
 
 #### <a name="additional-information"></a>Aanvullende informatie
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
-
-
-### <a name="end-support-for-windows-phone-81--3544909--"></a>Ondersteuning voor Windows Phone 8.1 beëindigd<!--3544909-->
-In juli 2017 is de reguliere ondersteuning van Microsoft voor Windows Phone 8.1 beëindigd en in juni 2019 de uitgebreide ondersteuning. De Bedrijfsportal-app voor Windows Phone 8.1 bevindt zich sinds oktober 2017 in de continuïteitsmodus. Microsoft Intune beëindigt nu op 20 februari 2020 de ondersteuning voor Windows Phone 8.1.
-
-#### <a name="how-does-this-affect-me"></a>Wat betekent dit voor mij?
-Na 20 februari 2020 ontvangen deze apparaten geen beveiligingsupdates meer en kunt u geen nieuwe apparaten meer inschrijven. Bestaande Windows Phone 8.1-apparaten blijven ingeschreven (beleid, apps en rapportage). Na de genoemde datum wordt probleemoplossing voor bestaande inschrijvingen echter niet meer ondersteund, aangezien veel onderdelen, zoals certificaten van derden, de ondersteuning voor het platform al eerder hebben beëindigd. Intune beëindigt het testen van de compatibiliteit met Intune en Windows Phone 8.1.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wat moet ik doen om me voor te bereiden op deze wijziging?
-Controleer uw Intune-rapporten om na te gaan voor welke apparaten of gebruikers dit gevolgen kan hebben. Ga naar Apparaten > Alle apparaten en filter op besturingssysteem. U kunt extra kolommen toevoegen, zodat u eenvoudiger kunt vaststellen wie in uw organisatie apparaten met Windows Phone 8.1 gebruikt. Vraag uw eindgebruikers om hun apparaten te upgraden naar een ondersteunde besturingssysteemversie.
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Onderneem actie: Gebruik Microsoft Edge als uw beveiligde Intune-browser<!--5728447-->
