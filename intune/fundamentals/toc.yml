@@ -39,6 +39,8 @@
   items:
     - name: Wat is Intune for Education?
       href: introduction-intune-education.md
+    - name: Wat is Intune for US Government?
+      href: introduction-intune-government.md
     - name: Architectuur op hoog niveau
       href: high-level-architecture.md
     - name: Levenscyclus van apparaten

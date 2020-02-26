@@ -113,3 +113,5 @@
           href: troubleshoot-ios-enrollment-errors.md
         - name: Problemen met Windows-apparaten inschrijven oplossen
           href: troubleshoot-windows-enrollment-errors.md
+        - name: Problemen met Android-apparaten inschrijven oplossen
+          href: troubleshoot-android-enrollment.md
