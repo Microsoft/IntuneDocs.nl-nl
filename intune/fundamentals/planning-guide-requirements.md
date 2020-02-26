@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505137"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514928"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Vereisten voor gebruiksscenario's bepalen
 
@@ -37,11 +37,11 @@ Hier volgen enkele voorbeelden van gebruikssituatievereisten van een organisatie
 
 | **Use cases** | **Subgebruikssituaties** | **Groepen** | **Apparaatplatformen** | **Vereisten** |
 |:---:|:---:|:---:|:---:|:---:|
-| Bedrijf | Informatiemedewerker | HR, Financiën | iOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |                                                          
-| Bedrijf | Leidinggevenden | HR, Financiën | iOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |                                                         
+| Bedrijf | Informatiemedewerker | HR, Financiën | iOS/iPadOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |                                                          
+| Bedrijf | Leidinggevenden | HR, Financiën | iOS/iPadOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |                                                         
 | Bedrijf | Kiosk | Retail | Android | Apparaatinstellingen, profielen, apps |
-| BYOD | Informatiemedewerker | Marketing, Verkoop | iOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |                                                         
-| BYOD | Leidinggevenden | Marketing, Verkoop | iOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |
+| BYOD | Informatiemedewerker | Marketing, Verkoop | iOS/iPadOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |                                                         
+| BYOD | Leidinggevenden | Marketing, Verkoop | iOS/iPadOS | Beveiligde e-mail, apparaatinstellingen, profielen, apps |
 
 U kunt [een sjabloon van de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de gebruikssituatievereisten en subgebruikssituatievereisten van uw organisatie in te voeren.
 

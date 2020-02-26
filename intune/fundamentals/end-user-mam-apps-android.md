@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a7aa439fcf60173cac71f0fc71ebac481660c785
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414048"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514690"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid
 
@@ -81,4 +81,4 @@ De volgende bestandstypen worden ondersteund:
 |Pfile is een algemene 'wrapper'-indeling voor beveiligde bestanden waarmee de versleutelde inhoud en de Azure Information Protection-licenties worden ingekapseld. Deze indeling kan worden gebruikt voor het beveiligen van elk bestandstype.|
 
 ## <a name="next-steps"></a>Volgende stappen
-[Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](end-user-mam-apps-ios.md)
+[Wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd door een app-beveiligingsbeleid](end-user-mam-apps-ios.md)
