@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540976"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511648"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problemen met app-installatie oplossen
 
@@ -50,7 +50,7 @@ Intune biedt details van app-probleemoplossing op basis van de geïnstalleerde a
     > Dezelfde app kan worden toegewezen aan meerdere groepen, maar met verschillende beoogde acties (intenties) voor de app. Een opgeloste intentie voor een app wordt bijvoorbeeld weergegeven als **uitgesloten** als de app voor een gebruiker is uitgesloten tijdens de app-toewijzing. Raadpleeg [Hoe conflicten tussen app-intenties worden opgelost](apps-deploy.md#how-conflicts-between-app-intents-are-resolved) voor meer informatie.<br><br>
     > Als er een installatiefout bij een vereiste app optreedt, kunt u noch uw helpdesk het apparaat synchroniseren en opnieuw proberen de app te installeren.
 
-De details van de app-installatieproblemen geven het probleem aan. U kunt deze details gebruiken om de beste actie vast te stellen waarmee het probleem wordt opgelost. Zie [Installatiefouten voor Android-apps](app-install-error-codes.md#android-app-installation-errors) en [Installatiefouten voor iOS-apps](app-install-error-codes.md#ios-app-installation-errors) voor meer informatie over het oplossen van problemen met appinstallatie.
+De details van de app-installatieproblemen geven het probleem aan. U kunt deze details gebruiken om de beste actie vast te stellen waarmee het probleem wordt opgelost. Zie [Installatiefouten voor Android-apps](app-install-error-codes.md#android-app-installation-errors) en [Installatiefouten voor iOS-apps](app-install-error-codes.md#ios-and-ipados-app-installation-errors) voor meer informatie over het oplossen van problemen met appinstallatie.
 
 > [!Note]  
 > U kunt het deelvenster **Probleemoplossing** ook openen door in uw browser naar het volgende adres te gaan: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -65,7 +65,7 @@ U kunt een van de volgende acties uitvoeren als u problemen hebt met het install
   3. Navigeer naar [Azure Active Directory-gebruikers](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Selecteer de betrokken gebruiker en klik op **Apparaten**.
   5. Verwijder alle verouderde records die niet meer nodig zijn als de gebruiker de ingestelde limiet overschrijdt.
-- Controleer voor iOS DEP-apparaten of de gebruiker in het deelvenster Overzicht van Intune-apparaten wordt vermeld als **Geregistreerd door gebruiker**. Implementeer een configuratiebeleid voor de Intune-bedrijfsportal als er n.v.t. wordt weergegeven. Zie [De bedrijfsportal-app configureren](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices) voor meer informatie.
+- Controleer voor iOS/iPadOS DEP-apparaten of de gebruiker in het deelvenster Overzicht van Intune-apparaten wordt vermeld als **Geregistreerd door gebruiker**. Implementeer een configuratiebeleid voor de Intune-bedrijfsportal als er n.v.t. wordt weergegeven. Zie [De bedrijfsportal-app configureren](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices) voor meer informatie.
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problemen met de installatie van Win32-app oplossen
 

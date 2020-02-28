@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a479bfa7b6a572ab2191fb651ce04145d8508c4b
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 8aa9fa9462b6278da566a3ff54264540144a38de
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206989"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512259"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Wi-Fi-instellingen voor macOS-apparaten in Microsoft Intune toevoegen
-
-
 
 U kunt een profiel maken met specifieke Wi-Fi-instellingen en dit profiel vervolgens implementeren op uw macOS-apparaten. Microsoft Intune biedt veel functies, waaronder het verifiëren bij het netwerk, het toevoegen van een PKS- of SCEP-certificaat en meer.
 
@@ -38,7 +36,7 @@ In dit artikel worden deze instellingen beschreven.
 [Maak een apparaatprofiel](device-profile-create.md).
 
 > [!NOTE]
-> Deze instellingen zijn beschikbaar voor alle inschrijvings typen. Zie voor meer informatie over de inschrijvings typen [macOS-inschrijving](../enrollment/macos-enroll.md).
+> Deze instellingen zijn beschikbaar voor alle inschrijvingstypen. Zie [macOS-inschrijving](../enrollment/macos-enroll.md) voor meer informatie over de inschrijvingstypen.
 
 ## <a name="basic-profiles"></a>Basic-profielen
 
@@ -122,4 +120,4 @@ In dit artikel worden deze instellingen beschreven.
 
 Het profiel is gemaakt, maar er gebeurt niets. Vervolgens moet u [dit profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-Wi-Fi-instellingen configureren op [Android](wi-fi-settings-android.md)-, [Android Enter prise](wi-fi-settings-android-enterprise.md)-, [IOS](wi-fi-settings-ios.md)-en [Windows 10](wi-fi-settings-windows.md) -apparaten.
+Configureer Wi-Fi-instellingen op apparaten met [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [iOS/iPadOS](wi-fi-settings-ios.md) en [Windows 10](wi-fi-settings-windows.md).

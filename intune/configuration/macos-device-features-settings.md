@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,36 +16,36 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: df5b53be159fd082090e61fd736e4c9329644c85
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206343"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512735"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor macOS in Intune
 
-Intune bevat een aantal ingebouwde instellingen om functies op uw macOS-apparaten aan te passen. Zo kunnen beheerders printer printers toevoegen, kiezen hoe gebruikers zich aanmelden, de energiebeheer functies configureren, eenmalige aanmelding en meer gebruiken.
+Intune bevat een aantal ingebouwde instellingen om functies op uw macOS-apparaten aan te passen. Zo kunnen beheerders onder meer AirPrint-printers toevoegen, kiezen hoe gebruikers zich aanmelden, de energiebeheerfuncties configureren, verificatie voor eenmalige aanmelding gebruiken.
 
 Gebruik deze functies om macOS-apparaten te beheren als onderdeel van uw Mobile Device Management-oplossing (MDM).
 
-Dit artikel beschrijft deze instellingen en wat elke instelling doet. Het beschrijft tevens de stappen voor het ophalen van het IP-adres, het pad en de poort van AirPrint-printers via de Terminal-app (emulator). Ga voor meer informatie over de functies van het apparaat naar [instellingen voor Ios-of macOS-apparaten toevoegen](device-features-configure.md).
+Dit artikel beschrijft deze instellingen en wat elke instelling doet. Het beschrijft tevens de stappen voor het ophalen van het IP-adres, het pad en de poort van AirPrint-printers via de Terminal-app (emulator). Ga voor meer informatie over de functies van het apparaat naar [Instellingen voor iOS-/iPadOS- of macOS-apparaatfuncties toevoegen](device-features-configure.md).
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
 [Maak een macOS-apparaatconfiguratieprofiel](device-features-configure.md).
 
 > [!NOTE]
-> Deze instellingen zijn van toepassing op verschillende inschrijvings typen, waarbij sommige instellingen van toepassing zijn op alle inschrijvings opties. Zie voor meer informatie over de verschillende inschrijvings typen [macOS-inschrijving](../enrollment/macos-enroll.md).
+> Deze instellingen zijn van toepassing op verschillende inschrijvingstypen, waarbij sommige instellingen van toepassing zijn op alle inschrijvingsopties. Zie [macOS-inschrijving](../enrollment/macos-enroll.md) voor meer informatie over de verschillende inschrijvingstypen.
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Instellingen zijn van toepassing op: registratie van apparaten en automatische apparaatregistratie 
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving en geautomatiseerde apparaatinschrijving 
 
 - **IP-adres**: voer het IPv4- of IPv6-adres van de printer in. Als u hostnamen gebruikt om printers te identificeren, haalt u het IP-adres op door de printer in de Terminal-app te pingen. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
 - **Pad**: Voer het pad van de printer in. Het pad is doorgaans `ipp/print` voor printers in uw netwerk. In [Haal het IP-adres en het pad op](#get-the-ip-address-and-path) (in dit artikel) vindt u meer informatie.
-- **Poort** (iOS 11.0 en hoger): Voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort.
-- **TLS** (iOS 11.0 en hoger): Selecteer **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS).
+- **Poort** (iOS 11.0+, iPadOS 13.0+): Voer de luisterpoort van de AirPrint-bestemming in. Als u deze eigenschap leeg laat, maakt AirPrint gebruik van de standaardpoort.
+- **TLS** (iOS 11.0+, iPadOS 13.0+): Selecteer **Inschakelen** voor het beveiligen van AirPrint-verbindingen met Transport Layer Security (TLS).
 
 - **Voeg** de AirPrint-server toe. U kunt veel AirPrint-servers toevoegen.
 
@@ -68,22 +68,22 @@ Om AirPrinter-servers toe te voegen, hebt u het IP-adres van de printer, het bro
 
 ## <a name="login-items"></a>Aanmeldingsitems
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
-- **Bestanden, mappen en aangepaste apps**: Voeg het pad **toe** van een bestand, map, aangepaste app of systeem-app die u wilt openen wanneer een gebruiker zich aanmeldt bij het apparaat. Systeem-apps of apps die zijn gebouwd of aangepast voor uw organisatie, bevinden zich doorgaans in de map `Applications`, met een pad dat vergelijkbaar is met `/Applications/AppName.app`. 
+- **Bestanden, mappen en aangepaste apps**: **voeg het pad toe** van een bestand, map, aangepaste app of systeem-app die u wilt openen wanneer een gebruiker zich aanmeldt bij het apparaat. Systeem-apps of apps die zijn gebouwd of aangepast voor uw organisatie, bevinden zich doorgaans in de map `Applications` en hebben een pad dat er als volgt uitziet: `/Applications/AppName.app`. 
 
-  U kunt veel bestanden, mappen en apps toevoegen. Voer bijvoorbeeld het volgende in:  
+  U kunt een groot aantal bestanden, mappen en apps toevoegen. Voer bijvoorbeeld het volgende in:  
   
   - `/Applications/Calculator.app`
   - `/Applications`
   - `/Applications/Microsoft Office/root/Office16/winword.exe`
   - `/Users/UserName/music/itunes.app`
   
-  Zorg ervoor dat u het juiste pad opgeeft bij het toevoegen van een app, map of bestand. Niet alle items bevinden zich in de map `Applications`. Als een gebruiker een item verplaatst van de ene locatie naar een andere, verandert het pad. Dit verplaatste item wordt niet geopend wanneer de gebruiker zich aanmeldt.
+  Let erop dat u het juiste pad opgeeft bij het toevoegen van een app, map of bestand. Niet alle items bevinden zich in de map `Applications`. Als een gebruiker een item naar een andere locatie verplaatst, verandert het pad. Dit verplaatste item wordt niet geopend wanneer de gebruiker zich aanmeldt.
 
 ## <a name="login-window"></a>Aanmeldingsvenster
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Instellingen zijn van toepassing op: registratie van apparaten en automatische apparaatregistratie
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Deze instellingen zijn van toepassing op: Apparaatinschrijving en geautomatiseerde apparaatinschrijving
 
 #### <a name="window-layout"></a>Vensterindeling
 
@@ -125,117 +125,117 @@ Deze functie is van toepassing op:
 
 - macOS 10.15 of hoger
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen 
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen 
 
-- **Extensie type voor SSO-app**: Kies het type referentie-SSO-app-extensie. Uw opties zijn:
+- **Type app-extensie voor SSO**: kies Referentie als het type app-extensie voor SSO. Uw opties zijn:
 
-  - **Niet geconfigureerd**: app-extensies worden niet gebruikt. Als u een app-extensie wilt uitschakelen, schakelt u het extensie type voor SSO-apps in op **niet geconfigureerd**.
-  - **Omleiden**: gebruik een algemene, aanpas bare omleidings-app-extensie om eenmalige aanmelding uit te voeren met moderne verificatie stromen. Zorg ervoor dat u de extensie en de team-ID voor de app-extensie van uw organisatie kent.
-  - **Referentie**: gebruik een algemene, aanpas bare referentie-app-extensie voor het uitvoeren van SSO met verificatie stromen met vraag en antwoord. Zorg ervoor dat u de extensie-ID en de team-ID voor de SSO-app-extensie van uw organisatie kent.  
-  - **Kerberos**: gebruik de ingebouwde Kerberos-uitbrei ding van Apple, die is opgenomen in macOS Catalina 10,15 en hoger. Deze optie is een Kerberos-specifieke versie van de extensie voor **referentie** -apps.
+  - **Niet geconfigureerd**: app-extensies worden niet gebruikt. Als u een app-extensie wilt uitschakelen, stelt u het type app-extensie voor SSO in op **Niet geconfigureerd**.
+  - **Omleiding**: gebruik een algemene, aanpasbare app-extensie Omleiding om eenmalige aanmelding uit te voeren met moderne verificatiestromen. Zorg ervoor dat u de extensie- en team-id van de app-extensie van uw organisatie kent.
+  - **Referentie**: gebruik een algemene, aanpasbare app-extensie Referentie voor het uitvoeren van eenmalige aanmelding met uitdaging-en-reactie-verificatiestromen. Zorg ervoor dat u de extensie-id en de team-id van de app-extensie van uw organisatie kent.  
+  - **Kerberos**: gebruik de ingebouwde Kerberos-extensie van Apple, die is opgenomen in macOS Catalina 10.15 en hoger. Deze optie is een Kerberos-versie van de app-extensie **Referentie**.
 
   > [!TIP]
-  > Met de **omleidings** -en **referentie** typen kunt u uw eigen configuratie waarden toevoegen om de extensie door te geven. Als u **referentie**gebruikt, kunt u overwegen de ingebouwde configuratie-instellingen van Apple in het type **Kerberos** te gebruiken.
+  > Met de typen **Omleiding** en **Referentie** voegt u uw eigen configuratiewaarden toe om door te geven aan de extensie. Als u het type **Referentie** gebruikt, kunt u overwegen om de ingebouwde configuratie-instellingen te gebruiken die Apple heeft opgenomen in het type **Kerberos**.
 
-- **Extensie-id** (omleiding en referentie): Geef de bundel-id op waarmee uw SSO-app-extensie wordt geïdentificeerd, zoals `com.apple.ssoexample`.
-- **Team-ID** (omleiding en referentie): Voer de team-ID van de extensie van uw SSO-app in. Een team-ID is een alfanumerieke teken reeks van 10 tekens (cijfers en letters) die wordt gegenereerd door Apple, zoals `ABCDE12345`. 
+- **Extensie-id** (Omleiding en Referentie): voer de bundel-id in waarmee de app-extensie voor SSO wordt geïdentificeerd, zoals `com.apple.ssoexample`.
+- **Team-id** (Omleiding en Referentie): voer de team-id in van uw app-extensie voor SSO. Een team-id is een alfanumerieke tekenreeks van 10 tekens (cijfers en letters) die wordt gegenereerd met Apple, zoals `ABCDE12345`. 
 
-  [Zoek uw team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Open de website van Apple) voor meer informatie.
+  [Zoek uw team-id](https://help.apple.com/developer-account/#/dev55c3c710c): (opent de website van Apple) biedt meer informatie.
 
-- **Realm** (referentie en Kerberos): Voer de naam van uw verificatie-realm in. De realm-naam moet worden gekapitaliseerd, zoals `CONTOSO.COM`. Normaal gesp roken is uw realm-naam hetzelfde als de DNS-domein naam, maar in alle hoofd letters.
+- **Realm** (Referentie en Kerberos): voer de naam van uw verificatierealm in. De realmnaam moet in hoofdletters zijn, zoals `CONTOSO.COM`. Uw realmnaam is meestal gelijk aan uw DNS-domeinnaam, maar dan met alleen hoofdletters.
 
-- **Domeinen** (referentie en Kerberos): Voer de domein-of hostnamen in van de sites die kunnen worden geverifieerd via SSO. Als uw website bijvoorbeeld is `mysite.contoso.com`, is `mysite` de hostnaam en is `contoso.com` de domein naam. Wanneer gebruikers verbinding maken met een van deze sites, wordt de verificatie vraag door de app-extensie afgehandeld. Met deze verificatie kunnen gebruikers gezichts-ID, aanraak-ID of Apple pincode/wachtwoord code gebruiken om zich aan te melden.
+- **Domeinen** (Referentie en Kerberos): voer de domein- of hostnamen in van de sites die kunnen worden geverifieerd via SSO. Als bijvoorbeeld `mysite.contoso.com` uw website is, is `mysite` de hostnaam en is `contoso.com` de domeinnaam. Wanneer gebruikers verbinding maken met een van deze sites, wordt de verificatie-uitdaging afgehandeld via de app-extensie. Met deze verificatie kunnen gebruikers Face ID, Touch ID of de pincode/wachtwoordcode van Apple gebruiken om zich aan te melden.
 
-  - Alle domeinen in uw app-extensie voor eenmalige aanmelding moeten uniek zijn. U kunt een domein niet herhalen in een extensie profiel voor het aanmelden bij de app, zelfs niet als u verschillende typen SSO-app-extensies gebruikt.
-  - Deze domeinen zijn niet hoofdletter gevoelig.
+  - Alle domeinen in uw app-extensie voor eenmalige aanmelding bij Intune-profielen moeten uniek zijn. U kunt een domein niet herhalen in een app-extensieprofiel voor eenmalige aanmelding, zelfs niet als u verschillende typen app-extensie voor SSO gebruikt.
+  - Deze domeinen zijn niet hoofdlettergevoelig.
 
-- **Url's** (alleen omleiden): Voer de URL-voor voegsels in van uw id-providers waarbij de omleidings-app-extensie SSO uitvoert. Wanneer een gebruiker wordt omgeleid naar deze Url's, wordt de SSO-app-extensie voorbestuurd en wordt de vraag SSO door gegeven.
+- **URL's** (alleen Omleiding): voer de URL-voorvoegsels van uw id-providers in namens wie SSO wordt uitgevoerd met de app-extensie Omleiding. Wanneer een gebruiker wordt omgeleid naar deze URL's, grijpt de app-extensie voor SSO in en wordt er om SSO gevraagd.
 
-  - Alle Url's in uw intune-app-extensie profielen voor eenmalige aanmelding moeten uniek zijn. U kunt een domein niet herhalen in een extensie profiel voor SSO-apps, zelfs niet als u verschillende typen SSO-app-extensies gebruikt.
-  - De Url's moeten beginnen met http://of https://.
+  - Alle URL's in uw app-extensie voor SSO bij Intune-profielen moeten uniek zijn. U kunt een domein niet herhalen in een app-extensieprofiel voor SSO, zelfs niet als u verschillende typen app-extensie voor SSO gebruikt.
+  - De URL's moeten beginnen met http:// of https://.
 
-- **Aanvullende configuratie** (omleiding en referentie): voer aanvullende extensie-specifieke gegevens in die moeten worden door gegeven aan de SSO-appuitbreiding:
-  - **Sleutel**: Voer de naam in van het item dat u wilt toevoegen, zoals `user name`.
-  - **Type**: Voer het type gegevens in. Uw opties zijn:
+- **Aanvullende configuratie** (Omleiding en Referentie): voer aanvullende extensiegegevens in die moeten worden doorgegeven aan de app-extensie voor SSO:
+  - **Sleutel**: voer de naam in van het item dat u wilt toevoegen, zoals `user name`.
+  - **Type**: voer het gegevenstype in. Uw opties zijn:
 
     - Tekenreeks
-    - Boolean: Voer `True` of `False`in bij **configuratie waarde**.
-    - Geheel getal: Voer een getal in bij **configuratie waarde**.
+    - Booleaans: voer `True` of `False` in bij **Configuratiewaarde**.
+    - Geheel getal: voer een getal in bij **Configuratiewaarde**.
     
-  - **Waarde**: Voer de gegevens in.
+  - **Waarde**: voer de gegevens in.
   
-  - **Toevoegen**: Selecteer deze optie om uw configuratie sleutels toe te voegen.
+  - **Toevoegen**: selecteer deze optie om uw configuratiesleutels toe te voegen.
 
-- **Gebruik van sleutel hanger** (alleen Kerberos): Kies **blok** om te voor komen dat wacht woorden worden opgeslagen en opgeslagen in de sleutel hanger. **Niet geconfigureerd** (standaard) Hiermee staat u toe dat wacht woorden worden opgeslagen en opgeslagen in de sleutel hanger.  
-- **Gezichts-id, aanraak-id of wachtwoord code** (alleen Kerberos): **vereisen dat** gebruikers hun gezichts-ID, aanraak-id of Apple-wachtwoord code invoeren om zich aan te melden bij de domeinen die u hebt toegevoegd. **Niet geconfigureerd** (standaard) gebruikers hoeven geen biometrie of wachtwoord code te gebruiken om zich aan te melden.
-- **Standaard-realm** (alleen Kerberos): Kies **inschakelen** om de **realm** -waarde in te stellen die u hebt ingevoerd als de standaard-realm. **Niet geconfigureerd** (standaard) heeft geen standaard-realm ingesteld.
+- **Gebruik van sleutelhanger** (alleen Kerberos): kies **Blokkeren** om te voorkomen dat wachtwoorden worden opgeslagen in de sleutelhanger. **Niet geconfigureerd** (standaard): staat toe dat wachtwoorden worden opgeslagen in de sleutelhanger.  
+- **Face ID, Touch ID of wachtwoordcode** (alleen Kerberos): **Vereisen** dwingt gebruikers om hun Face ID, Touch ID, of Apple-wachtwoordcode in te voeren om zich aan te melden bij de door u toegevoegde domeinen. **Niet geconfigureerd** (standaard): gebruikers hoeven geen biometrie of wachtwoordcode te gebruiken om zich aan te melden.
+- **Standaardrealm** (alleen Kerberos): Kies **Inschakelen** om de waarde voor **Realm** in te stellen die u hebt ingevoerd als de standaardrealm. **Niet geconfigureerd** (standaard): er wordt geen standaardrealm ingesteld.
 
   > [!TIP]
-  > - **Schakel** deze instelling in als u meerdere Kerberos SSO-app-extensies in uw organisatie wilt configureren.
-  > - **Schakel** deze instelling in als u meerdere realms gebruikt. Hiermee stelt u de **realm** -waarde in die u hebt ingevoerd als de standaard-realm.
-  > - Als u slechts één realm hebt, laat u deze **niet geconfigureerd** (standaard).
+  > - U moet deze instelling **inschakelen** als u meerdere app-extensies voor SSO bij Kerberos configureert in uw organisatie.
+  > - U kunt deze instelling **inschakelen** als u meerdere realms gebruikt. Hiermee stelt u de waarde voor **Realm** in die u hebt ingevoerd als de standaardrealm.
+  > - Als u slechts één realm hebt, laat u deze ingesteld op **Niet geconfigureerd** (standaard).
 
-- **Autodis cover** (alleen Kerberos): als u deze instelt op **blok keren**, gebruikt de Kerberos-extensie niet automatisch LDAP en DNS om de Active Directory site naam te bepalen. **Niet geconfigureerd** (standaard) Hiermee staat u toe dat de extensie de Active Directory site naam automatisch kan vinden.
-- **Wachtwoord wijzigingen** (alleen Kerberos): de **blok kering** voor komt dat gebruikers de wacht woorden wijzigen die ze gebruiken om zich aan te melden bij de domeinen die u hebt ingevoerd. **Niet geconfigureerd** (standaard) Hiermee kunnen wacht woorden worden gewijzigd.  
-- **Wachtwoord synchronisatie** (alleen Kerberos): Kies **inschakelen** om de lokale wacht woorden van uw gebruikers te synchroniseren met Azure AD. **Niet geconfigureerd** (standaard) Hiermee schakelt u wachtwoord synchronisatie met Azure AD uit. Gebruik deze instelling als alternatief of als back-up naar SSO. Deze instelling werkt niet als gebruikers zijn aangemeld met een Apple Mobile-account.
-- **Wachtwoord complexiteit van Windows Server Active Directory** (alleen Kerberos): Kies **vereisen** dat wacht woorden van gebruikers geforceerd voldoen aan de vereisten voor wachtwoord complexiteit van Active Directory. Zie [wacht woord moet voldoen aan complexiteits vereisten](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements) voor meer informatie. **Niet geconfigureerd** (standaard) vereist dat gebruikers niet voldoen aan de vereisten van Active Directory-wacht woord.
-- **Minimale wachtwoord lengte** (alleen Kerberos): Geef het minimum aantal tekens op waaruit het wacht woord van een gebruiker kan bestaan. **Niet geconfigureerd** (standaard) dwingt geen minimale wachtwoord lengte af voor de gebruikers.
-- **Limiet voor het opnieuw gebruiken van wacht woorden** (alleen Kerberos): Voer het aantal nieuwe wacht woorden in, van 1-24, dat moet worden gebruikt totdat een vorig wacht woord opnieuw kan worden gebruikt in het domein. **Niet geconfigureerd** (standaard) dwingt de limiet voor het opnieuw instellen van wacht woorden niet af.
-- **Minimale wachtwoord duur** (alleen Kerberos): Geef het aantal dagen op dat een wacht woord moet worden gebruikt voor het domein voordat een gebruiker het kan wijzigen. **Niet geconfigureerd** (standaard) dwingt geen minimale leeftijd van wacht woorden af voordat deze kunnen worden gewijzigd.
-- **Melding over verlopen van wacht woord** (alleen Kerberos): Voer het aantal dagen in waarna een wacht woord verloopt dat gebruikers op de hoogte worden gesteld dat hun wacht woord verloopt. **Niet geconfigureerd** (standaard) gebruikt `15` dagen.
-- **Wachtwoordverlooptijd** (alleen Kerberos): Geef op na hoeveel dagen het wachtwoord voor het apparaat moet worden gewijzigd. **Niet geconfigureerd** (standaard) betekent dat gebruikers wachtwoorden nooit verlopen.
-- **URL voor wachtwoord wijziging** (alleen Kerberos): Voer de URL in die wordt gestart wanneer de gebruiker een Kerberos-wachtwoord wijziging initieert.
-- **Principal-naam** (alleen Kerberos): Voer de gebruikers naam van de Kerberos-principal in. U hoeft de realm-naam niet op te vermelden. In `user@contoso.com`is `user` bijvoorbeeld de principal-naam en `contoso.com` de realm-naam.
+- **Automatisch opsporen** (alleen Kerberos): als u hier **Blokkeren** instelt, maakt de Kerberos-extensie niet automatisch gebruik van LDAP en DNS om de Active Directory-sitenaam te bepalen. **Niet geconfigureerd** (standaard): staat toe dat de extensie de Active Directory-sitenaam automatisch kan vinden.
+- **Wachtwoordwijzigingen** (alleen Kerberos): kies **Blokkeren** als u wilt voorkomen dat gebruikers de wachtwoorden kunnen wijzigen waarmee ze zich aanmelden bij de door u ingevoerde domeinen. **Niet geconfigureerd** (standaard): staat toe dat wachtwoorden worden gewijzigd.  
+- **Wachtwoordsynchronisatie** (alleen Kerberos): kies **Inschakelen** om de lokale wachtwoorden van uw gebruikers te synchroniseren met Azure AD. **Niet geconfigureerd** (standaard): schakelt wachtwoordsynchronisatie met Azure AD uit. Gebruik deze instelling als alternatief of als back-up voor SSO. Deze instelling werkt niet als gebruikers zijn aangemeld met een mobiel Apple-account.
+- **Active Directory-wachtwoordcomplexiteit van Windows Server** (alleen Kerberos): kies **Vereisen** om gebruikerswachtwoorden af te dwingen die voldoen aan de vereisten voor wachtwoordcomplexiteit van Active Directory. Zie [Wachtwoorden moeten voldoen aan complexiteitsvereisten](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements) voor meer informatie. **Niet geconfigureerd** (standaard): gebruikers hoeven niet te voldoen aan de wachtwoordvereisten van Active Directory.
+- **Minimale wachtwoordlengte** (alleen Kerberos): voer het minimale aantal tekens op waaruit het wachtwoord van een gebruiker moet bestaan. **Niet geconfigureerd** (standaard): er wordt geen minimale wachtwoordlengte afgedwongen voor de gebruikers.
+- **Limiet voor opnieuw gebruiken van wachtwoord** (alleen Kerberos): voer het aantal nieuwe wachtwoorden in, van 1 tot 24, dat moet worden gebruikt voordat een eerder gebruikt wachtwoord opnieuw kan worden gebruikt in het domein. **Niet geconfigureerd** (standaard): dwingt geen limiet voor het opnieuw gebruiken van wachtwoorden af.
+- **Minimale wachtwoordduur** (alleen Kerberos): geef het aantal dagen op dat een wachtwoord moet worden gebruikt in het domein voordat een gebruiker het kan wijzigen. **Niet geconfigureerd** (standaard): dwingt geen minimale duur voor wachtwoorden af voordat deze kunnen worden gewijzigd.
+- **Melding voor verlopen van wachtwoorden** (alleen Kerberos): voer het aantal dagen vóór het verlopen van een wachtwoord in dat gebruikers op de hoogte worden gesteld dat hun wachtwoord verloopt. **Niet geconfigureerd** (standaard): `15` dagen.
+- **Wachtwoordverlooptijd** (alleen Kerberos): Geef op na hoeveel dagen het wachtwoord voor het apparaat moet worden gewijzigd. **Niet geconfigureerd** (standaard): dit betekent dat gebruikerswachtwoorden nooit verlopen.
+- **URL voor het wijzigen van het wachtwoord** (alleen Kerberos): voer de URL in die wordt gestart wanneer de gebruiker een Kerberos-wachtwoordwijziging initieert.
+- **Principal-naam** (alleen Kerberos): voer de gebruikersnaam in van de Kerberos-principal. U hoeft de realmnaam niet op te nemen. In `user@contoso.com` is `user` bijvoorbeeld de principal-naam en `contoso.com` de realmnaam.
 
   > [!TIP]
-  > - U kunt ook variabelen gebruiken in de principal-naam door accolades `{{ }}`in te voeren. Voer bijvoorbeeld `Username: {{username}}`in om de gebruikers naam weer te geven. 
-  > - Wees echter voorzichtig met variabele vervanging omdat variabelen niet worden gevalideerd in de gebruikers interface en hoofdletter gevoelig zijn. Zorg ervoor dat u de juiste informatie invoert.
+  > - U kunt ook variabelen gebruiken in de principal-naam door accolades `{{ }}` in te voeren. Voer bijvoorbeeld `Username: {{username}}` in om de gebruikersnaam weer te geven. 
+  > - Wees echter voorzichtig met het vervangen van variabelen, want variabelen worden niet gevalideerd in de UI en zijn hoofdlettergevoelig. Zorg dat u de juiste informatie invoert.
   
-- **Active Directory site code** (alleen Kerberos): Voer de naam in van de Active Directory site die de Kerberos-uitbrei ding moet gebruiken. U hoeft deze waarde mogelijk niet te wijzigen, omdat de Kerberos-extensie de Active Directory site code mogelijk automatisch vindt.
-- **Cache naam** (alleen Kerberos): Voer de naam in van de algemene beveiligings Services (gss) van de Kerberos-cache. U hoeft deze waarde waarschijnlijk niet in te stellen.  
-- **Bericht voor wachtwoord vereisten** (alleen Kerberos): Voer een tekst versie in van de wachtwoord vereisten van uw organisatie die voor gebruikers worden weer gegeven. Het bericht wordt weer gegeven als u geen vereisten voor wachtwoord complexiteit van Active Directory nodig hebt of geen minimale wachtwoord lengte opgeeft.  
-- **App-bundel-id's** (alleen Kerberos): Voeg de app-bundel-id's **toe** die gebruikmaken van eenmalige aanmelding op uw apparaten. Aan deze apps wordt toegang verleend tot de Kerberos ticket granting ticket, het verificatie ticket en de verificatie van gebruikers voor de services waartoe ze toegang hebben.
-- **Domein realm-toewijzing** (alleen Kerberos): Voeg de DNS-achtervoegsels van het domein **toe** die moeten worden toegewezen aan uw realm. Gebruik deze instelling als de DNS-namen van de hosts niet overeenkomen met de realm-naam. U hoeft deze aangepaste domein-naar-realm-toewijzing waarschijnlijk niet te maken.
-- **Pkinit-certificaat** (alleen Kerberos): **Selecteer** de open bare sleutel crypto grafie voor het certificaat voor initiële verificatie (PKINIT) dat kan worden gebruikt voor Kerberos-verificatie. U kunt kiezen uit een [PKCS](../protect/certficates-pfx-configure.md) -of [SCEP](../protect/certificates-scep-configure.md) -certificaat dat u in intune hebt toegevoegd. Zie [certificaten voor verificatie gebruiken in Microsoft intune](../protect/certificates-configure.md)voor meer informatie over certificaten.
+- **Active Directory-sitecode** (alleen Kerberos): voer de naam in van de Active Directory-site die door de Kerberos-extensie moet worden gebruikt. Waarschijnlijk hoeft u deze waarde niet te wijzigen, omdat de Kerberos-extensie de Active Directory-sitecode mogelijk automatisch kan vinden.
+- **Cachenaam** (alleen Kerberos): voer de naam in van de GSS (generieke beveiligingsservices) van de Kerberos-cache. Waarschijnlijk hoeft u deze waarde niet in te stellen.  
+- **Bericht voor wachtwoordvereisten** (alleen Kerberos): voer een tekstversie in van de wachtwoordvereisten van uw organisatie die voor gebruikers worden weergegeven. Het bericht wordt weergegeven als u geen vereisten voor wachtwoordcomplexiteit van Active Directory nodig hebt of geen minimale wachtwoordlengte opgeeft.  
+- **App-bundel-id's** (alleen Kerberos): u kunt de app-bundel-id's **toevoegen** die moeten gebruikmaken van eenmalige aanmelding op uw apparaten. Aan deze apps wordt toegang verleend tot de Kerberos TGT (Ticket Granting Ticket), het verificatieticket, en met deze apps worden gebruikers geverifieerd bij de services waarvoor ze een toegangsmachtiging hebben.
+- **Toewijzen van domeinrealm** (alleen Kerberos): u kunt de domein-DNS-achtervoegsels **toevoegen** die moeten worden toegewezen aan uw realm. Gebruik deze instelling als de DNS-namen van de hosts niet overeenkomen met de realmnaam. Waarschijnlijk hoeft u deze aangepaste domein-naar-realm-toewijzing niet te maken.
+- **PKINIT-certificaat** (alleen Kerberos): **selecteer** het PIKNIT-certificaat (Public Key Cryptography for Initial Authentication) dat kan worden gebruikt voor Kerberos-verificatie. U kunt kiezen uit een [PKCS](../protect/certficates-pfx-configure.md)- of [SCEP](../protect/certificates-scep-configure.md)-certificaat dat u hebt toegevoegd in Intune. Raadpleeg [Certificaten gebruiken voor verificatie in Microsoft Intune](../protect/certificates-configure.md) voor meer informatie over certificaten.
 
 ## <a name="associated-domains"></a>Gekoppelde domeinen
 
 In Intune kunt u het volgende doen:
 
-- Veel app-to-Domain-koppelingen toevoegen.
+- Een groot aantal app-naar-domein-koppelingen toevoegen.
 - Een groot aantal domeinen koppelen aan dezelfde app.
 
 Deze functie is van toepassing op:
 
 - macOS 10.15 of hoger
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Instellingen zijn van toepassing op: alle inschrijvings typen
+### <a name="settings-apply-to-all-enrollment-types"></a>Deze instellingen zijn van toepassing op: Alle inschrijvingstypen
 
-- **App-ID**: Voer de app-id in van de app die u wilt koppelen aan een website. De app-id bevat de team-ID en een bundel-ID: `TeamID.BundleID`.
+- **App-id**: voer de app-id in van de app die u wilt koppelen aan een website. De app-id bevat de team-id en een bundel-id: `TeamID.BundleID`.
 
-  De team-ID is een alfanumerieke teken reeks van 10 tekens (letters en cijfers) die door Apple wordt gegenereerd voor uw app-ontwikkel aars, zoals `ABCDE12345`. [Zoek uw team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (Open de website van Apple) voor meer informatie.
+  De team-id is een alfanumerieke tekenreeks van 10 tekens (letters en cijfers) die door Apple wordt gegenereerd voor uw app-ontwikkelaars, zoals `ABCDE12345`. [Zoek uw team-id](https://help.apple.com/developer-account/#/dev55c3c710c) : (opent de website van Apple) biedt meer informatie.
 
-  De bundel-ID is een unieke identificatie van de app en wordt doorgaans ingedeeld in omgekeerde domeinnaam notatie. De bundel-ID van Finder is bijvoorbeeld `com.apple.finder`. Gebruik de Apple script in Terminal om de bundel-ID te vinden:
+  De bundel-id is een unieke identificatie van de app en heeft doorgaans de omgekeerde notatie van de domeinnaam. De bundel-id van Finder is bijvoorbeeld `com.apple.finder`. Gebruik het AppleScript in Terminal om de bundel-id te vinden:
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **Domein**: Voer het website domein in dat u aan een app wilt koppelen. Het domein bevat een service type en een volledig gekwalificeerde hostnaam, zoals `webcredentials:www.contoso.com`.
+- **Domein**: voer het websitedomein in dat u aan een app wilt koppelen. Het domein bevat een servicetype en een volledig gekwalificeerde hostnaam, zoals `webcredentials:www.contoso.com`.
 
-  U kunt alle subdomeinen van een gekoppeld domein vergelijken door `*.` (een asterisk-Joker teken en een punt) voor het begin van het domein in te voeren. De periode is vereist. Exacte domeinen hebben een hogere prioriteit dan joker tekens. Patronen van bovenliggende domeinen worden dus vergeleken *als* er geen overeenkomst wordt gevonden in het volledig gekwalificeerde subdomein.
+  U kunt alle subdomeinen van een gekoppeld domein vergelijken door `*.` (een asterisk-jokerteken en een punt) vóór het domein in te voeren. De punt is vereist. Exacte domeinen hebben een hogere prioriteit dan domeinen met een jokerteken. Patronen van bovenliggende domeinen worden vergeleken *als* er geen overeenkomst wordt gevonden in het volledig gekwalificeerde subdomein.
 
-  Het Service type kan zijn:
+  Mogelijke servicetypen zijn:
 
   - **authsrv**: App-extensie voor eenmalige aanmelding
-  - **applink**: Universele koppeling
-  - **Webreferenties**: wacht woord automatisch door voeren
+  - **applink**: universele koppeling
+  - **webcredentials**: automatisch doorvoeren van wachtwoorden
 
-- **Toevoegen**: Selecteer deze optie om uw apps en gekoppelde domeinen toe te voegen.
+- **Toevoegen**: selecteer deze optie om uw apps en gekoppelde domeinen toe te voegen.
 
 > [!TIP]
-> Als u problemen wilt oplossen, opent u **systeem voorkeuren** > **profielen**op uw macOS-apparaat. Bevestig dat het profiel dat u hebt gemaakt, zich in de lijst met apparaatprofielen bevindt. Als dit wordt vermeld, moet u ervoor zorgen dat de configuratie van de **gekoppelde domeinen** zich in het profiel bevindt en dat de juiste app-id en domeinen zijn opgenomen.
+> Als u problemen wilt oplossen, opent u **Systeemvoorkeuren** > **Profielen** op uw macOS-apparaat. Controleer of het profiel dat u hebt gemaakt, voorkomt in de lijst met apparaatprofielen. Zo ja, dan controleert u of de **configuratie voor gekoppelde domeinen** in het profiel voorkomt en de juiste app-id en domeinen bevat.
 
 ## <a name="next-steps"></a>Volgende stappen
 
 [Het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-U kunt ook apparaatfuncties configureren op [IOS](ios-device-features-settings.md).
+U kunt ook apparaatfuncties configureren in [iOS/iPadOS](ios-device-features-settings.md).

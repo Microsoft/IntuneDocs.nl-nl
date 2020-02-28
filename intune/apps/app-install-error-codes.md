@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
-ms.translationtype: MTE75
+ms.openlocfilehash: ef20d378740eae73c41521d8dfc7f8fdd853fdb9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812446"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513894"
 ---
 # <a name="intune-app-installation-error-reference"></a>Naslaginformatie voor installatiefouten voor Intune-apps
 
@@ -51,17 +51,17 @@ In deze sectie worden zowel de inschrijving voor apparaatbeheerders (DA) als via
 | 0xC7D14FB1  | -942583887 | De eindgebruiker heeft de installatie van de app geannuleerd. | De gebruiker heeft de app expliciet verwijderd. Deze fout wordt geretourneerd wanneer de installatie-activiteit van het Android-besturingssysteem wordt geannuleerd door de gebruiker. De gebruiker heeft op de knop Annuleren gedrukt toen de installatieprompt van het besturingssysteem werd weergegeven of heeft de opdrachtprompt weggeklikt. Deze fout wordt alleen voor DA-scenario's geretourneerd. Voor KNOX-scenario's wordt de gebruiker niet gevraagd om te installeren; dit kan op de achtergrond worden gedaan. Intune geeft een melding weer waarop gebruikers kunnen klikken om het opnieuw te proberen. Als de app een beschikbare app is, kan de melding worden gesloten. Als de app vereist is, kan de melding niet worden gesloten. Vraag de gebruiker de installatie niet te annuleren. |
 | 0xC7D14FB9 | -942583879 | De eindgebruiker heeft de installatie van de app geannuleerd. (Bij de prompt voor accepteren) | Instrueer de gebruiker om de door Intune geïmplementeerde app te accepteren en de app te installeren wanneer daarom wordt gevraagd. |
 
-## <a name="ios-app-installation-errors"></a>Installatiefouten voor iOS-apps
+## <a name="ios-and-ipados-app-installation-errors"></a>installatiefouten voor iOS- en iPadOS-apps
 
-De volgende foutberichten en beschrijvingen bieden informatie over iOS-installatiefouten. 
+De volgende foutberichten en beschrijvingen bieden informatie over iOS- en iPadOS-installatiefouten. 
 
 | Foutcode (Hex) | Foutcode (Dec) | Foutbericht/-code | Beschrijving/probleemoplossingstips |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x87D12906 | -2016335610 | Fout bij de Apple MDM-agent: De opdracht voor app-installatie is mislukt zonder opgegeven foutreden. Probeer de app opnieuw te installeren. | Apple MDM-Agent heeft geretourneerd dat de installatieopdracht is mislukt. |
 | 0x87D1313C | -2016333508 | De netwerkverbinding op de client is verbroken of onderbroken. Latere pogingen moeten in een betere netwerkomgeving slagen. | De netwerkverbinding is verbroken terwijl de bijgewerkte URL voor de downloadservice naar het apparaat werd verzonden. Een server met de opgegeven hostnaam kan niet worden gevonden. |
-| 0x87D11388 | -2016341112 | Het iOS-apparaat is momenteel bezet.  | Het iOS-apparaat is bezet, wat leidt tot een fout. Het apparaat is vergrendeld. De gebruiker moet het apparaat ontgrendelen om de app te installeren. |
-| 0x87D13B64 | -2016330908 | De installatie van de app is mislukt.  | Er is een fout opgetreden tijdens de installatie van de app. iOS Console-logboeken zijn nodig om deze fout te kunnen oplossen. |
-| 0x87D13B66 | -2016330906 | De app wordt beheerd, maar is verlopen of is verwijderd door de gebruiker.  | Óf de gebruiker heeft de app expliciet verwijderd, óf de app is verlopen, maar kan niet worden gedownload, óf de app-detectie komt niet overeen met het antwoord van het apparaat.   Deze fout kan ook optreden op basis van een iOS 9.2.2 iOS-platformfout. |
+| 0x87D11388 | -2016341112 | Het iOS-/iPadOS-apparaat is momenteel bezet.  | Het iOS-/iPadOS-apparaat is bezet, wat leidt tot een fout. Het apparaat is vergrendeld. De gebruiker moet het apparaat ontgrendelen om de app te installeren. |
+| 0x87D13B64 | -2016330908 | De installatie van de app is mislukt.  | Er is een fout opgetreden tijdens de installatie van de app. iOS/iPadOS Console-logboeken zijn nodig om deze fout te kunnen oplossen. |
+| 0x87D13B66 | -2016330906 | De app wordt beheerd, maar is verlopen of is verwijderd door de gebruiker.  | Óf de gebruiker heeft de app expliciet verwijderd, óf de app is verlopen, maar kan niet worden gedownload, óf de app-detectie komt niet overeen met het antwoord van het apparaat.   Deze fout kan ook optreden op basis van een iOS/iPadOS 9.2.2-platformfout. |
 | 0x87D13B60 | -2016330912 | Deze app staat ingepland om te worden geïnstalleerd, maar er is een inwisselcode vereist om de transactie te voltooien.  | Deze fout treedt meestal op bij iOS Store-apps wat betaalde apps zijn. |
 | 0x87D1041C | -2016345060 | De toepassing is niet gedetecteerd nadat de installatie was voltooid.  | Het app-detectieproces komt niet overeen met het antwoord van het apparaat. |
 | 0x87D13B62 | -2016330910 | De gebruiker heeft de aanbieding om de app te installeren afgewezen.  | Tijdens de eerste installatie van de app, heeft de gebruiker geklikt op annuleren. Vraag de gebruiker de installatieaanvraag de volgende keer te accepteren. |
@@ -70,7 +70,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over iOS-installat
 | 0x87D13B93 | -2016330861 | Kan de VPP-apps alleen installeren op een gedeelde iPad. | De apps moeten worden verkregen met behulp van Apple Volume Purchase Program om deze te kunnen installeren op een gedeelde iPad. |
 | 0x87D13B94 | -2016330860 | Kan geen apps installeren als de App Store is uitgeschakeld. | De gebruiker kan de app alleen installeren als de App Store is ingeschakeld. |
 | 0x87D13B95 | -2016330859 | Kan geen VPP-licentie voor de app vinden. | Trek de app-licentie in en wijs deze opnieuw toe. |
-| 0x87D13B96 | -2016330858 | Kan geen systeem-apps installeren met uw MDM-provider. | Het installeren van apps die vooraf zijn geïnstalleerd in het iOS-besturingssysteem is een scenario dat niet wordt ondersteund. |
+| 0x87D13B96 | -2016330858 | Kan geen systeem-apps installeren met uw MDM-provider. | Het installeren van apps die vooraf zijn geïnstalleerd in het iOS- of iPadOS-besturingssysteem is een scenario dat niet wordt ondersteund. |
 | 0x87D13B97 | -2016330857 | Kan geen apps installeren op een apparaat dat zich in de modus Apparaat verloren bevindt. | Het gebruik van het apparaat is volledig geblokkeerd in de modus Apparaat verloren. Schakel de modus Apparaat verloren uit om apps te installeren. |
 | 0x87D13B98 | -2016330856 | Kan geen apps installeren op een apparaat dat zich in de kioskmodus bevindt. | Voeg dit apparaat toe aan een exclusieve groep voor configuratiebeleid voor de kioskmodus om apps te installeren. |
 | 0x87D13B9C | -2016330852 | Kan geen 32 bitsapps op dit apparaat installeren. | Het apparaat biedt geen ondersteuning voor het installeren van 32-bits apps. Implementeer de 64 bitsversie van de app. |
@@ -80,7 +80,7 @@ De volgende foutberichten en beschrijvingen bieden informatie over iOS-installat
 | 0x87d13b7e | -2016330882 | De licentietoewijzing is mislukt vanwege de Apple-fout Er zijn geen resterende VPP-licenties  | Dit gedrag is inherent aan het ontwerp. U kunt dit oplossen door extra VPP-licenties aan te schaffen of licenties te claimen bij gebruikers waarop niet meer wordt gericht. |
 | 0x87d13b6e | -2016330898 | Fout 12024 bij de app-installatie: Onbekende oorzaak.  | Apple heeft niet voldoende informatie gegeven om te bepalen waarom de installatie is mislukt.   Er valt niets te rapporteren. |
 | 0x87d13b7f | -2016330881 | Het vereiste beleid voor app-configuratie ontbreekt, controleer of het beleid op dezelfde groepen is gericht.  | Voor de app is app-configuratie vereist, maar er is geen app-configuratie aangewezen. De beheerder moet zorgen dat voor de groepen waarop de app is gericht ook de vereiste app-configuratie op de groepen is gericht. |
-| 0x87d13b69 | -2016330903 | VPP-apparaatlicentie is alleen van toepassing op apparaten met iOS 9.0 of hoger.  | Werk de bewuste iOS-apparaten naar iOS 9.0 of hoger. |
+| 0x87d13b69 | -2016330903 | VPP-apparaatlicentie is alleen van toepassing op apparaten met iOS/iPadOS 9.0 of hoger.  | Werk de betrokken iOS- of iPadOS-apparaten bij naar iOS/iPadOS 9.0 of hoger. |
 | 0x87d13b8f | -2016330865 | De toepassing is geïnstalleerd op het apparaat, maar is niet-beheerd.  | Deze fout treedt alleen op bij Line-Of-Business-apps. De app is buiten Intune geïnstalleerd. U kunt deze fout oplossen door de app van het apparaat te verwijderen. De volgende keer dat de synchronisatie van het apparaat plaatsvindt, wordt de app vanuit Intune op het apparaat geïnstalleerd. |
 | 0x87d13b68 | -2016330904 | App-beheer is geweigerd door de gebruiker  | Vraag de gebruiker om het beheer van apps te accepteren. |
 | 0x87d1279d | -2016335971 | Onbekende fout.  | Deze fout treedt op bij iOS-apps uit de Store, maar het foutscenario is onbekend. |

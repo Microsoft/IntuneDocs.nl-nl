@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 492c90bc1d032b32ebc3a4b8465163085674f245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506919"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511443"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Aangepaste instellingen gebruiken voor macOS-apparaten in Microsoft Intune
 
@@ -32,9 +32,9 @@ Wanneer u macOS-apparaten gebruikt, kunt u op twee manieren aangepaste instellin
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-U kunt met deze hulpprogramma's instellingen exporteren naar een configuratieprofiel. U importeert dit bestand in Intune en wijst het profiel vervolgens toe aan uw macOS-gebruikers en -apparaten. Zodra de instellingen zijn toegewezen, worden deze gedistribueerd. Ze maken ook een basis lijn of standaard voor macOS in uw organisatie.
+U kunt met deze hulpprogramma's instellingen exporteren naar een configuratieprofiel. U importeert dit bestand in Intune en wijst het profiel vervolgens toe aan uw macOS-gebruikers en -apparaten. Zodra het profiel is toegewezen, worden de instellingen gedistribueerd. Ze vormen ook een basislijn of standaard voor macOS in uw organisatie.
 
-In dit artikel vindt u enkele richt lijnen voor het gebruik van Apple Configurator en Apple Profile Manager en een beschrijving van de eigenschappen die u kunt configureren.
+Dit artikel biedt richtlijnen voor het gebruik van Apple Configurator en Apple Profile Manager. Ook worden de eigenschappen beschreven die u kunt configureren.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -56,13 +56,13 @@ In dit artikel vindt u enkele richt lijnen voor het gebruik van Apple Configurat
 
 ## <a name="custom-configuration-profile-settings"></a>Aangepaste configuratieprofielinstellingen
 
-- **Naam voor het aangepaste configuratieprofiel**: voer een naam in voor het beleid. Deze naam wordt weergegeven op het apparaat en in de Intune-status.
-- **Configuratieprofielbestand**: blader naar het configuratieprofiel dat u hebt gemaakt met Apple Configurator of Apple Profile Manager. Het bestand dat u hebt geïmporteerd, wordt weergegeven in het gebied **Bestandsinhoud**.
+- **Naam van het aangepaste configuratieprofiel**: Geef een naam op voor het beleid. Deze naam wordt weergegeven op het apparaat en in de Intune-status.
+- **Configuratieprofielbestand**: Blader naar het configuratieprofiel dat u hebt gemaakt met Apple Configurator of Apple Profile Manager. Het bestand dat u hebt geïmporteerd, wordt weergegeven in het gebied **Bestandsinhoud**.
 
-  U kunt ook apparaat-tokens toevoegen aan uw `.mobileconfig`-bestanden. Apparaat-tokens worden gebruikt om apparaatspecifieke informatie toe te voegen. Als u bijvoorbeeld het serienummer wilt weergeven, voert u `{{serialnumber}}` in. Op het apparaat lijkt de tekst op `123456789ABC`, die uniek is voor elk apparaat. Wanneer u variabelen opgeeft, moet u ervoor zorgen dat u accolades `{{ }}` gebruikt. [App-configuratietokens](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat een lijst met variabelen die kunnen worden gebruikt. U kunt ook `deviceid` of een andere apparaatspecifieke waarde gebruiken.
+  U kunt ook apparaattokens toevoegen aan uw `.mobileconfig`-bestanden. Apparaattokens worden gebruikt om apparaatspecifieke informatie toe te voegen. Als u bijvoorbeeld het serienummer wilt weergeven, voert u `{{serialnumber}}` in. Op het apparaat wordt tekst weergegeven die lijkt op `123456789ABC`, wat uniek is voor elk apparaat. Wanneer u variabelen opgeeft, moet u ervoor zorgen dat u accolades `{{ }}` gebruikt. [App-configuratietokens](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) bevat een lijst met variabelen die kunnen worden gebruikt. U kunt ook `deviceid` of een andere apparaatspecifieke waarde gebruiken.
 
   > [!NOTE]
-  > Variabelen worden niet gevalideerd in de gebruikers interface en zijn hoofdletter gevoelig. Hierdoor ziet u mogelijk profielen die met onjuiste invoer zijn opgeslagen. Als u bijvoorbeeld `{{DeviceID}}` invoert in plaats van `{{deviceid}}`, wordt de letterlijke tekenreeks weergegeven in plaats van de unieke id van het apparaat. Zorg ervoor dat u de juiste informatie invoert.
+  > Variabelen worden niet gevalideerd in de gebruikersinterface en zijn hoofdlettergevoelig. Hierdoor ziet u mogelijk profielen die met onjuiste invoer zijn opgeslagen. Als u bijvoorbeeld `{{DeviceID}}` invoert in plaats van `{{deviceid}}`, wordt de letterlijke tekenreeks weergegeven in plaats van de unieke id van het apparaat. Zorg dat u de juiste informatie invoert.
 
 Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en weergegeven in de lijst met profielen.
 
@@ -70,4 +70,4 @@ Selecteer **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt ge
 
 Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens [wijst u het profiel toe](device-profile-assign.md).
 
-Bekijk hoe u [het profiel op iOS-apparaten maakt](../custom-settings-ios.md).
+Bekijk hoe u [het profiel op iOS-/iPadOS-apparaten maakt](../custom-settings-ios.md).

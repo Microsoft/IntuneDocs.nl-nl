@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414394"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415239"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows-pc's beheren als computers via de Intune-softwareclient
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414394"
 > [!WARNING]
 > Microsoft heeft aangekondigd dat [ondersteuning voor Windows 7 op 14 januari 2020 wordt beëindigd](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Op deze datum zal Intune ook de ondersteuning beëindigen voor apparaten waarop Windows 7 wordt uitgevoerd. Microsoft raadt u ten zeerste aan over te stappen op Windows 10 om eventuele service- of ondersteuningsproblemen te voorkomen.
 > 
-> Voor meer informatie, zie [Geplande wijziging voor Intune: aanstaande beëindiging van ondersteuning voor Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+> Zie de [Plan for Change-blogpost](https://aka.ms/Windows7_Intune) voor meer informatie.
 
 > [!NOTE]
 > U kunt Microsoft Intune gebruiken voor het beheren van Windows-pc's [als mobiele apparaten met Mobile Device Management (MDM)](../enrollment/windows-enroll.md) of als computers met de Intune-softwareclient, zoals hieronder beschreven. Microsoft adviseert klanten echter om indien mogelijk [de MDM-beheeroplossing te gebruiken](../enrollment/windows-enroll.md). Raadpleeg [Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken](pc-management-comparison.md) voor meer informatie 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977747"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514558"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>In ontwikkeling voor Microsoft Intune - februari 2020
 
@@ -65,8 +65,8 @@ De Bedrijfsportal-app wordt bijgewerkt op Windows-apparaten om pop-upmeldingen v
 In de Bedrijfsportal-app worden aanvullende berichten over de status van de app-installatie weergegeven voor eindgebruikers. De volgende voorwaarden zijn van toepassing op nieuwe Win32-afhankelijkheidsfuncties:
 - App installeren mislukt. Er is niet voldaan aan afhankelijkheden die zijn gedefinieerd door de beheerder.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Microsoft Edge als nieuw doel opgeven voor webclips op iOS-apparaten<!-- 5455276 -->
-Webclips, die fungeren als vastgemaakte web-apps op iOS-apparaten, moeten worden bijgewerkt. Zojuist geïmplementeerde webclips worden in Microsoft Edge geopend in plaats van in de Intune Managed Browser als openen in een beveiligde browser wordt vereist. U moet een nieuw doel opgeven voor reeds bestaande webclips om ervoor te zorgen dat deze worden geopend in Microsoft Edge in plaats van de Managed Browser.
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>Microsoft Edge als nieuw doel opgeven voor webclips op iOS-/iPadOS-apparaten<!-- 5455276 -->
+Webclips, die fungeren als vastgemaakte web-apps op iOS-/iPadOS-apparaten, moeten worden bijgewerkt. Zojuist geïmplementeerde webclips worden in Microsoft Edge geopend in plaats van in de Intune Managed Browser als openen in een beveiligde browser wordt vereist. U moet een nieuw doel opgeven voor reeds bestaande webclips om ervoor te zorgen dat deze worden geopend in Microsoft Edge in plaats van de Managed Browser.
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>Verbeteringen in de gebruikerservaring met de Bedrijfsportal-app in macOS<!-- 5568987 -->
 De ervaring met apparaatinschrijving in macOS en de Bedrijfsportal-app voor Mac wordt verbeterd. U kunt het volgende verwachten:
@@ -92,22 +92,22 @@ Er wordt een nieuw configuratieprofiel voor macOS-apparaten beschikbaar gemaakt 
 Van toepassing op:
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>Voor VPN-profielen met IKEv2 VPN-verbindingen kan AlwaysOn worden gebruikt voor iOS-apparaten <!-- 1947932 idready -->
-Op iOS-apparaten kunt u een VPN-profiel maken dat gebruikmaakt van een IKEv2-verbinding (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS/iPadOS** als platform > **VPN** als profieltype). In een toekomstige update kunt u AlwaysOn configureren met IKEv2. IKEv2 VPN-profielen maken, nadat deze zijn geconfigureerd, automatisch verbinding en blijven verbonden (of maken snel opnieuw verbinding) met het VPN. De verbinding blijft bestaan, ook bij wisselingen van netwerk of als apparaten opnieuw worden opgestart.
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>Voor VPN-profielen met IKEv2 VPN-verbindingen kan AlwaysOn worden gebruikt voor iOS-/iPadOS-apparaten <!-- 1947932 idready -->
+Op iOS-/iPadOS-apparaten kunt u een VPN-profiel maken dat gebruikmaakt van een IKEv2-verbinding (**Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS/iPadOS** als platform > **VPN** als profieltype). In een toekomstige update kunt u AlwaysOn configureren met IKEv2. IKEv2 VPN-profielen maken, nadat deze zijn geconfigureerd, automatisch verbinding en blijven verbonden (of maken snel opnieuw verbinding) met het VPN. De verbinding blijft bestaan, ook bij wisselingen van netwerk of als apparaten opnieuw worden opgestart.
 
-Op iOS is AlwaysOn VPN beperkt tot IKEv2-profielen.
+In iOS/iPadOS is AlwaysOn VPN beperkt tot IKEv2-profielen.
 
-Als u wilt zien welke IKEv2-instellingen u momenteel kunt configureren, gaat u naar [VPN-instellingen toevoegen op iOS-apparaten in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
+Als u wilt zien welke IKEv2-instellingen u momenteel kunt configureren, gaat u naar [VPN-instellingen toevoegen op iOS-/iPadOS-apparaten in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
 
 Van toepassing op:
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Verbeterde gebruikersinterface-ervaring bij het maken van configuratieprofielen op iOS-en macOS-apparaten<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-Wanneer u een profiel voor iOS-of macOS-apparaten maakt, wordt de ervaring in het Beheercentrum voor Eindpuntbeheer bijgewerkt. Deze wijziging is van invloed op de volgende apparaatconfiguratieprofielen (**Apparaten** > **Configuratieprofielen** > **Profiel maken** > **iOS** of **macOS** als platform):
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Verbeterde gebruikersinterface-ervaring bij het maken van configuratieprofielen op iOS-/iPadOS- en macOS-apparaten<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+Wanneer u een profiel voor iOS-/iPadOS- of macOS-apparaten maakt, wordt de ervaring in het Beheercentrum voor Eindpuntbeheer bijgewerkt. Deze wijziging is van invloed op de volgende apparaatconfiguratieprofielen (**Apparaten** > **Configuratieprofielen** > **Profiel maken** > **iOS** of **macOS** als platform):
 
-- Aangepast: iOS, macOS
-- Apparaatfuncties: iOS, macOS
-- Apparaatbeperkingen: iOS, macOS
+- Aangepast: iOS/iPadOS, macOS
+- Apparaatfuncties: iOS/iPadOS, macOS
+- Apparaatbeperkingen: iOS/iPadOS, macOS
 - Endpoint Protection: macOS
 - Extensies: macOS
 - Voorkeursbestand: macOS

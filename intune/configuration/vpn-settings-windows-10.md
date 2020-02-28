@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207057"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512497"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Instellingen voor Windows 10- en Windows Holographic-apparaten om VPN-verbindingen met Intune toe te voegen
 
@@ -143,7 +143,7 @@ Zie [EAP-configuratie](https://docs.microsoft.com/windows/client-management/mdm/
 
   ![Selecteer de drie puntjes en klik en sleep om het DNS-achtervoegsel te verplaatsen](./media/vpn-settings-windows-10/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Nrpt-regels (Name Resolution Policy Table)** : nrpt-regels (Name Resolution Policy Table) bepalen hoe DNS-namen worden omgezet wanneer er verbinding wordt gemaakt met de VPN. Nadat de VPN-verbinding tot stand is gebracht, kunt u kiezen van welke DNS-servers de VPN-verbinding gebruikmaakt.
+- **NRPT-regels (tabel voor naamomzettingsbeleid)** : hiermee kunt u definiëren hoe via DNS namen worden omgezet wanneer verbinding met het VPN is gemaakt. Nadat de VPN-verbinding tot stand is gebracht, kunt u kiezen van welke DNS-servers de VPN-verbinding gebruikmaakt.
 
   U kunt regels aan de tabel toevoegen die de DNS-server, proxy en andere gegevens bevatten om het domein om te zetten dat u opgeeft. De VPN-verbinding gebruikt deze regels wanneer gebruikers verbinding maken met de domeinen die u hebt opgegeven.
 
@@ -185,4 +185,4 @@ Als de gebruiker bijvoorbeeld al verbinding heeft met een vertrouwd DNS-achtervo
 
 Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens moet u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-VPN-instellingen configureren voor [Android](vpn-settings-android.md)-, [iOS](vpn-settings-ios.md)- en [macOS](vpn-settings-macos.md)-apparaten.
+Configureer VPN-instellingen voor apparaten met [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md) en [macOS](vpn-settings-macos.md).

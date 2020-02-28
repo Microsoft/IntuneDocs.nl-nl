@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c662de98ffa497c5fbc89ac1b78ed8537ff0d80c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71732695"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514197"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 In dit artikel wordt beschreven wat u moet doen wanneer uw gebruikers geen toegang kunnen krijgen tot resources die met voorwaardelijke toegang zijn beschermd, of wanneer gebruikers wel toegang tot beschermde resources kunnen krijgen, maar eigenlijk zouden moeten worden geblokkeerd.
 
-Met intune en voorwaardelijke toegang kunt u de toegang tot Services beveiligen, zoals:
-- Office 365-services zoals Exchange Online, share point online en Skype voor bedrijven online
+Met Intune en voorwaardelijke toegang kunt u de toegang tot services beveiligen, zoals:
+- Office 365-services zoals Exchange Online, SharePoint Online en Skype voor Bedrijven Online
 - Exchange On-premises
 - Verschillende andere services
 
@@ -46,21 +46,21 @@ Er moet aan de volgende vereisten zijn voldaan voordat voorwaardelijke toegang w
 
 - EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker de systeemeigen e-mailclient van het apparaat gebruikt in plaats van Outlook. Dit gebeurt automatisch voor iOS-, Windows Phone- en Android Knox-apparaten.
 
-- Voor on-premises Exchange moet uw intune Exchange connector op de juiste wijze zijn geconfigureerd. Raadpleeg [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
+- Voor on-premises Exchange, moet de Intune Exchange-connector juist zijn geconfigureerd. Raadpleeg [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
 
-- Voor on-premises Skype moet u hybride, moderne verificatie configureren. Zie [hybride overzicht van moderne verificatie](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
+- Voor on-premises Skype moet u hybride moderne verificatie configureren. Raadpleeg [Overzicht van hybride moderne verificatie](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
 
 Deze voorwaarden voor elk apparaat zijn terug te vinden in Azure Portal en in het inventarisrapport van het apparaat.
 
 ## <a name="devices-appear-compliant-but-users-are-still-blocked"></a>Het lijkt of apparaten aan de eisen voldoen, maar gebruikers zijn nog steeds geblokkeerd
 
-- Zorg ervoor dat aan de gebruiker een intune-licentie is toegewezen voor een juiste nalevings beoordeling.
+- Zorg dat aan de gebruiker een Intune-licentie is toegewezen voor een juiste nalevingsbeoordeling.
 
 - Aan Android-apparaten zonder Knox wordt pas toegang verleend zodra de gebruiker op de koppeling **Nu aan de slag** klikt die in de quarantaine-e-mail staat die ze hebben ontvangen. Dit is zelfs van toepassing wanneer de gebruiker al is ingeschreven in Intune. Als gebruikers de e-mail met de koppeling niet op hun telefoon hebben ontvangen, kunnen ze een pc gebruiken voor toegang tot hun e-mail en de e-mail doorsturen naar een e-mailaccount op hun apparaat.
 
 - Wanneer een apparaat voor de eerste keer wordt ingeschreven, kan het even duren voordat de nalevingsinformatie voor een apparaat is geregistreerd. Wacht een paar minuten en probeer het opnieuw.
 
-- Voor iOS-apparaten kan een bestaand e-mailprofiel de implementatie blokkeren van een door een Intune-beheerder gemaakt e-mailprofiel dat aan die gebruiker is toegewezen, waardoor het apparaat niet meer aan de vereisten voldoet. In dit scenario deelt de bedrijfsportal-app de gebruiker mee dat deze niet voldoet aan de eisen vanwege het handmatig geconfigureerde e-mailprofiel en wordt de gebruiker gevraagd dit profiel te verwijderen. Zodra de gebruiker het bestaande e-mailprofiel verwijdert, kan het Intune-e-mailprofiel worden geïmplementeerd. Om dit probleem te voorkomen, moet u uw gebruikers opdragen eventuele bestaande e-mailprofielen op hun apparaat te verwijderen voordat ze zich gaan inschrijven.
+- Voor iOS-/iPadOS-apparaten kan een bestaand e-mailprofiel de implementatie blokkeren van een door een Intune-beheerder gemaakt e-mailprofiel dat aan deze gebruiker is toegewezen, waardoor het apparaat niet meer aan de vereisten voldoet. In dit scenario deelt de bedrijfsportal-app de gebruiker mee dat deze niet voldoet aan de eisen vanwege het handmatig geconfigureerde e-mailprofiel en wordt de gebruiker gevraagd dit profiel te verwijderen. Zodra de gebruiker het bestaande e-mailprofiel verwijdert, kan het Intune-e-mailprofiel worden geïmplementeerd. Om dit probleem te voorkomen, moet u uw gebruikers opdragen eventuele bestaande e-mailprofielen op hun apparaat te verwijderen voordat ze zich gaan inschrijven.
 
 - Een apparaat kan vast komen te zitten in een status voor het controleren van nalevingsvereisten, waardoor de gebruiker wordt verhinderd om een andere incheckprocedure te beginnen. Als u een apparaat hebt met deze status:
   - Controleer of op het apparaat de nieuwste versie van de bedrijfsportal-app wordt gebruikt.
@@ -76,7 +76,7 @@ Deze voorwaarden voor elk apparaat zijn terug te vinden in Azure Portal en in he
 
 - Een Android-apparaat dat is ingeschreven en aan de eisen voldoet, kan alsnog worden geblokkeerd en een quarantainemelding ontvangen wanneer een gebruiker voor de eerste keer bedrijfsresources probeert te openen. Als dit gebeurt, controleert u of de bedrijfsportal-app niet wordt uitgevoerd en selecteert u vervolgens op de koppeling **Nu aan de slag** in de quarantaine-e-mail om evaluatie te activeren. Dit hoeft alleen te gebeuren wanneer voorwaardelijke toegang voor de eerste keer wordt ingeschakeld.
 
-- Een Android-apparaat dat is inge schreven, kan de gebruiker vragen om "geen certificaten gevonden" en geen toegang tot O365-resources te krijgen. De gebruikers moeten de optie *Browsertoegang inschakelen* als volgt inschakelen op geregistreerde apparaten:
+- Op een Android-apparaat dat is ingeschreven, ziet de gebruiker mogelijk Geen certificaten gevonden, en krijgt de gebruiker geen toegang tot O365-resources. De gebruikers moeten de optie *Browsertoegang inschakelen* als volgt inschakelen op geregistreerde apparaten:
   1. Open de app Bedrijfsportal.
   2. Ga naar de pagina Instellingen via de drie puntjes (...) of via de menuknop van de hardware.
   3. Selecteer de knop *Browsertoegang inschakelen*.
@@ -97,9 +97,9 @@ Deze voorwaarden voor elk apparaat zijn terug te vinden in Azure Portal en in he
 
 - Als het apparaat selectief wordt gewist of buiten gebruik wordt gesteld in Intune, kan het zijn dat het apparaat nog enige uren na de buitengebruikstelling toegang heeft. Dit komt doordat Exchange de toegangsrechten gedurende zes uur in het cachegeheugen opslaat. Overweeg andere manieren om gegevens op buiten gebruik gestelde apparaten te beveiligen in dit scenario.
 
-- Surface Hub, bulksgewijs Inge schreven en DEM Inge schreven Windows-apparaten kunnen voorwaardelijke toegang ondersteunen wanneer een gebruiker aan wie een licentie voor intune is toegewezen, zich heeft aangemeld. U moet het nalevings beleid echter implementeren op apparaatgroepen (niet gebruikers groepen) voor een juiste evaluatie.
+- Surface Hub, bulksgewijs ingeschreven, en met DEM ingeschreven Windows-apparaten kunnen ondersteuning bieden voor voorwaardelijke toegang wanneer een gebruiker is aangemeld aan wie een Intune-licentie is toegewezen. Voor een juiste evaluatie moet u echter wel het nalevingsbeleid implementeren in apparaatgroepen (niet in gebruikersgroepen).
 
-- Controleer de toewijzingen voor uw nalevingsbeleid en uw beleid voor voorwaardelijke toegang. Als een gebruiker zich niet in de groep bevindt die aan het beleid is toegewezen, of als deze deel uitmaakt van een groep die wordt uitgesloten, wordt de gebruiker niet geblokkeerd. Alleen apparaten voor gebruikers in een toegewezen groep worden gecontroleerd op naleving.
+- Controleer de toewijzingen voor uw nalevingsbeleid en uw beleid voor voorwaardelijke toegang. Als een gebruiker geen lid is van de groep waaraan het beleid is toegewezen, of lid is van een groep die is uitgesloten, wordt deze gebruiker niet geblokkeerd. Alleen apparaten voor gebruikers in een toegewezen groep worden gecontroleerd op naleving.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Niet-compatibel apparaat wordt niet geblokkeerd
 
@@ -110,7 +110,7 @@ Als een apparaat niet compatibel is, maar nog steeds toegang heeft, voert u de v
 - Zorg ervoor dat het apparaat wordt gedetecteerd. Verwijst de Exchange-Connector naar een Exchange 2010 CAS terwijl de gebruiker zich op een Exchange 2013-server bevindt? In dit geval, mits de standaardregel voor Exchange Toestaan is, kan Intune de verbinding van het apparaat met Exchange niet detecteren, zelfs als de gebruiker zich in de doelgroep bevindt.
 
 - Bestaan apparaat/toegangsstatus in Exchange controleren:
-  - Gebruik deze PowerShell-cmdlet om een lijst van alle mobiele apparaten voor een postvak op te halen: 'Get-ActiveSyncDeviceStatistics-Postvak mbx'. Als het apparaat niet wordt weergegeven, heeft het geen toegang tot Exchange.
+  - Gebruik deze PowerShell-cmdlet om een lijst met alle mobiele apparaten voor een postvak op te halen: Get-ActiveSyncDeviceStatistics -mailbox mbx. Als het apparaat niet wordt weergegeven, heeft het geen toegang tot Exchange.
   
   - Als het apparaat wordt weergegeven, gebruikt u de cmdlet 'Get-CASmailbox -identity:’upn’ | fl' voor gedetailleerde informatie over de toegangsstatus en om die informatie aan Microsoft Ondersteuning te verstrekken.
 

@@ -1,6 +1,6 @@
 ---
-title: Nalevingsinstellingen voor iOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Bekijk een overzicht van alle instellingen die u kunt gebruiken bij het instellen van naleving voor uw iOS-apparaten in Microsoft Intune. Een e-mailprofiel vereisen, controleren op opengebroken of geroote apparaten, de toegestane minimum- en maximumversie van het besturingssysteem instellen, wachtwoordbeperkingen instellen, waaronder wachtwoordlengte en de inactiviteit van apparaten, apps beperken en meer.
+title: Nalevingsinstellingen voor iOS-/iPadOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: Bekijk een overzicht van alle instellingen die u kunt gebruiken bij het instellen van naleving voor uw iOS-/iPadOS-apparaten in Microsoft Intune. Een e-mailprofiel vereisen, controleren op opengebroken of geroote apparaten, de toegestane minimum- en maximumversie van het besturingssysteem instellen, wachtwoordbeperkingen instellen, waaronder wachtwoordlengte en de inactiviteit van apparaten, apps beperken en meer.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074628"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514027"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-/iPadOS-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
-Dit artikel bevat een overzicht en beschrijving van de verschillende nalevingsinstellingen die u kunt configureren op iOS-apparaten in Intune. Gebruik deze instellingen als onderdeel van uw MDM-oplossing (Mobile Device Management) om een e-mailprofiel te vereisen, geroote (opengebroken) apparaten als niet-conform te markeren, een toegestaan bedreigingsniveau in te stellen, in te stellen dat wachtwoorden verlopen en meer.
+Dit artikel bevat een overzicht en beschrijving van de verschillende nalevingsinstellingen die u kunt configureren op iOS-/iPadOS-apparaten in Intune. Gebruik deze instellingen als onderdeel van uw MDM-oplossing (Mobile Device Management) om een e-mailprofiel te vereisen, geroote (opengebroken) apparaten als niet-conform te markeren, een toegestaan bedreigingsniveau in te stellen, in te stellen dat wachtwoorden verlopen en meer.
 
 Deze functie is van toepassing op:
 
@@ -86,11 +86,11 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
 ### <a name="password"></a>Wachtwoord
 
 > [!NOTE]
-> Nadat een nalevings- of configuratiebeleid op een iOS-apparaat is toegepast, wordt gebruikers elke vijftien minuten gevraagd een wachtwoordcode in te stellen. Gebruikers wordt continu gevraagd een wachtwoordcode in te stellen totdat de code is ingesteld. Wanneer een wachtwoordcode is ingesteld voor het iOS-apparaat, wordt het versleutelingsproces automatisch gestart. Het apparaat blijft versleuteld totdat de wachtwoordcode is uitgeschakeld.
+> Nadat nalevings- of configuratiebeleid is toegepast op een iOS-/iPadOS-apparaat, wordt gebruikers elke vijftien minuten gevraagd een wachtwoordcode in te stellen. Gebruikers wordt continu gevraagd een wachtwoordcode in te stellen totdat de code is ingesteld. Wanneer een wachtwoordcode is ingesteld voor het iOS-/iPadOS-apparaat, wordt het versleutelingsproces automatisch gestart. Het apparaat blijft versleuteld totdat de wachtwoordcode is uitgeschakeld.
 
 - **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**:  
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.  
-  - **Vereisen** - Gebruikers moeten een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat. iOS-apparaten die gebruikmaken van een wachtwoord, zijn versleuteld.
+  - **Vereisen** - Gebruikers moeten een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat. iOS-/iPadOS-apparaten die gebruikmaken van een wachtwoord, zijn versleuteld.
 
 - **Eenvoudige wachtwoorden**:  
   - **Niet geconfigureerd** (*standaard*): gebruikers kunnen eenvoudige wachtwoorden maken, zoals **1234** of **1111**.
@@ -125,7 +125,7 @@ Zie [De toegang tot zakelijke e-mail configureren met e-mailprofielen bij Intune
   U kunt apps beperken door de bundel-id’s toe te voegen aan het beleid. Als de app op een apparaat is geïnstalleerd, wordt het apparaat gemarkeerd als niet-conform.
 
   - **App-naam** - Voer een gebruiksvriendelijke naam in om u te helpen de bundel-id te identificeren.
-  - **App-bundel-id** - Voer de unieke bundel-id in die is toegewezen door de app-provider. Zie [De bundel-id vinden voor een iOS-app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (hiermee wordt een andere Microsoft-website geopend) om de bundel-id te vinden.  
+  - **App-bundel-id** - Voer de unieke bundel-id in die is toegewezen door de app-provider. Zie [De bundel-id vinden voor een iOS-/iPadOS-app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (opent een andere Microsoft-website) om de bundel-id te vinden.  
 
 ## <a name="next-steps"></a>Volgende stappen
 

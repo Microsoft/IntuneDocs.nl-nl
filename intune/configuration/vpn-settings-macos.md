@@ -1,11 +1,11 @@
 ---
 title: VPN-instellingen configureren voor macOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Een virtueel particulier netwerk (VPN)-configuratie profiel toevoegen of maken, met inbegrip van de verbindings Details, gesplitste tunneling, aangepaste VPN-instellingen met de id, sleutel-en waardeparen, proxy-instellingen met een configuratie script, IP-adres of FQDN en TCP-poort in Microsoft Intune op apparaten met macOS.
+description: Een VPN-configuratieprofiel (virtueel particulier netwerk) toevoegen of maken, met inbegrip van de verbindingsgegevens, split tunneling, aangepaste VPN-instellingen met de id, sleutel- en waardeparen, proxy-instellingen met een configuratiescript, IP-adres of FQDN en TCP-poort in Microsoft Intune op apparaten met macOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: b20a7eca6f71d46380f9fcdb1674226cc54a104f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206258"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510776"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen voor macOS-apparaten in Microsoft Intune
 
@@ -35,7 +35,7 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
 [Maak een apparaatconfiguratieprofiel](vpn-settings-configure.md).
 
 > [!NOTE]
-> Deze instellingen zijn beschikbaar voor alle inschrijvings typen. Zie voor meer informatie over de inschrijvings typen [macOS-inschrijving](../enrollment/macos-enroll.md).
+> Deze instellingen zijn beschikbaar voor alle inschrijvingstypen. Zie [macOS-inschrijving](../enrollment/macos-enroll.md) voor meer informatie over de inschrijvingstypen.
 
 ## <a name="base-vpn-settings"></a>Basis-VPN-instellingen
 
@@ -53,13 +53,13 @@ Afhankelijk van de instellingen die u kiest, kunnen niet alle waarden in de volg
   - **Aangepaste VPN**
 - **Split tunneling**: U kunt deze optie **Inschakelen** of **Uitschakelen** om apparaten op basis van het verkeer te laten bepalen welke verbinding moet worden gebruikt. Een gebruiker in een hotel gebruikt bijvoorbeeld de VPN-verbinding voor werkbestanden, maar het standaardnetwerk van het hotel om gewoon op het web te surfen.
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS/iPadOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
 
 ## <a name="custom-vpn-settings"></a>Basis-VPN-instellingen
 
 Als u **Aangepaste VPN** hebt geselecteerd, configureert u deze instellingen:
 
-- **VPN-id**: Voer een id in voor de VPN-app die u gebruikt. Deze id wordt geleverd door uw VPN-provider.
+- **VPN-id**: voer een id in voor de VPN-app die u gebruikt. Deze id wordt aangeleverd door uw VPN-aanbieder.
 - **Sleutel-waardeparen voor de aangepaste VPN-kenmerken invoeren**: Voeg **Sleutels** en **Waarden** toe of importeer deze om uw VPN-verbinding aan te passen. Deze waarden worden doorgaans aangeleverd door uw VPN-aanbieder.
 
 ## <a name="proxy-settings"></a>Proxyinstellingen
@@ -72,4 +72,4 @@ Als u **Aangepaste VPN** hebt geselecteerd, configureert u deze instellingen:
 
 Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-Configureer VPN-instellingen op [Android](vpn-settings-android.md)-, [Android Enter prise](vpn-settings-android-enterprise.md)-, [IOS](vpn-settings-ios.md)-en [Windows 10](vpn-settings-windows-10.md) -apparaten.
+Configureer VPN-instellingen op apparaten met [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [iOS/iPadOS](vpn-settings-ios.md) en [Windows 10](vpn-settings-windows-10.md).

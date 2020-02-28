@@ -1,7 +1,7 @@
 ---
-title: Intune-instellingen voor de iOS-app Classroom
+title: Intune-instellingen voor de iOS-/iPadOS-app Classroom
 titleSuffix: Microsoft Intune
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor de app Classroom op iOS-apparaten.
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor de app Classroom op iOS-/iPadOS-apparaten.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 74b9e6818de2853ae22a1fa1bb580b32075dcf19
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784218"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514418"
 ---
-# <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>De Intune-instellingen voor de iOS-app Classroom configureren
+# <a name="how-to-configure-intune-settings-for-the-iosipados-classroom-app"></a>De Intune-instellingen voor de iOS-/iPadOS-app Classroom configureren
 
 > [!NOTE]
-> InTune biedt momenteel geen ondersteuning voor het configureren van de app class. Dit artikel is alleen van toepassing voor gebruikers met een iOS-onderwijsprofiel in Intune.  
+> Intune biedt momenteel geen ondersteuning voor het configureren van de app Classroom. Dit artikel is alleen van toepassing op gebruikers met een iOS-/iPadOS-onderwijsprofiel in Intune.  
 
 ## <a name="introduction"></a>Inleiding
 [Classroom](https://itunes.apple.com/app/id1085319084) is een app waarmee docenten het leren kunnen begeleiden en op apparaten van studenten in het leslokaal kunnen beheren. Met de app kunnen leraren bijvoorbeeld:
@@ -39,7 +39,7 @@ ms.locfileid: "74784218"
 - iPads van studenten laten navigeren naar een bladwijzer of een hoofdstuk in een boek
 - Het iPad-scherm van een student weergeven op een Apple-TV
 
-Als u Classroom wilt instellen op uw apparaat, moet u een profiel voor een Intune iOS-onderwijsapparaat maken.
+Als u Classroom wilt instellen op uw apparaat, moet u een profiel voor een Intune iOS-/iPadOS-onderwijsapparaat maken.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
@@ -47,9 +47,9 @@ Let op het volgende voordat u begint met het configureren van deze instellingen:
 
 - De iPads van zowel docenten als studenten moeten zijn geregistreerd bij Intune.
 - Zorg ervoor dat u de app [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) hebt geïnstalleerd op het apparaat van de docent. U kunt de app handmatig installeren of [App-beheer van Intune](../apps/app-management.md) gebruiken.
-- U moet certificaten configureren om verbindingen tussen de apparaten van de docent en studenten te verifiëren (zie stap 2, een iOS-opleidingsprofiel maken en toewijzen in Intune).
+- U moet certificaten configureren om verbindingen tussen de apparaten van de docent en studenten te verifiëren (zie stap 2, een iOS-/iPadOS-opleidingsprofiel maken en toewijzen in Intune).
 - iPads van de docent en studenten moeten verbonden zijn met hetzelfde Wi-Fi-netwerk en Bluetooth moet ingeschakeld zijn.
-- De app Classroom draait op iPads met supervisie onder iOS 9.3 of hoger.
+- De app Classroom draait op iPads met supervisie onder iOS/iPadOS 9.3 of hoger.
 - In deze release biedt Intune ondersteuning voor het beheer van een 1-op-1-scenario waarbij elke student een eigen iPad heeft.
 
 
@@ -72,7 +72,7 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 - [Meer informatie over Schoolgegevens synchroniseren van Microsoft](https://sds.microsoft.com/)
 - [Meer informatie over licentieverlening in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Stap 2: een iOS-opleidingsprofiel maken en toewijzen in Intune
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>Stap 2: een iOS-/iPadOS-opleidingsprofiel maken en toewijzen in Intune
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
@@ -80,7 +80,7 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
 5. Kies **Profiel maken** in het deelvenster Profielen.
-6. Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
+6. Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-/iPadOS-opleidingsprofiel.
 7. Kies **iOS** in de vervolgkeuzelijst **Platform**.
 8. Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
 9. Kies **Instellingen** > **Configureren**.

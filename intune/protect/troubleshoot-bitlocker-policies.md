@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886779"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556496"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Problemen met BitLocker-beleid in Microsoft Intune oplossen
 
@@ -35,11 +35,13 @@ Met Microsoft Intune beschikt u over de volgende methoden om BitLocker te behere
 
 - **Beleidsregels voor apparaatconfiruatie**: bepaalde ingebouwde beleidsopties zijn beschikbaar in Intune wanneer u een apparaatconfiguratieprofiel maakt om Endpoint Protection te beheren. U kunt deze opties vinden door [een apparaatprofiel voor Endpoint Protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings) te maken, **Windows 10 en later** te selecteren bij *Platform* en vervolgens de categorie **Windows-versleuteling** te selecteren bij *Instellingen*. 
 
-   Zie [Windows-versleuteling](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) voor de beschikbare opties en functies.
+   Zie dit artikel voor de beschikbare opties en functies: [Windows-versleuteling](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
 - **Beveiligingsbasislijnen** - [Beveiligingsbasislijnen](security-baselines.md) zijn bekende groepen instellingen en standaardwaarden die door het relevante beveiligingsteam worden aanbevolen om Windows-apparaten te beveiligen. Met verschillende basislijnbronnen, zoals de *MDM-beveiligingsbasislijn* of de *Microsoft Defender ATP-basislijn*, kunt u dezelfde of andere instellingen beheren. U kunt er ook dezelfde instellingen mee beheren als met apparaatconfiguratiebeleid. 
 
-Behalve met Intune kunnen BitLocker-instellingen op andere manieren worden beheerd, zoals met groepsbeleid, of handmatig worden ingesteld door een apparaatgebruiker.
+Naast Intune wordt, voor hardware die compatibel is met Modern Standby-en HSTI, BitLocker-apparaatversleuteling automatisch ingeschakeld wanneer de gebruiker een apparaat aan Azure AD koppelt. Azure AD biedt een portal waar ook een back-up van de herstelsleutels wordt gemaakt, zodat gebruikers zo nodig hun eigen herstelsleutel voor selfservice kunnen ophalen.
+
+BitLocker-instellingen kunnen ook op andere manieren worden beheerd, zoals met groepsbeleid, of handmatig worden ingesteld door een apparaatgebruiker.
 
 Ongeacht hoe instellingen worden toegepast op een apparaat, BitLocker-beleid maakt gebruik van de [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) om versleuteling op het apparaat te configureren. De BitLocker CSP is ingebouwd in Windows. Wanneer via Intune een BitLocker-beleidsregel wordt geïmplementeerd op een toegewezen apparaat, worden de juiste waarden door de BitLocker CSP op het apparaat in het Windows-register geschreven zodat de beleidsinstellingen van kracht kunnen worden.
 
@@ -103,7 +105,7 @@ Confirm-SecureBootUEFI
 
 ### <a name="review-the-devices-registry-key-configuration"></a>De configuratie van de registersleutel voor apparaten controleren
 
-Nadat BitLocker-beleid op een apparaat is geïmplementeerd, bekijkt u de volgende registersleutel op het apparaat, waar u de configuratie van BitLocker-instellingen kunt controleren: *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Hier volgt een voorbeeld:
+Nadat BitLocker-beleid op een apparaat is geïmplementeerd, bekijkt u de volgende registersleutel op het apparaat, waar u de configuratie van BitLocker-instellingen kunt controleren:  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Hier volgt een voorbeeld:
 
 ![BitLocker-registersleutel](./media/troubleshooting-bitlocker-policies/registry.png)
 
@@ -164,6 +166,15 @@ Nu weet u hoe u kunt controleren of het BitLocker-beleid via Intune is geïmplem
 
   2. **BitLocker wordt niet op alle hardware ondersteund**.
      Ook als u de juiste versie van Windows hebt, is het mogelijk dat de onderliggende apparaathardware niet voldoet aan de vereisten voor BitLocker-versleuteling. De [systeemvereisten voor BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) vindt u in de Windows-documentatie, maar het belangrijkste is om te controleren of het apparaat een compatibele TPM-chip heeft (1.2 of later) en TCB-compatibele (Trusted Computing Group) BIOS- of UEFI-firmware.
+     
+**BitLocker-versleuteling wordt niet op de achtergrond uitgevoerd**: u hebt een Endpoint Protection-beleid geconfigureerd waarbij de instelling voor een waarschuwing voor andere schijfversleuteling is ingesteld op blokkeren en de wizard voor versleuteling nog steeds wordt weergegeven:
+
+- **Controleren of de Windows-versie ondersteuning biedt voor stille versleuteling** Hiervoor is versie 1803 of hoger vereist. Als de gebruiker geen beheerder op het apparaat is, is versie 1809 of hoger vereist. In versie 1809 is ook ondersteuning toegevoegd voor apparaten waarop Modern Standby niet wordt ondersteund
+
+**Het door BitLocker versleutelde apparaat wordt weergegeven als zijnde niet compatibel met Intune-nalevingsbeleid**: dit probleem treedt op als BitLocker-versleuteling niet is voltooid. BitLocker-versleuteling is afhankelijk van factoren zoals de schijfgrootte, het aantal bestanden en BitLocker-instellingen, en kan veel tijd in beslag nemen. Nadat de versleuteling is voltooid, wordt het apparaat weergegeven als zijnde compatibel. Apparaten kunnen ook tijdelijk niet-compatibel worden direct na een recente installatie van Windows-updates.
+
+**Apparaten worden versleuteld met een 128-bits algoritme terwijl het beleid is ingesteld op 256-bits**: in Windows 10 wordt een station standaard versleuteld met XTS-AES 128-bits versleuteling. Zie deze handleiding voor het [instellen van 256-bits versleuteling voor BitLocker tijdens Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#) (Engelstalig).
+
 
 **Voorbeeldonderzoek**
 

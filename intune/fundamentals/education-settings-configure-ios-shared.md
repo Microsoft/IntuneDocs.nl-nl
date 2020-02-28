@@ -1,7 +1,7 @@
 ---
-title: Intune-instellingen voor gedeelde apparaten voor de iOS-app Classroom
+title: Intune-instellingen voor gedeelde apparaten voor de iOS-/iPadOS-app Classroom
 titleSuffix: Microsoft Intune
-description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor de app Classroom op iOS-apparaten.
+description: Meer informatie over de Intune-instellingen die u kunt gebruiken voor het beheren van instellingen voor de app Classroom op iOS-/iPadOS-apparaten.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 412dc9a12f5a13b5fbd738f3ac1b5b1033a2635b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784252"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514707"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Intune-onderwijsinstellingen configureren voor gedeelde iPads
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> InTune biedt momenteel geen ondersteuning voor het configureren van de app class. Dit artikel is alleen van toepassing voor gebruikers met een iOS-onderwijsprofiel in Intune.
+> Intune biedt momenteel geen ondersteuning voor het configureren van de app Classroom. Dit artikel is alleen van toepassing op gebruikers met een iOS-/iPadOS-onderwijsprofiel in Intune.
 
-Intune ondersteunt de iOS-app Classroom, waarmee docenten het leren kunnen begeleiden en de apparaten van studenten in het leslokaal kunnen beheren. Naast de Classroom-app ondersteunt Apple de mogelijkheid om iPads van studenten zo te configureren dat één apparaat door meerdere studenten kan worden gedeeld. In dit document leest u hoe u dit doel kunt realiseren met Intune.
+Intune ondersteunt de iOS-/iPadOS-app Classroom, waarmee docenten het leren kunnen begeleiden en de apparaten van studenten in het leslokaal kunnen beheren. Naast de Classroom-app ondersteunt Apple de mogelijkheid om iPads van studenten zo te configureren dat één apparaat door meerdere studenten kan worden gedeeld. In dit document leest u hoe u dit doel kunt realiseren met Intune.
 
-Zie [De Intune-instellingen voor de iOS-app Classroom configureren](education-settings-configure-ios.md) voor informatie over het configureren van toegewezen (1:1) iPads voor het gebruik van de Classroom-app.
+Zie [De Intune-instellingen voor de iOS-/iPadOS-app Classroom configureren](education-settings-configure-ios.md) voor informatie over het configureren van toegewezen (1:1) iPads voor het gebruik van de Classroom-app.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
@@ -64,7 +64,7 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 - [Meer informatie over licentieverlening in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Stap 2: een iOS-opleidingsprofiel maken en toewijzen in Intune
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>Stap 2: een iOS-/iPadOS-opleidingsprofiel maken en toewijzen in Intune
 
 ### <a name="configure-general-settings"></a>Algemene instellingen configureren
 
@@ -72,7 +72,7 @@ U kunt op een van de volgende manieren gegevens importeren in SDS:
 3. Kies in het deelvenster **Intune** de optie **Apparaatconfiguratie**.
 2. Kies in het deelvenster **Apparaatconfiguratie** onder de sectie **Beheren** de optie **Profielen**.
 5. Kies **Profiel maken** in het deelvenster Profielen.
-6. Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-opleidingsprofiel.
+6. Voer in het deelvenster **Profiel maken** een **Naam** en **Beschrijving** in voor het iOS-/iPadOS-opleidingsprofiel.
 7. Kies **iOS** in de vervolgkeuzelijst **Platform**.
 8. Kies **Onderwijs** in de vervolgkeuzelijst **Profieltype**.
 9. Kies **Instellingen** > **Configureren**.

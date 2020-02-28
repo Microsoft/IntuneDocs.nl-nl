@@ -1,11 +1,11 @@
 ---
-title: VPN-instellingen configureren voor iOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Voeg een VPN-configuratieprofiel toe of maak er een met configuratie-instellingen voor virtuele privénetwerken (VPN), inclusief de verbindingsgegevens, verificatiemethode en split tunneling in de basisinstellingen; de aangepaste VPN-instellingen met de id, en de paren van sleutels en waarden; de VPN-instellingen per app met inbegrip van Safari-URL's, en on-demand VPN's met SSID's of DNS-zoekdomeinen; en de proxy-instellingen die deel moeten uitmaken van een configuratiescript, IP- of FQDN-adres, en TCP-poort in Microsoft Intune op apparaten waarop iOS wordt uitgevoerd.
+title: VPN-instellingen configureren voor iOS-/iPadOS-apparaten in Microsoft Intune - Azure | Microsoft Docs
+description: Voeg een VPN-configuratieprofiel toe of maak er een met configuratie-instellingen voor virtuele privénetwerken (VPN), inclusief de verbindingsgegevens, verificatiemethode en split tunneling in de basisinstellingen; de aangepaste VPN-instellingen met de id, en de paren van sleutels en waarden; de VPN-instellingen per app met inbegrip van Safari-URL's, en on-demand VPN's met SSID's of DNS-zoekdomeinen; en de proxy-instellingen die deel moeten uitmaken van een configuratiescript, IP- of FQDN-adres, en TCP-poort in Microsoft Intune op apparaten waarop iOS/iPadOS wordt uitgevoerd.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,23 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
-ms.translationtype: MTE75
+ms.openlocfilehash: 01c6ae06459590fa9bb9842e90ad53e6c522d6a6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885660"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512480"
 ---
-# <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen aan iOS-apparaten in Microsoft Intune
+# <a name="add-vpn-settings-on-ios-and-ipados-devices-in-microsoft-intune"></a>VPN-instellingen toevoegen aan iOS- en iPadOS-apparaten in Microsoft Intune
 
-Microsoft Intune biedt veel VPN-instellingen die kunnen worden geïmplementeerd op uw iOS-apparaten. Deze instellingen worden gebruikt om VPN-verbindingen te maken en configureren voor het netwerk van uw organisatie. In dit artikel worden deze instellingen beschreven. Sommige instellingen zijn alleen beschikbaar voor sommige VPN-clients, zoals Citrix en Zscaler.
+Microsoft Intune biedt veel VPN-instellingen die kunnen worden geïmplementeerd op uw iOS-/iPadOS-apparaten. Deze instellingen worden gebruikt om VPN-verbindingen te maken en configureren voor het netwerk van uw organisatie. In dit artikel worden deze instellingen beschreven. Sommige instellingen zijn alleen beschikbaar voor sommige VPN-clients, zoals Citrix en Zscaler.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
 [Maak een apparaatconfiguratieprofiel](vpn-settings-configure.md).
 
 > [!NOTE]
-> Deze instellingen zijn beschikbaar voor alle inschrijvings typen. Zie [IOS-inschrijving](../enrollment/ios-enroll.md)voor meer informatie over de inschrijvings typen.
+> Deze instellingen zijn beschikbaar voor alle inschrijvingstypen. Zie [iOS-/iPadOS-inschrijving](../enrollment/ios-enroll.md) voor meer informatie over de inschrijvingstypen.
 
 ## <a name="connection-type"></a>Type verbinding
 
@@ -50,7 +50,7 @@ Selecteer het type VPN-verbinding in de volgende lijst met leveranciers:
 - **Citrix VPN**
 - **Citrix SSO**
 - **Zscaler**: Als u gebruik wilt maken van voorwaardelijke toegang of gebruikers wilt toestaan om het Zscaler-aanmeldingsscherm over te slaan, moet u Zscaler Private Access (ZPA) integreren met uw Microsoft Azure AD-account. Zie de [Zscaler documentatie](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad) voor gedetailleerde instructies. 
-- **Ikev2**: [ikev2-instellingen](#ikev2-settings) (in dit artikel) beschrijven de eigenschappen.
+- **IKEv2**: in [IKEv2-instellingen](#ikev2-settings) (in dit artikel) worden de eigenschappen beschreven.
 - **Aangepaste VPN**
 
 > [!NOTE]
@@ -71,7 +71,7 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
     > [!NOTE]
     > Als gebruikersnaam en wachtwoord worden gebruikt als verificatiemethode voor Cisco IPsec VPN, moeten deze het SharedSecret bieden via een aangepast profiel voor de Apple Configurator.
 
-  - **Afgeleide referentie**: gebruik een certificaat dat is afgeleid van de Smart Card van een gebruiker. Als er geen afgeleide referentie verlener is geconfigureerd, wordt u door intune gevraagd om er een toe te voegen. Zie [afgeleide referenties gebruiken in Microsoft intune](../protect/derived-credentials.md)voor meer informatie.
+  - **Afgeleide referentie**: gebruik een certificaat dat is afgeleid van de smartcard van een gebruiker. Als er geen uitgever voor afgeleide referenties is geconfigureerd, wordt u door Intune gevraagd om er een toe te voegen. Zie [Afgeleide referenties gebruiken in Microsoft Intune](../protect/derived-credentials.md) voor meer informatie.
 
 - **Uitgesloten URL's** (alleen Zscaler): Wanneer u verbonden bent met het VPN van Zscaler, zijn de vermelde URL's toegankelijk buiten de Zscaler-cloud. 
 
@@ -100,92 +100,92 @@ Welke instellingen in de volgende lijst worden weergegeven, is afhankelijk van h
   - Als NAC wordt ingeschakeld, wordt de verbinding met de VPN elke 24 uur verbroken. De VPN-verbinding wordt onmiddellijk hersteld.
   - De apparaat-id maakt deel uit van het profiel, maar is niet zichtbaar in Intune. De id wordt nergens door Microsoft opgeslagen en wordt niet door Microsoft gedeeld.
 
-  Voor de VPN-partners die de apparaat-ID ondersteunen, kan de VPN-client, zoals Citrix SSO, de ID ophalen. Vervolgens kan de VPN-client een query in Intune uitvoeren om te bevestigen dat het apparaat is geregistreerd en om na te gaan of het VPN-profiel wel of niet conform is.
+  Wanneer de apparaat-id wordt ondersteund door VPN-partners, kan de VPN-client, zoals Citrix SSO, de id ophalen. Vervolgens kan de VPN-client een query in Intune uitvoeren om te bevestigen dat het apparaat is geregistreerd en om na te gaan of het VPN-profiel wel of niet conform is.
 
   - Als u deze instelling wilt verwijderen, maakt u het profiel opnieuw en selecteert u de optie **Ik ga akkoord** niet. Wijs het profiel vervolgens opnieuw toe.
 
 ## <a name="ikev2-settings"></a>IKEv2-instellingen
 
-Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**kiest.
+Deze instellingen zijn van toepassing wanneer u het **verbindingstype** > **IKEv2** kiest.
 
-- **Externe ID**: Voer het netwerk-IP-adres, de FQDN-naam, de UserFQDN of de ASN1DN van de IKEv2-server in. Voer bijvoorbeeld `10.0.0.3` of `vpn.contoso.com` in. Normaal gesp roken voert u dezelfde waarde in als de naam van de [**verbinding**](#base-vpn-settings) (in dit artikel). Maar dit is afhankelijk van de instellingen van uw IKEv2-server.
+- **Externe id**: voer het netwerk-IP-adres, de FQDN, de UserFQDN of de ASN1DN van de IKEv2-server in. Voer bijvoorbeeld `10.0.0.3` of `vpn.contoso.com` in. Normaal gesproken voert u dezelfde waarde in als bij [**Verbindingsnaam**](#base-vpn-settings) (in dit artikel). Maar dit is afhankelijk van de instellingen van uw IKEv2-server.
 
-- **Type client verificatie**: Kies hoe de VPN-client wordt geverifieerd bij de VPN. Uw opties zijn:
-  - **Gebruikers verificatie** (standaard): de gebruikers referenties worden geverifieerd bij de VPN-verbinding.
-  - **Computer authenticatie**: de referenties van het apparaat worden geverifieerd bij de VPN-verbinding.
+- **Type clientverificatie**: kies hoe de VPN-client wordt geverifieerd bij het VPN. Uw opties zijn:
+  - **Gebruikersverificatie** (standaard): de gebruikersreferenties worden geverifieerd bij het VPN.
+  - **Computerverificatie**: de referenties van het apparaat worden geverifieerd bij het VPN.
 
-- **Verificatie methode**: Kies het type client referenties dat naar de server moet worden verzonden. Uw opties zijn:
-  - **Certificaten**: maakt gebruik van een bestaand certificaat profiel voor verificatie bij het VPN. Zorg ervoor dat dit certificaat profiel al aan de gebruiker of het apparaat is toegewezen. Anders mislukt de VPN-verbinding.
-    - **Certificaat type**: Selecteer het type versleuteling dat wordt gebruikt door het certificaat. Zorg ervoor dat de VPN-server zo is geconfigureerd dat dit type certificaat wordt geaccepteerd. Uw opties zijn:
+- **Verificatiemethode**: kies het type clientreferenties dat naar de server moet worden verzonden. Uw opties zijn:
+  - **Certificaten**: maakt gebruik van een bestaand certificaatprofiel voor verificatie bij het VPN. Zorg ervoor dat dit certificaatprofiel al aan de gebruiker of het apparaat is toegewezen. Anders mislukt de VPN-verbinding.
+    - **Certificaattype**: selecteer het type versleuteling dat wordt gebruikt door het certificaat. Zorg ervoor dat de VPN-server zo is geconfigureerd dat dit type certificaat wordt geaccepteerd. Uw opties zijn:
       - **RSA** (standaard)
       - **ECDSA256**
       - **ECDSA384**
       - **ECDSA521**
 
-  - **Gebruikers naam en wacht woord** (alleen gebruikers verificatie): wanneer gebruikers verbinding maken met het VPN, wordt ze gevraagd om hun gebruikers naam en wacht woord.
-  - **Gedeeld geheim** (alleen computer authenticatie): Hiermee kunt u een gedeeld geheim invoeren dat naar de VPN-server moet worden verzonden.
-    - **Gedeeld geheim**: Voer het gedeelde geheim in, ook wel bekend als de vooraf gedeelde sleutel (PSK). Zorg ervoor dat de waarde overeenkomt met het gedeelde geheim dat is geconfigureerd op de VPN-server.
+  - **Gebruikersnaam en wachtwoord** (alleen gebruikersverificatie): wanneer gebruikers verbinding maken met het VPN, moeten zij hun gebruikersnaam en wachtwoord invoeren.
+  - **Gedeeld geheim** (alleen computerverificatie): hiermee kunt u een gedeeld geheim invoeren dat naar de VPN-server moet worden verzonden.
+    - **Gedeeld geheim**: voer het gedeelde geheim in, ook wel bekend als de vooraf gedeelde sleutel (PSK). Zorg ervoor dat de waarde overeenkomt met het gedeelde geheim dat is geconfigureerd op de VPN-server.
 
-- **Algemene naam**van de uitgever van de server certificaat: Hiermee kan de VPN-server worden geverifieerd bij de VPN-client. Voer de algemene naam (CN) van de certificaat verlener in van het VPN-server certificaat dat wordt verzonden naar de VPN-client op het apparaat. Zorg ervoor dat de CN-waarde overeenkomt met de configuratie op de VPN-server. Anders mislukt de VPN-verbinding.
-- **Algemene naam van het server certificaat**: Voer de cn in voor het certificaat zelf. Als dit veld leeg blijft, wordt de waarde voor de externe ID gebruikt.
+- **Algemene naam voor verlener van servercertificaat**: hiermee kan de VPN-server worden geverifieerd bij de VPN-client. Voer de algemene naam (CN) in van de verlener van het VPN-servercertificaat dat wordt verzonden naar de VPN-client op het apparaat. Zorg ervoor dat de CN-waarde overeenkomt met de configuratie op de VPN-server. Anders mislukt de VPN-verbinding.
+- **Algemene naam voor servercertificaat**: voer de CN in voor het certificaat zelf. Als dit veld leeg blijft, wordt de waarde van de externe id gebruikt.
 
-- **Detectie frequentie van onbestelbare peer**: Kies hoe vaak de VPN-client controleert of de VPN-tunnel actief is. Uw opties zijn:
-  - **Niet geconfigureerd**: gebruikt de standaard waarde van het IOS-systeem. Dit kan hetzelfde zijn als het selecteren van **medium**.
-  - **Geen**: de detectie van onbestelbare peers wordt uitgeschakeld.
-  - **Low**: Hiermee wordt elke 30 minuten een keepalive-bericht verzonden.
-  - **Gemiddeld** (standaard): Hiermee wordt elke 10 minuten een keepalive-bericht verzonden.
-  - **Hoog**: Hiermee wordt elke 60 seconden een keepalive-bericht verzonden.
+- **Detectiesnelheid voor inactieve peer**: kies hoe vaak de VPN-client controleert of de VPN-tunnel actief is. Uw opties zijn:
+  - **Niet geconfigureerd**: maakt gebruik van de standaardinstelling voor het iOS-/iPadOS-systeem. Dit kan hetzelfde zijn als het kiezen van **Gemiddeld**.
+  - **Geen**: de detectie van inactieve peers wordt uitgeschakeld.
+  - **Laag**: elke 30 minuten wordt een keepalive-bericht verzonden.
+  - **Gemiddeld** (standaard): elke 10 minuten wordt een keepalive-bericht verzonden.
+  - **Hoog**: elke 60 seconden wordt een keepalive-bericht verzonden.
 
-- **Minimum TLS-versie bereik**: Voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1`of `1.2`in. Als dit veld leeg blijft, wordt de standaard waarde van `1.0` gebruikt.
-- **TLS-versie bereik maximum**: Voer de maximale TLS-versie in die u wilt gebruiken. Voer `1.0`, `1.1`of `1.2`in. Als dit veld leeg blijft, wordt de standaard waarde van `1.2` gebruikt.
+- **Minimum TLS-versiebereik**: voer de minimale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaardwaarde `1.0` gebruikt.
+- **Maximum TLS-versiebereik**: voer de maximale TLS-versie in die moet worden gebruikt. Voer `1.0`, `1.1` of `1.2` in. Als dit veld leeg blijft, wordt de standaardwaarde `1.2` gebruikt.
 
 > [!NOTE]
-> Het minimum en maximum van het TLS-versie bereik moet worden ingesteld wanneer gebruikers verificatie en certificaten worden gebruikt.
+> Bij gebruik van gebruikersverificatie en certificaten moeten het minimum en maximum van het TLS-versiebereik zijn ingesteld.
 
-- **Perfect Forward Secrecy**: Selecteer **inschakelen** om PFS (Perfect Forward Secrecy) in te scha kelen. PFS is een IP-beveiligings functie die de impact vermindert als een sessie sleutel wordt aangetast. Met **uitschakelen** (standaard) wordt PFS niet gebruikt.
-- **Controle van certificaat intrekking**: Selecteer **inschakelen** om ervoor te zorgen dat de certificaten niet worden ingetrokken voordat de VPN-verbinding kan slagen. Deze controle is de beste inspanning. Als er een time-out optreedt voor de VPN-server voordat wordt vastgesteld of het certificaat is ingetrokken, wordt toegang verleend. **Uitschakelen** (standaard) controleert niet op ingetrokken certificaten.
+- **Perfect Forward Secrecy**: selecteer **Inschakelen** om PFS (Perfect Forward Secrecy) in te schakelen. PFS is een IP-beveiligingsfunctie die de impact vermindert als een sessiesleutel gecompromitteerd is. **Uitschakelen** (standaard): PFS wordt niet gebruikt.
+- **Controle van certificaatintrekking**: selecteer **Inschakelen** als moet worden gecontroleerd of de certificaten niet zijn ingetrokken voordat wordt toegestaan dat de VPN-verbinding tot stand wordt gebracht. Dit is een 'best effort'-controle. Als er een time-out optreedt voor de VPN-server voordat wordt vastgesteld of het certificaat is ingetrokken, wordt toegang verleend. **Uitschakelen** (standaard): er wordt niet gecontroleerd of de certificaten zijn ingetrokken.
 
-- **Para meters voor beveiligings koppeling configureren**: **niet geconfigureerd** (standaard) maakt gebruik van de standaard IOS-systeem. Selecteer **inschakelen** om de para meters in te voeren die worden gebruikt bij het maken van beveiligings koppelingen met de VPN-server:
-  - **Versleutelings algoritme**: Selecteer het gewenste algoritme:
+- **Parameters voor beveiligingskoppelingen configureren**: **Niet geconfigureerd** (standaard): gebruikt de standaardwaarde van het iOS-/iPadOS-systeem. Selecteer **Inschakelen** om de parameters in te voeren die worden gebruikt bij het maken van beveiligingskoppelingen met de VPN-server:
+  - **Versleutelingsalgoritme**: selecteer het gewenste algoritme:
     - DES
     - 3DES
     - AES-128
     - AES-256 (standaard)
     - AES-128-GCM
     - AES-256-GCM
-  - **Integriteits algoritme**: Selecteer het gewenste algoritme:
+  - **Integriteitsalgoritme**: selecteer het gewenste algoritme:
     - SHA1-96
     - SHA1-160
     - SHA2-256 (standaard)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard instelling is groeps `2`.
-  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaardinstelling is `1440`.
+  - **Diffie-Hellman-groep**: selecteer de gewenste groep. De standaardinstelling is groep `2`.
+  - **Levensduur** (minuten): kies hoe lang de beveiligingskoppeling actief blijft totdat de sleutels worden gedraaid. Voer een geheel getal tussen `10` en `1440` in (1440 minuten is 24 uur). De standaardinstelling is `1440`.
 
-- **Een afzonderlijke set para meters voor onderliggende beveiligings koppelingen configureren**: met IOS kunt u afzonderlijke para meters voor de IKE-verbinding en eventuele onderliggende verbindingen configureren. 
+- **Een afzonderlijke set parameters voor onderliggende beveiligingskoppelingen configureren**: met iOS/iPadOS kunt u afzonderlijke parameters voor de IKE-verbinding en eventuele onderliggende verbindingen configureren. 
 
-  **Niet geconfigureerd** (standaard) gebruikt de waarden die u in de vorige instelling **beveiligings koppeling instellen para meters** hebt opgegeven. Selecteer **inschakelen** om de para meters in te voeren die worden gebruikt bij het maken van *onderliggende* beveiligings koppelingen met de VPN-server:
-  - **Versleutelings algoritme**: Selecteer het gewenste algoritme:
+  **Niet geconfigureerd** (standaard): gebruikt de waarden die u eerder bij **Parameters voor beveiligingskoppelingen configureren** hebt opgegeven. Selecteer **Inschakelen** als u de parameters voor het maken van *onderliggende* beveiligingskoppelingen met de VPN-server wilt invoeren:
+  - **Versleutelingsalgoritme**: selecteer het gewenste algoritme:
     - DES
     - 3DES
     - AES-128
     - AES-256 (standaard)
     - AES-128-GCM
     - AES-256-GCM
-  - **Integriteits algoritme**: Selecteer het gewenste algoritme:
+  - **Integriteitsalgoritme**: selecteer het gewenste algoritme:
     - SHA1-96
     - SHA1-160
     - SHA2-256 (standaard)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman-groep**: Selecteer de groep die u wilt. De standaard instelling is groeps `2`.
-  - **Levens duur** (minuten): Kies hoe lang de beveiligings koppeling actief blijft totdat de sleutels worden gedraaid. Voer een gehele waarde tussen `10` en `1440` (1440 minuten is 24 uur). De standaardinstelling is `1440`.
+  - **Diffie-Hellman-groep**: selecteer de gewenste groep. De standaardinstelling is groep `2`.
+  - **Levensduur** (minuten): kies hoe lang de beveiligingskoppeling actief blijft totdat de sleutels worden gedraaid. Voer een geheel getal tussen `10` en `1440` in (1440 minuten is 24 uur). De standaardinstelling is `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-instellingen
 
-- **VPN per app**: Hiermee schakelt u VPN per app in. Er kan dan automatisch een VPN-verbinding worden gemaakt wanneer bepaalde apps worden geopend. U kunt ook apps koppelen aan het VPN-profiel. VPN per app wordt niet ondersteund voor IKEv2. Voor meer informatie ziet u de [instructies voor het instellen van VPN per app voor iOS](vpn-setting-configure-per-app.md). 
+- **VPN per app**: Hiermee schakelt u VPN per app in. Er kan dan automatisch een VPN-verbinding worden gemaakt wanneer bepaalde apps worden geopend. U kunt ook apps koppelen aan het VPN-profiel. VPN per app wordt niet ondersteund voor IKEv2. Zie de [instructies voor het instellen van VPN per app voor iOS/iPadOS](vpn-setting-configure-per-app.md) voor meer informatie. 
   - **Providertype**: Alleen beschikbaar voor Pulse Secure en aangepaste VPN.
-  - Wanneer u in iOS **VPN-profielen voor individuele apps** gebruikt met Pulse Secure en een aangepaste VPN, kiest u voor tunnels op app-niveau (app-proxy) of op pakketniveau (pakkettunnel). Stel de waarde **ProviderType** in op **app-proxy** voor tunneling op app-niveau of **pakkettunnel** voor tunneling op pakketniveau. Als u niet zeker weet welke waarde u moet gebruiken, bekijkt u de documentatie van uw VPN-provider.
+  - Wanneer u in iOS/iPadOS **VPN per app**-profielen met Pulse Secure of een aangepast VPN gebruikt, kiest u voor tunnels op app-niveau (app-proxy) of op pakketniveau (pakkettunnel). Stel de waarde **ProviderType** in op **app-proxy** voor tunneling op app-niveau of **pakkettunnel** voor tunneling op pakketniveau. Als u niet zeker weet welke waarde u moet gebruiken, bekijkt u de documentatie van uw VPN-provider.
   - **Safari-URL's waarmee dit VPN wordt geactiveerd**: Voeg een of meer website-URL's toe. Wanneer deze URL's worden bezocht via de Safari-browser op het apparaat, wordt er automatisch een VPN-verbinding ingesteld.
 
 - **VPN op aanvraag**: Configureer voorwaardelijke regels om te bepalen wanneer de VPN-verbinding wordt gestart. Stel bijvoorbeeld een voorwaarde in waarmee de VPN-verbinding alleen wordt gebruikt als een apparaat niet met een Wi-Fi-netwerk van het bedrijf is verbonden. Of maak een voorwaarde. Voorbeeld: de VPN-verbinding wordt niet gestart als een apparaat geen toegang heeft tot een DNS-zoekdomein dat u opgeeft.
@@ -193,7 +193,7 @@ Deze instellingen zijn van toepassing wanneer u **verbindings type** > **IKEv2**
   - **SSID's of DNS-zoekdomeinen**: Selecteer of voor deze voorwaarde het draadloze netwerk,  **SSID's** of **DNS-zoekdomeinen** worden gebruikt. Kies **Toevoegen** om een of meerdere SSID's of zoekdomeinen te configureren.
   - **URL-tekenreekstest**: Optioneel. Voer een URL die door de regel als een test wordt gebruikt. Als het apparaat zonder omleiding toegang wil verkrijgen tot deze URL, wordt de VPN-verbinding gestart. Het apparaat maakt dan verbinding met de doel-URL. De gebruiker ziet de tekenreekstestsite voor de URL niet.
 
-    Een voorbeeld van een URL-tekenreekstest is een controlewebserver-URL die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Of de URL test of de VPN-verbinding kan maken met een site voordat u het apparaat verbindt met de doel-URL via de VPN-verbinding.
+    Een voorbeeld van een URL-tekenreekstest is een controlewebserver-URL die de apparaatcompatibiliteit controleert voordat u verbinding maakt met de VPN-verbinding. Een andere mogelijkheid is dat de URL de VPN-verbinding voor een site controleert voordat het apparaat verbinding maakt met de doel-URL via de VPN-verbinding.
 .
   - **Domeinactie**: Kies een van de volgende items:
     - Verbinding maken indien nodig
@@ -216,4 +216,4 @@ Als u een proxy gebruikt, configureert u de volgende instellingen. Proxyinstelli
 
 Het profiel is gemaakt, maar er gebeurt nog niets. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-Configureer VPN-instellingen op apparaten met [Android](vpn-settings-android.md), [Android Enter prise](vpn-settings-android-enterprise.md), [macOS](vpn-settings-macos.md)en [Windows 10](vpn-settings-windows-10.md) .
+Configureer VPN-instellingen op apparaten met [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [macOS](vpn-settings-macos.md) en [Windows 10](vpn-settings-windows-10.md).

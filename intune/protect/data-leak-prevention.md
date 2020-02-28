@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502393"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514435"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Gegevenslekken op niet-beheerde apparaten voorkomen met Microsoft Intune
 
@@ -47,7 +47,7 @@ Het volgende actieplan kan worden gebruikt wanneer u aan de volgende vereisten v
 
 ## <a name="action-plan"></a>Actieplan
 
-Voor iOS- en Android-apparaten:
+Voor iOS/iPadOS- en Android-apparaten:
 
 1. Ontdek hoe [app-beveiligingsbeleid](../apps/app-protection-policy.md) werkt.
 2. Meer informatie over [het maken en implementeren van app-beveiligingsbeleid](../apps/app-protection-policies.md) voor mobiele Office-apps.
@@ -63,7 +63,7 @@ Voor Windows 10-apparaten:
 
 Deel zo nodig de volgende koppelingen voor aanvullende informatie:
 
-* [Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)
+* [Wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd met app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-ios.md)
 * [Wat u kunt verwachten wanneer uw Android-app wordt beheerd door een app-beveiligingsbeleid](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>Volgende stappen

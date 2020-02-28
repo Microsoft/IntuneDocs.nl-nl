@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502270"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515200"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Office 365 Exchange Online beveiligen zonder dat apparaatbeheer is vereist
 
-U kunt werknemers toegang geven tot hun werk-e-mail zonder de overhead van het instellen van een apparaatbeheersysteem. U kunt toegang tot Office 365 Exchange Online geven via Intune. Bevestig dat u licenties hebt voor Microsoft 365 of voor Azure Active Directory (premium) en Intune om de benodigde stappen te voltooien. Werknemers moeten beschikken over een [ondersteund iOS- of Android-apparaat](../fundamentals/supported-devices-browsers.md). 
+U kunt werknemers toegang geven tot hun werk-e-mail zonder de overhead van het instellen van een apparaatbeheersysteem. U kunt toegang tot Office 365 Exchange Online geven via Intune. Bevestig dat u licenties hebt voor Microsoft 365 of voor Azure Active Directory (premium) en Intune om de benodigde stappen te voltooien. Werknemers moeten beschikken over een [ondersteund iOS-/iPadOS- of Android-apparaat](../fundamentals/supported-devices-browsers.md). 
 
 Als u een apparaatbeheersysteem wilt instellen, is dat mogelijk. Dit type app-beveiliging werkt onafhankelijk van apparaatbeheer. 
 
@@ -41,7 +41,7 @@ Als u een apparaatbeheersysteem wilt instellen, is dat mogelijk. Dit type app-be
 
 ## <a name="what-to-tell-employees-and-students"></a>Wat u werknemers en leerlingen/studenten over Intune kunt vertellen
 
-* Vraag uw werknemers en leerlingen/studenten om Microsoft Outlook of Microsoft SharePoint voor iOS te downloaden en installeren vanuit de Apple App Store of voor Android vanuit Google Play. 
+* Vraag uw werknemers en leerlingen/studenten om Microsoft Outlook of Microsoft SharePoint te downloaden en te installeren vanuit de Apple App Store voor iOS/iPadOS, en vanuit Google Play voor Android. 
 * Als u de toegang blokkeert tot apps die geen moderne authenticatie gebruiken, stel de werknemers en leerlingen/studenten dan op de hoogte van deze beperking. 
 
 ## <a name="next-steps"></a>Volgende stappen

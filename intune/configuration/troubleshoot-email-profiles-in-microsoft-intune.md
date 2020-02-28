@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a19830130f992a002b73402f5e13a8f062539917
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059846"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512667"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Veelvoorkomende problemen met en oplossingen voor e-mailprofielen in Microsoft Intune
 
@@ -31,17 +31,17 @@ Lees welke problemen met e-mailprofielen zich vaak voordoen en hoe u deze kunt o
 
 ## <a name="what-you-need-to-know"></a>Wat u dient te weten
 
-- E-mail profielen worden geïmplementeerd voor de gebruiker die het apparaat heeft geregistreerd. Als u het e-mail profiel wilt configureren, gebruikt intune de Azure Active Directory (AD)-eigenschappen in het e-mail Profiel van de gebruiker tijdens de inschrijving. Het [toevoegen van e-mail instellingen aan apparaten](email-settings-configure.md) kan een goede bron zijn.
-- Voor Android Enter prise implementeert u Gmail of negen voor werk met behulp van de beheerde Google Play Store. [Beheerde Google Play-apps toevoegen](../apps/apps-add-android-for-work.md) worden de stappen weer gegeven.
-- Micro soft Outlook voor iOS en Android biedt geen ondersteuning voor e-mail profielen. Implementeer in plaats daarvan een app-configuratie beleid. Zie Outlook-configuratie- [instellingen](../apps/app-configuration-policies-outlook.md)voor meer informatie.
-- E-mail profielen die zijn gericht op apparaatgroepen (niet gebruikers groepen), worden mogelijk niet bezorgd op het apparaat. Wanneer het apparaat een primaire gebruiker heeft, zou het doel van het apparaat moeten werken. Als het e-mail profiel gebruikers certificaten bevat, moet u ervoor zorgen dat u gebruikers groepen bereikt.
-- Gebruikers wordt mogelijk herhaaldelijk gevraagd om hun wacht woord in te voeren voor het e-mail profiel. In dit scenario controleert u alle certificaten waarnaar wordt verwezen in het e-mail profiel. Als een van de certificaten niet is gericht op een gebruiker, probeert intune het e-mail profiel te implementeren.
+- E-mailprofielen worden geïmplementeerd voor de gebruiker die het apparaat heeft geregistreerd. Om het e-mailprofiel te configureren, gebruikt Intune de Azure Active Directory-eigenschappen in het e-mailprofiel van de gebruiker tijdens de inschrijving. [E-mailinstellingen toevoegen aan apparaten](email-settings-configure.md) kan een goede informatiebron voor u zijn.
+- Voor Android Enterprise implementeert u Gmail of Nine for Work met behulp van de beheerde Google Play Store. In [Beheerde Google Play-apps toevoegen](../apps/apps-add-android-for-work.md) worden de stappen weergegeven.
+- Microsoft Outlook voor iOS/iPadOS en Android bieden geen ondersteuning voor e-mailprofielen. Implementeer in plaats daarvan een app-configuratiebeleid. Zie [Configuratie-instellingen voor Outlook](../apps/app-configuration-policies-outlook.md) voor meer informatie.
+- E-mailprofielen die zijn gericht op apparaatgroepen (niet gebruikersgroepen), worden mogelijk niet bezorgd op het apparaat. Wanneer het apparaat een primaire gebruiker heeft, zou targeting van het apparaat moeten werken. Als het e-mailprofiel gebruikerscertificaten bevat, moet u doelgebruikersgroepen gebruiken.
+- Gebruikers wordt mogelijk meermaals gevraagd om hun wachtwoord in te voeren voor het e-mailprofiel. In dit scenario controleert u alle certificaten waarnaar wordt verwezen in het e-mailprofiel. Als een van de certificaten niet is gericht op een gebruiker, probeert Intune het e-mailprofiel opnieuw te implementeren.
 
 ## <a name="device-already-has-an-email-profile-installed"></a>Er is al een e-mailprofiel geïnstalleerd op het apparaat
 
-Als gebruikers een e-mail profiel maken voordat ze worden inge schreven in intune of Office 365 MDM, werkt het e-mail profiel dat door intune wordt geïmplementeerd mogelijk niet zoals verwacht:
+Als gebruikers een e-mailprofiel maken voordat ze zich inschrijven in Intune of Office 365 MDM, werkt het e-mailprofiel dat door Intune is geïmplementeerd mogelijk niet zoals verwacht:
 
-- **iOS**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Het door de gebruiker gemaakte e-mailprofiel blokkeert de implementatie van het in Intune gemaakte profiel. Dit is een veelvoorkomend probleem, omdat iOS-gebruikers vaak zelf een e-mailprofiel maken en het apparaat vervolgens inschrijven. De bedrijfsportal-app geeft aan dat de gebruiker niet compatibel is en kan de gebruiker vragen om het e-mailprofiel te verwijderen.
+- **iOS/iPadOS**: Intune detecteert een bestaand, dubbel e-mailprofiel op basis van hostnaam en e-mailadres. Het door de gebruiker gemaakte e-mailprofiel blokkeert de implementatie van het in Intune gemaakte profiel. Dit is een veelvoorkomend probleem, omdat iOS-/iPadOS-gebruikers vaak zelf een e-mailprofiel maken en het apparaat vervolgens inschrijven. De bedrijfsportal-app geeft aan dat de gebruiker niet compatibel is en kan de gebruiker vragen om het e-mailprofiel te verwijderen.
 
   De gebruiker moet het e-mailprofiel verwijderen, zodat het Intune-profiel kan worden geïmplementeerd. Voorkom dit probleem door gebruikers te vertellen dat ze zich moeten inschrijven en Intune toe te staan het e-mailprofiel te implementeren. Vervolgens kunnen gebruikers hun e-mailprofiel aanmaken.
 
@@ -53,7 +53,7 @@ Samsung KNOX gebruikt geen hostnaam om het profiel te identificeren. U kunt het 
 
 ## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Fout 0x87D1FDE8 voor KNOX Standard-apparaat
 
-**Probleem**: na het maken en implementeren van een Exchange Active Sync-e-mailprofiel voor Samsung KNOX Standard voor verschillende Android-apparaten, wordt door de apparaten **0x87D1FDE8** of de fout **Doorvoeren is mislukt** weergegeven in het tabblad Beleid van de eigenschappen van het apparaat.
+**Probleem**: Na het maken en implementeren van een Exchange Active Sync-e-mailprofiel voor Samsung KNOX Standard voor verschillende Android-apparaten, wordt door de apparaten **0x87D1FDE8** of de fout **Doorvoeren is mislukt** weergegeven in het tabblad Beleid van de eigenschappen van het apparaat.
 
 Controleer de configuratie van uw EAS-profiel voor Samsung KNOX en het bronbeleid. De synchronisatieoptie voor Samsung Notes wordt niet meer ondersteund en deze optie moet niet worden geselecteerd in uw profiel. Geef de apparaten voldoende tijd (maximaal 24 uur) om het beleid te verwerken.
 
@@ -63,8 +63,8 @@ Gebruikers met automatisch geconfigureerde e-mailaccounts kunnen geen afbeelding
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apparaten** > **Configuratieprofielen**.
-3. Selecteer uw e-mail Profiel > **eigenschappen** > **instellingen**.
-4. Stel in **dat de instelling E-mail mag worden verzonden vanuit toepassingen van derden** om in te **scha kelen**.
+3. Selecteer uw e-mailprofiel > **Eigenschappen** > **Instellingen**.
+4. Stel **Toestaan dat e-mails worden verzonden vanuit toepassingen van derden** in op **Inschakelen**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755592"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514741"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Problemen met acties oplossen in Intune
 
@@ -34,7 +34,7 @@ Microsoft Intune biedt veel acties die u helpen bij het beheren van apparaten. I
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Ik heb geklikt op de actie Activeringsslot uitschakelen in de portal, maar er is niets gebeurd op het apparaat.
 Dit is normaal. Na het starten van de actie Activeringsslot uitschakelen, wordt Intune om een bijgewerkte code van Apple gevraagd. U voert de code handmatig in het wachtwoordcodeveld in als uw apparaat op het scherm Activeringsslot wordt weergegeven. Deze code is slechts 15 dagen geldig. Zorg er dus voor dat u op de actie klikt en de code kopieert voordat u Wissen gebruikt.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>Waarom zie ik de code voor het uitschakelen van het activeringsslot niet in de blade Hardwareoverzicht van mijn iOS-apparaat?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>Waarom zie ik de code voor het uitschakelen van het activeringsslot niet op de blade Hardwareoverzicht van mijn iOS-/iPadOS-apparaat?
 De waarschijnlijke oorzaken zijn:
 - De code is verlopen en is uit de service gewist.
 - Het apparaat staat niet onder supervisie van het restrictiebeleid voor apparaten om Activeringsslot toe te staan.
@@ -43,7 +43,7 @@ U kunt de code in Grafiekverkenner controleren met de volgende query:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>Waarom wordt de actie Activeringsslot uitschakelen grijs weergegeven voor mijn iOS-apparaat?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>Waarom wordt de actie Activeringsslot uitschakelen grijs weergegeven voor mijn iOS-/iPadOS-apparaat?
 De waarschijnlijke oorzaken zijn: 
 - De code is verlopen en is uit de service gewist.
 - Het apparaat staat niet onder supervisie van het restrictiebeleid voor apparaten om Activeringsslot toe te staan.
@@ -90,8 +90,22 @@ Omdat het token voor opnieuw instellen niet is geactiveerd op het apparaat. Het 
 3. De eindgebruiker moet de secundaire prompt accepteren om opnieuw instellen van de wachtwoordcode mogelijk te maken.
 Na voltooiing van deze stappen ontvangt u dit antwoord niet meer.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>Waarom krijg ik het verzoek een nieuwe wachtwoordcode in te stellen op mijn iOS-apparaat wanneer ik de actie Wachtwoordcode verwijderen uitvoer?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Waarom krijg ik het verzoek een nieuwe wachtwoordcode in te stellen op mijn iOS-/iPadOS-apparaat wanneer ik de actie Wachtwoordcode verwijderen uitvoer?
 Omdat volgens een van uw nalevingsbeleidsregels een wachtwoordcode vereist is.
+
+
+## <a name="wipe-action"></a>Actie Wissen
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>Ik kan een Windows 10-apparaat niet opnieuw opstarten na het gebruik van de actie Wissen
+Dit kan gebeuren als u ervoor kiest om het **apparaat te wissen en u doorgaat met wissen, zelfs als het apparaat de voedingsspanning verliest. Houd er bij de keuze van deze optie rekening mee dat sommige Windows 10-apparaten niet meer kunnen worden opgestart.** op een Windows 10-apparaat.
+
+Dit kan gebeuren wanneer de installatie van Windows ernstige beschadigingen heeft waardoor het besturingssysteem niet opnieuw kan worden geïnstalleerd. In dat geval mislukt het proces en blijft het systeem hangen in de [Windows-herstelomgeving]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>Ik kan een met BitLocker versleuteld apparaat niet opnieuw opstarten na het gebruik van de actie Wissen
+Dit kan gebeuren als u ervoor kiest om het **apparaat te wissen en u doorgaat met wissen, zelfs als het apparaat de voedingsspanning verliest. Houd er bij de keuze van deze optie rekening mee dat sommige Windows 10-apparaten niet meer kunnen worden opgestart.** optie op een met BitLocker versleuteld apparaat.
+
+Om dit probleem op te lossen, gebruikt u opstartbare media om Windows 10 opnieuw op het apparaat te installeren.
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -1,7 +1,7 @@
 ---
 title: Beheeropties voor Windows-pc's vergelijken
 titleSuffix: Microsoft Intune
-description: iOS-apparaten in bedrijfseigendom inschrijven met het Apple Device Enrollment Program (DEP) of Apple Configurator.
+description: iOS-/iPadOS-apparaten in bedrijfseigendom inschrijven met Apple DEP (Device Enrollment Program) of Apple Configurator.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: cda9a549cb12ab61da67da91272e9f388d32a2ef
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059203"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514979"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Het beheer van Windows-pc's als computers of mobiele apparaten vergelijken
 
@@ -42,8 +42,8 @@ Organisaties kunnen Microsoft Intune gebruiken voor het beheren van Windows-pc's
 |**Beheer van software-updates**| Windows-updates en updates voor Microsoft-apps<br>[Windows-pc's up-to-date houden met software-updates](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|Microsoft Store voor Bedrijven voor Windows 10-updates en updates voor Microsoft-apps<br> [Instellingen voor Windows Update voor bedrijven configureren](../protect/windows-update-for-business-configure.md) |
 |**Softwarelicentiebeheer**|Beschikbaar <br>[Licentieovereenkomsten voor Windows-pc-software beheren](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|Microsoft Store voor Bedrijven (alleen .appx-apps)<br>[Apps beheren die zijn aangeschaft in Microsoft Store voor Bedrijven](../apps/windows-store-for-business.md)|
 |**Inventaris**|Beschikbaar <br>[Hardware- en software-inventaris voor Windows-pc's weergeven](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Beschikbaar <br>[App-gegevens controleren](../apps/apps-monitor.md)<br>[Wat is apparaatbeheer](../remote-actions/device-management.md)|
-|**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Beschikbaar <br>[Micro soft Defender firewall](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
-|**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Micro soft Defender inschakelen](../protect/advanced-threat-protection.md)|
+|**Windows-firewallbeleid**|Beschikbaar <br>[Windows-pc's beschermen met Windows Firewall-beleid](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Beschikbaar <br>[Microsoft Defender Firewall](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**Antimalwarebeveiliging**|Endpoint Protection<br>[Voor een betere beveiliging van Windows-pc's zorgen met Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Microsoft Defender inschakelen](../protect/advanced-threat-protection.md)|
 |**Hulp op afstand** |TeamViewer<br>[Hulp op afstand voor Windows-pc's aanvragen en bieden](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer gebruiken voor het extern beheren van Intune-apparaten](../remote-actions/teamviewer-support.md) |
 |**App-implementatie** | Niet beschikbaar voor Microsoft Store voor Bedrijven,<br>alleen .exe, .appx, en .msi die uit meerdere bestanden bestaat<br>[Apps toevoegen voor Windows-pc's met de Intune-softwareclient ](add-apps-for-windows-pcs-in-microsoft-intune.md)|Beschikbaar voor Microsoft Store-apps en Line-Of-Business-apps<br>[Windows Store-apps toevoegen](../apps/store-apps-windows.md)<br>[Windows-Line-Of-Business (LOB)-apps toevoegen](../apps/lob-apps-windows.md)|
 |**App-beveiliging**|Niet beschikbaar|Beschikbaar <br>[Wat zijn beleidsregels voor de beveiliging van apps?](../apps/app-protection-policy.md)|

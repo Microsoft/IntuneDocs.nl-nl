@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510249"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514588"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>De portal voor probleemoplossing gebruiken om gebruikers in uw bedrijf te helpen
 
@@ -59,7 +59,7 @@ In het deelvenster Problemen oplossen kiest u **Gebruiker selecteren** om gebrui
 
 U kunt het deelvenster **Probleemoplossing** gebruiken om gebruikersgegevens weer te geven.
 
-![Dash board voor probleem oplossing, met genummerde gebieden die worden beschreven door de volgende tabel](./media/help-desk-operators/troubleshooting-dash.png)
+![Dashboard voor probleemoplossing, met genummerde gebieden die worden beschreven in de volgende tabel](./media/help-desk-operators/troubleshooting-dash.png)
 
 | Gebied | Naam | Beschrijving |
 | ---  | ---  | ---         |
@@ -253,7 +253,7 @@ De tabel met inschrijvingsfouten bevat een lijst met mislukte inschrijvingspogin
 | Start inschrijving | De begintijd waarop de gebruiker de inschrijving is gestart. |
 | Besturingssysteem | Het besturingssysteem van het apparaat. |
 | Besturingssysteemversie | De versie van het besturingssysteem van het apparaat. |
-| Mislukt | De reden voor de fout. |
+| Fout | De reden voor de fout. |
 
 ### <a name="failure-details"></a>Foutdetails
 
@@ -269,7 +269,7 @@ Wanneer u een foutenrij kiest, worden meer details weergegeven.
 
 | Fout | Details |
 |-------------|----------|
-| iOS-time-out of -fout | Een time-out tussen het apparaat en Intune omdat de gebruiker te lang over het voltooien van de inschrijving doet. |
+| Time-out of fout bij iOS/iPadOS | Een time-out tussen het apparaat en Intune omdat de gebruiker te lang over het voltooien van de inschrijving doet. |
 | Gebruiker niet gevonden of gelicentieerd | De gebruiker mist een licentie of is verwijderd uit de service. |
 | Het apparaat is al ingeschreven | Iemand heeft geprobeerd om een apparaat in te schrijven met behulp van de bedrijfsportal op een apparaat dat nog door een andere gebruiker staat ingeschreven. |
 | Geen onboarding uitgevoerd in Intune | Er is een geprobeerd het apparaat in te schrijven toen de Intune-autoriteit voor Mobile Device Management (MDM) niet was geconfigureerd. |
@@ -286,14 +286,14 @@ Wanneer u een foutenrij kiest, worden meer details weergegeven.
 | Onverwachte Autopilot-inschrijvingsmethode | Er is geprobeerd het apparaat in te schrijven met behulp van een niet-toegestane methode. |
 | Autopilot-apparaat is verwijderd | Het in te schrijven apparaat is voor dit account uit Autopilot verwijderd. |
 | Apparaatlimiet bereikt | Deze inschrijving is geblokkeerd vanwege een door de beheerder geconfigureerde beperking voor de apparaatlimiet. |
-| Apple-onboarding | Alle iOS-apparaten zijn op dit moment geblokkeerd voor inschrijving vanwege een ontbrekend of verlopen Apple MDM-pushcertificaat in Intune. |
+| Apple-onboarding | Alle iOS-/iPadOS-apparaten zijn op dit moment geblokkeerd voor inschrijving vanwege een ontbrekend of verlopen Apple MDM-pushcertificaat in Intune. |
 | Apparaat niet vooraf geregistreerd | Het apparaat is niet vooraf als zakelijk geregistreerd en alle persoonlijke inschrijvingen zijn door een beheerder geblokkeerd. |
 | Functie niet ondersteund | De gebruiker probeert zich waarschijnlijk in te schrijven via een methode die niet compatibel is met uw Intune-configuratie. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Beschikbare gegevens verzamelen van mobiel apparaat
 
 Gebruik de volgende bronnen bij het verzamelen van gegevens van apparaten bij het oplossen van problemen van de apparaten van de gebruiker:
-- [iOS-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [iOS-/iPadOS-registratiefouten verzenden naar de IT-beheerder](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Het ondersteuningsteam van het bedrijf helpen met het oplossen van problemen met het apparaat via uitgebreide logboekregistratie](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [Android-logboeken naar het ondersteuningsteam van het bedrijf verzenden met een USB-kabel](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Logboeken met diagnostische gegevens over Android naar de IT-beheerder verzenden via e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
