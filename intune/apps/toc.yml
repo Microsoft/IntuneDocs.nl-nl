@@ -13,6 +13,8 @@
       href: quickstart-create-assign-app-policy.md
 - name: Zelfstudies
   items:
+    - name: E-mail op beheerde apparaten beschermen
+      href: ../protect/tutorial-protect-email-on-enrolled-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: E-mail op niet-beheerde apparaten beschermen
       href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: Slack configureren om Intune te gebruiken
