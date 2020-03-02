@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966297"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576508"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>SCEP-certificaatprofielen maken en toewijzen in Intune
 
@@ -60,7 +60,7 @@ Nadat u [uw infrastructuur hebt geconfigureerd](certificates-scep-configure.md) 
 
    - **Certificaattype**:
 
-     *(Van toepassing op:  Android, Android Enterprise, iOS, macOS, Windows 8.1 en later en Windows 10 en later.)*
+     *(Van toepassing op:  Android, Android Enterprise, iOS/iPadOS, macOS, Windows 8.1 en later en Windows 10 en later.)*
 
      Selecteer een type op basis van de wijze waarop u het certificaatprofiel wilt gebruiken:
 
@@ -280,7 +280,7 @@ Wijs SCEP-certificaatprofielen op dezelfde manier toe als u [apparaatprofielen i
 - Hoewel u het vertrouwde certificaatprofiel en het SCEP-certificaatprofiel afzonderlijk maakt en toewijst, moeten beide zijn toegewezen. Als deze niet beide op een apparaat zijn geïnstalleerd, mislukt het SCEP-certificaatbeleid. Zorg ervoor dat alle vertrouwde basiscertificaatprofielen ook zijn geïmplementeerd in dezelfde groepen als het SCEP-profiel.
 
 > [!NOTE]
-> Als op iOS-apparaten een SCEP-certificaatprofiel aan een extra profiel, zoals een Wi-Fi- of VPN-profiel, is gekoppeld, ontvangt het apparaat een certificaat voor al deze extra profielen. Hierdoor ontvangt het iOS-apparaat meerdere certificaten na de SCEP-certificaataanvraag.  Als een enkel certificaat gewenst is, moet u PKCS-certificaten gebruiken in plaats van SCEP-certificaten.  Dit is nodig vanwege verschillen in de wijze waarop SCEP-en PKCS-certificaten aan apparaten worden geleverd.
+> Als op iOS-/iPadOS-apparaten een SCEP-certificaatprofiel aan een extra profiel, zoals een Wi-Fi- of VPN-profiel, is gekoppeld, ontvangt het apparaat een certificaat voor al deze extra profielen. Hierdoor ontvangt het iOS-/iPadOS-apparaat meerdere certificaten na de SCEP-certificaataanvraag.  Als een enkel certificaat gewenst is, moet u PKCS-certificaten gebruiken in plaats van SCEP-certificaten.  Dit is nodig vanwege verschillen in de wijze waarop SCEP-en PKCS-certificaten aan apparaten worden geleverd.
 
 ## <a name="next-steps"></a>Volgende stappen
 

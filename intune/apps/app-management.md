@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414706"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513942"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Wat is Microsoft Intune-appbeheer?
 
@@ -92,20 +92,20 @@ In de volgende vier secties worden de beschikbare opties in het deelvenster **Ap
   - [Apps controleren](apps-monitor.md).
 - **App-configuratiebeleid**: selecteer deze optie om instellingen op te geven die mogelijk vereist zijn wanneer een gebruiker een app uitvoert. Zie voor meer informatie:
   - [App-configuratiebeleidsregels voor Intune](app-configuration-policies-overview.md).
-    - [Beleid voor de configuratie van iOS-apps](app-configuration-policies-use-ios.md).
+    - [Beleid voor de configuratie van iOS/iPadOS-apps](app-configuration-policies-use-ios.md).
     - [Beleid voor de configuratie van Android-apps](app-configuration-policies-use-android.md).
 - **Beleid voor app-beveiliging**: selecteer deze optie om instellingen aan een app te koppelen om de bedrijfsgegevens te beveiligen die in de app worden gebruikt. U kunt bijvoorbeeld de mogelijkheden van een app om met andere apps te communiceren beperken of u kunt vereisen dat de gebruiker een pincode voor toegang tot een bedrijfsapp invoert. Zie voor meer informatie:
   - [Beleid voor app-beveiliging](app-protection-policies.md).
 - **App selectief wissen**: selecteer deze optie om alleen bedrijfsgegevens van een geselecteerd gebruikersapparaat te verwijderen. Zie voor meer informatie:
   - [App selectief wissen](apps-selective-wipe.md).
 - **Inrichtingsprofielen voor iOS-app**: iOS-/iPadOS-apps hebben een inrichtingsprofiel en code die zijn ondertekend met een certificaat. Wanneer het certificaat is verlopen, kan de app niet meer worden uitgevoerd. Intune biedt u de hulpmiddelen om proactief een nieuw beleid voor inrichtingsprofielen toe te wijzen aan apparaten met apps die bijna zijn verlopen. Zie voor meer informatie:
-  - [Inrichtingsprofielen voor iOS-apps](app-provisioning-profile-ios.md).
+  - [Inrichtingsprofielen voor iOS/iPadOS-apps](app-provisioning-profile-ios.md).
 
 Zie [Apps beheren](app-management.md) voor meer informatie over deze sectie.
 
 ### <a name="monitor"></a>Monitor
 - **App-licenties**: apps die in de app-stores zijn gekocht via een volume-aankoopprogramma weergeven, toewijzen en bewaken. Zie voor meer informatie:
-  - [iOS-apps die zijn gekocht via het volume-aankoopprogramma (VPP)](vpp-apps-ios.md).
+  - [iOS/iPadOS-apps die zijn gekocht via het volume-aankoopprogramma (VPP)](vpp-apps-ios.md).
   - [Microsoft Store voor Bedrijven-apps die via het volume-aankoopprogramma zijn gekocht](windows-store-for-business.md).
 - **Gedetecteerde apps**: hier worden apps weergegeven die zijn toegewezen door Intune of op een apparaat zijn geïnstalleerd. Zie [Door Intune gedetecteerde apps](app-discovered-apps.md) voor meer informatie.
 - **Installatiestatus van de app**: hier wordt de status weergegeven van een app-toewijzing die u hebt gemaakt. Zie [App-gegevens en -toewijzingen controleren met Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) voor meer informatie.
@@ -116,7 +116,7 @@ Zie [Apps bewaken](apps-monitor.md) voor meer informatie over deze sectie.
 
 ### <a name="set-up"></a>Instellen
 - **VPP-tokens voor iOS**: voor het toepassen en weergeven van uw VPP-licenties (Volume Purchase Program) voor iOS/iPadOS. Zie voor meer informatie:
-  - [iOS-apps die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
+  - [iOS/iPadOS-apps beheren die zijn gekocht via het volume-aankoopprogramma](vpp-apps-ios.md)
 - **Windows Enterprise-certificaat**: voor het toepassen of weergeven van de status van een certificaat voor ondertekening van programmacode die wordt gebruikt voor het distribueren van LOB-apps naar uw beheerde Windows-apparaten.
 - **Windows Symantec-certificaat**: voor het toepassen of weergeven van een Symantec-certificaat voor ondertekening van programmacode die nodig is voor het distribueren van XAP- en WP8.x-appx-bestanden naar Windows 10 Mobile-apparaten.
 - **Microsoft Store voor Bedrijven**: een verbinding met de Microsoft Store voor Bedrijven configureren. Nadat u dit hebt gedaan, kunt u gekochte toepassingen synchroniseren met Intune, deze toewijzen en uw licentiegebruik bijhouden. Zie voor meer informatie:

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563641"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576434"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>De app Microsoft Intune-bedrijfsportal configureren
 
@@ -37,9 +37,9 @@ De Microsoft Intune-bedrijfsportal is de plaats waar gebruikers toegang hebben t
 > [!Tip]
 > Wanneer u de bedrijfsportal aanpast, zijn de configuraties zowel van toepassing op de website als op de apps van de bedrijfsportal. Houd er rekening mee dat gebruikers een Intune-licentie nodig hebben die is toegewezen aan de bedrijfsportal-website.
 
-Door de bedrijfsportal aan te passen geeft u uw eindgebruikers een vertrouwde en efficiënte ervaring. Selecteer hiervoor in de Intune-portal achtereenvolgens **Apps** > **Huisstijl en aanpassing** en configureer vervolgens de vereiste instellingen.
+Door de bedrijfsportal aan te passen geeft u uw eindgebruikers een vertrouwde en efficiënte ervaring. Ga hiervoor naar het [Beheercentrum voor Microsoft Eindpuntbeheer](https://go.microsoft.com/fwlink/?linkid=2109431), selecteer **Tenantbeheer** > **Branding en aanpassing** en configureer de vereiste instellingen.
 
-Wanneer een gebruiker een iOS-toepassing installeert vanuit de bedrijfsportal wordt er een prompt weergegeven. Dit doet zich voor wanneer de iOS-app is gekoppeld aan de App Store, aan een volume-aankoopprogramma (VPP) of aan een Line-Of-Business-app (LOB). Met de prompt kunnen gebruikers de actie accepteren of het beheer van de app toestaan. In de prompt wordt uw bedrijfsnaam weergegeven. Wanneer uw bedrijfsnaam niet beschikbaar is, wordt **Bedrijfsportal** weergegeven. 
+Wanneer een gebruiker een iOS/iPadOS-toepassing installeert vanuit de bedrijfsportal wordt er een prompt weergegeven. Dit doet zich voor wanneer de iOS/iPadOS-app is gekoppeld aan de App Store, aan een volume-aankoopprogramma (VPP) of aan een Line-Of-Business-app (LOB). Met de prompt kunnen gebruikers de actie accepteren of het beheer van de app toestaan. In de prompt wordt uw bedrijfsnaam weergegeven. Wanneer uw bedrijfsnaam niet beschikbaar is, wordt **Bedrijfsportal** weergegeven. 
 
 > [!Note]
 > Als u gebruikmaakt van Azure Government, worden er app-logboeken aangeboden aan de eindgebruiker zodat deze kan beslissen hoe deze de logboeken graag wil delen wanneer er een probleem moet worden opgelost. Als u niet gebruikmaakt van Azure Government, worden vanuit de bedrijfsportal voor Windows 10 app-logboeken rechtstreeks naar Microsoft verzonden wanneer de gebruiker hulp nodig heeft bij het oplossen van een probleem. Als de app-logboeken naar Microsoft worden verzonden, is het eenvoudiger om problemen op te lossen. 
@@ -92,11 +92,11 @@ Kies een logo dat er het beste uitziet op een witte of lichte achtergrond.
 
 ### <a name="brand-image-for-company-portal"></a>Merkafbeelding toevoegen voor de bedrijfsportal
 
-Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in het deelvenster **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS-apparaat, en niet in de Intune-webportal. 
+Geef een merkafbeelding weer die de huisstijl van uw bedrijf uitstraalt. Nadat u uw wijzigingen hebt opgeslagen, kiest u in de Intune-webportal, boven in het deelvenster **Een voorbeeld van uw instellingen bekijken** om te zien hoe uw configuraties eruit gaan zien. Houd er rekening mee dat u de merkafbeelding alleen kunt bekijken op een iOS/iPadOS-apparaat, en niet in de Intune-webportal. 
 
 |Veldnaam|Meer informatie|
 |---|---|
-|**Uw merkafbeelding uploaden**| Met deze optie kunt u een merkafbeelding weergeven. Deze wordt op de profielpagina van de gebruiker in de iOS-bedrijfsportal weergegeven als een achtergrondafbeelding.<p><ul><li>Aanbevolen breedte van afbeelding: Groter dan 1125 pixels (minimaal 650 pixels vereist)</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
+|**Uw merkafbeelding uploaden**| Met deze optie kunt u een merkafbeelding weergeven. Deze wordt op de profielpagina van de gebruiker in de iOS/iPadOS-bedrijfsportal weergegeven als een achtergrondafbeelding.<p><ul><li>Aanbevolen breedte van afbeelding: Groter dan 1125 pixels (minimaal 650 pixels vereist)</li><li>Maximale afbeeldingsgrootte: 1,3 MB</li><li>Bestandstype: PNG, JPG of JPEG</li></ul>|
 
 Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsportal-app worden versterkt, doordat de app uw huisstijl weerspiegelt. Hier volgen enkele tips die u kunt gebruiken voor het verkrijgen, kiezen en optimaliseren van een afbeelding voor de bedrijfsportal. 
 
@@ -108,7 +108,7 @@ Met de juiste merkafbeelding kan het vertrouwen van de gebruiker in de bedrijfsp
 
 - Verwijder onnodige metagegevens. Afbeeldingsbestanden bevatten soms metagegevens, zoals een cameraprofiel, geografische locatie, titel, bijschrift, enzovoort. Gebruik een hulpprogramma voor afbeeldingoptimalisatie voor het verwijderen van deze gegevens. Zo blijft de kwaliteit behouden en kunt u voldoet aan de maximale bestandsgrootte. 
 
-Nadat in Intune een merkafbeelding is toegevoegd of gewijzigd, ziet de eindgebruiker de wijziging mogelijk niet op iOS-apparaten totdat de Bedrijfsportal de wijzigingen bij opstarten heeft herkend en vervolgens opnieuw is opgestart, waarna de merkafbeelding wordt weergegeven. 
+Nadat in Intune een merkafbeelding is toegevoegd of gewijzigd, ziet de eindgebruiker de wijziging mogelijk niet op iOS/iPadOS-apparaten totdat de bedrijfsportal de wijzigingen bij opstarten heeft herkend en vervolgens opnieuw is opgestart, waarna de merkafbeelding wordt weergegeven. 
 
 ### <a name="brand-image-examples"></a>Voorbeelden van merkafbeeldingen
 
@@ -122,20 +122,20 @@ In de volgende afbeelding ziet u een voorbeeld van een merkafbeelding op een iPh
 
 ## <a name="privacy-statement-customization"></a>Aanpassing van de privacyverklaring
 
-U kunt de privacyverklaring aanpassen die voor uw organisatie wordt weergegeven op beheerde iOS-apparaten. In dit bericht worden de items vermeld die uw organisatie niet kan zien of uitvoeren op beheerde iOS-apparaten.
+U kunt de privacyverklaring aanpassen die voor uw organisatie wordt weergegeven op beheerde iOS/iPadOS-apparaten. In dit bericht worden de items vermeld die uw organisatie niet kan zien of uitvoeren op beheerde iOS/iPadOS-apparaten.
 
 Onder **Aanpassing van de bedrijfsportal** > **Apparaatbeheer en privacybericht** kunt u het volgende doen:
 
 - De **standaardinstelling** accepteren om de lijst te gebruiken zoals deze wordt weergegeven, of
-- **Aangepast** kiezen om de lijst met items die uw organisatie niet kan zien of uitvoeren op beheerde iOS-apparaten aan te passen. U kunt [Markdown](https://daringfireball.net/projects/markdown/) gebruiken om opsommingstekens, vet, cursief en koppelingen toe te voegen.
+- Kies **Aangepast** om de lijst met items aan te passen die uw organisatie niet kan zien of uitvoeren op beheerde iOS/iPadOS-apparaten. U kunt [Markdown](https://daringfireball.net/projects/markdown/) gebruiken om opsommingstekens, vet, cursief en koppelingen toe te voegen.
 
 ## <a name="company-portal-derived-credentials-for-ios-devices"></a>Van de bedrijfsportal afgeleide referenties voor iOS-apparaten
-Intune ondersteunt referenties die zijn afgeleid van Personal Identity Verification (PIV) en Common Access Card (CAC), in samenwerking met de referentieproviders DISA Purebred, Entrust Datacard en Intercede. Eindgebruikers voeren na inschrijving aanvullende stappen uit op hun iOS-apparaat om hun identiteit te verifiëren in de toepassing Bedrijfsportal. Afgeleide referenties worden ingeschakeld voor gebruikers door eerst een referentieprovider voor uw tenant in te stellen en vervolgens een profiel dat gebruikmaakt van afgeleide referenties te richten op gebruikers of apparaten.
+Intune ondersteunt referenties die zijn afgeleid van Personal Identity Verification (PIV) en Common Access Card (CAC), in samenwerking met de referentieproviders DISA Purebred, Entrust Datacard en Intercede. Eindgebruikers voeren na inschrijving aanvullende stappen uit op hun iOS/iPadOS-apparaat om hun identiteit te verifiëren in de toepassing Bedrijfsportal. Afgeleide referenties worden ingeschakeld voor gebruikers door eerst een referentieprovider voor uw tenant in te stellen en vervolgens een profiel dat gebruikmaakt van afgeleide referenties te richten op gebruikers of apparaten.
 
 > [!NOTE]
 > De gebruiker ziet instructies over afgeleide referenties op basis van de koppeling die u via Intune hebt opgegeven.
 
-Zie [Afgeleide referenties gebruiken in Microsoft Intune](~/protect/derived-credentials.md) voor meer informatie over afgeleide referenties voor iOS-apparaten.
+Zie [Afgeleide referenties gebruiken in Microsoft Intune](~/protect/derived-credentials.md) voor meer informatie over afgeleide referenties voor iOS/iPadOS-apparaten.
 
 ## <a name="dark-mode-for-ios-company-portal"></a>Donkere modus voor iOS-bedrijfsportal
 
@@ -177,7 +177,7 @@ Gebruikers kunnen acties uitvoeren op hun lokale of externe apparaten via de app
 - **Naam wijzigen**: met deze actie wijzigt u de apparaatnaam die de gebruiker kan zien in de bedrijfsportal. Alleen de vermelding in de bedrijfsportal wordt gewijzigd. De naam van het lokale apparaat wordt niet gewijzigd.
 - **Synchroniseren**: met deze actie wordt een apparaat ingecheckt bij de Intune-service. Dit wordt weergegeven als **Status controleren** in de bedrijfsportal.
 - **Extern vergrendelen**: hiermee wordt het apparaat vergrendeld en is een pincode vereist om het apparaat weer te ontgrendelen.
-- **Wachtwoordcode opnieuw instellen**: deze actie wordt gebruikt om de wachtwoordcode van het apparaat opnieuw in te stellen. Op iOS-apparaten wordt de wachtwoordcode verwijderd en moet de eindgebruiker een nieuwe code invoeren in Instellingen. Op ondersteunde Android-apparaten wordt een nieuwe wachtwoordcode gegenereerd door Intune, die tijdelijk wordt weergegeven in de bedrijfsportal.
+- **Wachtwoordcode opnieuw instellen**: deze actie wordt gebruikt om de wachtwoordcode van het apparaat opnieuw in te stellen. Op iOS/iPadOS-apparaten wordt de wachtwoordcode verwijderd en moet de eindgebruiker een nieuwe code invoeren in Instellingen. Op ondersteunde Android-apparaten wordt een nieuwe wachtwoordcode gegenereerd door Intune, die tijdelijk wordt weergegeven in de bedrijfsportal.
 - **Sleutelherstel**: deze actie wordt gebruikt om een persoonlijke herstelsleutel te herstellen voor versleutelde macOS-apparaten vanaf de Bedrijfsportal-website. 
 
 ### <a name="self-service-actions"></a>Selfserviceacties
@@ -198,10 +198,10 @@ Voor sommige platforms en configuraties zijn geen selfserviceacties voor apparat
 <sup>(2)</sup> **Sleutelherstel** voor MacOS is alleen beschikbaar via de webportal.<br>
 <sup>(3) </sup> Alle externe acties worden uitgeschakeld als u een Apparaatinschrijvingsmanager-inschrijving gebruikt.<br>
 <sup>(4)</sup> Met **Naam wijzigen** wordt alleen de apparaatnaam in de app of webportal van de bedrijfsportal gewijzigd, niet op het apparaat zelf.<br>
-<sup>(5)</sup> **Wissen** is niet beschikbaar op door de gebruiker ingeschreven iOS-apparaten.<br>
+<sup>(5)</sup> **Wissen** is niet beschikbaar op door de gebruiker ingeschreven iOS/iPadOS-apparaten.<br>
 <sup>(6)</sup> **Wachtwoordcode opnieuw instellen** wordt niet ondersteund in bepaalde Android- en Android Enterprise-configuraties. Zie [De wachtwoordcode van een apparaat opnieuw instellen of verwijderen via Intune](../remote-actions/device-passcode-reset.md) voor meer informatie.<br>
 <sup>(7)</sup> **Buiten gebruik stellen** en **Wissen** is niet beschikbaar in Android Enterprise-apparaateigenaarscenario's (COPE, COBO, COSU).<br> 
-<sup>(8)</sup> **Wachtwoordcode opnieuw instellen** wordt niet ondersteund voor door de gebruiker ingeschreven iOS-apparaten.
+<sup>(8)</sup> **Wachtwoordcode opnieuw instellen** wordt niet ondersteund voor door de gebruiker ingeschreven iOS/iPadOS-apparaten.
 
 ## <a name="next-steps"></a>Volgende stappen
 

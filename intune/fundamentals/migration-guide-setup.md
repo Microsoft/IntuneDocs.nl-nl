@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 08041a57ab52f395283e57cda596d00ba168aba1
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885858"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556479"
 ---
 # <a name="basic-setup"></a>Basisconfiguratie
 
@@ -53,18 +53,11 @@ Als u van plan bent om bij Intune verificatie op basis van certificaten te gebru
 
 - [De certificaatinfrastructuur voor PFX configureren](/intune/certficates-pfx-configure).
 
-
 ## <a name="task-list-for-an-intune-setup"></a>Lijst met taken voor een Intune-configuratie
 
 ### <a name="task-1-intune-subscription"></a>Taak 1: Intune-abonnement
 
-Voordat u naar Intune kunt migreren, moet u eerst beschikken over een Intune-abonnement.
-
-- U kunt naar [deze pagina](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) gaan, waar instructies worden gegeven voor het volgende:
-
-  - Een nieuw Intune-abonnement maken dat is gekoppeld aan een nieuwe AAD-tenant.
-
-  - Het Intune-abonnement koppelen door aanmelding bij een bestaande AAD-tenant.
+Voordat u naar Intune kunt migreren, moet u eerst beschikken over een [Intune-abonnement](account-sign-up.md).
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Taak 2: Intune-gebruikerslicenties toewijzen
 

@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414074"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514724"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Eindgebruikers helpen bij het begrijpen van berichten van de bedrijfsportal-app
 
@@ -126,7 +126,7 @@ Als u de bedrijfsportal-app niet hebt toegevoegd aan de lijst **Toegestane apps*
 
 Voeg de bedrijfsportal toe aan de lijst **Toegestane apps** of **Vrijgestelde apps** in het WIP-beveiligingsbeleid (Windows Information Protection) voor apps. Zie [Beveiligingsinstelling voor de beveiliging van apps voor Windows Information Protection (WIP) maken en implementeren met Intune](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Een iOS-bedrijfsportalapp (line-of-business-app) op uw iOS-apparaat goedkeuren 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>Een iOS-/iPadOS-bedrijfsportalapp (line-of-business-app) op uw iOS-/iPadOS-apparaat goedkeuren 
 
 ### <a name="where-it-appears"></a>Waar deze wordt weergegeven
 
@@ -136,7 +136,7 @@ iOS-apps die zijn ontwikkeld door uw organisatie en die niet beschikbaar zijn in
 
 ### <a name="what-it-means"></a>Wat het betekent
 
-Dit bericht betekent dat u uw iOS-apparaatinstellingen moet bewerken om een app die door uw organisatie is ontwikkeld goed te keuren en op uw iOS-apparaat te installeren.
+Dit bericht betekent dat u uw iOS-/iPadOS-apparaatinstellingen moet bewerken om een app die door uw organisatie is ontwikkeld goed te keuren en op uw iOS-/iPadOS-apparaat te installeren.
 
 Wanneer u zulke apps installeert met de bedrijfsportal en de app start, volgt u deze stappen om de app goed te keuren nadat u deze hebt gedownload:
 

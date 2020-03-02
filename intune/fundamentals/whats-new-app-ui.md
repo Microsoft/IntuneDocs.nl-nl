@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125044"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576544"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>UI-updates voor Intune-apps voor eindgebruikers
 
@@ -59,7 +59,7 @@ De bedrijfsportal voor macOS-registratie heeft een eenvoudiger registratieproces
 ## <a name="week-of-october-28-2019"></a>Week van 28 oktober 2019  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Verbeterd ontwerp van de controlelijst in de bedrijfsportal-app voor Android <!-- 5550857 -->  
-De setup-controlelijst in de Bedrijfsportal-app voor Android is bijgewerkt met een lichtgewicht ontwerp en nieuwe pictogrammen. De veranderingen zijn in lijn met de recente updates voor de Bedrijfsportal-app voor iOS. Zie [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) en [Uw Android-apparaat inschrijven](/intune-user-help/enroll-device-android-company-portal) voor een overzicht van de bijgewerkte inschrijvingsstappen.  
+De setup-controlelijst in de Bedrijfsportal-app voor Android is bijgewerkt met een lichtgewicht ontwerp en nieuwe pictogrammen. De veranderingen zijn in lijn met de recente updates voor de Bedrijfsportal-app voor iOS/iPadOS. Zie [Inschrijven met Android-werkprofiel](/intune-user-help/enroll-device-android-work-profile) en [Uw Android-apparaat inschrijven](/intune-user-help/enroll-device-android-company-portal) voor een overzicht van de bijgewerkte inschrijvingsstappen.  
 
 De volgende schermen tonen de bijgewerkte controlelijst voor inschrijving van Android-werkprofielen:
 
@@ -216,7 +216,7 @@ De Intune-bedrijfsportal-app voor Windows 10 is bijgewerkt met de [Fluent Design
 ## <a name="week-of-april-2-2018"></a>Week van 2 april 2018
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update van de gebruikerservaring voor de bedrijfsportal-app voor iOS <!-- 1412866 -->
-Er is een grote update uitgebracht van de gebruikerservaring voor de bedrijfsportal-app voor iOS. De update is voorzien van een volledig nieuw visueel ontwerp met een gemoderniseerd uiterlijk. De functionaliteit van de app is behouden. De gebruiksvriendelijkheid en toegankelijkheid zijn echter verhoogd.  
+Er is een grote update uitgebracht van de gebruikerservaring voor de bedrijfsportal-app voor iOS/iPadOS. De update is voorzien van een volledig nieuw visueel ontwerp met een gemoderniseerd uiterlijk. De functionaliteit van de app is behouden. De gebruiksvriendelijkheid en toegankelijkheid zijn echter verhoogd.  
 
 U ziet ook:
 - Ondersteuning voor iPhone X.
@@ -267,7 +267,7 @@ Als u [apparaatgroeptoewijzing](../enrollment/device-group-mapping.md) hebt inge
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Verbeteringen in de werkstroom voor apparaatinstellingen in de bedrijfsportal voor iOS in versie 2.9.0 <!-- 1417174 -->
 
-We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor iOS verbeterd. De taal is gebruiksvriendelijker en waar mogelijk hebben we schermen gecombineerd. We hebben de taal ook specifieker voor uw bedrijf gemaakt door overal in de installatietekst de naam van uw bedrijf te gebruiken.
+We hebben de werkstroom voor apparaatinstellingen in de bedrijfsportal-app voor iOS/iPadOS verbeterd. De taal is gebruiksvriendelijker en waar mogelijk hebben we schermen gecombineerd. We hebben de taal ook specifieker voor uw bedrijf gemaakt door overal in de installatietekst de naam van uw bedrijf te gebruiken.
 
 > [!NOTE]
 > We gebruiken de bedrijfsnaam die u hebt ingesteld in Azure Portal in **Microsoft Intune** > **Client-apps** > **Huisstijl voor bedrijfsportal** > **Bedrijfsnaam**. Als u deze waarde niet hebt ingesteld, gebruiken we de naam van de tenant die is ingesteld in **Azure Active Directory** > **Eigenschappen** > **Naam**. Als u geen bedrijfsnaam hebt ingesteld in Huisstijl voor bedrijfsportal en de tenantnaam niet wilt weergegeven, raden wij u aan de bedrijfsnaam in te stellen op het tabblad Huisstijl voor bedrijfsportal. Als u niet wilt dat deze tekenreeks wordt weergegeven in de koptekst in de bedrijfsportal, kunt u het selectievakje 'De bedrijfsnaam naast het logo weergeven' uitschakelen.
@@ -303,7 +303,7 @@ We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Verbeterde zoekfunctie op de bedrijfsportalwebsite <!-- 1331697 -->
 We verbeteren onze app-zoekfuncties, te beginnen met de [bedrijfsportalwebsite](https://portal.manage.microsoft.com). Zoekopdrachten worden nu ook uitgevoerd op app-categorieën naast de velden Naam en Beschrijving. De resultaten worden standaard gesorteerd in aflopende volgorde van relevantie. 
 
-iOS-gebruikers ontvangen deze wijziging ook omdat de bedrijfsportalwebsite ook wordt gebruikt als onderdeel van de bedrijfsportal-app voor iOS. De bedrijfsportal-apps voor Android en Windows ontvangen dergelijke updates in de komende maanden.
+iOS-gebruikers ontvangen deze wijziging ook omdat de bedrijfsportalwebsite ook wordt gebruikt als onderdeel van de bedrijfsportal-app voor iOS/iPadOS. De bedrijfsportal-apps voor Android en Windows ontvangen dergelijke updates in de komende maanden.
 
 We zijn nog steeds bezig met het aanpassen van de manier waarop relevantie wordt bijgehouden. Laat ons weten hoe het voor u werkt via de koppeling Feedback onderaan de bedrijfsportalwebsite.
 
@@ -407,7 +407,7 @@ In de bedrijfsportal-app voor Android zullen op de pagina met gegevens over de a
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbeterde aanmeldervaring in de bedrijfsportal-apps voor alle platformen <!--User Story 1132123-->
 
-Dit is de aankondiging van een wijziging die in de komende maanden wordt geïntroduceerd en waarmee de aanmeldervaring wordt verbeterd voor apps in de Intune-bedrijfsportal voor Android, iOS en Windows. De nieuwe gebruikerservaring wordt automatisch toegepast op alle platformen voor de bedrijfsportal-app wanneer deze wijziging wordt doorgevoerd in Azure AD. Bovendien kunnen gebruikers nu zich aanmelden bij de bedrijfsportal vanaf een ander apparaat met een gegenereerde code voor eenmalig gebruik. Dit is vooral nuttig in gevallen wanneer gebruikers zich moeten aanmelden zonder referenties.  
+Dit is de aankondiging van een wijziging die in de komende maanden wordt geïntroduceerd en waarmee de aanmeldervaring wordt verbeterd voor apps in de Intune-bedrijfsportal voor Android, iOS/iPadOS en Windows. De nieuwe gebruikerservaring wordt automatisch toegepast op alle platformen voor de bedrijfsportal-app wanneer deze wijziging wordt doorgevoerd in Azure AD. Bovendien kunnen gebruikers nu zich aanmelden bij de bedrijfsportal vanaf een ander apparaat met een gegenereerde code voor eenmalig gebruik. Dit is vooral nuttig in gevallen wanneer gebruikers zich moeten aanmelden zonder referenties.  
 
 Hieronder ziet u de vorige aanmeldingservaring, de nieuwe aanmeldingservaring met referenties en de nieuwe aanmeldingservaring vanaf een ander apparaat.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206122"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514826"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Beleidssets gebruiken om verzamelingen beheerobjecten te groeperen
 
@@ -52,7 +52,7 @@ U kunt de volgende beheerobjecten insluiten in een beleidsset:
 Wanneer u een beleidsset maakt, maakt u één toewijzingseenheid en beheert u koppelingen tussen verschillende objecten. Een beleidsset wordt een verwijzing naar externe objecten ervan. Eventuele wijzigingen in de opgenomen objecten zijn ook van invloed op de beleidsset. Nadat u een beleidsset hebt gemaakt, kunt u de objecten en toewijzingen ervan herhaaldelijk weergeven en bewerken. 
 
 > [!NOTE]
-> Beleidssets ondersteunen Windows-, Android-, macOS- en iOS-instellingen, en kunnen aan meerdere platforms worden toegewezen.
+> Beleidssets ondersteunen Windows-, Android-, macOS- en iOS/iPadOS-instellingen, en kunnen aan meerdere platforms worden toegewezen.
 
 ## <a name="how-to-create-a-policy-set"></a>Een beleidsset maken
 
@@ -82,15 +82,15 @@ Voor beleidssets, nieuw voor 1910, zijn de volgende problemen bekend.
 - Wanneer u een beleidsset maakt en een beheerder met bereik probeert een beleidsset te maken zonder dat er bereiktags zijn geselecteerd, mislukt de validatie bij het bereiken van de pagina **Beoordelen en maken** en wordt er een fout weergegeven op de statusbalk. De beheerder moet schakelen naar een andere pagina in het proces en vervolgens terugkeren naar de pagina **Beoordelen en maken**. Hierdoor wordt de optie **Maken** ingeschakeld.  
  
 - De volgende app-typen worden momenteel ondersteund door beleidssets:
-    - iOS Store-app
-    - Line-Of-Business-app voor iOS
-    - Beheerde Line-Of-Business-app voor iOS
+    - iOS/iPadOS Store-app
+    - Line-Of-Business-app voor iOS/iPadOS
+    - Beheerde Line-Of-Business-app voor iOS/iPadOS
     - Android Store-app
     - Line-Of-Business-app voor Android
     - Beheerde Line-Of-Business-app voor Android
     - Office 365 ProPlus-suite (Windows 10)
     - Webkoppeling
-    - Ingebouwde iOS-app
+    - Ingebouwde iOS/iPadOS-app
     - Ingebouwde Android-app
 
 - Het instellen van een beleidssettoewijzing van **Alle gebruikers** op **Autopilot-profiel** wordt niet ondersteund.
@@ -103,18 +103,18 @@ Voor beleidssets, nieuw voor 1910, zijn de volgende problemen bekend.
 
 - MAM-beleidstypen die beleidssets ondersteunen, zijn onder meer: 
     - MAM WIP (Windows) MDM-gerichte beheerde app-beveiliging 
-    - MAM iOS-gerichte beheerde app-beveiliging
+    - MAM iOS/iPadOS-gerichte beheerde app-beveiliging
     - MAM Android-gerichte beheerde app-beveiliging
-    - MAM iOS-gerichte beheerde app-configuratie
+    - MAM iOS/iPadOS-gerichte beheerde app-configuratie
     - MAM Android-gerichte beheerde app-configuratie
 
 - MAM-beleidstypen die geen beleidssets ondersteunen zijn onder meer: 
     - MAM WIP (Windows)-gerichte beheerde app-beveiliging
 
 - In MAM worden beleidssettoewijzingen verwerkt als rechtstreekse toewijzingen voor de volgende beleidstypen:
-    - MAM iOS-gerichte beheerde app-beveiliging
+    - MAM iOS/iPadOS-gerichte beheerde app-beveiliging
     - MAM Android-gerichte beheerde app-beveiliging
-    - MAM iOS-gerichte beheerde app-configuratie
+    - MAM iOS/iPadOS-gerichte beheerde app-configuratie
     - MAM Android-gerichte beheerde app-configuratie
 
     Als een beleidsregel wordt toegevoegd aan een beleidsset die is geïmplementeerd voor een groep, wordt de groep weergegeven als rechtstreeks in de workload toegewezen, niet als 'toegewezen via de beleidsset'. Als gevolg hiervan worden in MAM geen verwijderingen verwerkt van groepstoewijzingen die afkomstig zijn uit beleidssets.

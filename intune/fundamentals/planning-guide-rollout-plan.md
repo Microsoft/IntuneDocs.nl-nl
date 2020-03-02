@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509943"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514911"
 ---
 # <a name="develop-a-rollout-plan"></a>Een rollout-plan ontwikkelen
 
@@ -58,7 +58,7 @@ Na een geslaagde testfase kunt u beginnen met een volledige implementatie die ge
 
 - **Geografie** <br/>Bij deze methode vindt de implementatie plaats voor alle gebruikers in een specifiek geografisch gebied, of dat nu hetzelfde continent, hetzelfde land of dezelfde regio, of hetzelfde bedrijfsgebouw is. Dit type gefaseerde implementatie biedt u de mogelijkheid om u te richten op een specifieke gebruikerslocatie. U kunt op deze manier een meer [intensieve](#user-assisted-enrollment) methode hanteren omdat het aantal locaties wordt beperkt waar Intune op hetzelfde moment wordt geïmplementeerd. Omdat het mogelijk is dat er op dezelfde locatie verschillende afdelingen of use cases zijn, kunnen er verschillende use cases op hetzelfde moment worden geïmplementeerd.
 
-- **Platform** <br/>Bij dit type implementatie worden soortgelijke platformen gelijktijdig geïmplementeerd. Een voorbeeld daarvan is de implementatie op alle iOS-apparaten tijdens de eerste maand, gevolgd door Android, gevolgd door Windows. De helpdeskondersteuning wordt met dit type gefaseerde implementatie vereenvoudigd omdat de helpdesk slechts voor één platform tegelijkertijd ondersteuning hoeft te bieden.
+- **Platform** <br/>Bij dit type implementatie worden soortgelijke platformen gelijktijdig geïmplementeerd. Een voorbeeld daarvan is de implementatie op alle iOS-/iPadOS-apparaten tijdens de eerste maand, gevolgd door Android, gevolgd door Windows. De helpdeskondersteuning wordt met dit type gefaseerde implementatie vereenvoudigd omdat de helpdesk slechts voor één platform tegelijkertijd ondersteuning hoeft te bieden.
 
 Hier is een voorbeeld van een rollout-plan voor Intune met doelgroepen en tijdlijnen:
 

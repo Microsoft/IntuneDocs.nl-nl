@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812351"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511324"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Algemene vragen, problemen en oplossingen met apparaatbeleid en -profielen in Microsoft Intune
 
@@ -36,11 +36,11 @@ Voor het oplossen van dit probleem stelt u een Wi-Fi-profiel voor gasten in. Als
 
 Enkele extra aanbevelingen:  
 
-- Als voor het wifi-netwerk waarmee u verbinding maakt een wachtwoord of wachtwoordzin wordt gebruikt, moet u ervoor zorgen dat u direct verbinding met de wifi-router kunt maken. U kunt dit testen met een iOS-apparaat.
+- Als voor het wifi-netwerk waarmee u verbinding maakt een wachtwoord of wachtwoordzin wordt gebruikt, moet u ervoor zorgen dat u direct verbinding met de wifi-router kunt maken. U kunt dit testen met een iOS-/iPadOS-apparaat.
 - Als u bent verbonden met het Wi-Fi-eindpunt (de Wi-Fi-router), noteert u de SSID en de referentie die wordt gebruikt (dit is het wachtwoord of de wachtwoordzin).
 - Voer de SSID en referentie (wachtwoord of wachtwoordzin) in het veld vooraf gedeelde sleutel in. 
 - Stel deze instelling in voor een testgroep met een beperkt aantal gebruikers, bij voorkeur het liefst alleen voor het IT-team. 
-- Synchroniseer uw iOS-apparaat naar Intune. Registreert u als dit nog niet is gebeurd. 
+- Synchroniseer uw iOS-/iPadOS-apparaat naar Intune. Registreert u als dit nog niet is gebeurd. 
 - Test de verbinding met hetzelfde Wi-Fi-eindpunt opnieuw (zoals vermeld in de eerste stap).
 - Implementeer deze instelling naar grotere groepen en uiteindelijk naar alle eindgebruikers in uw organisatie. 
 
@@ -54,7 +54,7 @@ Als een apparaat niet incheckt om het beleid of het profiel op te halen na de ee
 
 | Platform | Cyclus vernieuwen|
 | --- | --- |
-| iOS | Ongeveer om de 8 uur |
+| iOS/iPadOS | Ongeveer om de 8 uur |
 | macOS | Ongeveer om de 8 uur |
 | Android | Ongeveer om de 8 uur |
 | Pc’s met Windows 10 die als apparaten zijn geregistreerd | Ongeveer om de 8 uur |
@@ -65,7 +65,7 @@ Als het apparaat onlangs is ingeschreven, wordt het inchecken voor naleving, nie
 
 | Platform | Frequentie |
 | --- | --- |
-| iOS | Om de 15 minuten gedurende 1 uur en daarna ongeveer om de 8 uur |  
+| iOS/iPadOS | Om de 15 minuten gedurende 1 uur en daarna ongeveer om de 8 uur |  
 | macOS | Om de 15 minuten gedurende 1 uur en daarna ongeveer om de 8 uur | 
 | Android | Om de 3 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
 | Pc’s met Windows 10 die als apparaten zijn geregistreerd | Om de 3 minuten gedurende 15 minuten en daarna om de 15 minuten gedurende 2 uur en vervolgens ongeveer om de 8 uur | 
@@ -102,7 +102,7 @@ Er treden conflicten op wanneer twee profielinstellingen dezelfde zijn. Bijvoorb
 
 Een beleid wordt in de app geïmplementeerd en gaat van kracht. Er wordt een tweede beleid geïmplementeerd. In dit scenario heeft het eerste beleid voorrang en blijft het toegepast. Het tweede beleid geeft een conflict aan. Als beide tegelijkertijd worden toegepast, dus als er geen beleid met prioriteit is, dan zijn beide conflicterend. Eventueel conflicterende instellingen worden ingesteld op de meest beperkende waarden.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>Wat gebeurt er als aangepaste iOS-beleidsregels conflicteren?
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>Wat gebeurt er als aangepaste iOS-/iPadOS-beleidsregels conflicteren?
 
 Intune beoordeelt de payload van Apple-configuratiebestanden of een aangepast beleid voor de Open Mobile Alliance Uniform Resource Identifier (OMA-URI) niet. Het fungeert alleen als bezorgingsmechanisme.
 
@@ -144,7 +144,7 @@ Wanneer u een profiel verwijdert of een apparaat verwijdert uit een groep waaraa
     - NFC toestaan
     - Wi-Fi toestaan
 
-  - **iOS**: alle instellingen worden verwijderd, met uitzondering van:
+  - **iOS/iPadOS**: alle instellingen worden verwijderd, met uitzondering van:
   
     - Spraakroaming toestaan
     - Gegevensroaming toestaan
@@ -156,7 +156,7 @@ Bij Windows Phone-apparaten wordt niet toegestaan dat de beveiligingsbeleidsrege
 
 U moet het beveiligingsbeleid opnieuw instellen om de beveiliging van het profiel naar beneden bij te stellen. Veeg bijvoorbeeld in Windows 8.1 op het bureaublad vanaf rechts over het scherm > selecteer **Instellingen** > **Configuratiescherm**. Selecteer de applet **Gebruikersaccounts** . In het navigatiemenu aan de linkerkant vindt u onderaan de koppeling **Beveiligingsbeleid opnieuw instellen**. Selecteer deze koppeling en kies vervolgens **Beleid opnieuw instellen**.
 
-Andere MDM-apparaten, bijvoorbeeld met Android, Windows Phone 8.1 en hoger, iOS of Windows 10, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij Intune worden ingeschreven voordat u een minder beperkend profiel kunt toepassen.
+Andere MDM-apparaten, bijvoorbeeld met Android, Windows Phone 8.1 en hoger, iOS/iPadOS of Windows 10, moeten mogelijk buiten gebruik worden gesteld en weer opnieuw bij Intune worden ingeschreven voordat u een minder beperkend profiel kunt toepassen.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Sommige instellingen in een Windows 10-profiel retourneren de waarde Niet van toepassing
 

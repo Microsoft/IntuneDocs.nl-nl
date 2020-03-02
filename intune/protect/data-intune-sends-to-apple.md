@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502442"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576471"
 ---
 # <a name="data-intune-sends-to-apple"></a>Gegevens die Intune naar Apple verzendt
 
@@ -44,7 +44,7 @@ In de volgende tabel staat welke gegevens Microsoft Intune vanaf een apparaat ve
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Als de server het apparaat accepteert, pusht het apparaat zelf een apparaattoken naar de server. De server moet deze token gebruiken om pushmeldingen naar het apparaat te verzenden. Dit incheckbericht bevat ook een PushMagic-tekenreeks. De server moet deze tekenreeks onthouden en deze insluiten in alle pushmeldingen die naar het apparaat worden verzonden. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Servertoken | Pushmelding met apparaattoken, gebruikt voor verificatie met de Apple-service. |
-| ASM/DEP | servernaam | Een herleidbare naam voor de MDM-server. |
+| ASM/DEP | server_name | Een herleidbare naam voor de MDM-server. |
 | ASM/DEP | server_uuid | Een server-id die door het systeem is gegenereerd. |
 | ASM/DEP | admin_id | De Apple-id van de persoon die de tokens heeft gegenereerd die nu worden gebruikt. |
 | ASM/DEP | org_name | De naam van de organisatie. |
@@ -59,7 +59,7 @@ In de volgende tabel staat welke gegevens Microsoft Intune vanaf een apparaat ve
 | ASM/DEP | profile_status | De status van de profielinstallatie. Mogelijke waarden: **empty**, **assigned**, **pushed** of **removed**. |
 | ASM/DEP | profile_uuid | De unieke id van het toegewezen profiel. |
 | ASM/DEP | device_assigned_by | Het e-mailadres van de persoon die het apparaat heeft toegewezen. |
-| ASM/DEP | os | Het besturingssysteem van het apparaat: iOS, OSX of tvOS. Deze sleutel is geldig in X-Server-Protocol-Version 2 en hoger. |
+| ASM/DEP | os | Het besturingssysteem van het apparaat: iOS/iPadOS, OSX of tvOS. Deze sleutel is geldig in X-Server-Protocol-Version 2 en hoger. |
 | ASM/DEP | device_family | De Apple-productfamilie van het apparaat: iPhone, iPad, iPod, Mac of AppleTV. Deze sleutel is geldig in X-Server-Protocol-Version 2 en hoger. |
 | ASM/DEP | profile_name | Tekenreeks. Een leesbare naam voor het profiel. |
 | ASM/DEP | support_phone_number | Optioneel. Tekenreeks. Een ondersteuningstelefoonnummer voor de organisatie. |

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206054"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575976"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Partnercertificeringsinstanties toevoegen in Intune met behulp van SCEP
 
-Gebruik externe certificeringsinstanties (CA) met Intune. Externe CA's kunnen mobiele apparaten inrichten met nieuwe of vernieuwde certificaten met het Simple Certificate Enrollment Protocol (SCEP) en ondersteunen Windows-, iOS-, Android- en macOS-apparaten.
+Gebruik externe certificeringsinstanties (CA) met Intune. Externe CA's kunnen mobiele apparaten inrichten met nieuwe of vernieuwde certificaten met het Simple Certificate Enrollment Protocol (SCEP) en kunnen ondersteuning bieden voor Windows-, iOS-/iPadOS-, Android- en macOS-apparaten.
 
 Het gebruik van deze functie bestaat uit twee delen: open-source API en de Intune-beheerderstaken.
 

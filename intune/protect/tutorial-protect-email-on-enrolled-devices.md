@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409842"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576271"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Zelfstudie: Exchange Online e-mail beschermen op beheerde apparaten
 
@@ -45,7 +45,7 @@ Voor deze zelfstudie hebt u een testtenant nodig met de volgende abonnementen:
 
 - Office 365 Business-abonnement inclusief Exchange ([ gratis proefversie](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-Voordat u begint, maakt u een test-apparaatprofiel voor iOS-apparaten aan door de stappen in de [Snelstartgids: Een e-mailprofiel voor een apparaat voor iOS maken](../configuration/quickstart-email-profile.md) te volgen.
+Voordat u begint, maakt u een test-apparaatprofiel voor iOS-apparaten aan door de stappen in de [Snelstartgids: Een e-mailprofiel voor een apparaat maken voor iOS/iPadOS](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Aanmelden bij Intune
 
@@ -152,7 +152,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
 
    5. Kies **Selecteren**.
 
-   ![Selecteer besturingselementen](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+   ![Besturingselementen selecteren](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. Onder **Beleid inschakelen** selecteert u **Aan**.
 
@@ -162,7 +162,7 @@ Nu gaan we een voorwaardelijk toegangsbeleid maken dat vereist dat alle apparaat
 
 ## <a name="try-it-out"></a>Beleid uitproberen
 
-Met het beleid dat u hebt gemaakt, moet elk iOS-apparaat dat probeert om zich bij Office 365 e-mail aan te melden, zich inschrijven bij Intune en ook de mobiele Outlook-app voor iOS gebruiken. Om dit scenario op een iOS-apparaat te testen, probeert u zich aan te melden bij Exchange Online met de referenties van een gebruiker in uw testtenant. U wordt gevraagd om het apparaat in te schrijven en de mobiele Outlook-app te installeren.
+Met het beleid dat u hebt gemaakt, moet elk iOS-apparaat dat probeert om zich bij Office 365 e-mail aan te melden, zich inschrijven bij Intune en ook de mobiele Outlook-app voor iOS/iPadOS gebruiken. Om dit scenario op een iOS-apparaat te testen, probeert u zich aan te melden bij Exchange Online met de referenties van een gebruiker in uw testtenant. U wordt gevraagd om het apparaat in te schrijven en de mobiele Outlook-app te installeren.
 
 1. Als u dit op een iPhone wilt testen, gaat u naar **Instellingen** > **Wachtwoorden & accounts** > **Account toevoegen** > **Exchange**.
 

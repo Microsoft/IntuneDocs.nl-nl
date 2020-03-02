@@ -15,19 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
-ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
+ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75564914"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514809"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense-connector met Intune
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren met voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd door Sophos Mobile, een MDT-oplossing (Mobile Threat Defense) die in Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop de Sophos Mobile-app wordt uitgevoerd.
 U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Sophos Mobile-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-conforme apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Hoe kunt u met Intune en Sophos Mobile uw bedrijfsresources beter beveiligen?
-Met de Sophos Mobile-app voor Android of iOS worden telemetriegegevens vastgelegd over het bestandssysteem, de netwerkstack, apparaten en toepassingen waar dergelijke gegevens beschikbaar zijn. De app verzendt de telemetriegegevens vervolgens naar de Sophos Mobile-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
+Met de Sophos Mobile-app voor Android of iOS/iPadOS worden telemetriegegevens vastgelegd over het bestandssysteem, de netwerkstack, apparaten en toepassingen waar dergelijke gegevens beschikbaar zijn. De app verzendt de telemetriegegevens vervolgens naar de Sophos Mobile-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
 Het Intune-nalevingsbeleid voor apparaten bevat een regel voor Sophos Mobile Threat Defense die is gebaseerd op de Sophos Mobile-risicoanalyse. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld. Als het apparaat niet aan het beleid blijkt te voldoen, wordt de toegang van gebruikers tot resources als Exchange Online en SharePoint Online geblokkeerd. Gebruikers ontvangen ook richtlijnen van de Sophos Mobile-app die op hun apparaat is geïnstalleerd, zodat ze het probleem kunnen oplossen en weer toegang kunnen krijgen tot bedrijfsresources.  
 
 ## <a name="sample-scenarios"></a>Voorbeeldscenario's

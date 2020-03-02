@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40e8dd8409f70a70934684c56ed9e9729f4ebf0f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 231b30e93a3e56811e1569c32cc1286e02320f0d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414606"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514401"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Hoe uw Android-gebruikers apps downloaden
 
@@ -65,6 +65,6 @@ LOB-apps die worden geïmplementeerd op Zebra-apparaten, moeten worden geïnstal
 
 [Apps toevoegen met Microsoft Intune](../apps/apps-add.md)
 
-[Hoe uw iOS-gebruikers hun apps downloaden](end-user-apps-ios.md)
+[Hoe uw iOS/iPadOS-gebruikers hun apps downloaden](end-user-apps-ios.md)
 
 [Hoe uw Windows-gebruikers apps downloaden](end-user-apps-windows.md)

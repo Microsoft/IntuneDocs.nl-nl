@@ -1,7 +1,7 @@
 ---
-title: macOS-apparaten inschrijven - Device Enrollment Program of Apple School Manager
+title: macOS-apparaten inschrijven - Apple Business Manager of Apple School Manager
 titleSuffix: ''
-description: Meer informatie over het inschrijven van macOS-apparaten in bedrijfseigendom met het Device Enrollment Program (DEP).
+description: Meer informatie over het inschrijven van macOS-apparaten in bedrijfseigendom.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414490"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514333"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>macOS-apparaten automatisch inschrijven met het Device Enrollment Program of Apple School Manager
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>macOS-apparaten automatisch inschrijven met Apple Business Manager of Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-U kunt de Intune-registratie instellen voor macOS-apparaten die zijn gekocht via het [Device Enrollment Program (DEP)](https://deploy.apple.com) of [Apple School Manager](https://school.apple.com/) van Apple. U kunt beide soorten inschrijvingen gebruiken voor grote aantallen apparaten zonder op de apparaten zelf aan de slag te gaan. U kunt macOS-apparaten rechtstreeks verzenden naar gebruikers. Als de gebruiker het apparaat inschakelt, wordt Configuratieassistent uitgevoerd met vooraf gedefinieerde instellingen en wordt het apparaat ingeschreven bij Intune-beheer.
+U kunt de Intune-registratie instellen voor macOS-apparaten die zijn gekocht via [Apple Business Manager](https://business.apple.com/) of [Apple School Manager](https://school.apple.com/) van Apple. U kunt beide soorten inschrijvingen gebruiken voor grote aantallen apparaten zonder op de apparaten zelf aan de slag te gaan. U kunt macOS-apparaten rechtstreeks verzenden naar gebruikers. Als de gebruiker het apparaat inschakelt, wordt Configuratieassistent uitgevoerd met vooraf gedefinieerde instellingen en wordt het apparaat ingeschreven bij Intune-beheer.
 
-Voor het instellen van inschrijving moet u zowel de Intune-portal als de Apple DEP-portal gebruiken. U maakt inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
+Voor het instellen van inschrijving moet u zowel de Intune-portal als de Apple-portal gebruiken. U maakt inschrijvingsprofielen met instellingen die tijdens de inschrijving op de apparaten van toepassing zijn geweest.
 
-Overigens werken DEP-inschrijving en Apple School Manager niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
+Overigens werken Apple Business Manager-inschrijving en Apple School Manager niet met de [apparaatinschrijvingsmanager](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**

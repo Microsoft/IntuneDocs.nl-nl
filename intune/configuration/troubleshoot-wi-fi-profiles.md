@@ -1,11 +1,11 @@
 ---
 title: Problemen met logboeken met W-Fi-apparaatprofielen oplossen en bekijken in Microsoft Intune - Azure | Microsoft Docs
-description: Problemen met Wi-Fi-apparaatconfiguratieprofielen in Android-, iOS- en Windows-apparaten begrijpen en oplossen in Microsoft Intune. Bekijk de logboeken en zie een aantal veelvoorkomende problemen en mogelijke oplossingen.
+description: Problemen met Wi-Fi-apparaatconfiguratieprofielen in Android-, iOS/iPadOS- en Windows-apparaten begrijpen en oplossen in Microsoft Intune. Bekijk de logboeken en zie een aantal veelvoorkomende problemen en mogelijke oplossingen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547971"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512820"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Problemen met Wi-Fi-apparaatconfiguratieprofielen oplossen in Microsoft Intune
 
-In Intune kunt u configuratieprofielen voor apparaten maken die verbindingsinstellingen voor uw Wi-Fi-netwerk bevatten. Gebruik deze instellingen om de Android-, iOS- en Windows-apparaten van gebruikers te verbinden met het netwerk van de organisatie.
+In Intune kunt u configuratieprofielen voor apparaten maken die verbindingsinstellingen voor uw Wi-Fi-netwerk bevatten. Gebruik deze instellingen om de Android-, iOS/iPadOS- en Windows-apparaten van gebruikers te verbinden met het netwerk van de organisatie.
 
 In dit artikel ziet u hoe een Wi-Fi-profiel eruitziet wanneer het op apparaten is toegepast. Het bevat ook logboekgegevens, veelvoorkomende problemen en meer. Gebruik dit artikel bij het oplossen van problemen met uw Wi-Fi-profielen.
 
@@ -100,25 +100,25 @@ In het volgende logboek worden de zoekresultaten weergegeven en wordt het toegep
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
 Nadat het Wi-Fi-profiel op het apparaat is geïnstalleerd, wordt dit weergegeven in het **beheerprofiel**:
 
 > [!div class="mx-imgBorder"]
-> ![Beheerprofiel op iOS-apparaat](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> ![Beheerprofiel op iOS/iPadOS-apparaat in Intune](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![Wi-Fi-verbinding wordt weergegeven als een Wi-Fi-netwerk op iOS-apparaat](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Wi-Fi-verbinding wordt weergegeven als een Wi-Fi-netwerk op iOS/iPadOS-apparaat in Intune](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>De iOS-console en apparaatlogboeken bekijken
+### <a name="review-the-iosipados-console-and-device-logs"></a>De iOS/iPadOS-console en apparaatlogboeken bekijken
 
-Op iOS-apparaten bevat het logboek van de Bedrijfsportal-app geen informatie over Wi-Fi-profielen. Als u de installatiegegevens van uw Wi-Fi-profielen wilt bekijken, gebruikt u de logboeken van de console of het apparaat:
+Op iOS/iPadOS-apparaten bevat het logboek van de bedrijfsportal-app geen informatie over Wi-Fi-profielen. Als u de installatiegegevens van uw Wi-Fi-profielen wilt bekijken, gebruikt u de logboeken van de console of het apparaat:
 
-1. Verbind het iOS-apparaat met de Mac. Ga naar **Toepassingen** > **Hulpprogramma's** en open de console-app.
+1. Verbind het iOS/iPadOS-apparaat met de Mac. Ga naar **Toepassingen** > **Hulpprogramma's** en open de console-app.
 2. Selecteer onder **Actie** de opties **Infoberichten opnemen** en **fout Foutopsporingsberichten opnemen**:
 
     > [!div class="mx-imgBorder"]
-    > ![Infoberichten opnemen en Foutopsporingsgegevens opnemen in iOS-console-app](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![Infoberichten opnemen en Foutopsporingsgegevens opnemen in iOS/iPadOS-console-app](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. Reproduceer het scenario en sla de logboeken op in een tekstbestand:
 
@@ -263,7 +263,7 @@ Dit probleem wordt meestal veroorzaakt door iets buiten Intune. Met de volgende 
 
 - Raadpleeg de volgende artikelen voor meer informatie over Wi-Fi-profielen in Microsoft Intune:
 
-  - Wi-Fi-instellingen toevoegen voor apparaten met [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md) en [Windows 10 en hoger](wi-fi-settings-windows.md).
+  - Wi-Fi-instellingen toevoegen voor apparaten met [Android](wi-fi-settings-android.md), [iOS/iPadOS](wi-fi-settings-ios.md) en [Windows 10 en hoger](wi-fi-settings-windows.md).
   - [Support Tip - How to configure NDES for SCEP certificate deployments in Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125) (Tip voor ondersteuning: NDES configureren voor SCEP-certificaatimplementaties in Intune)
   - Los problemen op met de [implementatie van SCEP-certificaatprofielen](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) en [NDES-configuratie](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune).
 

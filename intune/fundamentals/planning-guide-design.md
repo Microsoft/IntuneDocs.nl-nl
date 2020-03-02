@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886740"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514962"
 ---
 # <a name="create-a-design"></a>Een ontwerp maken
 
@@ -188,7 +188,7 @@ Laten we deze gebieden eens nader bekijken.
 
 ### <a name="determine-supported-device-platforms"></a>Ondersteunde apparaatplatformen vaststellen
 
-U moet tijdens het maken van uw ontwerp weten welke apparaten in de omgeving worden opgenomen en controleren of ze al dan niet worden ondersteund door Intune. Intune biedt ondersteuning voor iOS-, Android- en Windows-platforms.
+U moet tijdens het maken van uw ontwerp weten welke apparaten in de omgeving worden opgenomen en controleren of ze al dan niet worden ondersteund door Intune. Intune biedt ondersteuning voor iOS-/iPadOS-, Android- en Windows-platformen.
 
 [Volledige lijst met ondersteunde apparaten voor Intune.](supported-devices-browsers.md)
 
@@ -296,8 +296,8 @@ Hier volgt een voorbeeld van hoe u de certificaten tijdens het ontwerpen kunt va
 
 | **Type** | **Profielnaam** | **Apparaatplatform** | **Use cases** |   
 |:---:|:---:|:---:|:---:|
-| Basis-CA | Bedrijfseigendom, Basis-CA | Android, iOS, Windows Mobile | Bedrijfseigendom, BYOD  |                                                           
-| SCEP | Gebruikerscertificaat | Android, iOS, Windows Mobile | Bedrijfseigendom, BYOD |                                                           
+| Basis-CA | Bedrijfseigendom, Basis-CA | Android, iOS/iPadOS, Windows Mobile | Bedrijfseigendom, BYOD  |                                                           
+| SCEP | Gebruikerscertificaat | Android, iOS/iPadOS, Windows Mobile | Bedrijfseigendom, BYOD |                                                           
 
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw certificaatprofiel vast te stellen.
@@ -311,7 +311,7 @@ Hieronder ziet u een voorbeeld van een ontwerp voor een Wi-Fi-profiel:
 | **Type** | **Profielnaam** | **Apparaatplatform** | **Use cases** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Wi-Fi-profiel Azië | Android | Bedrijfseigendom, BYOD regio Azië|
-| Wi-Fi | Wi-Fi-profiel Noord-Amerika | Android, iOS, Windows 10 Mobile | Bedrijfseigendom, BYOD regio Noord-Amerika |
+| Wi-Fi | Wi-Fi-profiel Noord-Amerika | Android, iOS/iPadOS, Windows 10 Mobile | Bedrijfseigendom, BYOD regio Noord-Amerika |
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw Wi-Fi-profiel vast te stellen.
 
@@ -323,7 +323,7 @@ Hieronder ziet u een voorbeeld van het vastleggen van het ontwerp van een VPN-pr
 
 | **Type** | **Profielnaam** | **Apparaatplatform** | **Use cases** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco, alle verbindingsprofielen | Android, iOS, Windows 10 Mobile | Bedrijfseigendom, BYOD Noord-Amerika en Duitsland|
+| VPN | VPN Cisco, alle verbindingsprofielen | Android, iOS/iPadOS, Windows 10 Mobile | Bedrijfseigendom, BYOD Noord-Amerika en Duitsland|
 | VPN | Pulse Secure | Android | Bedrijfseigendom, BYOD regio Azië |
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw VPN-profiel vast te stellen.
@@ -374,7 +374,7 @@ Met beleid voor app-beveiliging kan het verlies van gegevens tot een minimum wor
 | **App** | **Doel** | **Platformen** | **Use case** | **Beleid voor app-beveiliging** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Beschikbaar | iOS | Bedrijfseigendom - leidinggevenden | Apparaat kan niet jailbroken zijn, bestanden versleutelen |                                                         
-| Word | Beschikbaar | iOS, Android - Samsung Knox, niet-Knox, Windows 10 Mobile | Bedrijfseigendom, BYOD | Apparaat kan niet jailbroken zijn, bestanden versleutelen |                                                         
+| Word | Beschikbaar | iOS/iPadOS, Android - Samsung Knox, niet-Knox, Windows 10 Mobile | Bedrijfseigendom, BYOD | Apparaat kan niet jailbroken zijn, bestanden versleutelen |                                                         
 
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw beleid voor app-beveiliging vast te stellen.
@@ -388,7 +388,7 @@ Hieronder ziet u een voorbeeld van het ontwerpen van nalevingsbeleid:
 
 | **Naam van beleid** | **Apparaatplatform** | **Instellingen** | **Doelgroep** |
 |:---:|:---:|:---:|:---:|
-| Nalevingsbeleid | iOS, Android - Samsung Knox, niet-Knox, Windows 10 Mobile | PIN - vereist, kan niet jailbroken zijn | Bedrijfseigendom, BYOD |
+| Nalevingsbeleid | iOS/iPadOS, Android - Samsung Knox, niet-Knox, Windows 10 Mobile | PIN - vereist, kan niet jailbroken zijn | Bedrijfseigendom, BYOD |
 
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw nalevingsbeleid vast te stellen.
@@ -404,8 +404,8 @@ Hieronder ziet u een voorbeeld van het vastleggen van beleidsregels voor voorwaa
 
 | **Service** | **Platformen voor moderne verificatie** | **Basisverificatie** | **Use cases** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Niet-compatibele apparaten blokkeren op platforms die worden ondersteund door Intune | Bedrijfseigendom, BYOD |
-| SharePoint Online | iOS, Android |  | Bedrijfseigendom, BYOD |
+| Exchange Online | iOS/iPadOS, Android | Niet-compatibele apparaten blokkeren op platforms die worden ondersteund door Intune | Bedrijfseigendom, BYOD |
+| SharePoint Online | iOS/iPadOS, Android |  | Bedrijfseigendom, BYOD |
 
 U kunt [een sjabloon uit de bovenstaande tabel downloaden](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) om de behoeften van uw beleid voor voorwaardelijke toegang vast te stellen.
 

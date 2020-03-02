@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 2a1ba4a5e6096f77c87560554fd2c9cd601a33e4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414890"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511715"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Gegevensoverdracht beheren tussen iOS-apps met Microsoft Intune
 
@@ -81,7 +81,7 @@ Deze configuratie van de UPN-gebruikersinstelling is **vereist** voor apparaten 
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Tekenreeks | %upn% |
 
 > [!NOTE]  
-> Als u in Outlook voor iOS een App Configuration-beleid voor beheerde apparaten implementeert met de optie 'Configuratiedesigner gebruiken' en **Alleen werk- of schoolaccounts toestaan** inschakelt, wordt de configuratiesleutel IntuneMAMUPN automatisch op de achtergrond geconfigureerd voor het beleid. Meer details zijn te vinden in het gedeelte Common questions (veelgestelde vragen) in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nieuwe App Configuration-beleidservaring voor Outlook voor iOS en Android: algemene app-configuratie). 
+> Als u in Outlook voor iOS/iPadOS een App Configuration-beleid voor beheerde apparaten implementeert met de optie 'Configuratiedesigner gebruiken' en **Alleen werk- of schoolaccounts toestaan** inschakelt, wordt de configuratiesleutel IntuneMAMUPN automatisch op de achtergrond geconfigureerd voor het beleid. Meer details zijn te vinden in het gedeelte Common questions (veelgestelde vragen) in [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) (Nieuwe App Configuration-beleidservaring voor Outlook voor iOS en Android: algemene app-configuratie). 
 
 
 ### <a name="example-2-end-user-experience"></a>Voorbeeld 2: De ervaring voor de eindgebruiker

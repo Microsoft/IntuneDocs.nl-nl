@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034240"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515217"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Overzicht van het oplossen van problemen met SCEP-certificaatprofielen met Microsoft Intune
 
@@ -123,9 +123,9 @@ U kunt [logboeken ook uploaden en e-mailen](/intune-user-help/send-logs-to-your-
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Logboeken voor iOS- en iPadOS-apparaten
 
-Voor apparaten waarop iOS of iPadOS wordt uitgevoerd, gebruikt u logboeken voor foutopsporing en **Xcode** die wordt uitgevoerd op een Mac-computer:
+Voor apparaten waarop iOS/iPadOS wordt uitgevoerd, gebruikt u logboeken voor foutopsporing en **Xcode** die wordt uitgevoerd op een Mac-computer:
 
-1. Verbind het iOS-apparaat met Mac en ga vervolgens naar **Toepassingen** > **Hulpprogramma’s** om de console-app te openen. 
+1. Verbind het iOS/iPadOS-apparaat met Mac en ga vervolgens naar **Toepassingen** > **Hulpprogramma's** om de console-app te openen. 
 
 2. Selecteer onder **Actie** de opties **Infoberichten opnemen** en  **Foutopsporingsberichten opnemen**.
 

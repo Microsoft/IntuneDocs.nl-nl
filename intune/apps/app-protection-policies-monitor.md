@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 317f39b28909196d03ef5e7c68c7980f5fdfea3f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437967"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512208"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>App-beveiligingsbeleid controleren
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -48,7 +48,7 @@ De bewaarperiode voor app-beveiligingsgegevens is 90 dagen. Alle app-exemplaren 
    ![Schermopname van de tegel Samenvatting van het deelvenster Mobile Application Management van Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **Toegewezen gebruikers**: Het totale aantal toegewezen gebruikers in uw bedrijf dat van een app gebruikmaakt die is gekoppeld aan een beleid in een werkcontext en wordt beveiligd en in licentie wordt gegeven, evenals de toegewezen gebruikers die onbeveiligd en niet-gelicentieerd zijn.
-- **Gemarkeerde gebruikers**: Het aantal gebruikers dat problemen ondervindt met hun apparaat. Gekraakte (iOS) en geroote (Android) apparaten worden onder **Gemarkeerde gebruikers** gerapporteerd. Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle Google SafetyNet-apparaatattestation (indien ingeschakeld door de IT-beheerder). 
+- **Gemarkeerde gebruikers**: Het aantal gebruikers dat problemen ondervindt met hun apparaat. Gekraakte (iOS/iPadOS) en geroote (Android) apparaten worden onder **Gemarkeerde gebruikers** gerapporteerd. Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle Google SafetyNet-apparaatattestation (indien ingeschakeld door de IT-beheerder). 
 - **Gebruikers met mogelijk schadelijke apps**: Het aantal gebruikers waarvoor mogelijk een schadelijke app op hun Android-apparaat is gedetecteerd door Google Play Protect. 
 - **Gebruikersstatus voor iOS** en **Gebruikersstatus voor Android**: Het aantal gebruikers dat een app heeft gebruikt en waaraan een beleid is toegewezen in een werkcontext voor het betreffende platform. Deze informatie toont het aantal gebruikers dat wordt beheerd door het beleid, evenals het aantal gebruikers dat gebruikmaakt van een app waarop geen beleid in een werkcontext is gericht. U kunt overwegen deze gebruikers toe te voegen aan het beleid.
 - **Meestgebruikte beveiligde iOS-/iPadOS-apps** en **Meestgebruikte beveiligde Android-apps**: Op basis van de meestgebruikte iOS-/iPadOS- en Android-apps geeft deze informatie het aantal beschermde en onbeschermde apps per platform weer.
@@ -61,7 +61,7 @@ De bewaarperiode voor app-beveiligingsgegevens is 90 dagen. Alle app-exemplaren 
 U kunt de gedetailleerde weergave van de samenvatting openen door de tegel **Gemarkeerde gebruikers** en de tegel **Gebruikers met mogelijk schadelijke apps** te kiezen.
 
 ### <a name="flagged-users"></a>Gemarkeerde gebruikers
-De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen de fout is opgetreden, het besturingssysteem van het apparaat dat is beïnvloed en een tijdstempel. De fout is karakteristiek voor apparaten die zijn opengebroken (iOS) of geroot (Android). Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle SafetyNet-apparaatattestation voor voorwaardelijk starten, met de reden die is gerapporteerd in Google. Als een gebruiker uit het rapport moet worden verwijderd, moet de status van het apparaat zelf worden gewijzigd. Dit gebeurt na de volgende hoofddetectiecontrole (of jailbreakcontrole/SafetyNet-controle) die een positief resultaat moet hebben. Als het apparaat daadwerkelijk is hersteld, wordt de vernieuwing van het rapport Gemarkeerde gebruikers uitgevoerd wanneer het deelvenster opnieuw wordt geladen.
+De gedetailleerde weergave bevat het foutbericht, de app die werd geopend toen de fout is opgetreden, het besturingssysteem van het apparaat dat is beïnvloed en een tijdstempel. De fout is karakteristiek voor apparaten die zijn opengebroken (iOS/iPadOS) of geroot (Android). Bovendien worden hier gebruikers gerapporteerd met apparaten die zijn gemarkeerd na de controle SafetyNet-apparaatattestation voor voorwaardelijk starten, met de reden die is gerapporteerd in Google. Als een gebruiker uit het rapport moet worden verwijderd, moet de status van het apparaat zelf worden gewijzigd. Dit gebeurt na de volgende hoofddetectiecontrole (of jailbreakcontrole/SafetyNet-controle) die een positief resultaat moet hebben. Als het apparaat daadwerkelijk is hersteld, wordt de vernieuwing van het rapport Gemarkeerde gebruikers uitgevoerd wanneer het deelvenster opnieuw wordt geladen.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Gebruikers met mogelijk schadelijke apps
 Gebruikers met apparaten die zijn gemarkeerd na de controle **Bedreigingsscans voor apps vereisen** voor voorwaardelijk starten, worden hier gerapporteerd met de bedreigingscategorie die is gerapporteerd in Google. Als er in dit rapport apps worden vermeld die worden geïmplementeerd via Intune, neemt u contact op met de app-ontwikkelaar voor de app of verwijdert u de app zodat deze niet wordt toegewezen aan uw gebruikers. In de gedetailleerde weergave ziet u het volgende:
@@ -170,7 +170,7 @@ Volg deze stappen om het CSV-bestand App-beveiliging of App-configuratie te gene
     ![Schermopname van het bevestigingsvak Rapport opslaan](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-/iPadOS-model. In Intune gaat u naar deze velden door achtereenvolgens **Apps** > **App-beveiligingsstatus** > **App-beveiligingsrapport: iOS/iPadOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS) en de **versie-instellingen van de minimale Android-beveiligingspatch**.   
+> Intune biedt aanvullende velden voor apparaatrapporten, waaronder de registratie-id van de app, de Android-fabrikant, het model, de versie van de beveiligingspatch en het iOS-/iPadOS-model. In Intune gaat u naar deze velden door achtereenvolgens **Apps** > **App-beveiligingsstatus** > **App-beveiligingsrapport: iOS/iPadOS, Android** te selecteren. Bovendien helpen deze parameters u de lijst **Toestaan** te configureren voor de apparaatfabrikant (Android), evenals de lijst **Toestaan** voor het apparaatmodel (Android en iOS/iPadOS) en de **versie-instellingen van de minimale Android-beveiligingspatch**.   
  
 ## <a name="see-also"></a>Zie tevens
 - [Gegevensoverdracht tussen iOS-/iPadOS-apps beheren](data-transfer-between-apps-manage-ios.md)

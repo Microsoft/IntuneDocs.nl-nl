@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 1f6992aa93e1ca5a095b1e92a16a07bd0eb1c2f5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564002"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513632"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Alleen zakelijke gegevens wissen uit door Intune beheerde apps
 
@@ -32,7 +32,7 @@ ms.locfileid: "74564002"
 Wanneer een apparaat is vermist of is gestolen, of als een werknemer uw bedrijf verlaat, wilt u dat de gegevens in zakelijke apps van het apparaat worden verwijderd. Maar u wilt mogelijk geen persoonlijke gegevens op het apparaat verwijderen, vooral niet als het apparaat het eigendom van de werknemer is.
 
 >[!NOTE]
-> Het iOS-, Android-, en Windows 10-platform zijn momenteel de enige platforms die worden ondersteund voor het wissen van bedrijfsgegevens uit met Intune beheerde apps. Beheerde Intune-apps zijn toepassingen waarin de Intune APP SDK is opgenomen en die een gebruikersaccount bevatten met een licentie voor uw organisatie. Implementatie van beleid voor toepassingsbeveiliging is niet vereist om selectief wissen voor de app in te schakelen.
+> Het iOS/iPadOS-, Android- en Windows 10-platform zijn momenteel de enige platformen die worden ondersteund voor het wissen van bedrijfsgegevens uit met Intune beheerde apps. Beheerde Intune-apps zijn toepassingen waarin de Intune APP SDK is opgenomen en die een gebruikersaccount bevatten met een licentie voor uw organisatie. Implementatie van beleid voor toepassingsbeveiliging is niet vereist om selectief wissen voor de app in te schakelen.
 
 Als u alleen de gegevens van de zakelijke apps wilt verwijderen, maakt u een verzoek om te wissen aan de hand van de stappen in dit onderwerp. Wanneer de aanvraag is voltooid, worden de bedrijfsgegevens uit de app verwijderd wanneer de app de volgende keer op het apparaat wordt uitgevoerd. U kunt naast het maken van een wisaanvraag tevens een selectieve wisbewerking configureren van de gegevens van uw organisatie als nieuwe actie, wanneer niet wordt voldaan aan de voorwaarden van de toegangsinstellingen voor toepassingsbeveiligingsbeleid. Dankzij deze functie kunt u gevoelige organisatiegegevens automatisch beveiligen en verwijderen uit toepassingen op basis van vooraf geconfigureerde criteria.
 

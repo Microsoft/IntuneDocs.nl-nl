@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504964"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510742"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Logboekgegevens verzenden naar opslag, Event Hubs of Log Analytics in Intune (preview)
 
 Microsoft Intune bevat ingebouwde logboeken die informatie bieden over uw omgeving:
 
-- In **auditlogboeken** worden details weergegeven van verschillende gebeurtenissen of taken in Intune.
+- In **Auditlogboeken** wordt een record getoond met activiteiten waardoor een wijziging in Intune wordt gegenereerd, zoals de acties maken, bijwerken (bewerken), verwijderen, toewijzen en externe acties.
 - In **Operationele logboeken (preview)** worden details weergegeven van gebruikers en apparaten waarvan de inschrijving is geslaagd (of mislukt), alsmede details over niet-compatibele apparaten.
 - In **Organisatielogboeken voor apparaatcompatibiliteit (preview)** wordt een organisatierapport weergeven voor apparaatcompatibiliteit in Intune en informatie over niet-compatibele apparaten.
 
@@ -59,10 +59,11 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
 
 ## <a name="send-logs-to-azure-monitor"></a>Logboeken verzenden naar Azure Monitor
 
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer onder **Bewaking** de optie **Diagnostische instellingen**. De eerste keer dat u de optie opent, schakelt u de optie in. Voeg anders een instelling toe.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecteer **Rapporten** > **Instellingen voor diagnostische gegevens**. De eerste keer dat u de optie opent, schakelt u de optie in. Voeg anders een instelling toe.
 
-    ![Diagnostische instellingen inschakelen in Intune om logboeken te verzenden naar Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![Diagnostische instellingen inschakelen in Intune om logboeken te verzenden naar Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. Voer de volgende eigenschappen in:
 
@@ -104,7 +105,8 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
 
     Wanneer dit is voltooid, zien uw instellingen er ongeveer uit zoals de volgende instellingen: 
 
-    ![Voorbeeldafbeelding waarin Intune-auditlogboeken worden verzonden naar een Azure-opslagaccount](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Voorbeeldafbeelding waarin Intune-auditlogboeken worden verzonden naar een Azure-opslagaccount](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. U moet vervolgens de wijzigingen **Opslaan**. De instelling wordt weergegeven in de lijst. Zodra de instellingen zijn gemaakt, kunt u deze wijzigen door **Instelling bewerken** > **Opslaan** te selecteren.
 
@@ -112,14 +114,7 @@ Afhankelijk van waarheen u de auditlogboekgegevens wilt routeren, hebt u een van
 
 U kunt de auditlogboeken ook naar andere delen van Intune exporteren, zoals inschrijving, naleving, configuratie, apparaten, client-apps en meer.
 
-U kunt bijvoorbeeld de auditlogboeken als volgt exporteren bij het gebruik van apparaatcompliantie:
-
-1. Meld u aan bij [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecteer **Apparaatcompliantie** > **Monitor** > **Auditlogboeken**:
-
-    ![Auditlogboeken kiezen om Intune-gegevens naar Azure Monitor-opslag, Event Hubs of analytics door te sturen](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. Selecteer **Gegevensinstellingen exporteren**. Als dit niet is ingeschakeld, kunt u **Diagnostische instellingen** inschakelen. U kunt ook kiezen naar welke locatie de logboeken moeten worden verzonden, zoals beschreven in [Logboeken verzenden naar Azure Monitor](#send-logs-to-azure-monitor) (in dit artikel).
+Zie [Auditlogboeken gebruiken om gebeurtenissen bij te houden en te controleren](monitor-audit-logs.md) voor meer informatie. U kunt kiezen naar welke locatie de logboeken moeten worden verzonden, zoals beschreven in [Logboeken verzenden naar Azure Monitor](#send-logs-to-azure-monitor) (in dit artikel).
 
 ## <a name="cost-considerations"></a>Kostenoverwegingen
 
@@ -129,7 +124,7 @@ Als u al een Microsoft Intune-licentie hebt, hebt u een Azure-abonnement nodig o
 
 Elke gebeurtenis in een auditlogboek gebruikt ongeveer 2 kB gegevensopslag. Een tenant met 100.000 gebruikers kan ongeveer 1,5 miljoen gebeurtenissen per dag hebben. Dan hebt u ongeveer 3 GB gegevensopslag per dag nodig. Omdat schrijfbewerkingen meestal plaatsvinden in batches van vijf minuten, kunt u 9.000 schrijfbewerkingen per maand verwachten.
 
-In de volgende tabellen wordt een kostenschatting weergegeven die afhankelijk is van de grootte van de tenant. Dit omvat ook een opslagaccount voor algemeen gebruik v2 in US - west voor gegevensretentie van minstens één jaar. Gebruik de [Prijscalculator voor Azure-opslag](https://azure.microsoft.com/pricing/details/storage/blobs/) voor een schatting van het gegevensvolume dat u kunt verwachten voor uw logboeken.
+In de volgende tabellen wordt een kostenschatting weergegeven die afhankelijk is van de grootte van de tenant. Dit omvat ook een opslagaccount voor algemeen gebruik v2 in VS - west voor gegevensretentie van minstens één jaar. Gebruik de [Prijscalculator voor Azure-opslag](https://azure.microsoft.com/pricing/details/storage/blobs/) voor een schatting van het gegevensvolume dat u kunt verwachten voor uw logboeken.
 
 **Auditlogboek met 100.000 gebruikers**
 
@@ -155,7 +150,7 @@ Gebeurtenissen worden meestal verdeeld in batches van intervallen van vijf minut
 
 Bijvoorbeeld: een grote tenant van meer dan 100.000 gebruikers heeft meestal 18 gebeurtenissen per seconde. Dit komt neer op 5.400 gebeurtenissen per vijf minuten (300 seconden x 18 gebeurtenissen). Auditlogboeken zijn ongeveer 2 kB per gebeurtenis. Dit komt neer op 10,8 MB aan gegevens. Er worden in een interval van 5 minuten dus 43 berichten naar de Event Hub verzonden.
 
-De volgende tabel bevat de geschatte kosten per maand voor een eenvoudige Event Hub in US - west, afhankelijk van de hoeveelheid gebeurtenisgegevens. Gebruik de [Prijscalculator voor Event Hubs](https://azure.microsoft.com/pricing/details/event-hubs/) voor een schatting van het gegevensvolume dat u kunt verwachten voor uw logboeken.
+De volgende tabel bevat de geschatte kosten per maand voor een eenvoudige Event Hub in VS - west, afhankelijk van de hoeveelheid gebeurtenisgegevens. Gebruik de [Prijscalculator voor Event Hubs](https://azure.microsoft.com/pricing/details/event-hubs/) voor een schatting van het gegevensvolume dat u kunt verwachten voor uw logboeken.
 
 **Auditlogboek met 100.000 gebruikers**
 

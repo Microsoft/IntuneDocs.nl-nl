@@ -1,6 +1,6 @@
 ---
-title: iOS-apps met beveiligingsbeleid voor apps
-description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid.
+title: iOS-/iPadOS-apps met beveiligingsbeleid voor apps
+description: In dit onderwerp wordt beschreven wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd door een app-beveiligingsbeleid.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606618"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514656"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-app wordt beheerd door een app-beveiligingsbeleid
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>Wat u kunt verwachten wanneer uw iOS-/iPadOS-app wordt beheerd met app-beveiligingsbeleid
 
 Het Intune-app-beveiligingsbeleid is van toepassing op apps die worden gebruikt voor werk of school. Dit betekent dat wanneer uw werknemers en studenten hun apps in een privécontext gebruiken, er geen verschil is in hun ervaring. Als ze apps voor werk of school gebruiken, kunnen ze echter de vraag krijgen accountbeslissingen te nemen, hun instellingen bij te werken of contact met u op te nemen voor hulp. Gebruik dit artikel voor meer informatie over wat er gebeurt als uw gebruikers proberen toegang te krijgen tot apps die zijn beveiligd met Intune.  
 
@@ -34,7 +34,7 @@ Als het apparaat **niet is geregistreerd bij Intune**, wordt de gebruiker gevraa
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 Op apparaten die zijn **ingeschreven voor beheer in Intune**, wordt een bericht aan de gebruiker weergegeven dat de app nu wordt beheerd.
 

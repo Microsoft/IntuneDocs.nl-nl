@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505340"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515030"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Het nalevingsbeleid voor apparaten en het beleid voor appbeheer configureren bij een migratie naar Microsoft Intune
 
@@ -60,11 +60,11 @@ Door middel van resourcetoegangsprofielen worden certificaten en toegangsconfigu
 
 U moet een apparaatconfiguratieprofiel maken om instellingen op apparaatniveau door te voeren, zoals de instelling voor het uitschakelen van de camera, de App Store, het configureren van de modus voor één app, het beginscherm, enzovoort. Meer informatie over [apparaatprofielen](../configuration/device-profiles.md).
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>Rechtstreeks iOS-configuratieprofielen importeren (optioneel)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>Rechtstreeks iOS/iPadOS-configuratieprofielen importeren (optioneel)
 
 - **iOS-profielen van Apple Configurator (iOS 7.1 en hoger):** Als uw bestaande MDM-oplossing gebruikmaakt van Apple Configurator-profielen (mobileconfig-bestanden), kunnen deze rechtstreeks door Intune worden geïmporteerd als aangepast configuratiebeleid.
 
-- **Configuratiebeleid voor mobiele apps voor iOS:** Als uw bestaande MDM-oplossing gebruikmaakt van een configuratiebeleid voor mobiele apps voor iOS, kan dit rechtstreeks door Intune worden geïmporteerd zolang het voldoet aan de XML-indeling die door Apple is opgegeven voor eigenschappenlijsten.
+- **Configuratiebeleid voor mobiele apps voor iOS:** Als uw bestaande MDM-oplossing gebruikmaakt van een configuratiebeleid voor mobiele apps voor iOS/iPadOS, kan dit rechtstreeks door Intune worden geïmporteerd zolang het voldoet aan de XML-indeling die door Apple is opgegeven voor eigenschappenlijsten.
 
 - Meer informatie over het toevoegen van een aangepast beleid voor [iOS](../configuration/custom-settings-ios.md).
 

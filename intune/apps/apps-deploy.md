@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912655"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511851"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Apps toewijzen aan groepen met Microsoft Intune
 
@@ -49,7 +49,7 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
 | Eindgebruikers installeren beschikbare apps vanaf de webversie van de bedrijfsportal-app | Ja | Ja |
 
 > [!NOTE]
-> Momenteel kunt u iOS- en Android-apps (Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet zijn ingeschreven bij Intune.
+> Momenteel kunt u iOS/iPadOS- en Android-apps (Line-Of-Business-apps en apps die in de Store zijn gekocht) toewijzen aan apparaten die niet zijn ingeschreven bij Intune.
 >
 > Voor het ontvangen van app-updates op apparaten die niet zijn ingeschreven bij Intune, moeten gebruikers naar de bedrijfsportal van hun organisatie gaan en de app-updates handmatig installeren.
 
@@ -67,9 +67,9 @@ In de volgende tabellen worden de verschillende opties vermeld voor het toewijze
    - **Verwijderen**: de app wordt verwijderd van apparaten in de geselecteerde groepen als Intune de toepassing eerder op het apparaat heeft geïnstalleerd via de toewijzingen 'Beschikbaar voor ingeschreven apparaten' of 'Vereist' met behulp van dezelfde implementatie. Webkoppelingen kunnen niet worden verwijderd na implementatie.
 
      > [!NOTE]
-     > **Alleen voor iOS-apps**:
-     > - Als u wilt configureren wat er gebeurt met beheerde apps wanneer apparaten niet meer worden beheerd, kunt u de gewenste instelling selecteren onder **Verwijderen bij verwijdering van apparaat**. Zie [Instelling voor verwijderen van apps voor beheerde iOS-apps](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps) voor meer informatie.
-     > - als u een iOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het VPN-profiel selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN=instellingen voor iOS-apparaten](../vpn-settings-ios.md) voor meer informatie.
+     > **Alleen voor iOS/iPadOS-apps**:
+     > - Als u wilt configureren wat er gebeurt met beheerde apps wanneer apparaten niet meer worden beheerd, kunt u de gewenste instelling selecteren onder **Verwijderen bij verwijdering van apparaat**. Zie [Instelling voor verwijderen van apps voor beheerde iOS/iPadOS-apps](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps) voor meer informatie.
+     > - Als u een iOS/iPadOS VPN-profiel hebt gemaakt met VPN-instellingen per app, kunt u het VPN-profiel selecteren onder **VPN**. Als de app wordt uitgevoerd, wordt de VPN-verbinding geopend. Zie [VPN-instellingen voor iOS/iPadOS-apparaten](../vpn-settings-ios.md) voor meer informatie.
      >
      > **Alleen bij Android apps**: als u een Android-app als **Beschikbaar met of zonder inschrijving** implementeert, is de rapportagestatus alleen beschikbaar op ingeschreven apparaten.
      >
@@ -114,7 +114,7 @@ De informatie in de volgende tabel kan u helpen de resulterende intentie te begr
 
 > [!NOTE]
 > Alleen voor beheerde iOS Store-apps: wanneer u deze apps toevoegt in Microsoft Intune en toewijst als **Vereist**, worden de apps automatisch gemaakt met zowel de intentie **Vereist** als **Beschikbaar**.<br><br>
-> iOS Store-apps (geen iOS VPP-apps) die met de vereiste intentie worden benaderd, worden afgedwongen op het apparaat op het moment dat het apparaat incheckt en worden ook weergegeven in de bedrijfsportal-app.<br><br>
+> iOS Store-apps (geen iOS/iPadOS VPP-apps) die met de vereiste intentie worden benaderd, worden afgedwongen op het apparaat op het moment dat het apparaat incheckt en worden ook weergegeven in de bedrijfsportal-app.<br><br>
 > Wanneer er conflicten optreden bij de instelling **Verwijderen bij verwijdering van apparaat**, wordt de app niet van het apparaat verwijderd als het apparaat niet meer wordt beheerd.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementatie van beheerde Google Play-apps op niet-beheerde apparaten
@@ -132,7 +132,7 @@ Stappen voor het toewijzen van beheerde Google Play-apps aan niet-beheerde appar
 Als er opdracht wordt gegeven voor selectieve verwijdering op basis van APP in de Intune-console, wordt het werkaccount automatisch verwijderd uit de Play Store-app en kan de eindgebruiker vanaf dat moment geen zakelijke apps meer zien in de catalogus van de Play Store-app. Wanneer het werkaccount van een apparaat wordt verwijderd, blijven de apps die vanuit de Play Store zijn geïnstalleerd, op het apparaat staan. Deze apps worden niet verwijderd. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Instelling voor verwijderen van apps voor beheerde iOS-apps
-Voor iOS-apparaten kunt u kiezen wat er gebeurt met beheerde apps bij het ongedaan maken van de registratie van het apparaat bij Intune of bij het verwijderen van het beheerprofiel. Hiertoe gebruikt u de instelling **Verwijderen bij verwijdering van apparaat**. Deze instelling is alleen van toepassing op apps nadat het apparaat is ingeschreven en apps zijn geïnstalleerd als beheerde apps. De instelling kan niet worden geconfigureerd voor web-apps of webkoppelingen. Alleen gegevens die worden beveiligd door Mobile Application Management (MAM) worden verwijderd na buitengebruikstelling door middel van selectief wissen van een app.
+Voor iOS/iPadOS-apparaten kunt u kiezen wat er gebeurt met beheerde apps bij het ongedaan maken van de registratie van het apparaat bij Intune of bij het verwijderen van het beheerprofiel. Hiertoe gebruikt u de instelling **Verwijderen bij verwijdering van apparaat**. Deze instelling is alleen van toepassing op apps nadat het apparaat is ingeschreven en apps zijn geïnstalleerd als beheerde apps. De instelling kan niet worden geconfigureerd voor web-apps of webkoppelingen. Alleen gegevens die worden beveiligd door Mobile Application Management (MAM) worden verwijderd na buitengebruikstelling door middel van selectief wissen van een app.
 
 De standaardwaarden voor de instelling worden als volgt vooraf ingevuld voor nieuwe toewijzingen:
 

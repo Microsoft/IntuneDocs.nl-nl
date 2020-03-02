@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712995"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514044"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Zelfstudie: Walkthrough door Microsoft Intune in Azure Portal
 
@@ -67,7 +67,7 @@ Volg de onderstaande stappen voor meer informatie over Intune in Azure Portal. Z
     
     Met Intune kunt u de apparaten en apps beheren waarvan uw werknemers gebruikmaken en kunt u beheren hoe zij toegang hebben tot uw bedrijfsgegevens. Om gebruik te kunnen maken van de MDM-service (Mobile Device Management), moeten de apparaten eerst worden geregistreerd bij Intune. Wanneer een apparaat is geregistreerd, wordt een MDM-certificaat voor het apparaat uitgegeven. Dit certificaat wordt gebruikt om te communiceren met de Intune-service. 
 
-    Er zijn verschillende methoden om de apparaten van uw werknemers te registreren in Intune. Elke methode is afhankelijk van het eigendom van het apparaat (persoonlijk of zakelijk), het apparaattype (iOS, Windows, Android), en de beheervereisten (opnieuw instellen, affiniteit, vergrendelen). Voordat u Apparaatregistratie kunt inschakelen, moet u echter uw Intune-infrastructuur instellen. Voor apparaatinschrijving is met name het [instellen van uw MDM-instantie](mdm-authority-set.md) van belang. Zie [Intune instellen](setup-steps.md) voor meer informatie over het gereedmaken van uw Intune-omgeving (tenant). Zodra uw Intune-tenant gereed is, kunt u apparaten registreren. Zie [Wat is apparaatinschrijving?](../enrollment/device-enrollment.md) voor meer informatie over apparaatinschrijving.
+    Er zijn verschillende methoden om de apparaten van uw werknemers te registreren in Intune. Elke methode is afhankelijk van het eigendom van het apparaat (persoonlijk of zakelijk), het apparaattype (iOS/iPadOS, Windows, Android) en de beheervereisten (opnieuw instellen, affiniteit, vergrendelen). Voordat u Apparaatregistratie kunt inschakelen, moet u echter uw Intune-infrastructuur instellen. Voor apparaatinschrijving is met name het [instellen van uw MDM-instantie](mdm-authority-set.md) van belang. Zie [Intune instellen](setup-steps.md) voor meer informatie over het gereedmaken van uw Intune-omgeving (tenant). Zodra uw Intune-tenant gereed is, kunt u apparaten registreren. Zie [Wat is apparaatinschrijving?](../enrollment/device-enrollment.md) voor meer informatie over apparaatinschrijving.
 
 3. Vanuit [Intune](https://aka.ms/intuneportal) selecteert u **Apparaatnaleving** om details weer te geven over naleving voor apparaten die door Intune worden beheerd. U ziet details die vergelijkbaar zijn met de volgende afbeelding.
 
@@ -85,7 +85,7 @@ Volg de onderstaande stappen voor meer informatie over Intune in Azure Portal. Z
 
     ![Schermopname van het deelvenster Apparaatconfiguratie](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen voor verschillende apparaten en verschillende platforms maken, waaronder iOS, Android en Windows. Vervolgens kunt u Intune gebruiken om het profiel op apparaten in uw organisatie toe te passen.   
+    Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen voor verschillende apparaten en verschillende platforms maken, waaronder iOS/iPadOS, Android en Windows. Vervolgens kunt u Intune gebruiken om het profiel op apparaten in uw organisatie toe te passen.   
 
     Zie [Functies-instellingen toepassen op uw apparaten met apparaatprofielen in Microsoft Intune](../configuration/device-profiles.md) voor meer informatie over apparaatconfiguratie.
 

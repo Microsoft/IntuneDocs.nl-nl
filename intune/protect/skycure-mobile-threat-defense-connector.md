@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508920"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515268"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-connector
 
@@ -41,7 +41,7 @@ U kunt SEP Mobile-risicoanalyse inschakelen via het Intune-nalevingsbeleid voor 
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Hoe kunt u met Intune en SEP Mobile uw bedrijfsresources beter beveiligen?
 
-Met de mobiele Android- of iOS-app voor SEP Mobile worden telemetriegegevens vastgelegd over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. De app verzendt die gegevens vervolgens naar de SEP Mobile-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
+Met de mobiele Android- of iOS-/iPadOS-app voor SEP Mobile worden telemetriegegevens vastgelegd over het bestandssysteem, de netwerkstack, apparaten en apps waar dergelijke gegevens beschikbaar zijn. Met de app worden die gegevens vervolgens verzonden naar de SEP Mobile-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.
 
 Het Intune-nalevingsbeleid voor apparaten bevat een regel voor SEP Mobile die is gebaseerd op de SEP Mobile-risicoanalyse. Als deze regel is ingeschakeld, controleert Intune of het apparaat voldoet aan het beleid dat u hebt ingeschakeld.
 
@@ -121,7 +121,7 @@ Hier volgen de stappen die u moet uitvoeren om Intune met SEP Mobile te integrer
 
 - [SEP Mobile-integratie met Intune instellen](skycure-mtd-connector-integration.md)
 
-- [SEP Mobile-apps, Microsoft Authenticator en het configuratiebeleid voor iOS-apps toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [SEP Mobile-apps, Microsoft Authenticator en het configuratiebeleid voor iOS-/iPadOS-apps toevoegen en toewijzen](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [SEP Mobile-nalevingsbeleid voor apparaten met Intune maken](mtd-device-compliance-policy-create.md)
 

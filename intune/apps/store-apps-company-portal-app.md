@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755031"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576441"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>De Windows 10-bedrijfsportal-app handmatig toevoegen met Microsoft Intune
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>De Windows 10-bedrijfsportal-app toevoegen met Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Uw gebruikers kunnen de bedrijfsportal-app zelf installeren vanuit Microsoft Store voor het beheren van apparaten en het installeren van apps. Als uw bedrijf echter vereist dat u de bedrijfsportal-app aan ze toewijst, kunt u de Windows 10-bedrijfsportal-app handmatig rechtstreeks toewijzen vanuit Intune. U kunt dit zelfs doen als u Intune niet met de Microsoft Store voor Bedrijven hebt geïntegreerd.
+Uw gebruikers kunnen de bedrijfsportal-app zelf installeren vanuit Microsoft Store voor het beheren van apparaten en het installeren van apps. Als uw bedrijf echter vereist dat u de bedrijfsportal-app aan ze toewijst, kunt u de Windows 10-bedrijfsportal-app rechtstreeks toewijzen vanuit Intune. U kunt dit zelfs doen als u Intune niet met de Microsoft Store voor Bedrijven hebt geïntegreerd.
 
- > [!NOTE]
- > Voor de optie die in dit artikel wordt beschreven, moet u updates telkens handmatig toewijzen wanneer een app-update wordt uitgebracht.
+ > [!IMPORTANT]
+ > Als u de Bedrijfsportal-app downloadt, moet u voor de optie die in dit artikel wordt beschreven, updates steeds handmatig toewijzen wanneer een app-update wordt uitgebracht. Voor het implementeren van de Bedrijfsportal-app op voor Windows 10 Autopilot ingerichte apparaten ziet u [De Windows 10 Bedrijfsportal-app toevoegen op Autopilot-apparaten](~/apps/store-apps-company-portal-autopilot.md).
 
 ## <a name="configure-settings-to-show-offline-apps"></a>Instellingen configureren om apps offline weer te geven
 1. Meld u met uw beheerdersaccount aan bij [Microsoft Store voor Bedrijven](https://www.microsoft.com/business-store).

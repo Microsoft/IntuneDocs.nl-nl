@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754997"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511732"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>iOS Store-apps toevoegen aan Microsoft Intune
 
@@ -32,11 +32,11 @@ ms.locfileid: "76754997"
 Gebruik de informatie in dit artikel om iOS Store-apps in Microsoft Intune toe te voegen. iOS Store-apps zijn apps die Intune installeert op de apparaten van uw gebruiker. Een gebruiker maakt deel uit van het personeel van uw bedrijf. iOS Store-apps worden automatisch bijgewerkt.
 
 >[!NOTE]
->Hoewel gebruikers van iOS-apparaten sommige ingebouwde iOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om die apps opnieuw te implementeren. Als uw gebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
+>Hoewel gebruikers van iOS/iPadOS-apparaten sommige ingebouwde iOS/iPadOS-apps, zoals Stocks en Maps, kunnen verwijderen, kunt u Intune niet gebruiken om die apps opnieuw te implementeren. Als uw gebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
 
 ## <a name="before-you-start"></a>Voordat u begint
 
-U kunt apps alleen met deze methode toewijzen als ze gratis verkrijgbaar zijn in de App Store. Als u betaalde apps met Intune wilt toewijzen, kunt u overwegen om het [Volume Purchase Program voor iOS](vpp-apps-ios.md) te gebruiken.
+U kunt apps alleen met deze methode toewijzen als ze gratis verkrijgbaar zijn in de App Store. Als u betaalde apps met Intune wilt toewijzen, kunt u overwegen om het [Volume Purchase Program voor iOS/iPadOS](vpp-apps-ios.md) te gebruiken.
 
 >[!NOTE]
 >Als u met Microsoft Intune werkt, kunt u beter de Microsoft Edge- of Google Chrome-browser gebruiken.

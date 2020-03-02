@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207197"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510517"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Afgeleide referenties gebruiken in Microsoft Intune
 
@@ -37,7 +37,7 @@ Afgeleide referenties zijn een implementatie van de NIST-richtlijnen (National I
 
 - De Intune-beheerder geeft **Afgeleide referentie** op als de *Verificatiemethode* voor de volgende objecten:
 
-  - Algemene profieltypen, zoals Wi-Fi, VPN en E-mail, inclusief de systeemeigen mail-app van iOS
+  - Algemene profieltypen, zoals Wi-Fi, VPN en E-mail, inclusief de systeemeigen mail-app van iOS/iPadOS
 
   - App-verificatie
 
@@ -76,7 +76,7 @@ Raadpleeg voor belangrijke informatie over het gebruik van de verschillende verl
 
 Plan de implementatie van de Intune-bedrijfsportal-app op apparaten die worden ingeschreven voor een afgeleide referentie. Apparaatgebruikers gebruiken de bedrijfsportal-app om het inschrijvingsproces voor referenties te starten.
 
-Zie [iOS Store-apps toevoegen aan Microsoft Intune](../apps/store-apps-ios.md) voor iOS-apparaten.
+Zie [iOS/iPadOS Store-apps toevoegen aan Microsoft Intune](../apps/store-apps-ios.md) voor iOS/iPadOS-apparaten.
 
 ## <a name="plan-for-derived-credentials"></a>Plannen voor afgeleide referenties
 
@@ -198,7 +198,7 @@ Naast implementatie van de app met Intune, configureert u een Intune-VPN per app
 **Voer de volgende taken uit**:
   
 1. Download de [DISA Purebred-toepassing](https://cyber.mil/pki-pke/purebred/).
-2. Implementeer de DISA Purebred-toepassing in Intune.  Zie [Een iOS Line-Of-Business-app toevoegen aan Microsoft Intune](../apps/lob-apps-ios.md).
+2. Implementeer de DISA Purebred-toepassing in Intune.  Zie [Een iOS/iPadOS Line-Of-Business-app toevoegen aan Microsoft Intune](../apps/lob-apps-ios.md).
 3. [Maak een VPN per app](../configuration/vpn-settings-configure.md) voor de DISA Purebred-toepassing.
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>Afgeleide referenties gebruiken voor verificatie en S/MIME-ondertekening en -versleuteling
@@ -224,7 +224,7 @@ Afgeleide referenties gebruiken voor verificatie op basis van certificaten voor 
 2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende instellingen in:
 
-    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **Afgeleide referentie voor het profiel van iOS-apparaten**.
+    - **Naam**: Voer een beschrijvende naam in voor het profiel. Geef uw profielen een naam zodat u ze later eenvoudig kunt identificeren. Een goede profielnaam is bijvoorbeeld **Afgeleide referentie voor het profiel van iOS/iPadOS-apparaten**.
     - **Beschrijving**: Voer een beschrijving in met een overzicht van de instelling en eventuele andere belangrijke details.
     - **Platform**: Selecteer **iOS/iPadOS**.
     - **Profieltype**: Selecteer **Afgeleide referentie**.

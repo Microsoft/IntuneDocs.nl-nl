@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437882"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513898"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selectief gegevens wissen met acties voor voorwaardelijke toegang in app-beveiligingsbeleid in Intune
 
@@ -122,5 +122,5 @@ Wanneer een instelling volledig is geconfigureerd, wordt de rij weergegeven in d
 
 Ga voor meer informatie over het app-beveiligingsbeleid in Intune naar:
 - [App-beveiligingsbeleid maken en toewijzen](app-protection-policies.md)
-- [Beveiligingsbeleidsinstellingen voor iOS-apps](app-protection-policy-settings-ios.md)
+- [Beveiligingsbeleidsinstellingen voor iOS-/iPadOS-apps](app-protection-policy-settings-ios.md)
 - [Instellingen voor beveiligingsbeleid voor apps voor Android in Microsoft Intune](app-protection-policy-settings-android.md) 

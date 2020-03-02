@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912553"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609221"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementatie van Windows 10-apps met behulp van Microsoft Intune 
 
@@ -44,18 +44,19 @@ LOB-apps (Line-Of-Business) en Microsoft Store voor Bedrijven-apps zijn de typen
 
 Specifieke app-typen worden ondersteund op basis van de versie van Windows 10 die door uw gebruikers wordt uitgevoerd. De volgende tabel bevat het app-type en de Windows 10-ondersteuning.
 
-| App-type | Home | Pro | Business | Enterprise | Education | S-Mode | Hololense | SurfaceHub | WCOS | Mobiele telefoon |
+| App-type | Home | Pro | Business | Enterprise | Education | S-Mode | HoloLens<sup>1 | Surface Hub | WCOS | Mobiele telefoon |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  .MSI | Nee | Ja | Ja | Ja | Ja | Nee | Nee | Nee | Nee | Nee |
 | .IntuneWin | Nee | Ja | Ja | Ja | Ja | 19H2+ | Nee | Nee | Nee | Nee |
-| Office C2R | Nee | Ja | Ja | Ja | Ja | Nee | Nee | Nee | Nee | Nee |
+| Office C2R | Nee | Ja | Ja | Ja | Ja | RS4+ | Nee | Nee | Nee | Nee |
 | LOB: APPX/MSIX | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja |
 | MSFB Offline | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja |
-| MSFB Online | Ja | Ja | Ja | Ja | Ja | Ja | RS4+ | Ja | Ja | Ja |
-| Web Apps | Ja | Ja | Ja | Ja | Ja | Ja | Ja<sup>1 | Ja<sup>1 | Ja | Ja |
+| MSFB Online | Ja | Ja | Ja | Ja | Ja | Ja | RS4+ | Nee | Ja | Ja |
+| Web Apps | Ja | Ja | Ja | Ja | Ja | Ja | Ja<sup>2 | Ja<sup>2 | Ja | Ja<sup>2 |
 | Store-koppeling | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja |
 
-<sup>1</sup> Alleen starten vanuit de bedrijfsportal.
+<sup>1</sup> Als u app-beheer wilt ontgrendelen, moet u uw HoloLens-apparaat upgraden naar [Holographic for Business](../fundamentals/windows-holographic-for-business.md).<br />
+<sup>2</sup> Alleen starten vanuit de bedrijfsportal.
 
 > [!NOTE]
 > Alle Windows-app-typen moeten worden ingeschreven.

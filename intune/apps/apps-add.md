@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755269"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511834"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Apps toevoegen aan Microsoft Intune 
 
@@ -52,7 +52,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | --- | --- | --- |
 | Android Store-apps  | Store-app  | Selecteer **Android** als het **app-type** en voer de Google Play Store-URL in voor de app. |
 | Android Enterprise-apps  | Store-app  | Selecteer **Android** als het **app-type** en voer de beheerde Google Play Store-URL in voor de app. <sup>1</sup> |
-| iOS Store-apps  | Store-app  | Selecteer **iOS** als het **app-type**, zoek de app en selecteer de app in Intune. |
+| iOS/iPadOS Store-app  | Store-app  | Selecteer **iOS** als het **app-type**, zoek de app en selecteer de app in Intune. |
 | Windows Phone 8.1 Store-apps  | Store-app  | Selecteer **Windows Phone 8.1** als het **app-type** en voer de URL van de Microsoft Store in voor de app. |
 | Microsoft Store-apps  | Store-app  | Selecteer **Windows** als het **app-type** en voer de URL van de Microsoft Store in voor de app. |
 | Beheerde Google Play-apps | Store-app  | Selecteer **Beheerde Google Play** als het **apptype**, zoek de app en selecteer de app in Intune. |
@@ -61,10 +61,10 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 | Microsoft Edge versie 77 en hoger voor Windows 10 | Store-app | Selecteer **Windows 10** bij **Microsoft Edge versie 77 en hoger** als het **app-type**. |
 | Microsoft Edge versie 77 en hoger voor macOS | Store-app | Selecteer **macOS** bij **Microsoft Edge versie 77 en hoger** als het **app-type**. |
 | Android LOB-apps (Line-Of-Business) | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Android-installatiebestand toe met de extensie **.apk**.  |
-| iOS LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-installatiebestand toe met de extensie **.ipa**.  |
+| iOS/iPadOS LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een iOS-/iPadOS-installatiebestand toe met de extensie **.ipa**.  |
 | Windows Phone LOB-apps | LOB-app | Selecteer **Line-Of-Business**-app als het **app-type**, selecteer het **app-pakketbestand** en voeg vervolgens een Windows Phone-installatiebestand toe met de extensie **.xap**.  |
 | Windows LOB-app | LOB-app | Selecteer **Line-Of-Business**-app als het app-type, selecteer het **app-pakketbestand** en voeg vervolgens een Windows-installatiebestand toe met de extensie **.msi**, **.appx**, **.appxbundle**, **.msix** of **.msixbundle**. |
-| Ingebouwde iOS-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
+| Ingebouwde iOS-/iPadOS-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Ingebouwde Android-app  | Ingebouwde app | Selecteer **Ingebouwde app** als het **app-type** en selecteer vervolgens de ingebouwde app in de lijst beschikbare apps.  |
 | Web-apps  | Web-app  | Selecteer **Webkoppeling** als het **app-type** en voer vervolgens een geldige URL in die verwijst naar de web-app.  |
 | Android Enterprise-systeem-apps  | Store-app  | Selecteer **Android Enterprise-systeem-app** als het **app-type** en voer vervolgens de naam, de uitgever en het pakketbestand van de app in.  |
@@ -77,7 +77,7 @@ De volgende tabel bevat de specifieke app-typen en informatie over hoe u deze ku
 U kunt in Microsoft Intune een app toevoegen door **Apps** > **Alle apps** > **Toevoegen** te selecteren. Het deelvenster **Een app-type selecteren** wordt weergegeven. Hier kunt u het **app-type** selecteren. 
 
 >[!TIP]
-> Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS wilt installeren, voegt u de app toe door in het deelvenster **Een app-type selecteren** de optie **LOB-app** als het **app-type** te kiezen. U selecteert vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
+> Een LOB-app is een app die u vanaf een app-installatiebestand toevoegt. Als u bijvoorbeeld een LOB-app voor iOS/iPadOS wilt installeren, voegt u de app toe door in het deelvenster **Een app-type selecteren** de optie **LOB-app** als het **app-type** te kiezen. U selecteert vervolgens het app-pakketbestand (met de extensie .ipa). Deze app-typen worden doorgaans intern ontwikkeld.
 
 ## <a name="assess-app-requirements"></a>De app-vereisten beoordelen
 Als IT-beheerder moet u niet alleen vaststellen welke apps door de groep moeten worden gebruikt, maar moet u ook bepalen over welke functies elke groep en subgroep moet beschikken. U bepaalt voor elke app welke platformen er moeten worden gebruikt, welke gebruikersgroepen de app nodig hebben, welk configuratiebeleid van toepassing is voor die groepen en welk beveiligingsbeleid moet worden toegepast.  
@@ -109,8 +109,8 @@ In de [Intune-handleiding voor implementatieplanning, ontwerp en implementatie](
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Het type app voor uw oplossing bepalen
 
 U kunt kiezen uit de volgende app-typen:
-- **Apps uit de store**: een app die naar de Microsoft Store, iOS Store of Android Store is geüpload, is een store-app. De aanbieder van een store-app onderhoudt de app en levert hiervoor updates. U selecteert de app in de lijst van de store en voegt deze met behulp van Intune toe als een beschikbare app voor uw gebruikers.
-- **Apps die intern zijn ontwikkeld (line-of-business)** : apps die intern zijn gemaakt, worden LOB-apps (line-of-business) genoemd. De functionaliteit van dit type app is gemaakt voor een van de platformen die door Intune worden ondersteund, zoals Windows, iOS, macOS of Android. Uw organisatie maakt en levert u updates als een afzonderlijk bestand. U levert updates van de app aan gebruikers door de updates via Intune toe te voegen en te implementeren.
+- **Apps uit de store**: een app die naar de Microsoft Store, iOS/iPadOS Store of Android Store is geüpload, is een store-app. De aanbieder van een store-app onderhoudt de app en levert hiervoor updates. U selecteert de app in de lijst van de store en voegt deze met behulp van Intune toe als een beschikbare app voor uw gebruikers.
+- **Apps die intern zijn ontwikkeld (line-of-business)** : apps die intern zijn gemaakt, worden LOB-apps (line-of-business) genoemd. De functionaliteit van dit type app is gemaakt voor een van de platformen die door Intune worden ondersteund, zoals Windows, iOS/iPadOS, macOS of Android. Uw organisatie maakt en levert u updates als een afzonderlijk bestand. U levert updates van de app aan gebruikers door de updates via Intune toe te voegen en te implementeren.
 - **Apps op internet**: web-apps zijn client-/servertoepassingen. De server levert de web-app, waaronder de gebruikersinterface, inhoud en functionaliteit. Bovendien bieden moderne webhostingplatformen meestal beveiliging, taakverdeling en andere voordelen. Dit type app wordt afzonderlijk onderhouden op internet. U gebruikt Intune om naar dit type app te verwijzen. U wijst ook de groepen gebruikers toe die toegang krijgen tot de app. Houd er rekening mee dat Android geen ondersteuning biedt voor web-apps.
 
 Wanneer u bepaalt welke apps uw organisatie nodig heeft, houd er dan rekening mee hoe de apps worden geïntegreerd met cloudservices, welke gegevens worden opgehaald met de apps, of de apps beschikbaar zijn voor BYOD-gebruikers en of internettoegang nodig is voor de apps.
@@ -128,7 +128,7 @@ Voor apps die door Intune worden beheerd, kan ook app-beveiliging worden ingesch
 
 ### <a name="understanding-licensed-apps"></a>Informatie over apps met licentie
 Naast het feit dat er verschillende typen apps zijn, zoals web-apps, store-apps en LOB-apps, moet u ook het verschil begrijpen tussen apps die zijn aangeschaft via een volumeaankoopprogramma en apps met licentie, bijvoorbeeld: 
-- **Apple-volumeaankoopprogramma voor bedrijven (iOS)** : u kunt in de iOS App Store meerdere licenties aanschaffen voor een app die u in uw bedrijf wilt uitvoeren. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren. Raadpleeg [iOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune](vpp-apps-ios.md) voor meer informatie.
+- **Apple-volumeaankoopprogramma voor bedrijven (iOS)** : u kunt in de iOS/iPadOS App Store meerdere licenties aanschaffen voor een app die u in uw bedrijf wilt uitvoeren. Door meerdere exemplaren aan te schaffen, kunt u apps in uw bedrijf efficiënt beheren. Raadpleeg [iOS-/iPadOS-apps beheren die zijn aangeschaft via een volumeaankoopprogramma met Microsoft Intune](vpp-apps-ios.md) voor meer informatie.
 - **Android-werkprofiel**: Hoe u apps toewijst aan apparaten met een Android-werkprofiel verschilt van hoe u deze apps toewijst aan standaard Android-apparaten. Alle apps die u installeert voor Android-werkprofielen, zijn afkomstig uit de beheerde Google Play Store. U gebruikt Intune om te zoeken naar de gewenste apps en u keurt ze goed. De app verschijnt vervolgens op het knooppunt **Gelicentieerde apps** in Azure Portal, waarna u de toewijzing van apps kunt beheren zoals u bij elke app zou doen.
 - **Microsoft Store voor Bedrijven (Windows 10)** : in de Microsoft Store voor Bedrijven kunt u apps zoeken en aanschaffen, zowel afzonderlijke exemplaren als in grotere volumes. Als u Windows Store voor Bedrijven aan Microsoft Intune koppelt, kunt u apps die zijn aangeschaft via een volumeaankoopprogramma, beheren in Azure Portal. Raadpleeg [Apps die u hebt aangeschaft in Microsoft Store voor Bedrijven, beheren met Microsoft Intune](windows-store-for-business.md) voor meer informatie.
 
@@ -139,7 +139,7 @@ Naast het feit dat er verschillende typen apps zijn, zoals web-apps, store-apps 
 Overweeg de volgende punten voordat u begint met het toevoegen en toewijzen van apps:
 
 - Wanneer u een app vanuit een App Store toevoegt en toewijst, moeten uw gebruikers beschikken over een account bij die store om de app te kunnen installeren.
-- Sommige apps of items die u toewijst, zijn mogelijk afhankelijk van ingebouwde iOS-apps. Als u bijvoorbeeld een boek uit de iOS Store toewijst, moet de app iBooks op het apparaat staan. Als u de ingebouwde app iBooks hebt verwijderd, kunt u Intune niet gebruiken om dit te herstellen.
+- Sommige apps of items die u toewijst, zijn mogelijk afhankelijk van ingebouwde iOS-/iPadOS-apps. Als u bijvoorbeeld een boek uit de iOS/iPadOS Store toewijst, moet de app iBooks op het apparaat staan. Als u de ingebouwde app iBooks hebt verwijderd, kunt u Intune niet gebruiken om dit te herstellen.
 
 > [!IMPORTANT]
 > Als u de naam van de app wijzigt via Intune Azure Portal nadat u de app hebt geïnstalleerd en geïmplementeerd, kunt u geen beleid meer richten op de app met behulp van opdrachten.
@@ -153,7 +153,7 @@ De vereisten voor cloudopslag zijn als volgt:
 - De maximale bestandsgrootte voor elk bestand dat u uploadt, is 8 GB.
 
   > [!NOTE]
-  > Windows Line-Of-Business-apps (LOB), waaronder Win32, Windows Universal AppX, Windows Universal AppX-bundel, Windows Universal MSI X en Windows Universal MSI X-bundel, hebben een maximale grootte van 8 GB per app. Alle andere LOB-apps, inclusief iOS LOB-apps, hebben een maximale grootte van 2 GB per app.
+  > Windows Line-Of-Business-apps (LOB), waaronder Win32, Windows Universal AppX, Windows Universal AppX-bundel, Windows Universal MSI X en Windows Universal MSI X-bundel, hebben een maximale grootte van 8 GB per app. Alle andere LOB-apps, inclusief iOS/iPadOS LOB-apps, hebben een maximale grootte van 2 GB per app.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Categorieën voor apps maken en bewerken
 

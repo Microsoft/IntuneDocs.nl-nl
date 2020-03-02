@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562498"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609156"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>In volume aangeschafte apps beheren vanuit de Microsoft Store voor Bedrijven met Microsoft Intune
 
@@ -48,7 +48,7 @@ Lees de volgende informatie voordat u begint met het synchroniseren en toewijzen
 - In de Intune-portal kunt u zowel online als offline gelicentieerde apps synchroniseren die u hebt gekocht in Microsoft Store voor Bedrijven. Vervolgens kunt u deze apps implementeren in apparaat- of gebruikersgroepen. 
 - Online-app-installaties worden beheerd door de Store.
 - Gratis offline-apps kunnen ook worden gesynchroniseerd met Intune. Deze apps worden geïnstalleerd door Intune en niet door de Store.
-- Als u deze mogelijkheid wilt gebruiken, moeten apparaten zijn gekoppeld aan Active Directory Domain Services of aan de werkplek zijn toegevoegd.
+- Als u deze mogelijkheid wilt gebruiken, moeten apparaten zijn gekoppeld aan Active Directory Domain Services of aan Azure AD of aan de werkplek zijn toegevoegd.
 - Geregistreerde apparaten moeten gebruikmaken van de 1511-versie van Windows 10 of hoger.
 
 Daarnaast worden gerelateerde sets en gelicentieerde offline-apps die via de Microsoft Store voor Bedrijven werden gesynchroniseerd, nu geconsolideerd in een enkele app-vermelding in de gebruikersinterface. Alle implementatiegegevens van de afzonderlijke pakketten worden gemigreerd naar die ene vermelding. Als u gerelateerde sets in Azure Portal wilt bekijken, selecteert u **App-licenties** in het deelvenster **Apps**.

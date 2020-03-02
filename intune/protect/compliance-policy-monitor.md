@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206071"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515115"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Nalevingsbeleid voor Intune-apparaten controleren
 
@@ -77,7 +77,7 @@ Beschrijvingen van verschillende statussen van het nalevingsbeleid voor apparate
   - Apparaten die niet aan nalevingsbeleid zijn toegewezen en geen trigger bevatten voor de controle op naleving
   - Apparaten die niet zijn ingecheckt nadat het nalevingsbeleid voor het laatst is bijgewerkt
   - Apparaten die niet aan een specifieke gebruiker zijn gekoppeld, zoals:
-    - iOS-apparaten die zijn gekocht via het Device Enrollment Program (DEP) van Apple en zonder gebruikersaffiniteit
+    - iOS-/iPadOS-apparaten die zijn gekocht via het Device Enrollment Program (DEP) van Apple en zonder gebruikersaffiniteit
     - Kiosk-apparaten met Android of toegewezen Android Enterprise-apparaten
   - Apparaten die zijn ingeschreven met een DEM-account (apparaatinschrijvingsmanager)
 

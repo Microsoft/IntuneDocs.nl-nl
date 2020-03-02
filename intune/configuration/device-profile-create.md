@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206666"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511421"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Een apparaatprofiel maken in Microsoft Intune
 
@@ -87,7 +87,7 @@ Dit artikel:
 
      Als u bijvoorbeeld **iOS/iPadOS** selecteert als platform, zien uw opties voor het profieltype er ongeveer uit als het volgende profiel:
 
-     ![iOS-profiel maken in Intune](./media/device-profile-create/create-device-profile.png)
+     ![iOS-/iPadOS-profiel maken in Intune](./media/device-profile-create/create-device-profile.png)
 
 4. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan. Het profiel wordt gemaakt en weergegeven in de lijst.
 
@@ -171,10 +171,10 @@ Houd bij het maken van profielen rekening met de volgende aanbevelingen:
   **Profielnaam**: Beheersjabloon - OneDrive-configuratieprofiel voor alle Windows 10-gebruikers  
   **Profielbeschrijving**: sjabloonprofiel van de OneDrive-beheerder met de minimale en de basisinstellingen voor alle Windows 10-gebruikers. Gemaakt door user@contoso.com om te voorkomen dat gebruikers organisatiegegevens delen met persoonlijke OneDrive-accounts.
 
-  **Profielnaam**: VPN-profiel voor alle iOS-gebruikers  
-  **Profielbeschrijving**: VPN-profiel met de minimale en basisinstellingen voor alle iOS-gebruikers om verbinding te maken met Contoso VPN. Gemaakt door user@contoso.com, zodat gebruikers automatisch worden geverifieerd voor VPN, in plaats van gebruikers te vragen om hun gebruikersnaam en wachtwoord op te geven.
+  **Profielnaam**: VPN-profiel voor alle iOS-/iPadOS-gebruikers  
+  **Profielbeschrijving**: VPN-profiel met de minimale en basisinstellingen voor alle iOS-/iPadOS-gebruikers om verbinding te maken met Contoso VPN. Gemaakt door user@contoso.com, zodat gebruikers automatisch worden geverifieerd voor VPN, in plaats van gebruikers te vragen om hun gebruikersnaam en wachtwoord op te geven.
 
-- Maak uw profiel op basis van de bijbehorende taak, zoals Microsoft Edge-instellingen configureren, Microsoft Defender-antivirusinstellingen inschakelen, opengebroken iOS apparaten blokkeren enzovoort.
+- Maak uw profiel op basis van de bijbehorende taak, zoals Microsoft Edge-instellingen configureren, Microsoft Defender-antivirusinstellingen inschakelen, opengebroken iOS-/iPadOS-apparaten blokkeren enzovoort.
 
 - Maak profielen die van toepassing zijn op specifieke groepen, zoals Marketing, Verkoop, IT-beheerders, of op locatie of schoolsysteem.
 

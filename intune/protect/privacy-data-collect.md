@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509081"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514231"
 ---
 # <a name="data-collection-in-intune"></a>Gegevensverzameling in Intune
 
@@ -60,7 +60,7 @@ Geïdentificeerde gegevens die door Intune worden verzameld, omvatten mogelijk, 
   - ICCID
   - Telefoonnummer
 - Informatie uit auditlogboeken, waaronder gegevens over de volgende activiteiten
-  - Manage
+  - Beheren
   - Maken
   - Bijwerken (bewerken)
   - Verwijderen
@@ -83,7 +83,7 @@ Geïdentificeerde gegevens die door Intune worden verzameld, omvatten mogelijk, 
   - Abonnementssleutel
 - Toepassingsinventaris, zoals
   - app-naam
-  - Versie
+  - versie
   - app-id
   - grootte
   - installatielocatie
@@ -112,12 +112,12 @@ Gepseudonimiseerde gegevens die door Intune worden verzameld, omvatten mogelijk,
   - Account-id
   - EAS-apparaat-id
   - Platformspecifieke id's
-  - Apple ID voor iOS-apparaten
+  - Apple ID voor iOS/iPadOS-apparaten
   - MAC-adres voor Mac-apparaten
   - Windows-id voor Windows-apparaten
 - Beheerde toepassingsgegevens
   - Beheerde toepassing-id
-  - Apparaatlabel van beheerde toepassing
+  - Apparaattag van beheerde toepassing
   - Intune-apparaatbeheer-id
   - Apparaat-id van Azure Active Directory
   - Versleutelingssleutels

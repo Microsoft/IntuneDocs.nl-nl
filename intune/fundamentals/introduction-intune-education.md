@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ccea34694bde8ea80a779b36ef612fcefb1add
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97177f91edea1205f6e8349ee1a7194d0f5300e5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510209"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514537"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Waarin verschilt Intune for Education van het volledige Intune-beheer?
 
@@ -29,7 +29,7 @@ Intune for Education biedt uw docenten en studenten productiviteit terwijl schoo
 
 ![Intune for Education-console vergeleken met de Intune-console.](./media/introduction-intune-education/intune-azure-vs-intuneEDU.png)
 
-Met Intune for Education kunt u Windows 10- en iOS-apparaten beheren met de volledige MDM-functionaliteit die beschikbaar is in Intune. Met het volledige apparaatbeheer kunt u Windows-, iOS- en Android-apparaten beheren.  
+Met Intune for Education kunt u Windows 10- en iOS-/iPadOS-apparaten beheren met de volledige MDM-functionaliteit die beschikbaar is in Intune. Met het volledige apparaatbeheer kunt u Windows-, iOS-/iPadOS- en Android-apparaten beheren.  
 
 U kunt Intune for Education zelfstandig gebruiken of in samenwerking met het [volledige apparaatbeheer dat beschikbaar is in Intune](what-is-intune.md). U kunt het ook gebruiken samen met de overige hulpprogramma's die beschikbaar zijn in [Microsoft Education](https://microsoft.com/education), zodat u Intune for Education gemakkelijker kunt gebruiken met andere handige educatieve hulpmiddelen van Microsoft.  
 

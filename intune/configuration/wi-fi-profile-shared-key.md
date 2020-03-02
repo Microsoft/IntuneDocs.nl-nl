@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886715"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510602"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Een aangepast apparaatprofiel gebruiken om een Wi-Fi-profiel te maken met een vooraf gedeelde sleutel in Intune
 
@@ -44,7 +44,7 @@ Deze functie ondersteunt:
 
 - Het kan eenvoudiger zijn om de code te kopiëren vanaf een computer die verbinding heeft met dat netwerk, zoals verderop in dit artikel wordt beschreven.
 - U kunt meerdere netwerken en sleutels toevoegen door meer OMA-URI-instellingen toe te voegen.
-- Voor iOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren.
+- Voor iOS/iPadOS gebruikt u Apple Configurator op een Mac-computer om het profiel te configureren.
 - Voor PSK is een tekenreeks van 64 hexadecimale cijfers vereist of een wachtwoordzin van 8 tot 63 afdrukbare ASCII-tekens. Sommige tekens, zoals sterretje (*), worden niet ondersteund.
 
 ## <a name="create-a-custom-profile"></a>Een aangepast profiel maken

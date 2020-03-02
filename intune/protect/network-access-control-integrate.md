@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 472b23581cddad16a1b7eaf37ddf99e7e37e70f5
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207091"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569231"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Netwerktoegangsbeheer integreren met Intune
 
@@ -67,31 +67,34 @@ Hieronder volgt een overzicht van de manier waarop NAC-integratie werkt in combi
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>Netwerktoegangsbeheer (NAC) voor VPN gebruiken op uw iOS-apparaten  
 
-- NAC is beschikbaar op de volgende VPN's zonder NAC te hoeven inschakelen in het VPN-profiel:
+NAC is beschikbaar op de volgende VPN's zonder NAC te hoeven inschakelen in het VPN-profiel:
 
   - NAC voor Cisco Legacy AnyConnect
   - Verouderde F5-toegang
   - Citrix VPN
 
-- NAC is ook beschikbaar voor Citrix SSO en F5-toegang. Doe het volgende om NAC voor Citrix SSO in te schakelen:
+NAC wordt ook ondersteund voor Cisco AnyConnect, Citrix SSO en F5 Access. 
+
+### <a name="to-enable-nac-for-cisco-anyconnect-for-ios"></a>NAC inschakelen voor Cisco AnyConnect voor iOS:
+
+  - Integreer ISE met Intune voor NAC, zoals beschreven in de onderstaande koppeling.
+  - Stel de instelling **Netwerktoegangsbeheer (NAC) inschakelen** in het VPN-profiel in op **Ja**.
+
+### <a name="to-enable-nac-for-citrix-sso"></a>Doe het volgende om NAC voor Citrix SSO in te schakelen:
 
   - Gebruik Citrix Gateway 12.0.59 of hoger.  
   - Gebruikers moeten Citrix SSO 1.1.6 of later hebben geïnstalleerd.
   - [Integreer NetScaler met Intune voor NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) zoals beschreven in de Citrix-productdocumentatie.
   - Ga naar het VPN-profiel, selecteer **Basisinstellingen** > **Netwerktoegangscontrole (NAC) instellen** en selecteer **Ik ga akkoord**.
 
-  De VPN-verbinding wordt elke 24 uur uit veiligheidsoverwegingen verbroken. De VPN-verbinding wordt onmiddellijk hersteld.
 
-- U schakelt NAC als volgt in voor F5-toegang:
+### <a name="to-enable-nac-for-f5-access"></a>U schakelt NAC als volgt in voor F5-toegang:
 
   - Gebruik F5 BIG-IP 13.1.1.5. BIG-IP 14 wordt niet ondersteund.
   - Integreer BIG-IP met Intune voor NAC. In de F5-handleiding[Overzicht: APM configureren voor apparaatpostuurcontroles met eindpuntbeheersystemen](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) worden de stappen uitgelegd.
   - Ga naar het VPN-profiel, selecteer **Basisinstellingen** > **Netwerktoegangscontrole (NAC) instellen** en selecteer **Ik ga akkoord**.
 
   De VPN-verbinding wordt elke 24 uur uit veiligheidsoverwegingen verbroken. De VPN-verbinding wordt onmiddellijk hersteld.
-
-- Netwerktoegangsbeheer wordt niet ondersteund voor de volgende VPN-clients op iOS:
-  - Cisco AnyConnect
 
 We werken samen met onze partners om een NAC-oplossing voor deze nieuwere clients uit te brengen. Zodra de oplossingen gereed zijn, wordt dit artikel bijgewerkt met aanvullende informatie.
 

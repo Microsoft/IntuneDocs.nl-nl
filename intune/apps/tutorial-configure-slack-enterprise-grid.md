@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415484"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511545"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Zelfstudie: Slack configureren om Intune te gebruiken voor de configuratie van EMM en de app
 
@@ -32,8 +32,8 @@ Slack is een samenwerkings-app die u kunt gebruiken met Microsoft Intune.
 In deze zelfstudie doet u het volgende:
 > [!div class="checklist"]
 > - Intune als de Enterprise Mobility Management (EMM)-provider instellen in uw Slack Enterprise Grid. U kunt de toegang tot de werkruimten van uw Grid-abonnement beperken tot door Intune beheerde apparaten.
-> - App-configuratiebeleid maken voor beheer van de Slack voor EMM-app voor iOS en de Slack-app voor apparaten met een Android-werkprofiel.
-> - Intune-nalevingsbeleid voor apparaten maken om de voorwaarden in te stellen waaraan Android- en iOS-apparaten moeten voldoen om als conform te worden beschouwd.
+> - App-configuratiebeleid maken voor beheer van de Slack voor EMM-app voor iOS/iPadOS en de Slack-app voor apparaten met een Android-werkprofiel.
+> - Intune-nalevingsbeleid voor apparaten maken om de voorwaarden in te stellen waaraan Android- en iOS/iPadOS-apparaten moeten voldoen om als conform te worden beschouwd.
 
 Als u niet over een Intune-abonnement beschikt, kunt u [zich registreren voor een gratis proefaccount](../fundamentals/free-trial-sign-up.md).
 
@@ -51,10 +51,10 @@ Schakel EMM in voor uw Slack Enterprise Grid-abonnement met behulp van de [instr
 Meld u bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) aan als een globale beheerder of een Intune-servicebeheerder. Als u een Intune-proefabonnement hebt gemaakt, is het account waarmee u het abonnement hebt gemaakt de globale beheerder.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Slack voor EMM instellen op iOS-apparaten
-Voeg de iOS-app Slack voor EMM toe aan uw Intune-tenant en maak app-configuratiebeleid om de iOS-gebruikers binnen uw organisatie toegang te geven tot Slack met Intune als een EMM-provider.
+Voeg de iOS/iPadOS-app Slack voor EMM toe aan uw Intune-tenant en maak app-configuratiebeleid om de iOS/iPadOS-gebruikers binnen uw organisatie toegang te geven tot Slack met Intune als een EMM-provider.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Slack voor EMM toevoegen aan Intune
-Voeg Slack voor EMM toe als een beheerde iOS-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met Android-apparaten.
+Voeg Slack voor EMM toe als een beheerde iOS/iPadOS-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met Android-apparaten.
 1. Selecteer **Apps** > **Alle apps** > **Toevoegen** in het beheercentrum.
 2. Selecteer bij **App-type** de app uit de **iOS Store**.
 3. Selecteer **Zoeken in de App Store**. Voer de zoekterm 'Slack voor EMM' in en selecteer de app. Klik op **Selecteren** in het venster **In de App Store zoeken**.
@@ -84,7 +84,7 @@ Voeg een app-configuratiebeleid toe voor Slack voor EMM iOS/iPadOS. App-configur
 12. Klik op **Opslaan**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Optioneel) Nalevingsbeleid voor iOS-apparaten maken
-Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor iOS-apparaten. Nalevingsbeleid is platform-specifiek, dus u moet een afzonderlijk beleid maken voor uw Slack-gebruikers met Android-apparaten.
+Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor iOS/iPadOS-apparaten. Nalevingsbeleid is platform-specifiek, dus u moet een afzonderlijk beleid maken voor uw Slack-gebruikers met Android-apparaten.
 1. In het beheercentrum selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 2. Bij Naam voert u 'Test iOS-nalevingsbeleid' in.
 3. Bij Beschrijving voert u 'Test iOS-nalevingsbeleid' in.
@@ -105,7 +105,7 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
 Voeg de beheerde Google Play-app van Slack toe aan uw Intune-tenant en maak app-configuratiebeleid om de Android-gebruikers binnen uw organisatie toegang te geven tot Slack met Intune als een EMM-provider.
 
 ### <a name="add-slack-to-intune"></a>Slack toevoegen aan Intune
-Voeg Slack toe als een beheerde Google Play-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met iOS-apparaten.
+Voeg Slack toe als een beheerde Google Play-app in Intune en wijs uw Slack-gebruikers toe. Apps zijn platformspecifiek, dus moet u een afzonderlijke Intune-app toevoegen voor uw Slack-gebruikers met iOS/iPadOS-apparaten.
 1. Selecteer in Intune **Apps** > **Alle apps** > **Toevoegen**.
 2. Selecteer onder App-type **Store-app: beheerde Google Play**.
 3. Selecteer **Beheerde Google Play: Goedkeuren**. Voer de zoekterm 'Slack voor EMM' in en selecteer de app.
@@ -120,7 +120,7 @@ Voeg Slack toe als een beheerde Google Play-app in Intune en wijs uw Slack-gebru
 10. Klik op **Opslaan**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Een app-configuratiebeleid toevoegen voor Slack
-Voeg een app-configuratiebeleid toe voor Slack. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met iOS-apparaten.
+Voeg een app-configuratiebeleid toe voor Slack. App-configuratiebeleidsregels voor beheerde apparaten zijn platform-specifiek, dus u moet een afzonderlijk beleid toevoegen voor uw Slack-gebruikers met iOS/iPadOS-apparaten.
 1. Selecteer in Intune **Apps** > **App-configuratiebeleid** > **Toevoegen**.
 2. Voer bij Naam het volgende in: Testbeleid Slack-app-configuratie.
 3. Selecteer bij Type apparaatregistratie **Beheerde apparaten**.
@@ -136,7 +136,7 @@ Voeg een app-configuratiebeleid toe voor Slack. App-configuratiebeleidsregels vo
 12. Klik op **Opslaan**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Optioneel) Nalevingsbeleid voor Android-apparaten maken
-Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor Android-apparaten. Nalevingsbeleid is platform-specifiek, dus u moet een afzonderlijk beleid maken voor uw Slack-gebruikers met iOS-apparaten.
+Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepalen waaraan een apparaat moet voldoen om als conform te worden beschouwd. In deze zelfstudie maken we een nalevingsbeleid voor Android-apparaten. Nalevingsbeleid is platform-specifiek, dus u moet een afzonderlijk beleid maken voor uw Slack-gebruikers met iOS/iPadOS-apparaten.
 1. In Intune selecteert u **Apparaatconformiteit** > **Beleid** > **Beleid maken**.
 2. Bij Naam voert u 'Test Android-nalevingsbeleid' in.
 3. Bij Beschrijving voert u 'Test Android-nalevingsbeleid' in.
@@ -155,13 +155,13 @@ Stel in Intune een nalevingsbeleid voor apparaten in om de voorwaarden te bepale
 
 ## <a name="launch-slack"></a>Slack starten
 
-Door het beleid dat u zojuist hebt gemaakt, wordt afgedwongen dat ieder iOS- of Android-apparaat met een werkprofiel dat zich probeert aan te melden bij een van uw werkruimten in Intune moet worden ingeschreven. Als u dit scenario wilt testen, probeert u Slack voor EMM te starten op een iOS-apparaat dat is ingeschreven bij Intune of probeert u Slack te starten op een apparaat met een Android-werkprofiel dat is ingeschreven bij Intune. 
+Met het beleid dat u zojuist hebt gemaakt, wordt afgedwongen dat ieder iOS/iPadOS- of Android-apparaat met een werkprofiel dat zich probeert aan te melden bij een van uw werkruimten in Intune moet worden ingeschreven. Als u dit scenario wilt testen, start u Slack voor EMM op een iOS/iPadOS-apparaat dat is ingeschreven bij Intune of start u Slack op een apparaat met een Android-werkprofiel dat is ingeschreven bij Intune. 
 
 ## <a name="next-steps"></a>Volgende stappen
 
 In deze zelfstudie hebt u het volgende gedaan:
 - Intune als de Enterprise Mobility Management (EMM)-provider instellen in uw Slack Enterprise Grid. 
-- App-configuratiebeleid maken voor beheer van de Slack voor EMM-app voor iOS en de Slack-app voor apparaten met een Android-werkprofiel.
-- Intune-nalevingsbeleid voor apparaten maken om de voorwaarden in te stellen waaraan Android- en iOS-apparaten moeten voldoen om als conform te worden beschouwd.
+- App-configuratiebeleid maken voor beheer van de Slack voor EMM-app voor iOS/iPadOS en de Slack-app voor apparaten met een Android-werkprofiel.
+- Intune-nalevingsbeleid voor apparaten maken om de voorwaarden in te stellen waaraan Android- en iOS/iPadOS-apparaten moeten voldoen om als conform te worden beschouwd.
 
 Zie [App-configuratiebeleidsregels voor Microsoft Intune](app-configuration-policies-overview.md) voor meer informatie over app-configuratiebeleid. Zie [Regels instellen op apparaten om toegang tot resources in uw organisatie met behulp van Intune toe te staan](../protect/device-compliance-get-started.md) voor meer informatie over apparaatnalevingsbeleid.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 67d9b5df39311d58571f875b8d41c16088010fad
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414029"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514299"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Algemene manieren om Microsoft Intune te gebruiken
 
@@ -35,7 +35,7 @@ Hieronder staat een korte inleiding over de zes meest voorkomende scenario’s w
 >Wilt u weten hoe de IT-afdeling van Microsoft gebruikmaakt van Intune om Microsoft toegang te bieden tot bedrijfsbronnen op hun mobiele apparaten, terwijl de zakelijke gegevens goed beveiligd blijven? [Lees deze technische casestudy](https://www.microsoft.com/itshowcase/Article/Content/588) voor gedetailleerde informatie over hoe de IT-afdeling van Microsoft Intune en andere services gebruikt om identiteiten, apparaten, apps en gegevens te beheren.  
 
 >[!IMPORTANT]
->Naar aanleiding van de recente aanvallen met ‘Trident’-malware op iOS-apparaten willen we ervoor zorgen dat mobiele apparaten bijgewerkt zijn. Daarom hebben we een blogbericht gepubliceerd, getiteld [Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Dit bericht bevat informatie over de verschillende manieren waarop u Intune kunt gebruiken om uw apparaten veilig en bijgewerkt te houden.
+>Naar aanleiding van de recente aanvallen met 'Trident'-malware op iOS/iPadOS-apparaten willen we ervoor zorgen dat mobiele apparaten bijgewerkt zijn. Daarom hebben we een blogbericht gepubliceerd, getiteld [Ervoor zorgen dat mobiele apparaten zijn bijgewerkt met Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Dit bericht bevat informatie over de verschillende manieren waarop u Intune kunt gebruiken om uw apparaten veilig en bijgewerkt te houden.
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Uw on-premises e-mail en -gegevens beveiligen zodat deze veilig kunnen worden geopend vanaf mobiele apparaten
 

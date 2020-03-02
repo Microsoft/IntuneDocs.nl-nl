@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839376"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514622"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>Begeleid scenario: Microsoft Edge voor mobiel implementeren 
 
-Als u dit [begeleide scenario](~/fundamentals/guided-scenarios-overview.md) volgt, kunt u de Microsoft Edge-app toewijzen aan uw gebruikers op iOS- of Android-apparaten in uw organisatie. Als u deze app toewijst, kunnen uw gebruikers vanaf hun bedrijfsapparaten naadloos bladeren in inhoud. 
+Als u dit [begeleide scenario](~/fundamentals/guided-scenarios-overview.md) volgt, kunt u de Microsoft Edge-app toewijzen aan uw gebruikers op iOS/iPadOS- of Android-apparaten in uw organisatie. Als u deze app toewijst, kunnen uw gebruikers vanaf hun bedrijfsapparaten naadloos bladeren in inhoud. 
 
-Microsoft Edge stelt gebruikers in staat zich een weg te banen door de wirwar van internet, door gebruik te maken van ingebouwde functies waarmee ze werkinhoud kunnen samenvoegen, ordenen en beheren. Gebruikers van iOS- en Android-apparaten die zich met hun zakelijke Azure AD-accounts aanmelden bij de Microsoft Edge-toepassing, zullen zien dat de **werkplekfavorieten** en de websitefilters die u voor hen hebt gedefinieerd, er vooraf in zijn geladen.
+Microsoft Edge stelt gebruikers in staat zich een weg te banen door de wirwar van internet, door gebruik te maken van ingebouwde functies waarmee ze werkinhoud kunnen samenvoegen, ordenen en beheren. Gebruikers van iOS/iPadOS- en Android-apparaten die zich met hun zakelijke Azure AD-accounts aanmelden bij de Microsoft Edge-toepassing, zullen zien dat de **werkplekfavorieten** en de websitefilters die u voor hen hebt gedefinieerd, er vooraf in zijn geladen.
 
 > [!NOTE]
-> Als u hebt geblokkeerd dat gebruikers iOS- of Android-apparaten kunnen registreren, wordt in dit scenario registratie niet ingeschakeld en moeten gebruikers zelf Edge installeren.
+> Als u hebt geblokkeerd dat gebruikers iOS/iPadOS- of Android-apparaten kunnen registreren, wordt in dit scenario registratie niet ingeschakeld en moeten gebruikers zelf Edge installeren.
 Op basis van Intune-beleid zijn onder andere de volgende zakelijke functies van Microsoft Edge beschikbaar: 
 
 - **Dual-Identity**. Gebruikers kunnen zowel een werkaccount als een persoonlijk account maken om mee te browsen. Er is sprake van een volledige scheiding tussen de twee identiteiten. Dit is vergelijkbaar met de architectuur en ervaring in Office 365 en Outlook. Intune-beheerders kunnen het gewenste beleid instellen voor beveiligde browsersessies binnen het werkaccount. 
@@ -49,9 +49,9 @@ Op basis van Intune-beleid zijn onder andere de volgende zakelijke functies van 
 
 ## <a name="step-1---introduction"></a>Stap 1: inleiding
 
-Als u het begeleide scenario **Microsoft Edge voor mobiel implementeren** volgt, gaat u een eenvoudige implementatie van Microsoft Edge instellen voor een geselecteerde groep iOS- en Android-gebruikers. Door deze implementatie uit te voeren, worden **Dubbele identiteit** en **Beheerde snelkoppelingen naar Favorieten en naar de startpagina** geïmplementeerd. Daarnaast is op apparaten die door de geselecteerde gebruikers zijn geregistreerd, automatisch de Microsoft Edge-app geïnstalleerd door Intune. Deze automatische installatie vindt plaats op alle registratietypen op basis van gebruiker, zoals: 
-- iOS-registratie via de bedrijfsportal-app 
-- Inschrijving van iOS-gebruikersaffiniteit via Apple Business Manager 
+Als u het begeleide scenario **Microsoft Edge voor mobiel implementeren** volgt, gaat u een eenvoudige implementatie van Microsoft Edge instellen voor een geselecteerde groep iOS/iPadOS- en Android-gebruikers. Door deze implementatie uit te voeren, worden **Dubbele identiteit** en **Beheerde snelkoppelingen naar Favorieten en naar de startpagina** geïmplementeerd. Daarnaast is op apparaten die door de geselecteerde gebruikers zijn geregistreerd, automatisch de Microsoft Edge-app geïnstalleerd door Intune. Deze automatische installatie vindt plaats op alle registratietypen op basis van gebruiker, zoals: 
+- iOS/iPadOS-registratie via de bedrijfsportal-app 
+- Inschrijving van iOS/iPadOS-gebruikersaffiniteit via Apple Business Manager 
 - Verouderde Android-registratie via de bedrijfsportal-app 
 
 In dit begeleide scenario wordt automatisch ingeschakeld dat **MyApps** wordt weergegeven bij de favorieten in Microsoft Edge, en wordt de browser geconfigureerd met dezelfde huisstijl die u hebt ingesteld voor de Intune-bedrijfsportal-app. 
@@ -60,13 +60,13 @@ In dit begeleide scenario wordt automatisch ingeschakeld dat **MyApps** wordt we
 U krijgt vragen over de werkplekfavorieten die uw gebruikers nodig hebben en over de filters die u nodig hebt om op internet te surfen. Zorg ervoor dat u de volgende taken uitvoert voordat u doorgaat:
 
 - Gebruikers toevoegen aan Azure AD-groepen. Zie [Een basisgroep maken en leden toevoegen met behulp van Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=2102458) voor meer informatie.
-- iOS- of Android-apparaten inschrijven in Intune. Zie [Apparaatinschrijving](https://go.microsoft.com/fwlink/?linkid=2102547) voor meer informatie.
+- iOS/iPadOS- of Android-apparaten inschrijven in Intune. Zie [Apparaatinschrijving](https://go.microsoft.com/fwlink/?linkid=2102547) voor meer informatie.
 - Verzamel een lijst met werkplekfavorieten die u wilt toevoegen in Microsoft Edge.
 - Verzamel een lijst met websitefilters die worden afgedwongen in Microsoft Edge.
 
 ## <a name="step-2---basics"></a>Stap 2: basisinformatie
 
-In deze stap moet u een naam en beschrijving voor uw nieuwe beleidsregels voor Microsoft Edge invoeren. U kunt deze beleidsregels later raadplegen als u de toewijzingen en configuraties wilt wijzigen. In het begeleide scenario wordt zowel een Microsoft Edge iOS-app voor uw iOS-apparaten als een Microsoft Edge Android-app voor uw Android-apparaten toegevoegd en toegewezen. Met deze stap wordt ook een configuratiebeleid voor deze apps gemaakt.
+In deze stap moet u een naam en beschrijving voor uw nieuwe beleidsregels voor Microsoft Edge invoeren. U kunt deze beleidsregels later raadplegen als u de toewijzingen en configuraties wilt wijzigen. In het begeleide scenario wordt zowel een Microsoft Edge iOS/iPadOS-app voor uw iOS/iPadOS-apparaten als een Microsoft Edge Android-app voor uw Android-apparaten toegevoegd en toegewezen. Met deze stap wordt ook een configuratiebeleid voor deze apps gemaakt.
 
 ## <a name="step-3---configuration"></a>Stap 3: configuratie
 
@@ -74,7 +74,7 @@ In deze stap van het begeleide scenario wordt Microsoft Edge geconfigureerd om a
 
 ## <a name="step-4---assignments"></a>Stap 4: toewijzingen
 
-In deze stap kunt u de gebruikersgroepen kiezen waarvoor u wilt dat Microsoft Edge is geconfigureerd voor mobiele apparaten voor hun werk. Microsoft Edge wordt ook geïnstalleerd op alle iOS- en Android-apparaten die door deze gebruikers worden ingeschreven.
+In deze stap kunt u de gebruikersgroepen kiezen waarvoor u wilt dat Microsoft Edge is geconfigureerd voor mobiele apparaten voor hun werk. Microsoft Edge wordt ook geïnstalleerd op alle iOS/iPadOS- en Android-apparaten die door deze gebruikers worden ingeschreven.
 
 ## <a name="step-5---review--create"></a>Stap 5: beoordelen en maken
 

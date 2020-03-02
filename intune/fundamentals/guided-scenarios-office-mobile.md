@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691810"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514605"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Begeleid scenario: veilige mobiele apps voor Microsoft Office 
 
-Als u dit begeleide scenario in de portal voor apparaatbeheer volgt, kunt u basisbeveiliging voor Intune-apps inschakelen op iOS- en Android-apparaten.
+Als u dit begeleide scenario in de portal voor apparaatbeheer volgt, kunt u basisbeveiliging voor Intune-apps inschakelen op iOS/iPadOS- en Android-apparaten.
 
 Met de app-beveiliging die u inschakelt, worden de volgende acties afgedwongen: 
 - Werkbestanden versleutelen.
@@ -51,7 +51,7 @@ U kunt beveiligingsbeleid voor apps gebruiken om te voorkomen dat gebruikers wer
 
 Met op apps gebaseerde voorwaardelijke toegang en beheer van client-apps voegt u een beveiligingslaag toe door ervoor te zorgen dat alleen client-apps die app-beveiligingsbeleid van Intune ondersteunen, toegang hebben tot Exchange Online en andere Office 365-services.
 
-U kunt de ingebouwde e-mailapps voor iOS en Android blokkeren wanneer u alleen toegang van de Microsoft Outlook-app tot Exchange Online toestaat. Bovendien kunt u de toegang tot SharePoint Online blokkeren voor apps waarvoor geen app-beveiligingsbeleid in Intune is ingesteld.
+U kunt de ingebouwde e-mailapps voor iOS/iPadOS en Android blokkeren wanneer u alleen toegang van de Microsoft Outlook-app tot Exchange Online toestaat. Bovendien kunt u de toegang tot SharePoint Online blokkeren voor apps waarvoor geen app-beveiligingsbeleid in Intune is ingesteld.
 
 In dit voorbeeld heeft de beheerder beveiligingsbeleid voor de Outlook-app toegepast, gevolgd door een regel voor voorwaardelijke toegang waarmee de Outlook-app wordt toegevoegd aan een lijst met goedgekeurde apps die kunnen worden gebruikt bij het openen van bedrijfs-e-mail.
 
@@ -69,7 +69,7 @@ U hebt de volgende machtigingen van een Intune-beheerder nodig:
 
 Door het begeleide scenario **Intune-app-beveiliging** te volgen kunt u voorkomen dat gegevens buiten uw organisatie worden gedeeld of gelekt. 
 
-Toegewezen iOS- en Android-gebruikers moeten elke keer dat ze een Office-app openen een pincode invoeren. Na 5 mislukte pincodepogingen moeten gebruikers hun pincode opnieuw instellen. Als er al een pincode voor het apparaat vereist is, heeft dit geen gevolgen voor de gebruikers.
+Toegewezen iOS/iPadOS- en Android-gebruikers moeten elke keer dat ze een Office-app openen een pincode invoeren. Na 5 mislukte pincodepogingen moeten gebruikers hun pincode opnieuw instellen. Als er al een pincode voor het apparaat vereist is, heeft dit geen gevolgen voor de gebruikers.
 
 ### <a name="what-you-will-need-to-continue"></a>Wat u nodig hebt om verder te gaan
 
@@ -86,7 +86,7 @@ In deze stap moet u een **voorvoegsel** en **beschrijving** voor het nieuwe beve
 
 ## <a name="step-3---apps"></a>Stap 3: apps
 
-Om u op weg te helpen, worden in dit begeleide scenario de volgende mobiele apps die moeten worden beveiligd op iOS- en Android-apparaten, vooraf geselecteerd:
+Om u op weg te helpen, worden in dit begeleide scenario de volgende mobiele apps die moeten worden beveiligd op iOS/iPadOS- en Android-apparaten, vooraf geselecteerd:
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

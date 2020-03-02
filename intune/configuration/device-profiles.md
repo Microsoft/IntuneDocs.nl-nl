@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206615"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513064"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Functies en instellingen toepassen op uw apparaten met apparaatprofielen in Microsoft Intune
 
 
 
-Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen voor verschillende apparaten en verschillende platforms maken, waaronder iOS, Android en Windows. Gebruik vervolgens Intune om het profiel toe te passen of toe te wijzen aan de apparaten.
+Microsoft Intune omvat instellingen en functies die u op verschillende apparaten binnen uw organisatie kunt in- of uitschakelen. Deze instellingen en functies worden toegevoegd aan 'configuratieprofielen'. U kunt profielen maken voor verschillende apparaten en verschillende platformen, waaronder iOS/iPadOS, Android en Windows. Gebruik vervolgens Intune om het profiel toe te passen of toe te wijzen aan de apparaten.
 
 Als onderdeel van uw MDM-oplossing (Mobile Device Management) kunt u deze configuratieprofielen gebruiken om verschillende taken te voltooien. Enkele profielvoorbeelden zijn:
 
 - Gebruik op Windows 10-apparaten een profielsjabloon die ActiveX-besturingselementen blokkeert in Internet Explorer.
-- Sta gebruikers van iOS- en macOS-apparaten toe om in uw organisatie AirPrint-printers te gebruiken.
+- Sta gebruikers van iOS-/iPadOS- en macOS-apparaten toe om in uw organisatie AirPrint-printers te gebruiken.
 - Sta wel of geen toegang toe tot bluetooth op het apparaat.
 - Maak een Wi-Fi of VPN-profiel waarmee verschillende apparaten toegang hebben tot uw bedrijfsnetwerk.
 - Beheer software-updates, inclusief het moment wanneer deze worden geïnstalleerd.
@@ -67,7 +67,7 @@ Deze functie ondersteunt:
 
 ## <a name="custom-profile"></a>Aangepast profiel
 
-Met [Aangepaste instellingen](custom-settings-configure.md) kunnen beheerders apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u OMA-URI-waarden invoeren. Voor iOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
+Met [Aangepaste instellingen](custom-settings-configure.md) kunnen beheerders apparaatinstellingen toewijzen die niet zijn ingebouwd in Intune. Op Android-apparaten kunt u OMA-URI-waarden invoeren. Voor iOS-/iPadOS-apparaten kunt u een configuratiebestand importeren dat u in Apple Configurator hebt gemaakt.
 
 Deze functie ondersteunt:
 
@@ -89,7 +89,7 @@ Deze functie ondersteunt:
 
 ## <a name="device-features"></a>Apparaatfuncties
 
-Met [Apparaatfuncties](device-features-configure.md) kunt u functies op iOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en berichten voor schermvergrendeling.
+Met [Apparaatfuncties](device-features-configure.md) kunt u functies op iOS-/iPadOS- en macOS-apparaten beheren, zoals AirPrint, meldingen en berichten voor schermvergrendeling.
 
 Deze functie ondersteunt:
 
@@ -106,7 +106,7 @@ Deze functie ondersteunt:
 
 ## <a name="device-restrictions"></a>Apparaatbeperkingen
 
-[Apparaatbeperkingen](device-restrictions-configure.md) beheert beveiliging, hardware, delen van gegevens en meer instellingen op de apparaten. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-apparaten de camera van het apparaat gebruiken. 
+[Apparaatbeperkingen](device-restrictions-configure.md) beheert beveiliging, hardware, delen van gegevens en meer instellingen op de apparaten. U kunt bijvoorbeeld een apparaatbeperkingsprofiel maken waarmee wordt voorkomen dat gebruikers van iOS-/iPadOS-apparaten de camera van het apparaat gebruiken. 
 
 Deze functie ondersteunt:
 
@@ -129,7 +129,7 @@ Deze functie ondersteunt:
 
 Met [Onderwijsinstellingen - Windows 10](education-settings-configure.md) kunt u opties configureren voor de [Windows-app Toets maken](https://education.microsoft.com/gettrained/win10takeatest). Wanneer u deze opties configureert, kunnen er geen andere apps op het apparaat worden uitgevoerd totdat de toets is voltooid.
 
-[Onderwijsinstellingen - iOS](../fundamentals/education-settings-configure-ios-shared.md) gebruikt de iOS-app Classroom om het leren te kunnen begeleiden en de apparaten van studenten in het leslokaal te kunnen beheren. U kunt iPads zo configureren dat meerdere studenten één apparaat kunnen delen.
+Met [Onderwijsinstellingen - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) kunt u de iOS-/iPadOS-app Classroom gebruiken om het leren te begeleiden en de apparaten van studenten in het leslokaal te beheren. U kunt iPads zo configureren dat meerdere studenten één apparaat kunnen delen.
 
 ## <a name="email"></a>E-mail
 
@@ -186,7 +186,7 @@ Deze functie ondersteunt:
 
 - Windows 10 en hoger
 
-Kiosk-instellingen zijn ook beschikbaar als apparaatbeperkingen voor [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) en [iOS](device-restrictions-ios.md#kiosk).
+Kiosk-instellingen zijn ook beschikbaar als apparaatbeperkingen voor [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) en [iOS/iPadOS](device-restrictions-ios.md#kiosk).
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Deze functie ondersteunt:
 
 ## <a name="update-policies"></a>Updatebeleid
 
-In [Updatebeleid voor iOS](../protect/software-updates-ios.md) ziet u hoe u iOS-beleid maakt en toewijst om software-updates te installeren op uw iOS-apparaten. U kunt ook de status van de installatie bekijken.
+In [Updatebeleid voor iOS/iPadOS](../protect/software-updates-ios.md) ziet u hoe u iOS-/iPadOS-beleid maakt en toewijst om software-updates te installeren op uw iOS-/iPadOS-apparaten. U kunt ook de status van de installatie bekijken.
 
 Zie [Delivery optimization](delivery-optimization-windows.md) voor updatebeleid op Windows-apparaten. 
 

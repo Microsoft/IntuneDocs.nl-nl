@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812376"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513092"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Gebruikers- en apparaatprofielen toewijzen in Microsoft Intune
 
@@ -89,7 +89,7 @@ Gebruik apparaatgroepen dus wanneer u niet weet wie zich op het apparaat heeft a
 
 ### <a name="user-groups"></a>Gebruikersgroepen
 
-Profielinstellingen die worden toegepast op gebruikersgroepen, gaan altijd mee met de gebruiker, en met de gebruiker als deze op een van zijn vele apparaten is aangemeld. Het is normaal dat gebruikers veel apparaten hebben, zoals een Surface Pro voor op het werk en een persoonlijk iOS-apparaat. En het is normaal dat een persoon vanaf deze apparaten toegang heeft tot e-mail en andere bronnen van de organisatie.
+Profielinstellingen die worden toegepast op gebruikersgroepen, gaan altijd mee met de gebruiker, en met de gebruiker als deze op een van zijn vele apparaten is aangemeld. Het is normaal dat gebruikers veel apparaten hebben, zoals een Surface Pro voor op het werk en een persoonlijk iOS-/iPadOS-apparaat. En het is normaal dat een persoon vanaf deze apparaten toegang heeft tot e-mail en andere bronnen van de organisatie.
 
 Bijvoorbeeld:
 

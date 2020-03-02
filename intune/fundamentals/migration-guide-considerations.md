@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510034"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514996"
 ---
 # <a name="special-migration-considerations"></a>Speciale overwegingen bij migratie
 
@@ -32,7 +32,7 @@ Er zijn mogelijk speciale overwegingen bij migraties van toepassing, afhankelijk
 
 Met het Device Enrollment Program (DEP) van Apple worden apparaatconfiguraties ingesteld die niet door de eindgebruiker kunnen worden verwijderd. Als u de geavanceerde beheerfuncties van DEP wilt behouden, moet het apparaat in de oorspronkelijke staat worden hersteld door dit te wissen, zodat het apparaat bij Intune kan worden ingeschreven.
 
-Als u met DEP de apparaten in Intune wilt blijven beheren, moet u [de inschrijving van iOS-apparaten met het Device Enrollment Program instellen](../enrollment/device-enrollment-program-enroll-ios.md).
+Als u met DEP de apparaten in Intune wilt blijven beheren, moet u [de inschrijving van iOS-/iPadOS-apparaten met het Device Enrollment Program instellen](../enrollment/device-enrollment-program-enroll-ios.md).
 
 
 ## <a name="next-steps"></a>Volgende stappen

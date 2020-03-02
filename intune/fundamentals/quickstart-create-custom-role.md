@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509891"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575857"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Quickstart: Een aangepaste rol maken en toewijzen
 
@@ -42,7 +42,7 @@ Tijdens het maken van een aangepaste rol kunt u machtigingen instellen voor een 
 
 1. Kies in Intune **Rollen** > **Alle rollen** > **Toevoegen**.
 ![Browser](./media/quickstart-create-custom-role/add-custom-role.png)
-2. Bij **Aangepaste rol toevoegen** voert u in het vak **Naam** *Beveiligingsbewerkingen* in.
+2. Bij **Aangepaste rol toevoegen** voert u in het vak **Naam***Beveiligingsbewerkingen* in.
 3. In het vak **Beschrijving** voert u het volgende in: *Met deze rol kan een beveiligingsoperator de apparaatconfiguratie- en -nalevingsinformatie bewaken.*
 4. Kies **Configureren** > **Bedrijfsapparaat-id's** > **Ja** naast **Lezen** > **OK**.
 ![Browser](./media/quickstart-create-custom-role/corp-device-id-read.png)
@@ -77,4 +77,4 @@ In deze snelstart hebt u een aangepaste rol voor beveiligingsmedewerkers gemaakt
 Als u deze reeks snelstartgidsen voor Intune wilt volgen, kunt u doorgaan met de volgende snelstartgids.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Een e-mailprofiel voor een apparaat voor iOS maken](../configuration/quickstart-email-profile.md)
+> [Quickstart: Een e-mailprofiel voor een apparaat maken voor iOS/iPadOS](../configuration/quickstart-email-profile.md)

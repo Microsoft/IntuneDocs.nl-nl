@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505183"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514945"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Uw Microsoft Intune-abonnement implementeren
 
@@ -39,7 +39,7 @@ De belangrijkste vereisten voor de zelfstandige versie van Intune zijn:
 
 - Office 365-abonnement (voor Office-apps en door beveiligingsbeleid voor apps beheerde apps)
 
-- Apple APNs-certificaat (voor het beheer van het iOS-apparaatplatform)
+- Apple APNs-certificaat (voor het beheer van het iOS/iPadOS-apparaatplatform)
 
 - Azure AD Connect (voor adreslijstsynchronisatie)
 
@@ -88,7 +88,7 @@ Voordat u apparaten kunt installeren, configureren, beheren en registreren met b
 
 ### <a name="task-6-enable-device-platforms"></a>Taak 6: platformen voor apparaten inschakelen
 
-De meeste apparaatplatformen zijn standaard ingeschakeld, met uitzondering van Apple-apparaten (iOS en Mac). Voordat iOS-apparaten kunnen worden geregistreerd en beheerd in Intune, moet u het apparaatplatform inschakelen. Om dit te doen, moet u een Push-MDM-certificaat maken en dit toevoegen aan Intune.
+De meeste apparaatplatformen zijn standaard ingeschakeld, met uitzondering van Apple-apparaten (iOS/iPadOS en Mac). Voordat iOS/iPadOS-apparaten kunnen worden geregistreerd en beheerd in Intune, moet u het apparaatplatform inschakelen. Om dit te doen, moet u een Push-MDM-certificaat maken en dit toevoegen aan Intune.
 
 - Meer informatie over [registratie voor Apple-apparaten inschakelen](../enrollment/apple-mdm-push-certificate-get.md).
 
@@ -130,7 +130,7 @@ Intune biedt ondersteuning voor voorwaardelijke toegang voor Exchange Online, Ex
 
 ### <a name="task-13-enroll-devices"></a>Taak 13: Apparaten inschrijven
 
-Intune ondersteunt platformen voor iOS-, Mac OS-, Android-, Windows- en Windows Mobile-apparaten. Registreer platformen voor mobiele apparaten waar nodig op basis van de use cases en vereisten van uw Intune-implementatie.
+Intune ondersteunt platformen voor iOS/iPadOS-, Mac OS-, Android-, Windows- en Windows Mobile-apparaten. Registreer platformen voor mobiele apparaten waar nodig op basis van de use cases en vereisten van uw Intune-implementatie.
 
 - Meer informatie over [het registreren van apparaten](../enrollment/device-enrollment.md).
 

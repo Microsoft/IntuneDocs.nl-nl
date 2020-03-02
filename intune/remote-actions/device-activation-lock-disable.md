@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438052"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576026"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Activeringsslot op iOS-/iPadOS-apparaten onder supervisie uitschakelen met Intune
 
@@ -63,7 +63,7 @@ Intune kan de status opvragen van de activeringsvergrendeling van apparaten met 
 Voordat u het activeringsslot op apparaten kunt uitschakelen, moet u deze optie eerst inschakelen aan de hand van de volgende instructies:
 
 1. Configureer een Intune-apparaatbeperkingsprofiel voor iOS/iPadOS op basis van de informatie in [Apparaatbeperkingsinstellingen configureren in Microsoft Intune](/intune-azure/configure-devices/how-to-configure-device-restrictions).
-2. Schakel in de [instellingen voor apparaatbeperking voor iOS](../configuration/device-restrictions-ios.md), onder de **Algemene** instellingen, de optie **Activeringsslot** in.
+2. Schakel in de [instellingen voor apparaatbeperking voor iOS/iPadOS](../configuration/device-restrictions-ios.md), onder de **Algemene** instellingen, de optie **Activeringsslot** in.
 3. Sla het profiel op en [wijs het toe](../configuration/device-profile-assign.md) aan de apparaten waarop u het uitschakelen van het activeringsslot wilt beheren.
 
 

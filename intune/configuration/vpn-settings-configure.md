@@ -1,11 +1,11 @@
 ---
 title: VPN-instellingen toevoegen aan apparaten in Microsoft Intune - Azure | Microsoft Docs
-description: Gebruik voor Android-, Android Enterprise-, iOS-, macOS- en Windows-apparaten ingebouwde instellingen voor het maken van VPN-verbindingen (virtueel particulier netwerk) in Microsoft Intune.
+description: Gebruik voor Android-, Android Enterprise-, iOS/iPadOS-, macOS- en Windows-apparaten ingebouwde instellingen voor het maken van VPN-verbindingen (virtueel particulier netwerk) in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 134ef9a2a4dfe8a4576c753a001439c42f678adc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206275"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510810"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>VPN-profielen maken om verbinding te maken met VPN-servers in Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "75206275"
 
 Met virtuele particuliere netwerken (VPN's) geeft u uw gebruikers veilige externe toegang tot het netwerk van uw organisatie. Apparaten gebruiken een VPN-verbindingsprofiel om een verbinding met de VPN-server op te zetten. Met **VPN-profielen** in Microsoft Intune worden VPN-instellingen toegewezen aan gebruikers en apparaten in uw organisatie, zodat deze gemakkelijk en veilig verbinding met het netwerk van uw organisatie kunnen maken.
 
-U wilt bijvoorbeeld alle iOS-apparaten configureren met de instellingen die vereist zijn om verbinding te maken met een bestandsshare in het netwerk van de organisatie. U maakt een VPN-profiel dat deze instellingen bevat. U wijst dit profiel vervolgens toe aan alle gebruikers die over iOS-apparaten beschikken. De gebruikers zien de VPN-verbinding in de lijst met beschikbare netwerken en kunnen moeiteloos verbinding maken.
+U wilt bijvoorbeeld alle iOS/iPadOS-apparaten configureren met de instellingen die vereist zijn om verbinding te maken met een bestandsshare in het netwerk van de organisatie. U maakt een VPN-profiel dat deze instellingen bevat. U wijst dit profiel vervolgens toe aan alle gebruikers die over iOS/iPadOS-apparaten beschikken. De gebruikers zien de VPN-verbinding in de lijst met beschikbare netwerken en kunnen moeiteloos verbinding maken.
 
 > [!NOTE]
 > U kunt [aangepast Intune-configuratiebeleid](custom-settings-configure.md) gebruiken om VPN-profielen te maken voor de volgende platformen:
@@ -47,19 +47,19 @@ U kunt VPN-profielen met de volgende verbindingstypen maken:
 |Type verbinding|Platform|
 |-|-|
 |Automatisch|Windows 10|
-|Check Point Capsule VPN|- Android<br/>- Android Enterprise-werkprofielen<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Cisco AnyConnect|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS<br/>- macOS|
-|Cisco (IPsec)|iOS|
-|Citrix SSO|- Android<br/>- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- Android Enterprise-apparaateigenaar (volledig beheerd): [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS<br/>- Windows 10|
-|Aangepaste VPN|- iOS<br/>- macOS|
-|F5-toegang|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2| - iOS<br/>- Windows 10|
+|Check Point Capsule VPN|- Android<br/>- Android Enterprise-werkprofielen<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Cisco AnyConnect|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS/iPadOS<br/>- macOS|
+|Cisco (IPsec)|iOS/iPadOS|
+|Citrix SSO|- Android<br/>- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- Android Enterprise-apparaateigenaar (volledig beheerd): [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS/iPadOS<br/>- Windows 10|
+|Aangepaste VPN|- iOS/iPadOS<br/>- macOS|
+|F5-toegang|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|IKEv2| - iOS/iPadOS<br/>- Windows 10|
 |L2TP|Windows 10|
-|Palo Alto Networks GlobalProtect|- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS<br/>- Windows 10|
+|Palo Alto Networks GlobalProtect|- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS/iPadOS<br/>- Windows 10|
 |PPTP|Windows 10|
-|Pulse Secure|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|SonicWall Mobile Connect|- Android<br/>- Android Enterprise-werkprofielen<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Zscaler|- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS|
+|Pulse Secure|- Android<br/>- Android Enterprise-werkprofielen<br/>- Android Enterprise-apparaateigenaar (volledig beheerd)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|SonicWall Mobile Connect|- Android<br/>- Android Enterprise-werkprofielen<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Zscaler|- Android Enterprise-werkprofielen: [App-configuratiebeleid](../apps/app-configuration-policies-use-android.md) gebruiken<br/>- iOS/iPadOS|
 
 > [!IMPORTANT]
 > U kunt VPN-profielen die zijn toegewezen aan een apparaat pas gebruiken nadat de betreffende VPN-app voor het profiel is geïnstalleerd. U kunt de informatie in het artikel [Wat is Microsoft Intune-appbeheer?](../apps/app-management.md) gebruiken bij het toewijzen van de app met behulp van Intune.  
@@ -119,4 +119,4 @@ De gebruiker wordt geverifieerd op de VPN-server door een gebruikersnaam en wach
 
 Als het profiel is gemaakt, doet het nog niets. [Wijs het profiel vervolgens toe](device-profile-assign.md) aan enkele apparaten.
 
-U kunt ook VPN's per app maken en gebruiken op [Android](android-pulse-secure-per-app-vpn.md)- en [iOS](vpn-setting-configure-per-app.md)-apparaten.
+U kunt ook VPN's per app maken en gebruiken op [Android](android-pulse-secure-per-app-vpn.md)- en [iOS/iPadOS](vpn-setting-configure-per-app.md)-apparaten.

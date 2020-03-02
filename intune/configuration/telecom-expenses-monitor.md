@@ -1,12 +1,12 @@
 ---
 title: Een Telecom Expense Management-service instellen in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Integreer Microsoft Intune met de onkostenbeheerservice van Saaswedo om het gegevensgebruik te bewaken en drempelwaarden of limieten in te stellen op Android- en iOS-apparaten.
+description: Integreer Microsoft Intune met de onkostenbeheerservice van Saaswedo om het gegevensgebruik te bewaken en drempelwaarden of limieten in te stellen op Android- en iOS- en iPadOS-apparaten.
 keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,16 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: e6c4d08d1010654a16e13981a0d3353b2418524a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207108"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512871"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Een Telecom Expense Management-service instellen in Intune
-
-
 
 Met Intune kunt u telecommunicatiekosten beheren van gegevensgebruik op mobiele apparaten die eigendom zijn van de organisatie. Intune kan worden geïntegreerd met [Datalert Telecom Expense Management](http://datalert.biz/get-started) van Saaswedo. Datalert is een realtime Telecom Expense Management-oplossing waarmee u telecomgegevensgebruik kunt beheren. Zo kunt u dure en onverwachte gegevens- en roaming-kosten voor uw door Intune beheerde apparaten voorkomen.
 
@@ -51,6 +49,7 @@ Als u de Datalert-service met Intune wilt gebruiken, zijn er enkele configuratie
   [Android-versies die ondersteuning bieden voor Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (opent de website van Samsung) bevat een lijst met de versies die Knox ondersteunen.
 
 - iOS 8.0 en hoger
+- iPadOS 13.0 en hoger
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -136,11 +135,11 @@ Deze categorieën worden weergegeven aan gebruikers tijdens de inschrijving ([An
 
 #### <a name="add-the-datalert-app-to-intune"></a>De Datalert-app toevoegen aan Intune
 
-Met de volgende stappen wordt de Datalert-app toegevoegd. Als voorbeeld wordt iOS gebruikt. [Apps toevoegen](../apps/apps-add.md) en [Bereiktags gebruiken](../fundamentals/scope-tags.md) bevatten meer specifieke informatie over deze stappen.
+Met de volgende stappen wordt de Datalert-app toegevoegd. Als voorbeeld wordt iOS/iPadOS gebruikt. [Apps toevoegen](../apps/apps-add.md) en [Bereiktags gebruiken](../fundamentals/scope-tags.md) bevatten meer specifieke informatie over deze stappen.
 
 1. Selecteer in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Apps** > **Alle apps** > **Toevoegen**.
 
-2. Selecteer uw **App-type**. Voor iOS selecteert u bijvoorbeeld **Store-app - iOS**.
+2. Selecteer uw **App-type**. Voor iOS/iPadOS selecteert u bijvoorbeeld **Store-app - iOS/iPadOS**.
 
 3. Typ **Datalert** in **Zoeken in de App Store** om de Datalert-app te vinden.
 
@@ -178,7 +177,7 @@ De Datalert-service is nu actief. Er wordt begonnen met het controleren van het 
 
 Voor de ervaring van de eindgebruiker kunnen de volgende artikelen helpen:
 
-- [Uw iOS-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+- [Uw iOS/iPadOS-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
 - [Uw Android-apparaat registreren bij Telecom Expense Management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turn-off-the-datalert-service"></a>De Datalert-service uitschakelen

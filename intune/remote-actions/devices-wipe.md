@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415520"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609376"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Apparaten verwijderen via wissen of buiten gebruik stellen, of de registratie van het apparaat handmatig ongedaan maken
 
@@ -47,7 +47,7 @@ Met de actie **Wissen** herstelt u de fabrieksinstellingen van het apparaat. De 
 
 De optie **Inschrijvingsstatus en gebruikersaccount behouden** is alleen beschikbaar voor Windows 10 versie 1709 en hoger.
 
-Met de optie **Beveiligd wissen uitvoeren** kunt u ervoor zorgen dat de wisactie niet kan worden omzeild door het apparaat uit te schakelen. Als de opdracht Beveiligd wissen is gegeven, wordt het apparaat gereset totdat de opdracht is uitgevoerd. In sommige configuraties kan deze actie ervoor zorgen dat het apparaat niet opnieuw kan worden opgestart.
+Met de optie **Beveiligd wissen uitvoeren** kunt u ervoor zorgen dat de wisactie niet kan worden omzeild door het apparaat uit te schakelen. Als de opdracht Beveiligd wissen is gegeven, wordt het apparaat gereset totdat de opdracht is uitgevoerd. In sommige configuraties kan deze actie ervoor zorgen dat het apparaat [niet opnieuw kan worden opgestart](troubleshoot-device-actions.md#wipe-action).
 
 MDM-beleidsregels worden toegepast wanneer het apparaat de volgende keer verbinding maakt met Intune.
 
@@ -196,6 +196,9 @@ Als u een Apple DEP-apparaat volledig wilt verwijderen uit het beheer door Intun
 5. Kies **Opnieuw toewijzen**.
 
     ![Schermafbeelding voor opnieuw toewijzen bij Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="device-states"></a>Apparaatstatussen
+Zie de [managementStates-verzameling](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates) voor een beschrijving van de status van apparaten.
 
 ## <a name="fresh-start"></a>Nieuwe start
 

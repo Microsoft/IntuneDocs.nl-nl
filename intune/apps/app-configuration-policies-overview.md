@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414845"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513993"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-configuratiebeleid voor Microsoft Intune
 
@@ -91,7 +91,7 @@ U kunt op de volgende drie manieren het app-configuratiebeleid valideren:
 
 ## <a name="diagnostic-logs"></a>Diagnostische logboeken
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>iOS-configuratie op niet-beheerde apparaten
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>iOS/iPadOS-configuratie op niet-beheerde apparaten
 
 U kunt de iOS-/iPadOS-configuratie valideren met het **diagnostische logboek van Intune** op niet-beheerde apparaten voor de configuratie van beheerde apps. Behalve met de onderstaande stappen, kunt u ook toegang krijgen tot de logboeken van beheerde apps met behulp van Microsoft Edge. Zie [Met Microsoft Edge in iOS/iPadOS logboeken voor beheerde apps openen](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs) voor meer informatie.
 
@@ -135,7 +135,7 @@ De configuratiedetails van uw toepassing moeten voldoen aan het toepassingsconfi
 
 ![Configuratie van doel-app](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>iOS-configuratie op beheerde apparaten
+### <a name="iosipados-configuration-on-managed-devices"></a>iOS/iPadOS-configuratie op beheerde apparaten
 
 U kunt de iOS-/iPadOS-configuratie valideren met het **diagnostische logboek van Intune** op beheerde apparaten voor de configuratie van beheerde apps.
 

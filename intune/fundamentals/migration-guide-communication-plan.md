@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956224"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515013"
 ---
 # <a name="plan-communications"></a>De communicatie plannen
 
@@ -52,7 +52,7 @@ We hebben korte video's gemaakt waarin de procedure stapsgewijs wordt besproken 
 
 - [Uw Android-apparaat inschrijven](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [Uw Android-apparaat met werkprofiel inschrijven](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [iOS-apparaten inschrijven](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Uw iOS-/iPadOS-apparaten inschrijven](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [macOS-apparaten inschrijven](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Uw Windows-apparaat inschrijven](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ We hebben korte video's gemaakt waarin de procedure stapsgewijs wordt besproken 
 Intune beschikt over aanvullende bronnen waarmee u de inschrijving van apparaten bij eindgebruikers onder de aandacht kunt brengen:
 
 - [Eindgebruikers informeren over het gebruik van Microsoft Intune](end-user-educate.md) voor de stappen die voor de registratie moeten worden uitgevoerd voor de verschillende platformen van mobiele besturingssystemen.
-- In [Intune-apparaatinschrijving voor IT-beheerders](../enrollment/device-enrollment.md) wordt uitgelegd hoe Android-, iOS- en Mac-apparaten bij Intune worden ingeschreven.
-- Deel de URL van de Bedrijfsportal-app met uw Android-, iOS- en Windows-gebruikers.
+- In [Intune-apparaatinschrijving voor IT-beheerders](../enrollment/device-enrollment.md) wordt uitgelegd hoe Android-, iOS-/iPadOS- en Mac-apparaten bij Intune worden ingeschreven.
+- Deel de URL van de Bedrijfsportal-app met uw Android-, iOS-/iPadOS- en Windows-gebruikers.

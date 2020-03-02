@@ -1,7 +1,7 @@
 ---
 title: Apps beheren die zijn gekocht via het volume-aankoopprogramma van Apple
 titleSuffix: Microsoft Intune
-description: Meer informatie over hoe u apps kunt synchroniseren die u via het volumeaankoopprogramma in de App Store voor iOS en macOS hebt gekocht, hoe u deze apps in Microsoft Intune kunt beheren en hoe u het gebruik ervan kunt bijhouden.
+description: Meer informatie over hoe u apps kunt synchroniseren die u via het volumeaankoopprogramma in de App Store voor iOS/iPadOS en macOS hebt gekocht, hoe u deze apps in Microsoft Intune kunt beheren en hoe u het gebruik ervan kunt bijhouden.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051623"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513398"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Bij Apple kunt u meerdere licenties aanschaffen voor een app die u wilt gebruiken in uw organisatie op iOS- en macOS-apparaten met [Apple Business Manager](https://business.apple.com/) of [Apple School Manager](https://school.apple.com/). U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps. Door app-licenties aan te schaffen kunt u apps binnen uw bedrijf op efficiënte wijze beheren en het eigendom en beheer van aangeschafte apps in handen houden. 
+Bij Apple kunt u meerdere licenties aanschaffen voor een app die u wilt gebruiken in uw organisatie op iOS/iPadOS- en macOS-apparaten met [Apple Business Manager](https://business.apple.com/) of [Apple School Manager](https://school.apple.com/). U kunt uw gegevens over volume-aankopen vervolgens synchroniseren met Intune en het gebruik bijhouden van uw via het volume-aankoopprogramma gekochte apps. Door app-licenties aan te schaffen kunt u apps binnen uw bedrijf op efficiënte wijze beheren en het eigendom en beheer van aangeschafte apps in handen houden. 
 
 Microsoft Intune kan u op de volgende manieren helpen bij het beheren via dit programma aangeschafte apps:
 
@@ -38,13 +38,13 @@ Microsoft Intune kan u op de volgende manieren helpen bij het beheren via dit pr
 - Bijhouden hoeveel licenties er beschikbaar zijn en zijn gebruikt voor aangeschafte apps.
 - Helpt u bij het installeren van apps tot het aantal licenties dat u bezit.
 
-Verder kunt u met Intune boeken die u hebt gekocht via Apple Business Manager synchroniseren, beheren en toewijzen op iOS-apparaten. Zie [E-boeken in iOS beheren die u via een volume-aankoopprogramma hebt aangeschaft](vpp-ebooks-ios.md) voor meer informatie.
+Verder kunt u met Intune boeken die u hebt gekocht via Apple Business Manager synchroniseren, beheren en toewijzen op iOS/iPadOS-apparaten. Zie [E-boeken in iOS/iPadOS beheren die u via een volume-aankoopprogramma hebt aangeschaft](vpp-ebooks-ios.md) voor meer informatie.
 
 ## <a name="what-are-location-tokens"></a>Wat zijn locatietokens?
 Locatietokens worden ook wel VPP-tokens (volume Purchase Program) genoemd. Deze tokens worden gebruikt voor het toewijzen en beheren van licenties die zijn gekocht via Apple Business Manager. Inhoudsbeheerders kunnen licenties kopen en koppelen aan locatietokens waarvoor ze machtigingen hebben in Apple Business Manager. Deze locatietokens worden vervolgens gedownload van Apple Business Manager en geüpload in Microsoft Intune. Microsoft Intune ondersteunt het uploaden van meerdere locatietokens per tenant. Elke token is één jaar geldig.
 
 ## <a name="how-are-purchased-apps-licensed"></a>Hoe worden gekochte apps gelicentieerd?
-Aangeschafte apps kunnen aan groepen worden toegewezen met behulp van twee typen licenties die Apple biedt voor iOS-en macOS-apparaten.
+Aangeschafte apps kunnen aan groepen worden toegewezen met behulp van twee typen licenties die Apple biedt voor iOS/iPadOS-en macOS-apparaten.
 
 |   | Apparaatlicenties | Gebruikerslicenties |
 |-----|------------------|----------------|
@@ -156,9 +156,9 @@ De eindgebruiker wordt in een aantal scenario’s gevraagd om de VPP-app te inst
 
 ## <a name="revoking-app-licenses"></a>App-licenties intrekken
 
-U kunt alle bijbehorende licenties voor iOS of macOS VPP-apps intrekken op basis van een bepaald apparaat of een bepaalde gebruiker of app.  Maar er zijn wel enkele verschillen tussen iOS-en macOS-platforms. 
+U kunt alle bijbehorende licenties voor iOS/iPadOS of macOS VPP-apps intrekken op basis van een bepaald apparaat of een bepaalde gebruiker of app.  Maar er zijn wel enkele verschillen tussen iOS/iPadOS-en macOS-platforms. 
 
-|   | iOS | macOS |
+|   | iOS/iPadOS | macOS |
 |-----|------------------|----------------|
 | **App-toewijzing verwijderen** | Wanneer u een app verwijdert die is toegewezen aan een gebruiker, maakt Intune de gebruiker of apparaatlicentie vrij en verwijdert de app van het apparaat. | Wanneer u een app verwijdert die is toegewezen aan een gebruiker, maakt Intune de gebruikers- of apparaatlicentie vrij. De app wordt niet van het apparaat verwijderd. |
 | **App-licentie intrekken** | Als u een app-licentie intrekt, wordt de app-licentie van de gebruiker of het apparaat vrijgemaakt. U moet de toewijzing wijzigen in **Verwijderen** om de app van het apparaat te verwijderen. | Als u een app-licentie intrekt, wordt de app-licentie van de gebruiker of het apparaat vrijgemaakt. De macOS-app waarvan de licentie is ingetrokken, blijft bruikbaar op het apparaat, maar kan pas worden bijgewerkt als een licentie opnieuw wordt toegewezen aan de gebruiker of het apparaat. Volgens Apple worden dergelijke apps na een respijtperiode van 30 dagen verwijderd. Apple biedt echter geen manier om de app via Intune te verwijderen met de toewijzingsactie Verwijderen.
@@ -184,14 +184,14 @@ U kunt een Apple VPP-token vernieuwen door een nieuw token te downloaden van App
 
 ## <a name="deleting-a-vpp-app"></a>Een VPP-app verwijderen
 
-U kunt een iOS VPP-app op dit moment niet verwijderen uit Microsoft Intune.
+U kunt een iOS/iPadOS VPP-app op dit moment niet verwijderen uit Microsoft Intune.
 
 ## <a name="assigning-custom-role-permissions-for-vpp"></a>Machtigingen voor aangepaste rollen toewijzen voor VPP
 
 Toegang tot Apple VPP-tokens en VPP-apps kan onafhankelijk worden beheerd met behulp van machtigingen die worden toegewezen aan aangepaste beheerdersrollen in Intune.
 
 * Als u een aangepaste rol in Intune wilt toestaan om Apple VPP-tokens te beheren onder **Apps** > **Apple VPP-tokens**, wijst u machtigingen toe voor **Beheerde apps**.
-* Als u een aangepaste rol in Intune wilt toestaan om apps die zijn gekocht met iOS VPP-tokens, te beheren onder **Apps** > **Alle apps**, wijst u machtigingen toe voor **Mobiele apps**. 
+* Als u een aangepaste rol in Intune wilt toestaan om apps die zijn gekocht met iOS/iPadOS VPP-tokens, te beheren onder **Apps** > **Alle apps**, wijst u machtigingen toe voor **Mobiele apps**. 
 
 ## <a name="additional-information"></a>Aanvullende informatie
 

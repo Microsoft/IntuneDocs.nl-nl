@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438001"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513959"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>App-configuratiebeleidsregels voor beheerde iOS-/iPadOS-apparaten toevoegen
 
@@ -43,7 +43,7 @@ Nadat u de opgenomen groepen hebt geselecteerd voor het configuratiebeleid van u
 > [!TIP]
 > Dit beleidstype is momenteel alleen beschikbaar voor apparaten met iOS/iPadOS 8.0 en hoger. Ondersteunt de volgende typen app-installaties:
 >
-> - **Beheerde iOS-app uit de App Store**
+> - **Beheerde iOS-/iPadOS-app uit de App Store**
 > - **App-pakket voor iOS**
 >
 > Zie [Apps toevoegen aan Microsoft Intune](apps-add.md) voor meer informatie over app-installatietypen. Zie Managed App Configuration in de [documentatie voor iOS-ontwikkelaars](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html) voor meer informatie over het opnemen van de app-configuratie in uw IPA-app-pakket voor beheerde apparaten.
@@ -108,9 +108,10 @@ De tekens \{\{ en \}\} worden alleen gebruikt door tokentypen en mogen niet word
 
 Gebruik voor iOS-/iPadOS-apparaten de volgende sleutel-/waardeparen:
 
-| **Sleutel** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Waarden** | <ul><li>**Ingeschakeld**: Het enige account dat is toegestaan, is het beheerde gebruikersaccount dat wordt gedefinieerd door de sleutel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Uitgeschakeld** (of een andere waarde die geen hoofdletterongevoelige overeenkomst is met **Ingeschakeld**): Elk account is toegestaan.</li></ul> |.
+| **Sleutel** | **Waarden** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**Ingeschakeld**: Het enige account dat is toegestaan, is het beheerde gebruikersaccount dat wordt gedefinieerd door de sleutel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Uitgeschakeld** (of een andere waarde die geen hoofdletterongevoelige overeenkomst is met **Ingeschakeld**): Elk account is toegestaan.</li></ul> |
+| IntuneMAMUPN | <ul><li>De UPN van het account waarvoor aanmelden bij de app is toegestaan.</li><li> Voor apparaten die zijn ingeschreven bij Intune, kan het <code>{{userprincipalname}}</code>-token worden gebruikt voor het ingeschreven gebruikersaccount.</li></ul>  |
 
    > [!NOTE]
    > U moet OneDrive voor iOS 10.34 of hoger, Outlook voor iOS 2.99.0 of hoger, of Edge voor iOS 44.8.7 of hoger gebruiken, en de app moet onder [beveiligingsbeleid voor apps in Intune](app-protection-policy.md) vallen, indien u alleen geconfigureerde organisatie-accounts met meerdere identiteiten toestaat.
@@ -181,7 +182,7 @@ Intune ondersteunt verder de volgende typen tokens in de lijst met eigenschappen
 - \{\{serialnumberlast4digits\}\} - bijvoorbeeld **G5V2** (voor iOS-/iPadOS-apparaten)
 - \{\{aaddeviceid\}\}— bijvoorbeeld **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>De bedrijfsportal-app configureren voor ondersteuning van iOS DEP-apparaten
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>De bedrijfsportal-app configureren voor ondersteuning van iOS en iPadOS DEP-apparaten
 
 DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel met de App Store-versie van de bedrijfsportal-app. U kunt de bedrijfsportal-app echter configureren voor ondersteuning van iOS/iPadOS DEP-apparaten met behulp van de volgende stappen.
 
@@ -204,7 +205,7 @@ DEP-inschrijvingen (Device Enrollment Program van Apple) zijn niet compatibel me
 3. Implementeer de bedrijfsportal op apparaten met het app-configuratiebeleid voor de gewenste groepen. Implementeer het beleid alleen voor groepen apparaten die al via DEP zijn ingeschreven.
 4. Informeer eindgebruikers dat ze zich bij de bedrijfsportal-app moeten aanmelden nadat deze automatisch is geïnstalleerd.
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>Configuratiestatus van een iOS-app per apparaat controleren 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>Configuratiestatus van een iOS-/iPadOS-app per apparaat controleren 
 Nadat een configuratiebeleid is toegewezen, kunt u de configuratiestatus van een iOS-/iPadOS-app voor elk beheerd apparaat controleren. Selecteer vanaf **Microsoft Intune** in Azure Portal de optie **Apparaten** > **Alle apparaten**. Selecteer in de lijst met beheerde apparaten een specifiek apparaat om een deelvenster voor het apparaat weer te geven. Selecteer **App-configuratie** op het deelvenster van het apparaat.  
 
 ## <a name="additional-information"></a>Aanvullende informatie

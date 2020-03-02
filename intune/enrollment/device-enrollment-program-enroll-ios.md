@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415362"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473758"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>iOS-/iPadOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -77,6 +77,9 @@ U gebruikt de Apple Business Manager- of Apple School Manager-portal om een toke
     ![Een token voor het inschrijvingsprogramma ophalen.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Geef Microsoft toestemming om gebruikers- en apparaatgegevens naar Apple te verzenden door **Ik ga akkoord** te selecteren.
+
+> [!NOTE]
+> Zodra u verder bent dan stap 2 voor het downloaden van het Intune-openbare-sleutelcertificaat, sluit u de wizard niet af en verlaat u deze pagina niet. Als u dit doet, wordt het certificaat dat u hebt gedownload ongeldig en moet u dit proces opnieuw uitvoeren. Als deze situatie zich voordoet, zult u doorgaans zien dat de knop Maken op het tabblad Controleren + maken grijs wordt weergegeven en u het proces niet kunt voltooien.
 
    ![Schermopname van het deelvenster Token voor het inschrijvingsprogramma in de werkruimte Apple-certificaten voor het downloaden van de openbare sleutel.](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 

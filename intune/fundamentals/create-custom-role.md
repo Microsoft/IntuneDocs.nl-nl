@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207414"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569180"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Een aangepaste rol in Intune maken
 
@@ -34,31 +34,30 @@ Als u rollen wilt maken, bewerken of toewijzen, moet uw account een van de volge
 
 ## <a name="to-create-a-custom-role"></a>Een aangepaste rol maken
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum ](https://go.microsoft.com/fwlink/?linkid=2109431)**Rollen** > **Alle rollen** > **Toevoegen**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de optie **Tenantbeheer** > **Rollen** > **Alle rollen** > **Maken**.
 
-2. Voer op de blade **Aangepaste rol toevoegen** een naam en beschrijving in voor de nieuwe rol en klik vervolgens op **Machtigingen**.
+2. Voer op de pagina **Basisinformatie** een naam en een beschrijving in voor de nieuwe rol en selecteer dan **Volgende**.
 
-3. Kies op de blade **Machtigingen** de machtigingen die u voor deze rol wilt gebruiken.
+3. Kies op de pagina **Machtigingen** de machtigingen die u voor deze rol wilt gebruiken.
 
-4. Kies op de blade **Bereik (tags)** de tags voor deze rol. Deze rol heeft toegang tot resources waaraan deze tags ook zijn toegevoegd.
+4. Kies op de pagina **Bereik (tags)** de tags voor deze rol. Deze rol heeft toegang tot resources waaraan deze tags ook zijn toegevoegd. Kies **Volgende**.
 
-5. Als u klaar bent, kiest u **OK**.
-
-6. Klik op de blade **Aangepaste rol toevoegen** op **Maken**. De nieuwe rol wordt weergegeven in de lijst op de blade **Intune-rollen - Alle rollen**.
-
+5. Kies op de pagina **Controleren en maken** de optie **Maken** zodra u klaar bent. De nieuwe rol wordt weergegeven in de lijst op de blade **Intune-rollen - Alle rollen**.
 
 ## <a name="copy-a-role"></a>Een rol kopiëren
 
 U kunt ook een bestaande rol kopiëren.
 
-1. Kies in het [Microsoft Endpoint Manager-beheercentrum ](https://go.microsoft.com/fwlink/?linkid=2109431)**Rollen** > **Alle rollen** > selecteer een rol in de lijst > **Dupliceren**.
+1. Kies in het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) de opties **Tenantbeheer** > **Rollen** > **Alle rollen** > schakel het selectievakje in bij een rol in de lijst > **Dupliceren**.
 
-2. Voer onder **Rol dupliceren** een naam in. Zorg ervoor dat u een unieke naam gebruikt.
+2. Voer op de pagina **Basisinformatie** een naam in. Zorg ervoor dat u een unieke naam gebruikt.
 
 3. Alle machtigingen en bereiktags van de oorspronkelijke rol zijn al geselecteerd. U kunt vervolgens de **naam**, **beschrijving**, **machtigingen** en **bereik(tags)** van de dubbele rol wijzigen.
 
-4. Selecteer **Maken**. 
+4. Nadat u alle gewenste wijzigingen hebt aangebracht, kiest u **Volgende** om naar de pagina **Controleren en maken** te gaan. Selecteer **Maken**. 
 
 ## <a name="next-steps"></a>Volgende stappen
 - [Een rol toewijzen aan een gebruiker](assign-role.md)
 - [Meer informatie over op rollen gebaseerd toegangsbeheer in Intune](role-based-access-control.md)
+
+

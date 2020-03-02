@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437899"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513721"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>App-beveiligingsbeleid maken en toewijzen
 
@@ -74,21 +74,21 @@ Wanneer u een app-beveiligingsbeleid maakt voor iOS/iPadOS- en Android-apps, vol
     Deze pagina bevat de DLP-besturingselementen voor preventie van gegevensverlies, inclusief knippen, kopiëren, plakken en beperkingen voor opslaan als. Met deze instellingen bepaalt u hoe gebruikers kunnen werken met gegevens in de apps waarop dit app-beveiligingsbeleid van toepassing is.
 
     **Instellingen voor gegevensbeveiliging**:<br>
-    - **iOS/iPadOS-gegevensbeveiliging**: raadpleeg [Beveiligingsbeleidsinstellingen voor iOS-apps](~/apps/app-protection-policy-settings-ios.md#data-protection) voor informatie.
+    - **iOS/iPadOS-gegevensbeveiliging**: raadpleeg [Beveiligingsbeleidsinstellingen voor iOS-/iPadOS-apps](~/apps/app-protection-policy-settings-ios.md#data-protection) voor informatie.
     - **Android-gegevensbeveiliging**: raadpleeg [Beveiligingsbeleidsinstellingen voor Android-apps](~/apps/app-protection-policy-settings-android.md#data-protection) voor informatie.
 
 7. Klik op **Volgende** om de pagina **Toegangsvereisten** weer te geven.<br>
     Deze pagina bevat instellingen waarmee u de pincode en referentievereisten kunt configureren waaraan gebruikers moeten voldoen om toegang te krijgen tot apps in een werkcontext. 
  
     **Instellingen voor toegangsvereisten**:<br>
-    - **Toegangsvereisten voor iOS/iPadOS**: raadpleeg [Beveiligingsbeleidsinstellingen voor iOS-apps - Toegangsvereisten](~/apps/app-protection-policy-settings-ios.md#access-requirements) voor informatie.
+    - **Toegangsvereisten voor iOS/iPadOS**: raadpleeg [Beveiligingsbeleidsinstellingen voor iOS-/iPadOS-apps - Toegangsvereisten](~/apps/app-protection-policy-settings-ios.md#access-requirements) voor informatie.
     - **Toegangsvereisten voor Android**: raadpleeg [Beveiligingsbeleidsinstellingen voor Android-apps - Toegangsvereisten](~/apps/app-protection-policy-settings-android.md#access-requirements) voor informatie.
 
 8. Klik op **Volgende** om de pagina **Voorwaardelijke start** weer te geven.<br>
     Op deze pagina vindt u instellingen om beveiligingsvereisten voor aanmelden in te stellen voor toegangsbeveiligingsbeleid. Selecteer een **instelling** en voer de **waarde** in waaraan gebruikers moeten voldoen om zich aan te melden bij uw bedrijfsapp. Selecteer vervolgens de **actie** die u wilt uitvoeren als gebruikers niet voldoen aan uw vereisten. In sommige gevallen kunnen meerdere acties worden geconfigureerd voor één instelling.
 
     **Instellingen voor voorwaardelijk start**:<br>
-    - **iOS/iPadOS voorwaardelijke start**: raadpleeg [Beveiligingsbeleidsinstellingen voor iOS-apps - Voorwaardelijke start](~/apps/app-protection-policy-settings-ios.md#conditional-launch) voor informatie.
+    - **iOS/iPadOS voorwaardelijke start**: raadpleeg [Beveiligingsbeleidsinstellingen voor iOS-/iPadOS-apps - Voorwaardelijke start](~/apps/app-protection-policy-settings-ios.md#conditional-launch) voor informatie.
     - **Android voorwaardelijke start**: raadpleeg [Beveiligingsbeleidsinstellingen voor Android-apps - Voorwaardelijke start](~/apps/app-protection-policy-settings-android.md#conditional-launch) voor informatie.
 
 9. Klik op **Volgende** om de pagina **Toewijzingen** weer te geven.<br>
@@ -180,7 +180,7 @@ Voor het maken van deze beleidsregels bladert u naar **Apps** > **App-beveiligin
 > [!NOTE]
 > Op Android-apparaten wordt gevraagd of de Intune-bedrijfsportal-app moet worden geïnstalleerd, ongeacht welk apparaattype is gekozen. Als u bijvoorbeeld 'Android Enterprise ' selecteert, wordt deze vraag toch gesteld aan gebruikers met niet-beheerde Android-apparaten.
 
-Voor iOS zijn extra app-configuratie-instellingen vereist om APP-instellingen (beveiligingsbeleid voor apps) te richten op apps op apparaten die zijn ingeschreven bij Intune:
+Voor iOS/iPadOS zijn extra app-configuratie-instellingen vereist om APP-instellingen (beveiligingsbeleid voor apps) te richten op apps op apparaten die zijn ingeschreven bij Intune:
 
 - **IntuneMAMUPN** moet zijn geconfigureerd voor alle met MDM beheerde toepassingen. Zie [Gegevensoverdracht beheren tussen iOS-/iPadOS-apps met Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) voor meer informatie.
 - **IntuneMAMDeviceID** moet zijn geconfigureerd voor alle door derden en met line-of-business MDM beheerde toepassingen. **IntuneMAMDeviceID** moet zijn geconfigureerd voor het apparaat-id-token. Bijvoorbeeld `key=IntuneMAMDeviceID, value={{deviceID}}`. Zie [App-configuratiebeleidsregels toevoegen voor beheerde iOS-/iPadOS-apparaten](app-configuration-policies-use-ios.md) voor meer informatie.
@@ -192,7 +192,7 @@ Voor iOS zijn extra app-configuratie-instellingen vereist om APP-instellingen (b
 ## <a name="policy-settings"></a>Beleidsinstellingen
 Selecteer een van de volgende links voor een volledig overzicht van de beleidsinstellingen voor iOS/iPadOS en Android:
 
-- [iOS-beleid](app-protection-policy-settings-ios.md)
+- [iOS-/iPadOS-beleid](app-protection-policy-settings-ios.md)
 - [Android-beleid](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>Volgende stappen

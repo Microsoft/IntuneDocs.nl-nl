@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755575"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510466"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Apparaten beveiligen met Microsoft Intune
 
@@ -43,7 +43,7 @@ Wanneer een apparaat moet worden [verwijderd uit het beheer van Intune](../remot
 
 ## <a name="require-devices-to-be-compliant"></a>Vereisen dat apparaten aan het beleid voldoen
 Intune heeft een [nalevingsbeleid voor apparaten](device-compliance-get-started.md) waarmee u apparaten kunt evalueren (en in sommige gevallen kunt herstellen) die niet compatibel zijn met regels die u opgeeft. U kunt bijvoorbeeld rapporten verkrijgen over:
-- opengebroken iOS-apparaten
+- opengebroken iOS-/iPadOS-apparaten
 - versleutelde of niet-versleutelde apparaten
 - de status van Windows 10-apparaten (zoals bepaald door de Health Attestation Service).
 
@@ -60,7 +60,7 @@ Intune biedt een reeks functies waarmee u apps en de gegevens ervan kunt beveili
 Intune biedt de mogelijkheid van integratie met [Windows Hello voor Bedrijven](windows-hello.md). Dit is een alternatieve aanmeldingsmethode voor Windows 10 en hoger, waarbij Active Directory of een Azure Active Directory-account wordt gebruikt ter vervanging van een wachtwoord, smartcard of virtuele smartcard.
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>Activeringsvergrendeling op iOS-apparaten uitschakelen
-Activeringsslot is een functie waarmee de apparaten van gebruikers kunnen worden beveiligd. Bij gebruik van deze functie moet er een Apple ID en wachtwoord worden ingevoerd om het apparaat te kunnen wissen of om het opnieuw te activeren. De functie kan echter leiden tot problemen, bijvoorbeeld wanneer de gebruiker het bedrijf verlaat zonder de vergrendeling te verwijderen. [iOS-activeringsvergrendeling uitschakelen](../remote-actions/device-activation-lock-disable.md) kan u helpen de vergrendeling te verwijderen van iOS-apparaten die onder supervisie staan, zodat u ze opnieuw kunt toewijzen of kunt wissen.
+Activeringsslot is een functie waarmee de apparaten van gebruikers kunnen worden beveiligd. Bij gebruik van deze functie moet er een Apple ID en wachtwoord worden ingevoerd om het apparaat te kunnen wissen of om het opnieuw te activeren. De functie kan echter leiden tot problemen, bijvoorbeeld wanneer de gebruiker het bedrijf verlaat zonder de vergrendeling te verwijderen. [iOS-/iPadOS-activeringsvergrendeling uitschakelen](../remote-actions/device-activation-lock-disable.md) kan u helpen de vergrendeling te verwijderen van iOS-/iPadOS-apparaten die onder supervisie staan, zodat u ze opnieuw kunt toewijzen of kunt wissen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

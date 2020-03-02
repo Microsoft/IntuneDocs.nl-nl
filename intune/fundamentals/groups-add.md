@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 183e8cc5924f6ce1f002225150d808841924e20c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956262"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514639"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Groepen toevoegen om gebruikers en apparaten in te delen
 
@@ -34,7 +34,7 @@ U kunt de volgende typen groepen toevoegen:
 - **Toegewezen groepen**: voeg handmatig gebruikers of apparaten toe aan een statische groep. 
 - **Dynamische groepen** (vereist Azure AD Premium): voeg automatisch gebruikers of apparaten toe aan gebruikersgroepen of apparaatgroepen op basis van een expressie die u maakt.
 
-  Wanneer een gebruiker bijvoorbeeld wordt toegevoegd met de titel van manager, wordt die gebruiker automatisch toegevoegd aan een gebruikersgroep **Alle managers**. Of, wanneer een apparaat het besturingssysteemtype iOS-apparaat heeft, wordt het apparaat automatisch toegevoegd aan een apparaatgroep **Alle iOS-apparaten**.
+  Wanneer een gebruiker bijvoorbeeld wordt toegevoegd met de titel van manager, wordt die gebruiker automatisch toegevoegd aan een gebruikersgroep **Alle managers**. Of, wanneer een apparaat het besturingssysteemtype iOS/iPadOS-apparaat heeft, wordt het apparaat automatisch toegevoegd aan een apparaatgroep **Alle iOS/iPadOS-apparaten**.
 
 ## <a name="add-a-new-group"></a>Een nieuwe groep toevoegen
 
@@ -47,7 +47,7 @@ Volg de onderstaande stappen om een nieuwe groep te maken.
 
 3. Kies bij **Groepstype** een van de volgende opties:
 
-    - **Beveiliging**: met beveiligingsgroepen kunt u bepalen wie toegang heeft tot resources. Deze optie wordt aanbevolen voor uw groepen in Intune. U kunt bijvoorbeeld groepen maken voor gebruikers, zoals **Alle gebruikers in Zaandam** of **Alle externe gebruikers**. U kunt ook groepen maken voor apparaten, zoals **Alle iOS-apparaten** of **Alle apparaten van studenten met Windows 10**.
+    - **Beveiliging**: met beveiligingsgroepen kunt u bepalen wie toegang heeft tot resources. Deze optie wordt aanbevolen voor uw groepen in Intune. U kunt bijvoorbeeld groepen maken voor gebruikers, zoals **Alle gebruikers in Zaandam** of **Alle externe gebruikers**. U kunt ook groepen maken voor apparaten, zoals **Alle iOS/iPadOS-apparaten** of **Alle apparaten van studenten met Windows 10**.
 
         > [!TIP]
         > De gebruikers en groepen die zijn gemaakt, kunnen ook worden weergegeven in het [Microsoft 365-beheercentrum](https://admin.microsoft.com), het Azure Active Directory-beheercentrum en in [Microsoft Intune in de Azure-portal](https://go.microsoft.com/fwlink/?linkid=2090973). In de tenant van uw organisatie kunt u in al deze gebieden groepen maken en beheren.

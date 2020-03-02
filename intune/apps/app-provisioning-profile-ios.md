@@ -1,5 +1,5 @@
 ---
-title: Profielen voor het inrichten van iOS-apps in Microsoft Intune
+title: Profielen voor het inrichten van iOS-/iPadOS-apps in Microsoft Intune
 titleSuffix: ''
 description: Intune biedt u de hulpmiddelen om proactief een nieuw inrichtingsprofiel toe te wijzen aan apparaten met apps die bijna zijn verlopen.
 keywords: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31bad59c33a34d0b92d93979b20b58f70fd042ef
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: f40b6f458a95a466874a2d1ce44fcafa37249d46
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564101"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513619"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Inrichtingsprofielen gebruiken voor iOS-apps om te voorkomen dat uw apps verlopen
 
@@ -31,16 +31,16 @@ ms.locfileid: "74564101"
 
 ## <a name="introduction"></a>Inleiding
 
-Apple iOS mobiele Line-Of-Business-apps die zijn toegewezen aan iPhones en iPads, zijn gebouwd met een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer de app wordt uitgevoerd, bevestigt iOS de integriteit van de iOS-app en worden beleidsregels afgedwongen die zijn gedefinieerd door het inrichtingsprofiel. De volgende validaties vinden plaats:
+Apple iOS/iPadOS mobiele Line-Of-Business-apps die zijn toegewezen aan iPhones en iPads, zijn gebouwd met een inrichtingsprofiel en code die is ondertekend met een certificaat. Wanneer de app wordt uitgevoerd, bevestigt iOS/iPadOS de integriteit van de iOS-/iPadOS-app en worden beleidsregels afgedwongen die zijn gedefinieerd door het inrichtingsprofiel. De volgende validaties vinden plaats:
 
-- **Integriteit van installatiebestand**: iOS vergelijkt de details van de app met de openbare sleutel van het handtekeningcertificaat van de onderneming. Als deze verschillen, is de inhoud van de app mogelijk gewijzigd en mag de app niet worden uitgevoerd.
-- **Mogelijkheden afdwingen**: iOS probeert de app-mogelijkheden af te dwingen van het inrichtingsprofiel van de onderneming (geen afzonderlijke inrichtingsprofielen van ontwikkelaars) dat zich in het app-installatiebestand (.ipa) bevindt.
+- **Integriteit van installatiebestand**: iOS/iPadOS vergelijkt de details van de app met de openbare sleutel van het handtekeningcertificaat van de onderneming. Als deze verschillen, is de inhoud van de app mogelijk gewijzigd en mag de app niet worden uitgevoerd.
+- **Mogelijkheden afdwingen**: iOS/iPadOS probeert de app-mogelijkheden af te dwingen van het inrichtingsprofiel van de onderneming (geen afzonderlijke inrichtingsprofielen van ontwikkelaars) dat zich in het app-installatiebestand (.ipa) bevindt.
 
 
 Het handtekeningcertificaat voor ondernemingen dat u gebruikt om apps te ondertekenen is doorgaans drie jaar geldig. Echter, het inrichtingsprofiel verloopt na één jaar. Zolang het certificaat nog geldig is, biedt Intune u de hulpmiddelen om proactief een nieuw inrichtingsprofiel toe te wijzen aan apparaten met apps die binnenkort verlopen.
 Nadat het certificaat is verlopen, moet u de app opnieuw ondertekenen met een nieuw certificaat en een nieuw inrichtingsprofiel implementeren met de sleutel van het nieuwe certificaat.
 
-Als beheerder kunt u beveiligingsgroepen in- en uitsluiten om de inrichtingsconfiguratie van iOS-apps toe te wijzen. U kunt bijvoorbeeld de inrichtingsconfiguratie van een iOS-app aan Alle gebruikers toewijzen, maar een managementgroep uitsluiten.
+Als beheerder kunt u beveiligingsgroepen in- en uitsluiten om de inrichtingsconfiguratie van iOS-/iPadOS-apps toe te wijzen. U kunt bijvoorbeeld de inrichtingsconfiguratie van een iOS-/iPadOS-app aan Alle gebruikers toewijzen, maar een managementgroep uitsluiten.
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Een inrichtingsprofiel voor mobiele iOS-apps maken
 
@@ -56,12 +56,12 @@ Als beheerder kunt u beveiligingsgroepen in- en uitsluiten om de inrichtingsconf
    <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
 
 4. Klik op **Volgende: Bereiktags**.<br>
-   Op de pagina **Bereiktags** kunt u desgewenst bereiktags configureren om te bepalen wie het inrichtingsprofiel voor iOS-apps in Intune kan zien. Zie [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT) voor meer informatie over bereiktags.
+   Op de pagina **Bereiktags** kunt u desgewenst bereiktags configureren om te bepalen wie het inrichtingsprofiel voor iOS-/iPadOS-apps in Intune kan zien. Zie [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Op rollen gebaseerd toegangsbeheer en bereiktags gebruiken voor gedistribueerde IT) voor meer informatie over bereiktags.
 5. Klik op **Volgende: Toewijzingen**.<br>
    Op de pagina **Toewijzingen** kunt u het profiel toewijzen aan gebruikers en apparaten. Het is belangrijk dat u weet dat u een profiel kunt toewijzen aan een apparaat, ongeacht of het apparaat wordt beheerd in Intune.
 6. Klik op **Volgende: beoordelen en maken** om de waarden te controleren die u hebt ingevoerd voor het profiel.
-7. Wanneer u klaar bent, klikt u op **Maken** om het inrichtingsprofiel voor iOS-apps in Intune te maken. 
+7. Wanneer u klaar bent, klikt u op **Maken** om het inrichtingsprofiel voor iOS-/iPadOS-apps in Intune te maken. 
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Wijs het profiel toe aan de vereiste iOS-apparaten. Voor meer informatie gebruikt u de stappen in [Apparaatprofielen toewijzen](../device-profile-assign.md).
+Wijs het profiel toe aan de vereiste iOS-/iPadOS-apparaten. Voor meer informatie gebruikt u de stappen in [Apparaatprofielen toewijzen](../device-profile-assign.md).

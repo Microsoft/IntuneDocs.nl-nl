@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258093"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609338"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-certificaten configureren en gebruiken met Intune
 
@@ -66,7 +66,7 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
   De Microsoft Intune Certificate Connector ondersteunt ook de Federal Information Processing Standard-modus (FIPS). FIPS is niet vereist, maar wanneer deze modus is ingeschakeld, kunt u certificaten uitgeven en intrekken.
 
 - **PFX-certificaatconnector voor Microsoft Intune**:  
-  Als u van plan bent om S/MIME-versleuteling te gebruiken voor e-mailberichten, moet u via de Intune-portal de connector voor *PFX-certificaten* downloaden die ondersteuning biedt voor het importeren van PFX-certificaten.  Ga naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volg de *stappen om de connector installeren voor geïmporteerde PFX-certificaten*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma **PfxCertificateConnectorBootstrapper.exe** te starten. 
+  Als u van plan bent om S/MIME-versleuteling te gebruiken voor e-mailberichten, moet u via de Intune-portal de connector voor *PFX-certificaten* downloaden die ondersteuning biedt voor het importeren van PFX-certificaten.  Ga naar **Apparaatconfiguratie** > **Certificaatconnectors** > **Toevoegen** en volg de *stappen om de connector installeren voor geïmporteerde PFX-certificaten*. Gebruik de downloadkoppeling om het downloaden van het installatieprogramma **PfxCertificateConnectorBootstrapper.exe** te starten.
 
   Elke Intune-tenant ondersteunt één instantie van deze connector. U kunt deze connector op dezelfde server installeren als een instantie van de Microsoft Intune Certificate Connector.
 
@@ -79,10 +79,12 @@ Als u PKCS-certificaten wilt gebruiken met Intune, hebt u de volgende infrastruc
   Zie [Netwerkeindpunten voor Microsoft Intune](../fundamentals/intune-endpoints.md) en [Netwerkconfiguratievereisten en bandbreedte voor Intune](../fundamentals/network-bandwidth-use.md) voor meer informatie.
 
 - **Windows Server**:  
-  U gebruikt een Windows Server als host voor:
+  Een Windows-server gebruiken voor het hosten van:
 
   - Microsoft Intune Certificate Connector: voor verificatie en voor scenario's met S/MIME-e-mailondertekening
   - PFX-certificaatconnector voor Microsoft Intune: voor scenario's met S/MIME-e-mailversleuteling.
+
+  Voor de connectors is toegang tot dezelfde poorten vereist als voor beheerde apparaten, zoals te lezen is in onze [inhoud over apparaateindpunten](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices).
 
   Intune staat toe dat de *PFX-certificaatconnector* en de *Microsoft Intune-certificaatconnector* op dezelfde server worden geïnstalleerd.
   
@@ -124,7 +126,7 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
 9. Bevestig in **Extensies** dat Encrypting File System, Beveiligde e-mail en Clientauthenticatie worden weergegeven onder **Toepassingsbeleid**.
 
     > [!IMPORTANT]
-    > Ga voor iOS-certificaatsjablonen naar het tabblad **Extensies**, werk **Sleutelgebruik** bij en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
+    > Ga voor iOS-/iPadOS-certificaatsjablonen naar het tabblad **Extensies**, werk **Sleutelgebruik** bij en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
 
 10. Voeg in **Beveiliging** het computeraccount toe voor de server waarop u de Microsoft Intune Certificate Connector installeert. Geef dit account machtigingen voor **Lezen** en **Registreren**.
 11. Selecteer **Toepassen** > **OK** om de certificaatsjabloon op te slaan. Sluit de **console Certificaatsjablonen**.
@@ -208,12 +210,13 @@ Voor verificatie van een apparaat met VPN, Wi-Fi of andere resources hebt u op e
    |------------|------------|------------|
    |**Drempelwaarde voor verlenging (%)**        |<ul><li>Alle         |20% wordt aanbevolen  | 
    |**Geldigheidsduur van certificaat**  |<ul><li>Alle         |Als u de certificaatsjabloon niet hebt gewijzigd, kan deze optie worden ingesteld op één jaar. |
-   |**Sleutelarchiefprovider (KSP)**   |<ul><li>Windows 10  | Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan. |
+   |**Sleutelarchiefprovider (KSP)**   |<ul><li>Windows 10  |Voor Windows selecteert u waar u de sleutels op het apparaat wilt opslaan. |
    |**Certificeringsinstantie**      |<ul><li>Alle         |Geeft de interne FQDN (Fully Qualified Domain Name) van uw CA voor ondernemingen weer.  |
    |**Naam van certificeringsinstantie** |<ul><li>Alle         |Geeft de naam van uw CA voor ondernemingen weer, bijvoorbeeld "Contoso Certification Authority". |
+   |**Certificaatsjabloonnaam**    |<ul><li>Alle         |Hier wordt de naam van uw certificaatsjabloon weergegeven. |
    |**Certificaattype**             |<ul><li>Android Enterprise (*Werkprofiel*)</li><li>iOS</li><li>macOS</li><li>Windows 10 en hoger|Selecteer een type: <ul><li> **Gebruiker**-certificaten kunnen zowel gebruikers- als apparaatkenmerken in het onderwerp ende SAN van het certificaat bevatten. </il><li>**Apparaat**-certificaten kunnen alleen apparaatkenmerken in het onderwerp en SAN van het certificaat bevatten. Gebruik Apparaat voor scenario's als apparaten zonder gebruiker, zoals kiosken of andere gedeelde apparaten.  <br><br> Deze selectie is van invloed op de indeling van de onderwerpnaam. |
-   |**Indeling van de onderwerpnaam**          |<ul><li>Alle         |Voor de meeste platformen stelt u deze optie in op **Algemene naam** tenzij anders aangegeven.<br><br>Voor de volgende platformen wordt de indeling van de onderwerpnaam bepaald door het certificaattype: <ul><li>Android Enterprise (*Werkprofiel*)</li><li>iOS</li><li>macOS</li><li>Windows 10 en hoger</li></ul>  <p> Zie [Indeling van de onderwerpnaam](#subject-name-format) verderop in dit artikel. |
-   |**Alternatieve naam voor het onderwerp**     |<ul><li>Alle         |Stel deze optie in op **User principal name (UPN)** tenzij anders aangegeven. |
+   |**Indeling van de onderwerpnaam**          |<ul><li>Alle         |Zie [Indeling van de onderwerpnaam](#subject-name-format) verderop in dit artikel voor meer informatie over het configureren van de indeling van de onderwerpnaam.  <br><br> Voor de meeste platformen gebruikt u de optie **Algemene naam** tenzij anders aangegeven. <br><br>Voor de volgende platformen wordt de indeling van de onderwerpnaam bepaald door het certificaattype: <ul><li>Android Enterprise (*Werkprofiel*)</li><li>iOS</li><li>macOS</li><li>Windows 10 en hoger</li></ul>  <p>  |
+   |**Alternatieve naam voor het onderwerp**     |<ul><li>Alle         |Bij *Kenmerk* selecteert u **User Principal Name (UPN)** tenzij anders vereist, configureert u een bijbehorende *Waarde* en klikt u vervolgens op **Toevoegen**. <br><br>Zie [Indeling van de onderwerpnaam](#subject-name-format) verderop in dit artikel voor meer informatie.|
    |**Uitgebreide-sleutelgebruik**           |<ul><li> Android-apparaatbeheerder </li><li>Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) </li><li>Windows 10 |Certificaten vereisen meestal *Clientverificatie*, zodat de gebruiker of het apparaat bij een server kan worden geverifieerd. |
    |**Alle apps mogen toegang hebben tot de persoonlijke sleutel** |<ul><li>macOS  |Stel in op **Inschakelen** om apps die zijn geconfigureerd voor het bijbehorende Mac-apparaat toegang te geven tot de persoonlijke sleutel van de PKCS-certificaten. <br><br> Zie *AllowAllAppsAccess* in de sectie Nettolading van certificaat van [Referentiemateriaal configuratieprofiel](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in de Apple-documentatie voor ontwikkelaars voor meer informatie over deze instelling. |
    |**Basiscertificaat**             |<ul><li>Android-apparaatbeheerder </li><li>Android Enterprise (*Apparaateigenaar*, *Werkprofiel*) |Selecteer een basis-CA-certificaatprofiel dat eerder is toegewezen. |
@@ -284,8 +287,6 @@ Platformen:
   > - Apparaateigenschappen die worden gebruikt in het *onderwerp* of de *SAN* van een apparaatcertificaat, zoals **IMEI**, **SerialNumber** en **FullyQualifiedDomainName**, zijn eigenschappen die kunnen worden vervalst door een persoon die toegang tot het apparaat heeft.
   > - Een apparaat moet alle variabelen ondersteunen die zijn opgegeven in een certificaatprofiel, anders kan het profiel niet worden geïnstalleerd op het apparaat.  Als bijvoorbeeld **{{IMEI}}** wordt gebruikt in de onderwerpnaam van een SCEP-profiel en deze variabele wordt toegewezen aan een apparaat dat geen IMEI-nummer heeft, mislukt de installatie van het profiel.  
  
-
-
 ## <a name="whats-new-for-connectors"></a>Wat is er nieuw voor connectors
 
 Updates voor de twee certificaatconnectors worden regelmatig uitgebracht. Als we een connector bijwerken, kunt u hier over de wijzigingen lezen.
@@ -303,7 +304,7 @@ De *PFX-certificaatconnector voor Microsoft Intune* [biedt ondersteuning voor au
 - **Connector voor PFX-certificaten voor Microsoft Intune - versie 6.1905.0.402**  
   Wijzigingen in deze release:  
   - De polling-interval voor de connector wordt verlaagd van 5 minuten naar 30 seconden.
- 
+
 ### <a name="april-2-2019"></a>2 april 2019
 
 - **Intune-certificaatconnector - versie 6.1904.1.0**  

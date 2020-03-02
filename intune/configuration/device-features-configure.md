@@ -1,11 +1,11 @@
 ---
-title: iOS- of macOS-apparaatprofielen maken met Microsoft Intune - Azure | Microsoft Docs
-description: Een iOS- of macOS-apparaatprofiel toevoegen of maken en vervolgens instellingen voor AirPrint, de indeling van het startscherm, app-meldingen, gedeelde apparaten, eenmalige aanmelding en het filteren van webinhoud in Microsoft Intune configureren.
+title: iOS-/iPadOS- of macOS-apparaatprofielen maken met Microsoft Intune - Azure | Microsoft Docs
+description: Een iOS-, iPadOS- of macOS-apparaatprofiel toevoegen of maken en vervolgens instellingen voor AirPrint, de indeling van het startscherm, app-meldingen, gedeelde apparaten, eenmalige aanmelding en het filteren van webinhoud in Microsoft Intune configureren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 52c31cc7d3949b42251d3e45075864762cda6930
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206717"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513143"
 ---
-# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS of macOS toevoegen in Intune
+# <a name="add-ios-ipados-or-macos-device-feature-settings-in-intune"></a>Instellingen van apparaatfuncties voor iOS, iPadOS of macOS toevoegen in Intune
 
-Intune bevat veel functies en instellingen waarmee beheerders iOS en macOS-apparaten kunnen beheren. Beheerders kunnen bijvoorbeeld het volgende:
+Intune bevat veel functies en instellingen waarmee beheerders iOS, iPadOS en macOS-apparaten kunnen beheren. Beheerders kunnen bijvoorbeeld het volgende:
 
 - Gebruikers toegang toestaan tot de AirPrint-printers in uw netwerk
 - Apps en mappen toevoegen aan het startscherm, inclusief het toevoegen van nieuwe pagina's
@@ -34,15 +34,15 @@ Intune bevat veel functies en instellingen waarmee beheerders iOS en macOS-appar
 - Gebruikers beveiligde eenmalige aanmelding bieden om referenties tussen apps te kunnen delen
 - Websites filteren waarop grof taalgebruik wordt gebruikt en specifieke websites toestaan of blokkeren
 
-Intune maakt gebruik van configuratieprofielen om deze instellingen te maken voor en af te stemmen op de behoeften van uw organisatie. Nadat u deze functies aan een profiel hebt toegevoegd, kunt u het profiel pushen naar en implementeren op iOS- en macOS-apparaten in uw organisatie.
+Intune maakt gebruik van configuratieprofielen om deze instellingen te maken voor en af te stemmen op de behoeften van uw organisatie. Nadat u deze functies aan een profiel hebt toegevoegd, kunt u het profiel pushen naar en implementeren op iOS-/iPadOS- en macOS-apparaten in uw organisatie.
 
-In dit artikel wordt beschreven welke functies u kunt configureren en hoe u een apparaatconfiguratieprofiel kunt maken. U ziet ook de beschikbare instellingen voor [iOS](ios-device-features-settings.md)- en [macOS](macos-device-features-settings.md)-apparaten.
+In dit artikel wordt beschreven welke functies u kunt configureren en hoe u een apparaatconfiguratieprofiel kunt maken. U ziet ook de beschikbare instellingen voor [iOS-/iPadOS](ios-device-features-settings.md)- en [macOS](macos-device-features-settings.md)-apparaten.
 
 ## <a name="airprint"></a>AirPrint
 
 AirPrint is een Apple-functie waarmee apparaten kunnen afdrukken naar bestanden via een draadloos netwerk. In Intune kunt u AirPrint-gegevens toevoegen aan apparaten.
 
-Zie [AirPrint op iOS](ios-device-features-settings.md#airprint) en [AirPrint op macOS](macos-device-features-settings.md#airprint) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [AirPrint op iOS/iPadOS](ios-device-features-settings.md#airprint) en [AirPrint op macOS](macos-device-features-settings.md#airprint) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Zie [Over AirPrint](https://support.apple.com/HT201311) op de website van Apple voor meer informatie over AirPrint.
 
@@ -54,9 +54,9 @@ Van toepassing op:
 
 ## <a name="app-notifications"></a>App-meldingen
 
-Kies hoe apps op uw iOS- en iPad-apparaten meldingen ontvangen. U kunt bijvoorbeeld vanuit Intune app-meldingen verzenden, zodat deze worden weergegeven in het meldingencentrum of op het vergrendelingsscherm of dat er een geluid wordt afgespeeld.
+Kies hoe apps op uw iOS- en iPadOS-apparaten meldingen ontvangen. U kunt bijvoorbeeld vanuit Intune app-meldingen verzenden, zodat deze worden weergegeven in het meldingencentrum of op het vergrendelingsscherm of dat er een geluid wordt afgespeeld.
 
-Zie [App-meldingen op iOS](ios-device-features-settings.md#app-notifications) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [App-meldingen op iOS/iPadOS](ios-device-features-settings.md#app-notifications) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Zie [Meldingen](https://developer.apple.com/notifications/) op de website van Apple voor meer informatie over deze functie.
 
@@ -89,7 +89,7 @@ Met deze instellingen configureert u de indeling van apps en mappen in de dock e
 - Gebruik de **dock**-instellingen om apps of mappen aan het scherm toe te voegen. U kunt bijvoorbeeld Safari en de app Mail in de dock van het apparaat weergeven.
 - Voeg de **pagina's** toe die u wilt weergeven op het startscherm en de apps die moeten worden weergegeven op elke pagina. Voeg bijvoorbeeld de pagina **Contoso** toe, en voeg vervolgens de app Instellingen toe op deze pagina.
 
-Zie [Indeling van startscherm op iOS](ios-device-features-settings.md#home-screen-layout) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [Indeling van startscherm op iOS/iPadOS](ios-device-features-settings.md#home-screen-layout) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Van toepassing op:
 
@@ -100,7 +100,7 @@ Van toepassing op:
 
 Gebruik deze instellingen om een aangepast bericht of aangepaste tekst in het aanmeldingsvenster en vergrendelingsscherm weer te geven. U kunt bijvoorbeeld een bericht weergeven met de tekst 'Indien gevonden, graag contact opnemen met...' en informatie over de assettag weergeven.
 
-Zie [Instellingen voor vergrendelingsscherm op iOS](ios-device-features-settings.md#lock-screen-message) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [Instellingen voor vergrendelingsscherm op iOS/iPadOS](ios-device-features-settings.md#lock-screen-message) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Zie [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) op de website van Apple voor meer informatie over het bericht voor het vergrendelingsscherm.
 
@@ -136,11 +136,11 @@ De meeste LOB-apps (Line-Of-Business) vereisen een zekere mate van gebruikersver
 Voor het gebruik van eenmalige aanmelding, moet u over het volgende beschikken:
 
 - Een app die is gecodeerd om te zoeken naar de gebruikersreferentieopslagplaats in eenmalige aanmelding op het apparaat.
-- Intune geconfigureerd voor eenmalige aanmelding vanaf iOS-apparaten.
+- Intune geconfigureerd voor eenmalige aanmelding vanaf iOS-/iPadOS-apparaten.
 
 ![Deelvenster Eenmalige aanmelding](./media/device-features-configure/sso-blade.png)
 
-Zie [Eenmalige aanmelding op iOS](ios-device-features-settings.md#single-sign-on) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [Eenmalige aanmelding op iOS/iPadOS](ios-device-features-settings.md#single-sign-on) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Van toepassing op:
 
@@ -156,7 +156,7 @@ Gebruik deze instellingen in Intune voor het configureren van een SSO-app-extens
 - Het omleidingstype is ontworpen voor moderne verificatieprotocollen, zoals OAuth en SAML2.
 - Het referentietype is ontworpen voor verificatiestromen met vraag en antwoord. U kunt kiezen tussen een Kerberos-referentie-extensie van Apple en een algemene referentie-extensie.
 
-Zie [SSO-app-extensie voor iOS](ios-device-features-settings.md#single-sign-on-app-extension) en [SSO-app-extensie voor macOS](macos-device-features-settings.md#single-sign-on-app-extension) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [SSO-app-extensie voor iOS/iPadOS](ios-device-features-settings.md#single-sign-on-app-extension) en [SSO-app-extensie voor macOS](macos-device-features-settings.md#single-sign-on-app-extension) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Bekijk [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) op de website van Apple voor meer informatie over het ontwikkelen van een SSO-app-extensie. Als u de beschrijving van Apple over de functie wilt lezen, gaat u naar [Instellingen voor de payload 'Extensies eenmalige aanmelding'](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
@@ -171,7 +171,7 @@ Bekijk [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-
 >
 > - Vanuit het oogpunt van ontwikkeling is een **app-extensie voor eenmalige aanmelding** weer beter, omdat u dan elk type referenties voor omleiding van eenmalige aanmelding of eenmalige aanmelding voor verificatie kunt gebruiken. Bij **Eenmalige aanmelding** kunt u alleen gebruikmaken van Kerberos-verificatie.
 >
-> - De Kerberos-**app-extensie voor eenmalige aanmelding** is ontwikkeld door Apple en is ingebouwd in de iOS 13.0+- en macOS 10.15+-platforms. De ingebouwde Kerberos-uitbreiding kan worden gebruikt om gebruikers te registreren in systeemeigen apps en websites die ondersteuning bieden voor Kerberos-verificatie. **Eenmalige aanmelding** is geen Apple-implementatie van Kerberos.
+> - De Kerberos-**app-extensie voor eenmalige aanmelding** is ontwikkeld door Apple en is ingebouwd in de iOS/iPadOS 13.0+- en macOS 10.15+-platforms. De ingebouwde Kerberos-uitbreiding kan worden gebruikt om gebruikers te registreren in systeemeigen apps en websites die ondersteuning bieden voor Kerberos-verificatie. **Eenmalige aanmelding** is geen Apple-implementatie van Kerberos.
 >
 > - Met de ingebouwde Kerberos-**app-extensie voor eenmalige aanmelding** worden Kerberos-vragen voor webpagina's en apps op dezelfde manier behandeld als **eenmalige aanmelding**. De ingebouwde Kerberos-extensie ondersteunt echter wachtwoordwijzigingen en is geschikter voor bedrijfsnetwerken. Als moet worden gekozen tussen de Kerberos-**app-extensie voor eenmalige aanmelding** en **eenmalige aanmelding**, wordt aanbevolen de extensie te gebruiken vanwege verbeterde prestaties en mogelijkheden.
 
@@ -183,9 +183,9 @@ Van toepassing op:
 
 ## <a name="wallpaper"></a>Achtergrond
 
-Een aangepaste PNG-, JPG- of JPEG-afbeelding toevoegen aan uw onder supervisie staande iOS-apparaten. U kunt bijvoorbeeld Intune gebruiken om een bedrijfslogo toe te voegen aan het vergrendelingsscherm op uw apparaten.
+Een aangepaste PNG-, JPG- of JPEG-afbeelding toevoegen aan uw onder supervisie staande iOS-/iPadOS-apparaten. U kunt bijvoorbeeld Intune gebruiken om een bedrijfslogo toe te voegen aan het vergrendelingsscherm op uw apparaten.
 
-Zie [Achtergrond op iOS](ios-device-features-settings.md#wallpaper) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [Achtergrond op iOS/iPadOS](ios-device-features-settings.md#wallpaper) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Van toepassing op:
 
@@ -196,7 +196,7 @@ Van toepassing op:
 
 Met deze instellingen kunt u het ingebouwde AutoFilter-algoritme van Apple gebruiken om webpagina's te evalueren en inhoud voor volwassenen te blokkeren. U kunt ook een lijst met toegestane en beperkte webkoppelingen maken. U kunt bijvoorbeeld instellen dat alleen websites van `contoso` mogen worden geopend.
 
-Zie [Webinhoudsfilter op iOS](ios-device-features-settings.md#web-content-filter) voor een lijst met instellingen die u kunt configureren in Intune.
+Zie [Webinhoudsfilter op iOS/iPadOS](ios-device-features-settings.md#web-content-filter) voor een lijst met instellingen die u kunt configureren in Intune.
 
 Van toepassing op:
 
@@ -229,4 +229,4 @@ Het profiel wordt gemaakt en weergegeven in de lijst met profielen. Zorg ervoor 
 
 Nadat het profiel is gemaakt, is het klaar om te worden toegewezen. Vervolgens kunt u [het profiel toewijzen](device-profile-assign.md) en [de status ervan controleren](device-profile-monitor.md).
 
-Bekijk alle instellingen voor apparaatfuncties voor [iOS](ios-device-features-settings.md)- en [macOS](macos-device-features-settings.md)-apparaten.
+Bekijk alle instellingen voor apparaatfuncties voor [iOS-/iPadOS](ios-device-features-settings.md)- en [macOS](macos-device-features-settings.md)-apparaten.

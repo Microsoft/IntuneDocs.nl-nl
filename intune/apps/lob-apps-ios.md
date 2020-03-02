@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755184"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609171"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Een iOS Line-Of-Business-app toevoegen aan Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755184"
 
 Gebruik de informatie in dit artikel om iOS-Line-Of-Business-apps (LOB) aan Microsoft Intune toe te voegen. Een LOB-app is een app die u vanaf een app-installatiebestand (IPA-bestand) aan Intune toevoegt. Dit type app wordt doorgaans intern geschreven. Eerst moet u lid worden van het bedrijfsprogramma voor iOS-ontwikkelaars. Zie de [website van Apple](https://developer.apple.com/programs/ios/enterprise/) voor meer informatie hierover.
 
->[!NOTE]
->Gebruikers van iOS-apparaten kunnen sommige van de ingebouwde iOS-apps, zoals Stocks en Maps verwijderen. U kunt Intune niet gebruiken voor het opnieuw implementeren van deze apps. Als gebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
+> [!NOTE]
+> Gebruikers van iOS-apparaten kunnen sommige van de ingebouwde iOS-apps, zoals Stocks en Maps verwijderen. U kunt Intune niet gebruiken voor het opnieuw implementeren van deze apps. Als gebruikers deze apps verwijderen, moeten ze naar de App Store gaan en ze handmatig opnieuw installeren.
 >
->iOS LOB-apps hebben een maximale grootte van 4 GB per app.
+> iOS LOB-apps hebben een maximale grootte van 4 GB per app.
+
+> [!NOTE]
+> Bundel-id's (bijvoorbeeld *com.contoso.app*) zijn unieke id's van een app. Als u bijvoorbeeld voor testdoeleinden een bètaversie van een LOB-app wilt installeren naast de productieversie, moet de bètaversie een andere unieke id hebben (bijvoorbeeld *com.contoso.app-beta*). Anders overlapt de bètaversie de productieversie en wordt deze behandeld als een upgrade. Het wijzigen van de naam van het IPA-bestand heeft geen invloed op dit gedrag.
 
 ## <a name="select-the-app-type"></a>Het app-type selecteren
 

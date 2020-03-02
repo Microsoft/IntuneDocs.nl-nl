@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556399"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569282"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>De beveiligingsbasislijn en het beveiligingsprofiel controleren in Microsoft Intune
 
@@ -106,6 +106,18 @@ Het bewaken van het profiel geeft u inzicht in de implementatiestatus van uw app
 
    ![Bekijk de verschillende controleopties voor een beveiligingsbasislijnprofiel](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>Configuratie van eindpuntbeveiliging per apparaat weergeven
+
+Bekijk details over de beveiligingsconfiguraties die van toepassing zijn op afzonderlijke apparaten voor hulp bij het isoleren van instellingen die niet goed zijn geconfigureerd.
+
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Ga naar **Apparaten** > **Alle apparaten** en selecteer het apparaat dat u wilt weergeven.
+
+3. Selecteer in de categorie *Bewaking* de optie **Beveiligingsconfiguratie van eindpunt** om de lijst weer te geven met beveiligingsconfiguraties die op dat apparaat van toepassing zijn.
+
+4. U kunt de beveiligingsconfiguratie van een eindpunt gebruiken om dieper in te gaan op extra details over de evaluatie van die beveiligingsconfiguratie op het apparaat.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>Los problemen op met de status per instelling
 
 U hebt een beveiligingsbasislijn geïmplementeerd, maar de implementatiestatus bevat een fout. De volgende stappen leggen uit hoe u de fout oplost.
@@ -135,6 +147,7 @@ Op Windows 10-apparaten is er een ingebouwd rapport met diagnostische gegevens o
 [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (MDM-Fouten diagnosticeren in Windows 10) bevat meer informatie over dit ingebouwde rapport.
 
 > [!TIP]
+>
 > - Sommige instellingen vermelden tevens de GUID. U kunt deze GUID in het lokale register (regedit) zoeken voor eventuele ingestelde waarden.
 > - De Event Viewer-logboeken kunnen ook bepaalde foutinformatie over de problematische instelling bevatten (**Event viewer** > **Logboeken van toepassingen en services** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Beheerder**).
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756003"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609316"
 ---
 # <a name="use-device-encryption-with-intune"></a>Apparaatversleuteling gebruiken met Intune
 
@@ -39,17 +39,30 @@ Intune biedt ook een ingebouwd [versleutelingsrapport](encryption-monitor.md) me
 
 Gebruik Intune om FileVault-schijfversleuteling te configureren op apparaten waarop macOS wordt uitgevoerd. Gebruik vervolgens het Intune-versleutelingsrapport voor het weergeven van de versleutelingsgegevens voor deze apparaten en voor het beheren van herstelsleutels voor met FileVault versleutelde apparaten.
 
-Let op: door gebruiker goedgekeurde apparaatinschrijving is vereist om FileVault op het apparaat te laten werken. De inschrijving geldt alleen als goedgekeurd door de gebruiker als deze het beheerprofiel handmatig goedkeurt vanuit de systeemvoorkeuren. 
+Door de gebruiker goedgekeurde apparaatinschrijving is vereist om FileVault op het apparaat te laten werken. De inschrijving geldt alleen als goedgekeurd door de gebruiker als deze het beheerprofiel handmatig goedkeurt vanuit de systeemvoorkeuren.
 
 FileVault is een programma voor de versleuteling van volledige schijven. Het programma wordt geleverd bij macOS. U kunt Intune gebruiken om FileVault te configureren op apparaten waarop **macOS 10.13 of hoger** wordt uitgevoerd.
 
 Als u FileVault wilt configureren, maakt u een [apparaatconfiguratieprofiel](../configuration/device-profile-create.md) voor Endpoint Protection voor het macOS-platform. De FileVault-instellingen vormen een eigen instellingencategorie in Endpoint Protection voor macOS.
 
-Wanneer u een beleid hebt gemaakt voor het met FileVault versleutelen van apparaten, wordt het beleid in twee fasen toegepast op apparaten. In eerste instantie wordt het apparaat voorbereid zodat Intune kan worden gebruikt voor het ophalen van en het maken van back-ups van de herstelsleutel. Dit heet ook wel 'escrow'. Wanneer er een escrow-sleutel is gemaakt, kan worden gestart met de schijfversleuteling.
+Wanneer u een beleid hebt gemaakt voor het met FileVault versleutelen van apparaten, wordt het beleid in twee fasen toegepast op apparaten. In eerste instantie wordt het apparaat voorbereid zodat Intune kan worden gebruikt voor het ophalen van en het maken van back-ups van de herstelsleutel. Deze actie heet ook wel 'escrow'. Wanneer er een escrow-sleutel is gemaakt, kan worden gestart met de schijfversleuteling.
 
 ![FileVault-instellingen](./media/encrypt-devices/filevault-settings.png)
 
 Voor meer informatie over de FileVault-instelling die u met Intune kunt beheren, ziet u [FileVault](endpoint-protection-macos.md#filevault) in het Intune-artikel over Endpoint Protection-instellingen voor macOS.
+
+### <a name="permissions-to-manage-filevault"></a>Machtigingen voor het beheren van FileVault
+
+Als u FileVault in Intune wilt beheren, moet uw account beschikken over de juiste machtigingen voor [op rollen gebaseerd toegangsbeheer](../fundamentals/role-based-access-control.md) (RBAC).
+
+Hieronder vindt u de FileVault-machtigingen die deel uitmaken van de categorie **Externe taken** en de ingebouwde RBAC-rollen waarmee de machtiging wordt verleend:
+ 
+- **De FileVault-sleutel ophalen**:
+  - Helpdeskmedewerker
+  - Endpoint Security Manager
+
+- **FileVault-sleutel roteren**
+  - Helpdeskmedewerker
 
 ### <a name="how-to-configure-macos-filevault"></a>FileVault voor macOS configureren
 
@@ -84,7 +97,7 @@ Nadat Intune een macOS-apparaat versleutelt met FileVault, kunt u op elk apparaa
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Persoonlijke herstelsleutel ophalen van met MEM versleutelde macOS-apparaten
 
-Eindgebruikers kunnen hun persoonlijke herstelsleutel (FileVault Key) ophalen met behulp van de Bedrijfsportal-app voor iOS. Het apparaat met de persoonlijke herstelsleutel moet zijn geregistreerd bij Intune en moet zijn versleuteld met FileVault via Intune. Met de Bedrijfsportal-app voor iOS kan de eindgebruiker een webpagina openen die de persoonlijke FileVault-herstelsleutel bevat. U kunt de herstelsleutel ook ophalen uit Intune door **Apparaten** > *het versleutelde en geregistreerde macOS-apparaat* > **Herstelsleutel ophalen** te selecteren. 
+Eindgebruikers kunnen hun persoonlijke herstelsleutel (FileVault-sleutel) ophalen met behulp van de Bedrijfsportal-app voor iOS. Het apparaat met de persoonlijke herstelsleutel moet zijn geregistreerd bij Intune en moet zijn versleuteld met FileVault via Intune. Met de Bedrijfsportal-app voor iOS kan de eindgebruiker een webpagina openen die de persoonlijke FileVault-herstelsleutel bevat. U kunt de herstelsleutel ook ophalen uit Intune door **Apparaten** > *het versleutelde en geregistreerde macOS-apparaat* > **Herstelsleutel ophalen** te selecteren. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>BitLocker-versleuteling voor Windows 10
 

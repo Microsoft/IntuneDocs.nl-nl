@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755388"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609196"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toevoegen aan Android Enterprise-apparaten met Intune
 
@@ -80,20 +80,6 @@ Er zijn twee manieren om beheerde Google Play Store-apps te zoeken en goed te ke
 9. Klik op **Selecteren** om de app te selecteren.
 10. Klik boven aan de blade op **Synchroniseren** om de app te synchroniseren met de Beheerde Google Play-service.
 11. Klik op **Vernieuwen** om de lijst met apps bij te werken en de zojuist toegevoegde app weer te geven.
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Aanvullende app-instellingen toevoegen aan een beheerde Google Play Store-app
-1. Als u meer app-gegevens moet toevoegen, selecteert u de app in de lijst met apps.
-2. Klik op **Eigenschappen** > **Bewerken** naast **App-gegevens**. De pagina **App-gegevens** wordt weergegeven.
-3. Voeg in het deelvenster **App-gegevens** de app-gegevens toe:
-    - **Categorie**: Selecteer een of meer ingebouwde app-categorieën of een categorie die u hebt gemaakt (optioneel). Hiermee kunnen gebruikers de app gemakkelijker vinden wanneer ze door de bedrijfsportal bladeren.
-    - **Deze weergeven als aanbevolen app in de bedrijfsportal**: Selecteer deze optie om het app-pakket prominent weer te geven op de hoofdpagina van de bedrijfsportal wanneer gebruikers naar apps bladeren.
-    - **Informatie-URL**: Voer de URL in van een website die informatie over deze app bevat (optioneel). De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Privacy-URL**: (optioneel) Voer de URL in van een website die privacyinformatie over deze app bevat. De URL wordt weergegeven voor gebruikers in de bedrijfsportal.
-    - **Ontwikkelaar**: Voer de naam in van de app-ontwikkelaar (optioneel).
-    - **Eigenaar**: Voer een naam in voor de eigenaar van deze app, bijvoorbeeld *Hr-afdeling* (optioneel).
-    - **Opmerkingen**: Voer de opmerkingen in die u aan deze app wilt koppelen (optioneel).
-4. Klik op **Beoordelen en opslaan** om de pagina **Beoordelen en opslaan** weer te geven. 
-5. Klik wanneer u klaar bent op **Opslaan** om de app in Intune bij te werken.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Een beheerde Google Play Store-app toevoegen in de beheerde Google Play-console (alternatief)
 Als u liever een beheerde Google Play-app met Intune synchroniseert in plaats deze rechtstreeks met behulp van Intune toe te voegen, gebruikt u de volgende stappen.
@@ -238,6 +224,9 @@ Voor beheerde Google Play-apps die op apparaten met Android Enterprise-werkprofi
 
 ## <a name="delete-managed-google-play-apps"></a>Beheerde Google Play-apps verwijderen
 Indien noodzakelijk, kunt u beheerde Google Play-apps verwijderen uit Microsoft Intune. Als u een beheerde Google Play-app wilt verwijderen, opent u Microsoft Intune in Azure Portal en selecteert u **Apps** > **Alle apps**. In de lijst met apps selecteert u het beletselteken (...) rechts naast de beheerde Google Play-app en vervolgens **Verwijderen** in de weergegeven lijst. Wanneer u een beheerde Google Play-app uit de lijst met apps verwijdert, wordt de goedkeuring voor de beheerde Google Play-app automatisch verwijderd.
+
+> [!NOTE]
+> Als een app niet wordt goedgekeurd of wordt verwijderd uit de beheerde Google Play Store, wordt deze niet verwijderd uit de lijst met client-apps van Intune. Hierdoor kunt u nog steeds een beleid voor verwijderen toepassen op gebruikers, zelfs als de app niet is goedgekeurd.
 
 ## <a name="android-enterprise-system-apps"></a>Android Enterprise-systeem-apps
 

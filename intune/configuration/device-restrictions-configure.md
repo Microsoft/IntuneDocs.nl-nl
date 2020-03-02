@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206564"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511218"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Apparaatbeperkingsinstellingen configureren in Microsoft Intune
 
 
 
-Intune bevat beleidsregels voor apparaatbeperkingen waarmee beheerders Android-, iOS-, macOS-en Windows-apparaten kunnen beheren. Met deze beperkingen kunt u een breed scala aan instellingen en functies beheren voor het beveiligen van de resources van uw organisatie. Beheerders kunnen bijvoorbeeld het volgende:
+Intune bevat beleidsregels voor apparaatbeperkingen waarmee beheerders Android-, iOS-/iPadOS-, macOS-en Windows-apparaten kunnen beheren. Met deze beperkingen kunt u een breed scala aan instellingen en functies beheren voor het beveiligen van de resources van uw organisatie. Beheerders kunnen bijvoorbeeld het volgende:
 
 - Het gebruik van de camera van het apparaat toestaan of blokkeren
 - Toegang beheren tot Google Play, app-stores, documenten weergeven en gamen
@@ -44,7 +44,7 @@ In dit artikel wordt beschreven hoe u een apparaatbeperkingsprofiel maakt. U kun
 2. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken**.
 3. Voer de volgende eigenschappen in:
 
-    - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **iOS: Camera op apparaten blokkeren**.
+    - **Naam**: Voer een beschrijvende naam in voor het beleid. Geef uw beleid een naam zodat u het later eenvoudig kunt identificeren. Een goede beleidsnaam is bijvoorbeeld **iOS/iPadOS: Camera op apparaten blokkeren**.
     - **Beschrijving**: Voer een beschrijving in voor het beleid. Deze instelling is optioneel, maar wordt aanbevolen.
     - **Platform**: Kies het platform van uw apparaten. Uw opties zijn:  
 

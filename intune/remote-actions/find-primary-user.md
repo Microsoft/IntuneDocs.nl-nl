@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413675"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569452"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>De hoofdgebruiker van een Intune-apparaat zoeken
 
 De hoofdgebruiker, ook wel de gebruikersaffiniteit van het apparaat, is een eigenschap van elk Intune-apparaat. Aan een Intune-apparaat kan ofwel geen of één hoofdgebruiker zijn toegewezen. Wanneer er geen hoofdgebruiker is toegewezen, wordt het apparaat aangeduid als een 'gedeeld apparaat'.
 
-## <a name="how-to-find-a-devices-primary-user"></a>De hoofdgebruiker van een apparaat zoeken
+## <a name="find-a-devices-primary-user"></a>De hoofdgebruiker van een apparaat zoeken
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apparaten** > Selecteer een apparaat.
@@ -38,7 +38,7 @@ De hoofdgebruiker, ook wel de gebruikersaffiniteit van het apparaat, is een eige
 De eigenschap Hoofdgebruiker wordt gebruikt om een Intune-gebruiker met een licentie te koppelen aan hun apparaten in:
 - De bedrijfsportal-app
 - Websites van de eindgebruiker
-- Gebruikerservaring voor IT-professionals, zoals probleemoplossingspagina's in de Azure-portal. Deze pagina's koppelen gebruikersaccounts aan apparaten met behulp van de hoofdgebruiker.    
+- Gebruikerservaring voor IT-professionals, zoals probleemoplossingspagina's in de Azure-portal. Deze pagina's koppelen gebruikersaccounts aan apparaten met behulp van de hoofdgebruiker. 
 
 ### <a name="company-portal-app"></a>Bedrijfsportal-app
 Voor de bedrijfsportal-app wordt aangenomen dat het gebruikersaccount waarmee wordt aangemeld bij de bedrijfsportal de hoofdgebruiker van het apparaat is. Als een andere gebruiker is toegewezen als hoofdgebruiker, wordt in de bedrijfsportal-app een waarschuwing weergegeven:

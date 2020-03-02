@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057583"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514843"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integratie van Mobile Threat Defense met Intune
 
@@ -50,7 +50,7 @@ Als deze optie is ingeschakeld, verzamelt Intune informatie over de app-inventar
 Deze service is opt-in; er wordt standaard geen informatie over app-inventaris gedeeld. Een Intune-beheerder moet **synchronisatie van apps voor iOS-apparaten** inschakelen in de instellingen van de Mobile Threat Defense-connector voordat informatie over app-inventaris wordt gedeeld.
 
 **App-inventaris**  
-Als u App Sync voor iOS-apparaten inschakelt, worden inventarissen van iOS-apparaten in zowel bedrijfs- en privé-eigendom verzonden naar uw MTD-serviceprovider. Gegevens in de app-inventarisatie bestaan onder andere uit:
+Als u App Sync voor iOS-/iPadOS-apparaten inschakelt, worden inventarissen van iOS-/iPadOS-apparaten in zowel bedrijfs- als privé-eigendom verzonden naar uw MTD-serviceprovider. Gegevens in de app-inventarisatie bestaan onder andere uit:
 
 - App-id
 - App-versie

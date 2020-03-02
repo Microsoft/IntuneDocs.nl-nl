@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505168"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514894"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Gebruiksscenario's voor het beheer van mobiele apparaten identificeren
 
@@ -79,15 +79,15 @@ Nu moet u vaststellen welke organisatiegroepen aan elk gebruiksscenario en subge
 
 In de volgende stap stelt u vast welke platformen voor mobiele apparaten zijn gekoppeld aan elk gebruiksscenario. Dat kunnen er meer dan één zijn.
 
-Uw bedrijfsgebruiksscenario kan bijvoorbeeld de iOS- en Android Samsung Knox-apparaatplatforms ondersteunen. Uw BYOD-beleid kan ondersteuning omvatten voor aanvullende platformen voor mobiele apparaten, zoals Android (behalve Samsung Knox) en Windows 10 Mobile. Voortbouwend op de voorgaande voorbeelden hebben we platformen voor mobiele apparaten gekoppeld aan elk gebruiksscenario.
+Uw bedrijfsgebruiksscenario kan bijvoorbeeld de iOS-/iPadOS- en Android Samsung Knox-apparaatplatformen ondersteunen. Uw BYOD-beleid kan ondersteuning omvatten voor aanvullende platformen voor mobiele apparaten, zoals Android (behalve Samsung Knox) en Windows 10 Mobile. Voortbouwend op de voorgaande voorbeelden hebben we platformen voor mobiele apparaten gekoppeld aan elk gebruiksscenario.
 
 | **Use cases** | **Subgebruikssituaties** | **Groepen** | **Apparaatplatformen** |   
 |:---:|:---:|:---:|:---:|
-| Bedrijf | Informatiemedewerker | HR, Financiën | iOS |                                                           
-| Bedrijf | Leidinggevenden | HR, Financiën | iOS |                                                           
+| Bedrijf | Informatiemedewerker | HR, Financiën | iOS/iPadOS |                                                           
+| Bedrijf | Leidinggevenden | HR, Financiën | iOS/iPadOS |                                                           
 | Bedrijf | Kiosk | Retail | Android |
-| BYOD | Informatiemedewerker | Marketing, Verkoop | iOS |                                                           
-| BYOD | Leidinggevenden | Marketing, Verkoop | iOS |
+| BYOD | Informatiemedewerker | Marketing, Verkoop | iOS/iPadOS |                                                           
+| BYOD | Leidinggevenden | Marketing, Verkoop | iOS/iPadOS |
 
 ## <a name="next-steps"></a>Volgende stappen
 

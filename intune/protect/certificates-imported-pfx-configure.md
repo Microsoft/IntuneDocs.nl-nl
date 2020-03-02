@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258127"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569520"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Geïmporteerde PKCS-certificaten configureren en gebruiken met Intune
 
@@ -31,6 +31,17 @@ Microsoft Intune ondersteunt het gebruik van geïmporteerde PKCS-certificaten (o
 S/MIME-versleuteling is uitdagend, omdat e-mail wordt versleuteld met een specifiek certificaat. U moet op het apparaat waarop u het e-mailbericht leest beschikken over de persoonlijke sleutel van het certificaat dat is gebruikt om het e-mailbericht te versleutelen, zodat het kan worden ontsleuteld. Versleutelingscertificaten worden regelmatig vernieuwd. Dit betekent dat u mogelijk de versleutelingsgeschiedenis op al uw apparaten nodig hebt om ervoor te zorgen dat u oudere e-mailberichten kunt lezen.  Omdat hetzelfde certificaat moet worden gebruikt op meerdere apparaten, is het niet mogelijk [SCEP](certificates-scep-configure.md)- of [PKCS](certficates-pfx-configure.md)-certificaatprofielen te gebruiken voor dit doel, omdat deze mechanismen voor het aanleveren van certificaten per apparaat unieke certificaten leveren.
 
 Voor meer informatie over het gebruik van s/MIME met Intune raadpleegt u [S/MIME gebruiken voor e-mailversleuteling](certificates-s-mime-encryption-sign.md).
+
+## <a name="supported-platforms"></a>Ondersteunde platforms
+
+Intune biedt ondersteuning voor het importeren van PFX-certificaten voor de volgende platformen:
+
+- Android - Apparaatbeheerder
+- Android Enterprise - Volledig beheerd
+- Android Enterprise - Werkprofiel
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>Vereisten
 
@@ -49,6 +60,8 @@ Als u geïmporteerde PKCS-certificaten wilt gebruiken met Intune, hebt u de volg
 - **Windows Server**:
 
   U kunt een Windows-server gebruiken als host voor de PFX-certificaatconnector voor Microsoft Intune.  De connector wordt gebruikt om aanvragen te verwerken voor certificaten die in Intune worden geïmporteerd.
+  
+  Voor de connector is toegang tot dezelfde poorten vereist als voor beheerde apparaten, zoals te lezen is in onze [inhoud over apparaateindpunten](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices).
 
   Intune staat toe dat de *Microsoft Intune-certificaatconnector* en de *PFX-certificaatconnector voor Microsoft Intune* op dezelfde server worden geïnstalleerd.
 

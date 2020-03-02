@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966382"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514095"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Infrastructuur configureren om SCEP te ondersteunen in Intune
 
@@ -148,7 +148,7 @@ Voor de volgende secties is kennis nodig van Windows Server 2012 R2 of later en 
        > [!IMPORTANT]
        > Voeg alleen het toepassingsbeleid toe dat u nodig hebt. Leg uw keuzes voor aan de beveiligingsbeheerder.
 
-     - Bewerk voor iOS- en macOS-certificaatsjablonen ook **Sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
+     - Bewerk voor iOS-/iPadOS- en macOS-certificaatsjablonen ook **Sleutelgebruik** en zorg ervoor dat **Handtekening is bewijs van authenticiteit** niet is ingeschakeld.
 
      ![Sjabloon, tabblad Extensies](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Na het [maken van de SCEP-certificaatsjabloon](#create-the-scep-certificate-temp
 Standaard gebruikt Intune de waarde die is geconfigureerd in de sjabloon. U kunt de CA echter zodanig configureren dat de aanvrager een andere waarde kan invoeren, en die waarde kan worden ingesteld in de Intune-beheerconsole.
 
 > [!IMPORTANT]
-> Gebruik voor iOS en macOS altijd een waarde die in de sjabloon is ingesteld.
+> Gebruik voor iOS/iPadOS en macOS altijd een waarde die in de sjabloon is ingesteld.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Een waarde configureren die in de Intune-console kan worden ingesteld
 
