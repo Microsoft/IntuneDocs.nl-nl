@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886796"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181718"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Windows 10-software-updates beheren in Intune
 
@@ -77,14 +77,14 @@ Windows 10-updateringen bieden ondersteuning voor [bereiktags](../fundamentals/s
 
 ### <a name="create-and-assign-update-rings"></a>Update-ringen maken en toewijzen
 
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum]( https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecteer **Apparaten** > **Windows** > **Windows 10-updateringen** > **Maken**.
 
 3. Geef onder *Basisinformatie* een naam en optioneel een beschrijving op en selecteer vervolgens **Volgende**.
-  ![Een updatering maken]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. Configureer onder **Ringinstellingen bijwerken** de instellingen die passen bij de behoeften van uw bedrijf. Zie Windows-update-instellingen voor meer informatie over de beschikbare instellingen. Nadat u de instellingen *Bijwerken en Gebruikerservaring* hebt geconfigureerd, selecteert u **Volgende**.
+  ![Een updatering maken](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. Configureer onder **Ringinstellingen bijwerken** de instellingen die passen bij de behoeften van uw bedrijf. Zie [Windows-update-instellingen](../protect/windows-update-settings.md) voor meer informatie over de beschikbare instellingen. Nadat u de instellingen *Bijwerken en Gebruikerservaring* hebt geconfigureerd, selecteert u **Volgende**.
 
 5. Selecteer onder **Bereiktags** de optie **Bereiktags selecteren** om het deelvenster *Tags selecteren* te openen als u deze wilt toepassing op de updatering. Kies een of meer tags en klik vervolgens op **Selecteren** om deze toe te voegen aan de updatering en terug te keren naar het deelvenster *Bereiktags*.
 

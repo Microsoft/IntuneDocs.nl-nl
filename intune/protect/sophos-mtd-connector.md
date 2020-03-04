@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 816968d512b73a8592c7a86b39c41057aa99e827
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514809"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782049"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense-connector met Intune
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren met voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd door Sophos Mobile, een MDT-oplossing (Mobile Threat Defense) die in Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop de Sophos Mobile-app wordt uitgevoerd.
 U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Sophos Mobile-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-conforme apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
+
+> [!NOTE]
+> Deze Mobile Threat Defense-leverancier wordt niet ondersteund voor niet-ingeschreven apparaten.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Hoe kunt u met Intune en Sophos Mobile uw bedrijfsresources beter beveiligen?
 Met de Sophos Mobile-app voor Android of iOS/iPadOS worden telemetriegegevens vastgelegd over het bestandssysteem, de netwerkstack, apparaten en toepassingen waar dergelijke gegevens beschikbaar zijn. De app verzendt de telemetriegegevens vervolgens naar de Sophos Mobile-cloudservice om te bepalen hoe groot het risico van bedreigingen is voor het mobiele apparaat.

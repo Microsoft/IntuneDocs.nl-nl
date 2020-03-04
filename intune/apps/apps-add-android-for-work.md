@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609196"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256455"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Beheerde Google Play-apps toevoegen aan Android Enterprise-apparaten met Intune
 
@@ -155,9 +155,6 @@ Zie het volgende ondersteuningsartikel van Google voor meer informatie over behe
 Beheerde Google Play-webkoppelingen kunnen net als andere Android-apps worden geïnstalleerd en beheerd. Wanneer de koppeling is geïnstalleerd op een apparaat, wordt deze weergegeven in de lijst met apps van de gebruiker, samen met de andere apps die de gebruiker heeft geïnstalleerd. Wanneer u op de koppeling tikt, wordt deze geopend in de browser van het apparaat.
 
 Webkoppelingen worden geopend met Microsoft Edge of een andere browser-app die u hebt geïmplementeerd. Zorg ervoor dat u ten minste één browser-app op apparaten implementeert, zodat webkoppelingen goed kunnen worden geopend. Alle **weergave-opties** die beschikbaar zijn voor webkoppelingen (volledig scherm, zelfstandig en minimale gebruikersinterface) werken echter alleen met Chrome. 
-
-> [!IMPORTANT]
-> Op het moment van publiceren van dit document is er een Google-fout bekend die voorkomt dat webkoppelingen worden geopend op apparaten met andere browsers dan Chrome. Google heeft aangegeven dit probleem te gaan verhelpen.  Deze mededeling wordt verwijderd wanneer Microsoft bevestiging heeft van Google dat het probleem is opgelost.
 
 1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecteer **Apps** > **Alle apps** > **Toevoegen**.

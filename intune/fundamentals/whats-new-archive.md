@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886761"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181806"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Wat is er nieuw in Microsoft Intune - vorige maanden
 
@@ -187,7 +187,7 @@ De Intune-inschrijving en bedrijfsportal ondersteunen nu iOS versie 11 en hoger.
 Wanneer u de naam van een Windows-apparaat wijzigt, moet u nieuwe regels volgen:
 - Maximaal 15 tekens (moet kleiner zijn dan of gelijk zijn aan 63 bytes, exclusief navolgende null-tekens)
 - Niet null of een lege tekenreeks
-- Toegestane ASCII: letters (a-z, A-Z), cijfers (0-9) en afbreekstreepjes
+- Toegestane ASCII: Letters (a-z, A-Z), cijfers (0-9) en afbreekstreepjes
 - Toegestane Unicode: tekens > = 0x80, moet geldige UTF8 zijn, moet IDN-toewijsbaar zijn (dat wil zeggen dat RtlIdnToNameprepUnicode moet slagen, zie RFC 3492)
 - Namen mogen niet alleen cijfers bevatten
 - Namen mogen geen spaties bevatten
@@ -341,7 +341,7 @@ In Intune kunt u beleid maken om iOS-apparaten onder supervisie uit te voeren al
 
 Deze update bevat nieuwe instellingen die u kunt beheren:
 - **Spraakbeheer**: Hiermee wordt Spraakbeheer ingeschakeld op het apparaat, wanneer het apparaat in de kioskmodus is.
-- **Aanpassing van spraakbeheer**: Hiermee staat u gebruikers toe de instelling voor Spraakbeheer op het apparaat te wijzigen wanneer het apparaat in de kioskmodus is.
+- **Aanpassing van spraakbeheer**: Gebruikers toestaan de instelling voor spraakbeheer te wijzigen op het apparaat, wanneer het apparaat in de kioskmodus is.
 
 Als u de huidige instellingen wilt zien, gaat u naar de [iOS Kiosk-instellingen](../configuration/device-restrictions-ios.md#kiosk).
 
@@ -407,7 +407,7 @@ Van toepassing op:
 ### <a name="device-enrollment"></a>Apparaatinschrijving
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>Nieuwe tenants worden standaard verwijderd uit het beheer van Android-apparaatbeheerders<!-- 4869790   -->
-De beheermogelijkheden voor Android-apparaten zijn vervangen door Android Enterprise. Daarom raden we u aan om vanaf nu Android Enterprise te gebruiken voor nieuwe inschrijvingen. Bij een toekomstige update moeten de volgende vereiste stappen voor Android-inschrijving worden uitgevoerd voor nieuwe tenants, om beheer van apparaatbeheerders te gebruiken: ga naar **Intune** > **Apparaatinschrijving** > **Android-inschrijving** > **Bevoegdheden voor apparaatbeheerder voor het beheer van persoonlijke apparaten en apparaten in bedrijfseigendom** > **Apparaatbeheerder gebruiken om apparaten te beheren.** .
+De beheermogelijkheden voor Android-apparaten zijn vervangen door Android Enterprise. Daarom raden we u aan om vanaf nu Android Enterprise te gebruiken voor nieuwe inschrijvingen. Bij een toekomstige update moeten de volgende vereiste stappen voor Android-inschrijving worden uitgevoerd voor nieuwe tenants, om beheer van apparaatbeheerders te gebruiken: Ga naar **Intune** > **Apparaatinschrijving** > **Android-inschrijving** > **Persoonlijke apparaten en apparaten in bedrijfseigendom met bevoegdheden voor het beheren van apparaten** > **Apparaatbeheer gebruiken om apparaten te beheren**.
 
 De omgevingen van bestaande tenants worden niet gewijzigd.
 
@@ -526,7 +526,7 @@ U kunt in Intune functies en instellingen beheren in een kioskstijl op uw toegew
 In deze update worden de volgende functies toegevoegd:
 
 - **Toegewezen apparaten** > Meerdere apps **:** de **Virtuele startknop** kan worden weergegeven door op het apparaat te vegen of op het scherm te zweven zodat gebruikers deze kunnen verplaatsen.
-- Met **Toegewezen apparaten** > **Meerdere apps**: **Zaklamp-toegang** kunnen gebruikers de zaklamp gebruiken. 
+- **Toegewezen apparaten** > Meerdere apps **:** met **zaklantaarn**toegang kunnen gebruikers de zaklantaarn gebruiken. 
 - **Toegewezen apparaten** > Meerdere apps **:** met **volumeregeling van media** kunnen gebruikers het mediavolume van het apparaat beheren met behulp van een schuifregelaar. 
 - **Toegewezen apparaten** > Meerdere apps **:**  **een schermbeveiliging inschakelen**, een aangepaste afbeelding uploaden en bepalen wanneer de schermbeveiliging wordt weergegeven.
 
@@ -580,11 +580,11 @@ U kunt profielen maken om instellingen te beperken op apparaten waarop iOS en ma
 
 - Er zijn enkele wijzigingen in **iOS** > **Apparaatbeperkingen**:
 
-  - **Ingebouwde apps** > **Zoek mijn iPhone (alleen onder supervisie)** : nieuwe instelling waarmee deze functie wordt geblokkeerd in de 'Zoek mijn'-appfunctie. 
-  - **Ingebouwde apps** > **Zoek mijn vrienden (alleen onder supervisie)** : nieuwe instelling waarmee deze functie wordt geblokkeerd in de 'Zoek mijn'-appfunctie. 
-  - **Draadloos** > **Wijziging van Wi-Fi-status(alleen onder supervisie)** : nieuwe instelling die voorkomt dat gebruikers Wi-Fi in- of uitschakelen op het apparaat.
-  - **Toetsenbord en woordenboek** > **QuickPath (alleen onder supervisie)** : nieuwe instelling die de QuickPath-functie blokkeert.
-  - **Cloud en opslag**: de naam van **Voortzetting van activiteit** is gewijzigd in **Handoff**.
+  - **Ingebouwde apps** > **Zoek mijn iPhone (alleen onder supervisie)** : nieuwe instelling die deze functie blokkeert in de functie Zoek mijn app. 
+  - **Ingebouwde apps** > **Zoek mijn vrienden (alleen onder supervisie)** : nieuwe instelling die deze functie blokkeert in de functie Zoek mijn app. 
+  - **Draadloos** > **Wijziging van Wi-Fi-status (alleen onder supervisie)** : nieuwe instelling die voorkomt dat gebruikers Wi-Fi op het apparaat in- of uitschakelen.
+  - **Toetsenbord en woordenboek** > **QuickPath (alleen onder toezicht)** : nieuwe instelling die de QuickPath-functie blokkeert.
+  - **Cloud en opslag**: de naam van de term **Voortzetting van activiteit** is gewijzigd in **Handoff**.
 
   Als u de huidige instellingen wilt zien, gaat u naar [iOS-apparaatinstellingen voor het toestaan of beperken van functies met Intune](../configuration/device-restrictions-ios.md).
 
@@ -1444,7 +1444,7 @@ Ga voor een lijst met deze instellingen naar:
 
 - [Instellingen voor apparaten met Windows 10 en hoger om ze als kiosk uit te voeren](../configuration/kiosk-settings-windows.md)
 - [Microsoft Edge Browser-apparaatbeperkingen](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [Apparaatbeperkingen voor favorieten en zoeken](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [Apparaatbeperkingen voor favorieten en zoeken](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 Van toepassing op: Windows 10 en hoger
 
@@ -1639,7 +1639,7 @@ Wanneer u een configuratieprofiel voor iOS-apparaten maakt, kunt u de instelling
 Het gedeelte [Instellingen om berichten op het vergrendelingsscherm weer te geven](../configuration/ios-device-features-settings.md#lock-screen-message) bevat de huidige instellingen.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>Nieuwe App Store-, documentweergave-, gaminginstellingen voor apparaatbeperking toegevoegd aan iOS-apparaten<!-- 2827760-->
-In **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** als platform > **Apparaatbeperkingen** als profieltype > **App Store, documentweergave, gaming** zijn de volgende instellingen toegevoegd: Toestaan dat beheerde apps contactpersonen schrijven naar niet-beheerde contactenaccounts Toestaan dat niet-beheerde apps contactpersonen lezen in beheerde accounts voor contactpersonen Als u de instellingen wilt weergeven, gaat u naar [iOS-apparaatbeperkingen](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
+In **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > **iOS** voor platform > **Apparaatbeperkingen** voor profieltype > **App Store, documentweergave, gaming** zijn de volgende instellingen toegevoegd: Beheerde apps toestaan om contacten naar niet-beheerde contactenaccounts te schrijven Niet-beheerde apps toestaan om beheerde contactenaccounts te lezen Als u de instellingen wilt weergeven, gaat u naar [iOS-apparaatbeperkingen](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Nieuwe instellingen voor meldingen, hints en keyguard voor Android Enterprise-apparaten in zakelijk eigendom<!-- 3201839 3201843 -->
 Deze update omvat verschillende nieuwe functies in Android Enterprise-apparaten wanneer deze worden uitgevoerd in zakelijk eigendom. Als u deze functies wilt gebruiken, gaat u naar **Apparaatconfiguratie** > **Profielen** > **Profiel maken** > als **Platform** kiest u **Android Enterprise** > in **Profieltype** kiest u **Alleen zakelijk eigendom** > **Apparaatbeperkingen**.
@@ -1850,9 +1850,9 @@ Deze update bevat nieuwe instellingen voor uw iOS- en macOS-apparaten die zijn u
 - Wachtwoord: wachtwoorden delen blokkeren (alleen onder supervisie)
 
 **macOS-instellingen**: 
-- Wachtwoord: automatisch doorvoeren van wachtwoorden blokkeren
+- Wachtwoord: automatisch wachtwoorden doorvoeren blokkeren
 - Wachtwoord: aanvragen voor wachtwoordnabijheid blokkeren
-- Wachtwoord: delen van wachtwoorden blokkeren
+- Wachtwoord: wachtwoorden delen blokkeren
 
 Voor meer informatie over deze instellingen, zie apparaatbeperkingsinstellingen voor [iOS](../configuration/device-restrictions-ios.md) en [macOS](../configuration/device-restrictions-macos.md).
 

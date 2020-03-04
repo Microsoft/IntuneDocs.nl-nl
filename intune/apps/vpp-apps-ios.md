@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/17/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: e3efa4a354a71846a5add46794ed853696d04560
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513398"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216098"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>iOS- en macOS-apps beheren die zijn aangeschaft via het Apple Volume Purchase Program met Microsoft Intune
 
@@ -88,7 +88,7 @@ U kunt als volgt bestaande, gekochte VPP-inhoud en -tokens migreren naar Apps en
 2. Zorg ervoor dat alle VPP-kopers binnen uw organisatie stap 1 hebben voltooid voordat u doorgaat.
 3. Controleer of alle gekochte apps en licenties zijn gemigreerd naar Apps en Books in Apple Business Manager of Apple School Manager.
 4. Download een nieuw locatietoken via **Apple Business (of School) Manager** > **Instellingen** > **Apps en Books** > **Mijn servertokens**.
-5. Ga voor het bijwerken van een locatietoken in het Beheercentrum voor Microsoft Eindpuntbeheer naar **Tenant-beheer** > **Connectors en tokens** > **Apple VPP-tokens** en synchroniseer het token.
+5. Ga voor het bijwerken van een locatietoken in het Beheercentrum voor Microsoft Endpoint Manager naar **Tenant-beheer** > **Connectors en tokens** > **Apple VPP-tokens** en synchroniseer het token.
 
 ## <a name="upload-an-apple-vpp-or-location-token"></a>Een Apple VPP- of locatietoken uploaden
 

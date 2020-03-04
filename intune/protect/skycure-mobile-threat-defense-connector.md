@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/09/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 60bad9299a3751474ef01220a7c18f16be329448
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515268"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782077"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-connector
 
@@ -38,6 +38,9 @@ U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren door midde
 - Beveiliging tegen zwakke plekken
 
 U kunt SEP Mobile-risicoanalyse inschakelen via het Intune-nalevingsbeleid voor apparaten. Vervolgens kunt u voorwaardelijk toegangsbeleid gebruiken om de toegang tot bedrijfsresources voor niet-conforme apparaten toe te staan of te blokkeren op basis van de gedetecteerde bedreigingen.
+
+> [!NOTE]
+> Deze Mobile Threat Defense-leverancier wordt niet ondersteund voor niet-ingeschreven apparaten.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Hoe kunt u met Intune en SEP Mobile uw bedrijfsresources beter beveiligen?
 
