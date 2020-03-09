@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: e2075ed8328e6a33732e03fbf521d32b2edd6a35
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912672"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575835"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Line-of-business-apps voorbereiden voor app-beveiligingsbeleid
 
@@ -103,7 +103,7 @@ Deze tabel bevat de instellingen die zijn ingeschakeld als een app gebruikmaakt 
 |Schermafbeeldingen maken blokkeren (alleen Android)|X|X|
 |Ondersteuning van MAM zonder apparaatinschrijving|X|X|
 |Volledig wissen van app-gegevens|X|X|
-|Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** Bij iOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
+|Selectief wissen van werk- en schoolgegevens in scenario's met meerdere identiteiten <br><br>**Opmerking:** Bij iOS/iPadOS geldt dat als het beheerprofiel wordt verwijderd, ook de app wordt verwijderd.|X||
 |'Opslaan als' voorkomen|X||
 |Configuratie van de doeltoepassing (of app-configuratie via het MAM-kanaal)|X|X|
 |Ondersteuning voor meerdere identiteiten|X||

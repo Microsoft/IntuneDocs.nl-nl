@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413774"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256387"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Wat is Microsoft Intune-apparaatbeheer?
 
@@ -39,7 +39,7 @@ De workload **Apparaten** biedt inzicht in de apparaten die u beheert en geeft u
    - **Overzicht** bevat een visuele momentopname van de ingeschreven apparaten en laat zien hoeveel apparaten de verschillende platformen gebruiken, waaronder Android, iOS/iPadOS en meer.
    - **Alle apparaten** geeft een lijst weer met de ingeschreven apparaten die u beheert.
 
-     Met de functie **Exporteren** maakt u een CSV-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Microsoft Edge, Chrome).
+     Met de functie **Exporteren** maakt u een .zip-lijst van alle apparaten in stappen van 10.000 (Internet Explorer) of 30.000 (Microsoft Edge, Chrome).
 
      Selecteer een apparaat om [meer gegevens over het apparaat weer te geven](device-inventory.md), zoals gegevens over de hardware, geïnstalleerde apps en de nalevingsbeleidsstatus.
 
@@ -61,7 +61,7 @@ De beschikbaarheid van de acties is afhankelijk van het apparaatplatform en de c
   - [Wissen](devices-wipe.md#wipe)
   - [Vergrendelen op afstand](device-remote-lock.md)
   - [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
-  - [Activeringsvergrendeling uitschakelen](device-activation-lock-bypass.md) (alleen iOS)
+  - [Activeringsvergrendeling uitschakelen](device-activation-lock-disable.md) (alleen iOS)
   - [Nieuwe start](device-fresh-start.md) (alleen Windows)
   - [Modus Apparaat verloren](device-lost-mode.md) (alleen iOS)
   - [Apparaat zoeken](device-locate.md) (alleen iOS)

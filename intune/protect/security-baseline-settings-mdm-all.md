@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
-ms.translationtype: MTE75
+ms.openlocfilehash: a46532467f8de7caf8cc88fe60e7a5cbc10ba147
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075787"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256523"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Windows MDM-beveiligingsbasislijninstellingen voor Intune
 
@@ -231,7 +231,7 @@ Zie [Beleids-CSP - Connectiviteit](https://docs.microsoft.com/windows/client-man
   Met deze beleidsinstelling configureert u beveiligde toegang tot UNC-paden. Als u dit beleid inschakelt, is in Windows alleen toegang tot de opgegeven UNC-paden toegestaan als aan de vereisten voor extra beveiliging is voldaan.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067243)
 
-  **Standaard**: Windows configureren om alleen toegang tot de opgegeven UNC-paden toe te staan als aan de vereisten voor extra beveiliging is voldaan.
+  **Standaardinstelling**: Windows configureren om alleen toegang tot de opgegeven UNC-paden toe te staan als aan de vereisten voor extra beveiliging is voldaan.
 
   Wanneer *Windows configureren om alleen toegang tot de opgegeven UNC-paden toe te staan als aan de vereisten voor extra beveiliging is voldaan* is geselecteerd, kunt u de *Lijst met beveiligde UNC-paden* configureren.
 
@@ -291,7 +291,7 @@ Zie [Beleids-CSP - DeviceGuard](https://docs.microsoft.com/windows/client-manage
 ::: zone pivot="mdm-may-2019"
 
 - **Beveiliging op basis van virtualisatie**:  
-  **Standaard**: VBS met beveiligd opstarten inschakelen
+  **Standaardinstelling**: VBS met beveiligd opstarten inschakelen
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -364,7 +364,7 @@ Zie [Beleids-CSP - DeviceLock](https://docs.microsoft.com/windows/client-managem
   Wanneer *Wachtwoord vereisen* is ingesteld op *Ja*, zijn de volgende instellingen beschikbaar.
 
   - **Wachtwoord: minimumaantal tekensets**:  
-    Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Met een pincode dwingt u het volgende gedrag voor desktopapparaten en mobiele apparaten af: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop. De standaardwaarde is 1.  
+    Het aantal complexe elementtypen (hoofdletters en kleine letters, cijfers en leestekens) dat is vereist voor een sterke pincode of een sterk wachtwoord. Met een pincode dwingt u het volgende gedrag voor desktopapparaten en mobiele apparaten af: 1 - Alleen cijfers 2 - Cijfers en kleine letters zijn vereist 3 - Cijfers, kleine letters en hoofdletters zijn vereist. Niet ondersteund in Microsoft-desktopaccounts en domeinaccounts. 4 - Cijfers, kleine letters, hoofdletters en speciale tekens zijn vereist. Dit wordt niet ondersteund in desktop.  
     [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **Standaardinstelling**: 3
@@ -722,7 +722,7 @@ Zie [Beleids-CSP - InternetExplorer](https://docs.microsoft.com/windows/client-m
   Met deze beleidsinstelling kunt u ondersteuning uitschakelen voor TLS (Transport Layer Security) 1.0, TLS 1.1, TLS 1.2, SSL (Secure Sockets Layer) 2.0 of SSL 3.0 in de browser. TLS en SSL zijn protocollen die de communicatie tussen de browser en de doelserver helpen beveiligen. Wanneer de browser beveiligde communicatie met de doelserver probeert in te stellen, onderhandelen de browser en de server welk protocol en welke versie moeten worden gebruikt. Er wordt gezocht naar overeenkomsten in de browser- en serverlijst met ondersteunde protocollen en versies, en de beste overeenkomst wordt geselecteerd. Als u deze beleidsinstelling inschakelt, onderhandelt de browser of onderhandelt deze niet over een versleutelingstunnel, met behulp van de versleutelingsmethoden die u selecteert in de vervolgkeuzelijst. Als u deze beleidsinstelling uitschakelt of niet configureert, kan de gebruiker selecteren voor welke versleutelingsmethode de browser ondersteuning biedt.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Standaard**: 2 items:  TLS v1.1 en TLS v1.2  
+  **Standaardinstelling**: 2 items:  TLS v1.1 en TLS v1.2  
   *Selecteer de pijl-omlaag om opties weer te geven die u kunt selecteren voor deze instelling.*
 
 ::: zone-end
@@ -1779,10 +1779,10 @@ Zie [Beleids-CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-m
 
   - *Als u deze beleidsinstelling niet configureert*, kunnen gebruikers Aangevraagde hulp op afstand in- of uitschakelen in de Systeemeigenschappen van het Configuratiescherm. Gebruikers kunnen ook instellingen voor Hulp op afstand configureren.
 
-  Als u deze beleidsinstelling inschakelt, hebt u twee manieren om Hulp op afstand te krijgen: Computer alleen bekijken of Computer op afstand bedienen. Met de beleidsinstelling Maximale waarde tickettijd wordt een limiet ingesteld voor de hoeveelheid tijd dat een Hulp of afstand-uitnodiging die is gemaakt via e-mail of bestandsoverdracht, geopend kan blijven. Met de instelling Methode voor het verzenden van e-mailuitnodigingen selecteren kunt u opgeven welke e-mailstandaard moet worden gebruikt om Hulp op afstand-uitnodigingen te verzenden. Afhankelijk van uw e-mailprogramma kunt u de standaard *Mailto* (de ontvanger van de uitnodiging maakt verbinding via een internetkoppeling) gebruiken of de standaard SMAPI (Simple SMAPI) (de uitnodiging is bijgevoegd bij uw e-mailbericht). Deze beleidsinstelling is niet beschikbaar in Windows Vista omdat SMAPI de enige methode is die wordt ondersteund. Als u deze beleidsinstelling inschakelt, moet u ook de juiste firewalluitzonderingen inschakelen om communicatie met Hulp op afstand toe te staan.  
+  Als u deze beleidsinstelling inschakelt, kunt u helpers op twee manieren hulp op afstand laten bieden: Computer alleen bekijken of Computer op afstand bedienen. Met de beleidsinstelling Maximale waarde tickettijd wordt een limiet ingesteld voor de hoeveelheid tijd dat een Hulp of afstand-uitnodiging die is gemaakt via e-mail of bestandsoverdracht, geopend kan blijven. Met de instelling Methode voor het verzenden van e-mailuitnodigingen selecteren kunt u opgeven welke e-mailstandaard moet worden gebruikt om Hulp op afstand-uitnodigingen te verzenden. Afhankelijk van uw e-mailprogramma kunt u de standaard *Mailto* (de ontvanger van de uitnodiging maakt verbinding via een internetkoppeling) gebruiken of de standaard SMAPI (Simple SMAPI) (de uitnodiging is bijgevoegd bij uw e-mailbericht). Deze beleidsinstelling is niet beschikbaar in Windows Vista omdat SMAPI de enige methode is die wordt ondersteund. Als u deze beleidsinstelling inschakelt, moet u ook de juiste firewalluitzonderingen inschakelen om communicatie met Hulp op afstand toe te staan.  
   [Meer informatie](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Standaard**: Hulp op afstand uitschakelen
+  **Standaardinstelling**: Hulp op afstand uitschakelen
 
   Wanneer dit is ingeschakeld op *Hulp op afstand inschakelen*, configureert u de volgende aanvullende instellingen:
 
@@ -1793,10 +1793,10 @@ Zie [Beleids-CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-m
     **Standaardinstelling**: *Niet geconfigureerd*
 
   - **Maximale periode tickettijd**:  
-    **Standaard**: minuten
+    **Standaardinstelling**: Minuten
 
   - **Uitnodigingsmethode e-mail**:  
-    **Standaard**: eenvoudige MAPI
+    **Standaardinstelling**: Eenvoudige MAPI
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"

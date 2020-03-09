@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 19ecbc632b924dda297b3692cabf5345b4724b30
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654070"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575785"
 ---
 # <a name="reference-for-devices-entities"></a>Informatie voor apparaatentiteiten
 
@@ -249,7 +249,7 @@ Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en 
 | rowLastModifiedDateTimeUTC | De datum en tijd in UTC waarop dit apparaat het laatst is gewijzigd in het datawarehouse.                                                                                                       |
 | manufacturer               | Fabrikant van het apparaat                                                                                                                                                             |
 | model                      | Model van het apparaat                                                                                                                                                                    |
-| operatingSystem            | Het besturingssysteem van het apparaat. Windows, iOS, enzovoort.                                                                                                                                   |
+| operatingSystem            | Het besturingssysteem van het apparaat. Windows, iOS/iPadOS, enzovoort                                                                                                                                   |
 | isDeleted                  | Binaire code om weer te geven of het apparaat is verwijderd of niet.                                                                                                                                 |
 | androidSecurityPatchLevel  | Niveau Android-beveiligingspatch                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
@@ -262,7 +262,7 @@ Met de entiteit **devices** worden alle geregistreerde apparaten voor beheer en 
 | IMEI                       | IMEI                                                                                                                                                                                   |
 | cellularTechnology         | Mobiele telefoontechnologie van het apparaat                                                                                                                                                    |
 | WiFiMacAddress             | MAC-adres Wi-Fi                                                                                                                                                                              |
-| ICCD                       | Geïntegreerde circuit kaart-id                                                                                                                                                     |
+| ICCD                       | Integrated Circuit Card Identifier (geïntegreerde circuitkaart-id)                                                                                                                                                     |
 
 ## <a name="devicepropertyhistories"></a>devicePropertyHistories
 

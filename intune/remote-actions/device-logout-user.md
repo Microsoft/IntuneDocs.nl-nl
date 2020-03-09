@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 279b35f2dd7cd515784e86687b7917914ea9cf8c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413695"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781897"
 ---
 # <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>De huidige gebruiker van met Intune beheerde iOS-/iPadOS-apparaten afmelden
 
@@ -41,9 +41,8 @@ Gebruik de actie **Huidige gebruiker afmelden** om de huidige gebruiker af te me
 
 ## <a name="how-to-log-out-the-current-user"></a>De huidige gebruiker afmelden
 
-1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en selecteer **Apparaten**.
-4. Kies op de blade **Apparaten en groepen** de optie **Alle apparaten**.
-5. Kies een iOS-/iPadOS-apparaat in de lijst met apparaten die u beheert en kies vervolgens de externe apparaatactie **Huidige gebruiker afmelden**.
+1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431) en selecteer **Apparaten** > **Alle apparaten**.
+2. Kies een iOS/iPadOS-apparaat > **...**  > **Huidige gebruiker afmelden**.
 
 ## <a name="next-steps"></a>Volgende stappen
 

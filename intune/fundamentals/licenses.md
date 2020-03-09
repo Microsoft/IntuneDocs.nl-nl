@@ -16,15 +16,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23708968ac229c2721635d9fc31527558e9bd3d2
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: c8965c4f27a3ad0c8bf20072710e8ae818b84efe
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547474"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260160"
 ---
 # <a name="microsoft-intune-licensing"></a>Licenties voor Microsoft Intune
-Microsoft Intune is beschikbaar voor verschillende klantbehoeften en organisatiegrootten, van een eenvoudig te gebruiken beheerervaring voor scholen en kleine bedrijven tot een meer geavanceerde functionaliteit die door zakelijke klanten wordt vereist. Zolang het abonnement actief is, verlenen de meeste licenties met Microsoft Intune ook rechten voor het gebruik van Microsoft Endpoint Configuration Manager. 
+Microsoft Intune is beschikbaar voor verschillende klantbehoeften en organisatiegrootten, van een eenvoudig te gebruiken beheerervaring voor scholen en kleine bedrijven tot een meer geavanceerde functionaliteit die door zakelijke klanten wordt vereist. Zolang het abonnement actief is, verlenen de meeste licenties met Microsoft Intune ook rechten voor het gebruik van Microsoft Endpoint Configuration Manager. Er moet een licentie zijn toegewezen aan een beheerder om Intune te kunnen beheren. 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Intune is opgenomen in de volgende licenties:

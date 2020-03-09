@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 96e037b3d4bcec09765a0228e4f35041fe316cf6
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415605"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782177"
 ---
 # <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>De modus Apparaat verloren inschakelen op iOS-/iPadOS-apparaten met Intune
 
@@ -31,7 +31,8 @@ Met de apparaatactie **Apparaat verloren** schakelt u de modus voor verloren app
 
 ## <a name="supported-platforms"></a>Ondersteunde platforms
 
-- iOS/iPadOS 9.3 en hoger
+- iOS 9.3 en hoger
+- iPadOS 13.0 of hoger
 
 Deze functie wordt niet ondersteund op: 
 - Windows

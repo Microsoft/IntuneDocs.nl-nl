@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ed343f652c4afe87273eeaa4a2e35b7669056d
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: d26721ff27f380917fec7f4d23c0c5524737a4a3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839229"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216154"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Meer informatie over de timing van het leveren van app-beveiligingsbeleid
 
@@ -38,6 +38,7 @@ De levering van het toepassingsbeveiligingsbeleid hangt af van de licentiestatus
 |    Geen onboarding uitgevoerd voor tenant    |    Wacht op de volgende interval voor opnieuw proberen.  App-beveiliging is niet actief voor de gebruiker.    |    24 uur    |    Vindt plaatst wanneer u de tenant voor Intune niet hebt ingesteld.    |
 |    De gebruiker is niet gelicentieerd     |    Wacht op de volgende interval voor opnieuw proberen.  App-beveiliging is niet actief voor de gebruiker.     |    12 uur: Voor deze interval is op Android-apparaten echter Intune APP-SDK versie 5.6.0 of hoger nodig. Anders is de interval voor Android-apparaten 24 uur.   |    Vindt plaats wanneer u de gebruiker geen licentie voor Intune hebt gegeven.    |
 |    Geen app-beveiligingsbeleid aan de gebruiker toegewezen    |    Wacht op de volgende interval voor opnieuw proberen.  App-beveiliging is niet actief voor de gebruiker.    |    12 uur        |    Vindt plaats wanneer u geen APP-instellingen aan de gebruiker hebt toegewezen.    |
+|    App-beveiligingsbeleid is toegewezen aan de gebruiker, maar de app is niet gedefinieerd in het app-beveiligingsbeleid   |    Wacht op de volgende interval voor opnieuw proberen.  App-beveiliging is niet actief voor de gebruiker.    |    12 uur        |    Vindt plaats wanneer u de app niet hebt toegevoegd aan APP.    |
 |    De gebruiker is geregistreerd voor Intune MAM    |    App-beveiliging wordt toegepast volgens de beleidsinstellingen.    Updates treden op basis van de interval voor opnieuw proberen op    |    De Intune-service wordt gebaseerd op de gebruikersbelasting.    Doorgaans 30 min.     |    Vindt plaats wanneer de gebruiker zich heeft geregistreerd bij de Intune-service voor de MAM-configuratie.    |
 
 > [!NOTE]

@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 7fbbffb187fc9e9537bf647bc33e3d98879369c3
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784269"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576059"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Een Intune-rapport maken van de OData-feed met Power BI
 
-In dit artikel wordt uitgelegd hoe u een Treemap-visualisatie van uw intune-gegevens maakt met behulp van Power BI Desktop die gebruikers een interactief filter hebben. Uw CFO kan bijvoorbeeld weten hoe de algehele distributie van apparaten vergelijkt tussen apparaten in bedrijfs eigendom en persoonlijke apparaten. Deze treemap biedt inzicht in het totaalaantal apparaattypen. U kunt het aantal iOS-, Android- en Windows-apparaten die al dan niet eigendom zijn van het bedrijf weergeven.
+In dit artikel leest u hoe u een treemapvisualisatie maakt van Intune-gegevens in Power BI Desktop die een interactief filter gebruikt. Uw CFO wil bijvoorbeeld weten hoe de algehele verdeling van apparaten is in vergelijking met de verhouding bedrijfseigen en persoonlijke apparatuur. Deze treemap biedt inzicht in het totaalaantal apparaattypen. U kunt het aantal iOS/iPadOS-, Android- en Windows-apparaten die al dan niet eigendom zijn van het bedrijf weergeven.
 
 ## <a name="overview-of-creating-the-chart"></a>Overzicht van het maken van de grafiek
 
@@ -43,7 +43,7 @@ Ga als volgt te werk voor het maken van deze grafiek:
 
 In Power BI werkt u met tabellen. Een tabel bevat gegevensvelden. Elk gegevensveld heeft een gegevenstype. Het veld kan alleen gegevens van dat gegevenstype bevatten. Gegevenstypen zijn getallen, tekst, datums enzovoort. De tabellen in Power BI worden gevuld met recente historische gegevens van uw tenant wanneer u het model laadt. Hoewel de specifieke gegevens in de loop der tijd veranderen, verandert de tabelstructuur niet tenzij het onderliggende gegevensmodel wordt bijgewerkt.
 
-Mogelijk zijn de termen *entiteit* en *tabel* enigszins verwarrend. Het gegevens model is toegankelijk via een OData-feed (Open Data Protocol). De containers die in Power BI tabellen worden genoemd, heten entiteiten in de context van OData. Beide termen verwijzen naar hetzelfde item dat uw gegevens bevat. Zie [odata-overzicht](/odata/overview)voor meer informatie over odata.
+Mogelijk zijn de termen *entiteit* en *tabel* enigszins verwarrend. Het gegevensmodel is toegankelijk via een OData-feed (Open Data Protocol). De containers die in Power BI tabellen worden genoemd, heten entiteiten in de context van OData. Beide termen verwijzen naar hetzelfde item dat uw gegevens bevat. Zie het [OData-overzicht](/odata/overview)voor meer informatie over OData.
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop installeren
 
@@ -58,8 +58,8 @@ Installeer de nieuwste versie van Power BI Desktop. U kunt Power BI Desktop down
 2. Open het deelvenster **Intune Data Warehouse** door de link Data Warehouse onder **Andere taken** te selecteren aan de rechterkant van de blade **Microsoft Intune - Overzicht**.
 3. Kopieer de aangepaste feed-URL. Bijvoorbeeld: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Open Power BI Desktop.
-5. Selecteer in de menu balk **File** > **gegevens ophalen** > **Odata-feed**.
-6. Plak de aangepaste feed-URL, die u hebt gekopieerd uit de vorige stap, in het vak URL in het venster **OData-feed** .
+5. Selecteer in de menubalk **Bestand** > **Gegevens ophalen** > **Odata-feed**.
+6. Plak de aangepaste feed-URL, die u in de eerdere stap hebt gekopieerd, in het vak voor de URL in het venster **OData-feed**.
 7. Selecteer **Eenvoudig**.
 
     ![OData-feed voor het Intune-datawarehouse van uw tenant](./media/reports-proc-create-with-odata/reports-create-01-odatafeed.png)
@@ -88,15 +88,15 @@ De relatie wordt weergegeven met een kolom Van en een kolom Naar. In dit voorbee
 
 ## <a name="create-a-treemap-visualization"></a>Een treemapvisualisatie maken
 
-In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binnen vakken. Elke vertakking van de hiërarchie is een vak dat kleinere vakken bevat, die subvertakkingen weergeven. U kunt Power BI bureau blad gebruiken om een Treemap van uw intune-Tenant gegevens te maken waarin de relatieve aantallen van de fabrikant typen van het apparaat worden weer gegeven.
+In een treemapgrafiek worden hiërarchische gegevens weergegeven als vakken binnen vakken. Elke vertakking van de hiërarchie is een vak dat kleinere vakken bevat, die subvertakkingen weergeven. U kunt Power BI Desktop gebruiken om een treemap te maken van uw Intune-tenantgegevens waarin de relatieve aantallen van de fabrikanttypen van het apparaat worden weergegeven.
 
 ![Power BI-treemapvisualizaties](./media/reports-proc-create-with-odata/reports-create-03-treemap.png)
 
-1. Zoek in het deel venster **visualisaties** naar en selecteer **Treemap**. Het **Treemap** -diagram wordt toegevoegd aan het rapport canvas.
-2. Zoek in het deel venster **velden** de `devices` tabel.
-3. Vouw de tabel `devices` uit en selecteer het veld `manufacturer` data.
-4. Sleep het `manufacturer` gegevens veld naar het teken papier van het rapport en zet het neer in het **Treemap** -diagram.
-5. Sleep het `deviceKey` gegevens veld van de tabel `devices` naar het deel venster **Visualisaties** en zet het neer onder de sectie **waarden** in het vak **Voeg gegevens velden toe**.  
+1. Zoek in het deel venster **visualisaties** naar en selecteer **Treemap**. De grafiek **Treemap** wordt toegevoegd aan het rapportcanvas.
+2. Zoek in het deelvenster **Velden** de tabel `devices`.
+3. Vouw de tabel `devices` uit en selecteer het gegevensveld `manufacturer`.
+4. Sleep het gegevensveld `manufacturer` naar het rapportcanvas en plaats het op de grafiek **Treemap**.
+5. Sleep het gegevensveld `deviceKey` vanaf de tabel `devices` naar het deelvenster **Visualisaties** en plaats het onder de sectie **Waarden** op het vak met de tekst **Gegevensvelden hier toevoegen**.  
 
 U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binnen uw organisatie weergeeft.
 
@@ -107,18 +107,18 @@ U hebt nu een visueel element dat de verdeling van apparaten per fabrikant binne
 U kunt een filter aan uw treemap toevoegen om aanvullende vragen te beantwoorden met uw app.
 
 1. Selecteer het rapportcanvas en selecteer vervolgens het **slicerpictogram** (![treemap met gegevensmodel en ondersteunde relaties](./media/reports-proc-create-with-odata/reports-create-slicer.png)) onder **Visualisaties** om een filter toe te voegen. De lege visualisatie van de **slicer** wordt weer gegeven op het canvas.
-2. Zoek in het deel venster **velden** de `ownerTypes` tabel.
-3. Vouw de tabel `ownerTypes` uit en selecteer het veld `ownerTypeName` data.
-4. Sleep het `onwerTypeName` gegevens veld van de tabel `ownerTypes` naar het deel venster **filters** en zet het neer onder het gedeelte **filters op deze pagina** in het vak **Voeg gegevens velden toe**.  
+2. Zoek in het deelvenster **Velden** de tabel `ownerTypes`.
+3. Vouw de tabel `ownerTypes` uit en selecteer het gegevensveld `ownerTypeName`.
+4. Sleep het gegevensveld `onwerTypeName` vanaf de tabel `ownerTypes` naar het deelvenster **Filters** en plaats het onder de sectie **Filters op deze pagina** op het vak met de tekst **Gegevensvelden hier toevoegen**.  
 
-   In de tabel `OwnerTypes` is er een gegevens veld met de naam `OwnerTypeKey`dat een gegevens bevat om te bepalen of een apparaat bedrijfs eigendom of persoonlijk is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
+   Onder de tabel `OwnerTypes` staat een gegevensveld genaamd `OwnerTypeKey` dat gegevens bevat die aangeven of het apparaat bedrijfseigendom of privé-eigendom is. Ga naar de tabel `ownerTypes` en sleep de **ownerTypeName** naar de slicer om de beschrijvende namen weer te geven. Dit voorbeeld toont aan hoe het gegevensmodel relaties tussen tabellen ondersteunt.
 
 ![Treemap met filter: ondersteunt relaties tussen tabellen](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 
 U hebt nu een interactief filter dat u kunt gebruiken om te schakelen tussen apparaten in bedrijfseigendom en persoonlijke apparaten. Gebruik dit filter om te zien hoe de distributie verandert.
 
-1. Selecteer **bedrijf** in de slicer om te zien dat de apparaat-eigendom van het bedrijf is gedistribueerd.
-2. Selecteer **persoonlijk** in de slicer om de persoonlijke apparaten weer te geven.
+1. Selecteer **Bedrijf** in de slicer om de apparaten in bedrijfseigendom weer te geven.
+2. Selecteer **Persoonlijk** in de slicer om de persoonlijke apparaten weer te geven.
 
 ## <a name="next-steps"></a>Volgende stappen
 

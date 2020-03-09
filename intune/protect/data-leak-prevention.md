@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514435"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575935"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Gegevenslekken op niet-beheerde apparaten voorkomen met Microsoft Intune
 
@@ -31,7 +31,7 @@ Als u toegang verleent tot bedrijfsgegevens gehost door Office 365, kunt u bepal
 
 App-beveiligingsbeleid dat is ingesteld met Intune werkt ook op apparaten die worden beheerd met een beheersysteem voor niet-Microsoft-apparaten. De persoonlijke gegevens op de apparaten worden ongemoeid gelaten, alleen bedrijfsgegevens worden beheerd door de IT-afdeling. 
 
-U kunt app-beveiligingsbeleid instellen voor mobiele Office-apps op apparaten met Windows, iOS of Android om bedrijfsgegevens te beveiligen. Met deze beleidsregels kunt u beleid instellen voor een PINCODE of bedrijfsgegevensversleuteling op basis van een app. Ook kunt u zo meer geavanceerde instellingen instellen voor het beperken van het gebruik van knippen, kopiëren, plakken en opslagfuncties door gebruikers tussen beheerde en onbeheerde apps. U kunt ook op afstand bedrijfsgegevens wissen zonder dat gebruikers apparaten moeten inschrijven.
+Als u bedrijfsgegevens wilt beveiligen, kunt u app-beveiligingsbeleid instellen voor mobiele Office-apps op apparaten met Windows, iOS/iPadOS of Android. Met deze beleidsregels kunt u beleid instellen voor een PINCODE of bedrijfsgegevensversleuteling op basis van een app. Ook kunt u zo meer geavanceerde instellingen instellen voor het beperken van het gebruik van knippen, kopiëren, plakken en opslagfuncties door gebruikers tussen beheerde en onbeheerde apps. U kunt ook op afstand bedrijfsgegevens wissen zonder dat gebruikers apparaten moeten inschrijven.
 
 Intune-app-beveiligingsbeleid is onafhankelijk van apparaatbeheer. Met app-beveiligingsbeleid kunt u mobiele Office-apps beheren op zowel niet-beheerde als door Intune beheerde apparaten, evenals op apparaten die worden beheerd door niet-Microsoft MDM-oplossingen.
 
@@ -42,7 +42,7 @@ Het volgende actieplan kan worden gebruikt wanneer u aan de volgende vereisten v
 * Uw bedrijf is gereed voor een veilige overgang naar de cloud.
 * Uw bedrijf gebruikt Office 365 Exchange Online, SharePoint Online, OneDrive voor Bedrijven of Yammer.
 * Uw bedrijf heeft licenties voor Microsoft 365, Enterprise Mobility + Security (EMS) of Azure Information Protection.
-* Uw bedrijf biedt gebruikers toegang tot bedrijfsgegevens vanaf zakelijke of persoonlijke Windows-, iOS- of Android-apparaten.
+* Uw bedrijf biedt gebruikers toegang tot bedrijfsgegevens vanaf zakelijke of persoonlijke Windows-, iOS/iPadOS- of Android-apparaten.
 * Uw bedrijf wil niet de inschrijving van persoonlijke apparaten in een apparaatbeheerservice verplichten.
 
 ## <a name="action-plan"></a>Actieplan

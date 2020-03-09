@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: 1bc811bcac80f8321284ece8d3860efc7164a270
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886689"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256319"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Android Enterprise-apparaten met OEMConfig gebruiken en beheren in Microsoft Intune
 
@@ -83,14 +83,14 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, dat de juiste OEMConfig-app 
 3. Voer de volgende eigenschappen in:
 
     - **Platform**: Selecteer **Android Enterprise**.
-    - **Profieltype**: selecteer **OEMConfig**.
+    - **Profieltype**: Selecteer **OEMConfig**.
 
 4. Selecteer **Maken**.
 5. Voer in **Basisinformatie** de volgende eigenschappen in:
 
     - **Naam**: Voer een beschrijvende naam in voor het nieuwe profiel.
     - **Beschrijving**: Voer een beschrijving in voor het profiel. Deze instelling is optioneel, maar wordt aanbevolen.
-    - **OEMConfig-app**: kies **Een OEMConfig-app selecteren**.
+    - **OEMConfig-app**: Kies **Een OEMConfig-app selecteren**.
 
 6. In **Gekoppelde app**selecteert u een bestaande OEMConfig-app die u eerder hebt toegevoegd > **Selecteren**. Zorg ervoor dat u de juiste OEMConfig-app kiest voor de apparaten waaraan u het beleid toewijst.
 
@@ -105,7 +105,7 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, dat de juiste OEMConfig-app 
     > [!TIP]
     > Lees de OEM-documentatie om ervoor te zorgen dat u de eigenschappen juist configureert. Deze app-eigenschappen worden toegevoegd door de OEM, niet door Intune. Door Intune wordt een minimale validatie uitgevoerd van de eigenschappen of van wat u invoert. Als u bijvoorbeeld `abcd` opgeeft als een poortnummer, wordt het profiel zodanig opgeslagen en wordt het op uw apparaten geïmplementeerd met de waarden die u configureert. Zorg dat u de juiste informatie invoert.
 
-    - **Configuration Designer**: wanneer u deze optie selecteert, worden de eigenschappen die beschikbaar zijn in het appschema weergegeven zodat u deze kunt configureren.
+    - **Configuratie-ontwerper**: Wanneer u deze optie selecteert, worden de eigenschappen die beschikbaar zijn in het appschema weergegeven zodat u deze kunt configureren.
 
       - Contextmenu's in Configuration Designer geven aan dat er meer opties beschikbaar zijn. Via het contextmenu kunt u bijvoorbeeld instellingen toevoegen, verwijderen en de volgorde ervan wijzigen. Deze opties worden toegevoegd door de OEM. Lees de documentatie over de OEM-app voor meer informatie over het gebruik van deze opties voor het maken van profielen.
 
@@ -115,7 +115,7 @@ Zorg ervoor dat het apparaat OEMConfig ondersteunt, dat de juiste OEMConfig-app 
 
       - Als u in Configuration Designer een lege (niet-geconfigureerde) bundel maakt, wordt deze verwijderd wanneer u schakelt naar de JSON-editor.
 
-    - **JSON-editor**: wanneer u deze optie selecteert, wordt er een JSON-editor geopend met een sjabloon voor het volledige configuratieschema dat in de app is ingesloten. In de editor kunt u de sjabloon aanpassen met waarden voor de verschillende instellingen. Als u de **Configuration Designer** gebruikt om uw waarden te wijzigen, wordt de sjabloon in de JSON-editor overschreven met waarden van Configuration Designer.
+    - **JSON-editor**: Wanneer u deze optie selecteert, wordt er een JSON-editor geopend met een sjabloon voor het volledige configuratieschema dat in de app is ingesloten. In de editor kunt u de sjabloon aanpassen met waarden voor de verschillende instellingen. Als u de **Configuration Designer** gebruikt om uw waarden te wijzigen, wordt de sjabloon in de JSON-editor overschreven met waarden van Configuration Designer.
 
       - Als u een bestaand profiel bijwerkt, worden in de JSON-editor de instellingen weergegeven die voor het laatst zijn opgeslagen voor het profiel.
 
@@ -161,7 +161,8 @@ Vergeleken met standaard-apps bieden OEMConfig-apps meer bevoegdheden voor behee
 | Spectralink: apparaat | com.spectralink.slnkdevicesettings  |  |
 | Spectralink: logboekregistratie | com.spectralink.slnklogger |  |
 | Spectralink: VQO | com.spectralink.slnkvqo |  |
-| HMD Global | com.hmdglobal.app.oemconfig.ironman |  |
+| Seuic | com.seuic.seuicoemconfig | |
+| Unitech Electronics | com.unitech.oemconfig | |
 
 -----------------
 
@@ -169,6 +170,8 @@ Als er een OEMConfig-toepassing voor uw apparaat bestaat, maar deze niet in de b
 
 > [!NOTE]
 > OEMConfig-apps moeten door Intune worden onboarded voordat ze kunnen worden geconfigureerd met OEMConfig-profielen. Zodra een app wordt ondersteund, hoeft u geen contact op te nemen met Microsoft over het instellen ervan in uw tenant. U kunt gewoon de instructies op deze pagina volgen.
+>
+> Als u merkt dat een OEMConfig-app niet op de juiste manier werkt, kunt u contact opnemen met de ontwikkelaars van de OEMConfig-app. Het Intune-team is niet verantwoordelijk voor technische problemen met de afzonderlijke OEMConfig-apps.
 
 ## <a name="next-steps"></a>Volgende stappen
 

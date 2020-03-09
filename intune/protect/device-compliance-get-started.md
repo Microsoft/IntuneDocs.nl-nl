@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 45bcabf8c7dc932c9415fbd309bf09f53499fbcc
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515166"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781938"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Regels instellen op apparaten om toegang tot resources in uw organisatie met behulp van Intune toe te staan
 
@@ -93,16 +93,13 @@ Intune bevat ook een set ingebouwde instellingen voor nalevingsbeleid. Het volge
 
   Als er geen nalevingsbeleid aan een apparaat is toegewezen, wordt dit apparaat standaard als incompatibel beschouwd. Als u voorwaardelijke toegang met nalevingsbeleid gebruikt, is het raadzaam de standaardinstelling te wijzigen in **Niet compatibel**. Als een eindgebruiker incompatibel is omdat er geen beleid is toegewezen, wordt `No compliance policies have been assigned` vermeld in de [bedrijfsportal-app](../apps/company-portal-app.md).
 
-
-> [!NOTE]
-> Verbeterde jailbreakdetectie voor iOS-/iPadOS-apparaten is tijdelijk uitgeschakeld in Intune.
-
-- **Verbeterde jailbreakdetectie**: Als deze instelling is ingeschakeld, zorgt deze ervoor dat iOS-/iPadOS-apparaten vaker bij Intune inchecken. Door het inschakelen van deze eigenschap worden de locatieservices van het apparaat gebruikt. Ook heeft dit invloed op het batterijverbruik. De locatiegegevens van de gebruiker worden niet opgeslagen met Intune.
+- **Verbeterde jailbreakdetectie**: als deze instelling is ingeschakeld, wordt de status van apparaten met jailbreak vaker weergegeven op iOS/iPadOS-apparaten. Deze instelling is alleen van invloed op apparaten waarop een nalevingsbeleid is gericht waarmee apparaten met jailbreak worden geblokkeerd. Door het inschakelen van deze eigenschap worden de locatieservices van het apparaat gebruikt. Ook kan dit invloed hebben op het batterijverbruik. De locatiegegevens van de gebruiker worden niet door Intune opgeslagen en worden alleen gebruikt om jailbreakdetectie vaker te activeren op de achtergrond. 
 
   Wanneer u deze instelling inschakelt, moeten apparaten:
   - Locatieservices op het niveau van het besturingssysteem inschakelen.
-  - De bedrijfsportal toestaan om locatieservices te gebruiken.
-  - Eens per 72 uur de jailbreak-status evalueren en aan Intune rapporteren. Anders wordt het apparaat gemarkeerd als Niet compatibel. Evaluatie wordt geactiveerd door de bedrijfsportal-app te openen of het apparaat 500 meter of meer te verplaatsen. Als het apparaat in 72 uur minder dan 500 meter beweegt, moet de gebruiker de bedrijfsportal-app openen voor een betere jailbreak-beoordeling.
+  - De bedrijfsportal altijd toestaan om locatieservices te gebruiken.
+
+  Evaluatie wordt geactiveerd door de bedrijfsportal-app te openen of het apparaat een aanzienlijke afstand van 500 meter of meer te verplaatsen. Op apparaten met iOS 13 en hoger moeten gebruikers voor deze functie steeds de optie Altijd toestaan selecteren wanneer ze worden gevraagd door te gaan; hierdoor kan hun locatie op de achtergrond worden gebruikt in de bedrijfsportal. Als gebruikers toegang tot hun locatie niet altijd toestaan en een beleid hebben ingesteld waarbij deze instelling is geconfigureerd, wordt hun apparaat gemarkeerd als Niet-compatibel. Houd er rekening mee dat Intune niet kan garanderen dat elke grote locatiewijziging ervoor zorgt dat er op jailbreakdetectie wordt gecontroleerd, aangezien dit afhankelijk is van de netwerkverbinding van een apparaat op dat moment.
 
 - **Geldigheidsperiode van nalevingsstatus (dagen)** : Voer de tijdsduur in dat apparaten de status voor alle ontvangen nalevingsbeleidsregels moeten rapporteren. Apparaten die niet binnen deze tijdsduur de status retourneren, worden als Niet compatibel beschouwd. De standaardwaarde is 30 dagen. De minimumwaarde is 1 dag.
 

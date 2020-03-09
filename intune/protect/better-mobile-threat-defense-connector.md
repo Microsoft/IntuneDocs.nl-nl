@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a52636a140778f6e78bfe081cda40b36ef2354f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbab3aae2e38e1ce7d3c8c526b706d70e0cf2b2a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509650"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781203"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense-connector met Intune
 
 U kunt de toegang van mobiele apparaten tot bedrijfsresources beheren met voorwaardelijke toegang op basis van een risicoanalyse die wordt uitgevoerd door Better Mobile, een MDT-oplossing (Mobile Threat Defense) die in Microsoft Intune is geïntegreerd. Risico's worden beoordeeld op basis van telemetrische gegevens die zijn verzameld op apparaten waarop de Better Mobile-app wordt uitgevoerd.
 
-U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Better Mobile-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-conforme apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen.
+U kunt beleidsregels voor voorwaardelijke toegang configureren op basis van de Better Mobile-risicoanalyse die via het Intune-nalevingsbeleid voor apparaten wordt ingeschakeld voor ingeschreven apparaten. U kunt met dit beleid de toegang tot bedrijfsresources voor niet-conforme apparaten toestaan of blokkeren op basis van de gedetecteerde bedreigingen. Voor niet-ingeschreven apparaten kunt u app-beveiligingsbeleid gebruiken om het blokkeren of selectief wissen af te dwingen op basis van gedetecteerde bedreigingen.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Hoe kunt u met Intune en Better Mobile uw bedrijfsresources beter beveiligen?
 
@@ -105,3 +105,5 @@ Bedreigingen voor uw netwerk worden gedetecteerd, zoals **man-in-the-middle-aanv
 - [Better Mobile-nalevingsbeleid voor apparaten maken](mtd-device-compliance-policy-create.md)
 
 - [Better Mobile MTD-connector inschakelen](mtd-connector-enable.md)
+
+- [Een beveiligingsbeleid voor MTD-apps maken](mtd-app-protection-policy.md) 

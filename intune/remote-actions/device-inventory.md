@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413748"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781914"
 ---
 # <a name="see-device-details-in-intune"></a>Apparaatdetails bekijken in Intune
 
@@ -39,11 +39,16 @@ In dit artikel leest u hoe u al uw apparaten en hun eigenschappen kunt bekijken 
    - **Overzicht** toont de apparaatnaam en een lijst met enkele belangrijke eigenschappen van het apparaat, inclusief of het een BYOD-apparaat (Bring Your Own Device) is, wanneer het apparaat is ingecheckt, en meer. U kunt de volgende acties uitvoeren op het apparaat:
       - [Buiten gebruik stellen](devices-wipe.md#retire)
       - [Wissen](devices-wipe.md#wipe)
+      - [Verwijderen](devices-wipe.md#delete-devices-from-the-intune-portal)
       - [Vergrendelen op afstand](device-remote-lock.md)
-      - [Apparaat synchroniseren](device-sync.md)
+      - [Synchroniseren](device-sync.md)
       - [Wachtwoordcode opnieuw instellen](device-passcode-reset.md)
       - [Opnieuw starten](device-restart.md) (alleen Windows)
       - [Nieuwe start](device-fresh-start.md) (alleen Windows)
+      - [Autopilot opnieuw instellen]() (alleen Windows)
+      - [Snelle scan](../configuration/device-restrictions-windows-10.md) (alleen Windows 10)
+      - [Volledige scan](../configuration/device-restrictions-windows-10.md) (alleen Windows 10)
+       - [Naam van apparaat wijzigen](device-rename.md)
       - Een externe hulpsessie starten
    - Gebruik **Eigenschappen** om een [apparaatcategorie die u maakt](../enrollment/device-group-mapping.md) toe te wijzen en wijzig de eigendom van het apparaat naar een persoonlijk apparaat of een bedrijfsapparaat.
    - **Hardware** bevat veel details over het apparaat, zoals de apparaat-id, het besturingssysteem en de versie, opslagruimte en meer informatie.

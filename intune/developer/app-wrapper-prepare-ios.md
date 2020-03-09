@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653662"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576340"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-apps voorbereiden voor app-beveiligingsbeleid met Intune App Wrapping Tool
 
@@ -199,14 +199,14 @@ U kunt de volgende opdrachtregelparameters gebruiken met de App Wrapping Tool:
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Hiermee wordt gedetailleerde informatie weergegeven over de beschikbare opdrachtregeleigenschappen voor de App Wrapping Tool. |
 |**-aa**|(Optioneel) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, d.w.z. `login.windows.net/common` |
-|**-ac**|(Optioneel) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` dit de GUID in het veld client-ID is van de vermelding van uw app in de Blade app-registratie. |
-|**-ar**|(Optioneel) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` dit is de omleidings-URI die is geconfigureerd in de app-registratie. Normaal gesp roken zou het het URL-Protocol van de toepassing zijn die de Microsoft Authenticator-app zou terugsturen naar na een brokered-verificatie. |
+|**-ac**|(Optioneel) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` Dit is de GUID in het veld Client-id van de vermelding van uw app in de blade App-registratie. |
+|**-ar**|(Optioneel) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` Dit is de omleidings-URI die is geconfigureerd in de app-registratie. Normaal gesproken zou dit het URL-protocol van de toepassing zijn waarnaar de Microsoft Authenticator-app zou terugkeren na een brokered verificatie. |
 |**-v**| (Optioneel) Hiermee worden uitgebreide berichten naar de console uitgevoerd. Het wordt aanbevolen deze eigenschap te gebruiken voor opsporing van eventuele fouten. |
 |**-e**| (Optioneel) Gebruik deze eigenschap om ervoor te zorgen dat ontbrekende rechten worden verwijderd wanneer de app door de App Wrapping Tool wordt verwerkt. Zie [App-rechten instellen](#setting-app-entitlements) voor meer informatie.|
 |**-xe**| (Optioneel) Hiermee wordt informatie afgedrukt over de iOS-extensies in de app en de rechten die nodig zijn voor het gebruik ervan. Zie [App-rechten instellen](#setting-app-entitlements) voor meer informatie. |
 |**-x**| (Optioneel) `<An array of paths to extension provisioning profiles>`. Gebruik deze eigenschap als uw app extensie-inrichtingsprofielen nodig heeft.|
 |**-b**|(Optioneel) Gebruik -b zonder argument als u wilt dat de verpakte uitvoer-app dezelfde bundelversie krijgt als de invoer-app (niet aanbevolen). <br/><br/> Gebruik `-b <custom bundle version>` als u wilt dat de verpakte app een aangepaste CFBundleVersion krijgt. Als u ervoor kiest om een aangepaste CFBundleVersion op te geven, wordt u aangeraden om de CFBundleVersion van de oorspronkelijke app te verhogen door de minst significante component te verhogen, bijvoorbeeld 1.0.0 -> 1.0.1. |
-|**-citrix**|Beschrijving Neem de Citrix XenMobile app SDK (alleen-netwerk variant) op. U moet de [CITRIX MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) hebben geïnstalleerd om deze optie te kunnen gebruiken. |
+|**-citrix**|(Optioneel) Neem de Citrix XenMobile App SDK (alleen-netwerk variant) op. U moet de [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) hebben geïnstalleerd om deze optie te kunnen gebruiken. |
 |**-f**|(Optioneel) `<Path to a plist file specifying arguments.>` Gebruik deze eigenschap vóór het [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-bestand als u ervoor kiest om de PLIST-sjabloon te gebruiken om de rest van de IntuneMAMPackager-eigenschappen op te geven, zoals -i, -o en -p. Zie Een PLIST-bestand gebruiken voor het invoeren van argumenten. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Een PLIST-bestand gebruiken voor het invoeren van argumenten
@@ -221,14 +221,14 @@ Open in de map IntuneMAMPackager/Contents/MacOS `Parameters.plist` (een lege PLI
 | Pad van uitvoer-app-pakket |Tekenreeks|leeg| Gelijk aan -o|
 | Pad van inrichtingsprofiel |Tekenreeks|leeg| Gelijk aan -p|
 | SHA-1-certificaat-hash |Tekenreeks|leeg| Gelijk aan -c|
-| ADAL instantie |Tekenreeks|leeg| Zelfde als -aa|
-| ADAL-client-ID |Tekenreeks|leeg| Zelfde als -ac|
+| ADAL-instantie |Tekenreeks|leeg| Zelfde als -aa|
+| ADAL-client-id |Tekenreeks|leeg| Zelfde als -ac|
 | ADAL-antwoord-URI |Tekenreeks|leeg| Zelfde als -ar|
 | Uitgebreid ingeschakeld |Boolean-waarde|onjuist| Gelijk aan -v|
 | Ontbrekende rechten verwijderen |Boolean-waarde|onjuist| Gelijk aan -c|
-| Standaardbuildupdate voorkomen |Bools|onjuist| Komt overeen met het gebruik van -b zonder argumenten|
+| Standaardbuildupdate voorkomen |Boolean-waarde|onjuist| Komt overeen met het gebruik van -b zonder argumenten|
 | Tekenreeks voor build overschrijven |Tekenreeks|leeg| De aangepaste CFBundleVersion van de verpakte uitvoer-app|
-| Citrix XenMobile app SDK (alleen-netwerk variant) toevoegen|Boolean-waarde|onjuist| Hetzelfde als-Citrix|
+| Citrix XenMobile App SDK (alleen-netwerk variant) opnemen|Boolean-waarde|onjuist| Gelijk aan -citrix|
 | Paden van extensie-inrichtingsprofielen |Matrix van tekenreeksen|leeg| Een matrix van extensie-inrichtingsprofielen voor de app.
 
 Voer de IntuneMAMPackager uit met het PLIST-bestand als het enige argument:
@@ -255,7 +255,7 @@ De belangrijkste scenario's waarin u uw toepassingen opnieuw moet verpakken, zij
 * Er is een nieuwe versie uitgebracht van de toepassing. De vorige versie van de app is verpakt en geüpload naar de Intune-console.
 * Er is een nieuwe versie uitgebracht van de Intune App Wrapping Tool voor iOS, met oplossingen voor belangrijke problemen of nieuwe beveiligingsbeleidskenmerken specifiek voor de Intune-toepassing. Dit gebeurt na 6-8 weken via de GitHub-opslagplaats van de [Microsoft Intune App Wrapping Tool voor iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
-Hoewel het in iOS mogelijk is om toepassingen te verpakken met een ander certificaat-/inrichtingsprofiel dan het profiel dat is gebruikt om de app te registreren, mislukt het verpakken als de rechten die zijn opgegeven in de app niet in het nieuwe inrichtingsprofiel zijn opgenomen. Als u met behulp van de -e-opdrachtregeloptie, waarmee ontbrekende rechten van de app worden verwijderd, wilt afdwingen dat het verpakken in dit scenario niet mislukt, kan functionaliteit in de app verloren gaan.
+Hoewel het in iOS/iPadOS mogelijk is om toepassingen te verpakken met een ander certificaat-/inrichtingsprofiel dan het profiel dat is gebruikt om de app te registreren, mislukt het verpakken als de rechten die zijn opgegeven in de app niet in het nieuwe inrichtingsprofiel zijn opgenomen. Als u met behulp van de -e-opdrachtregeloptie, waarmee ontbrekende rechten van de app worden verwijderd, wilt afdwingen dat het verpakken in dit scenario niet mislukt, kan functionaliteit in de app verloren gaan.
 
 Enkele best practices voor opnieuw verpakken:
 
@@ -289,7 +289,7 @@ Als de App Wrapping Tool niet kan worden voltooid, wordt mogelijk een van de vol
 |De invoer-app die u hebt opgegeven, is al verpakt en heeft de meest recente beleidssjabloonversie.|De App Wrapping Tool pakt een bestaande verpakte app met de meest recente beleidssjabloonversie niet opnieuw in.|
 |WAARSCHUWING: U hebt geen SHA1-certificaat-hash opgegeven. Zorg dat uw verpakte app is ondertekend voordat u deze implementeert.|Zorg dat u een geldige SHA1-hash opgeeft na de opdrachtregeleigenschap –c. |
 
-### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Logboeken verzamelen voor uw ingepakte toepassingen van het apparaat
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Logboeken voor uw ingepakte toepassingen ophalen vanaf het apparaat
 Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassingen tijdens het oplossen van problemen.
 
 1. Ga naar de app iOS-instellingen op uw apparaat en selecteer uw LOB-app.
@@ -301,9 +301,9 @@ Gebruik de volgende stappen om logboeken op te halen voor uw ingepakte toepassin
 > [!NOTE]
 > De logboekfunctionaliteit is ingeschakeld voor apps die zijn ingepakt met de Intune App Wrapping Tool versie 7.1.13 of hoger.
 
-### <a name="collecting-crash-logs-from-the-system"></a>Vastlopende logboeken van het systeem verzamelen
+### <a name="collecting-crash-logs-from-the-system"></a>Crashlogboeken van het systeem verzamelen
 
-Uw app kan nuttige informatie vastleggen in de console van het iOS-client apparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool of de app zelf. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
+Uw app kan nuttige informatie vastleggen in de console van het iOS-clientapparaat. Deze informatie is nuttig voor situaties waarin u een probleem ondervindt met de app en wilt achterhalen of dit probleem te maken heeft met de App Wrapping Tool of de app zelf. Als u deze informatie wilt ophalen, gebruikt u de volgende stappen:
 
 1. Reproduceer het probleem door de app uit te voeren.
 
@@ -419,7 +419,7 @@ Gebruik de volgende aanbevolen procedures voor beveiliging en privacy wanneer u 
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Intune App Wrapping Tool voor iOS met Citrix MDX mVPN
 
-Deze functie is een integratie met de Citrix MDX-app-wrapper voor iOS. De integratie is gewoon een extra, optionele opdrachtregelmarkering, `-citrix` voor de algemene Intune App Wrapping Tools.
+Deze functie is een integratie met de Citrix MDX-app-wrapper voor iOS/iPadOS. De integratie is gewoon een extra, optionele opdrachtregelmarkering, `-citrix` voor de algemene Intune App Wrapping Tools.
 
 ### <a name="requirements"></a>Vereisten
 

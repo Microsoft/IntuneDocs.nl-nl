@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 6650c091917ea265783044efd78b19a7e032e6a7
+ms.sourcegitcommit: 5511b4f2b8a3383176a7afe2a22ad5a8d42caf7b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576073"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169294"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Een beleid voor voorwaardelijke toegang maken voor Exchange On-Premises en verouderde Exchange Online Dedicated
+# <a name="configure-exchange-on-premises-access-for-intune"></a>Toegang tot Exchange On-Premises voor Intune configureren
 
 In dit artikel leest u hoe u de voorwaardelijke toegang voor Exchange On-Premises configureert op basis van apparaatnaleving.
 
@@ -62,10 +62,29 @@ Controleer of aan de volgende voorwaarden is voldaan voordat u voorwaardelijke t
 
 ### <a name="support-for-mobile-devices"></a>Ondersteuning voor mobiele apparaten
 
-- Windows Phone 8.1 en hoger
-- Systeemeigen e-mail-app voor iOS/iPadOS.
-- EAS-mailclients zoals Gmail op Android 4 of hoger.
-- **Apparaten met een Android-werkprofiel** van EAS-mailclients: alleen de apps **Gmail** en **Nine Work for Android Enterprise** in het **werkprofiel** worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app Gmail of Nine Work for Android Enterprise implementeert en die apps ook implementeert als verplicht te installeren apps.
+- **Windows Phone 8.1 en hoger**: zie [Beleid voor voorwaardelijke toegang maken](../protect/create-conditional-access-intune.md) om een beleid voor voorwaardelijke toegang te maken
+- **Systeemeigen e-mailapp op iOS/iPadOS**: zie [Beleid voor voorwaardelijke toegang maken](../protect/create-conditional-access-intune.md) om een beleid voor voorwaardelijke toegang te maken
+- **EAS-mailclients zoals Gmail op Android 4 of hoger**: zie [Beleid voor voorwaardelijke toegang maken](../protect/create-conditional-access-intune.md) om een beleid voor voorwaardelijke toegang te maken
+
+- **EAS-mailclients op apparaten met een Android-werkprofiel**: alleen *Gmail* en *Nine Work for Android Enterprise* worden ondersteund op apparaten met een Android-werkprofiel. Voorwaardelijke toegang werkt alleen in combinatie met Android-werkprofielen als u een e-mailprofiel voor de app *Gmail* of *Nine Work for Android Enterprise* implementeert en die apps ook implementeert als verplicht te installeren apps. Nadat u de app hebt geïmplementeerd, kunt u voorwaardelijke toegang op basis van het apparaat instellen.
+
+#### <a name="to-set-up-conditional-access-for-android-work-profile-devices"></a>Voorwaardelijke toegang instellen voor apparaten met een Android-werkprofiel
+
+  1. Meld u aan bij het [Microsoft Endpoint Manager-beheercentrum](https://go.microsoft.com/fwlink/?linkid=2109431).
+  
+  2. Implementeer de Gmail- of Nine Work-app wanneer dat **Vereist** is.
+
+  3. Selecteer **Apparaten** > **Configuratieprofielen** > **Profiel maken** en voer een **Naam** en **Beschrijving** in voor het profiel.
+
+  4. Selecteer **Android Enterprise** bij **Platform** en selecteer **E-mail** bij **Profieltype**.
+
+  5. Configureer de [instellingen van het e-mailprofiel](https://docs.microsoft.com/intune/configuration/email-settings-android-enterprise#android-enterprise).
+
+  6. Wanneer u klaar bent, selecteert u **OK** > **Maken** om uw wijzigingen op te slaan.
+
+  7. Nadat u het e-mailprofiel hebt gemaakt, moet u deze [toewijzen aan groepen](https://docs.microsoft.com/intune/device-profile-assign).
+
+  8. Stel [Voorwaardelijke toegang op basis van het apparaat](https://docs.microsoft.com/intune/protect/conditional-access-intune-common-ways-use#device-based-conditional-access) in.
 
 > [!NOTE]
 > Microsoft Outlook voor Android en iOS/iPadOS wordt niet ondersteund via de on-premises Exchange-connector. Als u wilt gebruikmaken van Azure Active Directory-beleid voor voorwaardelijke toegang en beleid voor Intune-app-beveiliging met Outlook voor iOS/iPadOS en Android voor uw on-premises postvakken, raadpleegt u [Hybride moderne verificatie gebruiken met Outlook voor iOS/iPadOS en Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).

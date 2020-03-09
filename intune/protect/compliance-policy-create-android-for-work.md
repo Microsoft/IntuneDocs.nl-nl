@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
-ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
-ms.translationtype: MTE75
+ms.openlocfilehash: 163f5dd246fb17e7d67a8baffbae9926f2f4bc79
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75722603"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256438"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-instellingen om te markeren of apparaten wel of niet conform zijn met behulp van Intune
 
@@ -35,7 +35,7 @@ Deze functie is van toepassing op:
 Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw organisatie beter te beschermen. Zie [Aan de slag met apparaatnalevingsbeleid](device-compliance-get-started.md) voor meer informatie over nalevingsbeleid en wat dit doet.
 
 > [!IMPORTANT]
-> Het nalevings beleid is ook van toepassing op speciale Android-apparaten. Als er een nalevings beleid is toegewezen aan een toegewezen apparaat, wordt het apparaat mogelijk weer gegeven als **niet-compatibel**. Voorwaardelijke toegang en handhaving van naleving is niet beschikbaar op specifieke apparaten. Zorg ervoor dat u alle taken of acties uitvoert om de toegewezen apparaten compatibel te maken met uw toegewezen beleid.
+> Nalevingsbeleidsregels zijn ook van toepassing op toegewezen Android Enterprise-apparaten. Als een nalevingsbeleid aan een toegewezen apparaat is toegewezen, wordt het apparaat mogelijk weergegeven als **Niet compatibel**. Voorwaardelijke toegang en het afdwingen van naleving is niet beschikbaar op toegewezen apparaten. Zorg ervoor dat u alle taken of acties uitvoert om de toegewezen apparaten compatibel te maken met uw toegewezen beleid.
 
 ## <a name="before-you-begin"></a>Voordat u begint
 
@@ -45,7 +45,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 ### <a name="device-health"></a>Apparaatstatus
 
-- **Vereisen dat het apparaat zich op of onder het bedreigings niveau van het apparaat**bevond: Selecteer het Maxi maal toegestane bedreigings niveau voor apparaten, geëvalueerd door uw [Mobile Threat verdediging-service](mobile-threat-defense.md). Apparaten die dit dreigingsniveau overschrijden, worden gemarkeerd als niet-conform. Als u deze instelling wilt gebruiken, kiest u het toegestane bedreigingsniveau:
+- **Vereisen dat het apparaat zich op of onder het apparaatdreigingsniveau bevindt**: Selecteer welk bedreigingsniveau voor apparaten maximaal is toegestaan dat door uw [Mobile Threat Defense-service](mobile-threat-defense.md) wordt geëvalueerd. Apparaten die dit dreigingsniveau overschrijden, worden gemarkeerd als niet-conform. Als u deze instelling wilt gebruiken, kiest u het toegestane bedreigingsniveau:
 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Beveiligd** - Deze optie is het veiligst en betekent dat het apparaat geen bedreigingen kan hebben. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
@@ -54,7 +54,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
   - **Hoog** - Deze optie is het minst veilig, omdat alle bedreigingsniveaus zijn toegestaan. Deze optie kan handig zijn als u deze alleen gebruikt voor rapportagedoeleinden.
   
 > [!NOTE] 
-> Alle MTD-providers (Mobile Threat verdediging) worden ondersteund door de eigenaar van Android Enter prise-apparaten met behulp van app-configuratie. Neem contact op met uw MTD-provider voor de exacte configuratie die nodig is voor de ondersteuning van Android Enter prise Device owner-platforms in intune.
+> Alle Mobile Threat Defense-providers (MTD) worden ondersteund op implementaties van Android Enterprise-apparaateigenaren door middel van app-configuratie. Neem contact op met uw MTD-provider voor de exacte configuratie die nodig is voor de ondersteuning van platformen voor Android Enterprise-apparaten op Intune.
 
 #### <a name="google-play-protect"></a>Google Play Protect
 
@@ -67,13 +67,13 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 #### <a name="operating-system-version"></a>Versie van besturingssysteem
 
-- **Minimale versie van het besturingssysteem**: Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eind gebruiker kan het apparaat upgraden en vervolgens toegang krijgen tot de bronnen van de organisatie.
+- **Minimale versie van het besturingssysteem**: Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Eindgebruikers kunnen hun apparaat upgraden, waarna ze toegang tot resources van de organisatie krijgen.
 
-  *Standaard wordt er geen versie geconfigureerd*.
+  *Standaard is er geen versie geconfigureerd*.
 
 - **Maximale versie van het besturingssysteem**: Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources totdat de regel wordt aangepast om de versie van het besturingssysteem toe te staan.
 
-  *Standaard wordt er geen versie geconfigureerd*.
+  *Standaard is er geen versie geconfigureerd*.
 
 - **Minimaal beveiligingspatchniveau**:  selecteer het oudste beveiligingspatchniveau dat een apparaat mag hebben. Apparaten die niet ten minste dit patchniveau hebben, zijn niet-conform. De datum moet worden opgegeven in de indeling JJJJ-MM-DD.
 
@@ -84,12 +84,9 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 - **Wachtwoord vereist voor het ontgrendelen van mobiele apparaten**: 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
-  - **Vereisen** - Gebruikers moeten een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat. 
-
-  Deze instelling is van toepassing op apparaatniveau. Als alleen op het niveau van het werkprofiel een wachtwoord vereist is, dient u een configuratiebeleid te gebruiken. Zie [Configuratie-instellingen voor Android Enterprise-apparaat](../configuration/device-restrictions-android-for-work.md).
-
+  - **Vereisen** - Gebruikers moeten een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat.
   - **Vereist wachtwoordtype**: kies of een wachtwoord alleen numerieke tekens mag bevatten of ook een combinatie van cijfers en andere tekens. Uw opties zijn:
-    - **Standaard waarde voor apparaat** : als u wachtwoord compatibiliteit wilt evalueren, moet u een andere wachtwoord sterkte selecteren dan **standaard waarde**voor het apparaat.  
+    - **Standaardwaarde apparaat**: als u de naleving van wachtwoorden wilt evalueren, selecteert u een andere wachtwoordsterkte dan **Standaardwaarde apparaat**.  
     - **Wachtwoord vereist, geen beperkingen**
     - **Zwakke biometrie** - [Sterke versus zwakke biometrie](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (hiermee wordt een Android-website geopend)
     - **Numeriek** (*standaard*): Het wachtwoord mag alleen uit getallen bestaan, bijvoorbeeld `123456789`. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
@@ -98,7 +95,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
     - **Alfanumeriek** - Dit zijn hoofdletters, kleine letters en numerieke tekens. Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
     - **Alfanumeriek met symbolen** - Dit zijn hoofdletters, kleine letters, numerieke tekens, leestekens en symbolen. Voer ook in:
     
-    Afhankelijk van het *wachtwoord type* dat u selecteert, zijn de volgende instellingen beschikbaar:  
+    Afhankelijk van het *wachtwoordtype* dat u selecteert, zijn de volgende instellingen beschikbaar:  
     - **Minimale wachtwoordlengte**: Voer de minimale lengte van het wachtwoord in, tussen 4 en 16 tekens.  
 
     - **Het vereiste aantal tekens**: Voer het aantal tekens in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
@@ -113,7 +110,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
     
     - **Het vereiste aantal symbolen**: Voer het aantal symbolen (`&`, `#`, `%` enzovoort) in dat het wachtwoord moet bevatten, tussen 0 en 16 tekens.
  
-- **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren. De opties zijn de standaard waarde *niet geconfigureerd*en van *1 minuut* tot *8 uur*.
+- **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren. De opties zijn de standaardwaarde *Niet geconfigureerd* en van *1 minuut* tot *8 uur*.
 
 - **Het aantal dagen totdat het wachtwoord verloopt**: Voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd, tussen 1 en 365. Als u bijvoorbeeld wilt dat het wachtwoord na zestig dagen moet worden gewijzigd, voert u `60` in. Wanneer het wachtwoord is verlopen, wordt gebruikers gevraagd een nieuw wachtwoord te maken.
 
@@ -121,13 +118,13 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 - **Het vereiste aantal wachtwoorden voordat de gebruiker een wachtwoord opnieuw kan gebruiken**: Voer het aantal recente wachtwoorden in dat niet opnieuw mag worden gebruikt, tussen 1 en 24. Gebruik deze instelling om te voorkomen dat de gebruiker eerder gebruikte wachtwoorden hergebruikt.  
 
-    *Standaard wordt er geen versie geconfigureerd*.
+    *Standaard is er geen versie geconfigureerd*.
 
 #### <a name="encryption"></a>Versleuteling
 
 - **Versleuteling van gegevensopslag op apparaat**: 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
-  - **Verplicht** -versleutelen van gegevens opslag op uw apparaten.  
+  - **Vereisen**: de gegevensopslag op uw apparaten versleutelen.  
 
   U hoeft deze instelling niet te configureren omdat versleuteling op apparaten met Android Enterprise wordt afgedwongen.
 
@@ -139,7 +136,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Blokkeren** - Geroote (jailbroken) apparaten als niet-compatibel markeren.  
 
-- **Vereisen dat het apparaat zich op of onder het bedreigings niveau van het apparaat**bevond: Selecteer het Maxi maal toegestane bedreigings niveau voor apparaten, geëvalueerd door uw [Mobile Threat verdediging-service](mobile-threat-defense.md). Apparaten die dit dreigingsniveau overschrijden, worden gemarkeerd als niet-conform. Als u deze instelling wilt gebruiken, kiest u het toegestane bedreigingsniveau:
+- **Vereisen dat het apparaat zich op of onder het apparaatdreigingsniveau bevindt**: Selecteer welk bedreigingsniveau voor apparaten maximaal is toegestaan dat door uw [Mobile Threat Defense-service](mobile-threat-defense.md) wordt geëvalueerd. Apparaten die dit dreigingsniveau overschrijden, worden gemarkeerd als niet-conform. Als u deze instelling wilt gebruiken, kiest u het toegestane bedreigingsniveau:
 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
   - **Beveiligd** - Deze optie is het veiligst en betekent dat het apparaat geen bedreigingen kan hebben. Als een van de bedreigingsniveaus voor het apparaat wordt gedetecteerd, wordt het apparaat geëvalueerd als niet-compatibel.
@@ -169,13 +166,13 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 #### <a name="operating-system-version"></a>Versie van besturingssysteem
 
-- **Minimale versie van het besturingssysteem**: Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. De eind gebruiker kan het apparaat upgraden en vervolgens toegang krijgen tot de bronnen van de organisatie.
+- **Minimale versie van het besturingssysteem**: Als een apparaat niet voldoet aan de minimumvereisten met betrekking tot de versie van het besturingssysteem, wordt dit apparaat gerapporteerd als niet-conform. Er wordt een koppeling met informatie over het uitvoeren van een upgrade weergegeven. Eindgebruikers kunnen hun apparaat upgraden, waarna ze toegang tot resources van de organisatie krijgen.
 
-  *Standaard wordt er geen versie geconfigureerd*.
+  *Standaard is er geen versie geconfigureerd*.
 
 - **Maximale versie van het besturingssysteem**: Wanneer een apparaat een versie van het besturingssysteem gebruikt die hoger is dan de versie in de regel, wordt de toegang tot organisatieresources geblokkeerd. De gebruiker wordt gevraagd contact op te nemen met de IT-beheerder. Op dit apparaat kan geen toegang worden verkregen tot organisatieresources totdat de regel wordt aangepast om de versie van het besturingssysteem toe te staan.
 
-  *Standaard wordt er geen versie geconfigureerd*.
+  *Standaard is er geen versie geconfigureerd*.
 
 ### <a name="system-security"></a>Systeembeveiliging
 
@@ -183,7 +180,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving. 
   - **Vereisen** - Gebruikers moeten een wachtwoord invoeren voordat ze toegang kunnen krijgen tot hun apparaat.  
 
-  Deze instelling is van toepassing op apparaatniveau. Als alleen op het niveau van het werkprofiel een wachtwoord vereist is, dient u een configuratiebeleid te gebruiken. Zie [Configuratie-instellingen voor Android Enterprise-apparaat](../configuration/device-restrictions-android-for-work.md).
+  Deze instelling wordt toegepast op apparaatniveau. Als alleen op het niveau van het werkprofiel een wachtwoord vereist is, dient u een configuratiebeleid te gebruiken. Zie [Configuratie-instellingen voor Android Enterprise-apparaat](../configuration/device-restrictions-android-for-work.md).
 
 - **Vereist wachtwoordtype**: kies of een wachtwoord alleen numerieke tekens mag bevatten of ook een combinatie van cijfers en andere tekens. Uw opties zijn:
   - **Standaardwaarde apparaat**
@@ -194,8 +191,8 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
   - **Ten minste alfanumeriek**: Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
   - **Ten minste alfanumeriek met symbolen**: Voer de **Minimale wachtwoordlengte** die een gebruiker moet invoeren in, tussen 4 en 16 tekens.
 
-  Afhankelijk van het *wachtwoord type* dat u selecteert, zijn de volgende instellingen beschikbaar:  
-  - **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren. De opties zijn de standaard waarde *niet geconfigureerd*en van *1 minuut* tot *8 uur*.
+  Afhankelijk van het *wachtwoordtype* dat u selecteert, zijn de volgende instellingen beschikbaar:  
+  - **Maximum aantal minuten inactief voordat wachtwoord is vereist**: Voer in na hoeveel niet-actieve tijd gebruikers hun wachtwoord opnieuw moeten invoeren. De opties zijn de standaardwaarde *Niet geconfigureerd* en van *1 minuut* tot *8 uur*.
 
   - **Het aantal dagen totdat het wachtwoord verloopt**: Voer het aantal dagen in voordat het wachtwoord voor het apparaat moet worden gewijzigd, tussen 1 en 365. Als u bijvoorbeeld wilt dat het wachtwoord na zestig dagen moet worden gewijzigd, voert u `60` in. Wanneer het wachtwoord is verlopen, wordt gebruikers gevraagd een nieuw wachtwoord te maken.
 
@@ -207,7 +204,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 - **Versleuteling van gegevensopslag op apparaat**: 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
-  - **Verplicht** -versleutelen van gegevens opslag op uw apparaten.  
+  - **Vereisen**: de gegevensopslag op uw apparaten versleutelen.  
 
   U hoeft deze instelling niet te configureren omdat versleuteling op apparaten met Android Enterprise wordt afgedwongen.
 
@@ -215,7 +212,7 @@ Gebruik deze nalevingsinstellingen als Intune-beheerder om de resources van uw o
 
 - **Apps van onbekende bronnen blokkeren**: 
   - **Niet geconfigureerd** (*standaard*) - Deze instelling wordt niet beoordeeld op naleving of niet-naleving.
-  - **Blok** keren: apparaten met **beveiliging** > **onbekende** bronnen (*ondersteund op Android 4,0 via Android 7. x). Niet ondersteund door Android 8.0 en hoger*).  
+  - **Blokkeren**: blokkeer apparaten waarop **Beveiliging** > **Onbekende bronnen** is ingeschakeld (*wordt ondersteund op apparaten met Android 4.0 tot en met Android 7.x. Niet ondersteund in Android 8.0 en hoger*).  
 
   Als u sideloading wilt uitvoeren voor apps, moeten onbekende bronnen worden toegestaan. Als u Android-apps niet met behulp van sideloading laadt, stelt u deze functie in op **Blokkeren** om dit nalevingsbeleid in te schakelen.
 

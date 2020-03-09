@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 12/06/2018
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: ae445597cfd1afc4650c7a900ee335c939adedce
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692150"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260177"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android-apparaten automatisch registreren met behulp van de Knox Mobile Enrollment van Samsung
 
@@ -57,38 +57,44 @@ Voor registratie bij Intune met KME moet u uw bedrijf eerst registreren op de Sa
 
 ## <a name="create-mdm-profile"></a>MDM-profiel maken
 
-Wanneer uw bedrijf is geregistreerd, kunt u uw MDM-profiel voor Microsoft Intune in de Knox-portal maken met behulp van de onderstaande informatie. In de Knox-portal kunt u MDM-profielen maken voor zowel Android als Android Enterprise. 
+Wanneer uw bedrijf is geregistreerd, kunt u uw MDM-profiel voor Microsoft Intune in de Knox-portal maken met behulp van de onderstaande informatie. In de Knox-portal kunt u MDM-profielen maken voor zowel Android als Android Enterprise.
+- Als u een Android MDM-profiel wilt maken, selecteert u **Apparaatbeheerder** als het profieltype in de Knox-portal. 
+- Als u een Android Enterprise MDM-profiel wilt maken, selecteert u **Apparaateigenaar** als het profieltype in de Knox-portal.  
 
-### <a name="for-android-enterprise"></a>Voor Android Enterprise
+### <a name="for-android"></a>Voor Android
 
 | MDM-profielvelden| Vereist? | Waarden | 
 |-------------------|-----------|-------| 
-|MDM Server URI (URI van MDM-server)     | Nee        |Laat dit leeg. 
-|Profile Name (Profielnaam)       | Ja       |Voer een profielnaam naar keuze in. 
-|Beschrijving        | Nee        |Voer een beschrijvende tekst voor het profiel in. 
-|MDM Agent APK (APK van MDM-agent)      | Ja       |https://aka.ms/intune_kme_deviceowner 
-|Deze app inschakelen als eigenaar van het Google-apparaat | Ja | Kies deze optie voor registratie bij Android Enterprise. 
-|Ondersteund MDM      | Ja       |Microsoft Intune 
-|Alle systeem-apps ingeschakeld laten | Nee | Selecteer deze optie om te controleren of alle apps zijn ingeschakeld en beschikbaar zijn voor het profiel. Als deze optie niet is geselecteerd, wordt slechts een beperkt aantal systeem-apps weergegeven in het app-overzicht van het apparaat. Apps als de e-mail-app blijven verborgen. 
-|Custom JSON (Aangepaste JSON)        | Nee        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Token-tekenreeks voor Intune-registratie invoeren"}. Meer informatie over het [maken van een inschrijvingsprofiel](android-kiosk-enroll.md). 
-| Juridische overeenkomsten toevoegen | Nee | Laat dit leeg. 
+|Profile Name (Profielnaam)       | Ja       |Voer een profielnaam naar keuze in. |
+|Beschrijving        | Nee        |Voer een beschrijvende tekst voor het profiel in. |
+|MDM-informatie     | Ja        |Kies **Server-URI niet vereist voor mijn MDM**.| 
+|MDM Agent APK (APK van MDM-agent)      | Ja       |https://aka.ms/intune_kme_deviceowner| 
+|Custom JSON (Aangepaste JSON)        | Ja*        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Token-tekenreeks voor Intune-registratie invoeren"}. Meer informatie over het maken van een inschrijvingstoken voor [toegewezen apparaten](android-kiosk-enroll.md) en [volledig beheerde apparaten](android-fully-managed-enroll.md). |
+|Skip Setup wizard (Installatiewizard) overslaan  | Nee        |Kies deze optie als u de standaardvragen voor de installatie van het apparaat voor de gebruiker wilt overslaan.|
+|Allow End User to Cancel Enrollment (Toestaan dat eindgebruiker de registratie annuleert) | Nee | Kies deze optie als gebruikers KME mogen annuleren.|
+| Privacybeleid, Gebruiksrechtovereenkomsten en Servicevoorwaarden | Nee | Laat dit leeg. |
+| Contactgegevens voor ondersteuning | Ja | Kies Bewerken om uw contactgegevens bij te werken |
+|Associate a Knox license with this profile (Een Knox-licentie koppelen aan dit profiel) | Nee | Laat deze optie uitgeschakeld. Voor registratie bij Intune met KME is geen Knox-licentie vereist.|
 
-### <a name="for-android"></a>Voor Android
+\* Dit veld is niet vereist om het maken van een profiel in de Knox-portal te voltooien. Voor Intune is het echter wel vereist dat dit veld wordt ingevuld zodat het profiel het apparaat kan inschrijven bij Intune.
+
+### <a name="for-android-enterprise"></a>Voor Android Enterprise
 
 Raadpleeg de instructies in de [profielinstallatie van Samsung](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm) voor stapsgewijze richtlijnen.
 
 | MDM-profielvelden| Vereist? | Waarden |
 |-------------------|-----------|-------|
-|MDM Server URI (URI van MDM-server)     | Nee        |Laat dit leeg.
-|Profile Name (Profielnaam)       | Ja       |Voer een profielnaam naar keuze in.
-|description        | Nee        |Voer een beschrijvende tekst voor het profiel in.
-|MDM Agent APK (APK van MDM-agent)      | Ja       |https://aka.ms/intune_kme
-|Deze app inschakelen als eigenaar van het Google-apparaat | Nee | Laat deze optie uitgeschakeld voor Android. Deze optie is alleen van toepassing op Android Enterprise.
-|Skip Setup wizard (Installatiewizard) overslaan  | Nee        |Kies deze optie als u de standaardvragen voor de installatie van het apparaat voor de gebruiker wilt overslaan.
-|Allow End User to Cancel Enrollment (Toestaan dat eindgebruiker de registratie annuleert) | Nee | Kies deze optie als gebruikers KME mogen annuleren.
-|Custom JSON (Aangepaste JSON)        | Nee        |Laat dit leeg.
-| Juridische overeenkomsten toevoegen | Nee | Laat dit leeg.
-Associate a Knox license with this profile (Een Knox-licentie koppelen aan dit profiel) | Nee | Laat deze optie uitgeschakeld. Voor registratie bij Intune met KME is geen Knox-licentie vereist.
+|Profile Name (Profielnaam)       | Ja       |Voer een profielnaam naar keuze in.|
+|Beschrijving        | Nee        |Voer een beschrijvende tekst voor het profiel in.|
+|Kies uw MDM | Ja | Kies Microsoft Intune. |
+|MDM Agent APK (APK van MDM-agent)      | Ja       |https://aka.ms/intune_kme|
+|MDM Server URI (URI van MDM-server)     | Nee        |Laat dit leeg.|
+|Aangepaste JSON-gegevens        | Nee        |Laat dit leeg.|
+|Dubbele DAR | Nee | Laat dit leeg.|
+|QR-code voor inschrijving | Nee | U kunt een QR-code toevoegen om de inschrijving te versnellen.|
+|Systeemtoepassingen | Ja | Kies de optie **Alle systeem-apps ingeschakeld laten** om te controleren of alle apps zijn ingeschakeld en beschikbaar zijn voor het profiel. Als deze optie niet is geselecteerd, wordt slechts een beperkt aantal systeem-apps weergegeven in het app-overzicht van het apparaat. Apps als de e-mail-app blijven verborgen. |
+|Privacybeleid, Gebruiksrechtovereenkomsten en Servicevoorwaarden | Nee | Laat dit leeg.|
+|Bedrijfsnaam | Ja | Deze naam wordt weergegeven tijdens de registratie van het apparaat. |
 
 ## <a name="add-devices"></a>Apparaten toevoegen
 

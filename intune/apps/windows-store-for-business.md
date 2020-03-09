@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609156"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256370"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>In volume aangeschafte apps beheren vanuit de Microsoft Store voor Bedrijven met Microsoft Intune
 
@@ -51,7 +51,8 @@ Lees de volgende informatie voordat u begint met het synchroniseren en toewijzen
 - Als u deze mogelijkheid wilt gebruiken, moeten apparaten zijn gekoppeld aan Active Directory Domain Services of aan Azure AD of aan de werkplek zijn toegevoegd.
 - Geregistreerde apparaten moeten gebruikmaken van de 1511-versie van Windows 10 of hoger.
 
-Daarnaast worden gerelateerde sets en gelicentieerde offline-apps die via de Microsoft Store voor Bedrijven werden gesynchroniseerd, nu geconsolideerd in een enkele app-vermelding in de gebruikersinterface. Alle implementatiegegevens van de afzonderlijke pakketten worden gemigreerd naar die ene vermelding. Als u gerelateerde sets in Azure Portal wilt bekijken, selecteert u **App-licenties** in het deelvenster **Apps**.
+> [!NOTE]
+Als u de Store uitschakelt op beheerde apparaten (handmatig of via beleid of groepsbeleid), kunnen online gelicentieerde apps niet worden geïnstalleerd.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Uw Microsoft Store voor Bedrijven-account koppelen aan Intune
 Voordat u synchronisatie inschakelt in de Intune-console, moet u uw Store-account configureren om Intune te gebruiken als beheerprogramma:

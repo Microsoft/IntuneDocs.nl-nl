@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: ee3020c2a1dfadb21b55ca29a2295498bf893080
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415535"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781972"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Apparaten synchroniseren met Intune om het meest recente beleid en de meest recente acties te verkrijgen
 
@@ -43,7 +43,7 @@ Met apparaatactie **Synchroniseren** wordt het geselecteerde apparaat direct ing
 4. Selecteer een apparaat in de lijst met apparaten die u beheert, selecteer een apparaat om het venster *Overzicht* te openen en selecteer vervolgens **Synchroniseren**.
 5. Selecteer **Ja** om de opdracht te bevestigen.
 
-Kies **Apparaten** > **Apparaatacties** om de status van de synchronisatieactie te zien.
+Kies **Apparaten** > **Bewaken** > **Apparaatacties** om de status van de synchronisatieactie te zien.
 
 U vindt standaardfrequenties voor check-ins van Intune-beleid in [Cyclusduur vernieuwen](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: f4a1d0575ce4c46c56fd1b3d2a7526a18a076fcf
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514197"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576120"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problemen met voorwaardelijke toegang oplossen
 In dit artikel wordt beschreven wat u moet doen wanneer uw gebruikers geen toegang kunnen krijgen tot resources die met voorwaardelijke toegang zijn beschermd, of wanneer gebruikers wel toegang tot beschermde resources kunnen krijgen, maar eigenlijk zouden moeten worden geblokkeerd.
@@ -44,7 +44,7 @@ Er moet aan de volgende vereisten zijn voldaan voordat voorwaardelijke toegang w
 
 - Aan de gebruiker moet standaard een apparaatnalevingsbeleid zijn toegewezen. Dit kan afhankelijk zijn van de manier waarop de instelling **Apparaten waaraan geen nalevingsbeleid is toegewezen markeren als** onder **Apparaatnaleving** > **Instellingen nalevingsbeleid** in de Intune-beheerportal is geconfigureerd.
 
-- EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker de systeemeigen e-mailclient van het apparaat gebruikt in plaats van Outlook. Dit gebeurt automatisch voor iOS-, Windows Phone- en Android Knox-apparaten.
+- EAS (Exchange ActiveSync) moet worden geactiveerd op het apparaat als de gebruiker de systeemeigen e-mailclient van het apparaat gebruikt in plaats van Outlook. Dit gebeurt automatisch voor iOS/iPadOS-, Windows Phone- en Android Knox-apparaten.
 
 - Voor on-premises Exchange, moet de Intune Exchange-connector juist zijn geconfigureerd. Raadpleeg [Het oplossen van problemen met de Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) voor meer informatie.
 

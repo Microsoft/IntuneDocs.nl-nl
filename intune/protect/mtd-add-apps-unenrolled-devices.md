@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: a0d1574599b9e514d4bb0289b88ad3c55cc24d15
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545923"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782248"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>Mobile Threat Defense-apps toevoegen aan niet-ingeschreven apparaten
 
@@ -33,21 +33,27 @@ Eindgebruikers hebben Microsoft Authenticator (iOS) nodig om hun apparaat te reg
 
 Desgewenst kunt u Intune gebruiken om de apps Microsoft Authenticator en MTD (Mobile Threat Defense) ook toe te voegen en te implementeren.
 
-> [!NOTE] 
-> Dit artikel is van toepassing op alle Mobile Threat Defense-partners die ondersteuning bieden aan beleid voor app-beveiliging: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
-> 
-> Voor apparaten die niet zijn ingeschreven, hebt u **geen configuratiebeleid voor iOS-apps nodig** om de app Mobile Threat Defense voor iOS die u met Intune gebruikt, in te stellen. Dit is een belangrijk verschil ten opzichte van apparaten die bij Intune zijn Ingeschreven. 
+> [!NOTE]
+> Dit artikel is van toepassing op alle Mobile Threat Defense-partners die ondersteuning bieden aan beleid voor app-beveiliging:
+>
+> - Better Mobile (Android,iOS/iPadOS)
+> - Zimperium (Android,iOS/iPadOS)
+> - Lookout for Work (Android,iOS/iPadOS)
+>
+> Voor apparaten die niet zijn ingeschreven, hebt u **geen configuratiebeleid voor iOS-apps nodig** om de app Mobile Threat Defense voor iOS die u met Intune gebruikt, in te stellen. Dit is een belangrijk verschil ten opzichte van apparaten die bij Intune zijn Ingeschreven.
 
 ## <a name="configure-microsoft-authenticator-for-ios-via-intune-optional"></a>Microsoft Authenticator voor iOS via Intune configureren (optioneel)
+
 Wanneer het beveiligingsbeleid van de Intune-app met Mobile Threat Defense wordt gebruikt, worden eindgebruikers door Intune op hun apparaat begeleid bij de installatie op, de aanmelding bij en inschrijving van hun apparaat bij Microsoft Authenticator (iOS).
 
 Als u de app echter beschikbaar wilt maken voor eindgebruikers via de Intune-bedrijfsportal, raadpleegt u de instructies voor het [toevoegen van iOS Store-apps aan Microsoft Intune](../apps/store-apps-ios.md). Gebruik deze [URL voor de iOS App Store voor Microsoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) bij het invullen van de sectie **App-gegevens configureren**. Vergeet niet om als laatste stap [de app met behulp van Intune toe te wijzen aan groepen](../apps/apps-deploy.md).
 
-> [!NOTE] 
+> [!NOTE]
 > Voor iOS-apparaten hebt u de app [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) nodig, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD. De Intune-bedrijfsportal werkt als de broker op Android-apparaten, zodat de identiteit van gebruikers kan worden gecontroleerd door Azure AD.
 
 ## <a name="making-mobile-threat-defense-apps-available-via-intune-optional"></a>Mobile Threat Defense-apps beschikbaar maken via Intune (optioneel)
-Wanneer het beveiligingsbeleid van de Intune-app met Mobile Threat Defense wordt gebruikt, worden eindgebruikers door Intune begeleid bij de installatie op en aanmelding bij de Mobile Threat-Defense-client-app. 
+
+Wanneer het beveiligingsbeleid van de Intune-app met Mobile Threat Defense wordt gebruikt, worden eindgebruikers door Intune begeleid bij de installatie op en aanmelding bij de Mobile Threat-Defense-client-app.
 
 Als u de app echter via de Intune-bedrijfsportal beschikbaar wilt maken voor eindgebruikers, kunt u de onderstaande stappen volgen in [Azure Portal](https://portal.azure.com/). Zorg ervoor dat u bekend bent met de volgende procedures:
 
@@ -55,6 +61,7 @@ Als u de app echter via de Intune-bedrijfsportal beschikbaar wilt maken voor ein
 - [Een app toewijzen met Intune](../apps/apps-deploy.md).
 
 ### <a name="making-lookout-for-work-available-to-end-users"></a>Lookout for Work beschikbaar maken voor eindgebruikers
+
 - **Android**  
   - Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](../apps/store-apps-android.md). Gebruik deze [URL voor de Play Store voor Lookout for Work](https://play.google.com/store/apps/details?id=com.lookout.enterprise) als u de sectie **App-gegevens configureren** invult.
 
@@ -76,11 +83,12 @@ Als u de app echter via de Intune-bedrijfsportal beschikbaar wilt maken voor ein
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>Zimperium beschikbaar maken voor eindgebruikers
+
 - **Android**
   - Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](../apps/store-apps-android.md). Gebruik deze [URL voor de Play Store voor Zimperium](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) in de sectie **App-gegevens configureren**.
 - **iOS**
   - Zie de instructies in het artikel [iOS Store-apps toevoegen aan Microsoft Intune](../apps/store-apps-ios.md). Gebruik deze [URL voor de App Store voor Zimperium](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) in de sectie **App-gegevens configureren**.
- 
+
 <!-- ### Making Pradeo available to end users
 - **Android**
   - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Pradeo - Play Store URL](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US) when completing the **Configure app information** section.
@@ -88,9 +96,11 @@ Als u de app echter via de Intune-bedrijfsportal beschikbaar wilt maken voor ein
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Pradeo - App Store URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) when completing the **Configure app information** section. -->
 
-### <a name="making-better-mobile-available-to-end-users"></a>Better Mobile beschikbaar maken voor eindgebruikers 
+### <a name="making-better-mobile-available-to-end-users"></a>Better Mobile beschikbaar maken voor eindgebruikers
+
 - **Android**
   - Zie de instructies in het artikel [Android Store-apps toevoegen aan Microsoft Intune](../apps/store-apps-android.md). Gebruik deze [URL voor de Play Store voor Active Shield](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise) als u de sectie **App-gegevens configureren** invult.
+
 <!-- - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [ActiveShield - App Store URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) when completing the **Configure app information** section. -->
 
@@ -108,7 +118,6 @@ Als u de app echter via de Intune-bedrijfsportal beschikbaar wilt maken voor ein
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Wandera Mobile - - App Store URL](https://itunes.apple.com/app/wandera/id605469330) when completing the **Configure app information** section. -->
 
-## <a name="next-steps"></a>Volgende stappen  
+## <a name="next-steps"></a>Volgende stappen
 
 - [De Mobile Threat Defense-connector in Intune inschakelen voor niet-ingeschreven apparaten](~/protect/mtd-enable-unenrolled-devices.md)
-

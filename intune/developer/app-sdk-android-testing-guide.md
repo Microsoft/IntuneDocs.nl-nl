@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d473d29536b4ffdcc221c8cf61c63725bae0fa2
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 699665f93d04801223f2fc6e6536d9b675e75242
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653900"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181939"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Testhandleiding voor Microsoft Intune App SDK voor Android
 
-Deze hand leiding helpt ontwikkel aars bij het testen van hun door intune beheerde Android-apps.  
+Deze handleiding helpt ontwikkelaars bij het testen van hun door Intune beheerde Android-apps.  
 
 ## <a name="prerequisite-test-accounts"></a>Vereiste testaccounts
 U kunt nieuwe accounts maken met of zonder vooraf gegenereerde gegevens. Een nieuw account maken:
@@ -38,7 +38,7 @@ U kunt nieuwe accounts maken met of zonder vooraf gegenereerde gegevens. Een nie
 
 
 ## <a name="azure-portal-policy-configuration"></a>Beleidsconfiguratie Azure Portal
-[Maak beveiligingsbeleid voor apps en wijs dit toe](../apps/app-protection-policies.md) in de [Intune-blade van Azure Portal](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). U kunt ook uw [app-configuratie beleid](../apps/app-configuration-policies-overview.md) maken en toewijzen op de Blade intune.
+[Maak beveiligingsbeleid voor apps en wijs dit toe](../apps/app-protection-policies.md) in de [Intune-blade van Azure Portal](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). U kunt uw [app-configuratiebeleid](../apps/app-configuration-policies-overview.md) ook maken en toewijzen in de Intune-blade.
 
 > [!NOTE]
 > Als uw app niet wordt vermeld in Azure Portal, kunt u een beleid hier alsnog op richten door het selecteren van de optie **Meer apps** en het opgeven van de naam van het pakket in het tekstvak.
@@ -54,11 +54,11 @@ U kunt een pincode vereisen voor toegang tot bedrijfsresources. U kunt ook een z
 1. Stel **Pincode vereisen voor toegang** en **Zakelijke referenties vereisen voor toegang** in op **Ja**. Zie [Instellingen beveiligingsbeleid voor Android-apps in Microsoft Intune](../apps/app-protection-policy-settings-android.md#access-requirements) voor meer informatie.
 2. Bevestig de volgende voorwaarden:
     - Bij het starten van de app dient een prompt voor het invoeren van de pincode of de productiegebruiker die is gebruikt tijdens de inschrijving bij de bedrijfsportal te worden weergegeven.
-    - Als er geen geldige aanmeldings prompt wordt weer gegeven, kan dit worden veroorzaakt door een onjuist geconfigureerd Android-manifest, met name de waarden voor de integratie van Azure Active Directory Authentication Library (ADAL) (Skip Broker, ClientID en Authority).
+    - Wanneer er geen geldige aanmeldingsprompt wordt weergegeven, kan dit zijn veroorzaakt door een onjuist geconfigureerd Android-manifest, in het bijzonder de waarden voor de integratie van ADAL (Azure Active Directory Authentication Library) (SkipBroker, ClientID en Authority).
     - Wanneer er geen prompt wordt weergegeven, wordt dit mogelijk veroorzaakt door een onjuist geïntegreerde `MAMActivity`-waarde. Zie de [ontwikkelaarshandleiding voor de Microsoft Intune App-SDK voor Android](app-sdk-android.md) voor meer informatie over `MAMActivity`.
 
 > [!NOTE] 
-> Als de voor gaande test niet werkt, zullen de volgende tests waarschijnlijk ook mislukken. Controleer de integratie van de [SDK](app-sdk-android.md##sdk-integration) en [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+> Als de voorgaande test niet werkt, zullen de volgende tests waarschijnlijk ook mislukken. Controleer de integratie van de [SDK](app-sdk-android.md#sdk-integration) en [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
 
 ### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Overdracht en ontvangst van gegevens ten aanzien van andere apps beperken
 U kunt de gegevensoverdracht tussen door het bedrijf beheerde toepassingen als volgt regelen:
@@ -89,7 +89,7 @@ U kunt gegevens op het apparaat als volgt versleutelen:
 
 1. Stel **App-gegevens versleutelen** in op **Ja**.
 2. Bevestig de volgende voorwaarden:
-    - Het gedrag van normale toepassingen wordt niet beïnvloed.
+    - Normaal toepassingsgedrag wordt niet beïnvloed.
 
 ### <a name="prevent-android-backups"></a>Back-ups van Android voorkomen
 U kunt als volgt back-ups van apps regelen:
@@ -108,9 +108,9 @@ U kunt zakelijke e-mails en documenten op beheerde apps wissen op afstand, en zo
     - De beheerde inhoud wordt verwijderd uit de app. Zie de [ontwikkelaarshandleiding voor de Microsoft Intune App-SDK voor Android - Selectief wissen](app-sdk-android.md#selective-wipe) voor meer informatie.
 
 ### <a name="multi-identity-support"></a>Ondersteuning voor meerdere identiteiten
-De integratie van [ondersteuning voor meerdere identiteiten](app-sdk-android.md#multi-identity-optional) is een wijziging met een hoog risico die grondig moet worden getest. De meest voorkomende problemen doen zich voor omdat de identiteit (context versus bedreigings niveau) en het bijhouden van bestanden (`MAMFileProtectionManager`) onjuist zijn ingesteld.
+De integratie van [ondersteuning voor meerdere identiteiten](app-sdk-android.md#multi-identity-optional) is een wijziging met een hoog risico die grondig moet worden getest. De meest voorkomende problemen treden op vanwege een onjuiste instelling van de identiteit (context versus bedreigingsniveau) en het bijhouden van bestanden (`MAMFileProtectionManager`).
 
-Controleer het volgende:
+Controleer minimaal het volgende:
 
 - Het beleid voor **Opslaan als** werkt correct voor beheerde identiteiten.
 - Beperkingen voor kopiëren en plakken worden correct gehandhaafd van beheerd naar persoonlijk.
@@ -119,7 +119,7 @@ Controleer het volgende:
 - De gebruiker wordt gevraagd om voorwaardelijk te starten wanneer een account wordt gewijzigd van een niet-beheerd in een beheerd account (alleen de eerste keer).
 
 ### <a name="app-configuration-optional"></a>App-configuratie (optioneel)
-U kunt het gedrag van beheerde apps configureren. Als uw app de instellingen van de app-configuratie gebruikt, moet u testen of uw app alle waarden correct verwerkt die u (als beheerder) kunt instellen. U kunt [app-configuratie beleidsregels](../apps/app-configuration-policies-overview.md) maken en toewijzen in intune.
+U kunt het gedrag van beheerde apps configureren. Als uw app de instellingen van de app-configuratie gebruikt, moet u testen of uw app alle waarden correct verwerkt die u (als beheerder) kunt instellen. U kunt [app-configuratiebeleidsregels](../apps/app-configuration-policies-overview.md) maken en toewijzen in Intune.
 
 ## <a name="next-steps"></a>Volgende stappen
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
-ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
+ms.openlocfilehash: a1eca1f8911e9c6aae3b3725cf15f04d954c5f48
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473758"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260313"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>iOS-/iPadOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple
 
@@ -41,6 +41,8 @@ DEP-inschrijvingen zijn niet compatibel met de App Store-versie van de bedrijfsp
 Push de app naar het apparaat met **Bedrijfsportal installeren met VPP** (Volume Purchase Program) in het DEP-profiel om moderne verificatie tijdens de inschrijving in te schakelen. Zie [iOS-/iPadOS-apparaten automatisch inschrijven met het Device Enrollment Program van Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) voor meer informatie.
 
 Als u wilt inschakelen dat de Bedrijfsportal automatisch wordt bijgewerkt en de Bedrijfsportal-app weergeeft op apparaten die al bij DEP zijn geregistreerd, implementeert u de Bedrijfsportal-app via Intune als een vereiste VPP-app (Volume Purchase Program) waarop een [Toepassingsconfiguratiebeleid](../apps/app-configuration-policies-use-ios.md) is toegepast.
+
+Opmerking: Wanneer u tijdens de automatische inschrijving van apparaten, terwijl de Bedrijfsportal wordt uitgevoerd in de modus voor één app, klikt op de koppeling Meer informatie, wordt een foutbericht weergegeven vanwege de modus voor één app. Nadat de registratie is voltooid, kunt u meer informatie bekijken in het CP wanneer het apparaat niet meer in de modus voor één app wordt weergegeven. 
 
 ## <a name="what-is-supervised-mode"></a>Wat is de supervisiemodus?
 
@@ -144,7 +146,7 @@ Na installatie van de token kunt u een inschrijvingsprofiel voor DEP-apparaten m
 5. Geef voor **Gebruikersaffiniteit** aan of andere apparaten met dit profiel met of zonder toegewezen gebruiker moeten worden ingeschreven.
     - **Inschrijven met gebruikersaffiniteit**: kies deze optie voor apparaten die eigendom zijn van gebruikers en waarvoor de bedrijfsportal moet worden gebruikt voor services zoals het installeren van apps. Als bij het gebruik van ADFS en het inschrijvingsprofiel **Verifiëren met bedrijfsportal in plaats van Configuratieassistent** is ingesteld op **Nee**, is [WS-Trust 1.3 gebruikersnaam/gemengd eindpunt](https://technet.microsoft.com/library/adfs2-help-endpoints) [Meer informatie](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) vereist.
 
-    - **Inschrijven zonder gebruikersaffiniteit**: kies deze optie voor een apparaat dat niet aan één gebruiker is gelieerd. Gebruik deze optie voor apparaten die geen toegang hebben tot lokale gebruikersgegevens. Apps als de bedrijfsportal-app werken niet.
+    - **Inschrijven zonder gebruikersaffiniteit**: kies deze optie voor een apparaat dat niet aan één gebruiker is gelieerd. Gebruik deze optie voor apparaten die geen toegang hebben tot lokale gebruikersgegevens. Apps als de Bedrijfsportal-app werken niet.
 
 5. Als u kiest voor **Inschrijven met gebruikersaffiniteit**, kunt u gebruikers zich te laten verifiëren met de bedrijfsportal in plaats van de Apple-configuratieassistent.
 
